@@ -1,9 +1,9 @@
-<b>📝 Chat-Screening</b>
+<b><big>📝 Chat-Screening</b></big>
 
 Bienvenido al chat interactivo con vacantes.
 Este proyecto reinventa la preselección: en lugar de que el candidato solo envíe un CV, ahora puede chatear directamente con la posición a la que postula.
 
-🚀 ¿Qué es esto?
+<b>🚀 ¿Qué es esto?</b>
 
 Chat-Screening es un chatbot diseñado para representar a una vacante en formato conversacional.
 Permite que candidatos interactúen con el rol, conozcan sus desafíos y hagan preguntas, mientras la organización evalúa:
@@ -18,7 +18,7 @@ y la lectura estratégica del desafío.
 
 En vez de solo leer un CV, la empresa obtiene señales del potencial y la disposición a crecer de cada persona.
 
-🎯 Propósito
+<b>🎯 Propósito</b>
 
 Este proyecto nace de la convicción de que reclutar es descubrir potencial, no solo experiencia.
 
@@ -32,7 +32,7 @@ Automatización (para integrar este paso en flujos de reclutamiento modernos).
 
 El resultado: procesos de selección más empáticos, eficientes y significativos.
 
-🛠️ Tecnologías utilizadas
+<b>🛠️ Tecnologías utilizadas</b>
 
 n8n para orquestar el flujo conversacional.
 
@@ -40,11 +40,11 @@ OpenAI para generar respuestas inteligentes y dinámicas.
 
 GitHub Pages para alojar el frontend.
 
-HTML + JavaScript para la interfaz de chat.
+HTML + CSS + JavaScript para la interfaz de chat.
 
-cursor para mejorar la toma de decisiones en el desarrollo.
+Cursor.ai para mejorar la toma de decisiones en el desarrollo.
 
-🤝 Contacto
+<b>🤝 Contacto </b>
 
 Si quieres conversar sobre el proyecto o explorar colaboraciones:
 
@@ -52,6 +52,6 @@ Si quieres conversar sobre el proyecto o explorar colaboraciones:
 
 📧 alvargash90@gmail.com
 
-🧠 Nota final
+<b>🧠 Nota final</b>
 
 Chat-Screening es parte de una exploración más amplia sobre cómo redefinir la experiencia del talento: no solo como un filtro de selección, sino como una oportunidad para inspirar, conectar y descubrir el verdadero potencial de las personas.
