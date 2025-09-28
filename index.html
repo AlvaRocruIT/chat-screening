@@ -33,24 +33,18 @@
       margin-bottom: 1.5em;
     }
 
-    textarea {
-      width: 80%;
-      padding: 1em;
-      font-size: 1em;
-      border-radius: 0;
-      border: 1px solid #ccc;
-      resize: none;
-      margin-top: 0.5em;
-      margin-bottom: 1em;
-      font-family: 'Montserrat', sans-serif;
+     h2 {
+      margin-top: 2em;
+      font-size: 1.2em;
+      font-weight: 600;
     }
-
+    
     button {
       display: inline-block;
       margin-top: 1em;
       padding: 0.9em 1.5em;
-      font-size: 0.7em;
-      font-weight: 200;
+      font-size: 0.9em;
+      font-weight: 500;
       background-color: #2c2c2c;
       color: #ffffff;
       border: none;
@@ -63,39 +57,16 @@
       background-color: #444;
     }
 
-    #currentResponse {
-      margin-top: 1em;
-      background-color: #ffffff;
-      border: 1px solid #e0e0e0;
-    }
-
-    h3 {
-      margin-top: 2em;
-      font-size: 1.2em;
-      font-weight: 600;
-    }
-
-    #historyBox {
-      margin-top: 0.5em;
-      display: none;
-      border: 1px solid #e0e0e0;
-      border-radius: 0;
-    }
   </style>
 </head>
 <body>
   <h1>Demo proyecto Chatea con la Vacante</h1>
-  <p>Hola Ramiro!<br> Nuevamente muchas gracias por esto. Quise sumergirme en el desafío desde ya, te dejo un MVP para ir probando y que me des tu feedback! La idea es sacar algo funcional y que se destaque como un facilitador de necesidades organizacionales para la adquisicion de su talento. Ojalá te guste ;) </p>
+  <p>Hola Ramiro!<br>
+  Nuevamente muchas gracias por esto. Quise sumergirme en el desafío desde ya, te dejo un MVP para ir probando y que me des tu feedback! La idea es sacar algo funcional y que se destaque como un facilitador de necesidades organizacionales para la adquisición de su talento. Ojalá te guste ;)</p>
 
-  <textarea id="userInput" rows="4" placeholder="¡Hola! 👋🏻 ¿Qué te gustaría saber?" autocomplete="off" autocapitalize="none" spellcheck="false"></textarea>
-  <button id="sendBtn" onclick="sendMessage()">Enviar</button>
+  <button id="sendBtn">Enviar</button>
 
-  <textarea id="currentResponse" rows="4" readonly placeholder="Aquí aparecerá tu respuesta"></textarea>
-
-  <h3>Historial</h3>
-  <button id="toggleHistoryBtn" onclick="toggleHistory()">Mostrar/ocultar historial</button>
-  <textarea id="historyBox" rows="8" readonly placeholder="Pulsa el botón para mostrar/ocultar el historial"></textarea>
-
-  <script type="module" src="main.js?v=4"></script>
+  <h2>Trabaja con nosotros</h2>
+  <button id="toggleHistoryBtn">Ocultar historial</button>
 </body>
 </html>
