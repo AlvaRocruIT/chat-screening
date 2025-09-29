@@ -1,12 +1,14 @@
+/* Banner específico */
 .banner {
   width: 100%;
-  max-height: 400px; /* Ajusta según tu diseño */
+  max-height: 400px; /* Ajusta según diseño */
   overflow: hidden;
+  position: relative; /* útil si quieres agregar texto encima del video más adelante */
 }
 
 .banner video {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* Mantiene el video centrado y recortado si hace falta */
+  object-fit: cover; /* centra y recorta el video si hace falta */
 }
