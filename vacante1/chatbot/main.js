@@ -78,7 +78,7 @@ async function sendMessage() {
     raw ||
     "No se recibió respuesta.";
 
-    const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 ÁlvaroBot: ${reply}\n`;
+    const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
     currentResponse.value = reply;
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
@@ -98,8 +98,8 @@ async function sendMessage() {
       hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
     }
 
-    const fallback = `Ups, algo no salió bien. ${hint}`.trim();
-    const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 ÁlvaroBot: ${fallback}\n`;
+    const fallback = `Hmm... algo no salió bien 🤔. ${hint}`.trim();
+    const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${fallback}\n`;
     currentResponse.value = fallback;
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
