@@ -3,14 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var modal = document.getElementById('videoModal');
   var video = document.getElementById('introVideo');
   var closeBtn = document.querySelector('.modal-close');
-  var errorBox = document.getElementById('videoError');
-
-  function showError() {
-    if (errorBox) errorBox.style.display = 'block';
-  }
-  function hideError() {
-    if (errorBox) errorBox.style.display = 'none';
-  }
+  var playBtn = document.getElementById('playWithSound');
 
   function closeModal() {
     if (!modal) return;
@@ -18,46 +11,48 @@ document.addEventListener('DOMContentLoaded', function () {
     try { if (video) video.pause(); } catch (_) {}
   }
 
-  function openModal() {
-    if (!modal) return;
-    modal.classList.add('open');
-    hideError();
+  // Require user gesture to play with sound
+  function startWithSound() {
     if (!video) return;
-    try {
-      video.currentTime = 0;
-      var p = video.play();
-      if (p && typeof p.then === 'function') {
-        p.catch(function () {
-          // Autoplay bloqueado: deja controles visibles para que el usuario pulse Play
-        });
-      }
-    } catch (_) {}
+    video.muted = false;
+    var p = video.play();
+    if (p && typeof p.then === 'function') {
+      p.then(function () {
+        if (playBtn) playBtn.style.display = 'none';
+      }).catch(function () {
+        if (playBtn) playBtn.style.display = 'block';
+      });
+    }
   }
 
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
   if (modal) {
     modal.addEventListener('click', function (e) {
       if (e.target === modal) closeModal();
     });
   }
 
-  if (video) {
-    ['error','stalled','abort','emptied'].forEach(function (ev) {
-      video.addEventListener(ev, showError);
-    });
-    video.addEventListener('canplay', hideError);
-    video.addEventListener('ended', closeModal);
-    // Si carga pero se queda negro, intenta reproducir al estar listo
-    video.addEventListener('loadeddata', function () {
-      if (video.paused) {
-        try { video.play().catch(function () {}); } catch (_) {}
-      }
+  if (playBtn) {
+    playBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      startWithSound();
     });
   }
 
-  // Auto-cierre a los 40s
+  if (video) {
+    video.addEventListener('play', function () {
+      if (playBtn) playBtn.style.display = 'none';
+    });
+    video.addEventListener('pause', function () {
+      if (playBtn && video.currentTime === 0) playBtn.style.display = 'block';
+    });
+    video.addEventListener('ended', closeModal);
+  }
+
+  // Auto-cierre a los 40s desde apertura del modal
   setTimeout(closeModal, 40 * 1000);
 
-  // Abre el modal al cargar
-  openModal();
+  // Abre el modal al cargar, sin intentar reproducir automáticamente
+  if (modal) modal.classList.add('open');
 });
