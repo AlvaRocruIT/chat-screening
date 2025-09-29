@@ -1,11 +1,12 @@
-/* Banner específico */
+/* vacante1/styles.css */
+
+/* Banner específico (si lo usas en esta página) */
 .banner {
   width: 100%;
   max-height: 400px;
   overflow: hidden;
   position: relative;
 }
-
 .banner video {
   width: 100%;
   height: auto;
@@ -13,7 +14,7 @@
   object-fit: cover;
 }
 
-/* Base de la página (igual a vacante2) */
+/* Base de la página (idéntica a vacante2) */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
@@ -23,26 +24,23 @@ body {
   color: #2c2c2c;
   line-height: 1.6;
 }
-
 h1 {
   color: #1f1f1f;
   font-weight: 400;
   font-size: 2em;
   margin-bottom: 0.5em;
 }
-
 p {
   font-size: 1.05em;
   margin-bottom: 1.5em;
 }
-
 h2 {
   margin-top: 2em;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-/* Botón del chatbot (igual a vacante2) */
+/* Botón del chatbot (idéntico a vacante2) */
 .button-container button {
   width: 180px;
   height: 60px;
@@ -54,7 +52,6 @@ h2 {
   border-radius: 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
   display: flex;
   align-items: center;
   justify-content: center;
