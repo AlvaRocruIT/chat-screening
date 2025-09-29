@@ -3,14 +3,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var video = document.getElementById('introVideo');
   var closeBtn = document.querySelector('.modal-close');
   var playBtn = document.getElementById('overlayPlay');
+  var errorBox = document.getElementById('videoError');
 
   var closeTimeoutId = null;
 
+  function showError() {
+    if (errorBox) errorBox.style.display = 'block';
+    if (playBtn) playBtn.style.display = 'block';
+  }
+  function hideError() {
+    if (errorBox) errorBox.style.display = 'none';
+  }
   function startCloseTimer() {
     if (closeTimeoutId) clearTimeout(closeTimeoutId);
     closeTimeoutId = setTimeout(closeModal, 40 * 1000);
   }
-
   function closeModal() {
     if (!modal) return;
     modal.classList.remove('open');
@@ -18,25 +25,51 @@ document.addEventListener('DOMContentLoaded', function () {
     if (closeTimeoutId) clearTimeout(closeTimeoutId);
   }
 
-  function playWithSound() {
+  function attemptPlayWithSound() {
     if (!video) return;
+    hideError();
     video.muted = false;
-    video.controls = true;
-    var p = video.play();
-    if (p && typeof p.then === 'function') {
-      p.then(function () {
+    // Ensure browser (especially Safari) has a fresh pipeline
+    try { video.load(); } catch (_) {}
+
+    var playPromise;
+    try {
+      playPromise = video.play();
+    } catch (err) {
+      showError();
+      return;
+    }
+
+    if (playPromise && typeof playPromise.then === 'function') {
+      playPromise.then(function () {
         if (playBtn) playBtn.style.display = 'none';
+        // Show controls after starting
+        video.controls = true;
         startCloseTimer();
       }).catch(function () {
-        if (playBtn) playBtn.style.display = 'block';
+        // If it still fails, try once more after 'canplay'
+        var onCanPlay = function () {
+          video.removeEventListener('canplay', onCanPlay);
+          try {
+            video.play().then(function () {
+              if (playBtn) playBtn.style.display = 'none';
+              video.controls = true;
+              startCloseTimer();
+            }).catch(showError);
+          } catch (_) { showError(); }
+        };
+        video.addEventListener('canplay', onCanPlay, { once: true });
       });
     } else {
+      // Older browsers: no promise returned
       if (playBtn) playBtn.style.display = 'none';
+      video.controls = true;
       startCloseTimer();
     }
   }
 
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
   if (modal) {
     modal.addEventListener('click', function (e) {
       if (e.target === modal) closeModal();
@@ -46,25 +79,29 @@ document.addEventListener('DOMContentLoaded', function () {
   if (playBtn) {
     playBtn.addEventListener('click', function (e) {
       e.stopPropagation();
-      playWithSound();
+      attemptPlayWithSound();
     });
   }
 
   if (video) {
-    video.addEventListener('ended', closeModal);
-    // If user presses native play, ensure sound and timer
+    video.addEventListener('error', showError);
+    video.addEventListener('stalled', showError);
+    video.addEventListener('abort', showError);
+    video.addEventListener('emptied', showError);
+
     video.addEventListener('play', function () {
-      video.muted = false;
-      video.controls = true;
+      hideError();
       if (playBtn) playBtn.style.display = 'none';
-      startCloseTimer();
     });
+    video.addEventListener('ended', closeModal);
   }
 
-  // Start paused, show overlay, do not autoplay
+  // Open modal, start paused (no autoplay)
   if (modal) modal.classList.add('open');
   if (video) {
-    video.pause();
-    video.controls = false; // only show after play
+    try { video.pause(); } catch (_) {}
+    video.controls = false;
+    hideError();
+    if (playBtn) playBtn.style.display = 'block';
   }
 });
