@@ -10,71 +10,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Estilos de la página -->
+  <!-- Estilos base (ahora desde archivo) -->
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Estilos del modal de video -->
   <style>
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-      padding: 1rem;
-    }
-    .modal.open {
-      display: flex;
-    }
-    .modal-content {
-      position: relative;
-      width: 100%;
-      max-width: 900px;
-      background: #000;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-    .modal video {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .modal-close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 40px;
-      height: 40px;
-      border: none;
-      border-radius: 20px;
-      background: rgba(0,0,0,0.6);
-      color: #fff;
-      font-size: 28px;
-      line-height: 1;
-      cursor: pointer;
-    }
-    .modal-close:hover {
-      background: rgba(0,0,0,0.8);
-    }
+    .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; }
+    .modal.open { display: flex; }
+    .modal-content { position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .modal video { display: block; width: 100%; height: auto; }
+    .modal-close { position: absolute; top: 8px; right: 8px; width: 40px; height: 40px; border: none; border-radius: 20px; background: rgba(0,0,0,0.6); color: #fff; font-size: 28px; line-height: 1; cursor: pointer; }
+    .modal-close:hover { background: rgba(0,0,0,0.8); }
   </style>
 </head>
 <body>
   <h1>Jefe/a Comercial - Talca</h1>
 
-  <!-- Contenedor para el botón del chatbot -->
   <div class="button-container">
-    <button id="Chatbot" onclick="location.href='chatbot/index.html'">
-      Chatea con esta vacante
-    </button>
+    <button id="Chatbot" onclick="location.href='chatbot/index.html'">Chatea con esta vacante</button>
   </div>
 
   <p><strong>Jornada Completa  |  Jefe Sección  |  Región Maule  |  Talca</strong></p>
-
   <p>¡En CCA nos apasiona crear experiencias para compartir juntos un mejor vivir!</p>
-
   <p>Estamos buscando a nuestro/a próximo/a <strong>Jefe/a Comercial</strong> para trabajar en nuestra oficina comercial en Talca.</p>
 
   <p><strong>Principales funciones del cargo:</strong></p>
@@ -96,7 +53,6 @@
   </ul>
 
   <p>Nuestro SER CCA nos inspira a trabajar con aceptación y respeto a las diferencias de las personas, promoviendo un entorno diverso e integrador, para así contribuir a un mejor vivir. Por esto, te agradecemos que nos compartas si necesitas adaptación en alguna etapa del proceso de postulación.</p>
-
   <p>¡Te invitamos a Ser CCA!</p>
 
   <p><strong>Perfil deseado:</strong></p>
@@ -109,58 +65,19 @@
   </ul>
 
   <p>Empleo inclusivo</p>
-
   <p><strong> Experiencia desde 2 años  |  Estudios mínimos: Universitaria  |  Graduado  |  Ingeniería Civil  |  Ingeniería Comercial</strong></p>
 
-  <!-- Modal de video (se abre al cargar la página) -->
+  <!-- Modal de video -->
   <div id="videoModal" class="modal open" role="dialog" aria-modal="true" aria-label="Video de introducción">
     <div class="modal-content">
       <button class="modal-close" aria-label="Cerrar">&times;</button>
-      <!-- Importante: el video está en la raíz del repositorio, por eso se usa ../ -->
       <video id="introVideo" autoplay muted playsinline preload="metadata">
-        <source src="../videomvp.m4v" type="video/mp4" />
+        <source src="../Videomvp.m4v" type="video/mp4" />
         Tu navegador no soporta video.
       </video>
     </div>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var modal = document.getElementById('videoModal');
-      var video = document.getElementById('introVideo');
-      var closeBtn = document.querySelector('.modal-close');
-
-      function closeModal() {
-        if (!modal) return;
-        modal.classList.remove('open');
-        if (video && !video.paused) {
-          try { video.pause(); } catch (e) {}
-        }
-      }
-
-      // Cierre por botón X
-      if (closeBtn) {
-        closeBtn.addEventListener('click', closeModal);
-      }
-
-      // Cierre al hacer click fuera del contenido
-      if (modal) {
-        modal.addEventListener('click', function (e) {
-          if (e.target === modal) {
-            closeModal();
-          }
-        });
-      }
-
-      // Cierre automático a los 40 segundos
-      var AUTO_CLOSE_MS = 40 * 1000;
-      setTimeout(closeModal, AUTO_CLOSE_MS);
-
-      // Cierre cuando termine el video (por si dura menos o más de 40s)
-      if (video) {
-        video.addEventListener('ended', closeModal);
-      }
-    });
-  </script>
+  <script src="main.js" defer></script>
 </body>
 </html>
