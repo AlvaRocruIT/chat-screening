@@ -1,74 +1,35 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Demo del proyecto "Chatea con la vacante"</title>
 
-  <!-- Fuente Montserrat desde Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #ffffff;
-      padding: 2em;
-      max-width: 700px;
-      margin: auto;
-      color: #2c2c2c;
-      line-height: 1.6;
-    }
-
-    h1 {
-      color: #1f1f1f;
-      font-weight: 400;
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      font-size: 1.05em;
-      margin-bottom: 1.5em;
-    }
-
-     h2 {
-      margin-top: 2em;
-      font-size: 1.2em;
-      font-weight: 600;
-    }
-    
-    /* Nuevo contenedor para los botones */
-    .button-container button {
-      width: 180px;         /* ancho fijo */
-      height: 60px;        
-      font-size: 0.7em;
-      font-weight: 500;
-      background-color: #ffffff;
-      color: #2c2c2c;
-      border: 1px solid #000;
-      border-radius: 0;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-
-      display: flex;        /* centra el texto dentro del botón */
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0;           /* eliminamos padding para mantener cuadrado exacto */
-    }
+    .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; }
+    .modal.open { display: flex; }
+    .modal-content { position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .video-wrapper { position: relative; }
+    .modal video { display: block; width: 100%; height: auto; background: #000; }
+    .modal-close { position: absolute; top: 8px; right: 8px; width: 40px; height: 40px; border: none; border-radius: 20px; background: rgba(0,0,0,0.6); color: #fff; font-size: 28px; line-height: 1; cursor: pointer; z-index: 3; }
+    .modal-close:hover { background: rgba(0,0,0,0.8); }
+    .modal-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border-radius: 45px; border: 1px solid #fff; background: rgba(255,255,255,0.95); color: #000; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 28px; z-index: 2; }
+    .modal-play:hover { background: #fff; }
+    .video-error { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; padding: 12px; font-size: 14px; display: none; z-index: 2; }
   </style>
 </head>
 <body>
   <h1>Analista de Compensaciones - Las Condes</h1>
   
   <!-- Contenedor para el botón del chatbot -->
-<div class="button-container">
-  <button id="Chatbot" onclick="location.href='chatbot/index.html'">
-    Chatea con esta vacante
-  </button>
-</div>
+  <div class="button-container">
+    <button id="Chatbot" onclick="location.href='chatbot/index.html'">Chatea con esta vacante</button>
+  </div>
   
   <p><strong>Jornada Completa  |  Analista  |  Región Metropolitana de Santiago  |  Las Condes</strong><br><br>
 ¡En CCA nos apasiona crear experiencias para compartir juntos un mejor vivir!<br><br>
@@ -95,5 +56,21 @@ Nuestro SER CCA nos inspira a trabajar con aceptación y respeto a las diferenci
   </ul><br>
 Empleo inclusivo</p><br><br>
 <strong> Estudios mínimos: Universitaria  |  Graduado  |  Ingeniería Civil  |  Ingeniería Comercial</strong>
+    
+ <div id="videoModal" class="modal open" role="dialog" aria-modal="true" aria-label="Video de introducción">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="video-wrapper">
+        <video id="introVideo" playsinline webkit-playsinline preload="metadata">
+          <source src="../videomvp.m4v" type="video/mp4" />
+          Tu navegador no soporta video.
+        </video>
+        <button id="overlayPlay" class="modal-play" aria-label="Reproducir video">▶</button>
+        <div id="videoError" class="video-error">No se pudo reproducir el video. Verifica formato/codec o abre el archivo en otra pestaña.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
