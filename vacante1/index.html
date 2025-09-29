@@ -68,12 +68,16 @@
   <p><strong> Experiencia desde 2 años  |  Estudios mínimos: Universitaria  |  Graduado  |  Ingeniería Civil  |  Ingeniería Comercial</strong></p>
 
   <!-- Modal de video -->
-<video id="introVideo" controls autoplay muted playsinline preload="auto">
-  <source src="../videomvp.m4v" type="video/mp4" />
-  Tu navegador no soporta video.
-</video>
+  <div id="videoModal" class="modal open" role="dialog" aria-modal="true" aria-label="Video de introducción">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Cerrar">&times;</button>
+      <video id="introVideo" controls autoplay muted playsinline preload="auto">
+        <source src="../videomvp.m4v" type="video/x-m4v" />
+        <source src="../videomvp.m4v" type="video/mp4" />
+        Tu navegador no soporta video.
+      </video>
     </div>
-</div>
+  </div>
   
   <script src="main.js" defer></script>
 </body>
