@@ -73,10 +73,10 @@ async function sendMessage() {
       throw new Error(detail);
     }
 
-    const reply =
-    (data && (data.respuesta || data.reply || data.message || data.text)) ||
-    raw ||
-    "No se recibió respuesta.";
+  const reply =
+  (data && (data.respuesta || data.output || data.reply || data.message || data.text)) ||
+  raw ||
+  "No se recibió respuesta.";
 
     const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
     currentResponse.value = reply;
