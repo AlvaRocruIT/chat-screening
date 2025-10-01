@@ -57,7 +57,7 @@ async function sendMessage() {
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
-  const payload = { text: input };
+  const payload = { text: input, vacante: "vacante2" };
   let endpoint = getPreferredEndpoint();
 
   try {
