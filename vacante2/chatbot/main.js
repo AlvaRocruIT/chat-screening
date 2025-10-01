@@ -7,6 +7,19 @@ const sendBtn = document.getElementById("sendBtn");
 const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/chat-screening";
 const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/chat-screening";
 
+function getVacanteIdFromPath() {
+  const parts = window.location.pathname.split("/").filter(Boolean);
+  const explicit =
+    parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
+    (parts.includes("vacante1") ? "vacante1" : null) ||
+    (parts.includes("vacante2") ? "vacante2" : null);
+  return (
+    new URLSearchParams(location.search).get("vacante") ||
+    explicit ||
+    "vacante1"
+  );
+}
+
 function getPreferredEndpoint() {
   const params = new URLSearchParams(window.location.search);
   const env = (params.get("env") || params.get("mode") || "").toLowerCase();
@@ -26,7 +39,9 @@ async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
     });
     const raw = await response.text();
     let data = null;
-    try { data = JSON.parse(raw); } catch (_) {}
+    try {
+      data = JSON.parse(raw);
+    } catch (_) {}
     return { response, data, raw };
   } finally {
     clearTimeout(timeoutId);
@@ -37,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   historyBox.value = localStorage.getItem("chatHistory") || "";
   historyBox.style.display = "none";
 
-  // Enter = enviar, Shift+Enter = nueva línea
   inputBox.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -57,7 +71,7 @@ async function sendMessage() {
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
-  const payload = { text: input };
+  const payload = { text: input, vacante: getVacanteIdFromPath() };
   let endpoint = getPreferredEndpoint();
 
   try {
@@ -74,11 +88,17 @@ async function sendMessage() {
     }
 
     const reply =
-    (data && (data.respuesta || data.reply || data.message || data.text)) ||
-    raw ||
-    "No se recibió respuesta.";
+      (data &&
+        (data.respuesta ||
+          data.output ||
+          data.reply ||
+          data.message ||
+          data.text)) ||
+      raw ||
+      "No se recibió respuesta.";
 
-    const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 ÁlvaroBot: ${reply}\n`;
+    const updatedHistory =
+      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
     currentResponse.value = reply;
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
@@ -98,8 +118,9 @@ async function sendMessage() {
       hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
     }
 
-    const fallback = `Ups, algo no salió bien. ${hint}`.trim();
-    const updatedHistory = previous + `\n👤 Tú: ${input}\n🤖 ÁlvaroBot: ${fallback}\n`;
+    const fallback = `Hmm... algo no salió bien 🤔. ${hint}`.trim();
+    const updatedHistory =
+      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${fallback}\n`;
     currentResponse.value = fallback;
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
@@ -115,6 +136,3 @@ function toggleHistory() {
   historyBox.style.display = isHidden ? "block" : "none";
   if (btn) btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
 }
-
-window.sendMessage = sendMessage;
-window.toggleHistory = toggleHistory;
