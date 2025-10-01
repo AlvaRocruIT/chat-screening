@@ -1,0 +1,473 @@
+{
+  "name": "chat-screening",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{$json.compiledContext}}",
+        "options": {
+          "systemMessage": "Actúas como un asistente tipo chat interactivo que representa al reclutador. Usa SOLO el CONTEXTO – FUENTES para hechos. La “Descripción del cargo” es contexto NO factual (solo tono/enfoque).\n\nReglas:\nUsa SOLO el CONTEXTO – FUENTES. No inventes.\nSi [SCORE] == 0: pide UNA aclaración breve (p. ej.: “¿Qué aspecto de esta vacante te interesa: conocimiento de la empresa, cultura o cargo?”).\nSi [SCORE] >= 1: responde usando el contexto; si faltan datos, di: “No encuentro esa información en mis fuentes.”\nEstilo: español claro y cercano; 3–6 líneas o viñetas breves; sin prefacios ni meta‑comentarios.\nResponde solo texto plano.",
+          "returnIntermediateSteps": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        1520,
+        96
+      ],
+      "id": "e0bf89d9-94e9-465b-b181-2385c26b1377",
+      "name": "AI Agent",
+      "alwaysOutputData": true,
+      "retryOnFail": false,
+      "notesInFlow": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.respuesta }}",
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "https://alvarocruit.github.io"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST, OPTIONS"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        2048,
+        96
+      ],
+      "id": "1be2dfbc-3c11-4877-a7de-cd48c38a9fd5",
+      "name": "Respond to Webhook",
+      "alwaysOutputData": true,
+      "retryOnFail": false,
+      "notesInFlow": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {
+          "maxTokens": 250,
+          "responseFormat": "text",
+          "temperature": 0.2
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1520,
+        288
+      ],
+      "id": "ed105fb7-82b6-4897-9662-59a28e412f18",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "eH4hNwEbYrV6aQkQ",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "chat-screening",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "https://alvarocruit.github.io",
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "https://alvarocruit.github.io"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST, OPTIONS"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        288,
+        96
+      ],
+      "id": "ac101b86-d65f-41e1-81e2-45ac530e19f7",
+      "name": "Webhook",
+      "webhookId": "4585f62e-6fb2-4ab0-aded-61d567a9a2d4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45c6b85e-9d23-4e27-8f0f-6cfcd57cadc7",
+              "name": "text",
+              "value": "={{ $json.body.text }}",
+              "type": "string"
+            },
+            {
+              "id": "6b452802-b48d-4273-a305-dfe36d0e46c1",
+              "name": "vacante",
+              "value": "={{$json.body?.vacante || ''}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        496,
+        96
+      ],
+      "id": "285e182b-4031-4b49-9c88-6d9dcedfa963",
+      "name": "Carry Text"
+    },
+    {
+      "parameters": {
+        "content": "### Query Workflow\n \nMain one\n(Working on it)",
+        "height": 80,
+        "width": 192
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -112,
+        96
+      ],
+      "typeVersion": 1,
+      "id": "5bcf9b71-8ae1-41be-be5e-eca77f8f20fd",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/AlvaRocruIT/chat-screening/main/data/qa.json",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n  \"Accept\": \"application/json\",\n  \"User-Agent\": \"n8n\"\n}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        16
+      ],
+      "id": "85bfde91-7621-4e10-a1f6-5829af9fd9db",
+      "name": "Fetch FAQ"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6aa02597-6cbd-479e-9de4-5d22167bf99f",
+              "name": "compiledContext",
+              "value": "= {{ '[Q&A]\\n' + (($node['Select Q&A'].json.replies || []).map((r,i)=>'Q'+(i+1)+': '+r.q+'\\nA'+(i+1)+': '+r.a).join('\\n\\n') || 'Sin coincidencias con respuesta.') + '\\n\\n[EXTRACTOS PDF]\\n' + (($node['Rank Chunks'].json.topChunks || []).map((c,i)=>'P'+(i+1)+' ('+c.source+'): '+c.text).join('\\n\\n') || 'Sin extractos relevantes.') + '\\n\\n[PREGUNTA]\\n' + ($node['Select Q&A'].json.question || '') + '\\n\\n[SCORE]\\n' + String($node['Select Q&A'].json.topScore || 0) }}",
+              "type": "string"
+            },
+            {
+              "id": "541b47b3-9567-4d11-b130-f99741312650",
+              "name": "vacanteContext",
+              "value": "={{ $json.vacante || \"vacante1\" }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1344,
+        96
+      ],
+      "id": "faf860a8-f850-4aa0-8960-a83a91b1c188",
+      "name": "Build context"
+    },
+    {
+      "parameters": {
+        "jsCode": "const question = String($('Carry Text').item.json.text || '').trim();\n\nfunction norm(s){ return String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase(); }\nfunction toks(s){ return norm(s).split(/[^a-z0-9]+/).filter(Boolean); }\nconst stop = new Set(['de','la','el','y','en','a','un','una','para','que','con','los','las','del','al','por','se','es','lo','mi','su','tu','como','sobre','cual','donde','cuando']);\nconst qTokens = toks(question).filter(t => !stop.has(t));\nconst qSet = new Set(qTokens);\n\n// Flatten input whether it’s array, object, or raw string\nconst inputs = $input.all();\nlet faqs = [];\nfor (const it of inputs) {\n  let j = it.json;\n  if (typeof j === 'string') { try { j = JSON.parse(j); } catch(_) {} }\n  if (Array.isArray(j)) faqs.push(...j);\n  else if (Array.isArray(j?.data)) faqs.push(...j.data);\n  else if (j && (j.q !== undefined || j.a !== undefined)) faqs.push(j);\n}\n\nfunction score(it){\n  const merged = `${it.q || ''} ${it.a || ''}`;\n  let s = 0;\n  for (const t of toks(merged)) if (qSet.has(t)) s++;\n  const nq = norm(question), nm = norm(merged);\n  if (nq.length >= 8 && nm.includes(nq)) s += 3;\n  return s;\n}\n\nconst ranked = faqs.map(it => ({...it, _score: score(it)}))\n  .sort((a,b)=>b._score - a._score)\n  .slice(0,5);\n\nconst replies = ranked.filter(r => String(r.a||'').trim()).slice(0,3);\nreturn [{ json: { question, replies, topScore: (ranked[0]?._score)||0 } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        928,
+        16
+      ],
+      "id": "f76b6126-06c3-47bd-812f-34e85541b1c9",
+      "name": "Select Q&A"
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/AlvaRocruIT/chat-screening/main/data/chunks.json",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{ \"Accept\": \"application/json\", \"User-Agent\": \"n8n\" }",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        176
+      ],
+      "id": "6ece617d-7d1b-4c87-8d01-22c8216a0911",
+      "name": "Fetch Chunks"
+    },
+    {
+      "parameters": {
+        "jsCode": "const question = String($('Carry Text').item.json.text || '').trim();\n\nfunction norm(s){ return String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase(); }\nfunction toks(s){ return norm(s).split(/[^a-z0-9]+/).filter(Boolean); }\n\nconst stop = new Set(['de','la','el','y','en','a','un','una','para','que','con','los','las','del','al','por','se','es','lo','mi','su','tu','como','sobre','cual','donde','cuando']);\nconst qTokens = toks(question).filter(t => !stop.has(t));\nconst qSet = new Set(qTokens);\nconst qNorm = norm(question);\n\nfunction getText(c){ return String(c?.text ?? c?.content ?? c?.body ?? c?.snippet ?? ''); }\n\n// Flatten any chunks shape\nconst inputs = $input.all();\nlet chunks = [];\nfor (const it of inputs) {\n  let j = it.json;\n  if (typeof j === 'string') { try { j = JSON.parse(j); } catch(_) {} }\n  if (Array.isArray(j)) chunks.push(...j);\n  else if (Array.isArray(j?.chunks)) chunks.push(...j.chunks);\n  else if (Array.isArray(j?.data)) chunks.push(...j.data);\n  else if (j && (j.text || j.content || j.body || j.snippet)) chunks.push(j);\n}\n\n// Scoring\nfunction scoreChunk(c){\n  const t = getText(c);\n  const tn = norm(t);\n  let s = 0;\n  // token overlap\n  for (const tok of toks(tn)) if (qSet.has(tok)) s++;\n  // whole-query substring bonus\n  if (qNorm.length >= 6 && tn.includes(qNorm)) s += 5;\n  return { c, s };\n}\n\nlet scored = chunks.map(scoreChunk).sort((a,b)=>b.s-a.s);\n\n// Fallback if all zero: simple keyword count\nif (!scored.length || scored[0].s === 0) {\n  function kwCount(t){\n    const tn = norm(t);\n    let s = 0;\n    for (const tok of qTokens) { if (!tok) continue; const re = new RegExp(`\\\\b${tok}\\\\b`, 'g'); s += (tn.match(re)||[]).length; }\n    return s;\n  }\n  scored = chunks\n    .map(c => ({ c, s: kwCount(getText(c)) }))\n    .sort((a,b)=>b.s-a.s);\n}\n\nconst top = scored.slice(0,5).map(({c,s},i) => ({\n  id: c.id ?? `chunk-${i}`,\n  source: c.source ?? c.path ?? 'pdf',\n  text: getText(c).slice(0,800),\n  _score: s\n}));\n\nreturn [{ json: { topChunks: top } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        928,
+        176
+      ],
+      "id": "d258fa75-e399-4d25-8ebc-8edde153cc38",
+      "name": "Rank Chunks"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {
+          "clashHandling": {
+            "values": {
+              "resolveClash": "preferInput1",
+              "mergeMode": "shallowMerge"
+            }
+          },
+          "includeUnpaired": true
+        }
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1136,
+        96
+      ],
+      "id": "eec4d776-7b12-46f3-822c-90e9efd32953",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "content": "## I'm a note:\n\n$body = @{ text = \"rol\" } | ConvertTo-Json\nInvoke-RestMethod -Method POST -Uri 'https://alvarovargas.app.n8n.cloud/webhook-test/chat-screening' -ContentType 'application/json' -Body $"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        816,
+        448
+      ],
+      "typeVersion": 1,
+      "id": "ec639454-4520-4353-b4af-4c3c4a7662ca",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4d4cd2f9-3695-4fcf-8c47-0a4dd29b3eef",
+              "name": "respuesta",
+              "value": "=={{ $json.respuesta || $json.output || '' }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1872,
+        96
+      ],
+      "id": "e43bc7b1-ddfd-4258-a57c-96a838ec5add",
+      "name": "Normalize output"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Normalize output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Carry Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Carry Text": {
+      "main": [
+        [
+          {
+            "node": "Fetch Chunks",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Fetch FAQ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch FAQ": {
+      "main": [
+        [
+          {
+            "node": "Select Q&A",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build context": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select Q&A": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Chunks": {
+      "main": [
+        [
+          {
+            "node": "Rank Chunks",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Build context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rank Chunks": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Normalize output": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2f9fa52d-5c62-41aa-b0da-7440726c6a6a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b94a1badad5c74bb198fcbd6d858de30c64abe740262d6937ab4715e01bb04ae"
+  },
+  "id": "1d1Gn8zekt3k68gf",
+  "tags": []
+}
+
