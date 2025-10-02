@@ -52,3 +52,21 @@ h2 {
   padding: 0;
 }
 .button-container button:hover { background-color: #444; }
+
+html, body { height: 100%; }
+body { margin: 0; } /* keep content position unchanged */
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: 2in;
+  background: #f47b29;
+  pointer-events: none; /* don’t block clicks */
+  z-index: 1;           /* sits above background */
+}
+
+.page {
+  position: relative;
+  z-index: 2;           /* ensure content is clickable above the bar if needed */
+}
