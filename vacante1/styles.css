@@ -30,19 +30,23 @@ h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
+
 p {
   font-size: 1.05em;
   margin-bottom: 1.5em;
+}
 
-  h1 { text-align: center; }
+/* Center title */
+h1 { text-align: center; }
 
+/* Center the chatbot button */
 .button-container {
   display: flex;
   justify-content: center;
 }
 
+/* Center the meta line */
 .meta-line { text-align: center; }
-}
 
 h2 {
   margin-top: 2em;
