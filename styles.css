@@ -39,11 +39,6 @@ p {
 /* Center title */
 h1 { text-align: center; }
 
-/* Center the chatbot button */
-.button-container {
-  display: flex;
-  justify-content: center;
-}
 
 /* Center the meta line */
 .meta-line { text-align: center; }
@@ -93,3 +88,18 @@ h2 {
 }
 
 .button-container button:hover { background-color: #444; }
+
+/* Stack buttons vertically on mobile */
+@media (max-width: 640px) {
+  .button-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .button-container button {
+    width: 100%;
+    height: auto;        /* no fixed square on mobile */
+    min-height: 64px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+}
