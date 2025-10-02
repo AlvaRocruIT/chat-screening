@@ -44,9 +44,10 @@ h1 { text-align: center; }
 .meta-line { text-align: center; }
 
 h2 {
+  text-align: center;
   margin-top: 2em;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Normalize buttons on mobile and apply styles */
