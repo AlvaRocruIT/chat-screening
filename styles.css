@@ -19,7 +19,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   padding: 2em;
-  max-width: 700px;
+  max-width: 400px;
   margin: auto;
   color: #2c2c2c;
   line-height: 1.6;
@@ -69,7 +69,7 @@ h2 {
 
 
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.05em;
   line-height: 1.25;
 
