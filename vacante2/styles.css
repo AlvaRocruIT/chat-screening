@@ -1,4 +1,4 @@
-/* vacante2/styles.css */
+/* vacante1/styles.css */
 
 /* Banner específico (si lo usas en esta página) */
 .banner {
@@ -14,7 +14,7 @@
   object-fit: cover;
 }
 
-/* Base de la página
+/* Base de la página (idéntica a vacante2) */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
@@ -54,7 +54,7 @@ h2 {
   font-weight: 600;
 }
 
-/* Botón del chatbot */
+/* Botón del chatbot (idéntico a vacante2) */
 .button-container button {
   width: 180px;
   height: 60px;
