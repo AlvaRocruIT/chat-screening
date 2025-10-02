@@ -33,24 +33,26 @@
       margin-bottom: 1.5em;
     }
 
-     h2 {
+    h2 {
       margin-top: 2em;
       font-size: 1.2em;
       font-weight: 600;
+      text-align: center; /* centrado del subtítulo */
     }
 
-    /* Nuevo contenedor para los botones */
+    /* Contenedor para los botones */
     .button-container {
-      display: flex;        /* coloca los botones en fila */
-      gap: 1cm;             /* separación de 1 cm entre botones */
-      flex-wrap: wrap;      /* en pantallas pequeñas baja a la siguiente fila */
-      margin-top: 1em;      /* un poco de espacio sobre los botones */
+      display: flex;
+      gap: 1cm;
+      flex-wrap: wrap;
+      margin-top: 1em;
+      justify-content: center; /* centra los botones */
     }
 
     /* Botones cuadrados y centrados */
     .button-container button {
-      width: 180px;         /* ancho fijo */
-      height: 180px;        /* igual al ancho para cuadrado */
+      width: 180px;
+      height: 180px;
       font-size: 0.9em;
       font-weight: 500;
       background-color: #2c2c2c;
@@ -60,11 +62,11 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
 
-      display: flex;        /* centra el texto dentro del botón */
+      display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 0;           /* eliminamos padding para mantener cuadrado exacto */
+      padding: 0;
     }
 
     .button-container button:hover {
@@ -79,7 +81,6 @@
 
   <h2>Trabaja con nosotros</h2>
 
-  <!-- Nuevo contenedor para los botones -->
   <div class="button-container">
     <button id="Talca" onclick="location.href='vacante1/index.html'">Jefe/a Comercial - Talca</button>
     <button id="LasCondes" onclick="location.href='vacante2/index.html'">Analista de Compensaciones - Las Condes</button>
