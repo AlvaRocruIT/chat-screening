@@ -62,10 +62,11 @@ h2 {
   -webkit-appearance: none;
   appearance: none;
   box-sizing: border-box;
-
   width: 180px;
-  height: 180px;
+  aspect-ratio: 1 / 1;   /* square */
+  height: auto;          /* let aspect-ratio control height */
   padding: 16px;
+
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -87,9 +88,7 @@ h2 {
   touch-action: manipulation;
 }
 
-.button-container button:hover { background-color: #444; }
-
-/* Stack buttons vertically on mobile */
+/* Mobile: full-width square */
 @media (max-width: 640px) {
   .button-container {
     flex-direction: column;
@@ -97,9 +96,13 @@ h2 {
   }
   .button-container button {
     width: 100%;
-    height: auto;        /* no fixed square on mobile */
-    min-height: 64px;
+    aspect-ratio: 1 / 1;  /* stays square */
+    height: auto;
     padding: 16px;
-    box-sizing: border-box;
   }
+}
+
+.button-container button:hover {
+  background-color: #444;
+  color: #fff;
 }
