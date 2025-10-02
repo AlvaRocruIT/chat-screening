@@ -78,6 +78,9 @@ button:hover {
   margin-top: 0.5em;
 }
 
+#userInput { display: block; }
+#sendBtn   { display: block; margin-top: 0.75em; }
+
 /* Optional: widen on small screens */
 @media (max-width: 640px) {
   textarea { width: 100%; }
