@@ -244,8 +244,8 @@ h1 {
 /* Subtítulo centrado */
 h2 {
   margin-top: 2em;
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.4em;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -270,7 +270,7 @@ h2 {
 .button-container button {
   
   font-family: 'Montserrat', sans-serif; /* ensure font */
-  font-weight: 600;
+  font-weight: 400;
    padding: 16px;            /* space from edges */
   width: 180px;
   height: 180px;
