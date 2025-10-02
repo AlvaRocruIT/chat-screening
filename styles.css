@@ -52,15 +52,3 @@ h2 {
   padding: 0;
 }
 .button-container button:hover { background-color: #444; }
-
-/* Full-height orange bar flush to right edge */
-html, body { height: 100%; }
-body { margin: 0; padding-right: 2in; } /* keep content clear of bar */
-body::after {
-  content: "";
-  position: fixed;
-  top: 0; right: 0; bottom: 0;
-  width: 2in;
-  background: #f47b29;
-  pointer-events: none;
-}
