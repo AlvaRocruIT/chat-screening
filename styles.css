@@ -51,29 +51,3 @@ h2 {
   text-align: center;
   padding: 0;
 }
-
-/* Flex layout: content + fixed right sidebar */
-.layout {
-  min-height: 100vh;
-  display: flex;
-  background: #fff;
-}
-
-/* Content area: flexible, centered within its space */
-.content {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center; /* centers the inner container */
-}
-.content-inner {
-  width: 100%;
-  max-width: 700px;       /* keep your current max width */
-  padding: 2em;           /* keep your current padding */
-  box-sizing: border-box;
-}
-
-/* Right sidebar: fixed 2in, orange, full height */
-.sidebar {
-  flex: 0 0 1.5in;
-  background: #f47b29;
-}
