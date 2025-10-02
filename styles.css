@@ -106,3 +106,27 @@ h2 {
   background-color: #444;
   color: #fff;
 }
+
+/* Mobile tuning: smaller squares, bigger text, centered */
+@media (max-width: 640px) {
+  body { padding: 1.25em; }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; }
+  p  { font-size: 1rem; }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .button-container button {
+    width: min(80vw, 240px);   /* cap square size */
+    aspect-ratio: 1 / 1;       /* keep square */
+    height: auto;
+    padding: 12px;
+    font-size: clamp(1rem, 3.5vw, 1.125rem);
+    line-height: 1.3;
+  }
+}
