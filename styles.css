@@ -50,6 +50,10 @@ h2 {
 
 /* Botones cuadrados */
 .button-container button {
+  
+  font-family: 'Montserrat', sans-serif; /* ensure font */
+  font-weight: 600;
+   padding: 16px;            /* space from edges */
   width: 180px;
   height: 180px;
   font-size: 1em;
@@ -66,4 +70,10 @@ h2 {
   text-align: center;
   margin: 0.5;
   padding: 0;
+  transition: background-color .25s ease, color .25s ease;
+}
+
+.button-container button:hover {
+  background-color: #444;   /* highlight on hover */
+  color: #fff;
 }
