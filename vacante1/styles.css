@@ -33,7 +33,17 @@ h1 {
 p {
   font-size: 1.05em;
   margin-bottom: 1.5em;
+
+  h1 { text-align: center; }
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
+
+.meta-line { text-align: center; }
+}
+
 h2 {
   margin-top: 2em;
   font-size: 1.2em;
