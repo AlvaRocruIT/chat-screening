@@ -26,7 +26,7 @@ h1 {
 /* Subtítulo centrado */
 h2 {
   margin-top: 2em;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 400;
   text-align: center;
 }
@@ -45,7 +45,7 @@ h2 {
   gap: 1cm;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 /* Botones cuadrados (texto más grande, padding, hover) */
