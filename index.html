@@ -77,11 +77,26 @@
 
     .button-container button:hover {
       background-color: #444;
+
+      /* Right orange bar, 2 inches wide, full content height */
+.page {
+  position: relative;
+  padding-right: 2in;  /* keep content clear of the bar */
+}
+.page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;          /* stretch to bottom of content */
+  right: 0;
+  width: 2in;
+  background: #f47b29; /* orange */
+}
+      
     }
   </style>
 </head>
 <body>
-  <div class="page">
   <h1>Demo proyecto Chatea con la Vacante</h1>
   <p>Hola <strong>Ramiro!</strong><br>
   <span class="justify">Nuevamente muchas gracias por esto. Quise sumergirme en el desafío desde ya, te dejo un MVP para ir probando y que me des tu feedback! La idea es sacar algo funcional y que se destaque como un facilitador de necesidades organizacionales para la adquisición de su talento. <strong>Ojalá te guste ;) </strong></span>
@@ -92,7 +107,6 @@
   <div class="button-container">
     <button id="Talca" onclick="location.href='vacante1/index.html'">Jefe/a Comercial - Talca</button>
     <button id="LasCondes" onclick="location.href='vacante2/index.html'">Analista de Compensaciones - Las Condes</button>
-  </div>
   </div>
 </body>
 </html>
