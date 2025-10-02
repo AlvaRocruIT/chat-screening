@@ -1,4 +1,15 @@
-/* Justify only the paragraph after the greeting */
+/* Typography and layout */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  padding: 2em;
+  max-width: 700px;
+  margin: auto;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* Greeting second line justify */
 .justify {
   display: block;
   text-align: justify;
@@ -10,23 +21,23 @@ h2 {
   margin-top: 2em;
   font-size: 1.2em;
   font-weight: 600;
-  text-align: center;  /* centra el subtítulo */
+  text-align: center;
 }
 
-/* Contenedor específico para tus botones */
+/* Botonera centrada */
 .button-container {
-  display: flex;        
-  gap: 1cm;             
-  justify-content: center;  /* centra los botones horizontalmente */
-  flex-wrap: wrap;      
-  margin-top: 1em;      /* espacio sobre los botones */
+  display: flex;
+  gap: 1cm;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
 }
 
-/* Botones cuadrados, centrados */
+/* Botones cuadrados */
 .button-container button {
-  width: 180px;         
-  height: 180px;        
-  font-size: 0.8em;
+  width: 180px;
+  height: 180px;
+  font-size: 0.9em;
   font-weight: 500;
   background-color: #2c2c2c;
   color: #ffffff;
@@ -34,29 +45,23 @@ h2 {
   border-radius: 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
-  display: flex;        
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0;           
+  padding: 0;
 }
+.button-container button:hover { background-color: #444; }
 
-.button-container button:hover {
-  background-color: #444;
-}
-
-/* Right orange bar, 2 inches wide, full content height */
+/* Right orange bar for this page */
 .page {
   position: relative;
-  padding-right: 2in;  /* keep content clear of the bar */
+  padding-right: 2in;
 }
 .page::after {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;          /* stretch to bottom of content */
-  right: 0;
+  top: 0; right: 0; bottom: 0;
   width: 2in;
-  background: #f47b29; /* orange */
+  background: #f47b29;
 }
