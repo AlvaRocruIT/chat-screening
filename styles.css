@@ -20,6 +20,12 @@ p {
   margin-bottom: 1.5em;
 }
 
+p .justify {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Center title */
 h1 { text-align: center; }
 
