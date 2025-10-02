@@ -45,3 +45,18 @@ h2 {
 .button-container button:hover {
   background-color: #444;
 }
+
+/* Right orange bar, 2 inches wide, full content height */
+.page {
+  position: relative;
+  padding-right: 2in;  /* keep content clear of the bar */
+}
+.page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;          /* stretch to bottom of content */
+  right: 0;
+  width: 2in;
+  background: #f47b29; /* orange */
+}
