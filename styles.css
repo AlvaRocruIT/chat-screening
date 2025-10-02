@@ -52,16 +52,3 @@ h2 {
   padding: 0;
 }
 .button-container button:hover { background-color: #444; }
-
-/* Right orange bar for this page */
-.page {
-  position: relative;
-  padding-right: 2in;
-}
-.page::after {
-  content: "";
-  position: absolute;
-  top: 0; right: 0; bottom: 0;
-  width: 2in;
-  background: #f47b29;
-}
