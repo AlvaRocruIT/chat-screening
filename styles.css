@@ -1,3 +1,10 @@
+/* Justify only the paragraph after the greeting */
+.justify {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Subtítulo centrado */
 h2 {
   margin-top: 2em;
