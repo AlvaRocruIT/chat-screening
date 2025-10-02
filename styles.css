@@ -1,3 +1,44 @@
+/* Typography and layout */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  padding: 2em;
+  max-width: 700px;
+  margin: auto;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #000000;
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Greeting second line justify */
+.justify {
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Subtítulo centrado */
+h2 {
+  margin-top: 2em;
+  font-size: 1.4em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button-text {
+   font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  margin: auto;
+  color: #2c2c2c;
+  line-height: 1;
+}
+
 /* Botonera centrada */
 .button-container {
   display: flex;
