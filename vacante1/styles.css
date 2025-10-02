@@ -56,6 +56,8 @@ h2 {
 
 /* Botón del chatbot (idéntico a vacante2) */
 .button-container button {
+  margin-top: 2.5em;
+  margin-bottom: 2em;
   width: 180px;
   height: 60px;
   font-size: 0.7em;
