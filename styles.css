@@ -2,7 +2,8 @@
 
 /* Banner específico (si lo usas en esta página) */
 .banner {
-  max-width: 700px;
+  max-height: 100%
+  width: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -18,7 +19,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   padding: 2em;
-  max-width: 400px;
+  max-width: 700px;
   margin: auto;
   color: #2c2c2c;
   line-height: 1.6;
