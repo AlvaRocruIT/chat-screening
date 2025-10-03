@@ -86,3 +86,15 @@ button:hover {
 @media (max-width: 640px) {
   textarea { width: 100%; }
 }
+
+/* Keep chat textboxes within screen width */
+#userInput,
+#currentResponse,
+#historyBox {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
