@@ -31,10 +31,12 @@ h1 {
   margin-bottom: 0.5em;
   text-align: center;
 }
+
 p {
   font-size: 1.05em;
   margin-bottom: 1.5em;
 }
+
 h2 {
   margin-top: 2em;
   font-size: 1.2em;
@@ -44,14 +46,16 @@ h2 {
 /* Button container (centred) */
 .button-container {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  .meta-line { text-align: center; }
   flex-wrap: wrap;
   margin-top: 1em;
 }
 
 /* Chatbot button */
 .button-container button {
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 180px;
   height: 60px;
   font-size: 0.8em;
