@@ -1,3 +1,19 @@
+/* vacante1/styles.css */
+
+/* Banner específico (si lo usas en esta página) */
+.banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.banner video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 /* Base */
 body {
   font-family: 'Montserrat', sans-serif;
