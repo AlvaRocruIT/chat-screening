@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "<b><big> ✒️ Chat-Screening</b></big>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvaRocruIT/chat-screening.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlvaRocruIT/chat-screening/issues"
+  },
+  "homepage": "https://github.com/AlvaRocruIT/chat-screening#readme",
+  "dependencies": {
+    "pdf-parse": "^2.1.7"
+  }
+}
