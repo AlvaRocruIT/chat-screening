@@ -129,7 +129,7 @@
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0007",
-        "text": "Los menores precios promedio en CLP se explicaron por: (i) una contracción de 21,5% en el segmento de Operación de Negocios Internacionales, impulsado por la devaluación (al cierre del período) de 356,2% del peso argentino (“ARS”) frente al USD, parcialmente compensada por iniciativas de gestión de ingresos, (ii) una disminución del 0,3% en el Segmento de operación Vinos, causada principalmente por un efecto mix negativo en el portafolio debido a una fuerte caída en las exportaciones, parcialmente compensado por iniciativas de gestión de ingresos en nuestros mercados domésticos."
+        "text": "Los menores precios promedio en CLP se explicaron por: (i) una contracción de 21,5% en el segmento de Operación de Negocios Internacionales, impulsado por la devaluación (al cierre del período) de 356,2% del peso argentino (“ARS”) frente al USD, parcialmente compensada por iniciativas de gestión de ingresos, (ii) una disminución del 0,3% en el Segmento de operación Vinos, causada principalmente por un efecto mix negativo en el portafolio debido a una fuerte caída en las exportaciones, parcialmente compensado por iniciativas de gestión de ingresos en nuestros mercados domésticos.",
         "semantic_tags": ["resultados_financieros", "ingresos_2023", "segmentos_operativos", "variación_volúmenes"],
         "context_type": "desempeño_financiero",
         "keywords": ["ingresos", "volúmenes", "precios_promedio", "Segmento_Chile", "Negocios_Internacionales", "Vinos", "exportaciones"],
@@ -2165,6 +2165,7 @@
     }
 ]
 }
+
 
 
 
