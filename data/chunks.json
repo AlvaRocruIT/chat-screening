@@ -275,76 +275,137 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0013",
         "text": "En la misma línea, Amstel mantuvo su patrocinio de la Copa Libertadores. Imperial ejecutó una campaña 360 y diversas activaciones a nivel nacional con la plataforma Rugby, aprovechando la fiebre del Mundial. En cuanto a las marcas regionales, llevamos a cabo la segunda edición del Norte Rock, un evento que atrajo a más de 15,000 personas en la provincia de Tucumán. Miller consolidó su patrocinio con la fiesta Bresh, ofreciendo promociones para que los consumidores tuvieran la oportunidad de viajar a dicha fiesta en diferentes partes del mundo. Sidras participó en diversas activaciones como patrocinador del tenis (Copa Davis, ATP) y el polo.",
+        "semantic_tags": ["patrocinios", "activaciones_marketing", "eventos_masivos", "campañas_comerciales"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Amstel", "Copa_Libertadores", "Imperial", "Rugby", "Mundial", "Norte_Rock", "Tucumán", "Miller", "Bresh", "Sidras", "Copa_Davis", "ATP", "polo"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0013",
         "text": "En Bolivia, en la categoría de cervezas, lanzamos al mercado cerveza Amstel, marca reconocida internacionalmente, producida por BBO bajo estrictos estándares de calidad en sus presentaciones de latas 310 ml y 473 ml, y en botellas de vidrio con 300 ml no retornable y 620 ml retornable. Amstel ha entrado con mucha fuerza al mercado cervecero boliviano gracias a su campaña “Bienvenidos al sabor refrescante de Ámsterdam”. Este lanzamiento ha sido un hito significativo en nuestra estrategia de portafolio, reafirmando nuestro compromiso con la excelencia y la satisfacción del consumidor en Bolivia. Por otro lado, en septiembre, la marca Cordillera renovó su imagen en todas sus presentaciones. Este esfuerzo ha sido fundamental para posicionar la marca y aumentar su presencia en el mercado occidental de Bolivia.",
+        "semantic_tags": ["lanzamientos_productos", "estrategia_portafolio", "renovación_imagen", "mercado_internacional"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Amstel", "BBO", "latas", "botellas", "campaña_Bienvenidos_Ámsterdam", "Cordillera", "Bolivia", "posicionamiento_marca", "satisfacción_consumidor"],
+        "relevance_score": 0.90
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0013",
         "text": "En la categoría malta, durante enero del 2023, presentamos al mercado boliviano la nueva variedad de Malta Real: Malta Real sabor chocolate, que llega para dinamizar la industria de las maltas. Esta bebida, con la campaña “Un toque de chocolate, el sabor que te encanta”, ha cautivado a los amantes del chocolate y se ha convertido en un éxito en el mercado boliviano. La combinación del sabor exquisito del chocolate con la calidad y distinción que caracterizan a Malta Real ha sido altamente valorada por los consumidores. Continuando con nuestra estrategia de expansión, lanzamos al mercado boliviano el producto Full Mendocina, una bebida energizante carbonatada con cafeína en una presentación de 600 ml.",
+        "semantic_tags": ["lanzamientos_productos", "estrategia_portafolio", "campañas_publicitarias", "mercado_internacional"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Malta_Real", "Malta_Real_chocolate", "campaña_Un_toque_de_chocolate", "Full_Mendocina", "bebida_energizante", "cafeína", "Bolivia", "expansión_portafolio"],
+        "relevance_score": 0.90
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0014",
         "text": "En Uruguay continuamos consolidando el portafolio de bebestibles. En la categoría Gaseosas, se incorporó el segmento sin azúcar con el lanzamiento de Nix Cero en los formatos 2 litros y 500 ml. En Cervezas se continuó consolidando el formato lata 710 ml a través de la incorporación de dicho formato en las marcas Amstel y Miller. Además, se ingresó también al segmento sin alcohol mediante el lanzamiento de Heineken 0.0 en el tamaño 330 ml. En Paraguay, en la categoría cervezas, se realizó el lanzamiento de Heineken Silver, una cerveza refrescante y de bajo amargor importada desde Chile.",
+        "semantic_tags": ["lanzamientos_productos", "expansión_portafolio", "mercado_regional", "bebestibles"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Uruguay", "Gaseosas", "Nix_Cero", "2_litros", "500ml", "Cervezas", "Amstel", "Miller", "lata_710ml", "Heineken_0.0", "Paraguay", "Heineken_Silver", "importada_Chile"],
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0014",
         "text": "En el Segmento de operación Vinos, los Ingresos por ventas disminuyeron 14,7%, alcanzando CLP 252.825 millones, principalmente como consecuencia de menores volúmenes en 14,4%, asociado a un año desafiante para las exportaciones de vino y una caída de nuestros mercados domésticos, principalmente asociada a una menor demanda. Por su parte, los precios promedios se mantuvieron prácticamente estables, al caer 0,3%, causado principalmente por un efecto mix negativo en el portafolio debido a una fuerte caída en las exportaciones, y la apreciación de 3,8% del CLP contra el dólar impactando negativamente los ingresos de exportaciones, siendo parcialmente compensado por iniciativas de gestión de ingresos en nuestros mercados domésticos.",
+        "semantic_tags": ["ingresos_ventas", "segmento_vinos", "variación_volúmenes", "efecto_cambio", "gestión_ingresos"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Segmento_Vinos", "ingresos_por_ventas", "CLP", "volúmenes", "exportaciones", "mercados_domésticos", "precios_promedio", "efecto_mix", "apreciación_CLP", "dólar", "gestión_ingresos"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0014",
         "text": "El Costo de ventas por hectolitro estuvo prácticamente plano, disminuyendo 0,2%. Dado lo anterior, el Margen Bruto disminuyó 14,9% y, como porcentaje de los Ingresos por ventas, se mantuvo estable. Los gastos de MSD&A aumentaron 3,0% y como porcentaje de los Ingresos por ventas aumentaron de 25,4% a 30,6%, asociado a la menor escala de negocio y mayores gastos en marketing. Como consecuencia, el EBIT se contrajo 48,7%, alcanzando CLP 20.019 millones, y el margen EBIT disminuyó de 13,2% a 7,9%. En esta misma línea, el EBITDA registró una caída de 37,4%, alcanzando CLP 32.184 millones, y el margen EBITDA decreció de 17,3% a 12,7%.",
+        "semantic_tags": ["costo_ventas", "margen_bruto", "MSD&A", "EBIT_EBITDA"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["costo_ventas", "hectolitro", "margen_bruto", "MSD&A", "gastos_marketing", "EBIT", "EBITDA", "CLP", "margen_EBIT", "margen_EBITDA", "ingresos_por_ventas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0015",
         "text": "En cuanto a innovaciones, en el mercado doméstico de Chile, ampliamos las variedades de nuestra marca premium Misión al incorporar los vinos Misión Gran Reserva Medium Sweet Carmenere y Misión Medium Sweet Sauvignon Blanc, vinos que buscan capturar la tendencia “fácil de tomar” gracias a su equilibrio entre dulzor e intensidad. Además, la Compañía buscó innovar en formatos, con el lanzamiento de Viñamar Brut Unique de 187 cc. Asimismo, en el mercado de exportación, GatoNegro presentó su última gran innovación: GatoNegro Dulce, que incluye tres variedades -Tinto, Blanco y Rosé-. Estas opciones apuntan principalmente a un público joven, pero también a todos los consumidores que disfruten de un vino suave, fácil de tomar, con una excelente relación precio-calidad y una etiqueta muy atractiva.",
+        "semantic_tags": ["costo_ventas", "margen_bruto", "MSD&A", "EBIT_EBITDA"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["costo_ventas", "hectolitro", "margen_bruto", "MSD&A", "gastos_marketing", "EBIT", "EBITDA", "CLP", "margen_EBIT", "margen_EBITDA", "ingresos_por_ventas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0015",
         "text": "Por otro lado, la marca R&O lanzó en Bélgica su nuevo espumante extra brut, que destaca por sus características notas frescas y frutales. Este producto introduce la nueva denominación de origen Borgota. En temas de sustentabilidad, VSPT presentó su nuevo modelo y actualizó sus metas al 2030. Poniendo a las personas al centro, el nuevo modelo busca posicionarse un referente en temas de sostenibilidad, con una mirada holística desde el viñedo hasta la mesa. En el ámbito medioambiental, VSPT continúa avanzando en su objetivo de carbono neutralidad, siendo reconocidos en 2023 como Gold Members del International Wineries for Climate Action (IWCA), gracias a las reducciones sostenidas en sus emisiones de gases de efecto invernadero (13% en términos absolutos en 2022).",
+        "semantic_tags": ["lanzamientos_productos", "sustentabilidad", "medio_ambiente", "innovación_vinos"],
+        "context_type": "actividades_comerciales_y_sostenibilidad",
+        "keywords": ["R&O", "espumante_extra_brut", "Bélgica", "Borgota", "VSPT", "modelo_sostenibilidad_2030", "carbono_neutralidad", "IWCA", "emisiones_GEE", "viñedo_a_mesa"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0015",
         "text": "Cabe destacar que solo siete viñas en el mundo cuentan con membresía Gold, siendo VSPT la única en Sudamérica. Así mismo, la compañía obtuvo por quinto año consecutivo el reconocimiento como la empresa vitivinícola más innovadora de Chile, según el ranking “Most Innovative Company” del ESE Business School. | Propiedad: Inversiones y Rentas S.A. (“IRSA”), accionista controlador de Compañía Cervecerías Unidas S.A. (“CCU S.A.”), es una sociedad anónima cuyos accionistas son las sociedades Quiñenco S.A. y Heineken Chile SpA, las cuales poseen cada una de ellas el 50% del capital accionario de IRSA.",
+        "semantic_tags": ["reconocimientos", "innovación", "propiedad_empresa", "estructura_accionaria"],
+        "context_type": "corporativo_y_reconocimientos",
+        "keywords": ["VSPT", "Gold_membership", "Sudamérica", "Most_Innovative_Company", "ESE_Business_School", "Inversiones_y_Rentas_S.A.", "IRSA", "CCU_S.A.", "Quiñenco_S.A.", "Heineken_Chile_SpA", "capital_accionario"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0016",
         "text": "IRSA, directa e indirectamente, a través de su filial Inversiones IRSA Limitada, posee 65,87% del capital accionario de CCU S.A. Las acciones emitidas y pagadas de Quiñenco S.A. son de propiedad en un 82,9% de las sociedades Andsberg Inversiones SpA, Ruana Copper A.G. Agencia Chile, Inversiones Consolidadas Ltda., Inversiones Salta SpA, Inversiones Alaska Ltda., Inmobiliaria e Inversiones Río Claro S.A. e Inversiones Río Claro Ltda. La fundación Luksburg Foundation tiene indirectamente el 100% de las acciones de Andsberg Inversiones SpA y el 100% de las acciones de Ruana Copper A.G. Agencia Chile.",
+        "semantic_tags": ["estructura_accionaria", "propiedad_empresarial", "filiales", "fundaciones"],
+        "context_type": "corporativo",
+        "keywords": ["IRSA", "Inversiones_IRSA_Limitada", "65.87%", "CCU_S.A.", "Quiñenco_S.A.", "Andsberg_Inversiones_SpA", "Ruana_Copper_AG", "Agencia_Chile", "Inversiones_Consolidadas_Ltda", "Inversiones_Salta_SpA", "Inversiones_Alaska_Ltda", "Inmobiliaria_Río_Claro_S.A.", "Inversiones_Río_Claro_Ltda", "Luksburg_Foundation"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0016",
         "text": "Andrónico Luksic Craig (RUT 6.062.786-K) y familia tienen el control del 100% de las acciones de Inversiones Consolidadas Ltda. y de Inversiones Alaska Ltda. La familia de don Andrónico Luksic Craig tiene el 100% del control de Inversiones Salta SpA. Inmobiliaria e Inversiones Río Claro S.A. e Inversiones Río Claro Ltda. son indirectamente controladas por la fundación Emian Foundation, en la que la descendencia de don Guillermo Luksic Craig† (RUT 6.578.597-8) tiene intereses. No existe un acuerdo de actuación conjunta entre los controladores de Quiñenco S.A. Heineken Chile SpA es una sociedad por acciones chilena cuyo controlador actual es Heineken International B.V., sociedad de responsabilidad limitada holandesa, filial de Heineken N.V. El socio mayoritario de Heineken N.V. es la sociedad holandesa Heineken Holding N.V., sociedad holandesa filial de L’Arche Green N.V., la cual es filial de L’Arche Holdings B.V., esta última controlada al final por la señora C.L. de Carvalho-Heineken.",
+        "semantic_tags": ["estructura_accionaria", "control_familiar", "propiedad_internacional", "fundaciones"],
+        "context_type": "corporativo",
+        "keywords": ["Andrónico_Luksic_Craig", "Inversiones_Consolidadas_Ltda", "Inversiones_Alaska_Ltda", "Inversiones_Salta_SpA", "Emian_Foundation", "Río_Claro_S.A.", "Río_Claro_Ltda", "Quiñenco_S.A.", "Heineken_Chile_SpA", "Heineken_International_BV", "Heineken_N.V.", "Heineken_Holding_N.V.", "L’Arche_Green_N.V.", "L’Arche_Holdings_B.V.", "C.L._de_Carvalho-Heineken"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0016",
         "text": "  Los miembros del controlador IRSA y únicos accionistas de esta última, Quiñenco S.A. y Heineken Chile SpA, suscribieron un Pacto de Accionistas, depositado en el Registro de Accionistas de CCU S.A., que considera restricciones para que éstos puedan adquirir acciones de CCU S.A. en forma independiente, debiendo, salvo excepciones, ser adquiridas por IRSA.",
+        "semantic_tags": ["pacto_accionistas", "restricciones_propiedad", "corporativo"],
+        "context_type": "corporativo",
+        "keywords": ["IRSA", "Quiñenco_S.A.", "Heineken_Chile_SpA", "Pacto_de_Accionistas", "CCU_S.A.", "restricciones_adquisicion", "registro_accionistas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0017",
         "text": " Dicho Pacto de Accionistas contempla, asimismo, restricciones a la libre enajenación de acciones de IRSA por parte de los referidos accionistas, considerando derechos preferentes, entre otros. 2.3.2 Cambios importantes en la propiedad o control Durante 2023 no hubo cambios relevantes en la propiedad o control de CCU S.A. El último cambio relevante en esta materia ocurrió durante el 2021, año en el cual nuestro accionista controlador IRSA, a través de compras en el mercado y una oferta pública de acciones parcial (“OPA”), aumentó su participación directa e indirecta en CCU S.A. desde un 60,00% hasta un 65,87%. Las acciones de CCU S.A. se transan en la Bolsa de Comercio de Santiago, Bolsa de Valores desde el año 1920. El código nemotécnico para dicha bolsa es “CCU”. Los títulos accionarios de CCU S.A. se transan, así mismo, en la Bolsa Electrónica de Chile, Bolsa de Valores. Adicionalmente, como se describe a continuación, CCU S.A. transa ADRs en el New York Stock Exchange (“NYSE”) desde el año 1999.",
+        "semantic_tags": ["pacto_accionistas", "derechos_preferentes", "historial_propiedad", "mercado_valores", "transacciones_accionarias"],
+        "context_type": "corporativo",
+        "keywords": ["Pacto_de_Accionistas", "IRSA", "CCU_S.A.", "cambios_propiedad_2021", "participacion_65.87%", "Bolsa_de_Comercio_de_Santiago", "Bolsa_Electronica_de_Chile", "NYSE", "ADRs"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0017",
         "text": "Marco de gobernanza: La máxima instancia administrativa de toma de decisiones de CCU S.A. es el Directorio, que la representa judicial y extrajudicialmente, para lo cual está investido de todas las facultades de administración y disposición que la ley o los estatutos no establezcan como privativas de la Junta de Accionistas. Dicho órgano, de acuerdo a sus estatutos, está constituido por nueve miembros elegidos en Junta de Accionistas, quienes durarán tres años en sus funciones, pudiendo ser reelegidos indefinidamente.",
+        "semantic_tags": ["gobernanza", "directorio", "estructura_administrativa", "estatutos"],
+        "context_type": "corporativo",
+        "keywords": ["CCU_S.A.", "Directorio", "Junta_de_Accionistas", "miembros", "facultades_administracion", "reeleccion"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0017",
         "text": " Las reuniones del Directorio se constituyen con la asistencia de seis directores y los acuerdos se adoptan por mayoría absoluta de los directores asistentes con derecho a voto, salvo los casos en que la normativa aplicable establezca un quorum superior. Quien preside la sesión no tendrá voto dirimente en caso de empate. El actuar de los directores en el ejercicio de sus funciones debe guiarse por el Código de Conducta del Directorio, el cual establece, además de principios, ciertos procedimientos, políticas y buenas prácticas de gobierno corporativo aplicables transversalmente a la Compañía. Este Código de Conducta del Directorio contiene un capítulo sobre conflicto de interés.”).",
+        "semantic_tags": ["gobernanza", "directorio", "reuniones", "codigo_de_conducta", "conflicto_de_interes"],
+        "context_type": "corporativo",
+        "keywords": ["quorum", "mayoria_absoluta", "voto_dirimente", "principios", "politicas", "buenas_practicas", "transversal"],
+        "relevance_score": 0.9
+}
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1318,6 +1379,7 @@
     }
 ]
 }
+
 
 
 
