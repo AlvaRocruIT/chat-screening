@@ -2067,64 +2067,95 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0154",
         "text": "En virtud de una comunicación transparente con nuestro proveedores, haciendo más eficientes los procesos e integrando las operaciones que CCU tiene a nivel internacional, se desarrolló un renovado Portal de Proveedores que permite a nuestros proveedores tener una gestión más eficiente de sus pagos, ya que, además de encontrar la habitual información referente a sus facturas, también pueden ver si su factura fue ingresada, fecha de pago programada, información sobre sus pedidos en curso y otras herramientas pensadas en mejorar la experiencia como proveedor de CCU. El portal ya fue implementado en CCU en Chile, Argentina, Uruguay y Paraguay. Por criterio de materialidad, la tabla siguiente resume la información de los proveedores de nuestras operaciones en Chile y Argentina. Se consideran proveedores nacionales, todos aquellos domiciliados en Chile. Al 31 de diciembre 2023 no se registraron intereses por mora en los pagos de facturas a proveedores. ",
-
+        "semantic_tags": ["gestión_de_proveedores", "digitalización", "eficiencia_operacional", "transparencia", "cumplimiento_financiero"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Portal_de_Proveedores", "facturas", "fecha_de_pago", "pedidos_en_curso", "Chile", "Argentina", "Uruguay", "Paraguay", "proveedores_nacionales", "materialidad", "intereses_por_mora", "31_diciembre_2023"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0155",
         "text": "Evaluación a proveedores: En el marco de nuestro Modelo de Gestión Sustentabilidad, como mencionamos al comienzo de este capítulo, parte de los compromisos con nuestros proveedores es abordar la gestión del riesgo en la cadena de Abastecimiento, a través de este enfoque en el que podemos identificar y evaluar el impacto en nuestro negocio. En CCU contamos con un amplio portafolio de proveedores con los que interactuamos regularmente, donde de forma anual, se trabaja con un número relevante de éstos para hacer una gestión directa a través de una evaluación de proveedores y de una encuesta de satisfacción de proveedores. Respecto a los criterios económico y social, se monitorea su cumplimiento, en base a 4 aspectos: evaluación tributaria, comercial, financiera y laboral de los proveedores, alertando sobre situaciones de riesgo, y permitiendo así gestionar los respectivos planes de mitigación en caso de ser requerido.  ",
-
+        "semantic_tags": ["evaluación_de_proveedores", "gestión_de_riesgos", "modelo_de_sustentabilidad", "criterios_económicos_y_sociales", "planes_de_mitigación"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Modelo_de_Gestión_Sustentabilidad", "cadena_de_abastecimiento", "evaluación_de_proveedores", "encuesta_de_satisfacción", "evaluación_tributaria", "evaluación_comercial", "evaluación_financiera", "evaluación_laboral", "riesgo", "planes_de_mitigación"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0155",
         "text": "Esto actualmente se realiza en Chile a través de Red Negocios de la Cámara de Comercio de Santiago. En el ámbito de gobernanza, con el objetivo de ir mejorando continuamente la relación con nuestros proveedores,  realizamos anualmente desde 2018, una encuesta para conocer su nivel de satisfacción como proveedor CCU, verificar el grado de difusión de la GBP y consultar sobre su alcance en materia de sustentabilidad. Desde 2020 implementamos esta encuesta también para Argentina y a partir del 2022 se extendió también en Uruguay, Bolivia y Paraguay. Esta encuesta, abarca los siguientes temas: transparencia en los procesos de cotización y adjudicación; claridad en las especificaciones técnicas o requisitos de nuestras solicitudes de compra; comunicación con CCU; cumplimiento de las fechas de pago; y preguntas relacionadas con sustentabilidad. En la última medición obtuvimos un 88% de satisfacción de los proveedores encuestados en las distintas geografías donde operamos, donde se mantuvo la calificación del año anterior. ",
-
+        "semantic_tags": ["evaluación_de_proveedores", "gobernanza", "satisfacción", "sustentabilidad", "transparencia"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Red_Negocios", "Cámara_de_Comercio_de_Santiago", "encuesta_de_satisfacción", "proveedores", "GBP", "Argentina", "Uruguay", "Bolivia", "Paraguay", "transparencia", "cotización", "adjudicación", "especificaciones_técnicas", "comunicación", "fechas_de_pago", "88%_satisfacción", "2022", "2018", "2020"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0155",
         "text": "Como parte de la evaluación que realiza la Compañía hacia sus proveedores, se realizan auditorías y monitoreos de cumplimento, en función del objetivo de gestionar riesgos específicos de la cadena de suministro: • Auditoría de licencias: realizadas por nuestros socios estratégicos a los proveedores con el fin de certificar el proceso técnico de producción de materias primas y material de empaque. • Auditorías de desarrollo de nuevos proveedores: aplicadas a potenciales proveedores, en el caso que sea un proveedor nacional, o a través de una empresa certificadora, en el caso de un proveedor extranjero, con el objetivo de auditar distintos aspectos tales como la existencia de la fábrica o empresa, calidad de las instalaciones y condiciones laborales de sus trabajadores. • Vendor Rating System (“VRS”): indicador de medición cuantitativa del desempeño de los productos entregados por parte de los proveedores y considera variables de calidad (número de defectos en un periodo esperado, criticidad del defecto y condición de entrega en las instalaciones) y el nivel de compromiso del proveedor (gestión de reclamos). • Control de Contratistas: Este control se aplica a las empresas proveedoras de servicios que ingresan a las operaciones de la compañía.",
-
+        "semantic_tags": ["evaluación_de_proveedores", "auditorías", "gestión_de_riesgos", "calidad", "contratistas"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["auditoría_de_licencias", "socios_estratégicos", "materias_primas", "material_de_empaque", "auditoría_nuevos_proveedores", "empresa_certificadora", "instalaciones", "condiciones_laborales", "Vendor_Rating_System", "VRS", "defectos", "criticidad", "entrega", "gestión_de_reclamos", "control_de_contratistas"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0156",
         "text": " En el caso de Chile, se realiza con el apoyo de una empresa externa, encargada de verificar que los proveedores cumplan con las leyes sociales/ laborales respecto de sus trabajadores (entre ellas, la Ley de Subcontratación) y que éstos están correctamente habilitados para cumplir sus funciones. En 2023, evaluamos a un total de 1.507 proveedores, lo que representa a un 17% del total y un 94% de la facturación anual.",
-
+        "semantic_tags": ["evaluación_de_proveedores", "cumplimiento_laboral", "verificación_externa", "Ley_de_Subcontratación", "impacto_en_facturación"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Chile", "empresa_externa", "proveedores", "leyes_sociales", "leyes_laborales", "Ley_de_Subcontratación", "habilitación", "2023", "1.507_proveedores", "17%_total", "94%_facturación_anual"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0156",
         "text": " Indcadores: Cumplimiento legal y normativo: En relación con sus clientes En orden de velar por los derechos de los consumidores, en CCU contamos con políticas de control en materia de publicidad, rotulación e inocuidad alimentaria de nuestros productos, respaldadas en procedimiento de Manejo de Reclamos Producto Servicio de Atención al Consumidor. En 2023 no hemos sido sancionados por temas relacionados con derechos al consumidor. CCU cuenta con una serie de procedimientos en orden a velar adecuada y oportunamente por los derechos de los consumidores, incluyendo controles en la rotulación, publicidad e inocuidad alimentaria de sus productos, así como de atención de eventuales reclamos. Durante el año 2023, la Compañía no registró sanciones por infracción a la Ley N° 19.496, de protección de los derechos del consumidor. Al mismo tiempo, estamos desarrollando procesos internos para abordar la futura ley de protección de datos personales, que aún está en discusión en el Congreso.",
-
+        "semantic_tags": ["cumplimiento_legal", "derechos_del_consumidor", "inocuidad_alimentaria", "publicidad_responsable", "protección_de_datos"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["indicadores", "rotulación", "publicidad", "inocuidad_alimentaria", "Manejo_de_Reclamos", "Servicio_de_Atención_al_Consumidor", "Ley_19.496", "protección_de_los_derechos_del_consumidor", "2023", "procesos_internos", "ley_de_protección_de_datos_personales", "Congreso"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0156",
         "text": " En relación con sus trabajadores Los trabajadores en CCU son el motor que guía nuestro negocio. Nos enfocamos en su desarrollo integral durante todo el ciclo laboral, velando por su salud y seguridad, promoviendo su desarrollo y que vivan los principios corporativos en un ambiente de buen clima organizacional. Tal como declaramos en nuestra Política de Derechos Humanos, para prevenir y detectar incumplimientos regulatorios referidos a nuestros trabajadores, cumplimos estrictamente con las leyes y regulaciones aplicables en el ámbito laboral, extendiendo este compromiso hacia nuestros proveedores, contratistas, socios y aliados estratégicos.",
-
+        "semantic_tags": ["gestión_de_personas", "derechos_humanos", "cumplimiento_laboral", "desarrollo_integral", "clima_organizacional"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["trabajadores", "salud_y_seguridad", "principios_corporativos", "Política_de_Derechos_Humanos", "cumplimiento_regulatorio", "proveedores", "contratistas", "socios", "aliados_estratégicos"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0157",
         "text": "Además, disponemos un Canal de Denuncias que permite a nuestros trabajadores, así como también a terceros que interactúan con CCU, informar o denunciar: • Conductas o prácticas cuestionables sobre los principios y valores contenidos en el Código de Conducta en los Negocios y en el SER CCU. • Actividades no acordes a lo establecido en las normas, políticas contables, control interno y a las materias de auditoría que dicen relación con el examen de los Estados Financieros Consolidados, conforme con las obligaciones que impone la Ley SOX. • Incumplimientos a lo establecido en el MPD. • Incumplimiento a cualquier legislación vigente en los países donde CCU esté presente. Las sanciones ejecutoriadas por multas laborales en este ámbito durante el año 2023 son 15 ascienden a CLP 42 millones, de acuerdo a lo informado por la Dirección del Trabajo al cierre del año 2023. Durante el año 2023 no existen sentencias ejecutoriadas que apliquen sanciones que correspondan a acciones de tutela. 8.1.3 Medioambiental El modelo de cumplimiento medioambiental en CCU está constituido por una matriz de cumplimiento para cada una de las diferentes unidades de negocio, denominada Índice de Radicación, que contiene los permisos, exigencias ambientales y buenas prácticas de acuerdo con la normativa de cada país en que operamos. Se realiza un seguimiento mensual del cumplimiento para definir planes de acción e informar sobre nuevas exigencias. La modalidad de cumplimiento es respaldada a través de la presentación del certificado o resolución de la autoridad competente en la materia. Dicha documentación debe ser presentada a la Subgerencia de Medio Ambiente de Contraloría de CCU. Este modelo de cumplimiento se aplica a todas las instalaciones industriales y centros de distribución. En Chile, la responsabilidad directa de elaborar y actualizar la matriz recae en la Subgerencia de Medio Ambiente. Sin embargo, cada unidad de negocio es responsable de su cumplimiento medioambiental. En el caso de los demás países donde operamos, Argentina, Bolivia, Paraguay y Uruguay,",
-
+        "semantic_tags": ["canal_de_denuncias", "cumplimiento_laboral", "gobernanza", "modelo_medioambiental", "Índice_de_Radicación"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Canal_de_Denuncias", "Código_de_Conducta_en_los_Negocios", "SER_CCU", "Ley_SOX", "MPD", "legislación_vigente", "multas_laborales", "CLP_42_millones", "Dirección_del_Trabajo", "acciones_de_tutela", "Índice_de_Radicación", "cumplimiento_medioambiental", "certificados", "resoluciones", "Subgerencia_de_Medio_Ambiente", "Contraloría_CCU", "Chile", "Argentina", "Bolivia", "Paraguay", "Uruguay"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0158",
         "text": "En el caso de los demás países donde operamos, Argentina, Bolivia, Paraguay y Uruguay, la elaboración y actualización de cada matriz por país, con los requisitos normativos y regulatorios aplicables a sus procesos e instalaciones, la realiza una empresa externa especializada en la materia, y posteriormente validada por la Subgerencia de Medio Ambiente en Chile. Durante 2023 no se presentan multas ni sanciones ambientales en Chile, Argentina, Bolivia, Paraguay y Uruguay.",
-
+        "semantic_tags": ["cumplimiento_medioambiental", "gestión_regulatoria", "validación_externa", "sin_sanciones", "estructura_regional"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Argentina", "Bolivia", "Paraguay", "Uruguay", "matriz_de_cumplimiento", "requisitos_normativos", "empresa_externa", "Subgerencia_de_Medio_Ambiente", "Chile", "2023", "sin_multas", "sin_sanciones_ambientales"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0158",
         "text": " En relación a programas de cumplimiento ante la Superintendencia de Medio Ambiente (“SMA”) en Chile existe el Plan de Cumplimiento 2020 - Planta Molina, VII Región, de Viña San Pedro Tarapacá S.A., aprobado el año 2020, referente a: (a) deficiente tratamiento de residuos industriales líquidos y (b) acopio desautorizado de lodos. El referido Plan se encuentra ejecutado satisfactoriamente según resolución de la SMA de febrero de 2023. 8.1.4 Libre competencia CCU cuenta con el Programa de Cumplimiento de Libre Competencia que incluye entre otras, capacitaciones tanto por e-learning como de manera presencial, así como la gestión de distintas políticas y procedimientos, a través de la Gerencia de Cumplimiento. No hemos sido sancionados por conductas atentatorias contra la libre competencia. En lo que respecta a los riesgos de libre competencia éstos están asociados principalmente a la posibilidad del ejercicio de conductas exclusorias en mercados en que existe un actor que detenta posición dominante.",
-
+        "semantic_tags": ["cumplimiento_medioambiental", "libre_competencia", "capacitación", "gestión_de_riesgos", "regulación"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Superintendencia_de_Medio_Ambiente", "SMA", "Plan_de_Cumplimiento_2020", "Planta_Molina", "Viña_San_Pedro_Tarapacá", "residuos_industriales_líquidos", "lodos", "febrero_2023", "Programa_de_Cumplimiento_de_Libre_Competencia", "e-learning", "presencial", "Gerencia_de_Cumplimiento", "conductas_exclusorias", "posición_dominante"],
+        "relevance_score": 0.94
     }
 ]
 }
+
 
 
 
