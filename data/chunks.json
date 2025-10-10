@@ -7,7 +7,7 @@
         "semantic_tags": ["perfil_corporativo", "quienes_somos", "estructura_empresarial"],
         "context_type": "organizational_identity",
         "keywords": ["CCU", "bebestibles", "cervezas", "multicategoría", "Chile", "subsidiarias"],
-        "relevance_score": 0.93
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -16,7 +16,7 @@
         "semantic_tags": ["expansión_regional", "mercados_internacionales", "alianzas_estratégicas"],
         "context_type": "operaciones_regionales",
         "keywords": ["Argentina", "Bolivia", "Uruguay", "Paraguay", "Colombia", "cerveza", "Danone", "Postobón", "bebidas", "negocio_conjunto"],
-        "relevance_score": 0.91
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -24,7 +24,7 @@
         "text": "Nuestras operaciones se dividen en los siguientes tres Segmentos de operación: (i) Segmento de operación Chile, que incluye cerveza, bebidas no alcohólicas, licores, sidra y las Unidades Estratégicas de Servicio (“UES”) en el mercado chileno; (ii) Segmento de operación Negocios Internacionales, que incluye cerveza, sidra, bebidas no alcohólicas y licores, entre otras categorías, en Argentina, Uruguay, Paraguay y Bolivia; y (iii) Segmento de operación Vinos, que incluye vinos y espumantes en el mercado doméstico, en Chile y Argentina, y exportaciones a más de 80 países. Los ingresos y gastos de las Unidades de Apoyo Corporativo (“UAC”) se presentan por separado en Otros. Las UAC, al igual que las UES, proporcionan servicios compartidos dentro de la Compañía a fin de captar sinergias operacionales.",          "semantic_tags": ["segmentación_operacional", "estructura_corporativa", "sinergias_empresariales"],
         "context_type": "estructura_organizacional",
         "keywords": ["segmentos", "Chile", "Negocios Internacionales", "Vinos", "sinergias", "servicios_compartidos"],
-        "relevance_score": 0.92
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -33,7 +33,7 @@
         "semantic_tags": ["gestión_operacional", "trayectoria_histórica", "crecimiento_sostenible"],
         "context_type": "desempeño_corporativo",
         "keywords": ["segmentos", "resultados", "ingresos", "tradición", "sociedad"],
-        "relevance_score": 0.9
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -42,8 +42,7 @@
         "semantic_tags": ["identidad_corporativa", "propósito_organizacional", "estándares_sostenibilidad", "gobernanza_corporativa"],
         "context_type": "estrategia_corporativa",
         "keywords": ["identidad", "propósito", "principios"],
-        "relevance_score": 0.94
-    },
+        "relevance_score": 0.97    },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0006",
@@ -51,7 +50,7 @@
         "semantic_tags": ["propósito_corporativo", "valores_organizacionales", "compromiso_social", "identidad_empresarial"],
         "context_type": "organizational_identity",
         "keywords": ["Ser CCU", "propósito", "promesa", "mejor vivir", "principios", "medio ambiente", "experiencias"],
-        "relevance_score": 0.96
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -60,7 +59,7 @@
         "semantic_tags": ["principios_corporativos", "valores_organizacionales", "cultura_empresarial", "ética_laboral"],
         "context_type": "organizational_identity",
         "keywords": ["excelencia", "entrega", "integridad", "empoderamiento", "orgullo", "empatía", "superación", "pasión"],
-        "relevance_score": 0.95
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -69,7 +68,7 @@
         "semantic_tags": ["pilares_estratégicos", "ejecución_de_excelencia", "sustentabilidad_empresarial", "crecimiento_y_rentabilidad"],
         "context_type": "estrategia_corporativa",
         "keywords": ["rentabilidad", "crecimiento", "sustentabilidad", "optimización_recursos", "participación_mercado", "nuevos_canales", "valor_a_largo_plazo"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -78,7 +77,7 @@
         "semantic_tags": ["bienestar_personas", "desarrollo_de_marcas", "cuidado_medio_ambiente", "gestión_de_procesos"],
         "context_type": "operaciones_corporativas",
         "keywords": ["bienestar", "marcas", "medio_ambiente", "organización_formal", "organización_informal", "procesos", "liderazgos", "relaciones_interpersonales"],
-        "relevance_score": 0.92
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -96,7 +95,7 @@
         "semantic_tags": ["sostenibilidad_ambiental", "cadena_de_valor", "visión_medioambiental", "gestión_recursos"],
         "context_type": "sustentabilidad",
         "keywords": ["emisiones", "CO2e", "energías_renovables", "residuos", "reciclable", "compostable", "agua", "reducción_consumo"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -124,7 +123,7 @@
         "semantic_tags": ["resultados_financieros", "caída_en_volúmenes", "precios_promedio", "segmento_chile", "segmento_internacional", "segmento_vinos"],
         "context_type": "desempeño_financiero_y_operacional",
         "keywords": ["Ingresos_por_venta", "2.565.556_millones_CLP", "disminución_5.4%", "volúmenes_-3.4%", "precios_promedio_-2.0%", "Segmento_de_Operación_Chile", "condiciones_climáticas", "Segmento_Negocios_Internacionales", "Argentina", "Segmento_Vinos", "exportaciones_vino_chileno", "demanda_doméstica"],
-        "relevance_score": 0.95
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -133,7 +132,7 @@
         "semantic_tags": ["resultados_financieros", "ingresos_2023", "segmentos_operativos", "variación_volúmenes"],
         "context_type": "desempeño_financiero",
         "keywords": ["ingresos", "volúmenes", "precios_promedio", "Segmento_Chile", "Negocios_Internacionales", "Vinos", "exportaciones"],
-        "relevance_score": 0.93
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -142,7 +141,7 @@
         "semantic_tags": ["resultados_financieros", "gestión_ingresos", "costos_venta", "eficiencias_operacionales"],
         "context_type": "desempeño_financiero",
         "keywords": ["Segmento_Chile", "crecimiento", "costo_venta", "hectolitro", "PET", "energía", "eficiencias_fabricación"],
-        "relevance_score": 0.92
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -151,7 +150,7 @@
         "semantic_tags": ["costos_operacionales", "contabilidad_hiperinflacionaria", "margen_bruto", "segmento_internacional", "segmento_vinos"],
         "context_type": "desempeño_financiero_y_operacional",
         "keywords": ["costo_de_ventas_por_hectolitro", "contracción_23.1%", "CLP", "contabilidad_hiperinflacionaria", "materias_primas", "presiones_inflacionarias", "devaluación_ARS", "USD", "Segmento_de_operación_Vinos", "margen_bruto", "1.186.944_millones_CLP", "44.1%", "46.3%", "214_puntos_base"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -178,7 +177,7 @@
         "semantic_tags": ["resultado_operacional", "EBIT", "EBITDA", "margen_financiero"],
         "context_type": "desempeño_financiero",
         "keywords": ["EBIT", "EBITDA", "margen_financiero", "resultado_operacional_ajustado", "pérdida_no_operacional"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -187,7 +186,7 @@
          "semantic_tags": ["pérdidas_financieras", "diferencias_cambio", "resultados_no_recurrentes", "gastos_financieros"],
          "context_type": "desempeño_financiero",
          "keywords": ["Diferencias_de_cambio", "Argentina", "unidades_de_ajuste", "negocios_conjuntos", "gastos_financieros", "ingresos_por_intereses"],
-        "relevance_score": 0.93
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -196,7 +195,7 @@
         "semantic_tags": ["impuestos", "utilidad_neta", "negocios_conjuntos", "variación_volúmenes"],
         "context_type": "desempeño_financiero",
         "keywords": ["Impuesto_a_las_ganancias", "utilidad_neta", "volúmenes", "negocios_conjuntos", "integración_operaciones", "marcas_fortaleza"],
-        "relevance_score": 0.92
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -214,7 +213,7 @@
         "semantic_tags": ["costo_ventas", "margen_bruto", "gastos_msd&a", "EBIT"],
         "context_type": "desempeño_financiero",
         "keywords": ["costo_ventas", "hectolitro", "malta", "azúcar", "aluminio", "PET", "energía", "eficiencias_fabricación", "margen_bruto", "MSD&A", "EBIT"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -232,7 +231,7 @@
         "semantic_tags": ["marketing_y_comunicaciones", "sostenibilidad_ambiental", "campañas_publicitarias", "responsabilidad_social"],
         "context_type": "actividades_comerciales",
         "keywords": ["Gatorade", "Cachantun", "reciclaje", "CirCCUlar", "Bilz_y_Pap", "Navidad", "Máquina_de_la_Nabilzpap", "Generaciones_de_Pepsi_Zero", "medio_ambiente"],
-        "relevance_score": 0.94  
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -268,7 +267,7 @@
         "semantic_tags": ["MSD&A", "EBIT_EBITDA", "innovación_productos", "lanzamientos"],
         "context_type": "desempeño_financiero_y_comercial",
         "keywords": ["MSD&A", "ingresos_por_ventas", "EBIT", "EBITDA", "margen_EBITDA", "Argentina", "Heineken", "Imperial", "Bieckert_Hazy_IPA", "Salta_Cautiva_Negra", "Grolsch_IPA", "Blue_Moon", "vinos_Ö61", "categoría_sin_alcohol"],
-        "relevance_score": 0.95
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -277,7 +276,7 @@
         "semantic_tags": ["comunicaciones_y_marketing", "campañas_publicitarias", "actividades_promocionales", "eventos"],
         "context_type": "actividades_comerciales",
         "keywords": ["Heineken_0.0", "Prohibition", "Ahora_podés", "Buenos_Aires", "Primavera_Sound", "Schneider", "selección_nacional", "Verano_de_Campeones", "aniversario_Mundial"],
-        "relevance_score": 0.94
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -349,7 +348,7 @@
         "semantic_tags": ["lanzamientos_productos", "sustentabilidad", "medio_ambiente", "innovación_vinos"],
         "context_type": "actividades_comerciales_y_sostenibilidad",
         "keywords": ["R&O", "espumante_extra_brut", "Bélgica", "Borgota", "VSPT", "modelo_sostenibilidad_2030", "carbono_neutralidad", "IWCA", "emisiones_GEE", "viñedo_a_mesa"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -358,7 +357,7 @@
         "semantic_tags": ["reconocimientos", "innovación", "propiedad_empresa", "estructura_accionaria"],
         "context_type": "corporativo_y_reconocimientos",
         "keywords": ["VSPT", "Gold_membership", "Sudamérica", "Most_Innovative_Company", "ESE_Business_School", "Inversiones_y_Rentas_S.A.", "IRSA", "CCU_S.A.", "Quiñenco_S.A.", "Heineken_Chile_SpA", "capital_accionario"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -376,7 +375,7 @@
         "semantic_tags": ["estructura_accionaria", "control_familiar", "propiedad_internacional", "fundaciones"],
         "context_type": "corporativo",
         "keywords": ["Andrónico_Luksic_Craig", "Inversiones_Consolidadas_Ltda", "Inversiones_Alaska_Ltda", "Inversiones_Salta_SpA", "Emian_Foundation", "Río_Claro_S.A.", "Río_Claro_Ltda", "Quiñenco_S.A.", "Heineken_Chile_SpA", "Heineken_International_BV", "Heineken_N.V.", "Heineken_Holding_N.V.", "L’Arche_Green_N.V.", "L’Arche_Holdings_B.V.", "C.L._de_Carvalho-Heineken"],
-        "relevance_score": 0.95
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -385,7 +384,7 @@
         "semantic_tags": ["pacto_accionistas", "restricciones_propiedad", "corporativo"],
         "context_type": "corporativo",
         "keywords": ["IRSA", "Quiñenco_S.A.", "Heineken_Chile_SpA", "Pacto_de_Accionistas", "CCU_S.A.", "restricciones_adquisicion", "registro_accionistas"],
-        "relevance_score": 0.93
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -394,7 +393,7 @@
         "semantic_tags": ["pacto_accionistas", "derechos_preferentes", "historial_propiedad", "mercado_valores", "transacciones_accionarias"],
         "context_type": "corporativo",
         "keywords": ["Pacto_de_Accionistas", "IRSA", "CCU_S.A.", "cambios_propiedad_2021", "participacion_65.87%", "Bolsa_de_Comercio_de_Santiago", "Bolsa_Electronica_de_Chile", "NYSE", "ADRs"],
-        "relevance_score": 0.94
+        "relevance_score": 0.90
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -439,7 +438,7 @@
         "semantic_tags": ["gobernanza", "codigo_conducta", "etica_corporativa", "trabajadores", "cumplimiento"],
         "context_type": "corporativo",
         "keywords": ["Código_de_Conducta_en_los_Negocios", "principios_éticos", "normas", "pautas", "reglas", "CCU", "trabajadores"],
-        "relevance_score": 0.92
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -448,7 +447,7 @@
         "semantic_tags": ["gobernanza", "conflictos_de_interes", "codigo_conducta", "trabajadores", "cumplimiento"],
         "context_type": "corporativo",
         "keywords": ["conflictos_de_interes", "Declaracion_Conflicto_de_Intereses", "trabajadores", "reglamentos_internos", "políticas", "procedimientos", "CCU"],
-        "relevance_score": 0.95
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -457,7 +456,7 @@
         "semantic_tags": ["sustentabilidad", "gobernanza", "codigo_conducta", "pilares_estrategicos", "comite_sustentabilidad"],
         "context_type": "corporativo",
         "keywords": ["rentabilidad", "crecimiento", "sustentabilidad", "comite_sustentabilidad", "gerencia_asuntos_corporativos_y_sustentabilidad", "contralor_general", "balance_valor", "bienestar", "medio_ambiente", "desarrollo_marcas", "CCU"],
-        "relevance_score": 0.96
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -475,7 +474,7 @@
         "semantic_tags": ["innovacion", "investigacion_desarrollo", "estrategia_corporativa", "tecnologia", "datos"],
         "context_type": "corporativo",
         "keywords": ["innovacion_productos", "innovacion_disruptiva", "innovacion_incremental", "I+D", "alto_impacto", "nuevos_mercados", "nuevas_necesidades", "clientes", "consumidores"],
-        "relevance_score": 0.93
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -484,7 +483,7 @@
         "semantic_tags": ["innovacion", "inteligencia_artificial", "mineria_datos", "tecnologia", "transformacion_digital", "ecommerce", "optimización", "eficiencia"],
         "context_type": "corporativo",
         "keywords": ["fondo_innovacion", "algoritmos", "herramientas_tecnologicas", "proceso_venta", "clientes_minoristas", "B2B", "Mi Carro", "La Barra", "experiencia_cliente", "plataforma_comercio_electronico", "regionalizacion"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -493,7 +492,7 @@
         "semantic_tags": ["innovacion_abierta", "programas_innovacion", "INNPACTA", "Despega", "cultura_innovacion", "participacion_trabajadores", "gobierno_corporativo", "identidad_corporativa", "pilares_estrategicos", "ser_CCU"],
         "context_type": "corporativo",
         "keywords": ["innovacion_abierta", "soluciones_industria", "ideas_trabajadores", "desafios_negocio", "Rentabilidad", "Crecimiento", "Sustentabilidad", "plataforma_negocios", "foco", "sinergia"],
-        "relevance_score": 0.94 
+        "relevance_score": 0.97 
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -501,8 +500,8 @@
         "text": " una multicategoría de marcas de bebestibles de valor, y una ejecución de excelencia, a través de procesos a lo largo de toda la organización, y en especial, las funciones directivas estructuradas en forma de seis procesos directivos Plan Estratégico- que incluye la Gestión de Riesgos Estratégicos-, Modelo de Preferencias, Recursos Humanos, Excelencia Operacional, Presupuesto Operativo, Presupuesto de Inversiones). Considerando la cultura SER CCU, Procesos Directivos y mecanismos de gestión de personas facilitan el desarrollo de a natural diversidad sociocultural de nuestros trabajadores. Asimismo, contamos con una Política de Compensaciones.",
         "semantic_tags": ["multicategoria", "marcas_bebestibles", "ejecucion_exelencia", "procesos_directivos", "Plan_Estrategico", "Gestion_Riesgos", "Modelo_Preferencias", "Recursos_Humanos", "Excelencia_Operacional", "Presupuesto_Operativo", "Presupuesto_Inversiones", "diversidad_sociocultural", "politica_compensaciones", "cultura_SER_CCU"],
         "context_type": "corporativo",
-        "keywords": ["multicategoría", "marcas de valor", "ejecución de excelencia", "procesos organizacionales", "funciones directivas", "gestión de riesgos estratégicos", "recursos humanos", "presupuesto operativo", "presupuesto de inversiones", "diversidad sociocultural", "política de compensaciones"],
-        "relevance_score": 0.95
+        "keywords": ["plan_estrategico", "marcas de valor", "ejecución de excelencia", "procesos organizacionales", "funciones directivas", "gestión de riesgos estratégicos", "recursos humanos", "presupuesto operativo", "presupuesto de inversiones", "diversidad sociocultural", "política de compensaciones"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -510,8 +509,8 @@
         "text": "Directorio: Los ejecutivos principales de CCU S.A. registrados durante el 2022 y 2023 en la CMF son los siguientes: Patricio Jottar Nasrallah, es el Gerente General Compañía Cervecerías Unidas S.A.;  María Gabriela Ugalde Romagnoli, es la Gerente Corporativo de Recursos Humanos; Bárbara Wolff Gopfert, es la Gerente Asuntos Corporativos y Sustentabilidad; Antonio Cruz Stuven, es el Gerente de Planificación Estratégica y Nuevos Negocios; Domingo Jiménez Manterola, es el Gerente General Compañía Pisquera de Chile S.A.; Felipe Benavides Almarza, es el Gerente de Asuntos Legales; Felipe Dubernet Azócar, es el Gerente Corporativo de Administración y Finanzas; Julio Agustín Freyre, es el Gerente General Compañía Cervecerías Unidas Argentina S.A.; Juan Boned, es el Contralor General; Pedro Herane Aguado, es el Gerente General Viña San Pedro Tarapacá S.A.; Sebastián Landi, es el Gerente Negocios Internacionales; Juan Martín Vannicola, es el Gerente Corporativo de Procesos Industriales; Matías Bebin Subercaseaux es el Gerente General Cervecera Chile Limitada; Eduardo Ffrench-Davis Rodríguez, es el Gerente General Embotelladoras Chilenas Unidas S.A; Marisol Bravo Léniz, es la Gerente Asuntos Corporativos; Francisco Diharasarri Domínguez, es el Gerente General de CCU Chile; Martín Rodríguez Guiraldes, es el Gerente de Transformación.",
         "semantic_tags": ["directorio", "ejecutivos_principales", "gerentes", "alta_direccion", "estructura_organizacional", "liderazgo", "CCU_SA"],
         "context_type": "corporativo",
-        "keywords": ["directorio", "gerente general", "gerente corporativo", "recursos humanos", "sustentabilidad", "planificación estratégica", "nuevos negocios", "asuntos legales", "administración y finanzas", "negocios internacionales", "procesos industriales"],
-        "relevance_score": 0.97
+        "keywords": ["directorio", "gerente general", "gerente corporativo", "gerente" "recursos humanos", "sustentabilidad", "planificación estratégica", "nuevos negocios", "asuntos legales", "administración y finanzas", "negocios internacionales", "procesos industriales"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -520,7 +519,7 @@
         "semantic_tags": ["relacion_grupos_interes", "transparencia", "comunicacion", "stakeholders", "CCU_SA", "inversionistas", "clientes", "trabajadores", "proveedores", "comunidad"],
         "context_type": "corporativo",
         "keywords": ["relación con grupos de interés", "transparencia", "canales de comunicación", "información relevante", "oportuna", "clara", "stakeholders", "CCU"],
-        "relevance_score": 0.92
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -529,7 +528,7 @@
         "semantic_tags": ["trabajadores", "recursos_humanos", "cultura_corporativa", "comunicacion_interna", "gestion_personas", "SER_CCU", "beneficios", "desarrollo_personal", "CCU_SA", "canales_comunicacion"],
         "context_type": "corporativo",
         "keywords": ["trabajadores CCU", "clima laboral", "desarrollo de talento", "cultura interna", "SER CCU", "gerencia de recursos humanos", "comunicación interna", "planes de carrera", "beneficios", "canales de comunicación"],
-        "relevance_score": 0.98
+        "relevance_score": 0.99
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -538,7 +537,7 @@
         "semantic_tags": ["inversionistas", "relacion_inversionistas", "ASG", "gobernanza", "finanzas", "comunicacion_corporativa", "CCU_SA", "estrategia_empresarial", "accionistas", "analistas_financieros"],
         "context_type": "corporativo",
         "keywords": ["accionistas", "potenciales inversionistas", "analistas financieros", "desempeño ASG", "plan estratégico", "proyectos e inversiones", "gerencia corporativa", "portavoces oficiales", "relación con medios", "CCU Chile y extranjero"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -547,7 +546,7 @@
         "semantic_tags": ["relacion_inversionistas", "transparencia_corporativa", "informacion_financiera", "gobierno_corporativo", "comunicacion_corporativa", "CCU_SA", "reportes_financieros", "hechos_esenciales", "dividendos", "ofertas_publicas"],
         "context_type": "corporativo",
         "keywords": ["accionistas", "inversionistas", "analistas financieros", "sitio web corporativo", "www.ccu.cl", "www.ccuinvestor.com", "reportes trimestrales", "estados financieros", "memorias anuales", "Formulario 20-F", "conferencia telefónica", "lineamientos estratégicos", "gobierno corporativo", "informacion de mercado"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -556,7 +555,7 @@
         "semantic_tags": ["relacion_inversionistas", "cumplimiento_regulatorio", "gobierno_corporativo", "informacion_confidencial", "roadshows", "MMIIM", "SEC", "SOX", "NYSE", "CCU_SA", "publicacion_informacion", "Formulario_20F"],
         "context_type": "corporativo",
         "keywords": ["conferencias", "roadshows", "inversionistas", "analistas", "herramientas tecnológicas", "CMF", "Memoria Anual", "Junta Ordinaria de Accionistas", "Ley de Mercado de Valores", "NCG N° 270", "Manual de Manejo de Información de Interés para el Mercado", "MMIIM", "lineamientos de gobierno corporativo", "información relevante", "transacciones de valores", "Securities and Exchange Act 1934", "Ley SOX", "SEC", "NYSE", "Formulario 20-F"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -565,7 +564,7 @@
         "semantic_tags": ["gobierno_corporativo", "eleccion_directores", "codigo_conducta", "transparencia", "accionistas", "CCU_SA", "cumplimiento_legal"],
         "context_type": "corporativo",
         "keywords": ["Procedimiento de Elección de Directores", "Juntas de Accionistas", "Código de Conducta del Directorio", "Gerente de Asuntos Legales", "Secretario del Directorio", "currículum", "candidatos independientes", "Ley N° 18.046 sobre Sociedades Anónimas", "información en sitio web", "inabilidades", "nominación", "difusión de antecedentes"],
-        "relevance_score": 0.96
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -574,7 +573,7 @@
         "semantic_tags": ["gobierno_corporativo", "participacion_accionistas", "junta_accionistas", "voto_presencial", "informacion_inversionistas", "CCU_SA", "cumplimiento_legal"],
         "context_type": "corporativo",
         "keywords": ["participación remota", "voto presencial", "Director de CCU S.A.", "normativa legal aplicable", "Junta Ordinaria de Accionistas 2023", "acuerdos de junta", "difusión de información", "páginas web", "road shows", "Formulario 20-F", "press release", "memoria anual", "hechos esenciales", "canal de denuncias"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -610,7 +609,7 @@
         "semantic_tags": ["comunidades", "responsabilidad_social", "sustentabilidad", "relacionamiento_local", "proyectos_comunitarios", "CCU_SA", "impacto_social", "gestión_territorial", "canales_comunicación"],
         "context_type": "corporativo",
         "keywords": ["personas", "juntas de vecinos", "organizaciones", "diálogo", "confianza", "trabajo conjunto", "desempeño económico, social y ambiental", "consumo responsable de alcohol", "acceso al agua", "aporte cultural y social", "relacionadores comunitarios", "plan de Relacionamiento Comunitario Local", "vocería", "monitoreo", "reporte de contingencias", "Página web www.ccuinvestor.com / www.ccu.cl", "Reuniones y mesas de trabajo", "Programas específicos por área de influencia", "Plan anual de relacionamiento comunitario", "Memorial Anual", "Canal de Denuncias"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -637,7 +636,7 @@
         "semantic_tags": ["estrategia_corporativa", "sustentabilidad", "planificación_estratégica", "gobierno_corporativo", "desarrollo_marcas", "responsabilidad_social", "medio_ambiente", "derechos_humanos", "monitoreo_directorio"],
         "context_type": "corporativo",
         "keywords": ["Sustentabilidad", "valor a largo plazo", "bienestar personas", "desarrollo marcas", "cuidado medio ambiente", "derechos humanos", "planificación estratégica", "objetivos estratégicos de largo plazo", "planes trianuales", "aprobación Directorio", "monitoreo", "Comité de Dirección", "Gerencia de Planificación Estratégica y Nuevos Negocios", "evaluación entorno", "adaptación estrategia"],
-        "relevance_score": 0.98
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -664,7 +663,7 @@
         "semantic_tags": ["gestión_de_personas", "desarrollo_organizacional", "competencias", "liderazgo", "transformación_regional", "experiencia_laboral", "oportunidades", "relaciones_laborales", "capacidades", "diversidad_inclusión", "sustentabilidad", "medioambiente", "comunidades", "Plataforma_de_Negocios"],
         "context_type": "corporativo",
         "keywords": ["trabajadores", "desarrollo de personas", "competencias necesarias", "liderazgo", "transformación regional", "experiencia laboral", "desarrollo y oportunidades", "relaciones laborales", "generar capacidades", "diversidad e inclusión", "entorno", "Plataforma de Negocios", "conexión con la ciudadanía", "Visión Medioambiental 2030", "gases efecto invernadero", "energía eléctrica renovable", "consumo de agua", "valorización de residuos", "envases retornables", "material reciclado", "comunidades"],
-        "relevance_score": 0.95
+        "relevance_score": 0.99
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -673,7 +672,7 @@
         "semantic_tags": ["innovación", "portafolio_de_productos", "empaque", "transformación", "innovación_incremental", "innovación_disruptiva", "experiencia_de_servicio", "rentabilidad", "gestión_comercial", "marketing", "gestión_de_ingresos", "planificación_logística", "abastecimiento", "gestión_industrial", "gastos_administrativos"],
         "context_type": "estratégico",
         "keywords": ["innovación de producto", "innovación de empaque", "tendencias del consumidor", "alto margen", "Programa Transformación CCU", "innovación incremental", "efectividad comercial", "marketing", "gestión de ingresos", "planificación y logística", "abastecimiento", "gestión industrial", "gastos de administración", "innovación disruptiva", "mejorar experiencia de servicio", "mejorar rentabilidad"],
-        "relevance_score": 0.96
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -682,7 +681,7 @@
         "semantic_tags": ["planes_de_inversión", "capex", "activos_fijos", "activos_intangibles", "mejora_de_procesos", "innovación", "sustentabilidad", "soporte_operacional", "expansión_de_capacidad", "ejecución_de_mercado"],
         "context_type": "financiero",
         "keywords": ["inversiones 2023", "compras de propiedades", "plantas y equipos", "activos intangibles", "CLP 129.447 millones", "Chile", "CLP 103.048 millones", "incremento de capacidad", "mejora de procesos productivos", "apoyo a innovación", "mejoras medioambientales", "soporte a procesos de ejecución"],
-        "relevance_score": 0.95
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -691,7 +690,7 @@
         "semantic_tags": ["planes_de_inversión", "capex_2024", "activos_de_producción", "activos_de_distribución", "envases_y_embalajes", "marketing", "planta_CirCCUlar", "Chile", "Argentina", "cumplimiento_normativo", "tecnología_de_ventas", "mejoras_operacionales"],
         "context_type": "financiero",
         "keywords": ["inversión 2024", "CLP 190.459 millones", "CLP 108.028 millones activos de producción", "nueva planta CirCCUlar", "Renca, Santiago de Chile", "CLP 22.783 millones activos de distribución", "CLP 28.718 millones envases retornables", "CLP 21.476 millones marketing", "CLP 155.221 millones en Chile", "segmentos de operación Chile, Vinos y Otros", "mejoras en operaciones Chile y Argentina"],
-        "relevance_score": 0.97
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -700,7 +699,7 @@
         "semantic_tags": ["planes_de_inversión", "ajustes_por_mercado", "programa_de_inversiones", "crecimiento_inorgánico", "fusiones_y_adquisiciones", "evaluación_continua"],
         "context_type": "estratégico-financiero",
         "keywords": ["ajustes dependiendo de condiciones de mercado", "adecuación del programa de inversiones", "montos no garantizados", "planes de crecimiento inorgánico", "adquisiciones totales o parciales", "Chile y otros países", "revisión periódica del plan de inversiones"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -709,7 +708,7 @@
         "semantic_tags": ["políticas_de_inversión", "financiamiento", "gestión_financiera", "inversiones_operacionales", "expansión", "riesgo_cambiario", "inversiones_excedentes"],
         "context_type": "estratégico-financiero",
         "keywords": ["reposición de activos operacionales", "modernizaciones", "nuevas instalaciones", "adquisición de participaciones en empresas afines", "financiamiento con flujo operacional", "complemento con deuda de mercado", "perfil financiero saludable", "excedentes de caja", "depósitos a plazo y overnight", "operaciones de seguro de cambio", "balance en monedas extranjeras"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -718,7 +717,7 @@
         "semantic_tags": ["sustentabilidad", "estrategia_corporativa", "gestión_interna", "responsabilidad_social", "medioambiente", "marcas", "indicadores_de_gestión"],
         "context_type": "estratégico-sustentabilidad",
         "keywords": ["pilares estratégicos", "Rentabilidad", "Crecimiento", "bienestar de las personas", "cuidado del medioambiente", "desarrollo de marcas", "Modelo de Gestión interno", "Personas que nos mueven", "Planeta por el que velamos", "Marcas que nos inspiran", "temáticas esenciales", "indicadores de gestión"],
-        "relevance_score": 0.98
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -727,7 +726,7 @@
         "semantic_tags": ["sustentabilidad", "estrategia_corporativa", "gestión_interna", "responsabilidad_social", "medioambiente", "marcas", "indicadores_de_gestión"],
         "context_type": "estratégico-sustentabilidad",
         "keywords": ["pilares estratégicos", "Rentabilidad", "Crecimiento", "bienestar de las personas", "cuidado del medioambiente", "desarrollo de marcas", "Modelo de Gestión interno", "Personas que nos mueven", "Planeta por el que velamos", "Marcas que nos inspiran", "temáticas esenciales", "indicadores de gestión"],
-        "relevance_score": 0.98
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -736,16 +735,16 @@
         "semantic_tags": ["sustentabilidad", "responsabilidad_social", "relaciones_comunitarias", "medioambiente", "consumo_responsable", "cultura", "desarrollo_sostenible", "gestión_local"],
         "context_type": "estratégico-comunidad",
         "keywords": ["canal de denuncias comunitarias", "Servicio de Atención al Cliente", "bienestar de las personas", "cuidado del medioambiente", "consumo responsable de alcohol", "acceso al agua", "aporte cultural y social", "desarrollo sostenible", "valor territorial", "Ser CCU"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0083",
-        "text": "Nuestros 5 Principios corresponden a: Somos un buen vecino Buscamos reducir cualquier impacto negativo o molestia a nuestros vecinos y al medioambiente. l. territorio prospera con CCU Queremos dejar un legado positivo y duradero, de modo que las comunidades perciban beneficios concretos al ser vecinos de CCU. 3. Cumplimos nuestros compromisos Cumplimos oportunamente con los compromisos asumidos con la comunidad. 4. Puertas abiertas Mantenemos canales de comunicación permanentes con nuestros vecinos. 5. Vinculación territorial continua Promovemos acciones que habilitan una relación constante y cercana entre CCU y la comunidad.",
+        "text": "Nuestros 5 Principios comunitarios corresponden a: Somos un buen vecino Buscamos reducir cualquier impacto negativo o molestia a nuestros vecinos y al medioambiente. l. territorio prospera con CCU Queremos dejar un legado positivo y duradero, de modo que las comunidades perciban beneficios concretos al ser vecinos de CCU. 3. Cumplimos nuestros compromisos Cumplimos oportunamente con los compromisos asumidos con la comunidad. 4. Puertas abiertas Mantenemos canales de comunicación permanentes con nuestros vecinos. 5. Vinculación territorial continua Promovemos acciones que habilitan una relación constante y cercana entre CCU y la comunidad.",
         "semantic_tags": ["sustentabilidad", "responsabilidad_social", "relaciones_comunitarias", "gobernanza_local", "impacto_territorial"],
         "context_type": "principios_comunidad",
         "keywords": ["buen vecino", "territorio prospera con CCU", "cumplimos compromisos", "puertas abiertas", "vinculación territorial", "impacto positivo", "canales de comunicación permanentes", "relación cercana con la comunidad"],
-        "relevance_score": 0.98
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -754,7 +753,7 @@
         "semantic_tags": ["responsabilidad_social", "programas_corporativos", "comunidad", "educación_alcohol", "cultura", "consumo_responsable"],
         "context_type": "programas_comunitarios",
         "keywords": ["consumo responsable", "estrategia educativa", "mensajes preventivos", "CCU en el arte", "cultura nacional", "participación comunitaria", "educación y concientización"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -763,7 +762,7 @@
         "semantic_tags": ["cultura", "arte", "programas_corporativos", "acceso_cultural", "difusión_arte", "participación_comunitaria", "regionalización_cultural"],
         "context_type": "programas_culturales",
         "keywords": ["CCU en el Arte", "acercar el arte", "descentralización cultural", "arte chileno", "estrategia territorial", "itinerancias 2023", "Sala Tole Peralta", "Pinacoteca de Concepción", "Universidad Católica de Temuco", "alcance 5.000 personas"],
-        "relevance_score": 0.96
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -772,7 +771,7 @@
        "semantic_tags": ["sustentabilidad", "educación_ambiental", "reciclaje", "programas_corporativos", "responsabilidad_social", "Cultura Ambiental", "Kyklos"],
        "context_type": "programas_ambientales",
         "keywords": ["Chile Sin Basura", "reciclaje botellas", "educadores", "colegios", "desafíos educativos", "familias", "contenido educativo ambiental"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -781,7 +780,7 @@
         "semantic_tags": ["responsabilidad_social", "aportes_comunidad", "solidaridad", "cumplimiento_normativo", "vinculos_locales"],
         "context_type": "programas_comunitarios",
         "keywords": ["Política de Aportes a la Comunidad", "Donaciones", "Auspicios Solidarios", "vínculos con comunidades", "confianza", "valor mutuo"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -790,7 +789,7 @@
         "semantic_tags": ["responsabilidad_social", "aportes_comunidad", "solidaridad", "gestión_emergencias", "cultura", "bienestar_social"],
         "context_type": "programas_comunitarios",
         "keywords": ["aportes solidarios", "desarrollo local", "arte y cultura", "educación y formación", "medioambiente", "donaciones en dinero", "donaciones en productos", "donaciones en emergencias", "Auspicios Solidarios", "Comité de Donaciones", "gobernanza de aportes"],
-        "relevance_score": 0.96
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -799,7 +798,7 @@
         "semantic_tags": ["responsabilidad_social", "aportes_comunidad", "solidaridad", "medioambiente", "educación", "gestión_emergencias", "deporte"],
         "context_type": "programas_comunitarios",
         "keywords": ["colaboración con instituciones", "reforestación", "mejora áreas verdes", "incentivo al deporte", "apoyo a familias damnificadas", "tutorías y becas", "campañas 1+1", "donación de agua", "emergencias climáticas", "regiones de impacto"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -808,7 +807,7 @@
         "semantic_tags": ["sustentabilidad", "medioambiente", "emisiones", "cambio_climático", "energías_renovables", "eficiencia_energética"],
         "context_type": "gestión_ambiental",
         "keywords": ["huella de carbono", "alcance 1 y 2", "inventario emisiones", "eficiencia procesos productivos", "renovación tecnológica", "proyectos específicos", "reducción CO2", "energías renovables"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -817,7 +816,7 @@
         "semantic_tags": ["sustentabilidad", "medioambiente", "energías_renovables", "eficiencia_energética", "reconocimientos", "reducción_emisiones"],
         "context_type": "gestión_ambiental",
         "keywords": ["Huella Chile", "gases efecto invernadero", "energía renovable", "Colbún", "reducción emisiones", "2030", "caldera eficiente", "grúas eléctricas"],
-        "relevance_score": 0.97
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -826,7 +825,7 @@
         "semantic_tags": ["medioambiente", "emisiones", "combustibles_fósiles", "reducción_contaminantes", "eficiencia_energética"],
         "context_type": "gestión_emisiones",
         "keywords": ["emisiones combustión fósil", "reducción SOx", "reducción NOx", "material particulado", "COV", "registro RUEA", "Ministerio de Medio Ambiente"],
-        "relevance_score": 0.96
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -835,7 +834,7 @@
         "semantic_tags": ["medioambiente", "emisiones", "sustancias_ozono", "refrigeración", "control_ambiental"],
         "context_type": "gestión_emisiones",
         "keywords": ["emisiones HCFC", "emisiones HFC", "CFC-11 equivalente", "sustancias agotadoras del ozono", "refrigeración industrial", "capa de ozono"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -844,7 +843,7 @@
         "semantic_tags": ["cambio_climático", "adaptación", "mitigación", "vulnerabilidad_climática", "operaciones_industriales"],
         "context_type": "gestión_climática",
         "keywords": ["condiciones climáticas", "disponibilidad hídrica", "vulnerabilidad territorial", "impacto productivo", "eventos climáticos extremos", "riesgo operacional"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -853,7 +852,7 @@
         "semantic_tags": ["cambio_climático", "mitigación", "infraestructura_resiliente", "gestión_de_riesgos", "adaptación_climática"],
         "context_type": "planes_de_mitigación",
         "keywords": ["planes de mitigación", "infraestructura contra incendios", "Centro de Distribución Copiapó", "aluviones", "proyectos de adaptación", "sistemas de detección y extinción"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -862,7 +861,7 @@
         "semantic_tags": ["energía", "eficiencia_energética", "gestión_ambiental", "mejora_continua", "conciencia_energética"],
         "context_type": "gestión_energética",
         "keywords": ["gestión eficiente de la energía", "política ambiental", "cultura energética", "sistema de gestión de energía", "productos eficientes", "mejora continua"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -871,7 +870,7 @@
         "semantic_tags": ["energía", "fuentes_renovables", "biogás", "eficiencia_energética", "energía_solar", "sostenibilidad"],
         "context_type": "consumo_energético",
         "keywords": ["energía térmica", "fuentes no renovables", "gas natural", "biogás", "paneles fotovoltaicos", "electricidad renovable", "reducción de consumo energético"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -880,7 +879,7 @@
         "semantic_tags": ["energía", "energía_renovable", "abastecimiento", "contrato_energético", "Colbún", "sostenibilidad"],
         "context_type": "abastecimiento_energético",
         "keywords": ["energía eléctrica", "Sistema Eléctrico Nacional", "energía renovable", "contrato Colbún", "plantas productivas", "centros de distribución"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -889,7 +888,7 @@
         "semantic_tags": ["energía_renovable", "sostenibilidad", "reducción_emisiones", "infraestructura_productiva", "contrato_energético", "Colbún"],
         "context_type": "implementación_energía_renovable",
         "keywords": ["plantas productivas", "suministro eléctrico", "energía limpia", "reducción CO2", "contrato Colbún", "instalaciones CCU"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -898,7 +897,7 @@
         "semantic_tags": ["eficiencia_energética", "energía_renovable", "economía_circular", "gestión_energética", "sostenibilidad_operacional"],
         "context_type": "reducción_consumo_energía",
         "keywords": ["81% energía renovable", "eficiencia productiva", "metodología TPM", "recuperación de condensado", "valorización de residuos", "BAU 2010 comparación"],
-        "relevance_score": 0.97
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -907,7 +906,7 @@
         "semantic_tags": ["gestión_residuos", "economía_circular", "reciclaje", "cultura_ambiental", "colaboración_proveedores"],
         "context_type": "residuos_industriales",
         "keywords": ["clasificación de residuos", "reciclaje de vidrios y plásticos", "reducción gramaje envases", "educación comunitaria", "participación trabajadores", "iniciativas conjuntas con proveedores"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -916,7 +915,7 @@
         "semantic_tags": ["regulación_residuos", "ley_rep", "reciclaje", "responsabilidad_productor", "gestión_envases"],
         "context_type": "marco_legal_residuos",
         "keywords": ["Ley REP", "responsabilidad extendida del productor", "reciclaje envases", "ReSimple", "productos prioritarios", "Ley plásticos de un solo uso", "botellas retornables"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -925,7 +924,7 @@
         "semantic_tags": ["regulación_industrial", "gremios", "sostenibilidad", "economía_circular", "residuos"],
         "context_type": "participación_industrial",
         "keywords": ["AB Chile", "Asipla", "ACECHI", "Vinos de Chile", "Pisco Chile", "Sofofa", "reglamento sanitario alimentos", "ley plásticos de un solo uso", "plástico reciclado", "etiquetado alcohol", "publicidad alcohol", "uso sostenible recursos", "gestión residuos"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -934,7 +933,7 @@
         "semantic_tags": ["plásticos", "economía_circular", "regulación_industrial", "inocuidad_alimentos", "colaboración_industrial"],
         "context_type": "participación_industrial",
         "keywords": ["Pacto Chileno de los Plásticos", "uso responsable envases plásticos", "embalajes reciclables", "actualización reglamento sanitario", "envases plásticos reciclados", "inocuidad alimentos", "cadena de valor plásticos", "certificaciones plásticos"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -943,7 +942,7 @@
         "semantic_tags": ["reciclaje", "economía_circular", "certificación_ambiental", "producción_limpia", "envases_reciclables"],
         "context_type": "gestión_residuos",
         "keywords": ["Sello #ElijoReciclar", "Acuerdo de Producción Limpia", "SOFOFA", "material reciclable", "demanda industria reciclaje", "certificación productos", "productos CCU certificados"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -952,7 +951,7 @@
         "semantic_tags": ["reciclaje", "educación_ambiental", "programas_comunitarios", "concursos", "cultura_circular"],
         "context_type": "programas_comunitarios",
         "keywords": ["Chile Sin Basura 2040", "Kyklos", "hábitos de reciclaje", "concurso creativo", "residuos", "exposición #ReciclarEsUnArte", "Sala de Arte CCU Foco Curatorial"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -961,7 +960,7 @@
         "semantic_tags": ["reciclaje", "economía_circular", "plástico", "sustentabilidad", "innovación"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["CirCCUlar", "reciclaje Botella-Botella", "resina reciclada PET", "producción sostenible", "reducción de desechos plásticos", "inversión ambiental", "Nueva Planta Embotelladora Renca"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -970,7 +969,7 @@
         "semantic_tags": ["reciclaje", "economía_circular", "sustentabilidad", "innovación", "impacto_social", "energía_renovable"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["CirCCUlar", "resina reciclada local", "reducción emisiones", "producción sustentable", "energía renovable Colbún", "empleo local", "beneficios sociales y económicos"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -979,7 +978,7 @@
         "semantic_tags": ["reciclaje", "gestión_hídrica", "sustentabilidad", "eficiencia_operativa", "recursos_naturales"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["industria del reciclaje", "gestión del agua", "eficiencia hídrica", "optimización continua", "reducción de consumo", "tecnologías sostenibles", "cadena de valor"],
-        "relevance_score": 0.96
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -988,7 +987,7 @@
         "semantic_tags": ["gestión_hídrica", "sustentabilidad", "monitoreo_recursos", "eficiencia_operativa", "cumplimiento_normativo"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["política de gestión hídrica", "consumo responsable de agua", "medición de niveles de agua", "monitoreo de disponibilidad hídrica", "zonas de escasez hídrica", "indicador de intensidad de uso", "planes de acción específicos"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -997,7 +996,7 @@
         "semantic_tags": ["gestión_hídrica", "eficiencia_agua", "buenas_prácticas", "sustentabilidad"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["reducción consumo de agua", "circuito cerrado refrigeración", "captación de agua", "pozos profundos", "red de agua potable", "aguas superficiales", "zonas de escasez hídrica"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1006,7 +1005,7 @@
         "semantic_tags": ["gestión_agua", "aguas_residuales", "cumplimiento_normativo", "sustentabilidad"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["consumo de agua dulce", "RILES", "tratamiento de aguas residuales", "descarga controlada", "normativa ambiental", "cursos superficiales", "redes de alcantarillado"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1015,7 +1014,7 @@
         "semantic_tags": ["gestión_agua", "normativa_agua", "responsabilidad_comunitaria", "sustentabilidad"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["normas agua de vertido", "estándares fisicoquímicos", "descarga convencional", "plan nacional de trabajo", "Pilar Solidario", "aporte hidratación", "escasez hídrica"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1024,7 +1023,7 @@
         "semantic_tags": ["certificación", "gestión_ambiental", "energía", "sustentabilidad", "estándares_internacionales"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["ISO 14001", "ISO 50001", "certificación energética", "Código Nacional de Sustentabilidad de Vinos", "procesos sustentables", "plantas industriales certificadas", "centros de distribución"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1033,7 +1032,7 @@
         "semantic_tags": ["certificación", "sustentabilidad", "viñedos", "gestión_social", "gestión_ambiental", "enoturismo"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["certificación áreas", "gestión del viñedo", "operaciones enológicas", "envasado", "gestión social viña", "VSPT Wine Group", "Protocolo Sustentabilidad", "desempeño socioambiental", "uso de agua", "gestión de residuos", "desempeño laboral"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1042,7 +1041,7 @@
         "semantic_tags": ["inversión", "gasto_ambiental", "gestión_residuos", "emisiones", "certificaciones", "sustentabilidad"],
         "context_type": "proyectos_medioambientales",
         "keywords": ["gastos medioambientales", "gestión RILES", "gestión RISES", "emisiones gaseosas", "cumplimiento ISO 22000", "ISO 14000", "OHSAS 18001", "inversión ambiental", "CirCCUlar", "proyectos sostenibles"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1051,7 +1050,7 @@
         "semantic_tags": ["consumo_responsable", "portafolio", "innovación", "bebidas_alcohólicas", "bebidas_analcohólicas"],
         "context_type": "estrategia_comercial",
         "keywords": ["portafolio equilibrado", "consumo responsable", "multicategoría", "innovación de productos", "calidad de bebidas", "tendencias del consumidor"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1060,7 +1059,7 @@
         "semantic_tags": ["consumo_responsable", "educación", "comunidad", "alcohol", "colaboración_social"],
         "context_type": "programas_comunitarios",
         "keywords": ["promoción consumo responsable de alcohol", "educación comunitaria", "mensajes de autocuidado", "actores sociales", "difusión responsable", "colaboración multisectorial"],
-        "relevance_score": 0.97
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1069,7 +1068,7 @@
         "semantic_tags": ["consumo_responsable", "educación", "prevención", "familia", "seguridad_vial"],
         "context_type": "programas_comunitarios",
         "keywords": ["Programa Educar en Familia", "no venta de alcohol a menores", "campañas educativas", "seguridad vial", "diálogo formativo", "alianzas con clientes", "prevención consumo en menores"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1078,7 +1077,7 @@
         "semantic_tags": ["consumo_responsable", "educación", "seguridad_vial", "prevención", "fundación_emilia"],
         "context_type": "programas_comunitarios",
         "keywords": ["campañas de sensibilización", "talleres escolares online", "Aprendamos sobre Seguridad Vial", "charlas regionales", "promoción consumo responsable", "convivencia vial", "códigos de autorregulación"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1087,7 +1086,7 @@
         "semantic_tags": ["consumo_responsable", "comunicación_responsable", "autorregulación", "innovación_de_productos"],
         "context_type": "programas_comunitarios",
         "keywords": ["comunicaciones responsables", "vínculo emocional con consumidores", "cumplimiento normativo", "autorregulación estructurada", "alternativas con menor graduación alcohólica", "bebidas sin alcohol"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1096,7 +1095,7 @@
         "semantic_tags": ["seguridad_alimentaria", "innovación_de_productos", "cumplimiento_normativo"],
         "context_type": "portafolio_y_productos",
         "keywords": ["bebidas analcohólicas", "contenido nutricional", "información al consumidor", "reformulación de productos", "comité de innovaciones", "cumplimiento de regulaciones", "calidad de productos"],
-        "relevance_score": 0.95
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1105,7 +1104,7 @@
         "semantic_tags": ["cumplimiento_normativo", "etiquetado_alimentos", "tendencias_consumidor", "innovación_de_productos"],
         "context_type": "portafolio_y_productos",
         "keywords": ["monitoreo de tendencias", "productos naturales", "bienestar del consumidor", "etiquetado regulado", "reglamento sanitario de alimentos", "Ley 20.606", "Ley 18.455"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1114,7 +1113,7 @@
         "semantic_tags": ["cumplimiento_normativo", "etiquetado_alimentos", "autorregulación", "calidad_e_inocuidad"],
         "context_type": "portafolio_y_productos",
         "keywords": ["etiquetado 100% productos", "Guía Diaria de Alimentación", "SMCCU", "Código de Comunicaciones Comerciales Responsables", "Política de Alcohol CCU", "certificaciones internacionales", "protocolos de calidad"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1123,7 +1122,7 @@
         "semantic_tags": ["calidad_e_inocuidad", "certificaciones_alimentarias", "normativa_internacional"],
         "context_type": "portafolio_y_productos",
         "keywords": ["Reglamento Sanitario de los Alimentos", "HACCP", "ISO 22000", "FSSC 22000", "BRC", "protección del consumidor", "seguridad alimentaria"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1132,7 +1131,7 @@
         "semantic_tags": ["relación_consumidor", "valor_de_marca", "gestión_portafolio"],
         "context_type": "portafolio_y_productos",
         "keywords": ["Modelo de Preferencia", "posicionamiento de marca", "publicidad", "producto", "punto de venta", "precio", "Política de Servicio al Cliente"],
-        "relevance_score": 0.96
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1150,7 +1149,7 @@
         "semantic_tags": ["marcas_con_propósito", "ODS", "comunidad", "bienestar", "reciclaje"],
         "context_type": "proyectos_comunitarios",
         "keywords": ["Refresca tu Barrio", "Cachantun", "Fundación Mi Parque", "construcción de plazas", "deporte y recreación", "participación comunitaria", "plástico reciclado"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1159,7 +1158,7 @@
         "semantic_tags": ["marcas_con_propósito", "ODS", "comunidad", "educación", "igualdad_de_género"],
         "context_type": "proyectos_comunitarios",
         "keywords": ["Recicancha Renca", "plástico reciclado", "participación comunitaria", "Beca Genias", "empoderamiento femenino", "creatividad y marca personal", "gestión del tiempo"],
-        "relevance_score": 0.97
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1168,7 +1167,7 @@
         "semantic_tags": ["marcas_con_propósito", "ODS", "arte", "emprendimiento", "igualdad"],
         "context_type": "proyectos_comunitarios",
         "keywords": ["Beca Genias 2023", "Escudo Lab", "artistas emergentes", "contenido digital", "cerveza colaborativa Corazón de Nevera", "emprendedores chilenos", "visibilidad artística"],
-        "relevance_score": 0.96
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1177,7 +1176,7 @@
         "semantic_tags": ["marcas_con_propósito", "ODS", "medio_ambiente", "economía_circular", "ciudades_sostenibles"],
         "context_type": "proyectos_comunitarios",
         "keywords": ["Familias reciclando", "Modo Bilz y Pap", "Teletón", "Ministerio de Medio Ambiente", "municipalidades", "recolección de plástico", "valorización de residuos", "proyectos urbanos sostenibles"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1186,7 +1185,7 @@
         "semantic_tags": ["marcas_con_propósito", "ODS", "biodiversidad", "ecosistemas", "emprendimiento_local", "cultura_local"],
         "context_type": "proyectos_comunitarios",
         "keywords": ["piezas de cerámica", "viñedo Tarapacá", "restauración de flora y fauna", "Altos de Cantillana", "Río Maipo", "especies nativas", "master plan de biodiversidad", "emprendedores locales"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1195,7 +1194,7 @@
         "semantic_tags": ["gestión_de_personas", "clima_laboral", "desarrollo_profesional", "cultura_corporativa", "seguridad_laboral"],
         "context_type": "capital_humano",
         "keywords": ["desarrollo integral de trabajadores", "principios corporativos", "ambiente de buen clima organizacional", "máxima seguridad", "experiencias laborales", "alcanzar máximo potencial"],
-        "relevance_score": 0.95
+        "relevance_score": 0.99
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1231,7 +1230,7 @@
         "semantic_tags": ["capital_humano", "diversidad", "inclusión_laboral", "derechos_humanos", "respeto"],
         "context_type": "capital_humano",
         "keywords": ["Política de Diversidad e Inclusión", "Política Corporativa de Derechos Humanos", "espacios de trabajo diversos", "respeto por los Derechos Humanos", "desarrollo personal y laboral", "equipos diversos", "marco regional"],
-        "relevance_score": 0.97
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2165,6 +2164,7 @@
     }
 ]
 }
+
 
 
 
