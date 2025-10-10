@@ -1004,201 +1004,362 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0045",
         "text": "Cada país donde operamos tiene normas y estándares equivalentes, que regulan las características fisicoquímicas que debe cumplir el agua de vertido. En el caso de no contar con estándares regionales, se utilizan los parámetros de descarga convencionales, según el cuerpo receptor.  Gestión del recurso hídrico CCU cuenta con un plan nacional de trabajo con comunidades y, dentro del interés comunal, se trabaja con el Pilar Solidario, en el marco de lo cual se aporta con hidratación para distintas actividades, especialmente cuando el agua es limitada o escasa.",
+        "semantic_tags": ["gestión_agua", "normativa_agua", "responsabilidad_comunitaria", "sustentabilidad"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["normas agua de vertido", "estándares fisicoquímicos", "descarga convencional", "plan nacional de trabajo", "Pilar Solidario", "aporte hidratación", "escasez hídrica"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0046",
         "text": "Altos estándares: Un 58% de las Plantas Industriales y Centros de Distribución de la Compañía posee un Sistema de Gestión Ambiental ISO 14001, con certificación vigente, a nivel operativo. PLASCO, Planta Quilicura, Planta Temuco y Planta Modelo cuentan con una certificación vigente en el Sistema de Gestión de Energía ISO 50001. De manera de asegurar la excelencia de los procesos y tener los más altos en sustentabilidad en cada uno de los viñedos y campos son sometidos a rigurosos procesos de certificación. En el caso de la operación en Chile, se encuentra certificada bajo el Código Nacional de Sustentabilidad de Vinos de Chile, en las 4 áreas que contempla el código.",
+        "semantic_tags": ["certificación", "gestión_ambiental", "energía", "sustentabilidad", "estándares_internacionales"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["ISO 14001", "ISO 50001", "certificación energética", "Código Nacional de Sustentabilidad de Vinos", "procesos sustentables", "plantas industriales certificadas", "centros de distribución"],
+        "relevance_score": 0.95
+}
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0046",
         "text": "El área verde, certifica toda la gestión correspondiente al manejo del viñedo, el área roja lo que corresponde a las operaciones enológicas y envasado, por último, el área naranja que certifica la gestión social de la viña en relación a las personas y la comunidad. Por otro lado, VSPT Wine Group es una de las 5 viñas certificadas bajo el código en su área morada, que certifica las operaciones enoturísticas sustentables. La operación de VSPT Wine Group en Argentina por su parte, está certificada por el Protocolo de Sustentabilidad de Bodegas de Argentina. Este estándar contempla la verificación del desempeño socio ambiental, con especial foco en el uso de agua, gestión de residuos y desempeño laboral.",
+        "semantic_tags": ["certificación", "sustentabilidad", "viñedos", "gestión_social", "gestión_ambiental", "enoturismo"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["certificación áreas", "gestión del viñedo", "operaciones enológicas", "envasado", "gestión social viña", "VSPT Wine Group", "Protocolo Sustentabilidad", "desempeño socioambiental", "uso de agua", "gestión de residuos", "desempeño laboral"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0046",
         "text": "Gasto e inversión ambiental Los principales gastos medioambientales de CCU se asocian a la gestión RILES, Residuos Industriales Sólidos (“RISES”), Emisiones Gaseosas (calibraciones y verificaciones de los instrumentos de control y operación de fuentes fijas) y otros recursos vinculados al desempeño normativo, como la verificación y cumplimiento de los sistemas de gestión ISO 22000, Inocuidad de Alimentos, ISO 14000, Gestión Ambiental y OHSAS 18001, de Seguridad y Salud Ocupacional. Durante 2023, la Compañía destinó CLP 14.183 millones a gastos ambientales, un 12% más que en el año 2022. Además, para proyectos de inversión ambiental se destinaron CLP 22.305 millones, un 83% más que el año 2022, debido a la construcción de planta CirCCUlar.",
+        "semantic_tags": ["inversión", "gasto_ambiental", "gestión_residuos", "emisiones", "certificaciones", "sustentabilidad"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["gastos medioambientales", "gestión RILES", "gestión RISES", "emisiones gaseosas", "cumplimiento ISO 22000", "ISO 14000", "OHSAS 18001", "inversión ambiental", "CirCCUlar", "proyectos sostenibles"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0047",
         "text": "Consumo responsable y portafolio equilibrado  SASB (FB-AB-270a.4) (FB-NB-260a.2), (GRI 416-1; 417-1)A través de nuestra oferta multicategoría, promovemos el consumo responsable a través de un portafolio equilibrado, tanto en bebidas analcohólicas como alcohólicas. De esta manera, las personas pueden optar entre una variedad de productos, de acuerdo con cada instancia de consumo. Innovamos constantemente en nuestro portafolio para entregar productos de la más alta calidad respondiendo a nuevas tendencias y expectativas de los consumidores. ",
+        "semantic_tags": ["consumo_responsable", "portafolio", "innovación", "bebidas_alcohólicas", "bebidas_analcohólicas"],
+        "context_type": "estrategia_comercial",
+        "keywords": ["portafolio equilibrado", "consumo responsable", "multicategoría", "innovación de productos", "calidad de bebidas", "tendencias del consumidor"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0047",
         "text": "Para CCU, promover y educar una cultura de Consumo Responsable, es considerada una tarea y representa una contribución concreta a la comunidad, entregando mensajes de consumo moderado y responsable, de manera clara y propositiva sobre nuestros productos y de cómo consumirlos en forma correcta y consciente. La educación y difusión sobre el Consumo Responsable de Alcohol compete a muchos actores de la sociedad, tales como las autoridades que ejercen un rol regulatorio, fiscalizador y, especialmente, educativo con la comunidad; el comercio, que tiene la relación más cercana con los consumidores; los integrantes de CCU, como grandes embajadores; las familias, que son los principales educadores de sus hijos y ejemplo para ellos; los proveedores, como grandes socios para extender el mensaje y, sobre todo, los consumidores como principales actores del autocuidado.",
+        "semantic_tags": ["consumo_responsable", "educación", "comunidad", "alcohol", "colaboración_social"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["promoción consumo responsable de alcohol", "educación comunitaria", "mensajes de autocuidado", "actores sociales", "difusión responsable", "colaboración multisectorial"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0047",
         "text": "Con esta visión, desde 1994 CCU desarrolla el Programa de Promoción de Consumo Responsable de Alcohol, estrategia integrada de acciones que invita a distintos actores de la sociedad a desarrollar una serie de iniciativas, con el objetivo de educar e informar, lo que se traduce en cuatro focos de trabajo: . Programa Educar en Familia: taller dirigido a padres, madres y apoderados, para la prevención del consumo en menores de edad. Se entrega información técnica y herramientas comunicacionales para fomentar el diálogo formativo en la familia. 2. No Venta de Alcohol a Menores: En alianza con clientes de CCU, almacenes, botillerías, bares y restaurantes y el programa Crecer Juntos de CRECCU, buscamos reforzar el consumo responsable y moderado de alcohol e invitar a nuestros clientes a ser un agente positivo dentro de su comunidad y unirse a que los menores de edad no accedan al alcohol por medio de compras efectuadas por adultos. 3. Campañas educativas de consumo responsable y de Seguridad Vial: dirigidas a la sociedad, reforzando la incompatibilidad entre consumo de alcohol y conducción, educando en respetar las leyes del tránsito y conducción segura, especialmente en fiestas patrias y fin de año.",
+        "semantic_tags": ["consumo_responsable", "educación", "prevención", "familia", "seguridad_vial"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["Programa Educar en Familia", "no venta de alcohol a menores", "campañas educativas", "seguridad vial", "diálogo formativo", "alianzas con clientes", "prevención consumo en menores"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0048",
         "text": "Junto a Fundación Emilia trabajamos campañas de sensibilización y educación, destinadas a promover la celebración responsable, la convivencia vial y la promoción del consumo responsable de alcohol. Durante el 2023 se realizaron 12 talleres escolares online llamados “Aprendamos sobre Seguridad Vial”, llegando a 392 beneficiados directos, entre alumnos y docentes. Asimismo, se realizaron dos charlas en la Región de la Araucanía, donde asistieron 200 estudiantes. 4. Códigos de Autorregulación Corporativa: 1. En CCU buscamos la preferencia de nuestras marcas, impulsando comunicaciones comerciales innovadoras, eficaces e inspiradoras de una manera responsable. ",
+        "semantic_tags": ["consumo_responsable", "educación", "seguridad_vial", "prevención", "fundación_emilia"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["campañas de sensibilización", "talleres escolares online", "Aprendamos sobre Seguridad Vial", "charlas regionales", "promoción consumo responsable", "convivencia vial", "códigos de autorregulación"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0047",
         "text": "En consecuencia, todas nuestras comunicaciones deben mantenerse dentro de los límites de lo responsable y correcto, pero al mismo tiempo, mantener su vigor y atracción a los consumidores, buscando crear un vínculo emocional y directo con cada uno de ellos. Nuestros productos y la comunicación que de ellos se realice, siempre deberán cumplir con la normativa vigente en cada país donde se elaboren, distribuyan o exhiban. Contar con una autorregulación seria y estructurada ayuda a proteger a nuestros clientes, consumidores y a la sociedad en general, contribuyendo además a la sustentabilidad de la Compañía. Junto al programa de Consumo y Responsable, continuamos avanzando en la incorporación de más alternativas con menor graduación alcohólica o sin alcohol en las categorías de cervezas, espumantes y cócteles ready to drink.",
+        "semantic_tags": ["consumo_responsable", "comunicación_responsable", "autorregulación", "innovación_de_productos"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["comunicaciones responsables", "vínculo emocional con consumidores", "cumplimiento normativo", "autorregulación estructurada", "alternativas con menor graduación alcohólica", "bebidas sin alcohol"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0049",
         "text": "En materia de bebidas analcohólicas, CCU se norma bajo las regulaciones sobre contenido nutricional de sus productos, informando adecuadamente al consumidor e innovando en su portafolio para entregar los mejores productos en todas las categorías y respondiendo a las tendencias de los consumidores. En todas nuestras categorías de productos CCU, los ingredientes que se analizan y utilizan se enmarcan en la legislación y se encuentran aprobados por la autoridad competente. Además, el Comité de Innovaciones y el Programa de Reformulación de Productos examinan las formulaciones y los nuevos ingredientes que podrían utilizarse, buscando mantener siempre la calidad de los productos y cumplir estrictamente con la regulación vigente.",
+        "semantic_tags": ["seguridad_alimentaria", "innovación_de_productos", "cumplimiento_normativo"],
+        "context_type": "portafolio_y_productos",
+        "keywords": ["bebidas analcohólicas", "contenido nutricional", "información al consumidor", "reformulación de productos", "comité de innovaciones", "cumplimiento de regulaciones", "calidad de productos"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0050",
         "text": "De manera complementaria, CCU monitorea constantemente las tendencias del consumidor con el objetivo de tener productos que satisfagan sus necesidades que estos tienen. En los últimos años hemos visto que las tendencias de bienestar y productos más naturales han ido tomando fuerza entre los consumidores, terreno en el cual también estamos presentes. El etiquetado de los productos que componen el portafolio CCU cumple con la normativa vigente en el país de venta. Por ejemplo, en Chile, cumplimos con el Reglamento Sanitario de los Alimentos para los productos sin alcohol (gaseosas, agua, néctares, jugos en polvo, energéticas), y su modificación con la Ley N° 20.606, “Sobre composición nutricional de los Alimentos”; la Ley N° 18.455, que fija Normas Sobre Producción, Elaboración y Comercialización de Alcoholes Etílicos, Bebidas Alcohólicas y Vinagres, reglamentada en el Decreto N° 78 del Ministerio de Agricultura de 1986.",
+        "semantic_tags": ["cumplimiento_normativo", "etiquetado_alimentos", "tendencias_consumidor", "innovación_de_productos"],
+        "context_type": "portafolio_y_productos",
+        "keywords": ["monitoreo de tendencias", "productos naturales", "bienestar del consumidor", "etiquetado regulado", "reglamento sanitario de alimentos", "Ley 20.606", "Ley 18.455"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0050",
         "text": " Para todas estas regulaciones, el etiquetado aplica al 100% de los productos de la Compañía. Junto con ello, CCU adhiere a las buenas prácticas de la industria en materia de información al consumidor (como la Guía Diaria de Alimentación, GDA). Además, la Compañía cuenta con una serie de herramientas internas de autorregulación en materia de etiquetado y comunicación de todos sus productos: el Sistema de Mensajes CCU (“SMCCU”),  el Código de Comunicaciones Comerciales Responsables y la Política de Alcohol CCU. En materia de calidad e inocuidad de nuestros procesos y productos, contamos con procesos robustos, protocolos de trabajo y certificaciones internacionales que nos permiten cumplir con los altos estándares de la industria.",
+        "semantic_tags": ["cumplimiento_normativo", "etiquetado_alimentos", "autorregulación", "calidad_e_inocuidad"],
+        "context_type": "portafolio_y_productos",
+        "keywords": ["etiquetado 100% productos", "Guía Diaria de Alimentación", "SMCCU", "Código de Comunicaciones Comerciales Responsables", "Política de Alcohol CCU", "certificaciones internacionales", "protocolos de calidad"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt"
         "id": "memoria_anual_CCA_2023-0050",
         "text": " En esta línea desarrollamos nuestros productos bajo el Reglamento Sanitario de los Alimentos en Chile, y cada país se rige bajo la normativa existente y, en casos especiales, se acude a la Universidad Católica y al Instituto de Nutrición y Tecnología de los Alimentos (“INTA”). Dentro de las certificaciones con las que contamos destacan: • Hazard Analysis and Critical Control Points (HACCP): Análisis de Riesgo y Puntos Críticos de Control. • ISO 22000, FSSC 22000 y BRC (British Retail Consortium): estas se orientan a un debido control de procesos para la protección del consumidor, garantizando la inocuidad y seguridad alimentaria de los productos elaborados.",
+        "semantic_tags": ["calidad_e_inocuidad", "certificaciones_alimentarias", "normativa_internacional"],
+        "context_type": "portafolio_y_productos",
+        "keywords": ["Reglamento Sanitario de los Alimentos", "HACCP", "ISO 22000", "FSSC 22000", "BRC", "protección del consumidor", "seguridad alimentaria"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0050",
         "text": "Relación con nuestros Consumidores En la búsqueda del continuo crecimiento del Valor de Marca, hemos construido nuestro Modelo de Preferencia, el cual identifica las causas y variables que impactan en la valorización de nuestras marcas y, en consecuencia, en el negocio. Las marcas son el activo clave de nuestra empresa, por ello, bajo una estrategia de portafolio, cada una de nuestras marcas define un posicionamiento deseado, el cual enmarca la gestión de las cuatro causas: publicidad, producto, punto de venta y precio. Esto tiene el objetivo de dar como resultado los siguientes efectos: mayor participación de mercado, mayores ingresos y desarrollo de la categoría. Para CCU es prioridad responder a las expectativas de los consumidores y brindar la más alta calidad de servicio. Para ello, cuenta con una Política de Servicio al Cliente y el Consumidor, que establece los procedimientos para atender las consultas, solicitudes, felicitaciones y quejas recibidas a través de las distintas plataformas de atención.",
+        "semantic_tags": ["relación_consumidor", "valor_de_marca", "gestión_portafolio"],
+        "context_type": "portafolio_y_productos",
+        "keywords": ["Modelo de Preferencia", "posicionamiento de marca", "publicidad", "producto", "punto de venta", "precio", "Política de Servicio al Cliente"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0051",
         "text": "Marcas con propósito Desde el año 2018 incorporamos el enfoque de Marcas con Propósito a nuestro Modelo de Preferencia, alineado a la declaración corporativa, declaración de Posicionamiento Deseado de marca, el Modelo de Gestión Sustentabilidad y a los Objetivos de Desarrollo Sostenible de la ONU. Junto con ratificar nuestro compromiso por incorporar la sustentabilidad al núcleo de nuestra actividad de negocios, esta nueva dirección permite fortalecer la vinculación de las marcas CCU con nuestros consumidores y la sociedad en general.",
+        "semantic_tags": ["marcas_con_propósito", "sustentabilidad", "valor_de_marca"],
+        "context_type": "portafolio_y_productos",
+        "keywords": ["enfoque de Marcas con Propósito", "Modelo de Preferencia", "sustentabilidad en negocios", "ODS", "vinculación con consumidores", "compromiso social"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0051",
         "text": "Las principales acciones de nuestras marcas con propósito corresponden a las siguientes: Contribuyendo al ODS 3: Salud y bienestar: A través del programa “Refresca tu Barrio” con Cachantun y Fundación Mi Parque, se realiza la construcción de plazas para incentivar el deporte, recreación y bienestar, siendo un proyecto colaborativo, en el que se involucran a las comunidades del sector activamente en todo el proceso, desde la elección del terreno hasta la ejecución. A la fecha, se han construido 12 plazas desde Arica a Puerto Montt, con más de 11.467 m2  y beneficiando a más de 120.000 personas. Este año se construyó una plaza en la comuna de Colina. Mediante la recolección de botellas y vasos plásticos en las competencias deportivas que auspicia, la marca transforma este material en implementos deportivos de plástico reciclado para incentivar el deporte.",
+        "semantic_tags": ["marcas_con_propósito", "ODS", "comunidad", "bienestar", "reciclaje"],
+        "context_type": "proyectos_comunitarios",
+        "keywords": ["Refresca tu Barrio", "Cachantun", "Fundación Mi Parque", "construcción de plazas", "deporte y recreación", "participación comunitaria", "plástico reciclado"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0051",
         "text": "Este año se inauguró la primera Recicancha en Renca construida con más de 2 toneladas de plástico reciclado en Chile. Este fue un trabajo conjunto con las comunidades, beneficiando a aproximadamente 1.500 personas.Contribuyendo al ODS 8: Trabajo decente y crecimiento económico: Por quinto año consecutivo, la marca lanzó “Beca Genias” en alianza con organización Genias, a través del mensaje “El Poder de Confiar en Ti”. Esta beca, tiene como propósito impactar a la mayor cantidad de mujeres que buscan poder trabajar su autoconfianza a través de un programa que abarca temas muy importantes como el Empoderamiento, Propósito, Creatividad, Marca Personal y Gestión del Tiempo.",
+        "semantic_tags": ["marcas_con_propósito", "ODS", "comunidad", "educación", "igualdad_de_género"],
+        "context_type": "proyectos_comunitarios",
+        "keywords": ["Recicancha Renca", "plástico reciclado", "participación comunitaria", "Beca Genias", "empoderamiento femenino", "creatividad y marca personal", "gestión del tiempo"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0052",
         "text": "El 2023 fueron más de 1.100 postulantes que se inscribieron para ser parte de la beca, donde quedaron 30 seleccionadas. Contribuyendo al ODS 10: Reducción de las desigualdades: A través de la plataforma Escudo Lab, la marca apoya a artistas emergentes del mundo urbano para potenciar su arte, dándoles visibilidad en las redes sociales, mediante contenido digital propietario de la marca. Además, por segundo año consecutivo, la marca trabajó en una nueva cerveza colaborativa: Corazón de Nevera, una cerveza lager que dió origen a esta edición limitada que estuvo a la venta durante el primer trimestre del 2023, una iniciativa pensada en generar apoyo a cerveceros emprendedores de Chile.",
+        "semantic_tags": ["marcas_con_propósito", "ODS", "arte", "emprendimiento", "igualdad"],
+        "context_type": "proyectos_comunitarios",
+        "keywords": ["Beca Genias 2023", "Escudo Lab", "artistas emergentes", "contenido digital", "cerveza colaborativa Corazón de Nevera", "emprendedores chilenos", "visibilidad artística"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0052",
         "text": "Contribuyendo al ODS 11: Ciudades y comunidades sostenibles: A través de la campaña “Familias reciclando en Modo Bilz y Pap” liderada por la marca y coordinada en conjunto con Teletón, Ministerio de Medio Ambiente y más de 130 municipalidades a lo largo de todo Chile, con el fin de aportar en la educación en el cuidado del medio ambiente y promover la economía circular. Como resultado de la campaña, con más de 500 puntos de recolección desde Arica a Magallanes, se logró la recolección y valorización de más de 120 toneladas de plástico. Con el objetivo de que las ciudades y los asentamientos humanos sean más inclusivos, seguros, resilientes y sostenibles, la marca participa en proyectos urbanos que agreguen valor a la ciudad.",
+        "semantic_tags": ["marcas_con_propósito", "ODS", "medio_ambiente", "economía_circular", "ciudades_sostenibles"],
+        "context_type": "proyectos_comunitarios",
+        "keywords": ["Familias reciclando", "Modo Bilz y Pap", "Teletón", "Ministerio de Medio Ambiente", "municipalidades", "recolección de plástico", "valorización de residuos", "proyectos urbanos sostenibles"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0052",
         "text": "Durante el 2023, en conjunto con un taller de cerámica, se trabajó en la primera etapa del proyecto de piezas de cerámica, los cuales se diseñan para contar la historia de la marca, mostrar su conexión con la ciudad, y a su vez apoyar a emprendedores locales. Contribuyendo al ODS 15: Vida de ecosistemas terrestres: El compromiso de la marca es resguardar y restaurar la flora y fauna endémica, como elemento clave en la construcción de ecosistemas sanos y equilibrados que permitan hacer frente al cambio climático en los viñedos. Desde el año 2017 trabaja bajo el plan de conservación de la biodiversidad en Viña Tarapacá, y desde entonces se han realizado importantes avances en la reconexión de dos ecosistemas que circundan el predio: los Altos de Cantillana y el Río Maipo Al 2023, se han plantado más de 12.500 especies nativas y catastrado más de 10 nuevas especies en el fundo Tarapacá, gracias al master plan de biodiversidad.",
+        "semantic_tags": ["marcas_con_propósito", "ODS", "biodiversidad", "ecosistemas", "emprendimiento_local", "cultura_local"],
+        "context_type": "proyectos_comunitarios",
+        "keywords": ["piezas de cerámica", "viñedo Tarapacá", "restauración de flora y fauna", "Altos de Cantillana", "Río Maipo", "especies nativas", "master plan de biodiversidad", "emprendedores locales"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0053",
         "text": "Personas: Nuestras personas son el principal motor de la Compañía, constituyen un eje central y estratégico en nuestras unidades de negocios y tratamos de fortalecer continuamente esta interacción, buscando un mejor vivir para todos mediante el desarrollo integral de nuestros trabajadores, promoviendo que vivan los principios corporativos en un ambiente de buen clima organizacional y máxima seguridad. La visión corporativa “nos inspira a reconocer el valor y compromiso de nuestras personas, impulsando experiencias laborales para que alcancen su máximo potencial y construyamos juntos un mejor vivir”..",
+        "semantic_tags": ["gestión_de_personas", "clima_laboral", "desarrollo_profesional", "cultura_corporativa", "seguridad_laboral"],
+        "context_type": "capital_humano",
+        "keywords": ["desarrollo integral de trabajadores", "principios corporativos", "ambiente de buen clima organizacional", "máxima seguridad", "experiencias laborales", "alcanzar máximo potencial"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0053",
         "text": "El desarrollo de nuestro negocio está guiado por Principios basados en convicciones sólidas y profundas. Éstas son el reflejo de la forma en que trabajamos, el prisma con el que hacemos nuestra labor y tomamos nuestras decisiones. El “SER CCU” está conformado por nuestros 4 Principios: Excelencia, Entrega, Integridad y Empoderamiento. Quienes trabajamos en CCU estamos muy orgullosos de nuestra identidad, que marca un sello distintivo de las Personas y articulan nuestro quehacer..",
+        "semantic_tags": ["cultura_corporativa", "principios_organizacionales", "identidad_empresa", "desarrollo_profesional", "valores_corporativos"],
+        "context_type": "capital_humano",
+        "keywords": ["SER CCU", "Excelencia", "Entrega", "Integridad", "Empoderamiento", "orgullo corporativo", "sello distintivo de las personas"],
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0053",
         "text": "De acuerdo con el Modelo de Sustentabilidad CCU y la estrategia de gestión de personas, la Compañía se ha comprometido en generar experiencias laborales positivas, vivir la seguridad y desarrollar oportunidades para todos los trabajadores, con énfasis en aumentar la participación laboral de la mujer e impulsar la inclusión laboral. Con la aspiración de construir un mundo mejor, buscamos generar oportunidades de desarrollo, reconocer el aporte de cada persona y establecer relaciones de confianza mediante experiencias significativas a lo largo de la vida laboral de todos los trabajadores.",
+        "semantic_tags": ["capital_humano", "inclusión_laboral", "desarrollo_profesional", "experiencia_laboral", "equidad_de_género"],
+        "context_type": "capital_humano",
+        "keywords": ["participación laboral de la mujer", "inclusión laboral", "oportunidades de desarrollo", "experiencias laborales positivas", "confianza laboral", "estrategia de gestión de personas", "Modelo de Sustentabilidad CCU"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0054",
         "text": " Durante el año 2023, se desarrollaron iniciativas para fortalecer la “Corresponsabilidad y Balance de género” y “Estrategia y Talento Femenino”, para trabajar sobre la cultura e importancia de la incorporación del talento femenino. En el trabajo con las unidades de negocio, se promovió la incorporación de mujeres en distintas áreas como operación logística y fuerza de ventas. En el ámbito de la Inclusión, se capacitó y certificó a los trabajadores de las distintas unidades de negocios como Gestores de Inclusión, conformando una red de promoción de buenas prácticas, gestión y cumplimiento de la Ley N° 20.422.",
+        "semantic_tags": ["capital_humano", "inclusión_laboral", "equidad_de_género", "talento_femenino", "gestión_de_inclusión"],
+        "context_type": "capital_humano",
+        "keywords": ["Corresponsabilidad y Balance de género", "Estrategia y Talento Femenino", "incorporación de mujeres", "operación logística", "fuerza de ventas", "Gestores de Inclusión", "Ley N° 20.422", "red de buenas prácticas"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0054",
         "text": " Impulsamos espacios de trabajo diversos e inclusivos en un marco de fomento al respeto por los Derechos Humanos en el desempeño laboral de todas las personas. La Política de Diversidad e Inclusión de CCU valora el sello propio de cada trabajador, con visiones, experiencias y orígenes o condiciones distintas. Adicionalmente, contamos con una Política Corporativa de Derechos Humanos CCU(4), que tiene por objetivo entregar un marco de acción y relevar el valor de quienes integran la Compañía, considerando su origen, experiencia, intereses y condiciones distintas. De esta manera, renovamos el compromiso con el respeto y la valoración de equipos diversos, favoreciendo el desarrollo personal y laboral de sus trabajadores. Esta directriz está desarrollada en el marco de la Política Corporativa de Derechos Humanos, a nivel regional.",
+        "semantic_tags": ["capital_humano", "diversidad", "inclusión_laboral", "derechos_humanos", "respeto"],
+        "context_type": "capital_humano",
+        "keywords": ["Política de Diversidad e Inclusión", "Política Corporativa de Derechos Humanos", "espacios de trabajo diversos", "respeto por los Derechos Humanos", "desarrollo personal y laboral", "equipos diversos", "marco regional"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0054",
         "text": "También se adoptaron otras políticas y procedimientos operacionales en concordancia con estos compromisos. En materia de gestión de riesgos, realizamos evaluaciones de Derechos Humanos en las prácticas laborales, correspondientes al cumplimiento legal en cuanto al trabajo infantil, comprobándose que no ha habido casos de menores de edad contratados por CCU. CCU cuenta con un total de 56 sindicatos de los cuales 45 se encuentran en Chile, 9 en Argentina, 1 en Uruguay y 1 en Bolivia, mientras que en Paraguay no hay sindicatos.",
+        "semantic_tags": ["capital_humano", "derechos_humanos", "gestión_de_riesgos", "trabajo_infantil", "sindicatos", "cumplimiento_legal"],
+        "context_type": "capital_humano",
+        "keywords": ["evaluaciones de Derechos Humanos", "prácticas laborales", "cumplimiento legal", "trabajo infantil", "sindicatos por país", "gestión de riesgos laborales"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0055",
         "text": "En términos de afiliación, 4.343 trabajadores se encuentran sindicalizados en Chile, 1.434 en Argentina, 66 en Uruguay y 117 en Bolivia alcanzando un 61,2% de trabajadores sindicalizados a nivel regional. Adicionalmente, tanto en Chile como en Bolivia los sindicatos cuentan con adherentes que perciben extensión de beneficios, sumando 870 trabajadores en Chile y 8 en Bolivia. No se registraron huelgas durante el 2023 en ningún país donde operamos. La dotación de personal de CCU S.A. y sus filiales es de 10.244 empleados. La Compañía fomenta la participación de mujeres en sus equipos, por lo que cuenta con un objetivo de tener un 20% de mujeres en su dotación total.",
+        "semantic_tags": ["capital_humano", "sindicatos", "afiliación_laboral", "género", "participación_femenina", "dotación_personal"],
+        "context_type": "capital_humano",
+        "keywords": ["trabajadores sindicalizados", "adherentes a sindicatos", "huelgas 2023", "dotación total de empleados", "objetivo de participación femenina"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0055",
         "text": "Además, de la totalidad de los cargos asociados a “STEM” (por su sigla en inglés, Science, Technology, Engineering and Mathematics) que representa la integración interdisciplinaria de la ciencia en un contexto asociado a la ingeniería y la tecnología, la Compañía registró un 33% de mujeres en esta clasificación en el año 2023. 5.4.1 Política de equidad En CCU disponemos de una Política de Derechos Humanos que formaliza nuestra intención de velar por una compensación justa, sin importar el género de quien se desempeñe. Es así como fomentamos la igualdad de oportunidades y la equidad de género, seleccionando y evaluando objetivamente a las personas por sus capacidades. Este criterio aplica a todos los estamentos de la Compañía en un entorno laboral exento de discriminación.",
+        "semantic_tags": ["equidad_de_género", "STEM", "política_de_derechos_humanos", "diversidad_laboral", "igualdad_de_oportunidades"],
+        "context_type": "capital_humano",
+        "keywords": ["participación femenina en STEM", "Política de equidad", "compensación justa", "evaluación objetiva", "entorno laboral inclusivo"],
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0055",
         "text": "Adicionalmente, contamos con una Política de Compensaciones que entrega los lineamientos en materia de equidad y competitividad salarial. Con el fin de garantizar su cumplimiento, hacemos seguimiento de los indicadores incluidos en cada segmento de operación. La Política de Compensaciones CCU tiene por objetivo orientar los lineamientos que permitan apoyar la atracción, retención y desarrollo de los trabajadores a través de los principios de equidad interna, competitividad externa, respetando el marco normativo y los aspectos presupuestarios.",
+        "semantic_tags": ["compensación_salarial", "equidad_laboral", "retención_de_talento", "política_de_compensaciones", "desarrollo_profesional"],
+        "context_type": "capital_humano",
+        "keywords": ["equidad interna", "competitividad externa", "atracción de talento", "retención de talento", "seguimiento de indicadores"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0056",
         "text": "Junto a lo anterior, contamos con procesos de gestión de compensaciones que se ejecutan considerando los principios de equidad interna, competitividad y desempeño. Con el fin de conocer los rangos salariales del mercado, la Compañía participa en una encuesta de compensaciones del mercado de referencia mediante una consultora externa de manera periódica. Las estructuras de remuneraciones para el personal ejecutivo y profesional se definen con base en una evaluación de cargos que determina metodológicamente la contribución o valor del cargo para la organización, generando un puntaje determinado para cada puesto.",
+        "semantic_tags": ["compensaciones", "evaluación_de_cargos", "equidad_salarial", "desempeño_laboral", "benchmarking_salarial"],
+        "context_type": "capital_humano",
+        "keywords": ["principios de equidad interna", "competitividad externa", "participación en encuestas de mercado", "estructuras de remuneración", "puntaje de cargos"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0056",
         "text": "En función de estos niveles y de acuerdo a información de mercado se determina una escala salarial, que establece las bandas salariales internas que aseguran que la compensación total debe ser similar entre cargos cuyo nivel o grado de complejidad y responsabilidad sean equivalentes. Para los trabajadores que no negocian colectivamente, cada año se realiza el proceso de revisión salarial en función de su desempeño, posición en la banda salarial y presupuesto disponible y, se determina un incremento por mérito. En esta instancia, de carácter individual, el trabajador puede expresar inquietudes y consultas respecto de sus compensaciones. En el caso de las negociaciones colectivas, las estructuras de remuneraciones se definen con base en los valores de mercado y, en materia de beneficios y reajustes salariales, a partir de las propias negociaciones colectivas. ",
+        "semantic_tags": ["compensaciones", "equidad_salarial", "revisión_salarial", "negociación_colectiva", "desempeño_laboral"],
+        "context_type": "capital_humano",
+        "keywords": ["bandas salariales internas", "incremento por mérito", "información de mercado", "negociaciones colectivas", "ajustes salariales"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0056",
         "text": "La Compañía no cuenta con un procedimiento para que los accionistas aprueben las estructuras salariales del Gerente General y de los ejecutivos principales. Una vez al año, se realiza una presentación al Comité de Directores para revisar las estructuras salariales y política de compensación del Gerente General, de los ejecutivos principales y trabajadores. Esta presentación incluye un análisis de la competitividad externa y equidad interna de la estructura salarial por las categorías laborales de gerentes, subgerentes, otros profesionales y otros técnicos, empleados y operarios acorde a nuestra Política de Compensaciones.",
+        "semantic_tags": ["compensaciones_ejecutivas", "gobierno_corporativo", "equidad_salarial", "revisión_anual", "Política de Compensaciones"],
+        "context_type": "capital_humano",
+        "keywords": ["Gerente General", "ejecutivos principales", "Comité de Directores", "competitividad externa", "equidad interna", "categorías laborales"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0057",
         "text": "Acoso laboral y sexual En nuestra Política de Derechos Humanos declaramos nuestro rechazo a cualquier práctica de acoso, así como cualquier otra conducta que pretenda menoscabar o afectar la dignidad de las personas. Durante 2023, a través del Canal de Denuncias se recibieron: (i) 9 denuncias por acoso laboral bajo la Ley N° 20.607, ninguna de ellas presentada ante la Dirección del Trabajo, y 2 denuncias en el extranjero bajo el equivalente a dicha normativa, y (ii) No hubo denuncias por acoso sexual en Chile bajo la Ley N° 20.005, ni en el extranjero, bajo normativa equivalente.",
+        "semantic_tags": ["acoso_laboral", "acoso_sexual", "derechos_humanos", "canal_de_denuncias", "gestión_personal"],
+        "context_type": "capital_humano",
+        "keywords": ["Política de Derechos Humanos", "Ley N° 20.607", "Ley N° 20.005", "denuncias", "Chile", "extranjero"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0057",
         "text": "En el marco de la promoción del ejercicio de relaciones saludables al interior de la organización, el foco de gestión estuvo en la “Convivencia Saludable”, donde se capacitaron a 1.103 trabajadores en “Acuerdos de Convivencia Saludable”, alcanzando una cobertura del 21% del total Compañía en 2023, lo que complementó el 78% alcanzado en 2022. En esta instancia, se abordaron los lineamientos de comportamiento y vinculación positiva dentro del contexto laboral, legislación laboral vigente y competencias para la gestión e identificación del acoso laboral y sexual dentro del contexto de trabajo. Al mismo tiempo, permanecen disponibles los cursos e-learning que refuerzan el bienestar individual y dentro de los equipos de trabajo, tales como Salud Mental, Inclusión y Derechos Humanos.",
+        "semantic_tags": ["convivencia_laboral", "salud_mental", "acoso_laboral", "acoso_sexual", "formación", "derechos_humanos"],
+        "context_type": "capital_humano",
+        "keywords": ["Convivencia Saludable", "capacitaciones", "lineamientos de comportamiento", "legislación laboral", "competencias laborales", "cursos e-learning", "bienestar"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0057",
         "text": "Nuestro Canal de Denuncias, que es administrado por un servicio externo e independiente, nos permite recibir y gestionar las denuncias de ésta y otra índole, garantizando la confidencialidad de la información entregada, así como el anonimato del denunciante y la no toma de cualquier tipo de represalias. Este constituye un medio formal de comunicación de reclamos para ésta y otras materias. El Canal de Denuncias entrega anonimato y confidencialidad a toda persona que conozca o sospeche de alguna actuación que pueda implicar una infracción a las leyes vigentes, a los Principios de CCU o a su Código de Conducta en los Negocios. Este mecanismo se encuentra a disposición de todos nuestros grupos de interés.",
+        "semantic_tags": ["gestión_denuncias", "ética", "transparencia", "confidencialidad", "canal_externo"],
+        "context_type": "capital_humano",
+        "keywords": ["Canal de Denuncias", "servicio externo", "anonimato", "confidencialidad", "Código de Conducta", "Principios CCU", "reclamos", "grupos de interés"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0058",
         "text": "Seguridad laboral En CCU promovemos conductas laborales seguras y saludables, inspiradas en la prevención de incidentes que puedan afectar a nuestros trabajadores. Para ello, contamos con un Sistema de Gestión de Seguridad y Salud Ocupacional bajo la metodología de Mantenimiento Productivo Total (“TPM”, por sus siglas en inglés), que ha sido implementado considerando como base la normativa chilena y los altos estándares de seguridad de organizaciones de clase mundial (Ver sección “6.4 Propiedades e instalaciones”).",
+        "semantic_tags": ["seguridad_laboral", "salud_ocupacional", "prevención", "TPM", "normativa_chilena"],
+        "context_type": "capital_humano",
+        "keywords": ["Seguridad laboral", "conductas seguras", "Mantenimiento Productivo Total", "TPM", "normativa chilena", "estándares internacionales"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0058",
         "text": "En esta línea, nuestro sistema permite garantizar el cumplimiento de las normas internacionales en seguridad y mejora continua, como ISO 45.001, a través de sus principales elementos: enfoque, equipos multidisciplinarios, gestión de proceso, estandarización y expansión, empoderamiento y participación. Además, nuestro Reglamento Especial de Empresas Contratistas y Subcontratistas, disponible en nuestro repositorio de estándares de seguridad, rige el comportamiento de las empresas que nos brindan servicios. Nuestro enfoque es lograr cero accidentes a través de una cultura de seguridad, erradicando comportamientos inseguros, para lograr un entorno libre de riesgos.",
+        "semantic_tags": ["seguridad_laboral", "salud_ocupacional", "ISO45001", "prevención", "cultura_segura", "contratistas"],
+        "context_type": "capital_humano",
+        "keywords": ["cumplimiento normas internacionales", "ISO 45.001", "equipos multidisciplinarios", "gestión de procesos", "cero accidentes", "Reglamento Contratistas y Subcontratistas"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0058",
         "text": "Con este gran desafío en mente, las principales prioridades son: Continuar con la evaluación de los riesgos para la seguridad y salud en el trabajo a partir de los peligros identificados, teniendo en cuenta la eficacia de los controles existentes, buscando erradicar todos los riesgos críticos de CCU y otros riesgos no críticos pero que podrían generar lesiones o enfermedad. Implementación de procedimientos LOTO (por sus siglas en inglés, “Log-Out Tag-Out”) de seguridad para bloquear y consignar las distintas fuentes de energía de los equipos para proteger a los trabajadores tanto de una puesta en marcha accidental de las energías vivas como de las energías residuales y de un encendido imprevisto que pueda provocar un accidente. Arraigar una cultura de seguridad a través del involucramiento de todos los líderes mediante la observación y la retroalimentación para mejorar el comportamiento, aplicación de tarjetas de autocuidado",
+        "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "LOTO", "cultura_segura", "salud_ocupacional", "liderazgo_seguridad"],
+        "context_type": "capital_humano",
+        "keywords": ["evaluación de riesgos", "riesgos críticos y no críticos", "procedimientos LOTO", "energías vivas y residuales", "observación y retroalimentación", "tarjetas de autocuidado"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0059",
         "text": " Arraigar una cultura de seguridad a través del involucramiento de todos los líderes mediante la observación y la retroalimentación para mejorar el comportamiento, aplicación de tarjetas de autocuidado (evaluación de último minuto: Pare, Piense y Actúe), formación de líderes, comunicar los reportes de cuasi accidentes y encuesta de seguridad implementando las acciones de las desviaciones que reflejan los resultados de ésta. Mejorar continuamente el sistema de gestión de la salud y seguridad en el trabajo, a través del robustecimiento del desempeño de los líderes de seguridad de “copiar con orgullo” a través de la implementación de buenas prácticas, de la promoción de la participación de los trabajadores y la generación de equipos de mejora para la resolución de problemas, manteniendo nuestra metodología a través de la identificación de peligros mediante el tarjeteo de seguridad y mediante la revisión y verificación mensual de nuestra auditoría (“SHE”, por su sigla en inglés Safety, Health & Environment), además de confirmar todo lo anterior a través de nuestras auditorías TPM de medio término y de final de año.",
+        "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "cultura_segura", "SHE", "TPM", "liderazgo_seguridad"],
+        "context_type": "capital_humano",
+        "keywords": ["observación y retroalimentación", "tarjetas de autocuidado", "evaluación Pare, Piense y Actúe", "reportes de cuasi accidentes", "equipos de mejora", "auditoría mensual y TPM", "identificación de peligros", "robustecimiento desempeño líderes de seguridad"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0059",
         "text": "Durante el 2023, nuestros centros de operación (plantas y centros de distribución) ejecutaron cierre de acciones relacionadas con riesgos críticos para disminuir la criticidad a un riesgo aceptable, incluso erradicándolos. Por otra parte, también enfocándonos en disminuir riesgos de actividades que no son críticas pero que tienen un riesgo asociado. La gestión de riesgos en los procesos se realiza a través de una metodología de identificación de peligros junto con los operadores de proceso, mediante las tarjetas de seguridad, auditorías de inspección planeada de seguridad, salud y medio ambiente (SHE), permisos de trabajo, Análisis Seguro de Trabajo (“AST”) para tareas críticas y planificadas, Tarjeta Para, Piensa y Actúa (“PPA”): evaluación de último minuto que realiza el colaborador antes de iniciar una tarea riesgosa (no crítica) y que no ha sido planificada y ORR (sigla en inglés para: Reducción de Riesgos Operacional). Lo anterior, nos permite evaluar los riesgos de nuestros procesos, aplicando medidas de control jerárquicas que contribuyen a la disminución del riesgo evaluado.",
+        "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "SHE", "gestión_operativa", "evaluación_seguridad", "AST", "PPA", "ORR"],
+        "context_type": "capital_humano",
+        "keywords": ["cierre de acciones", "riesgos críticos", "tarjetas de seguridad", "inspecciones planeadas SHE", "permisos de trabajo", "Análisis Seguro de Trabajo", "Tarjeta Para, Piensa y Actúa", "Reducción de Riesgos Operacional", "jerarquía de controles"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1642,5 +1803,6 @@
     }
 ]
 }
+
 
 
