@@ -1248,7 +1248,7 @@
         "semantic_tags": ["capital_humano", "sindicatos", "afiliación_laboral", "género", "participación_femenina", "dotación_personal"],
         "context_type": "capital_humano",
         "keywords": ["trabajadores sindicalizados", "adherentes a sindicatos", "huelgas 2023", "dotación total de empleados", "objetivo de participación femenina"],
-        "relevance_score": 0.97
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1257,7 +1257,7 @@
         "semantic_tags": ["equidad_de_género", "STEM", "política_de_derechos_humanos", "diversidad_laboral", "igualdad_de_oportunidades"],
         "context_type": "capital_humano",
         "keywords": ["participación femenina en STEM", "Política de equidad", "compensación justa", "evaluación objetiva", "entorno laboral inclusivo"],
-        "relevance_score": 0.98
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1266,7 +1266,7 @@
         "semantic_tags": ["compensación_salarial", "equidad_laboral", "retención_de_talento", "política_de_compensaciones", "desarrollo_profesional"],
         "context_type": "capital_humano",
         "keywords": ["equidad interna", "competitividad externa", "atracción de talento", "retención de talento", "seguimiento de indicadores"],
-        "relevance_score": 0.97
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1293,7 +1293,7 @@
         "semantic_tags": ["compensaciones_ejecutivas", "gobierno_corporativo", "equidad_salarial", "revisión_anual", "Política de Compensaciones"],
         "context_type": "capital_humano",
         "keywords": ["Gerente General", "ejecutivos principales", "Comité de Directores", "competitividad externa", "equidad interna", "categorías laborales"],
-        "relevance_score": 0.96
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1302,7 +1302,7 @@
         "semantic_tags": ["acoso_laboral", "acoso_sexual", "derechos_humanos", "canal_de_denuncias", "gestión_personal"],
         "context_type": "capital_humano",
         "keywords": ["Política de Derechos Humanos", "Ley N° 20.607", "Ley N° 20.005", "denuncias", "Chile", "extranjero"],
-        "relevance_score": 0.97
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1311,7 +1311,7 @@
         "semantic_tags": ["convivencia_laboral", "salud_mental", "acoso_laboral", "acoso_sexual", "formación", "derechos_humanos"],
         "context_type": "capital_humano",
         "keywords": ["Convivencia Saludable", "capacitaciones", "lineamientos de comportamiento", "legislación laboral", "competencias laborales", "cursos e-learning", "bienestar"],
-        "relevance_score": 0.96
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1320,7 +1320,7 @@
         "semantic_tags": ["gestión_denuncias", "ética", "transparencia", "confidencialidad", "canal_externo"],
         "context_type": "capital_humano",
         "keywords": ["Canal de Denuncias", "servicio externo", "anonimato", "confidencialidad", "Código de Conducta", "Principios CCU", "reclamos", "grupos de interés"],
-        "relevance_score": 0.97
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1329,7 +1329,7 @@
         "semantic_tags": ["seguridad_laboral", "salud_ocupacional", "prevención", "TPM", "normativa_chilena"],
         "context_type": "capital_humano",
         "keywords": ["Seguridad laboral", "conductas seguras", "Mantenimiento Productivo Total", "TPM", "normativa chilena", "estándares internacionales"],
-        "relevance_score": 0.96
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1338,7 +1338,7 @@
         "semantic_tags": ["seguridad_laboral", "salud_ocupacional", "ISO45001", "prevención", "cultura_segura", "contratistas"],
         "context_type": "capital_humano",
         "keywords": ["cumplimiento normas internacionales", "ISO 45.001", "equipos multidisciplinarios", "gestión de procesos", "cero accidentes", "Reglamento Contratistas y Subcontratistas"],
-        "relevance_score": 0.97
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1347,7 +1347,7 @@
         "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "LOTO", "cultura_segura", "salud_ocupacional", "liderazgo_seguridad"],
         "context_type": "capital_humano",
         "keywords": ["evaluación de riesgos", "riesgos críticos y no críticos", "procedimientos LOTO", "energías vivas y residuales", "observación y retroalimentación", "tarjetas de autocuidado"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1356,7 +1356,7 @@
         "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "cultura_segura", "SHE", "TPM", "liderazgo_seguridad"],
         "context_type": "capital_humano",
         "keywords": ["observación y retroalimentación", "tarjetas de autocuidado", "evaluación Pare, Piense y Actúe", "reportes de cuasi accidentes", "equipos de mejora", "auditoría mensual y TPM", "identificación de peligros", "robustecimiento desempeño líderes de seguridad"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1365,7 +1365,7 @@
         "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "SHE", "gestión_operativa", "evaluación_seguridad", "AST", "PPA", "ORR"],
         "context_type": "capital_humano",
         "keywords": ["cierre de acciones", "riesgos críticos", "tarjetas de seguridad", "inspecciones planeadas SHE", "permisos de trabajo", "Análisis Seguro de Trabajo", "Tarjeta Para, Piensa y Actúa", "Reducción de Riesgos Operacional", "jerarquía de controles"],
-        "relevance_score": 0.97
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1374,7 +1374,7 @@
         "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "gestión_operativa", "ORR", "investigación_incidentes", "AST", "análisis_causas"],
         "context_type": "capital_humano",
         "keywords": ["riesgos críticos", "equipos de mejora", "permisos de trabajo", "Análisis Seguro de Trabajo", "metodología 5 porqué", "cuasi accidentes", "planes de acción", "erradicación de riesgos"],
-        "relevance_score": 0.97
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1383,7 +1383,7 @@
         "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "investigación_incidentes", "PDCA", "control_riesgos", "mejora_continua", "cuasi accidentes"],
         "context_type": "capital_humano",
         "keywords": ["equipo multidisciplinario", "Matriz de Identificación de Peligros", "evaluación de riesgos", "medidas correctivas y preventivas", "jerarquización de controles", "erradicación de riesgos", "ciclo PDCA"],
-        "relevance_score": 0.96
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1392,7 +1392,7 @@
         "semantic_tags": ["seguridad_laboral", "participación_trabajadores", "prevención_riesgos", "comité_paritario", "cuasi_accidentes", "gestión_riesgos"],
         "context_type": "capital_humano",
         "keywords": ["tarjeta de seguridad", "reportes de cuasi accidentes", "auditorías de seguridad", "encuestas de seguridad", "pizarras de gestión diaria", "indicadores de accidentes e incidentes"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1401,7 +1401,7 @@
         "semantic_tags": ["seguridad_laboral", "comité_paritario", "prevención_riesgos", "representación_trabajadores", "higiene_y_seguridad"],
         "context_type": "capital_humano",
         "keywords": ["elementos de protección personal", "medidas de prevención", "higiene y seguridad", "investigación de accidentes", "enfermedades profesionales", "reuniones mensuales"],
-        "relevance_score": 0.96
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1410,7 +1410,7 @@
         "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "capacitación_trabajadores", "cumplimiento_legal", "comité_paritario"],
         "context_type": "capital_humano",
         "keywords": ["negligencias inexcusables", "medidas de seguridad", "prevención de riesgos profesionales", "organismo administrador del seguro social", "cursos de capacitación", "participación de trabajadores"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1419,7 +1419,7 @@
         "semantic_tags": ["beneficios_laborales", "familia_y_trabajo", "igualdad_de_género", "cumplimiento_legal", "lactancia_materna", "guarderías"],
         "context_type": "capital_humano",
         "keywords": ["asignación directa", "salud del niño", "permiso de lactancia", "espacios adecuados", "legislación laboral", "trabajadoras", "responsabilidades laborales"],
-        "relevance_score": 0.93
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1428,7 +1428,7 @@
         "semantic_tags": ["beneficios_laborales", "conciliación_familiar", "parentalidad", "permiso_retribuido", "igualdad_de_género", "maternidad_y_paternidad"],
         "context_type": "capital_humano",
         "keywords": ["permiso parental", "postnatal parental", "cuidador principal", "compensación", "ausentarse del trabajo", "transferencia de semanas", "ingresos imponibles"],
-        "relevance_score": 0.95
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1437,7 +1437,7 @@
         "semantic_tags": ["formación_y_capacitación", "desarrollo_profesional", "aprendizaje_digital", "cultura_organizacional", "seguridad_y_prevención", "plataforma_e-learning"],
         "context_type": "capital_humano",
         "keywords": ["formación de excelencia", "SER CCU", "objetivos estratégicos", "presencial", "online", "híbrido", "Plataforma de Formación CCU", "e-learning", "Ciberseguridad", "Modelo de Prevención del Delito", "protección de datos", "prevención del delito"],
-        "relevance_score": 0.95
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1446,7 +1446,7 @@
         "semantic_tags": ["formación_y_capacitación", "desarrollo_profesional", "capacitación_regional", "beneficio_SENCE", "competencias_técnicas", "sustentabilidad"],
         "context_type": "capital_humano",
         "keywords": ["plataforma de cursos", "alcance regional", "SENCE", "operación productiva industrial", "ventas", "logística", "promoción laboral", "comunidades", "entrenamiento", "competencias técnicas", "modelo de sustentabilidad", "recicladores base", "operación de equipos logísticos", "marketing"],
-        "relevance_score": 0.95
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1455,7 +1455,7 @@
         "semantic_tags": ["formación_y_desarrollo", "igualdad_de_género", "empleabilidad_local", "desarrollo_sustentable", "capacitación_técnica"],
         "context_type": "capital_humano",
         "keywords": ["horas promedio por FTE", "% trabajadores capacitados", "Escuela de Grueras y Grueros", "Municipalidades de Renca y Quilicura", "formación de talento", "incorporación de mujeres", "cargos tradicionalmente masculinos", "vinculación con la comunidad", "equipos logísticos", "desarrollo sustentable"],
-        "relevance_score": 0.96
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1464,7 +1464,7 @@
         "semantic_tags": ["formación_y_desarrollo", "empleabilidad", "ventas", "capacitación_comercial", "igualdad_de_género"],
         "context_type": "capital_humano",
         "keywords": ["Escuela de Ventas", "Chile", "atracción de talento", "vendedores de temporada", "habilidades comerciales", "técnicas de venta", "manejo de objeciones", "portafolio", "ejecución comercial", "entrenamiento en ruta", "19 participantes", "8 contratados", "3 mujeres", "5 hombres"],
-        "relevance_score": 0.94
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1473,7 +1473,7 @@
         "semantic_tags": ["capacitación_seguridad", "salud_ocupacional", "prevención_de_riesgos", "desempeño_laboral", "formación_continua"],
         "context_type": "capital_humano",
         "keywords": ["CCU", "excelencia en desempeño", "capacitación continua", "indicadores de prevención", "Operadores de Excelencia", "Brigada de emergencias", "RCP", "DEA", "uso de extintores", "equipo de respiración autónomo", "puente grúa", "emergencias con amoniaco", "protección radiológica", "calderas", "autoclaves", "levante de carga", "sistema comando de incidentes", "manejo de sustancias peligrosas", "MIPER", "primeros auxilios", "trastornos músculo esqueléticos", "manejo manual de cargas"],
-        "relevance_score": 0.96
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1482,7 +1482,7 @@
         "semantic_tags": ["formación_liderazgo", "gestión_del_cambio", "empoderamiento", "innovación_equipo", "satisfacción_programa"],
         "context_type": "desarrollo_organizacional_y_liderazgo",
         "keywords": ["Programa_Líderes_CCU", "Roles_de_Liderazgo", "gestión_del_cambio", "herramientas_prácticas", "empoderamiento", "innovación", "encuesta_satisfacción", "Chile", "734_líderes", "93_por_ciento_participación"],
-        "relevance_score": 0.96
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1491,7 +1491,7 @@
         "semantic_tags": ["gestión_del_cambio", "formación_liderazgo", "adaptabilidad", "actitudes_equipo", "satisfacción_programa"],
         "context_type": "desarrollo_organizacional_y_liderazgo",
         "keywords": ["espacios_de_trabajo", "líderes_CCU", "cambio_organizacional", "componentes_actitudinales", "formación", "93_por_ciento_satisfacción", "Chile", "734_líderes", "universo_elegible"],
-        "relevance_score": 0.94
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1500,7 +1500,7 @@
         "semantic_tags": ["gestión_de_talento", "formación_y_desarrollo", "jóvenes_profesionales", "liderazgo", "experiencia_inmersiva"],
         "context_type": "gestión_de_personas_y_cultura",
         "keywords": ["Programa_Jóvenes_Profesionales", "identificar", "retener", "impulsar", "competencias", "experiencia_inmersiva", "Presentaciones_efectivas", "Gestión_de_proyectos", "Empoderamiento", "adaptabilidad", "procesos_operacionales", "visión_estratégica", "promoción_interna", "liderazgo", "88%_participación"],
-        "relevance_score": 0.95
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1518,7 +1518,7 @@
         "semantic_tags": ["formación_comercial", "habilidades_ventas", "auto_instrucción", "manejo_de_objeciones", "relaciones_clientes", "competencias_comunicacionales"],
         "context_type": "capacitación_comercial_y_desarrollo_de_ventas",
         "keywords": ["Malla_de_Formación_Ventas", "Fuerza_de_Ventas", "Closelly", "auto_instrucción", "manejo_de_objeciones", "canal_tradicional", "relaciones_sustentables", "venta_efectiva", "performance_vendedor", "portafolio", "soporte_tecnológico", "Chile", "67_por_ciento_participación"],
-        "relevance_score": 0.95
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1527,7 +1527,7 @@
         "semantic_tags": ["calidad_de_vida", "equilibrio_laboral_personal", "prevención_riesgos", "salud_ocupacional", "consumo_responsable"],
         "context_type": "bienestar_laboral_y_seguridad",
         "keywords": ["políticas_y_beneficios", "vida_saludable", "autocuidado", "accidentes_laborales", "corporación_privada", "prevención_de_riesgos", "material_capacitación", "fichas_de_seguridad", "e-learning", "protocolos_salud_ocupacional"],
-        "relevance_score": 0.94
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1536,7 +1536,7 @@
         "semantic_tags": ["calidad_de_vida", "confidencialidad", "bienestar_laboral", "conciliación_familia_trabajo", "vida_sana"], 
         "context_type": "bienestar_laboral_y_seguridad", 
         "keywords": ["confidencialidad_datos", "reglamentos_internos", "servicio_de_salud", "Vivamos_Bien", "beneficios_laborales", "integración", "protección_laboral", "tiempo_libre", "familia", "autocuidado", "alimentación_saludable", "actividad_física"], 
-        "relevance_score": 0.95
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1545,7 +1545,7 @@
         "semantic_tags": ["subcontratación", "servicios_externos", "seguridad_laboral", "salud_ocupacional", "cumplimiento_laboral"],
         "context_type": "gestión_operacional_y_normativa",
         "keywords": ["política_subcontratación", "procedimiento_formal", "contratistas", "subcontratistas", "autorización_ingreso", "orden_de_compra", "nota_de_pedido", "documentación_seguridad", "salud_ocupacional", "obligaciones_laborales", "obligaciones_previsionales"],
-        "relevance_score": 0.93
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1554,7 +1554,7 @@
         "semantic_tags": ["gestión_desempeño", "desarrollo_personal", "evaluación_laboral", "cultura_SER_CCU", "confidencialidad"],
         "context_type": "gestión_del_talento_y_desempeño",
         "keywords": ["Gestión_de_Desempeño", "SER_CCU", "ciclo_anual", "objetivos_laborales", "diálogo_líder_trabajador", "rendimiento", "fortalezas", "oportunidades_de_mejora", "evaluación_en_línea", "confidencialidad", "antigüedad", "contrato_indefinido"],
-        "relevance_score": 0.95
+        "relevance_score": 0.99
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1563,7 +1563,7 @@
         "semantic_tags": ["evaluación_ascendente", "liderazgo", "cultura_organizacional", "SER_CCU", "Índice_Global_de_Liderazgo"],
         "context_type": "gestión_del_talento_y_desempeño",
         "keywords": ["evaluación_ascendente", "jefatura_directa", "oportunidades_de_mejora", "identidad_organizacional", "Roles_SER_CCU", "IGL", "fortalezas", "planes_de_desarrollo", "96_por_ciento_participación", "1.010_jefes", "5.978_trabajadores"],
-        "relevance_score": 0.95
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1572,7 +1572,7 @@
         "semantic_tags": ["reclutamiento", "selección", "marca_empleadora", "diversidad_e_inclusión", "derechos_humanos"],
         "context_type": "gestión_talento_y_adquisición",
         "keywords": ["reclutamiento_y_selección", "talento", "SER_CCU", "marca_empleadora", "trabajo_infantil", "Política_Derechos_Humanos", "Política_Diversidad_e_Inclusión", "igualdad_oportunidades", "universidades", "institutos", "colegios", "liceos_técnicos", "municipalidades", "portales_digitales", "redes_sociales", "movilidad_interna"],
-        "relevance_score": 0.95
+        "relevance_score": 0.99
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1581,7 +1581,7 @@
         "semantic_tags": ["experiencias_laborales", "estudiantes_en_práctica", "desarrollo_de_carrera", "selección_en_línea", "portafolio_multicategoría"],
         "context_type": "gestión_talento_y_adquisición",
         "keywords": ["programa_prácticas", "experiencia_laboral", "desarrollo_profesional", "Chile", "extranjero", "bebestibles", "unidades_de_negocio", "marcas", "plataformas_en_línea", "reclutamiento", "selección"],
-        "relevance_score": 0.94
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1590,7 +1590,7 @@
         "semantic_tags": ["vacantes", "contratación", "prácticas_profesionales", "empleabilidad", "diversidad_de_género"],
         "context_type": "gestión_talento_y_adquisición",
         "keywords": ["Trabaja_en_CCU", "portal_de_empleo", "tasa_de_contratación", "contrato_indefinido", "39.2_por_ciento_mujeres", "Programa_de_Prácticas_CCU", "habilidades_operativas", "empleabilidad_futura", "541_estudiantes", "Ventas", "Marketing", "Finanzas", "Logística", "Industrial", "Recursos_Humanos", "6_por_ciento_contratados"],
-        "relevance_score": 0.94
+        "relevance_score": 0.99
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1599,7 +1599,7 @@
         "semantic_tags": ["movilidad_interna", "promoción_laboral", "desarrollo_profesional", "gestión_de_personas", "concursos_internos"],
         "context_type": "gestión_talento_y_desarrollo",
         "keywords": ["movilidad_y_promoción_interna", "desarrollo_laboral", "Modelo_de_Gestión_de_Personas", "concurso_interno", "funciones", "unidades_de_negocio", "correo_interno", "requisitos_de_postulación"],
-        "relevance_score": 0.94
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1608,7 +1608,7 @@
         "semantic_tags": ["promoción_interna", "movilidad_laboral", "desempeño", "rotación", "alta_gerencia"],
         "context_type": "gestión_talento_y_desarrollo",
         "keywords": ["antigüedad", "buen_desempeño", "promociones", "nivel_jerárquico", "remuneración", "promovidos", "rotación", "6renuncias", "vacantes", "internos", "nombramientos", "movilidad_interna"],
-        "relevance_score": 0.95
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1617,7 +1617,7 @@
         "semantic_tags": ["gestión_de_talento", "evaluación_desempeño", "evaluación_ascendente", "sucesión_liderazgo", "alta_gerencia"],
         "context_type": "gestión_talento_y_sucesión",
         "keywords": ["Gerencia_Corporativa_RRHH", "capacidades", "conocimientos", "evaluación_desempeño", "evaluación_ascendente", "Comité_Desarrollo_Ejecutivo", "Comité_de_Dirección", "sucesores", "Gerente_General", "reemplazo", "Directorio", "trayectoria", "planes_de_retiro", "planes_de_sucesión"],
-        "relevance_score": 0.95
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1626,7 +1626,7 @@
         "semantic_tags": ["clima_organizacional", "encuesta_laboral", "percepción_trabajadores", "confidencialidad", "Indicador_Global_de_Clima"],
         "context_type": "cultura_y_ambiente_laboral",
         "keywords": ["clima_organizacional", "ambiente_laboral", "encuesta_anual", "antigüedad", "contrato_indefinido", "participación_voluntaria", "cuestionario_autorreporte", "IGC", "12_dimensiones"],
-        "relevance_score": 0.94
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1635,7 +1635,7 @@
         "semantic_tags": ["clima_organizacional", "satisfacción_laboral", "engagement", "intención_de_permanencia", "planes_de_acción"],
         "context_type": "cultura_y_ambiente_laboral",
         "keywords": ["IGC", "actitudes_trabajador", "bienestar", "satisfacción_organizacional", "identificación", "compromiso", "encuesta_clima", "85_por_ciento_satisfacción", "96_por_ciento_participación", "unidades_de_negocio", "resultados_globales", "seguimiento", "plataforma_resultados"],
-        "relevance_score": 0.95
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1644,7 +1644,7 @@
         "semantic_tags": ["modelo_de_negocios", "bebidas_alcohólicas", "bebidas_no_alcohólicas", "multicategoría", "presencia_regional"], 
         "context_type": "estructura_empresarial_y_portafolio", 
         "keywords": ["Sector_Industrial", "CCU", "multicategoría", "bebestibles", "Chile", "Argentina", "Bolivia", "Colombia", "Paraguay", "Uruguay", "cervezas", "vino", "pisco", "sidra", "gaseosas", "aguas_minerales", "néctares", "bebidas_energéticas", "bebidas_deportivas", "bebidas_malta"], 
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1653,7 +1653,7 @@
         "semantic_tags": ["expansión_regional", "diversificación", "multicategoría", "calidad_productos", "comercio_minorista"], 
         "context_type": "estrategia_comercial_y_presencia_de_mercado", 
         "keywords": ["competencia", "expansión_regional", "diversificación_de_categorías", "presencia_en_mercados", "multicategoría", "calidad_de_productos", "procesos_de_elaboración", "atención_al_cliente", "comercio_minorista", "supermercados", "restaurantes", "almacenes", "botillerías"], 
-        "relevance_score": 0.93
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1699,7 +1699,7 @@
         "semantic_tags": ["competencia", "bebidas_analcohólicas", "industria_vitivinícola", "distribución", "mercado_doméstico"],
         "context_type": "estrategia_comercial_y_presencia_de_mercado",
         "keywords": ["Paraguay_Refrescos_S.A.", "Montevideo_Refrescos_S.R.L.", "EMBOL_S.A.", "The_Coca-Cola_Company", "VSPT_Wine_Group", "Viña_Concha_y_Toro", "Viña_Santa_Rita", "Santa_Rita", "Bodegas_y_Viñedos_Santa_Carolina", "Viña_Undurraga", "Viña_Cousiño_Macul", "Viña_Montes", "Embotelladora_Andina", "Embonor", "mercado_doméstico", "exportación", "acuerdo_de_distribución"],
-        "relevance_score": 0.95
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1708,7 +1708,7 @@
         "semantic_tags": ["competencia_internacional", "industria_vitivinícola", "marco_normativo", "regulación_bursátil", "NYSE"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["VSPT_Wine_Group", "productores_chilenos", "productores_internacionales", "Ley_18.045", "Mercado_de_Valores", "Ley_18.046", "Sociedades_Anónimas", "Decreto_Supremo_702", "CMF", "ADRs", "NYSE", "Securities_Exchange_Act", "SOX_2002", "SEC"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1717,7 +1717,7 @@
         "semantic_tags": ["marco_regulatorio", "cervezas", "normativa_sectorial", "SAG", "rotulación"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["Ley_18.455", "alcoholes_etílicos", "bebidas_alcohólicas", "vinagres", "Decreto_78", "Ministerio_de_Agricultura", "registro_SAG", "requisitos_rotulación", "segmento_Chile", "filiales", "coligadas"],
-        "relevance_score": 0.93
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1726,7 +1726,7 @@
         "semantic_tags": ["marco_regulatorio", "expendio_alcoholes", "consumo_responsable", "patente_comercial", "restricciones_legales"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["Ley_19.925", "expendio_bebidas_alcohólicas", "patente_de_alcoholes", "horario_funcionamiento", "prohibición_menores", "venta_y_suministro", "consumo_en_lugares_determinados", "requisitos_comercialización"],
-        "relevance_score": 0.93
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1735,7 +1735,7 @@
         "semantic_tags": ["marco_regulatorio", "publicidad_alcoholes", "etiquetado", "regulación_sanitaria", "bebidas_no_alcohólicas"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["Ley_21.363", "Decreto_98", "Ministerio_del_Interior", "advertencias_consumo", "energía_en_etiquetas", "restricciones_publicidad", "eventos_deportivos", "eventos_culturales", "Decreto_977", "Ministerio_de_Salud", "Código_Sanitario", "producción_alimentos", "importación", "envase", "almacenamiento", "distribución", "venta_alimentos"],
-        "relevance_score": 0.94
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1744,7 +1744,7 @@
         "semantic_tags": ["marco_regulatorio", "aguas_minerales", "declaración_fuente_curativa", "rotulación", "publicidad"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["Decreto_106", "Ministerio_de_Salud", "autorización_establecimiento", "funcionamiento", "servicio_de_salud", "explotación_comercial", "fuente_curativa", "envasado_en_origen", "procedimientos", "manipulaciones", "denominación_comercial", "registro_Ministerio_de_Salud", "rotulación", "publicidad", "subproductos"],
-        "relevance_score": 0.93
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1753,7 +1753,7 @@
         "semantic_tags": ["marco_regulatorio", "composición_nutricional", "publicidad_alimentos", "rotulación", "denominación_de_origen"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["Ley_20.606", "Decreto_13", "Decreto_977", "Ley_20.869", "Decreto_Supremo_1", "altos_en_nutrientes_críticos", "Ley_18.455", "Decreto_78", "SAG", "rotulación_alcoholes", "Ley_19.925", "patente_de_alcoholes", "menores_de_18", "Decreto_Supremo_521", "denominación_origen_pisco", "materia_prima", "elaboración", "envasado"],
-        "relevance_score": 0.95
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1762,7 +1762,7 @@
         "semantic_tags": ["marco_regulatorio", "bebidas_alcohólicas", "bebidas_no_alcohólicas", "rotulación", "sociedades_anónimas", "transparencia", "impacto_ambiental"],
         "context_type": "gobierno_corporativo_y_entorno_regulatorio",
         "keywords": ["Decreto_315/94", "Reglamento_Bromatológico_Nacional", "Código_de_la_Niñez_y_Adolescencia", "Ley_17.849", "Decreto_260/07", "Sistema_de_Gestión_de_Envases", "Reglamento_Técnico_Mercosur", "Ley_18.159", "Ley_19.855", "Decreto_63/2020", "Decreto_272/18", "Ley_19.829", "Distribuidora_del_Paraguay", "Bebidas_del_Paraguay", "Sajonia_Brewing_Company", "Ley_1.034/83", "Ley_1.183/85", "Ley_388/94", "Ley_3.228/07", "Ley_5.895/17", "Ley_6.399", "Decreto_9.043/17", "Ley_6.446/19", "Decreto_3.241/20", "Ley_294/93"],
-        "relevance_score": 0.95
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1771,7 +1771,7 @@
         "semantic_tags": ["marco_regulatorio", "publicidad_alcoholes", "defensa_consumidor", "registro_alimentos", "consumo_responsable"], 
         "context_type": "gobierno_corporativo_y_entorno_regulatorio", 
         "keywords": ["Bebidas_del_Paraguay_S.A.", "Sajonia_Brewing_Company_S.A.", "Ley_836/80", "Código_Sanitario", "Ley_1.334/98", "Defensa_del_Consumidor", "Ley_1.333/98", "Publicidad_Tabaco_Alcohol", "Ley_1.642/00", "menores_de_edad", "consumo_vía_pública", "Decreto_1.635/99", "Resolución_643/12", "registro_productos_alimenticios"], 
-        "relevance_score": 0.93
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1780,7 +1780,7 @@
          "semantic_tags": ["marco_regulatorio", "sociedades_anónimas", "aduanas", "sanidad_agropecuaria", "consumo_alcoholes", "defensa_consumidor"], 
         "context_type": "gobierno_corporativo_y_entorno_regulatorio", 
         "keywords": ["Bebidas_Bolivianas_BBO_S.A.", "Decreto_Ley_14.379", "Código_de_Comercio", "constitución_sociedades", "accionistas", "órganos_de_administración", "Decreto_25.870", "Ley_1.990", "Decreto_27.947", "Decreto_572", "SENASAG", "Ley_2.061", "Resolución_15/2018", "Ley_259", "Decreto_29.519"], 
-        "relevance_score": 0.94
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1789,7 +1789,7 @@
         "semantic_tags": ["segmentos_de_operación", "zonas_geográficas", "categorías_de_producto", "negocios_internacionales", "mercado_chileno"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["segmentos_de_operación", "Chile", "Negocios_Internacionales", "cervezas", "bebidas_no_alcohólicas", "licores", "sidra", "UESs", "Argentina", "Bolivia", "Paraguay", "Uruguay"],
-        "relevance_score": 0.92
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1798,7 +1798,7 @@
         "semantic_tags": ["segmentos_de_operación", "vinos", "espumantes", "gestión_empresarial", "evaluación_de_rendimiento"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["vinos", "espumantes", "mercado_doméstico", "Chile", "Argentina", "exportación", "más_de_80_países", "segmentos_de_operación", "gestión", "información_financiera", "asignación_de_recursos", "evaluación_de_rendimiento"],
-        "relevance_score": 0.93 
+        "relevance_score": 0.94 
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1862,7 +1862,7 @@
         "semantic_tags": ["infraestructura_productiva", "marcas_comerciales", "aguas_purificadas", "aguas_saborizadas", "aguas_minerales", "distribución_HOD"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Aguas_CCU", "Coinco", "Casablanca", "Nestlé_Pure_Life", "Cachantun", "Porvenir", "MAS", "Woman", "Perrier", "Manantial_S.A.", "Manantial", "botellones", "dispensadores_HOD", "Antofagasta", "Santiago", "Coronel", "Puerto_Montt"],
-        "relevance_score": 0.94
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1871,7 +1871,7 @@
         "semantic_tags": ["infraestructura_productiva", "marcas_propias", "categorías_de_producto", "destilación", "región_coquimbo"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Compañía_Pisquera_de_Chile", "CPCh", "Ovalle", "Pisco_Elqui", "Salamanca", "Monte_Patria", "Sotaquí", "vinificación", "destilación", "envasado", "Mistral", "Campanario", "Horcón_Quemado", "Control_Valle_del_Encanto", "Tres_Erres", "Espíritu_de_Los_Andes", "La_Serena", "Hard_Fresh", "Iceberg", "Ruta_Cocktail", "Sabor_Andino_Sour", "La_Pizka", "Sol_de_Cuba", "Sierra_Morena", "Cabo_Viejo"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1907,7 +1907,7 @@
         "semantic_tags": ["bebidas_no_alcohólicas", "cervezas", "infraestructura_productiva", "marcas_propias", "licencias_comerciales"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["CCU_Bolivia", "BBO", "Santa_Cruz_de_la_Sierra", "Warnes", "Mendocina", "Sinalco", "Full_Mendocina", "Malta_Real", "De_La_Sierra", "Uyuni", "Real", "Capital", "Cordillera", "Amstel", "Heineken"],
-        "relevance_score": 0.93
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1916,7 +1916,7 @@
         "semantic_tags": ["bebidas_no_alcohólicas", "cervezas", "vinos", "licencias_comerciales", "marcas_importadas", "negocios_internacionales"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Uruguay", "Nativa", "Nix", "Watt’s", "FullSport", "Heineken", "Schneider", "Imperial", "Kunstmann", "Amstel", "Miller_Genuine_Draft", "Escudo_Silver", "Misiones_de_Rengo", "La_Celia", "Eugenio_Bustos", "Paraguay", "Pulp", "Puro_Sol", "La_Fuente", "licencia_FullSport"],
-        "relevance_score": 0.93
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1961,7 +1961,7 @@
         "semantic_tags": ["zona_franca", "negocios_conjuntos", "producción_local", "cervezas", "infraestructura_productiva", "licencias_comerciales"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Zona_Franca_Central_Cervecera", "ZF_CC", "Grupo_Postobón", "CCC", "maquila", "cerveza_Andina", "Bogotá", "planta_productiva", "Heineken", "Tecate", "Miller_Lite", "modelo_de_gestión", "acciones", "2017", "2019"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1970,7 +1970,7 @@
          "semantic_tags": ["bebidas_no_alcohólicas", "cervezas", "lanzamientos_de_producto", "licencias_comerciales", "alianzas_estratégicas"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Natumalta", "Grupo_Postobón", "Andina_Light", "botella_no_retornable", "300cc", "lata_330cc", "Coors_Brewing_Company", "Molson_Coors_International", "MCI", "Miller_Lite", "Miller_Genuine_Draft", "contrato_comercialización", "2019"],
-        "relevance_score": 0.94
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1979,7 +1979,7 @@
         "semantic_tags": ["adquisiciones", "aguas_minerales", "aguas_saborizadas", "escisión_fusión", "participación_accionaria"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Compañía_Cervecerías_Unidas_Argentina_S.A.", "Aguas_Danone_de_Argentina_S.A.", "ADA", "Aguas_de_Origen_S.A.", "ADO", "Villavicencio", "Villa_del_Sur", "Levité", "Ser", "Brío", "escisión-fusión", "Holding_Internationale_De_Boissons_S.A.S.", "participación_50%", "abril_2022", "diciembre_2022", "noviembre_2022"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2024,7 +2024,7 @@
         "semantic_tags": ["estructura_de_proveedores", "materias_primas", "contratos_de_abastecimiento", "segmento_negocios_internacionales", "segmento_vinos", "propiedad_intelectual"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["proveedores", "concentración_menor_al_10%", "malta", "arroz", "lúpulo", "azúcar", "uva", "pisco", "cócteles", "material_de_embalaje", "latas_de_aluminio", "botellas_de_vidrio", "PET", "contratos_de_abastecimiento", "patentes", "procesos_productivos"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2033,7 +2033,7 @@
         "semantic_tags": ["gestión_de_proveedores", "relaciones_estratégicas", "sustentabilidad", "estructura_corporativa", "abastecimiento"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["proveedores", "socios_estratégicos", "crecimiento", "rentabilidad", "sustentabilidad", "Gerencia_Corporativa_de_Abastecimiento", "Gerencia_Corporativa_de_Administración_y_Finanzas", "relaciones_colaborativas", "directrices"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
 
     },
     {
@@ -2043,7 +2043,7 @@
          "semantic_tags": ["gestión_de_proveedores", "modelo_de_sustentabilidad", "relaciones_colaborativas", "compromiso_ambiental", "estrategia_empresarial"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Modelo_de_Gestión_de_Sustentabilidad", "Nuestras_Marcas", "Nuestras_Personas", "medio_ambiente", "proveedores", "compromiso_de_largo_plazo", "relaciones_colaborativas", "bienestar_entorno", "estrategia"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2070,7 +2070,7 @@
         "semantic_tags": ["gestión_de_proveedores", "términos_de_pago", "cumplimiento_normativo", "relaciones_comerciales", "PYME"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["órdenes_de_compra", "Ley_21.131", "plazo_de_pago", "proveedores_PYME", "proveedores_nacionales", "proveedores_internacionales", "negociación", "términos_y_condiciones"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2079,7 +2079,7 @@
         "semantic_tags": ["gestión_de_proveedores", "digitalización", "eficiencia_operacional", "transparencia", "cumplimiento_financiero"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Portal_de_Proveedores", "facturas", "fecha_de_pago", "pedidos_en_curso", "Chile", "Argentina", "Uruguay", "Paraguay", "proveedores_nacionales", "materialidad", "intereses_por_mora", "31_diciembre_2023"],
-        "relevance_score": 0.94
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2115,7 +2115,7 @@
         "semantic_tags": ["evaluación_de_proveedores", "cumplimiento_laboral", "verificación_externa", "Ley_de_Subcontratación", "impacto_en_facturación"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Chile", "empresa_externa", "proveedores", "leyes_sociales", "leyes_laborales", "Ley_de_Subcontratación", "habilitación", "2023", "1.507_proveedores", "17%_total", "94%_facturación_anual"],
-        "relevance_score": 0.94
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2124,7 +2124,7 @@
         "semantic_tags": ["cumplimiento_legal", "derechos_del_consumidor", "inocuidad_alimentaria", "publicidad_responsable", "protección_de_datos"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["indicadores", "rotulación", "publicidad", "inocuidad_alimentaria", "Manejo_de_Reclamos", "Servicio_de_Atención_al_Consumidor", "Ley_19.496", "protección_de_los_derechos_del_consumidor", "2023", "procesos_internos", "ley_de_protección_de_datos_personales", "Congreso"],
-        "relevance_score": 0.94
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2133,7 +2133,7 @@
         "semantic_tags": ["gestión_de_personas", "derechos_humanos", "cumplimiento_laboral", "desarrollo_integral", "clima_organizacional"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["trabajadores", "salud_y_seguridad", "principios_corporativos", "Política_de_Derechos_Humanos", "cumplimiento_regulatorio", "proveedores", "contratistas", "socios", "aliados_estratégicos"],
-        "relevance_score": 0.94
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2151,7 +2151,7 @@
         "semantic_tags": ["cumplimiento_medioambiental", "gestión_regulatoria", "validación_externa", "sin_sanciones", "estructura_regional"],
         "context_type": "estructura_empresarial_y_portafolio",
         "keywords": ["Argentina", "Bolivia", "Paraguay", "Uruguay", "matriz_de_cumplimiento", "requisitos_normativos", "empresa_externa", "Subgerencia_de_Medio_Ambiente", "Chile", "2023", "sin_multas", "sin_sanciones_ambientales"],
-        "relevance_score": 0.94
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2164,6 +2164,7 @@
     }
 ]
 }
+
 
 
 
