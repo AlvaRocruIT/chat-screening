@@ -21,57 +21,101 @@
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0001",
-        "text": "Nuestras operaciones se dividen en los siguientes tres Segmentos de operación: (i) Segmento de operación Chile, que incluye cerveza, bebidas no alcohólicas, licores, sidra y las Unidades Estratégicas de Servicio (“UES”) en el mercado chileno; (ii) Segmento de operación Negocios Internacionales, que incluye cerveza, sidra, bebidas no alcohólicas y licores, entre otras categorías, en Argentina, Uruguay, Paraguay y Bolivia; y (iii) Segmento de operación Vinos, que incluye vinos y espumantes en el mercado doméstico, en Chile y Argentina, y exportaciones a más de 80 países. Los ingresos y gastos de las Unidades de Apoyo Corporativo (“UAC”) se presentan por separado en Otros. Las UAC, al igual que las UES, proporcionan servicios compartidos dentro de la Compañía a fin de captar sinergias operacionales.",
+        "text": "Nuestras operaciones se dividen en los siguientes tres Segmentos de operación: (i) Segmento de operación Chile, que incluye cerveza, bebidas no alcohólicas, licores, sidra y las Unidades Estratégicas de Servicio (“UES”) en el mercado chileno; (ii) Segmento de operación Negocios Internacionales, que incluye cerveza, sidra, bebidas no alcohólicas y licores, entre otras categorías, en Argentina, Uruguay, Paraguay y Bolivia; y (iii) Segmento de operación Vinos, que incluye vinos y espumantes en el mercado doméstico, en Chile y Argentina, y exportaciones a más de 80 países. Los ingresos y gastos de las Unidades de Apoyo Corporativo (“UAC”) se presentan por separado en Otros. Las UAC, al igual que las UES, proporcionan servicios compartidos dentro de la Compañía a fin de captar sinergias operacionales.",          "semantic_tags": ["segmentación_operacional", "estructura_corporativa", "sinergias_empresariales"],
+        "context_type": "estructura_organizacional",
+        "keywords": ["segmentos", "Chile", "Negocios Internacionales", "Vinos", "sinergias", "servicios_compartidos"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0002",
         "text": "A nivel de gestión operacional, CCU reporta sus resultados en conformidad a los referidos Segmentos de operación, esencialmente definidos con respecto a sus ingresos por áreas geográficas de actividad comercial. Somos una Compañía con tradición histórica desde 1850 y, a lo largo de esta trayectoria, hemos sabido crear y compartir experiencias de valor con las personas con las que nos relacionamos, entendiendo los cambios del entorno, creciendo rentablemente y siendo parte importante de la sociedad a la que pertenecemos.",
+        "semantic_tags": ["gestión_operacional", "trayectoria_histórica", "crecimiento_sostenible"],
+        "context_type": "desempeño_corporativo",
+        "keywords": ["segmentos", "resultados", "ingresos", "tradición", "sociedad"],
+        "relevance_score": 0.9
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0002",
         "text": "A partir de una importante reflexión estratégica en el año 2017, se dio un proceso de actualización de nuestra identidad corporativa, el cual, entre otros cambios, nos inspiró a migrar a un propósito, promesa y principios organizacionales en reemplazo de la misión y visión. Este nuevo marco denominado “SER CCU” encarna nuestras aspiraciones como Compañía. Esta memoria anual se basa en los requerimientos de la normativa de la Comisión para el Mercado Financiero (“CMF”) bajo la Norma de Carácter General (“NCG”) N° 461. A su vez considera los estándares versión 2021 de la Global Reporting Initiative (“GRI”), los indicadores de Sustainability Accounting Standards Board (“SASB”) del sector bebidas alcohólicas y no alcohólicas, indicadores propios de la Compañía e indicadores del Dow Jones Sustainability Index (“DJSI”).",
+        "semantic_tags": ["identidad_corporativa", "propósito_organizacional", "estándares_sostenibilidad", "gobernanza_corporativa"],
+        "context_type": "estrategia_corporativa",
+        "keywords": ["identidad", "propósito", "principios"],
+  "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0002",
         "text": "Qué nos inspira: Ser CCU nos inspira a trascender los legítimos intereses de quienes aquí trabajamos, con un propósito y una promesa concretos, que buscan construir un mejor vivir para todos aquellos con quienes nos relacionamos. Nuestro Propósito: Nos apasiona crear experiencias para compartir juntos un mejor vivir. Nuestro Comromiso: Con una amplia gama de marcas de bebestibles y experiencias, mejoramos y acompañamos distintos momentos de la vida, guiados por nuestros principios, en beneficio de las personas con las que nos relacionamos y el cuidado del medio ambiente. Identidad: Ser CCU es vivir de acuerdo con nuestros principios y proyectar nuestra personalidad en todo momento.",
+        "semantic_tags": ["propósito_corporativo", "valores_organizacionales", "compromiso_social", "identidad_empresarial"],
+        "context_type": "organizational_identity",
+        "keywords": ["Ser CCU", "propósito", "promesa", "mejor vivir", "principios", "medio ambiente", "experiencias"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0003",
         "text": "Nuestros Principios: -Excelencia: Somos apasionados por la calidad y el trabajo bien hecho. - Entrega: Procuramos el bien de los demás y de nuestro entorno, en armonía con nuestros legítimos intereses. -Integridad: Cumplimos las normas que nos regulan, siempre inspirados en actuar correctamente.  - Empoderamiento: Nos mueve una actitud emprendedora, innovadora y proactiva. Nuestra personalidad: - Orgullo: Sentimos legítimo orgullo de lo que somos y de nuestra historia. - Empatía: Nos relacionamos y colaboramos con nuestras personas desde el afecto y la confianza. - Superación: Nos gusta plantearnos objetivos ambiciosos, superarlos y adaptarnos al mercado. - Pasión: Somos entusiastas y nos gusta transmitirlo.",
+        "semantic_tags": ["principios_corporativos", "valores_organizacionales", "cultura_empresarial", "ética_laboral"],
+        "context_type": "organizational_identity",
+        "keywords": ["excelencia", "entrega", "integridad", "empoderamiento", "orgullo", "empatía", "superación", "pasión"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0003",
         "text": "Cómo lo Hacemos: Ser CCU es hacer las cosas basados en pilares estratégicos sólidos, desde una plataforma de negocios robusta y una ejecución de excelencia, a través de procesos a lo largo de toda la organización. Nuestros Pilares Estratégicos: - Rentabilidad: Maximizar el valor económico de los negocios que operamos. Esto se logra al optimizar el retorno final sobre la inversión, lo que es consecuencia de mejores márgenes y el uso eficiente de los recursos. - Crecimiento: Incrementar el tamaño y el alcance de nuestra operación. Esto se logra mediante una mayor participación de mercado, atendiendo nuevas necesidades, nuevos canales, nuevas ocasiones de consumo y entrando a nuevas regiones, negocios y categorías. - Sustentabilidad: Asegurar el valor de la Compañía a largo plazo.",
+        "semantic_tags": ["pilares_estratégicos", "ejecución_de_excelencia", "sustentabilidad_empresarial", "crecimiento_y_rentabilidad"],
+        "context_type": "estrategia_corporativa",
+        "keywords": ["rentabilidad", "crecimiento", "sustentabilidad", "optimización_recursos", "participación_mercado", "nuevos_canales", "valor_a_largo_plazo"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0003",
         "text": "Esto se logra teniendo en consideración el bienestar actual y futuro de todas las personas con las que interactuamos, el desarrollo de nuestras marcas y el cuidado del medio ambiente. Nuestros Procesos: La organización de CCU, desde sus procesos, mantiene el equilibrio necesario entre una organización formal y una organización informal. Mientras la primera nos permite tener claridad de que lo que hacemos garantiza una gestión ordenada, estructurada y replicable, la segunda incorpora la necesaria espontaneidad que surge de los liderazgos y las relaciones interpersonales dentro de la Compañía.",
+        "semantic_tags": ["bienestar_personas", "desarrollo_de_marcas", "cuidado_medio_ambiente", "gestión_de_procesos"],
+        "context_type": "operaciones_corporativas",
+        "keywords": ["bienestar", "marcas", "medio_ambiente", "organización_formal", "organización_informal", "procesos", "liderazgos", "relaciones_interpersonales"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0004",
         "text": "Nuestra Plataforma de Negocios Nuestro negocio se sustenta en operar, con foco y sinergia, una multicategoría de marcas de bebestibles de valor, con una promoción consciente, tanto a nivel regional como de exportación. Nuestras Personas- Consumidores: Acompañamos sus momentos responsablemente. - Clientes: Entregamos satisfacción, calidad de servicio y máxima ejecución. - Trabajadores: Promovemos acciones para la seguridad, desarrollo y crecimiento. Proveedores: Impulsamos relaciones colaborativas. - Comunidades: Contribuimos a su desarrollo construyendo confianza y valor mutuo. -Accionistas: Generamos valor sustentable. - Sociedad: Impactamos positivamente en ella y el Medio Ambiente. Nuestro Planeta: - Visión Medioambiental 2030 Reconocemos la importancia de hacer negocios con una Visión Medioambiental de largo plazo, que implica acciones de corto plazo para así lograr las metas, y promovemos una cultura interna orientada al cuidado del medio ambiente.",
+        "semantic_tags": ["plataforma_de_negocios", "stakeholders", "responsabilidad_social", "sustentabilidad_ambiental"],
+        "context_type": "estrategia_corporativa",
+        "keywords": ["consumidores", "clientes", "trabajadores", "proveedores", "comunidades", "accionistas", "sociedad", "medio_ambiente", "visión_2030"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0004",
         "text": "Nos inspira liderar iniciativas en materia medioambiental en toda nuestra cadena de valor y nuestro compromiso se plasma en una Visión Medioambiental concreta por cada década. Las dimensiones al 2030 consideran: - Emisiones Reducir nuestras emisiones de CO2e por hectolitro producido. Utilizar energías renovables. - Residuos Promover la reducción y valorización de los residuos. Lograr que nuestros envases y embalajes sean reutilizables, reciclables o compostables. Incorporar material reciclado en nuestros envases y embalajes. - Uso de Agua Reducir el consumo de agua por hectolitro producido.",
+        "semantic_tags": ["sostenibilidad_ambiental", "cadena_de_valor", "visión_medioambiental", "gestión_recursos"],
+        "context_type": "sustentabilidad",
+        "keywords": ["emisiones", "CO2e", "energías_renovables", "residuos", "reciclable", "compostable", "agua", "reducción_consumo"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0004",
         "text": "Historia: En 1850 Joaquín Plagemann funda en Valparaíso la Primera fábrica cervecera en Chile; 1889: Se fusiona con Fábrica de Cerveza de Limache, originando Fábrica Nacional de Cerveza.; 1902: Se constituye en sociedad anónima como Compañía Cervecerías Unidas. 1916: CCU se convierte en el principal productor de cervezas en Chile al adquirir las fábricas Ebner de Santiago, Anwandter de Valdivia y Cervecera La Calera. CCU ingresa al negocio de las bebidas gaseosas con Bilz, tras incorporar Ebner; 1959: CCU empieza a producir bajo licencia Pepsi-Cola.; 1986: El grupo Luksic, (Quiñenco S.A)., y el grupo alemán Schörghuber, (Paulaner-Salvator A.G.), forman en partes iguales la empresa Inversiones y Rentas S.A., que adquiere el 64% de CCU S.A..; 1990: CCU comienza a producir y distribuir Paulaner en Chile. CCU expande su negocio de aguas minerales al adquirir Agua Porvenir S.A.I.; 1994: CCU ingresa al negocio del vino al adquirir Viña San Pedro S.A., (VSPT Wine Group”). 1995: CCU ingresa al mercado argentino, con la marca Budweiser.",
+        "semantic_tags": ["historia_corporativa", "fundación_y_expansión", "adquisiciones", "crecimiento_internacional"],
+        "context_type": "trayectoria_historica",
+        "keywords": ["historia", "inicios", "trayectoria", "fábrica_cervecera", "fusiones", "CCU", "Pepsi-Cola", "Budweiser"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0004",
         "text": "Historia: 2005: CCU se asocia con Cooperativa Control, formando Compañía Pisquera de Chile S.A.; En 2012 CCU se expande a Uruguay. CCU, adquiere el 51% de Manantial S.A., negocio de entrega a domicilio de agua en botellones y dispensadores (Home & Office Delivery “HOD”); 2013: asume Andrónico Luksic Craig como nuevo Presidente del Directorio, tras la muerte de su hermano, Guillermo Luksic Craig. CCU S.A. hace un aumento de capital, al emitir 51.000.000 nuevas acciones ordinarias, tanto en Chile como a través de ADRs en EE.UU. y otros mercados. CCU ingresa a Paraguay. A través de su filial CCU Inversiones S.A., CCU profundiza su asociación con PepsiCo Inc. constituyendo Bebidas CCU-Pepsico SpA.; 2013: CCU ingresa al Bolivia al adquirir el 34% de Bebidas Bolivianas BBO S.A. Tambiém ingresa al mercado colombiano, formando Central Cervecera de Colombia S.A.S.; 2022: Por su liderazgo y fuerte presencia en la industria de bebidas analcohólicas a nivel regional, CCU recibió el premio “Bottler of The Year” Latinoamérica con el que PepsiCo reconoce a los mejores embotelladores a nivel mundial.",
+        "semantic_tags": ["expansión_internacional", "adquisiciones_y_asociaciones", "liderazgo_corporativo", "premios_industria"],
+        "context_type": "trayectoria_historica",
+        "keywords": ["Uruguay", "Paraguay", "Bolivia", "Colombia", "Manantial", "Pepsico", "Andrónico_Luksic", "consolidación", "premio", "PepsiCo"],
+        "relevance_score": 0.92
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -82,11 +126,19 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0007",
         "text": "Los menores precios promedio en CLP se explicaron por: (i) una contracción de 21,5% en el segmento de Operación de Negocios Internacionales, impulsado por la devaluación (al cierre del período) de 356,2% del peso argentino (“ARS”) frente al USD, parcialmente compensada por iniciativas de gestión de ingresos, (ii) una disminución del 0,3% en el Segmento de operación Vinos, causada principalmente por un efecto mix negativo en el portafolio debido a una fuerte caída en las exportaciones, parcialmente compensado por iniciativas de gestión de ingresos en nuestros mercados domésticos."
+        "semantic_tags": ["resultados_financieros", "ingresos_2023", "segmentos_operativos", "variación_volúmenes"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["ingresos", "volúmenes", "precios_promedio", "Segmento_Chile", "Negocios_Internacionales", "Vinos", "exportaciones"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0007",
         "text": "Los efectos anteriores fueron casi compensados por un crecimiento del 7,9% en el Segmento de operación Chile, debido a la implementación de iniciativas de gestión de ingresos, parcialmente compensado por efectos mix negativos en el portafolio. El Costo de Venta bajó un 9,0%, debido principalmente a un descenso del 5,7% en el costo de ventas por hectolitro y, en menor medida, a los menores volúmenes consolidados. El Segmento de operación Chile reportó una expansión de 0,7% en el costo de ventas por hectolitro, debido a mayores costos en malta y azúcar que fueron compensados casi en su totalidad por mejores precios en aluminio, PET, energía y eficiencias en costos de fabricación.",
+        "semantic_tags": ["resultados_financieros", "gestión_ingresos", "costos_venta", "eficiencias_operacionales"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Segmento_Chile", "crecimiento", "costo_venta", "hectolitro", "PET", "energía", "eficiencias_fabricación"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -97,71 +149,127 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0008",
         "text": "La contracción de 23,5% en el Segmento de operación Negocios Internacionales, explicado por Argentina, y la contracción de 14,9% en el Segmento de operación Vinos, estuvo casi totalmente compensada por el Segmento de operación Chile, que aumentó el Margen bruto en un 14,8%. Los gastos de administración, comercialización y distribución (o “MSD&A” por sus siglas en inglés) disminuyeron un 3,3% y, como porcentaje de los Ingresos por venta, crecieron 80 puntos base. El descenso se debió principalmente al efecto de conversión en Argentina, mencionado en el costo por ventas, que se reflejó en una caída del 26,7% en el Segmento de operación Negocios Internacionales y, como porcentaje de los Ingresos por venta, disminuyeron de 42,4% a 41,5%.",
+        "semantic_tags": ["margen_bruto", "gastos_administrativos", "variación_segmentos", "desempeño_financiero"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Segmento_Chile", "Negocios_Internacionales", "Vinos", "margen_bruto", "ingresos_por_venta"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0008",
         "text": "En moneda local, los gastos de MSD&A en Argentina, crecieron debido a presiones inflacionarias. En el Segmento de operación Chile, los gastos de MSD&A aumentaron un 10,5% y, como porcentaje de los Ingresos por venta, aumentaron de 32,5% a 34,2%, explicado principalmente por mayores gastos de marketing y distribución. Por su parte, en el Segmento de operación Vinos, los gastos de MSD&A aumentaron un 3,0% y como porcentaje de los ingresos, aumentaron de 25,4% a 30,6% en parte explicado por la menor escala de negocios y mayores gastos en marketing.",
+        "semantic_tags": ["gastos_msd&a", "presiones_inflacionarias", "marketing_y_distribución", "desempeño_segmentos"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Segmento_Chile", "Segmento_Vinos", "ingresos_por_venta", "aumento_gastos", "marketing", "distribución", "menor_escala"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0009",
         "text": "El Resultado Operacional Ajustado (o “EBIT” por sus siglas en inglés) alcanzó CLP 253.283 millones, con una expansión del 9,4%, mejorando el margen EBIT de un 8,5% a un 9,9%. Por su parte, el Resultado Operacional Ajustado antes de Depreciación y Amortización (o “EBITDA” por sus siglas en inglés) alcanzó CLP 379.402 millones, un aumento del 6,0%, lo que representa un aumento en el margen EBITDA de 13,2% a 14,8%. El Resultado no operacional totalizó una pérdida de CLP 150.125 millones, frente a un resultado negativo de CLP 95.683 millones el año pasado.",
+        "semantic_tags": ["resultado_operacional", "EBIT", "EBITDA", "margen_financiero"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["EBIT", "EBITDA", "margen_financiero"; "resultado_operacional_ajustado", "pérdida_no_operacional"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0009",
         "text": "La mayor pérdida se explica por: (i) una mayor pérdida de CLP 45.771 millones en Diferencias de cambio, principalmente impulsada por Argentina debido a la fuerte depreciación del ARS frente al USD, (ii) un menor resultado en Resultados por unidades de ajuste de CLP 15.224 millones, también concentrado en Argentina, y (iii) un menor resultado en Utilidad de negocios conjuntos y asociadas de CLP 8.240 millones, explicado principalmente por gastos no recurrentes asociados a la integración de nuestro negocio conjunto en Argentina, Aguas de Origen S.A., en nuestra operación. Estos efectos se vieron parcialmente compensados por una menor pérdida de CLP 15.440 millones en Gastos financieros netos, debido principalmente a mayores ingresos por intereses asociados a tasas de interés más favorables.",
+         "semantic_tags": ["pérdidas_financieras", "diferencias_cambio", "resultados_no_recurrentes", "gastos_financieros"],
+         "context_type": "desempeño_financiero",
+         "keywords": ["Diferencias_de_cambio", "Argentina", "unidades_de_ajuste", "negocios_conjuntos", "gastos_financieros", "ingresos_por_intereses"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0009",
         "text": "El Impuesto a las ganancias fue CLP 15.531 millones inferior al año anterior, explicado por una menor Utilidad antes de impuestos, mientras que los efectos netos de diferencias impositivas permanentes se mantuvieron estables. La Utilidad neta totalizó una ganancia de CLP 105.653 millones, una caída de 10,6%, explicado por las razones mencionadas anteriormente. En cuanto a nuestros principales negocios conjuntos, desde una perspectiva anual, en Colombia los volúmenes se contrajeron en un dígito bajo en 2023, en un escenario de menor consumo. En Argentina, nuestro negocio de aguas registró un crecimiento de volúmenes de alrededor de un dígito medio, a pesar del complejo entorno económico, gracias a la fortaleza de las marcas y a la exitosa integración de este negocio en nuestras operaciones.",
+        "semantic_tags": ["impuestos", "utilidad_neta", "negocios_conjuntos", "variación_volúmenes"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Impuesto_a_las_ganancias", "utilidad_neta", "volúmenes", "negocios_conjuntos", "integración_operaciones", "marcas_fortaleza"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0010",
         "text": "En el Segmento de operación Chile los Ingresos por ventas registraron un alza de 5,1%, totalizando CLP 1.758.971 millones, impulsado por un aumento en los precios promedio de 7,9%, siendo parcialmente contrarrestado por una contracción de 2,6% en los volúmenes. Los mayores precios promedio se explican por iniciativas de gestión de ingresos en todas las categorías del portafolio, parcialmente compensadas por efectos mix negativos, mientras que los menores volúmenes fueron consecuencia de una debilidad de la demanda, la que se vio especialmente afectada por condiciones climáticas desfavorables durante el último trimestre del año.",
+        "semantic_tags": ["ingresos_ventas", "segmento_chile", "gestión_ingresos", "variación_volúmenes"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Segmento_Chile", "ingresos_por_ventas", "CLP", "precios_promedio", "volúmenes", "portafolio", "efectos_mix", "demanda", "condiciones_climáticas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0010",
         "text": "El Costo de ventas por hectolitro estuvo prácticamente plano, aumentando 0,7%, debido a que los mayores costos en malta y azúcar fueron compensados casi en su totalidad por mejores precios en aluminio, PET, energía y eficiencias en costos de fabricación. Como resultado, el Margen Bruto se expandió un 14,8% y como porcentaje de los ingresos aumentó desde 41,9% a 45,8%. Por su parte, los gastos de MSD&A aumentaron 10,5% con respecto al año anterior y, como porcentaje de los Ingresos por ventas, aumentaron de 32,5% a 34,2%. De esta manera, el EBIT aumentó 30,5% alcanzando CLP 204.586 millones, y el margen EBIT mejoró de 9,4% a 11,6%.",
+        "semantic_tags": ["costo_ventas", "margen_bruto", "gastos_msd&a", "EBIT"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["costo_ventas", "hectolitro", "malta", "azúcar", "aluminio", "PET", "energía", "eficiencias_fabricación", "margen_bruto", "MSD&A", "EBIT"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0010",
         "text": "  Por otro lado, el EBITDA se expandió 24,8% alcanzando CLP 283.409 millones, y el margen EBITDA se incrementó de 13,6% a 16,1%. En cervezas, se destacaron los lanzamientos de Royal Golden, que se suma a las propuestas de segmento de cervezas livianas y de Cristal, quien lanzó la edición limitada Cristal Orígenes con sabores conmemorando tres regiones de Chile: Centro con toque de miel, Norte con toque de limón de pica y Sur con toque de frutos rojos. En Austral continuaron con las innovaciones en Patagonia, lanzando Blonde Lager que se suma a las variedades de Red Lager, Hoppy Lager y Black Lager. Kunstmann continuó sumando variedades a sus Experimentales de Edición Limitada. Por último, Stones realizó el lanzamiento de su nueva variedad Mango Stones. En bebidas no alcohólicas, fuimos parte de un importante hito para el país, los juegos Panamericanos y Parapanamericanos Santiago 2023.",
+        "semantic_tags": ["EBITDA", "margen_EBITDA", "lanzamientos_productos", "eventos_relevantes"],
+        "context_type": "desempeño_financiero_y_comercial",
+        "keywords": ["EBITDA", "margen_EBITDA", "cervezas", "Royal_Golden", "Cristal_Orígenes", "Blonde_Lager", "Red_Lager", "Hoppy_Lager", "Black_Lager", "Kunstmann", "Stones", "bebidas_no_alcohólicas", "Juegos_Panamericanos", "Santiago_2023"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0011",
         "text": "A través de la marca Gatorade fuimos el hidratador oficial de los Juegos y también estuvimos presentes con la marca Cachantun que además de refrescar al público y a los atletas se comprometió a reciclar todas las botellas de plástico juntando más de 40 toneladas que serán usadas en 2024 en nuestra nueva planta CirCCUlar. En la categoría de gaseosas destacamos la campaña de Navidad de Bilz y Pap, donde a través de la “Máquina de la Nabilzpap” invita a las familias a vivir la magia de esta celebración incentivando el reciclaje y el cuidado del medio ambiente. Destacamos además la campaña “Generaciones de Pepsi Zero”, que nos invita a atrevernos a más y destapar una Pepsi Zero independiente de la generación a la que pertenecemos.",
+        "semantic_tags": ["marketing_y_comunicaciones", "sostenibilidad_ambiental", "campañas_publicitarias", "responsabilidad_social"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Gatorade", "Cachantun", "reciclaje", "CirCCUlar", "Bilz_y_Pap", "Navidad", "Máquina_de_la_Nabilzpap", "Generaciones_de_Pepsi_Zero", "medio_ambiente"],
+        "relevance_score": 0.94  
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0011",
         "text": "En jugos y néctares lanzamos Watt’s Selección Papaya que continúa expandiendo nuestra línea de néctares premium. Por último, quisiéramos destacar que Gatorade se convirtió en hidratador oficial de la selección chilena de fútbol con lo que estará apoyando a las ocho series, masculinas y femeninas, que conforman las selecciones nacionales hasta 2026. En licores, en 2023 en pisco, hicimos una renovación de imagen de la marca Mistral, con el fin de potenciar la buena percepción de calidad y lograr consistencia entre las distintas variedades del portafolio. Adicionalmente lanzamos Mistral Nobel Honey, un blend que incluye el sabor inconfundible de nuestro Mistral y toques dulces a miel. En cócteles, Campanario renovó su imagen manteniendo siempre los sabores que lo destacan. Además, Sabor Andino se lanzó la variedad Miel Merkén. Finalmente, Mistral Ice lanzó su nueva variedad Pineapple. También, Sierra Morena Ice renovó su imagen a través de su nueva campaña Sabor All Inclusive.",
+        "semantic_tags": ["lanzamientos_productos", "renovación_imagen", "expansión_líneas", "marcas_licores"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Watt’s_Selección_Papaya", "Gatorade", "selección_chilena", "Mistral", "Mistral_Nobel_Honey", "Campanario", "Sabor_Andino", "Mistral_Ice", "Sierra_Morena_Ice", "portafolio", "cocteles", "imagen_marca"],
+        "relevance_score": 0.95    
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0011",
         "text": "En el Segmento de operación Negocios Internacionales, compuesto por Argentina, Bolivia, Paraguay y Uruguay, los Ingresos por ventas se contrajeron 25,1%, llegando a CLP 586.484 millones. Lo anterior se explicó por una caída de 21,5% en los precios promedios en CLP, asociado a un efecto adverso de conversión producto de la fuerte devaluación del peso argentino contra el dólar, lo que fue parcialmente contrarrestada por iniciativas de gestión de ingresos.",
+        "semantic_tags": ["ingresos_ventas", "negocios_internacionales", "variación_precios", "efecto_cambio"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["Segmento_Negocios_Internacionales", "Argentina", "Bolivia", "Paraguay", "Uruguay", "ingresos_por_ventas", "CLP", "precios_promedio", "devaluación_peso", "gestión_ingresos"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0012",
         "text": "Así también, los volúmenes cayeron un 4,5%, más que explicado por Argentina, ya que el resto de las geografías en su conjunto registraron crecimientos positivos. El Costo de venta por hectolitro disminuyó 26,6% en CLP, explicado principalmente por el mismo efecto de conversión mencionado en los ingresos, ya que en moneda local el Costo de venta de incrementó por un mayor costo de materias primas y empaque, una mayor inflación y por el impacto negativo que generó la devaluación de 356,2% del ARS frente al USD en nuestros costos vinculados al USD. El Margen Bruto se contrajo 23,5% y, como porcentaje de los Ingresos por ventas, aumentó de 50,3% a 51,3%.",
+        "semantic_tags": ["variación_volúmenes", "costo_ventas", "margen_bruto", "efecto_cambio"],
+        "context_type": "desempeño_financiero",
+        "keywords": ["volúmenes", "Argentina", "CLP", "hectolitro", "materias_primas", "empaque", "inflación", "devaluación_ARS", "USD", "margen_bruto", "ingresos_por_ventas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0012",
         "text": "Por otra parte, los MSD&A, como porcentaje de los Ingresos por ventas, disminuyeron 95 puntos base. En consecuencia, el EBIT fue CLP 57.553 millones, siendo 8,5% inferior al año anterior, y el EBITDA se contrajo 16,0% alcanzando CLP 85.564 millones. Por su parte, el margen EBITDA se incrementó de 13,0% a 14,6%. En Argentina, durante 2023, la innovación en nuestras marcas de cervezas estuvo centrada en el desarrollo de la categoría sin alcohol, con Heineken e Imperial liderando este proceso. Se llevaron a cabo lanzamientos de nuevas variedades, entre las que se destacan Bieckert Hazy IPA, Salta Cautiva Negra y Grolsch IPA. Además, hemos iniciado la producción local de Blue Moon. Asimismo, introdujimos una nueva línea de vinos, Ö61, diseñada para un público joven y conectada con la cultura del tatuaje.",
+        "semantic_tags": ["MSD&A", "EBIT_EBITDA", "innovación_productos", "lanzamientos"],
+        "context_type": "desempeño_financiero_y_comercial",
+        "keywords": ["MSD&A", "ingresos_por_ventas", "EBIT", "EBITDA", "margen_EBITDA", "Argentina", "Heineken", "Imperial", "Bieckert_Hazy_IPA", "Salta_Cautiva_Negra", "Grolsch_IPA", "Blue_Moon", "vinos_Ö61", "categoría_sin_alcohol"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0012",
         "text": "En términos de comunicación, enfrentamos varios desafíos a lo largo del año. Durante las elecciones, Heineken 0.0 (sin alcohol) llevó a cabo la iniciativa “Prohibition”, con una destacada actividad que se desplegó en puntos de venta durante la veda electoral, reforzando el mensaje “Ahora podés”. Heineken también amplió su presencia en el ámbito musical al desembarcar en Buenos Aires el festival Primavera Sound. Schneider continuó fortaleciendo su asociación con la selección Nacional bajo el lema “Verano de Campeones”, seguido por una campaña relacionada con el aniversario del Mundial de fútbol.",
+        "semantic_tags": ["comunicaciones_y_marketing", "campañas_publicitarias", "actividades_promocionales", "eventos"],
+        "context_type": "actividades_comerciales",
+        "keywords": ["Heineken_0.0", "Prohibition", "Ahora_podés", "Buenos_Aires", "Primavera_Sound", "Schneider", "selección_nacional", "Verano_de_Campeones", "aniversario_Mundial"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1210,4 +1318,5 @@
     }
 ]
 }
+
 
