@@ -42,7 +42,7 @@
         "semantic_tags": ["identidad_corporativa", "propósito_organizacional", "estándares_sostenibilidad", "gobernanza_corporativa"],
         "context_type": "estrategia_corporativa",
         "keywords": ["identidad", "propósito", "principios"],
-  "relevance_score": 0.94
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -608,51 +608,91 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0029",
         "text": "Sociedad en general: En este grupo se consideran reguladores(2), fundaciones, organizaciones gubernamentales y no gubernamentales (ONG’s), líderes de opinión en sostenibilidad, organizaciones sociales, organizaciones de servicio y orden público, medios de comunicación y sociedad en general. Como compañía la transparencia en la entrega de información es fundamental para la operación de nuestra Compañía, donde el contar con la disponibilidad para responder a cualquier entidad sus consultas y requerimientos, nos permite conocer inquietudes y desarrollar conocimiento. Además, dentro de la sociedad, nos enorgullece ser parte de la historia de los ciudadanos por más de 170 años, donde además de aportar al crecimiento económico de los países donde operamos, buscamos fomentar el desarrollo y bienestar de la sociedad, poniendo el bien de las personas y del planeta como eje central de nuestras decisiones. Dentro de la identidad de SER CCU, buscamos estar presentes en ocasiones que la ciudadanía nos necesite, involucrándonos en forma ágil y tangible en situaciones de emergencia. Comunicamos tópicos asociados a Desempeño económico, social y ambiental, relación con los grupos de interés, denuncias, proyectos en conjunto, cambios regulatorios, tendencias de consumo, información relevante para la sociedad en general. Mantenemos canales permanentes con la ciudadanía, dentro y fuera de influencia directa de nuestras operaciones. La Subgerencia de Asuntos Públicos y Gestión Territorial, perteneciente a la Gerencia de Asuntos Corporativos y Sustentabilidad, es la encargada de establecer las directrices y gestionar las relaciones con este grupo de interés. Siempre cuentan con los siguientes canales a disposición: • Página web www.ccuinvestor.com / www.ccu.cl • Redes sociales • Seminarios y eventos • Mesas de trabajo • Reuniones • Comunicados de prensa • Memoria Anual • Formulario 20-F • Press release de resultados financieros • Reuniones formales (Ley del Lobby) • Canal de Denuncias. |",
+        "semantic_tags": ["sociedad", "transparencia", "responsabilidad_corporativa", "relacionamiento_con_sociedad", "información_publica", "CCU_SA", "sostenibilidad", "SER_CCU", "gestión_territorial", "canales_comunicación"],
+        "context_type": "corporativo",
+        "keywords": ["reguladores", "fundaciones", "ONG", "organizaciones gubernamentales y no gubernamentales", "líderes de opinión en sostenibilidad", "medios de comunicación", "desempeño económico, social y ambiental", "relación con los grupos de interés", "denuncias", "proyectos en conjunto", "cambios regulatorios", "tendencias de consumo", "Subgerencia de Asuntos Públicos y Gestión Territorial", "Gerencia de Asuntos Corporativos y Sustentabilidad", "Página web www.ccuinvestor.com / www.ccu.cl", "Redes sociales", "Seminarios y eventos", "Mesas de trabajo", "Reuniones", "Comunicados de prensa", "Memoria Anual", "Formulario 20-F", "Press release de resultados financieros", "Reuniones formales (Ley del Lobby)", "Canal de Denuncias"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0030",
         "text": "Estrategia: El desarrollo de nuestra actividad se estructura en torno a tres lineamientos que dan forma a nuestra estrategia y que mantenemos balanceados permanentemente, estos son: Crecimiento, Rentabilidad y Sustentabilidad. Bajo el concepto de Crecimiento, buscamos incrementar el tamaño y alcance de nuestra operación, lo que se logra, atendiendo nuevas necesidades, canales, nuevas ocasiones de consumo y entrando en nuevas regiones, negocios y categorías. En cuanto a Rentabilidad, nos enfocamos en maximizar el valor económico de los negocios donde operamos, optimizando el retorno final de nuestras inversiones, como consecuencia de mejores márgenes operacionales y el uso eficiente de los recursos.",
+        "semantic_tags": ["estrategia_corporativa", "crecimiento", "rentabilidad", "sustentabilidad", "gestión_de_negocios", "expansión", "optimización_recursos"],
+        "context_type": "corporativo",
+        "keywords": ["Crecimiento", "Rentabilidad", "Sustentabilidad", "incrementar tamaño y alcance de operación", "nuevas necesidades", "canales", "ocasiones de consumo", "nuevas regiones", "nuevos negocios", "nuevas categorías", "maximizar valor económico", "mejores márgenes operacionales", "uso eficiente de los recursos"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0030",
         "text": "Finalmente, bajo el pilar de Sustentabilidad, aseguramos el valor de la Compañía a largo plazo, considerando el bienestar actual y futuro de todas las personas con las que nos relacionamos, el desarrollo de nuestras marcas, el cuidado del medio ambiente y los derechos humanos. Así, para desarrollar y dar seguimiento a la estrategia de la Compañía, lo hacemos a través de un proceso formal de planificación estratégica, que involucra la creación de objetivos estratégicos de largo plazo, a través de planes trianuales, aprobados y monitoreados periódicamente por el Directorio. En la elaboración de estos objetivos participa activamente el Comité de Dirección, liderado por la Gerencia de Planificación Estratégica y Nuevos Negocios, la que constantemente evalúa y monitorea nuestro entorno, de modo de adaptar en tiempo y forma nuestra estrategia a los nuevos desafíos de la Compañía.",
+        "semantic_tags": ["estrategia_corporativa", "sustentabilidad", "planificación_estratégica", "gobierno_corporativo", "desarrollo_marcas", "responsabilidad_social", "medio_ambiente", "derechos_humanos", "monitoreo_directorio"],
+        "context_type": "corporativo",
+        "keywords": ["Sustentabilidad", "valor a largo plazo", "bienestar personas", "desarrollo marcas", "cuidado medio ambiente", "derechos humanos", "planificación estratégica", "objetivos estratégicos de largo plazo", "planes trianuales", "aprobación Directorio", "monitoreo", "Comité de Dirección", "Gerencia de Planificación Estratégica y Nuevos Negocios", "evaluación entorno", "adaptación estrategia"],
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0030",
         "text": "Nos enfocamos en la implementación del plan “HérCCUles”, el que se enmarca en el Plan estratégico 2022-2024 y tiene el objetivo de recuperar la rentabilidad a través del foco en seis pilares: (i) mantener escala del negocio, (ii) reforzar gestión de ingresos, (iii) potenciar el programa de Transformación CCU, (iv) optimizar CAPEX y capital de trabajo, (v) poner foco en marcas principales e innovaciones de alto volumen y margen y, (vi) continuar invirtiendo en nuestro valor marcario.",
+        "semantic_tags": ["estrategia_corporativa", "plan_HérCCUles", "rentabilidad", "gestión_de_ingresos", "transformación_organizacional", "optimización_CAPEX", "marcas_e_innovación", "valor_marca", "plan_estratégico"],
+        "context_type": "corporativo",
+        "keywords": ["HérCCUles", "plan estratégico 2022-2024", "recuperar rentabilidad", "mantener escala del negocio", "reforzar gestión de ingresos", "Transformación CCU", "optimizar CAPEX", "optimizar capital de trabajo", "marcas principales", "innovaciones de alto volumen y margen", "invertir en valor marcario"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0031",
         "text": "El plan estreatégico bianual comprende: CRECIMIENTO RENTABLE Continuar consolidando y expandiendo rentablemente nuestra Plataforma de Negocios, que se sustenta en operar, con foco y sinergia, una multicategoría regional de bebestibles, con escala y marcas valoradas por nuestros consumidores, fomentando un consumo consciente: i. Negocios con escala 1. crecer o mantener market share 2.rentabilizar y 3.desarrollar las categorías en ls que participamos ii. Negocios con baja escala 1. buscar escala (orgánica e inorgánicamente), creciendo aceleradamente en market share y volumen, 2. profundizar la multicategoría, con foco en cervezas y categorías más rentables, y . mejorar gradualmente la rentabilidad.",
+        "semantic_tags": ["estrategia_corporativa", "crecimiento_rentable", "plataforma_de_negocios", "multicategoría", "bebestibles", "consumo_consciente", "market_share", "rentabilidad", "expansión_de_categorías"],
+        "context_type": "corporativo",
+        "keywords": ["plan estratégico bianual", "crecimiento rentable", "plataforma de negocios", "operar con foco y sinergia", "multicategoría regional de bebestibles", "escala y marcas valoradas", "consumo consciente", "negocios con escala", "market share", "rentabilizar", "desarrollar categorías", "negocios con baja escala", "crecimiento orgánico e inorgánico", "profundizar multicategoría", "cervezas", "categorías más rentables", "mejorar rentabilidad"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0031",
         "text": "NUESTROS TRABAJADORES Desarrollar a nuestras personas y organización con las competencias necesarias para adecuarnos a nuevos desafíos: i. Liderazgo ii. Transformación Regional iii. Experiencia Laboral iv. Desarrollo y Oportunidades v. Relaciones Laborales vi. Generar Capacidades vii. Diversidad e Inclusión. NUESTRO ENTORNO Continuar consolidando y expandiendo nuestra Plataforma de Negocios, operando conectados y cercanos a la ciudadanía en general y nuestros vecinos en particular, contribuyendo a construir un mejor planeta: i. Visión Medioambiental 2030: 1. Gases efecto invernadero, 2. Uso de energía eléctrica renovable, 3. Consumo de agua, 4. Valorización de residuos industriales sólidos, 5. Envases y embalajes retornables, reciclables o compostables y 6. Material reciclado en envases y embalajes ii. Nuestras comunidades. ",
+        "semantic_tags": ["gestión_de_personas", "desarrollo_organizacional", "competencias", "liderazgo", "transformación_regional", "experiencia_laboral", "oportunidades", "relaciones_laborales", "capacidades", "diversidad_inclusión", "sustentabilidad", "medioambiente", "comunidades", "Plataforma_de_Negocios"],
+        "context_type": "corporativo",
+        "keywords": ["trabajadores", "desarrollo de personas", "competencias necesarias", "liderazgo", "transformación regional", "experiencia laboral", "desarrollo y oportunidades", "relaciones laborales", "generar capacidades", "diversidad e inclusión", "entorno", "Plataforma de Negocios", "conexión con la ciudadanía", "Visión Medioambiental 2030", "gases efecto invernadero", "energía eléctrica renovable", "consumo de agua", "valorización de residuos", "envases retornables", "material reciclado", "comunidades"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0031",
         "text": "INNOVACIÓN PORTAFOLIO Acelerar, en cada uno de nuestros portafolios, la innovación de producto y empaque para anticiparnos a las nuevas tendencias y cambios en el consumidor; con foco especial en innovaciones de alto margen. TRANSFORMACIÓN CCU Ejecutar el “Programa Transformación CCU” en sus dos dimensiones: innovación incremental e innovación disruptiva, buscando dos objetivos: (a) mejorar la experiencia de servicio y (b) mejorar la rentabilidad (menores gastos y/o mayor margen): i. Innovación incremental: 1. Efectividad Comercial, 2. Marketing, 3. Gestión de Ingresos, 4. Planificación y Logística, 5. Abastecimiento, 6. Gestión Industrial y 7. Gastos de administración ii. Innovación disruptiva",
+        "semantic_tags": ["innovación", "portafolio_de_productos", "empaque", "transformación", "innovación_incremental", "innovación_disruptiva", "experiencia_de_servicio", "rentabilidad", "gestión_comercial", "marketing", "gestión_de_ingresos", "planificación_logística", "abastecimiento", "gestión_industrial", "gastos_administrativos"],
+        "context_type": "estratégico",
+        "keywords": ["innovación de producto", "innovación de empaque", "tendencias del consumidor", "alto margen", "Programa Transformación CCU", "innovación incremental", "efectividad comercial", "marketing", "gestión de ingresos", "planificación y logística", "abastecimiento", "gestión industrial", "gastos de administración", "innovación disruptiva", "mejorar experiencia de servicio", "mejorar rentabilidad"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0032",
         "text": "Planes de inversión: El crecimiento en cada uno de los Segmentos de operación referidos anteriormente requiere de permanentes inversiones, lo que significó en el año 2023 un flujo de efectivo relativo a compras de propiedades, plantas y equipos, y activos intangibles por CLP 129.447 millones a nivel consolidado. Las inversiones fueron principalmente destinadas a aumentar capacidad, mejorar la calidad de los procesos productivos, apoyar la innovación, introducir mejoras medioambientales y dar soporte a los procesos de ejecución en el mercado. De este total, el flujo de efectivo en Chile relativo a compras de propiedades, plantas y equipos, y activos intangibles alcanzó a CLP 103.048 millones.",
+        "semantic_tags": ["planes_de_inversión", "capex", "activos_fijos", "activos_intangibles", "mejora_de_procesos", "innovación", "sustentabilidad", "soporte_operacional", "expansión_de_capacidad", "ejecución_de_mercado"],
+        "context_type": "financiero",
+        "keywords": ["inversiones 2023", "compras de propiedades", "plantas y equipos", "activos intangibles", "CLP 129.447 millones", "Chile", "CLP 103.048 millones", "incremento de capacidad", "mejora de procesos productivos", "apoyo a innovación", "mejoras medioambientales", "soporte a procesos de ejecución"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0032",
         "text": "Planes de inversión: El plan de inversiones para apoyar el crecimiento orgánico a nivel consolidado contempla invertir CLP 190.459 millones en 2024, compuesto principalmente por CLP 108.028 millones en activos de producción, que incluye parte de la construcción de la nueva planta CirCCUlar en Renca, Santiago de Chile y otras inversiones relacionadas a cumplimiento normativo, actualización de nuestra plataforma tecnológica de ventas y mejoras en las operaciones en nuestros negocios en Chile y Argentina, CLP 22.783 millones en activos de distribución, CLP 28.718 millones en envases y embalajes retornables y CLP 21.476 millones en activos de marketing. Del total de inversión, en Chile corresponde CLP 155.221 millones, lo cual incluye la inversión de los segmentos de operación Chile, Vinos (correspondiente a Chile) y Otros.",
+        "semantic_tags": ["planes_de_inversión", "capex_2024", "activos_de_producción", "activos_de_distribución", "envases_y_embalajes", "marketing", "planta_CirCCUlar", "Chile", "Argentina", "cumplimiento_normativo", "tecnología_de_ventas", "mejoras_operacionales"],
+        "context_type": "financiero",
+        "keywords": ["inversión 2024", "CLP 190.459 millones", "CLP 108.028 millones activos de producción", "nueva planta CirCCUlar", "Renca, Santiago de Chile", "CLP 22.783 millones activos de distribución", "CLP 28.718 millones envases retornables", "CLP 21.476 millones marketing", "CLP 155.221 millones en Chile", "segmentos de operación Chile, Vinos y Otros", "mejoras en operaciones Chile y Argentina"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0032",
         "text": "Planes de inversión: Naturalmente, estas cifras pueden sufrir ajustes dependiendo de las condiciones de mercado y de las necesidades sobrevinientes de la Compañía. La Compañía revisa periódicamente su programa de inversiones y lo adecua a las necesidades sobrevinientes, por lo tanto, no se puede asegurar que los montos mencionados se ejecuten en los términos y plazos indicados. Adicionalmente al programa anual de inversiones, la Compañía tiene en su Plan Estratégico para los próximos años planes de crecimiento inorgánico, por lo que permanentemente evalúa posibles adquisiciones totales o parciales de nuevas operaciones tanto en Chile como en otros países.",
+        "semantic_tags": ["planes_de_inversión", "ajustes_por_mercado", "programa_de_inversiones", "crecimiento_inorgánico", "fusiones_y_adquisiciones", "evaluación_continua"],
+        "context_type": "estratégico-financiero",
+        "keywords": ["ajustes dependiendo de condiciones de mercado", "adecuación del programa de inversiones", "montos no garantizados", "planes de crecimiento inorgánico", "adquisiciones totales o parciales", "Chile y otros países", "revisión periódica del plan de inversiones"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1466,6 +1506,7 @@
     }
 ]
 }
+
 
 
 
