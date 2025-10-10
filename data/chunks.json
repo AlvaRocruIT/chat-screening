@@ -1632,302 +1632,500 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0072",
         "text": "Modelo de negocios: Sector Industrial, CCU es una empresa multicategoría regional de bebestibles, con operaciones en Chile, Argentina, Bolivia, Colombia, Paraguay y Uruguay. En consecuencia, participamos en numerosas categorías dentro de la industria de bebestibles, tanto en bebidas alcohólicas como no alcohólicas, siendo las más relevantes dentro de las primeras las categorías de cervezas, vino, pisco y sidra. Por su parte, las categorías más relevantes en las que participamos dentro del universo de bebidas no alcohólicas se encuentran bebidas gaseosas, aguas minerales y envasadas, néctares, bebidas energéticas, deportivas y bebidas en base a malta, entre otras. ",
-
+        "semantic_tags": ["modelo_de_negocios", "bebidas_alcohólicas", "bebidas_no_alcohólicas", "multicategoría", "presencia_regional"], 
+        "context_type": "estructura_empresarial_y_portafolio", 
+        "keywords": ["Sector_Industrial", "CCU", "multicategoría", "bebestibles", "Chile", "Argentina", "Bolivia", "Colombia", "Paraguay", "Uruguay", "cervezas", "vino", "pisco", "sidra", "gaseosas", "aguas_minerales", "néctares", "bebidas_energéticas", "bebidas_deportivas", "bebidas_malta"], 
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "Competencia: De acuerdo a su estrategia de expansión regional y diversificación de categorías, CCU ha ido incrementando su presencia en los mercados donde realiza sus operaciones productivas y comerciales. En todos estos mercados, la política global de la Compañía consiste en desarrollar la multicategoría y trabajar para optimizar la calidad de sus productos y procesos de elaboración. Junto con ello, mantiene una atención directa e indirecta con sus clientes. La comercialización de sus productos está dirigida principalmente al comercio minorista, integrado por supermercados, restaurantes, almacenes y botillerías, entre otros.",
-
+        "semantic_tags": ["expansión_regional", "diversificación", "multicategoría", "calidad_productos", "comercio_minorista"], 
+        "context_type": "estrategia_comercial_y_presencia_de_mercado", 
+        "keywords": ["competencia", "expansión_regional", "diversificación_de_categorías", "presencia_en_mercados", "multicategoría", "calidad_de_productos", "procesos_de_elaboración", "atención_al_cliente", "comercio_minorista", "supermercados", "restaurantes", "almacenes", "botillerías"], 
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0134",
         "text": "Competencia en el Segmento de operación Chile: El mercado de las cervezas en Chile se caracteriza por la presencia de una amplia gama de marcas de cervezas locales e internacionales. Nuestro principal competidor en el negocio de las cervezas es Cervecería Chile S.A., filial de ABI. Sus principales marcas de cervezas en el mercado chileno son Becker, Corona, Báltica, Stella Artois y Budweiser. Tras la ejecución de un acuerdo de distribución en noviembre de 2020, Cervecería Chile S.A. distribuye sus productos a través de la red de distribución de Embotelladora Andina S.A. (“Embotelladora Andina”) y Coca-Cola Embonor S.A. (“Embonor”), ambas empresas son las principales licenciatarias y embotelladoras de los productos de The CocaCola Company en Chile. Antes de noviembre de 2020, Cervecería Chile S.A. distribuía sus productos a través de la distribución directa y de mayoristas. Otro actor relevante en el mercado de las cervezas en Chile es Viña Concha y Toro S.A. (“Concha y Toro”), que importa Miller Genuine Draft y Estrella Damm desde 2018.",
+        "semantic_tags": ["competencia", "mercado_cervezas", "distribución", "marcas_internacionales", "segmento_Chile"], 
+        "context_type": "estrategia_comercial_y_presencia_de_mercado", 
+        "keywords": ["Cervecería_Chile_S.A.", "ABI", "Becker", "Corona", "Báltica", "Stella_Artois", "Budweiser", "Embotelladora_Andina", "Embonor", "The_CocaCola_Company", "Viña_Concha_y_Toro", "Miller_Genuine_Draft", "Estrella_Damm", "distribución_directa", "mayoristas", "mercado_chileno"], 
+        "relevance_score": 0.95
 
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0134",
         "text": "Concha y Toro también posee una participación mayoritaria en Southern Brewing Company, fabricante de la cerveza Kross. Finalmente, en el mercado de las cervezas competimos también con un amplio número de cervecerías artesanales y distribuidores e importadores de cervezas internacionales. En las categorías de bebidas no alcohólicas, nuestros principales competidores son las compañías que producen, embotellan y distribuyen bebidas no alcohólicas en Chile bajo las licencias de The CocaCola Company y sus coligadas. Así, los dos principales actores en el negocio de bebidas carbonatadas en Chile son Embotelladora Andina y Embonor. Nuestro principal competidor en el negocio de aguas minerales, purificada y saborizada es Vital Aguas S.A., propiedad de Embotelladora Andina y Embonor. Nuestro principal competidor en el negocio de néctares, jugos, té helado y bebidas deportivas es Vital Jugos S.A., perteneciente a Embotelladora Andina y Embonor S.A. El mercado de licores en Chile es caracterizado por una amplia gama de productos de producción local e importados.",
-
+        "semantic_tags": ["competencia", "cervezas_artesanales", "bebidas_no_alcohólicas", "embotelladoras", "mercado_licores"], 
+        "context_type": "estrategia_comercial_y_presencia_de_mercado", 
+        "keywords": ["Concha_y_Toro", "Southern_Brewing_Company", "Kross", "cervecerías_artesanales", "importadores", "The_CocaCola_Company", "Embotelladora_Andina", "Embonor", "Vital_Aguas_S.A.", "Vital_Jugos_S.A.", "bebidas_carbonatadas", "aguas_minerales", "jugos", "té_helado", "bebidas_deportivas", "mercado_licores"], 
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0135",
         "text": "Nuestro mayor competidor es Cooperativa Agrícola Pisquera Elqui Limitada (“Capel”), que produce pisco localmente e importa otros licores. Capel cuenta con plantas de producción ubicadas en las regiones de Atacama y Coquimbo, en el norte de Chile, y distribuye sus productos en todo el país. Desde mediados de 2019, Embotelladora Andina y Embonor comenzaron a distribuir los productos de Capel. Otro competidor relevante es Diageo Chile Limitada, que importa licores premium como whisky Johnnie Walker y vodka Smirnoff, entre otros. A mediados de 2018, los productos de Diageo Chile Limitada comenzaron a ser distribuidos por Embotelladora Andina y Embonor.",
-
+        "semantic_tags": ["competencia", "pisco", "licores_premium", "distribución", "mercado_chileno"],
+        "context_type": "estrategia_comercial_y_presencia_de_mercado",
+        "keywords": ["Capel", "Cooperativa_Agrícola_Pisquera_Elqui", "Atacama", "Coquimbo", "distribución_nacional", "Embotelladora_Andina", "Embonor", "Diageo_Chile", "Johnnie_Walker", "Smirnoff", "licores_importados", "licores_premium"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0135",
         "text": "Por último, competimos con otros importadores de menor tamaño de productos internacionales, así como productores locales de pisco y otros licores. Competencia en el Segmento de operación Negocios Internacionales En cerveza, competimos principalmente en Argentina con Cervecería y Maltería Quilmes S.A.I.C.A. y G, en Paraguay con Cervecería Paraguaya S.A., en Uruguay con Fábricas Nacionales de Cerveza S.A., en Bolivia con Cervecería Boliviana Nacional S.A. y en Colombia con Bavaria & Cia S.C.A., todas ellas filiales de ABI. Como resultado de su posición dominante y gran tamaño en estos países, estás compañías se benefician de economías de escala en la producción y la distribución de cervezas.",
-
+        "semantic_tags": ["competencia", "mercado_internacional", "cervezas", "licores", "economías_de_escala"],
+        "context_type": "estrategia_comercial_y_presencia_de_mercado",
+        "keywords": ["importadores_pequeños", "productores_locales", "pisco", "licores", "Cervecería_y_Maltería_Quilmes", "Cervecería_Paraguaya", "Fábricas_Nacionales_de_Cerveza", "Cervecería_Boliviana_Nacional", "Bavaria", "ABI", "producción", "distribución", "economías_de_escala"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0135",
         "text": "En bebidas analcohólicas competimos principalmente con Paraguay Refrescos S.A., en Paraguay, con Montevideo Refrescos S.R.L. en Uruguay, y en Bolivia con Embotelladoras Bolivianas Unidas, EMBOL S.A., todas ellas, embotelladoras de los productos de The Coca-Cola Company. Competencia en el Segmento de operación Vinos La industria vitivinícola, tanto en el mercado doméstico como en el de exportación, se caracteriza por tener un amplio número de participantes de diversas escalas de negocios. Así, los principales competidores de VSPT Wine Group en el mercado doméstico chileno son Viña Concha y Toro S.A. y Viña Santa Rita S.A. (“Santa Rita”). Tras la ejecución de un acuerdo de distribución en noviembre de 2021, Santa Rita distribuye sus productos a través de la red de distribución de Embotelladora Andina y Embonor. Otras viñas relevantes en el mercado doméstico chileno son, Bodegas y Viñedos Santa Carolina S.A., Viña Undurraga S.A., Viña Cousiño Macul S.A. y Viña Montes.",
-
+        "semantic_tags": ["competencia", "bebidas_analcohólicas", "industria_vitivinícola", "distribución", "mercado_doméstico"],
+        "context_type": "estrategia_comercial_y_presencia_de_mercado",
+        "keywords": ["Paraguay_Refrescos_S.A.", "Montevideo_Refrescos_S.R.L.", "EMBOL_S.A.", "The_Coca-Cola_Company", "VSPT_Wine_Group", "Viña_Concha_y_Toro", "Viña_Santa_Rita", "Santa_Rita", "Bodegas_y_Viñedos_Santa_Carolina", "Viña_Undurraga", "Viña_Cousiño_Macul", "Viña_Montes", "Embotelladora_Andina", "Embonor", "mercado_doméstico", "exportación", "acuerdo_de_distribución"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0136",
         "text": " A nivel internacional, VSPT Wine Group compite con los productores chilenos y con los productores de vino de otros países en el mundo. Marco Normativo: CCU S.A., en su carácter de sociedad anónima abierta, se encuentra regulada por la Ley N° 18.045 sobre Mercado de Valores, la Ley N° 18.046 sobre Sociedades Anónimas y su Reglamento contenido en el Decreto Supremo N° 702 del Ministerio de Hacienda de 2011 y la normativa dictada al efecto por la CMF. Asimismo, CCU S.A., en su calidad de emisor de ADRs, que actualmente se transan en el NYSE, se encuentra sujeta, en lo que fuere aplicable, al Securities Exchange Act de 1934, SOX de 2002 y a la normativa dictada al efecto por la SEC y el NYSE.",
-
+        "semantic_tags": ["competencia_internacional", "industria_vitivinícola", "marco_normativo", "regulación_bursátil", "NYSE"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["VSPT_Wine_Group", "productores_chilenos", "productores_internacionales", "Ley_18.045", "Mercado_de_Valores", "Ley_18.046", "Sociedades_Anónimas", "Decreto_Supremo_702", "CMF", "ADRs", "NYSE", "Securities_Exchange_Act", "SOX_2002", "SEC"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0137",
         "text": "Adicionalmente, CCU S.A., sus filiales y coligadas, deben observar las normas aplicables de manera específica a las actividades y negocios que cada una realiza, siendo las principales las que se indican a continuación para cada segmento: Segmento de operación Chile. Cervezas: (i) Ley N° 18.455 que contiene normas sobre Producción, Elaboración y Comercialización de Alcoholes Etílicos, Bebidas Alcohólicas y Vinagres, reglamentada en el Decreto N° 78 del Ministerio de Agricultura de 1986, que establece, entre otras, la obligación de inscribir las bebidas alcohólicas que se comercialicen en Chile en el registro que al efecto lleva el Servicio Agrícola y Ganadero (“SAG”) y los requisitos de rotulación,",
+        "semantic_tags": ["marco_regulatorio", "cervezas", "normativa_sectorial", "SAG", "rotulación"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["Ley_18.455", "alcoholes_etílicos", "bebidas_alcohólicas", "vinagres", "Decreto_78", "Ministerio_de_Agricultura", "registro_SAG", "requisitos_rotulación", "segmento_Chile", "filiales", "coligadas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0137",
         "text": "(ii) Ley N° 19.925 sobre Expendio y Consumo de Bebidas Alcohólicas, que establece la obligación de contar con patente de alcoholes para el expendio de bebidas alcohólicas, fija el horario de funcionamiento para dichos establecimientos, dispone la prohibición de venta y suministro a menores de 18 años de edad en establecimientos autorizados para el expendio de bebidas alcohólicas así como la venta, suministro o consumo en lugares determinados, y demás requisitos y condiciones para la comercialización de bebidas alcohólicas,",
+        "semantic_tags": ["marco_regulatorio", "expendio_alcoholes", "consumo_responsable", "patente_comercial", "restricciones_legales"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["Ley_19.925", "expendio_bebidas_alcohólicas", "patente_de_alcoholes", "horario_funcionamiento", "prohibición_menores", "venta_y_suministro", "consumo_en_lugares_determinados", "requisitos_comercialización"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0137",
         "text": " y (iii) Ley N° 21.363 que establece normas en materia de Comercialización y Publicidad de Bebidas Alcohólicas y su Reglamento contenido en el Decreto N° 98 del Ministerio del Interior y Seguridad Pública de 7 de julio de 2023, disponiendo, entre otros, la incorporación de advertencias sobre el consumo de alcohol en el etiquetado y la publicidad, la obligación de informar en las etiquetas la energía de los productos, restricciones horarias de publicidad, y la prohibición de participación en eventos deportivos y culturales, las que entran en vigencia en forma inmediata o diferida según se establece en la referida norma. Bebidas no alcohólicas: Se deben observar las normas del Reglamento Sanitario de los Alimentos contenido en el Decreto N° 977 del Ministerio de Salud de 1997 y en el Código Sanitario, relativas a las condiciones sanitarias a las que debe ceñirse la producción, importación, elaboración, envase, almacenamiento, distribución y venta de alimentos para uso humano.",
+        "semantic_tags": ["marco_regulatorio", "publicidad_alcoholes", "etiquetado", "regulación_sanitaria", "bebidas_no_alcohólicas"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["Ley_21.363", "Decreto_98", "Ministerio_del_Interior", "advertencias_consumo", "energía_en_etiquetas", "restricciones_publicidad", "eventos_deportivos", "eventos_culturales", "Decreto_977", "Ministerio_de_Salud", "Código_Sanitario", "producción_alimentos", "importación", "envase", "almacenamiento", "distribución", "venta_alimentos"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0137",
         "text": "En lo que respecta a aguas minerales, se aplican adicionalmente las disposiciones del Reglamento de Aguas Minerales contenidas en Decreto N° 106 del Ministerio de Salud de 1997, que establece, además de la obligación de obtener la autorización de establecimiento y funcionamiento otorgado por el servicio de salud respectivo, la obligación de contar en forma previa a su explotación comercial con la respectiva declaración de fuente curativa, pudiendo el agua mineral solo ser envasada en su fuente de origen conforme a los procedimientos y manipulaciones establecidos en el mencionado Reglamento, debiendo las marcas destinadas a distinguir aguas minerales y sus subproductos envasados tener igual denominación al de la o las fuentes de que proceden y que se hallen registradas en el Ministerio de Salud. Se establecen, asimismo, disposiciones relativas al envasado, rotulación y publicidad de aguas minerales y sus subproductos.",
+        "semantic_tags": ["marco_regulatorio", "aguas_minerales", "declaración_fuente_curativa", "rotulación", "publicidad"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["Decreto_106", "Ministerio_de_Salud", "autorización_establecimiento", "funcionamiento", "servicio_de_salud", "explotación_comercial", "fuente_curativa", "envasado_en_origen", "procedimientos", "manipulaciones", "denominación_comercial", "registro_Ministerio_de_Salud", "rotulación", "publicidad", "subproductos"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0138",
         "text": " Finalmente, a este segmento le son aplicables las siguientes disposiciones: (i) Ley N° 20.606 de 2012 sobre Composición Nutricional de los Alimentos y su Publicidad, (ii) Decreto N° 13 del Ministerio de Salud de 26 de junio de 2015, que modifica el Decreto N° 977 antes referido, y (iii) Ley N° 20.869 de 13 de noviembre de 2015 sobre Publicidad de Alimentos y Decreto Supremo N° 1 del Ministerio de Salud de 11 diciembre de 2017, que entró en vigencia el 11 de junio de 2018; normas que establecen ciertas restricciones y exigencias en materia de publicidad, rotulación y comercialización a aquellos alimentos que sean calificados “altos en” alguno de los nutrientes críticos definidos y energía. Licores: Se aplica a los destilados, cócteles y licores las siguientes disposiciones: (i) Ley N° 18.455 sobre Producción, Elaboración y Comercialización de Alcoholes Etílicos, Bebidas Alcohólicas y Vinagres, su Reglamento contenido en el Decreto N° 78 del Ministerio de Agricultura de 1986 antes referido que establece, entre otras, la obligación de inscribir las bebidas alcohólicas que se comercialicen en Chile en el registro que al efecto lleva el SAG y los requisitos de rotulación, (ii) Ley N° 19.925 sobre Expendio y Consumo de Bebidas Alcohólicas, que establece la obligación de contar con patente de alcoholes para el expendio de bebidas alcohólicas, fija el horario de funcionamiento para dichos establecimientos, dispone la prohibición de venta y suministro a menores de 18 años de edad en establecimientos autorizados para el expendio de bebidas alcohólicas así como la venta, suministro o consumo en lugares determinados, y demás requisitos y condiciones para la comercialización de bebidas alcohólicas, (iii) Decreto Supremo N° 521 del Ministerio de Agricultura de 1999 que reglamenta el uso de la denominación de origen “pisco”, las características y modalidades que se deben cumplir respecto de la materia prima a utilizar, y la elaboración y envasado de este producto,",
+        "semantic_tags": ["marco_regulatorio", "composición_nutricional", "publicidad_alimentos", "rotulación", "denominación_de_origen"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["Ley_20.606", "Decreto_13", "Decreto_977", "Ley_20.869", "Decreto_Supremo_1", "altos_en_nutrientes_críticos", "Ley_18.455", "Decreto_78", "SAG", "rotulación_alcoholes", "Ley_19.925", "patente_de_alcoholes", "menores_de_18", "Decreto_Supremo_521", "denominación_origen_pisco", "materia_prima", "elaboración", "envasado"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0140",
         "text": "En cuanto a su actividad, esto es, la elaboración y comercialización de bebidas no alcohólicas así como la distribución y comercialización de bebidas alcohólicas, las principales normas que las regulan son: (i) Decreto N° 315/94 que contiene el Reglamento Bromatológico Nacional, (ii) Código de la Niñez y la Adolescencia que regula aspectos relativos al expendio y publicidad de bebidas alcohólicas, (iii) Ley N° 17.849 y su Decreto Reglamentario N° 260/07 que regulan el Sistema Integrado de Gestión de Envases, (iv) Reglamento Técnico Mercosur para rotulación de alimentos envasados, (v) Ley N° 18.159 que regula la promoción y defensa de la competencia, (vi) Ley N° 19.855 que regula el consumo problemático de bebidas alcohólicas y su Decreto Reglamentario N° 63/2020, (vii) Decreto N° 272/18, con vigencia desde el 1 de marzo de 2020, sobre rotulado de los alimentos, y (viii) Ley N° 19.829 de Gestión Integral de Residuos Sólidos. Paraguay: Distribuidora del Paraguay S.A., Bebidas del Paraguay S.A. y Sajonia Brewing Company S.A. son sociedades anónimas que se rigen por las leyes de la República del Paraguay, en particular: (i) Ley N° 1.034/83 Del Comerciante y los artículos 1.048 al 1.159 de la Ley N° 1.183/85 Código Civil y sus modificaciones posteriores, (ii) Ley N° 388/94 que establece disposiciones sobre la constitución, capital social y facultades de la asamblea respecto de sociedades anónimas y sus modificaciones posteriores, (iii) Ley N° 3.228/07 que modifica el artículo 5° de la Ley N° 388/94, que modifica el artículo 1.051 de la Ley N° 1.183/85 Código Civil; (iv) Ley N° 5.895/17 que establece reglas de transparencia en el régimen de las sociedades constituidas por acciones y Ley N° 6.399 modificatoria de la Ley N° 5.895/17, (v) Decreto N° 9.043/17 y sus modificaciones posteriores, que reglamenta la Ley N° 5.895/17 y establece multas en caso de incumplimiento, (vi) Ley N° 6.446/19 que crea el Registro Administrativo de Personas y Estructuras Jurídicas y el Registro Administrativo de Beneficiarios Finales del Paraguay, (vii) Decreto N° 3.241/20 que reglamenta la Ley N° 6.446/19 antes referida, (viii) Ley N° 294/93 de Evaluación de Impacto Ambiental.",
+        "semantic_tags": ["marco_regulatorio", "bebidas_alcohólicas", "bebidas_no_alcohólicas", "rotulación", "sociedades_anónimas", "transparencia", "impacto_ambiental"],
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio",
+        "keywords": ["Decreto_315/94", "Reglamento_Bromatológico_Nacional", "Código_de_la_Niñez_y_Adolescencia", "Ley_17.849", "Decreto_260/07", "Sistema_de_Gestión_de_Envases", "Reglamento_Técnico_Mercosur", "Ley_18.159", "Ley_19.855", "Decreto_63/2020", "Decreto_272/18", "Ley_19.829", "Distribuidora_del_Paraguay", "Bebidas_del_Paraguay", "Sajonia_Brewing_Company", "Ley_1.034/83", "Ley_1.183/85", "Ley_388/94", "Ley_3.228/07", "Ley_5.895/17", "Ley_6.399", "Decreto_9.043/17", "Ley_6.446/19", "Decreto_3.241/20", "Ley_294/93"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0141",
         "text": "Además, en virtud del carácter específico del objeto social de Bebidas del Paraguay S.A., para la importación, comercialización y publicidad de bebidas con y sin alcohol y de Sajonia Brewing Company S.A. en lo que respecta a la comercialización y publicidad de bebidas con alcohol, son aplicables: (i) Ley N° 836/80 Código Sanitario, (ii) Ley N° 1.334/98 de Defensa del Consumidor y del Usuario y sus modificaciones posteriores, (iii) Ley N° 1.333/98 sobre Publicidad y Promoción de Tabaco y Bebidas Alcohólicas, (iv) Ley N° 1.642/00 que prohíbe la venta de bebidas alcohólicas a menores de edad y prohíbe su consumo en la vía pública, y (v) Decreto del Poder Ejecutivo N° 1.635/99 y Resolución del Ministerio de Salud Pública y Bienestar Social N° 643/12 que regulan aspectos relativos al registro de productos alimenticios y sus modificaciones, entre otras.",
+        "semantic_tags": ["marco_regulatorio", "publicidad_alcoholes", "defensa_consumidor", "registro_alimentos", "consumo_responsable"], 
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio", 
+        "keywords": ["Bebidas_del_Paraguay_S.A.", "Sajonia_Brewing_Company_S.A.", "Ley_836/80", "Código_Sanitario", "Ley_1.334/98", "Defensa_del_Consumidor", "Ley_1.333/98", "Publicidad_Tabaco_Alcohol", "Ley_1.642/00", "menores_de_edad", "consumo_vía_pública", "Decreto_1.635/99", "Resolución_643/12", "registro_productos_alimenticios"], 
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0141",
         "text": "Bolivia: Bebidas Bolivianas BBO S.A. es una sociedad anónima que se rige por las leyes del Estado Plurinacional de Bolivia, en particular por el capítulo V (sociedades anónimas) del Decreto Ley N° 14.379, Código de Comercio, que establece disposiciones sobre la constitución de las sociedades, derechos y obligaciones de los accionistas, los órganos de administración y fiscalización de la sociedad, así como la clasificación de las acciones, reglas de emisión y registros. Además, en atención al objeto social de Bebidas Bolivianas BBO S.A. y las actividades comerciales que desarrolla en Bolivia, respecto a la producción, importación, exportación y comercialización de bebidas alcohólicas y analcohólicas, son aplicables las siguientes normas: (i) Ley N° 1.990 o Ley General de Aduanas y los Decretos Supremos N° 27.947 y N° 572 que incorporan modificaciones al Decreto Supremo N° 25.870 que contiene el Reglamento de la Ley General de Aduanas, que regulan el régimen de importaciones y exportaciones, (ii) Ley N° 2.061 del Servicio Nacional de Sanidad Agropecuaria e Inocuidad Alimentaria (“SENASAG”), entidad encargada de administrar el régimen de sanidad agropecuaria e inocuidad alimentaria en el país, (iii) Resolución N° 15/2018 que contiene el Reglamento para la clasificación y registro de alimentos emitida por SENASAG, (iv) Ley N° 259 sobre control al expendio y consumo de bebidas alcohólicas, y (v) Decreto Supremo N° 29.519 que regula la competencia y la defensa del consumidor.",
+         "semantic_tags": ["marco_regulatorio", "sociedades_anónimas", "aduanas", "sanidad_agropecuaria", "consumo_alcoholes", "defensa_consumidor"], 
+        "context_type": "gobierno_corporativo_y_entorno_regulatorio", 
+        "keywords": ["Bebidas_Bolivianas_BBO_S.A.", "Decreto_Ley_14.379", "Código_de_Comercio", "constitución_sociedades", "accionistas", "órganos_de_administración", "Decreto_25.870", "Ley_1.990", "Decreto_27.947", "Decreto_572", "SENASAG", "Ley_2.061", "Resolución_15/2018", "Ley_259", "Decreto_29.519"], 
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0142",
         "text": "Negocios: La Compañía ha definido tres Segmentos de operación, los cuales se determinaron en base a los ingresos de las actividades de negocios provenientes de las zonas geográficas donde comercializa sus productos: Chile: Cervezas, bebidas no alcohólicas, licores, sidra y las UESs en el mercado chileno; Negocios Internacionales: Cerveza, sidra, bebidas no alcohólicas y licores, entre otras categorías, en los mercados de Argentina, Bolivia, Paraguay y Uruguay; ",
+        "semantic_tags": ["segmentos_de_operación", "zonas_geográficas", "categorías_de_producto", "negocios_internacionales", "mercado_chileno"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["segmentos_de_operación", "Chile", "Negocios_Internacionales", "cervezas", "bebidas_no_alcohólicas", "licores", "sidra", "UESs", "Argentina", "Bolivia", "Paraguay", "Uruguay"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0143",
         "text": "Vinos: Vinos y espumantes en el mercado doméstico, en Chile y Argentina, y exportación a más de 80 países. Los tres Segmentos de operación señalados anteriormente son consistentes con la forma en que se gestiona la Compañía. Estos Segmentos de operación reflejan información financiera separada, que es revisada periódicamente por la máxima autoridad en la toma de decisiones de operación de cada Segmento, con el objeto de definir la asignación de recursos y evaluación de su rendimiento.",
+        "semantic_tags": ["segmentos_de_operación", "vinos", "espumantes", "gestión_empresarial", "evaluación_de_rendimiento"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["vinos", "espumantes", "mercado_doméstico", "Chile", "Argentina", "exportación", "más_de_80_países", "segmentos_de_operación", "gestión", "información_financiera", "asignación_de_recursos", "evaluación_de_rendimiento"],
+        "relevance_score": 0.93 
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0143",
         "text": "  Finalmente, los gastos e ingresos de las UAC son presentados en el Segmento Otros, en el que figura la eliminación de las transacciones realizadas entre los Segmentos de operación. Las UAC y UES proporcionan servicios compartidos a toda la organización, de forma centralizada, a fin de captar las sinergias entre las diferentes unidades. Las UAC contemplan servicios, a nivel regional, de tecnologías de información, administración y finanzas y abastecimiento, entre otros. Por su parte, las actividades de negocio realizadas por las UES, esto es: Comercial CCU S.A. (“Comercial CCU”), Transportes CCU Limitada (“Transportes CCU”) y CRECCU S.A. (“CRECCU”), comprenden la comercialización, distribución, venta y en algunos casos financiamiento, de los productos de la Compañía en el territorio chileno, y a través de Fábrica de Envases Plásticos S.A. (“PLASCO”),   la producción de prácticamente la totalidad de las preformas y tapas de las botellas plásticas retornables y no retornables utilizadas en el Segmento de operación Chile.",
+        "semantic_tags": ["segmento_otros", "servicios_compartidos", "UAC", "UES", "sinergias_operativas", "producción_envases"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Segmento_Otros", "UAC", "UES", "Comercial_CCU", "Transportes_CCU", "CRECCU", "PLASCO", "tecnologías_de_información", "administración", "finanzas", "abastecimiento", "comercialización", "distribución", "venta", "financiamiento", "preformas", "tapas", "botellas_retornables", "botellas_no_retornables", "sinergias"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0143",
         "text": " La relación entre los Segmentos de operación y las UAC es regulada mediante contratos de servicios compartidos (Acuerdos de Nivel de Servicios “ANS”), esto es, contratos anuales que especifican tanto los servicios prestados, así como las variables de medición del nivel de servicio y precio de los mismos. El nivel de servicio es evaluado tres veces al año cualitativamente, directamente por los usuarios, y además existe un proceso de autoevaluación cuantitativo. Segmentos de operación: Chile CCU, a través de su filial Cervecera CCU Chile Limitada (“Cervecería CCU”), cuenta con dos plantas productivas, ubicadas en las ciudades de Santiago y Temuco, esta última es una planta mixta de cervezas y bebidas no alcohólicas.",
+        "semantic_tags": ["segmentos_de_operación", "servicios_compartidos", "ANS", "evaluación_de_servicio", "infraestructura_productiva"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Segmentos_de_operación", "UAC", "Acuerdos_de_Nivel_de_Servicio", "evaluación_cualitativa", "evaluación_cuantitativa", "Cervecería_CCU", "Santiago", "Temuco", "plantas_productivas", "cervezas", "bebidas_no_alcohólicas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0143",
         "text": " Asimismo, la Compañía cuenta con otras plantas productivas para cervezas, siendo las principales las ubicadas en las ciudades de Valdivia (Kunstmann) y Punta Arenas (Austral) y elabora un diverso portafolio de productos a través de marcas propias y sus respectivas extensiones de marca. En cerveza, cuenta con las marcas Cristal, Cristal CER0,0°, Escudo, Royal Guard, Royal Guard CER0,0°, Morenita, Dorada, Andes, Stones y Bavaria. Junto con ello, CCU produce y comercializa bajo licencia exclusiva las cervezas premium Heineken, Sol, Coors, Polar Imperial y Patagonia. Adicionalmente, a través de sus filiales y coligadas, produce y distribuye Kunstmann, Austral, D’olbek, Guayacán, Szot, Mahina y Volcanes del Sur.",
+        "semantic_tags": ["infraestructura_productiva", "marcas_propias", "licencias_exclusivas", "cervezas_premium", "producción_regional"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["plantas_productivas", "Valdivia", "Kunstmann", "Punta_Arenas", "Austral", "Cristal", "Cristal_CER0,0°", "Escudo", "Royal_Guard", "Royal_Guard_CER0,0°", "Morenita", "Dorada", "Andes", "Stones", "Bavaria", "Heineken", "Sol", "Coors", "Polar_Imperial", "Patagonia", "D’olbek", "Guayacán", "Szot", "Mahina", "Volcanes_del_Sur"],
+        "relevance_score": 0.94
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0143",
         "text": " Finalmente, Cervecería CCU es el distribuidor exclusivo de la cerveza Blue Moon, Edelweiss y Birra Moretti en Chile. La comercialización de cervezas se realiza en botellas de vidrio retornable y no retornable, latas de aluminio, barriles de acero inoxidable y un volumen menor en botellas de plástico, específicamente las variedades de la marca Stones. A través de la filial Embotelladoras Chilenas Unidas S.A. (“ECCUSA”), la Compañía cuenta con tres plantas productivas, una ubicada en la ciudad de Antofagasta y dos ubicadas en la ciudad de Santiago.",
+        "semantic_tags": ["distribución_exclusiva", "formato_de_envases", "infraestructura_productiva", "cervezas_premium", "filiales"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Cervecería_CCU", "Blue_Moon", "Edelweiss", "Birra_Moretti", "botellas_vidrio_retornable", "botellas_vidrio_no_retornable", "latas_de_aluminio", "barriles_acero_inoxidable", "botellas_plásticas", "Stones", "ECCUSA", "Antofagasta", "Santiago", "plantas_productivas"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0144",
         "text": "La mayoría de las marcas, ya sean propias o bajo licencia, tienen extensiones, incorporando sus versiones light y/o zero, según corresponda. Compañía Cervecerías Unidas S.A. (“CCU S.A.”) es dueña de las marcas Bilz, Pap, Pop Candy, Kem, Kem Xtreme y Nobis. Asimismo, la Compañía explota, bajo licencia de PepsiCo, Inc. o sus empresas relacionadas, las marcas Pepsi, 7Up, Mirinda, Gatorade, Adrenaline Red y Lipton Ice Tea. El contrato de licencia suscrito con Schweppes Holdings Limited le permite explotar las marcas Crush, Canada Dry Limón Soda, Canada Dry Ginger Ale y Canada Dry Agua Tónica.",
+        "semantic_tags": ["marcas_propias", "licencias_comerciales", "extensiones_de_marca", "bebidas_no_alcohólicas", "alianzas_estratégicas"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Bilz", "Pap", "Pop_Candy", "Kem", "Kem_Xtreme", "Nobis", "Pepsi", "7Up", "Mirinda", "Gatorade", "Adrenaline_Red", "Lipton_Ice_Tea", "Crush", "Canada_Dry_Limón_Soda", "Canada_Dry_Ginger_Ale", "Canada_Dry_Agua_Tónica", "PepsiCo", "Schweppes_Holdings_Limited", "versiones_light", "versiones_zero"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0144",
         "text": "La Compañía participa con Watt’s S.A., como únicas accionistas en partes iguales, en la propiedad de Promarca S.A., sociedad titular de las marcas Watt´s, Yogu Yogu, Shake a Shake y Frugo, y adicionalmente cuenta con licencias sobre dichas marcas para la producción, comercialización y distribución, en determinados envases, de néctares de fruta bajo la marca Watt’s, incluyendo sus versiones Light y Selección, y bebidas de fantasía con jugo de fruta a través de la marca Frugo. La Compañía distribuye Red Bull en el país y, a través de la sociedad Bebidas Carozzi-CCU SpA., comercializa y distribuye bebidas instantáneas en polvo bajo las marcas Sprim y Vivo. A través de la filial Aguas CCU-Nestlé Chile S.A.",
+       "semantic_tags": ["alianzas_estratégicas", "marcas_compartidas", "licencias_comerciales", "bebidas_funcionales", "joint_ventures"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Promarca_S.A.", "Watt’s", "Yogu_Yogu", "Shake_a_Shake", "Frugo", "néctares_de_fruta", "versiones_Light", "Selección", "bebidas_de_fantasía", "Red_Bull", "Bebidas_Carozzi-CCU_SpA.", "Sprim", "Vivo", "Aguas_CCU-Nestlé_Chile_S.A."],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0144",
         "text": "(“Aguas CCU”) en sus plantas de Coinco y Casablanca, se embotellan aguas purificadas, saborizadas y minerales: bajo la marca Nestlé Pure Life se embotella agua purificada; bajo las marcas Cachantun y Porvenir se embotellan aguas minerales; bajo las marcas MAS y Woman se embotellan aguas saborizadas. Esta sociedad también importa la marca de aguas minerales Perrier. Aguas CCU, a través de su filial Manantial S.A., produce, comercializa y distribuyen aguas purificadas bajo la marca Manantial, principalmente en botellones que funcionan con dispensadores HOD (home and office delivery por su sigla en inglés), que se entregan en hogares y oficinas. Manantial se embotella en Antofagasta, Santiago, Coronel y Puerto Montt.",
+        "semantic_tags": ["infraestructura_productiva", "marcas_comerciales", "aguas_purificadas", "aguas_saborizadas", "aguas_minerales", "distribución_HOD"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Aguas_CCU", "Coinco", "Casablanca", "Nestlé_Pure_Life", "Cachantun", "Porvenir", "MAS", "Woman", "Perrier", "Manantial_S.A.", "Manantial", "botellones", "dispensadores_HOD", "Antofagasta", "Santiago", "Coronel", "Puerto_Montt"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0145",
         "text": " La Compañía, a través de su filial Compañía Pisquera de Chile S.A. (“CPCh”), cuenta con cinco plantas productivas en la IV Región, ubicadas en Ovalle, Pisco Elqui, Salamanca, Monte Patria y Sotaquí. Cada una de estas plantas cumple un rol, en términos de vinificación, destilación y envasado, para cada una de las marcas de nuestro portfolio. En las categorías pisco y cócteles, CPCh posee las marcas Mistral, Campanario, Horcón Quemado, Control Valle del Encanto, Tres Erres, Espíritu de Los Andes, La Serena, Hard Fresh, Iceberg, Ruta Cocktail, Sabor Andino Sour, La Pizka y Sol de Cuba, junto con sus respectivas extensiones de línea. En la categoría ron, la Compañía cuenta con las marcas Sierra Morena y Cabo Viejo.",
+        "semantic_tags": ["infraestructura_productiva", "marcas_propias", "categorías_de_producto", "destilación", "región_coquimbo"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Compañía_Pisquera_de_Chile", "CPCh", "Ovalle", "Pisco_Elqui", "Salamanca", "Monte_Patria", "Sotaquí", "vinificación", "destilación", "envasado", "Mistral", "Campanario", "Horcón_Quemado", "Control_Valle_del_Encanto", "Tres_Erres", "Espíritu_de_Los_Andes", "La_Serena", "Hard_Fresh", "Iceberg", "Ruta_Cocktail", "Sabor_Andino_Sour", "La_Pizka", "Sol_de_Cuba", "Sierra_Morena", "Cabo_Viejo"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0145",
         "text": "En la categoría licores, cuenta con las marcas Fehrenberg, Kantal, Barsol y es distribuidor exclusivo en Chile de las marcas Pernod Ricard en el canal tradicional, entre las cuales se encuentran ron Havana Club y licores Jameson, Ballantine’s, Absolut, Chivas Regal, Beefeater y Ramazotti, entre otros, y distribuidor exclusivo de Fratelli Branca, con las marcas Fernet Branca, Branca Menta, Carpano, Punt e Mes y Borghetti. Finalmente, en la categoría sidras, la Compañía importa y distribuye desde CCU Argentina las marcas Sidra Villa Pehuenia y Sidra 1888. Negocios Internacionales: El Segmento de operación Negocios Internacionales está compuesto por las operaciones de Argentina, Bolivia, Paraguay y Uruguay.",
+         "semantic_tags": ["licores", "sidras", "distribución_exclusiva", "marcas_internacionales", "negocios_internacionales"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Fehrenberg", "Kantal", "Barsol", "Pernod_Ricard", "Havana_Club", "Jameson", "Ballantine’s", "Absolut", "Chivas_Regal", "Beefeater", "Ramazotti", "Fratelli_Branca", "Fernet_Branca", "Branca_Menta", "Carpano", "Punt_e_Mes", "Borghetti", "Sidra_Villa_Pehuenia", "Sidra_1888", "CCU_Argentina", "Argentina", "Bolivia", "Paraguay", "Uruguay"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0145",
         "text": "En Argentina, CCU produce cervezas en sus plantas ubicadas en las ciudades de Salta, Santa Fe y Luján. Sus principales marcas son Schneider, Imperial, Santa Fe, Salta, Córdoba, Norte, Palermo, Isenbeck, Iguana y Bieckert. Adicionalmente, es titular de contratos de licencia exclusiva para la producción y comercialización de Heineken, Amstel, Sol, Miller Genuine Draft, Warsteiner y Grolsch. Asimismo, CCU importa las marcas Kunstmann y Blue Moon. Del mismo modo, exporta cervezas a diversos países, principalmente bajo las marcas Schneider, Heineken e Imperial.",
+        "semantic_tags": ["infraestructura_productiva", "marcas_propias", "licencias_exclusivas", "exportación", "cervezas"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Salta", "Santa_Fe", "Luján", "Schneider", "Imperial", "Santa_Fe", "Salta", "Córdoba", "Norte", "Palermo", "Isenbeck", "Iguana", "Bieckert", "Heineken", "Amstel", "Sol", "Miller_Genuine_Draft", "Warsteiner", "Grolsch", "Kunstmann", "Blue_Moon", "exportación", "Argentina"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0146",
         "text": "CCU también participa en el negocio de la sidra, donde fabrica y comercializa las marcas líderes del mercado Sidra Real, La Victoria, 1888 y Pehuenia. Participa asimismo en el negocio de licores, los que se comercializan bajo la marca El Abuelo, además de importar pisco desde Chile. Dentro de su portafolio, también vende y distribuye las marcas de vinos Eugenio Bustos y La Celia. Desde junio de 2019, ha incorporado a su portafolio de vinos las marcas Colón y Graffigna pertenecientes a la bodega Finca La Celia S.A. (filial en Argentina de la filial chilena VSPT Wine Group).",
+        "semantic_tags": ["sidras", "licores", "vinos", "importación", "portafolio_de_marcas"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Sidra_Real", "La_Victoria", "1888", "Pehuenia", "El_Abuelo", "pisco", "Eugenio_Bustos", "La_Celia", "Colón", "Graffigna", "Finca_La_Celia_S.A.", "VSPT_Wine_Group"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0146",
         "text": "CCU en Bolivia participa en el negocio de bebidas no alcohólicas y cervezas a través de BBO, sociedad que cuenta con dos plantas, ubicadas en Santa Cruz de la Sierra y Warnes. En bebidas no alcohólicas, está presente en la categoría de gaseosas con las marcas Mendocina y Sinalco y en la categoría energizantes con Full Mendocina. También participa en la categoría de productos en base a malta sin alcohol con la marca Malta Real y en la categoría de aguas con las marcas Mendocina y De La Sierra. En cerveza, cuenta con marcas propias y licenciadas, tales como Uyuni, Real, Capital, Cordillera y Amstel. Adicionalmente, BBO comercializa la marca importada de cerveza Heineken.",
+        "semantic_tags": ["bebidas_no_alcohólicas", "cervezas", "infraestructura_productiva", "marcas_propias", "licencias_comerciales"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["CCU_Bolivia", "BBO", "Santa_Cruz_de_la_Sierra", "Warnes", "Mendocina", "Sinalco", "Full_Mendocina", "Malta_Real", "De_La_Sierra", "Uyuni", "Real", "Capital", "Cordillera", "Amstel", "Heineken"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0146",
         "text": " CCU en Uruguay participa en el negocio de aguas minerales con las marcas Nativa y Nix, en gaseosas con la marca Nix, en néctares con la marca Watt’s y en bebidas isotónicas con la marca FullSport. Adicionalmente, comercializa marcas importadas de nuestras filiales en Chile y Argentina, en cervezas cuenta con Heineken, Schneider, Imperial, Kunstmann, Amstel, Miller Genuine Draft y Escudo Silver, y en vinos con Misiones de Rengo, La Celia y Eugenio Bustos. CCU en Paraguay desarrolla el negocio de producción, comercialización y venta de bebidas no alcohólicas, cervezas y vinos. En gaseosas cuenta con la marca Pulp, en jugos Puro Sol y en aguas La Fuente. Además, tiene la licencia para importar y distribuir la marca FullSport, bebida isotónica proveniente de Uruguay.",
+        "semantic_tags": ["bebidas_no_alcohólicas", "cervezas", "vinos", "licencias_comerciales", "marcas_importadas", "negocios_internacionales"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Uruguay", "Nativa", "Nix", "Watt’s", "FullSport", "Heineken", "Schneider", "Imperial", "Kunstmann", "Amstel", "Miller_Genuine_Draft", "Escudo_Silver", "Misiones_de_Rengo", "La_Celia", "Eugenio_Bustos", "Paraguay", "Pulp", "Puro_Sol", "La_Fuente", "licencia_FullSport"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0147",
         "text": " Asimismo, tiene la licencia para producir y distribuir néctares bajo la marca Watt’s y cuenta con licencia para distribuir cervezas bajo las marcas Heineken, Amstel, Sol, Blue Moon, Schin y Paulaner. En cervezas artesanales cuenta con la marca Sajonia y sus variedades, las que son producidas localmente. Vinos CCU, a través de su filial VSPT Wine Group, elabora vinos y espumantes, los cuales se comercializan en el mercado nacional y extranjero exportando a más de 80 países. VSPT Wine Group está formado por las viñas San Pedro, Tarapacá, Santa Helena, Misiones de Rengo, Leyda y Viña Mar en Chile, además de Finca La Celia y Bodega Graffigna en Argentina; contando con plantas productivas en las ciudades de Molina, Isla de Maipo y Totihue. En Argentina cuenta con las bodegas Finca La Celia y San Juan, ubicadas en la provincia de Mendoza y San Juan, respectivamente.",
+        "semantic_tags": ["licencias_comerciales", "cervezas_artesanales", "vinos_y_espumantes", "infraestructura_productiva", "exportación"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Watt’s", "Heineken", "Amstel", "Sol", "Blue_Moon", "Schin", "Paulaner", "Sajonia", "VSPT_Wine_Group", "San_Pedro", "Tarapacá", "Santa_Helena", "Misiones_de_Rengo", "Leyda", "Viña_Mar", "Finca_La_Celia", "Bodega_Graffigna", "Molina", "Isla_de_Maipo", "Totihue", "Mendoza", "San_Juan", "exportación"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0148",
         "text": "Sus principales marcas son Altair, Cabo de Hornos, Sideral, 1865, Castillo de Molina, Gato (en mercado doméstico) y GatoNegro (en exportaciones) de viña San Pedro; las líneas Reserva y Gran Reserva de la Viña Tarapacá y sus etiquetas Negra y Azul; Viña Leyda en sus series Reserva, Coastal Vineyard y Lot; Misiones de Rengo en sus series Cuvée, Reserva, Varietal, y su línea Sparkling y la extensión de marca “Misión”. Además de Alpaca, Reservado y Reserva de Viña Santa Helena; y en la categoría espumantes, Viñamar en sus expresiones Método Tradicional, Extra Brut, Brut, Brut Nature, Brut Unique, Rosé, Moscato, ICE y Viñamar Zero Desalcoholizado; y, finalmente, Manquehuito en la categoría coolers.",
+        "semantic_tags": ["vinos_y_espumantes", "marcas_propias", "segmentación_de_portafolio", "categorías_de_producto", "extensiones_de_marca"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Altair", "Cabo_de_Hornos", "Sideral", "1865", "Castillo_de_Molina", "Gato", "GatoNegro", "Viña_San_Pedro", "Viña_Tarapacá", "Reserva", "Gran_Reserva", "Negra", "Azul", "Viña_Leyda", "Coastal_Vineyard", "Lot", "Misiones_de_Rengo", "Cuvée", "Varietal", "Sparkling", "Misión", "Viña_Santa_Helena", "Alpaca", "Reservado", "Viñamar", "Método_Tradicional", "Extra_Brut", "Brut", "Brut_Nature", "Brut_Unique", "Rosé", "Moscato", "ICE", "Viñamar_Zero_Desalcoholizado", "Manquehuito", "coolers"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0148",
         "text": "En Argentina, a su vez, destaca la marca La Celia, además de Graffigna y Colón. Principales asociadas y negocios conjuntos: CCU participa en partes iguales con Maltexco S.A. en la propiedad de Cervecería Austral S.A.(“Austral”), sociedad que produce, vende y distribuye cerveza Austral en Chile. Adicionalmente, Cervecería CCU cuenta con un contrato de licencia indefinida, sujeto al cumplimiento de las condiciones establecidas en dicho contrato,para la producción de cervezas Patagonia y Polar Imperial en Chile y un contrato de distribución para la venta y comercialización de la totalidad de los productos Austral en Chile, con excepción de la Región de Magallanes, donde la venta y distribución es efectuada por Comercial Patagona Ltda., donde contamos con un centro de distribución con tecnologías no contaminantes, inaugurado en 2019.",
+        "semantic_tags": ["marcas_argentinas", "negocios_conjuntos", "licencias_comerciales", "distribución_regional", "infraestructura_sustentable"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["La_Celia", "Graffigna", "Colón", "Maltexco_S.A.", "Cervecería_Austral_S.A.", "Austral", "Cervecería_CCU", "Patagonia", "Polar_Imperial", "Comercial_Patagona_Ltda.", "Región_de_Magallanes", "centro_de_distribución", "tecnologías_no_contaminantes", "2019"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0148",
         "text": "En noviembre de 2014, CCU acordó con Grupo Postobón llevar a cabo un acuerdo conjunto a través de una sociedad por acciones simplificada constituida en Colombia denominada Central Cervecera de Colombia S.A.S. (“CCC”), para la elaboración, comercialización y distribución en ese país de cervezas y bebidas no alcohólicas en base a malta. Dicha sociedad cuenta, además, con un contrato exclusivo para la importación, distribución y producción de cervezas Heineken, Coors light, Tecate y Sol en Colombia. El año 2016, CCC adquirió la marca y los activos de Artesana Beer Company S.A., relacionados a la marca de cerveza artesanal 3 Cordilleras. En abril de 2017 se incorporaron las marcas Miller Lite y Miller Genuine Draft a través de un contrato de licencia para elaborar y/o comercializar dichas marcas. ",
+        "semantic_tags": ["negocios_conjuntos", "cervezas", "bebidas_no_alcohólicas", "licencias_comerciales", "cervezas_artesanales", "expansión_internacional"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Grupo_Postobón", "Central_Cervecera_de_Colombia", "CCC", "Colombia", "Heineken", "Coors_Light", "Tecate", "Sol", "Artesana_Beer_Company", "3_Cordilleras", "Miller_Lite", "Miller_Genuine_Draft", "cervezas_artesanales", "contrato_exclusivo", "sociedad_por_acciones_simplificada"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0148",
         "text": "Posteriormente, en agosto 2017, CCU adquirió el 50% de las acciones de una sociedad constituida en Colombia denominada Zona Franca Central Cervecera S.A.S. (“ZF CC”), en la cual CCU y Grupo Postobón participan como únicos accionistas en partes iguales. El objeto principal de ZF CC es actuar exclusivamente como usuario industrial de una o varias zonas francas, prestando, hasta noviembre de 2019 servicios de maquila a CCC. En el actual modelo de gestión, ZF CC produce y vende a CCC, quien comercializa y distribuye, nuestros productos. En febrero del año 2019 lanzamos nuestra cerveza local Andina, producida en la nueva planta inaugurada en mayo del 2019, con una capacidad de tres millones de hectolitros ubicada en las afueras de Bogotá y construida con los más altos estándares internacionales, en la que también comenzamos a producir nuestras marcas globales licenciadas, incluyendo Heineken, Tecate y Miller Lite.",
+        "semantic_tags": ["zona_franca", "negocios_conjuntos", "producción_local", "cervezas", "infraestructura_productiva", "licencias_comerciales"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Zona_Franca_Central_Cervecera", "ZF_CC", "Grupo_Postobón", "CCC", "maquila", "cerveza_Andina", "Bogotá", "planta_productiva", "Heineken", "Tecate", "Miller_Lite", "modelo_de_gestión", "acciones", "2017", "2019"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0149",
         "text": "En julio 2019 lanzamos nuestra primera bebida no alcohólica en base a malta, Natumalta, alineada con el liderazgo de Grupo Postobón en bebidas no alcohólicas en Colombia. A fines de octubre de 2019 se realizó el lanzamiento Andina Light, en formato de botella no retornable de 300cc y lata de 330cc. A fines de 2019 se firmó un nuevo contrato con Coors Brewing Company D/B/A Molson Coors International (“MCI”) para la producción, comercialización y distribución de la marca Miller Lite y Miller Genuine Draft.",
+         "semantic_tags": ["bebidas_no_alcohólicas", "cervezas", "lanzamientos_de_producto", "licencias_comerciales", "alianzas_estratégicas"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Natumalta", "Grupo_Postobón", "Andina_Light", "botella_no_retornable", "300cc", "lata_330cc", "Coors_Brewing_Company", "Molson_Coors_International", "MCI", "Miller_Lite", "Miller_Genuine_Draft", "contrato_comercialización", "2019"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0150",
         "text": "En abril de 2022, CCU a través de su subsidiaria, Compañía Cervecerías Unidas Argentina S.A. adquirió el 49% de la propiedad de Aguas Danone de Argentina S.A. (“ADA”), lo que incluye el negocio de aguas minerales y aguas saborizadas con sus marcas Villavicencio, Villa del Sur, Levité, Ser y Brío. Asimismo, la subsidiaria Compañía Cervecerías Unidas Argentina S.A., adquirió 49.000 acciones ordinarias, nominativas no endosables de la sociedad Aguas de Origen S.A. (“ADO”), a un valor de un peso argentino cada una, quedando con una participación de un 49% de esta sociedad. Cabe señalar que ADO, es la continuadora del negocio de Aguas Danone de Argentina S.A. lo que fue efectivo a partir del 1 de diciembre de 2022 como consecuencia de la escisión-fusión aprobada por asambleas de Aguas Danone de Argentina S.A. y Aguas de Origen S.A. el 30 de junio de 2022. Con fecha 30 de noviembre de 2022, se realizó una compra de 634.061 acciones a Holding Internationale De Boissons S.A.S. lo que corresponde al 1% de las acciones de ADO, con lo cual CCU alcanzó el 50% de participación sobre ésta. Con la adquisición de las participaciones en Aguas de Origen S.A. y Aguas Danone de Argentina S.A., durante el año 2022, CCU se incorporó al negocio de aguas minerales y saborizadas, participando con sus marcas Villavicencio, Villa del Sur, Levité, Ser y Brío.",
+        "semantic_tags": ["adquisiciones", "aguas_minerales", "aguas_saborizadas", "escisión_fusión", "participación_accionaria"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Compañía_Cervecerías_Unidas_Argentina_S.A.", "Aguas_Danone_de_Argentina_S.A.", "ADA", "Aguas_de_Origen_S.A.", "ADO", "Villavicencio", "Villa_del_Sur", "Levité", "Ser", "Brío", "escisión-fusión", "Holding_Internationale_De_Boissons_S.A.S.", "participación_50%", "abril_2022", "diciembre_2022", "noviembre_2022"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0150",
         "text": "Comercialización, distribución y venta: CCU abarca directamente las actividades productivas y comerciales en Chile a través de sus filiales y coligadas Cervecería CCU, ECUSA, VSPT Wine Group, CPCh, Aguas CCU, Cervecería Kunstmann S.A. (“CK”) y Austral, entre otras. A su vez, Comercial CCU es responsable de la venta, tanto para clientes a través de nuestra fuerza de venta, en aquellas zonas en que esta modalidad de venta resulta más eficiente, y La Barra S.A. (“La Barra”) es responsable de la venta a consumidores en la zona centro del país a través del portal de venta online (www.labarra.cl), de todos los productos de la Compañía en Chile y Transportes CCU está a cargo de la distribución de los productos.",
+        "semantic_tags": ["comercialización", "distribución", "venta_directa", "canales_digitales", "infraestructura_comercial"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Cervecería_CCU", "ECUSA", "VSPT_Wine_Group", "CPCh", "Aguas_CCU", "Cervecería_Kunstmann", "Austral", "Comercial_CCU", "La_Barra", "www.labarra.cl", "Transportes_CCU", "venta_online", "zona_centro", "fuerza_de_venta"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0151",
         "text": "En la zona extremo sur del país, la venta y la distribución se realiza a través de Comercial Patagona Limitada. En el caso específico de nuestro negocio de aguas HOD, Manantial S.A., desde sus inicios, cuenta con su propia red de venta con 14 sucursales. La distribución también se maneja directamente pues, dada la naturaleza del producto, se requiere de un tipo de transporte distinto al resto del portafolio de CCU. En Argentina, Uruguay, Paraguay, Colombia y Bolivia, estas operaciones son desarrolladas mediante fuerza de venta propia, así como por distribuidores. La Compañía se relaciona con múltiples clientes y proveedores, llegando a 114.637 puntos de venta relacionado al Segmento de operación Chile.",
+        "semantic_tags": ["distribución_regional", "venta_directa", "aguas_HOD", "infraestructura_comercial", "expansión_internacional"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Comercial_Patagona_Limitada", "zona_extremo_sur", "Manantial_S.A.", "aguas_HOD", "red_de_venta", "14_sucursales", "transporte_especializado", "Argentina", "Uruguay", "Paraguay", "Colombia", "Bolivia", "fuerza_de_venta", "distribuidores", "clientes", "proveedores", "114.637_puntos_de_venta", "Segmento_de_operación_Chile"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0151",
         "text": "Por su parte “La Barra”, nuestra plataforma de comercio electrónico, distribuyó nuestros productos a 63.320 hogares en Chile. Adicionalmente, el negocio de aguas HOD en Chile, a través de Manantial S.A., filial de Aguas CCU, abarca aproximadamente 54.395 clientes directamente abastecidos en sus hogares y llega a oficinas de 13.011 empresas. En el Segmento de operación Vinos, el negocio de vino doméstico en Chile llegó a 31.105 puntos de venta.",
+        "semantic_tags": ["comercio_electrónico", "aguas_HOD", "segmento_vinos", "canales_de_venta", "infraestructura_comercial"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["La_Barra", "comercio_electrónico", "Manantial_S.A.", "Aguas_CCU", "aguas_HOD", "54.395_clientes", "13.011_empresas", "Segmento_de_operación_Vinos", "vino_doméstico", "31.105_puntos_de_venta", "Chile"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0151",
         "text": "En el Segmento de operación Negocios Internacionales, estimamos que el total de puntos de venta alcanzados en Argentina son 224.229, en Bolivia 15.668, en Paraguay 32.416 y en Uruguay 18.246. Clientes En el Segmento de operación Chile, no tenemos ningún cliente que represente más del 10% de los Ingresos por ventas de dicho Segmento de operación. En el Segmento de operación Negocios Internacionales no tenemos ningún cliente que represente más del 10% de los Ingresos por ventas, de dicho Segmento de operación. En el caso del Segmento de operación Vinos no tenemos ningún cliente que represente más del 10% de los Ingresos por ventas en dicho Segmento de operación. Proveedores En relación a nuestros proveedores, en el Segmento de operación Chile ningún proveedor concentra más del 10% de las compras efectuadas en dicho Segmento de operación.",
+        "semantic_tags": ["puntos_de_venta", "diversificación_de_clientes", "segmento_negocios_internacionales", "segmento_vinos", "estructura_de_proveedores"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Argentina", "Bolivia", "Paraguay", "Uruguay", "224.229_puntos_de_venta", "15.668_puntos_de_venta", "32.416_puntos_de_venta", "18.246_puntos_de_venta", "Segmento_de_operación_Chile", "Segmento_de_operación_Negocios_Internacionales", "Segmento_de_operación_Vinos", "clientes", "proveedores", "diversificación", "concentración_menor_al_10%"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0152",
         "text": "En el Segmento de operación Negocios Internacionales, ningún proveedor que representa más del 10% de las compras efectuadas en este Segmento de operación. En el Segmento de operación Vinos ningún proveedor concentra más del 10% de las compras efectuadas en este Segmento de operación. Para satisfacer sus diversos requerimientos, CCU celebra contratos de abastecimientos respecto de sus principales materias primas entre ellos malta, arroz y lúpulo para la cerveza, azúcar para las gaseosas, uva para el vino, pisco y cócteles, y material de embalaje, principalmente latas de aluminio, botellas de vidrio y PET, entre otros. La Compañía no cuenta con patentes de su propiedad y de importancia utilizados en procesos productivos.",
+        "semantic_tags": ["estructura_de_proveedores", "materias_primas", "contratos_de_abastecimiento", "segmento_negocios_internacionales", "segmento_vinos", "propiedad_intelectual"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["proveedores", "concentración_menor_al_10%", "malta", "arroz", "lúpulo", "azúcar", "uva", "pisco", "cócteles", "material_de_embalaje", "latas_de_aluminio", "botellas_de_vidrio", "PET", "contratos_de_abastecimiento", "patentes", "procesos_productivos"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0152",
         "text": "Gestión de proveedores: Los proveedores en CCU son considerados socios estratégicos, siendo fundamentales en el desarrollo de la operación de la Compañía. Buscamos con ellos establecer relaciones colaborativas y de largo plazo que nos permiten alcanzar las metas establecidas a nivel estratégico en nuestros tres pilares, crecimiento, rentabilidad y sustentabilidad. La Gerencia Corporativa de Abastecimiento, que depende de la Gerencia Corporativa de Administración y Finanzas, es la encargada de establecer las directrices y gestionar las relaciones con dichos proveedores, buscando a partir de esto aportar al desarrollo de la estrategia de la Compañía en las dimensiones previamente descritas.",
+        "semantic_tags": ["gestión_de_proveedores", "relaciones_estratégicas", "sustentabilidad", "estructura_corporativa", "abastecimiento"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["proveedores", "socios_estratégicos", "crecimiento", "rentabilidad", "sustentabilidad", "Gerencia_Corporativa_de_Abastecimiento", "Gerencia_Corporativa_de_Administración_y_Finanzas", "relaciones_colaborativas", "directrices"],
+        "relevance_score": 0.94
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0152",
         "text": " En la dimensión de sustentabilidad, buscamos proveedores con una visión alineada con nuestro Modelo de Gestión de Sustentabilidad, permitiéndonos así lograr las metas relacionadas a Nuestras Marcas, Nuestras Personas y el cuidado del medio ambiente. El compromiso de largo plazo con nuestros proveedores es central para la estrategia de la Compañía. Vivimos en un mundo integrado, en donde la acción de cada uno impacta directa e individualmente a todas las personas con las que nos relacionamos. Con nuestros proveedores, impulsamos relaciones colaborativas, las cuales se basan en el compromiso de contribuir al bienestar actual y futuro del entorno con el que interactuamos.",
+         "semantic_tags": ["gestión_de_proveedores", "modelo_de_sustentabilidad", "relaciones_colaborativas", "compromiso_ambiental", "estrategia_empresarial"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Modelo_de_Gestión_de_Sustentabilidad", "Nuestras_Marcas", "Nuestras_Personas", "medio_ambiente", "proveedores", "compromiso_de_largo_plazo", "relaciones_colaborativas", "bienestar_entorno", "estrategia"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0153",
         "text": "Parte fundamental de este compromiso corresponde al cumplimiento de la Guía de Buenas Prácticas – Proveedor CCU (“GBP”), la cual fue incorporada en las metas de la estrategia de sustentabilidad. Hemos incorporado la GBP como una herramienta para velar por un ambiente abierto, leal y competitivo, la cual se basa en 3 lineamientos generales; Conducta en los negocios, respeto por Nuestras Personas y respeto por Nuestro Planeta. Esta guía aplica para CCU y todos sus proveedores, donde todo proveedor debe aceptar y cumplir con ella, lo cual queda acordado en todos los contratos y órdenes de compra. Dentro de este contexto, se espera que todos los proveedores de CCU hagan propios estos compromisos y las buenas prácticas, respetándolas y exigiéndolas dentro de su propia cadena de valor y con la comunidad en que se relacionan.",
+        "semantic_tags": ["gestión_de_proveedores", "guía_de_buenas_prácticas", "modelo_de_sustentabilidad", "compromiso_ambiental", "ética_empresarial"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["Guía_de_Buenas_Prácticas", "GBP", "Conducta_en_los_negocios", "Nuestras_Personas", "Nuestro_Planeta", "proveedores", "contratos", "órdenes_de_compra", "cadena_de_valor", "comunidad"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0153",
         "text": "Como parte del proceso de mejora continua, instamos a nuestros proveedores a desarrollar medios para alcanzar y mejorar el cumplimiento de los lineamientos establecidos y de las buenas prácticas asociadas. Estos lineamientos se basan en el cumplimiento de la ley, normas y regulaciones en Chile, Argentina, Paraguay, Uruguay y Bolivia, el respeto a los derechos humanos, conforme a los 10 principios del pacto global de las Naciones Unidas, y la generación de condiciones laborales seguras, y el cuidado del medioambiente en sus distintas dimensiones.",
+         "semantic_tags": ["gestión_de_proveedores", "mejora_continua", "cumplimiento_normativo", "derechos_humanos", "sustentabilidad"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["lineamientos", "buenas_prácticas", "Chile", "Argentina", "Paraguay", "Uruguay", "Bolivia", "derechos_humanos", "pacto_global", "Naciones_Unidas", "condiciones_laborales_seguras", "medioambiente"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0153",
         "text": "Pago a proveedores Todas las compras de CCU se generan a través de órdenes de compra, las cuáles llegan al proveedor vía electrónica, las que tienen una serie de términos y condiciones acordadas. Cabe destacar que, en Chile la Ley N° 21.131 vela por un pago máximo de 30 días a todos los proveedores, en la cual se establece que, en casos excepcionales, las partes puedan acordar un plazo que exceda el referido, dejándolo por escrito. Esta excepción no se lleva a cabo por decisión propia de CCU para proveedores PYME’s. Todo lo anterior aplica para proveedores nacionales, no distinguiendo entre críticos y no críticos, en tanto proveedores internacionales tendrán los plazos de pago acordados en la negociación entre las partes.",
+        "semantic_tags": ["gestión_de_proveedores", "términos_de_pago", "cumplimiento_normativo", "relaciones_comerciales", "PYME"],
+        "context_type": "estructura_empresarial_y_portafolio",
+        "keywords": ["órdenes_de_compra", "Ley_21.131", "plazo_de_pago", "proveedores_PYME", "proveedores_nacionales", "proveedores_internacionales", "negociación", "términos_y_condiciones"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0154",
         "text": "En virtud de una comunicación transparente con nuestro proveedores, haciendo más eficientes los procesos e integrando las operaciones que CCU tiene a nivel internacional, se desarrolló un renovado Portal de Proveedores que permite a nuestros proveedores tener una gestión más eficiente de sus pagos, ya que, además de encontrar la habitual información referente a sus facturas, también pueden ver si su factura fue ingresada, fecha de pago programada, información sobre sus pedidos en curso y otras herramientas pensadas en mejorar la experiencia como proveedor de CCU. El portal ya fue implementado en CCU en Chile, Argentina, Uruguay y Paraguay. Por criterio de materialidad, la tabla siguiente resume la información de los proveedores de nuestras operaciones en Chile y Argentina. Se consideran proveedores nacionales, todos aquellos domiciliados en Chile. Al 31 de diciembre 2023 no se registraron intereses por mora en los pagos de facturas a proveedores. ",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0155",
         "text": "Evaluación a proveedores: En el marco de nuestro Modelo de Gestión Sustentabilidad, como mencionamos al comienzo de este capítulo, parte de los compromisos con nuestros proveedores es abordar la gestión del riesgo en la cadena de Abastecimiento, a través de este enfoque en el que podemos identificar y evaluar el impacto en nuestro negocio. En CCU contamos con un amplio portafolio de proveedores con los que interactuamos regularmente, donde de forma anual, se trabaja con un número relevante de éstos para hacer una gestión directa a través de una evaluación de proveedores y de una encuesta de satisfacción de proveedores. Respecto a los criterios económico y social, se monitorea su cumplimiento, en base a 4 aspectos: evaluación tributaria, comercial, financiera y laboral de los proveedores, alertando sobre situaciones de riesgo, y permitiendo así gestionar los respectivos planes de mitigación en caso de ser requerido.  ",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0155",
         "text": "Esto actualmente se realiza en Chile a través de Red Negocios de la Cámara de Comercio de Santiago. En el ámbito de gobernanza, con el objetivo de ir mejorando continuamente la relación con nuestros proveedores,  realizamos anualmente desde 2018, una encuesta para conocer su nivel de satisfacción como proveedor CCU, verificar el grado de difusión de la GBP y consultar sobre su alcance en materia de sustentabilidad. Desde 2020 implementamos esta encuesta también para Argentina y a partir del 2022 se extendió también en Uruguay, Bolivia y Paraguay. Esta encuesta, abarca los siguientes temas: transparencia en los procesos de cotización y adjudicación; claridad en las especificaciones técnicas o requisitos de nuestras solicitudes de compra; comunicación con CCU; cumplimiento de las fechas de pago; y preguntas relacionadas con sustentabilidad. En la última medición obtuvimos un 88% de satisfacción de los proveedores encuestados en las distintas geografías donde operamos, donde se mantuvo la calificación del año anterior. ",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0155",
         "text": "Como parte de la evaluación que realiza la Compañía hacia sus proveedores, se realizan auditorías y monitoreos de cumplimento, en función del objetivo de gestionar riesgos específicos de la cadena de suministro: • Auditoría de licencias: realizadas por nuestros socios estratégicos a los proveedores con el fin de certificar el proceso técnico de producción de materias primas y material de empaque. • Auditorías de desarrollo de nuevos proveedores: aplicadas a potenciales proveedores, en el caso que sea un proveedor nacional, o a través de una empresa certificadora, en el caso de un proveedor extranjero, con el objetivo de auditar distintos aspectos tales como la existencia de la fábrica o empresa, calidad de las instalaciones y condiciones laborales de sus trabajadores. • Vendor Rating System (“VRS”): indicador de medición cuantitativa del desempeño de los productos entregados por parte de los proveedores y considera variables de calidad (número de defectos en un periodo esperado, criticidad del defecto y condición de entrega en las instalaciones) y el nivel de compromiso del proveedor (gestión de reclamos). • Control de Contratistas: Este control se aplica a las empresas proveedoras de servicios que ingresan a las operaciones de la compañía.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0156",
         "text": " En el caso de Chile, se realiza con el apoyo de una empresa externa, encargada de verificar que los proveedores cumplan con las leyes sociales/ laborales respecto de sus trabajadores (entre ellas, la Ley de Subcontratación) y que éstos están correctamente habilitados para cumplir sus funciones. En 2023, evaluamos a un total de 1.507 proveedores, lo que representa a un 17% del total y un 94% de la facturación anual.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0156",
         "text": " Indcadores: Cumplimiento legal y normativo: En relación con sus clientes En orden de velar por los derechos de los consumidores, en CCU contamos con políticas de control en materia de publicidad, rotulación e inocuidad alimentaria de nuestros productos, respaldadas en procedimiento de Manejo de Reclamos Producto Servicio de Atención al Consumidor. En 2023 no hemos sido sancionados por temas relacionados con derechos al consumidor. CCU cuenta con una serie de procedimientos en orden a velar adecuada y oportunamente por los derechos de los consumidores, incluyendo controles en la rotulación, publicidad e inocuidad alimentaria de sus productos, así como de atención de eventuales reclamos. Durante el año 2023, la Compañía no registró sanciones por infracción a la Ley N° 19.496, de protección de los derechos del consumidor. Al mismo tiempo, estamos desarrollando procesos internos para abordar la futura ley de protección de datos personales, que aún está en discusión en el Congreso.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0156",
         "text": " En relación con sus trabajadores Los trabajadores en CCU son el motor que guía nuestro negocio. Nos enfocamos en su desarrollo integral durante todo el ciclo laboral, velando por su salud y seguridad, promoviendo su desarrollo y que vivan los principios corporativos en un ambiente de buen clima organizacional. Tal como declaramos en nuestra Política de Derechos Humanos, para prevenir y detectar incumplimientos regulatorios referidos a nuestros trabajadores, cumplimos estrictamente con las leyes y regulaciones aplicables en el ámbito laboral, extendiendo este compromiso hacia nuestros proveedores, contratistas, socios y aliados estratégicos.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0157",
         "text": "Además, disponemos un Canal de Denuncias que permite a nuestros trabajadores, así como también a terceros que interactúan con CCU, informar o denunciar: • Conductas o prácticas cuestionables sobre los principios y valores contenidos en el Código de Conducta en los Negocios y en el SER CCU. • Actividades no acordes a lo establecido en las normas, políticas contables, control interno y a las materias de auditoría que dicen relación con el examen de los Estados Financieros Consolidados, conforme con las obligaciones que impone la Ley SOX. • Incumplimientos a lo establecido en el MPD. • Incumplimiento a cualquier legislación vigente en los países donde CCU esté presente. Las sanciones ejecutoriadas por multas laborales en este ámbito durante el año 2023 son 15 ascienden a CLP 42 millones, de acuerdo a lo informado por la Dirección del Trabajo al cierre del año 2023. Durante el año 2023 no existen sentencias ejecutoriadas que apliquen sanciones que correspondan a acciones de tutela. 8.1.3 Medioambiental El modelo de cumplimiento medioambiental en CCU está constituido por una matriz de cumplimiento para cada una de las diferentes unidades de negocio, denominada Índice de Radicación, que contiene los permisos, exigencias ambientales y buenas prácticas de acuerdo con la normativa de cada país en que operamos. Se realiza un seguimiento mensual del cumplimiento para definir planes de acción e informar sobre nuevas exigencias. La modalidad de cumplimiento es respaldada a través de la presentación del certificado o resolución de la autoridad competente en la materia. Dicha documentación debe ser presentada a la Subgerencia de Medio Ambiente de Contraloría de CCU. Este modelo de cumplimiento se aplica a todas las instalaciones industriales y centros de distribución. En Chile, la responsabilidad directa de elaborar y actualizar la matriz recae en la Subgerencia de Medio Ambiente. Sin embargo, cada unidad de negocio es responsable de su cumplimiento medioambiental. En el caso de los demás países donde operamos, Argentina, Bolivia, Paraguay y Uruguay,",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0158",
         "text": "En el caso de los demás países donde operamos, Argentina, Bolivia, Paraguay y Uruguay, la elaboración y actualización de cada matriz por país, con los requisitos normativos y regulatorios aplicables a sus procesos e instalaciones, la realiza una empresa externa especializada en la materia, y posteriormente validada por la Subgerencia de Medio Ambiente en Chile. Durante 2023 no se presentan multas ni sanciones ambientales en Chile, Argentina, Bolivia, Paraguay y Uruguay.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0158",
         "text": " En relación a programas de cumplimiento ante la Superintendencia de Medio Ambiente (“SMA”) en Chile existe el Plan de Cumplimiento 2020 - Planta Molina, VII Región, de Viña San Pedro Tarapacá S.A., aprobado el año 2020, referente a: (a) deficiente tratamiento de residuos industriales líquidos y (b) acopio desautorizado de lodos. El referido Plan se encuentra ejecutado satisfactoriamente según resolución de la SMA de febrero de 2023. 8.1.4 Libre competencia CCU cuenta con el Programa de Cumplimiento de Libre Competencia que incluye entre otras, capacitaciones tanto por e-learning como de manera presencial, así como la gestión de distintas políticas y procedimientos, a través de la Gerencia de Cumplimiento. No hemos sido sancionados por conductas atentatorias contra la libre competencia. En lo que respecta a los riesgos de libre competencia éstos están asociados principalmente a la posibilidad del ejercicio de conductas exclusorias en mercados en que existe un actor que detenta posición dominante.",
+
     }
 ]
 }
+
 
 
 
