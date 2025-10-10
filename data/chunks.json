@@ -121,6 +121,10 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0007",
         "text": "Cifras 2023: En 2023, los Ingresos por venta disminuyeron 5,4%, alcanzando 2.565.556 millones de pesos chilenos “CLP”. Los menores ingresos fueron explicados por una caída de 3,4% en los volúmenes y una contracción de 2,0% en los precios promedio en CLP. La reducción en los volúmenes fue impulsada por: (i) una caída de 2,6% en el Segmento de Operación Chile, explicada por una debilidad de la demanda, la que se vio especialmente afectada por condiciones climáticas desfavorables, (ii) una caída de 4,5% en el Segmento de operación Negocios Internacionales, más que explicado por Argentina, ya que el resto de las geografías que conforman este segmento registraron en su conjunto crecimientos positivos, y (iii) una caída de 14,4% en el Segmento de operación Vinos, asociado a un escenario desafiante para exportaciones de vino chileno, y una menor demanda en nuestros mercados domésticos.",
+        "semantic_tags": ["resultados_financieros", "caída_en_volúmenes", "precios_promedio", "segmento_chile", "segmento_internacional", "segmento_vinos"],
+        "context_type": "desempeño_financiero_y_operacional",
+        "keywords": ["Ingresos_por_venta", "2.565.556_millones_CLP", "disminución_5.4%", "volúmenes_-3.4%", "precios_promedio_-2.0%", "Segmento_de_Operación_Chile", "condiciones_climáticas", "Segmento_Negocios_Internacionales", "Argentina", "Segmento_Vinos", "exportaciones_vino_chileno", "demanda_doméstica"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -144,6 +148,10 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0008",
         "text": "En el Segmento de operación Negocios Internacionales, el costo de ventas por hectolitro se contrajo 23,1% en CLP, explicado en gran parte por el efecto de conversión de la aplicación de la contabilidad hiperinflacionaria, ya que en moneda local los costos fueron más altos debido a mayores costos en materias primas, presiones inflacionarias y el impacto negativo de la devaluación de 356,2% del ARS frente al USD en nuestros costos ligados al USD. En el Segmento de operación Vinos, el costo de ventas por hectolitro se mantuvo estable con respecto al año anterior. El Margen bruto alcanzó CLP 1.186.944 millones, un 0,8% menos que el año anterior, y como porcentaje de los Ingresos por venta, aumentó de 44,1% a 46,3%, una expansión de 214 puntos base.",
+        "semantic_tags": ["costos_operacionales", "contabilidad_hiperinflacionaria", "margen_bruto", "segmento_internacional", "segmento_vinos"],
+        "context_type": "desempeño_financiero_y_operacional",
+        "keywords": ["costo_de_ventas_por_hectolitro", "contracción_23.1%", "CLP", "contabilidad_hiperinflacionaria", "materias_primas", "presiones_inflacionarias", "devaluación_ARS", "USD", "Segmento_de_operación_Vinos", "margen_bruto", "1.186.944_millones_CLP", "44.1%", "46.3%", "214_puntos_base"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2155,6 +2163,7 @@
     }
 ]
 }
+
 
 
 
