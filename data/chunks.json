@@ -169,7 +169,7 @@
         "text": "El Resultado Operacional Ajustado (o “EBIT” por sus siglas en inglés) alcanzó CLP 253.283 millones, con una expansión del 9,4%, mejorando el margen EBIT de un 8,5% a un 9,9%. Por su parte, el Resultado Operacional Ajustado antes de Depreciación y Amortización (o “EBITDA” por sus siglas en inglés) alcanzó CLP 379.402 millones, un aumento del 6,0%, lo que representa un aumento en el margen EBITDA de 13,2% a 14,8%. El Resultado no operacional totalizó una pérdida de CLP 150.125 millones, frente a un resultado negativo de CLP 95.683 millones el año pasado.",
         "semantic_tags": ["resultado_operacional", "EBIT", "EBITDA", "margen_financiero"],
         "context_type": "desempeño_financiero",
-        "keywords": ["EBIT", "EBITDA", "margen_financiero"; "resultado_operacional_ajustado", "pérdida_no_operacional"],
+        "keywords": ["EBIT", "EBITDA", "margen_financiero", "resultado_operacional_ajustado", "pérdida_no_operacional"],
         "relevance_score": 0.94
     },
     {
@@ -1318,6 +1318,7 @@
     }
 ]
 }
+
 
 
 
