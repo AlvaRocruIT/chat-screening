@@ -806,61 +806,109 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0037",
         "text": "Uno de los ejemplos que demuestran el sólido compromiso de CCU con sus objetivos de desempeño ambiental, es el reconocimiento obtenido del Programa Huella Chile del Ministerio de Medio Ambiente por la gestión en la emisión de gases de efecto invernadero. Esta verificación se ha venido obteniendo desde el año 2018. La principal iniciativa para la disminución de gases de efecto invernadero (GEI) consistió en la adjudicación de contratos de abastecimiento de energía eléctrica renovable con la empresa Colbún, en Chile. En 2023, se cumplió la meta de reducción de emisiones al año 2030, principalmente por la materialización de dicho contrato en Chile. Dentro de otras iniciativas, en Planta Quilicura se realizó el cambio de una nueva caldera la cual cuenta con tecnología de alta eficiencia energética, lo que significa que consume menos combustible y genera menos emisiones. Y en Plantas Manantial y Kunstmann, se realiza el cambio a grúas eléctricas.",
+        "semantic_tags": ["sustentabilidad", "medioambiente", "energías_renovables", "eficiencia_energética", "reconocimientos", "reducción_emisiones"],
+        "context_type": "gestión_ambiental",
+        "keywords": ["Huella Chile", "gases efecto invernadero", "energía renovable", "Colbún", "reducción emisiones", "2030", "caldera eficiente", "grúas eléctricas"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0038",
         "text": "Emisiones de combustibles fósiles: A través la cuantificación volumétrica de todos los combustibles fósiles utilizados por la Compañía y considerando los factores estipulados en el Manual de Estimación de Emisiones Atmosféricas del sistema RUEA (Registro Único de emisiones Atmosféricas del Ministerio de Medio Ambiente) tenemos que, las emisiones derivadas de la combustión de los combustibles fósiles, respecto al 2022, de dióxido de azufre (SOx), óxido de nitrógeno (NOx), material particulado (MP) y compuestos orgánicos volátiles (COV), disminuyeron en 86%, 10%, 49% y 4%, respectivamente.",
+        "semantic_tags": ["medioambiente", "emisiones", "combustibles_fósiles", "reducción_contaminantes", "eficiencia_energética"],
+        "context_type": "gestión_emisiones",
+        "keywords": ["emisiones combustión fósil", "reducción SOx", "reducción NOx", "material particulado", "COV", "registro RUEA", "Ministerio de Medio Ambiente"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0038",
         "text": "Emisión de sustancias que agotan el ozono: Las emisiones de la Compañía de sustancias que tienen el potencial de agotar la capa de ozono no son significativas. En 2023 alcanzaron un valor de 0,01 toneladas, métrica de CFC-11 (clorofluorocarbono) equivalente, correspondiendo a emisiones fugitivas de gases de tipo HCFC (Hidroclorofluorocarbonos) y HFC (Hidroflourocarbonos), que son compuestos utilizados en los equipos de refrigeración y climatización de las plantas productivas y oficinas de CCU a nivel regional.",
+        "semantic_tags": ["medioambiente", "emisiones", "sustancias_ozono", "refrigeración", "control_ambiental"],
+        "context_type": "gestión_emisiones",
+        "keywords": ["emisiones HCFC", "emisiones HFC", "CFC-11 equivalente", "sustancias agotadoras del ozono", "refrigeración industrial", "capa de ozono"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0038",
         "text": "Adaptación y mitigación al cambio climático: La actividad industrial de CCU depende en forma significativa de las condiciones climáticas y la disponibilidad hídrica. Esta situación aplica, en gran medida, a todos los países donde operamos. Particularmente, en Chile se identifican variables de vulnerabilidad, ya que el territorio cuenta con áreas de borde costero de baja altura, zonas áridas, semiáridas y de bosques, alta frecuencia de desastres naturales, regiones propensas a la sequía y desertificación, zonas urbanas y semiurbanas con problemas territoriales y de contaminación atmosférica. El aumento de lluvia (pluviometría) durante los períodos de vendimia afecta el rendimiento, costo y calidad de los vinos elaborados por la compañía. Los eventos climáticos extremos, tales como aluviones por exceso de lluvia o incendios forestales favorecidos por alzas históricas de la temperatura, pueden provocar daños en las instalaciones y afectar la continuidad operacional.",
+        "semantic_tags": ["cambio_climático", "adaptación", "mitigación", "vulnerabilidad_climática", "operaciones_industriales"],
+        "context_type": "gestión_climática",
+        "keywords": ["condiciones climáticas", "disponibilidad hídrica", "vulnerabilidad territorial", "impacto productivo", "eventos climáticos extremos", "riesgo operacional"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0039",
         "text": "CCU define planes de mitigación, para minimizar el impacto de los riesgos en su actividad productiva, las cuales se materializan como inversiones u otras actividades. Algunas de nuestras iniciativas en torno a la adaptación al cambio climático han sido el reforzamiento de la estructura en el Centro de Distribución Copiapó, producto de los aluviones de 2015 y 2017, y la generación de proyectos de infraestructura contra el fuego debido al aumento de incendios forestales. Las Plantas de Coinco, Temuco y Quilicura están desde el 2018 con proyectos que se ejecutan de forma escalonada para contar un sistema de detección y extinción contra incendios.",
+        "semantic_tags": ["cambio_climático", "mitigación", "infraestructura_resiliente", "gestión_de_riesgos", "adaptación_climática"],
+        "context_type": "planes_de_mitigación",
+        "keywords": ["planes de mitigación", "infraestructura contra incendios", "Centro de Distribución Copiapó", "aluviones", "proyectos de adaptación", "sistemas de detección y extinción"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0039",
         "text": "Gestión eficiente de la energía La Política de Medio Ambiente CCU nos invita a desarrollar y promover, entre nuestros grupos de interés internos y externos, una cultura orientada a minimizar los impactos medioambientales en el ciclo de vida de nuestros procesos y productos, más allá del cumplimiento normativo, en un proceso de mejora continua. Asimismo, promueve la aplicación de un sistema de gestión de energía como herramienta para la mejora continua, a través de una cultura de conciencia energética en las acciones vinculadas con el uso y consumo de energía, y de la adquisición de productos, servicios y diseños que sean energéticamente eficientes.",
+        "semantic_tags": ["energía", "eficiencia_energética", "gestión_ambiental", "mejora_continua", "conciencia_energética"],
+        "context_type": "gestión_energética",
+        "keywords": ["gestión eficiente de la energía", "política ambiental", "cultura energética", "sistema de gestión de energía", "productos eficientes", "mejora continua"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0039",
         "text": "El consumo de energía térmica directa de la Compañía proveniente de fuentes no renovables fue un 93% menor al año anterior, alcanzando el valor de 1.198.934 gigajulios (GJ) en 2023. La matriz de consumo de combustibles fósiles (no renovables) se compone principalmente de gas natural, considerada la mejor opción por sus menores emisiones locales en comparación con otras alternativas de combustibles como gas licuado, gasolina, petróleo y diésel. El consumo de energía térmica de fuentes renovables en 2023 fue de 57.056 GJ, provenientes de la generación de biogás de las plantas Quilicura y Temuco, en Chile, y Santa Fe, en Argentina. La Compañía también genera electricidad renovable propia a partir de biogás y paneles fotovoltaicos, durante el año 2023 produjo 31.381 GJ. Así, el consumo total de energía directa e indirecta (de fuentes no renovables y renovables) para 2023 fue de 2.159.283 GJ, siendo un 8% menor que el año anterior.",
+        "semantic_tags": ["energía", "fuentes_renovables", "biogás", "eficiencia_energética", "energía_solar", "sostenibilidad"],
+        "context_type": "consumo_energético",
+        "keywords": ["energía térmica", "fuentes no renovables", "gas natural", "biogás", "paneles fotovoltaicos", "electricidad renovable", "reducción de consumo energético"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0040",
         "text": "  Abastecimiento de energía Las instalaciones de CCU en Chile se abastecen de energía eléctrica proveniente de los distribuidores del Sistema Eléctrico Nacional (SEN), Sistema Eléctrico de Aysén (SEA) y Sistema Eléctrico de Magallanes (SEM). Para el caso de las operaciones regionales, Argentina, Bolivia, Paraguay y Uruguay, la energía proviene de sus respectivas matrices energéticas. Desde el 2023, en Chile contamos con un contrato de abastecimiento de energía eléctrica renovable con la empresa Colbún, la cual nos permite abastecer con energía eléctrica renovable por 8 años a nuestras plantas productivas y centros de distribución, correspondientes a las siguientes:",
+        "semantic_tags": ["energía", "energía_renovable", "abastecimiento", "contrato_energético", "Colbún", "sostenibilidad"],
+        "context_type": "abastecimiento_energético",
+        "keywords": ["energía eléctrica", "Sistema Eléctrico Nacional", "energía renovable", "contrato Colbún", "plantas productivas", "centros de distribución"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0040",
         "text": "• Siete plantas en la Región Metropolitana, entre ellas las principales instalaciones productivas de CCU como lo son la Planta Cervecera Quilicura, las dos plantas embotelladoras de CCU en Renca, la operación en Isla de Maipo de VSPT Wine Group y la Fábrica de Envases Plásticos S.A. • En regiones se suman la Embotelladora CCU Antofagasta, Planta CCU Temuco, Cachantun en Coinco, Planta Monte Patria de Pisquera de Chile, Bodega Molina y Cachapoal Andes de VSPT Wine Group y Planta Cervecera Valdivia de Kunstmann. Este contrato de suministro de energía permitió a CCU evitar la emisión de cerca de 39.695 ton CO2 /anuales.",
+        "semantic_tags": ["energía_renovable", "sostenibilidad", "reducción_emisiones", "infraestructura_productiva", "contrato_energético", "Colbún"],
+        "context_type": "implementación_energía_renovable",
+        "keywords": ["plantas productivas", "suministro eléctrico", "energía limpia", "reducción CO2", "contrato Colbún", "instalaciones CCU"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0040",
         "text": "Esta gestión nos permitó avanzar en el indicador de uso de energía eléctrica renovable, alcanzó un 81% en el año 2023 comparado con un 32,8% en el año 2022. Reducción de consumo de energía En 2023, CCU evitó consumir 2.486.217 GJ, comparado con 2010, según la metodología BAU. La disminución se explica por una mayor eficiencia en los procesos productivos, renovación tecnológica y proyectos específicos. Las principales iniciativas relacionadas con la reducción de consumo de energía son: • Fortalecimiento de la gestión energética mediante la metodología TPM. • Revisión y expansión de buenas prácticas específicas para reducir el consumo de energía a nivel regional. • Aumento en la recuperación de condensado durante los procesos de elaboración y envasado, y en la eficiencia del uso de equipos de aireación en Plantas de Tratamiento de Riles. • Economía Circular es un reto global y se considera una herramienta imprescindible para lograr un uso responsable de los recursos materiales, maximizando la valorización de residuos.",
+        "semantic_tags": ["eficiencia_energética", "energía_renovable", "economía_circular", "gestión_energética", "sostenibilidad_operacional"],
+        "context_type": "reducción_consumo_energía",
+        "keywords": ["81% energía renovable", "eficiencia productiva", "metodología TPM", "recuperación de condensado", "valorización de residuos", "BAU 2010 comparación"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0041",
         "text": "CCU define la gestión responsable de residuos como una tarea clave en la que deben participar y colaborar todas las personas involucradas para generar una visión conjunta, de manera de educar a la comunidad y estimular la Economía Circular. En el área industrial, residuos como vidrios, papeles, cartones, aluminio, PET y otros plásticos son entregados clasificadamente a terceros para su reciclaje, potenciando así una industria que les da una segunda vida a muchos productos. Esta estrategia ha permitido también generar cultura medioambiental en los trabajadores, quienes aportan ideas y han sido parte crucial de procesos que se han perfeccionado. Al mismo tiempo, existe una instancia trimestral para presentar, gestionar e implementar iniciativas para disminuir el gramaje de nuestros envases y embalajes en conjunto con nuestros proveedores.",
+        "semantic_tags": ["gestión_residuos", "economía_circular", "reciclaje", "cultura_ambiental", "colaboración_proveedores"],
+        "context_type": "residuos_industriales",
+        "keywords": ["clasificación de residuos", "reciclaje de vidrios y plásticos", "reducción gramaje envases", "educación comunitaria", "participación trabajadores", "iniciativas conjuntas con proveedores"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0041",
         "text": "Principales aspectos de regulación en Chile La Ley N° 20.920, llamada Ley de Responsabilidad Extendida del Productor y Fomento al Reciclaje (“Ley REP”), apunta a consolidar una industria responsable de la cadena de sus productos, por medio de la prevención de generación de residuos y de su recuperación y reciclaje. Según el marco legal, tanto productores como importadores de los denominados productos prioritarios deben ser responsables de ellos hasta el fin de su vida útil, se conviertan en residuo y su materia prima pueda ser reutilizada. CCU, en conjunto con los demás miembros de la Asociación de Alimentos y Bebidas de Chile A.G. (“AB Chile”) y otras empresas, forma parte del primer sistema de gestión colectivo (ReSimple) para cumplir sus metas de gestión de envases y embalajes, en conformidad a la Ley REP. Adicionalmente, el 13 de agosto de 2021 se publicó la Ley Nº 21.368, que regula los productos de plástico de un solo uso y las botellas de plástico, y que refuerza la reciclabilidad y retornabilidad.",
+        "semantic_tags": ["regulación_residuos", "ley_rep", "reciclaje", "responsabilidad_productor", "gestión_envases"],
+        "context_type": "marco_legal_residuos",
+        "keywords": ["Ley REP", "responsabilidad extendida del productor", "reciclaje envases", "ReSimple", "productos prioritarios", "Ley plásticos de un solo uso", "botellas retornables"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1554,3 +1602,4 @@
     }
 ]
 }
+
