@@ -1117,7 +1117,7 @@
         "relevance_score": 0.97
     },
     {
-        "source": "memoria_anual_CCA_2023.txt"
+        "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0050",
         "text": " En esta línea desarrollamos nuestros productos bajo el Reglamento Sanitario de los Alimentos en Chile, y cada país se rige bajo la normativa existente y, en casos especiales, se acude a la Universidad Católica y al Instituto de Nutrición y Tecnología de los Alimentos (“INTA”). Dentro de las certificaciones con las que contamos destacan: • Hazard Analysis and Critical Control Points (HACCP): Análisis de Riesgo y Puntos Críticos de Control. • ISO 22000, FSSC 22000 y BRC (British Retail Consortium): estas se orientan a un debido control de procesos para la protección del consumidor, garantizando la inocuidad y seguridad alimentaria de los productos elaborados.",
         "semantic_tags": ["calidad_e_inocuidad", "certificaciones_alimentarias", "normativa_internacional"],
@@ -1498,7 +1498,10 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0065",
         "text": "Programa Jóvenes Profesionales Este programa tiene por objetivo identificar, retener e impulsar el talento de jóvenes profesionales en CCU a nivel regional. En materias formativas, busca impactar positivamente en competencias atingentes al desarrollo de los jóvenes profesionales, con el propósito de acelerar su crecimiento al interior de la Compañía. Esto, a través de la implementación de acciones formativas tales como; una experiencia inmersiva anual en un área estratégica del negocio y del entrenamiento en temáticas como Presentaciones efectivas, Gestión de proyectos y Empoderamiento, los que cursan anualmente de acuerdo a su etapa en el programa. Por medio de la diversificación de acciones de aprendizaje, no sólo se espera que el desarrollo competencias apalanquen mayor adaptabilidad y capacidad de respuesta en sus desafíos individuales, sino también que a través de las experiencias inmersivas encuentren los espacios para internalizar los diversos procesos operacionales y de soporte que sustentan nuestro negocio y los incorporen a su proyecto de desarrollo. A partir de lo anterior, el Programa brinda a la organización nuevos talentos con mayor visión estratégica y madurez en el desarrollo de habilidades diferenciadoras, los que a partir del segundo año de permanencia en el programa pueden optar a la promoción interna y consecutivamente a posiciones de liderazgo dentro de la Compañía. El programa contó con la participación del 88% de los jóvenes profesionales a nivel regional en materias formativas.",
-
+        "semantic_tags": ["gestión_de_talento", "formación_y_desarrollo", "jóvenes_profesionales", "liderazgo", "experiencia_inmersiva"],
+        "context_type": "gestión_de_personas_y_cultura",
+        "keywords": ["Programa_Jóvenes_Profesionales", "identificar", "retener", "impulsar", "competencias", "experiencia_inmersiva", "Presentaciones_efectivas", "Gestión_de_proyectos", "Empoderamiento", "adaptabilidad", "procesos_operacionales", "visión_estratégica", "promoción_interna", "liderazgo", "88%_participación"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1612,7 +1615,6 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "Gestión de talento La Gerencia Corporativa de Recursos Humanos identifica y recoge antecedentes de las capacidades, conocimientos, condiciones, experiencias y visiones de sus trabajadores mediante procesos de Evaluación de Desempeño, Evaluación Ascendente y Comité de Desarrollo Ejecutivo para el caso de los ejecutivos principales de la Compañía. En esta última instancia, se revisaron los planes de desarrollo y de sucesión para la alta gerencia y gerencia en jornadas de trabajo junto con el Comité de Dirección. De esta forma, identificamos a potenciales sucesores del Gerente General y demás ejecutivos principales, para reemplazarlos oportunamente y traspasar sus funciones e información relevante, ante su ausencia imprevista, minimizando el impacto que ello tendría en la organización. La decisión de reemplazo la efectúa el Directorio caso a caso, para lo cual cuenta con una serie de antecedentes de los ejecutivos sobre su trayectoria, evaluación de desempeño, evaluación ascendente, planes de retiro y sucesión, entre otros antecedentes",
-        "semantic_tags": ["gestión_de_talento", "evaluación_desempeño", "evaluación_ascendente", "sucesión_liderazgo", "alta_gerencia"], "context_type": "gestión_talento_y_sucesión", "keywords": ["Gerencia_Corporativa_RRHH", "capacidades", "conocimientos", "evaluación_desempeño", "evaluación_ascendente", "Comité_Desarrollo_Ejecutivo", "Comité_de_Dirección", "sucesores", "Gerente_General", "reemplazo", "Directorio", "trayectoria", "planes_de_retiro", "planes_de_sucesión"], "relevance_score": 0.95
         "semantic_tags": ["gestión_de_talento", "evaluación_desempeño", "evaluación_ascendente", "sucesión_liderazgo", "alta_gerencia"],
         "context_type": "gestión_talento_y_sucesión",
         "keywords": ["Gerencia_Corporativa_RRHH", "capacidades", "conocimientos", "evaluación_desempeño", "evaluación_ascendente", "Comité_Desarrollo_Ejecutivo", "Comité_de_Dirección", "sucesores", "Gerente_General", "reemplazo", "Directorio", "trayectoria", "planes_de_retiro", "planes_de_sucesión"],
@@ -2163,6 +2165,7 @@
     }
 ]
 }
+
 
 
 
