@@ -1365,116 +1365,175 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0060",
         "text": "Todos los riesgos de alto nivel considerados como críticos son gestionados de manera urgente a través de la herramienta de ORR, involucrando a operadores en equipos de mejora que aportan a la resolución de los problemas, así como también a través de permisos de trabajo y AST. En la investigación de incidentes existe la metodología «5 porqué» para analizar incidentes con y sin tiempo perdido, incluso los cuasi accidentes que tienen un potencial grave, con el fin de encontrar las causas y generar planes de acción que erradiquen una nueva probabilidad de que ocurran.",
+        "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "gestión_operativa", "ORR", "investigación_incidentes", "AST", "análisis_causas"],
+        "context_type": "capital_humano",
+        "keywords": ["riesgos críticos", "equipos de mejora", "permisos de trabajo", "Análisis Seguro de Trabajo", "metodología 5 porqué", "cuasi accidentes", "planes de acción", "erradicación de riesgos"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0060",
         "text": "Un equipo multidisciplinario, seleccionado por cada planta, realiza la investigación cada vez que existe un accidente o incidente (con o sin tiempo perdido) o un cuasi accidente con potencial grave. Cada vez que ocurra se debe actualizar la Matriz de Identificación de Peligros y Evaluación de Riesgos para medir nuevamente la probabilidad de ocurrencia y revisar los controles asociados a la actividad donde ocurrió el evento. Una vez que se conocen las causas, la metodología busca medidas correctivas y preventivas según la jerarquización de controles establecidos con el objetivo de erradicar el riesgo. Toda nuestra gestión está basada en el ciclo PDCA (sigla en inglés para: Planear-Hacer-VerificarActuar), método que nos permite verificar la eficacia de nuestra gestión. ",
+        "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "investigación_incidentes", "PDCA", "control_riesgos", "mejora_continua", "cuasi accidentes"],
+        "context_type": "capital_humano",
+        "keywords": ["equipo multidisciplinario", "Matriz de Identificación de Peligros", "evaluación de riesgos", "medidas correctivas y preventivas", "jerarquización de controles", "erradicación de riesgos", "ciclo PDCA"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0060",
         "text": "Comité Paritario En CCU la consulta y participación de los trabajadores son proporcionadas a través de mecanismos, formación y recursos. Las principales herramientas de consulta y participación incluyen el levantamiento de anomalías de seguridad (tarjeta de seguridad), reporte de los cuasi accidentes, aplicación de tarjetas para actividades no rutinarias, encuestas de seguridad y auditorías de seguridad y salud ocupacional. Además, se puede destacar que la gestión de los riesgos es realizada principalmente por los trabajadores. Los canales de comunicación utilizados en los procesos son las pizarras de gestión diaria donde se revisan los indicadores de accidentes, incidentes, cuasi accidentes, entre otros.",
+        "semantic_tags": ["seguridad_laboral", "participación_trabajadores", "prevención_riesgos", "comité_paritario", "cuasi_accidentes", "gestión_riesgos"],
+        "context_type": "capital_humano",
+        "keywords": ["tarjeta de seguridad", "reportes de cuasi accidentes", "auditorías de seguridad", "encuestas de seguridad", "pizarras de gestión diaria", "indicadores de accidentes e incidentes"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0061",
         "text": "El trabajador es representado por el comité paritario, sindicatos, brigada de emergencia, en reuniones mensuales, donde se abordan los temas levantados por el personal con los representantes de la empresa. Las principales funciones del Comité Paritario de Higiene y Seguridad, de acuerdo con la legislación local, son: Asesorar e instruir a los trabajadores en la correcta utilización de los elementos de protección personal. Vigilar el cumplimiento, tanto por parte de los trabajadores como de la organización, de todas las medidas de prevención, higiene y seguridad.Investigar cuáles son las causas de los accidentes del trabajo y las enfermedades profesionales que se produzcan.",
+        "semantic_tags": ["seguridad_laboral", "comité_paritario", "prevención_riesgos", "representación_trabajadores", "higiene_y_seguridad"],
+        "context_type": "capital_humano",
+        "keywords": ["elementos de protección personal", "medidas de prevención", "higiene y seguridad", "investigación de accidentes", "enfermedades profesionales", "reuniones mensuales"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0061",
         "text": "Decidir si los accidentes o enfermedades se deben a negligencias inexcusables. Indicar la adopción de todas las medidas de seguridad que faciliten la prevención de riesgos profesionales. Cumplir con todas las funciones que le encomiende el organismo administrador del seguro social. Promover la participación en cursos destinados a la capacitación de los trabajadores, en organismos públicos o privados que se encuentren autorizados para cumplir esa finalidad.",
+        "semantic_tags": ["seguridad_laboral", "prevención_riesgos", "capacitación_trabajadores", "cumplimiento_legal", "comité_paritario"],
+        "context_type": "capital_humano",
+        "keywords": ["negligencias inexcusables", "medidas de seguridad", "prevención de riesgos profesionales", "organismo administrador del seguro social", "cursos de capacitación", "participación de trabajadores"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0061",
         "text": "En Chile, por normativa legal la Compañía cumple con los siguientes requerimientos: • Guarderías o contribuciones: CCU y sus filiales ofrecen este beneficio de acuerdo a la legislación vigente en cada país. Además, en el caso de Chile, si la salud del niño no permite su asistencia al colegio, se entrega una asignación directa en dinero en vez de pagar una sala cuna. • Facilidades o prestaciones para la lactancia materna: En Chile, Argentina, Uruguay, Paraguay y Bolivia, las trabajadoras tienen derecho a una hora diaria de permiso de lactancia hasta que el niño cumpla cierta edad (un año en Chile y Paraguay, seis meses en Uruguay y Bolivia). Durante el permiso de trabajo, pueden ausentarse para amamantar o extraerse leche, y los empresarios deben proporcionar espacios adecuados. Esto fomenta la lactancia materna y permite a las madres cumplir con sus responsabilidades laborales.",
+        "semantic_tags": ["beneficios_laborales", "familia_y_trabajo", "igualdad_de_género", "cumplimiento_legal", "lactancia_materna", "guarderías"],
+        "context_type": "capital_humano",
+        "keywords": ["asignación directa", "salud del niño", "permiso de lactancia", "espacios adecuados", "legislación laboral", "trabajadoras", "responsabilidades laborales"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0062",
         "text": "Es una medida que promueve la conciliación entre trabajo y maternidad, salvaguardando el bienestar de madres e hijos en los primeros meses de vida. También se puede acordar el aplazamiento o adelanto en media hora, o en una hora, del inicio o fin de la jornada laboral. • Permiso parental retribuido para el cuidador principal/no principal: En Chile existe el permiso parental remunerado, también conocido como postnatal parental. Este permiso se concede a la madre o al padre designado como cuidador principal del recién nacido o adoptado. La prestación permite a este cuidador ausentarse del trabajo y percibir una compensación igual a sus ingresos imponibles durante un periodo de hasta 24 semanas. De estas 24 semanas, al menos 12 debe utilizarlas la madre, y el resto puede transferirse al padre si éste lo solicita.",
+        "semantic_tags": ["beneficios_laborales", "conciliación_familiar", "parentalidad", "permiso_retribuido", "igualdad_de_género", "maternidad_y_paternidad"],
+        "context_type": "capital_humano",
+        "keywords": ["permiso parental", "postnatal parental", "cuidador principal", "compensación", "ausentarse del trabajo", "transferencia de semanas", "ingresos imponibles"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0062",
         "text": "Formación y capacitación El desarrollo de las personas es un aspecto relevante de gestión en CCU, ya que un crecimiento sostenible debe considerar los factores de eficiencia y permanente transformación en el quehacer actual de toda empresa, independiente de la industria en que opere. Nos interesa brindar una formación de excelencia que sea capaz de fortalecer la cultura organizacional de la Compañía, basada en los principios del SER CCU y al mismo tiempo, permita contribuir al logro de los objetivos estratégicos de la organización. En cuanto a los procesos formativos del año 2023, logramos concretar la capacitación a través de instancias en formato presencial, online e híbrido, abordando de esta manera, todos los canales disponibles para impulsar el aprendizaje. Así, en el plano digital, la Plataforma de Formación CCU (www.formacionccu.cl) constituye el espacio virtual a través del cual se habilitan los recursos asociados a formación e-learning para los equipos de trabajo. Durante el 2023, logramos avanzar de manera transversal a la organización con cursos como Ciberseguridad y Modelo de Prevención del Delito, ambos con foco en la promoción de comportamientos asociados a la protección de datos y prevención del delito.",
+        "semantic_tags": ["formación_y_capacitación", "desarrollo_profesional", "aprendizaje_digital", "cultura_organizacional", "seguridad_y_prevención", "plataforma_e-learning"],
+        "context_type": "capital_humano",
+        "keywords": ["formación de excelencia", "SER CCU", "objetivos estratégicos", "presencial", "online", "híbrido", "Plataforma de Formación CCU", "e-learning", "Ciberseguridad", "Modelo de Prevención del Delito", "protección de datos", "prevención del delito"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0063",
         "text": "En la misma línea, la plataforma continúa siendo el repositorio de cursos de la Compañía, logrando un alcance regional implementando cursos transversales según las necesidades de cada país. En Chile, en relación al beneficio tributario SENCE (Servicio Nacional de Capacitación y Empleo) la Compañía alcanzó un uso del 84% de dicho beneficio, el cual impactó principalmente a equipos de operación productiva industrial, ventas y logística. También, permitió impulsar la promoción laboral en integrantes de las comunidades en la cual la Compañía está presente a nivel nacional, por medio del entrenamiento en competencias técnicas en temáticas vinculadas con nuestro modelo de sustentabilidad, tales como como recicladores base, operación de equipos logísticos, ventas, y marketing.",
+        "semantic_tags": ["formación_y_capacitación", "desarrollo_profesional", "capacitación_regional", "beneficio_SENCE", "competencias_técnicas", "sustentabilidad"],
+        "context_type": "capital_humano",
+        "keywords": ["plataforma de cursos", "alcance regional", "SENCE", "operación productiva industrial", "ventas", "logística", "promoción laboral", "comunidades", "entrenamiento", "competencias técnicas", "modelo de sustentabilidad", "recicladores base", "operación de equipos logísticos", "marketing"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0063",
         "text": "La formación y desarrollo en 2023, en términos de horas promedio por FTE (Full Time Equivalent, por su sigla en inglés) corresponde a 18 para mujeres y 12 para hombres, alcanzando un 78% de los trabajadores de la Compañía. Escuela de Grueras y Grueros Programa que se realizó en 2 instancias durante el 2023, en conjunto con las Municipalidades de Renca y Quilicura, de forma simultánea. En este, se formaron y reclutaron nuevos talentos, generando empleabilidad a nivel local y logrando la incorporación de mujeres en cargos tradicionalmente ocupados por hombres. Desde su implementación en 2021 a la fecha, han egresado 195 personas, de las cuales 43% son mujeres que se integraron a nuestras operaciones, lo cual representa un logro significativo en la vinculación con la comunidad y el desarrollo sustentable en integración de talento para los equipos logísticos.",
+        "semantic_tags": ["formación_y_desarrollo", "igualdad_de_género", "empleabilidad_local", "desarrollo_sustentable", "capacitación_técnica"],
+        "context_type": "capital_humano",
+        "keywords": ["horas promedio por FTE", "% trabajadores capacitados", "Escuela de Grueras y Grueros", "Municipalidades de Renca y Quilicura", "formación de talento", "incorporación de mujeres", "cargos tradicionalmente masculinos", "vinculación con la comunidad", "equipos logísticos", "desarrollo sustentable"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0063",
         "text": "Escuela de Ventas Programa que se implementó por primera vez en Chile, el cual busca atraer y formar talento para la contratación de vendedores de temporada. Se hizo una convocatoria en la que se seleccionaron a 19 personas para participar del entrenamiento, el cual consistió en desarrollar habilidades comerciales y técnicas de venta, manejo de objeciones, procesos de venta, portafolio, ejecución comercial y entrenamiento en ruta. De este grupo, fueron contratados 8 participantes, de ellos 3 mujeres y 5 hombres.",
+        "semantic_tags": ["formación_y_desarrollo", "empleabilidad", "ventas", "capacitación_comercial", "igualdad_de_género"],
+        "context_type": "capital_humano",
+        "keywords": ["Escuela de Ventas", "Chile", "atracción de talento", "vendedores de temporada", "habilidades comerciales", "técnicas de venta", "manejo de objeciones", "portafolio", "ejecución comercial", "entrenamiento en ruta", "19 participantes", "8 contratados", "3 mujeres", "5 hombres"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0064",
         "text": "Capacitaciones en Seguridad Para CCU es prioritaria la excelencia en el desempeño y, en este contexto, la capacitación continua permite mejorar y realizar de manera más eficiente y segura las actividades de los trabajadores. También reforzamos las competencias de seguridad, para mejorar nuestros indicadores de prevención y seguridad en el trabajo. Dentro del programa de formación 2023 que se impulsó a nivel Compañía, se destacan las siguientes iniciativas: 1. Operadores de Excelencia. 2. Brigada de emergencias control de fuego clase B. 3. Técnicas de reanimación cardiopulmonar RCP y uso de desfibrilador externo automático DEA en emergencias. 4. Formación de brigada de emergencia. 5. Uso de extintores. 6. Técnicas aplicadas de equipo de respiración autónomo. 7. Operación segura y mantención de puente grúa. 8. Técnicas avanzadas en emergencias con amoniaco. 9. Protección radiológica. 10. Protocolos de seguridad en la operación de calderas y autoclaves. 11. Técnicas de operación en equipos de levante de carga. 12. Sistema comando de incidentes, fase alerta de identificación de sustancias químicas. 13. Manejo de sustancias peligrosas. 14. MIPER (Identificación de Peligro y Evaluación de Riesgos). 15. Primeros auxilios: control de signos vitales, heridas y hemorragias. 16. Prevención de riesgos asociados a trastornos músculo esqueléticos y manejo manual de cargas.",
+        "semantic_tags": ["capacitación_seguridad", "salud_ocupacional", "prevención_de_riesgos", "desempeño_laboral", "formación_continua"],
+        "context_type": "capital_humano",
+        "keywords": ["CCU", "excelencia en desempeño", "capacitación continua", "indicadores de prevención", "Operadores de Excelencia", "Brigada de emergencias", "RCP", "DEA", "uso de extintores", "equipo de respiración autónomo", "puente grúa", "emergencias con amoniaco", "protección radiológica", "calderas", "autoclaves", "levante de carga", "sistema comando de incidentes", "manejo de sustancias peligrosas", "MIPER", "primeros auxilios", "trastornos músculo esqueléticos", "manejo manual de cargas"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0064",
         "text": "Programa Líderes CCU Programa corporativo dirigido a todos los líderes CCU con equipo a cargo, con el objetivo de promover los Roles de Liderazgo de CCU. El objetivo del Programa de Liderazgo 2023 fue potenciar competencias de gestión del cambio. Considerando el contexto organizacional y los proyectos estratégicos que enfrenta la Compañía, se abordaron herramientas prácticas para liderar en entornos cambiantes y promover conductas de empoderamiento e innovación al interior de los equipos. Desde los resultados obtenidos en la encuesta de satisfacción, éstos evidencian que abordar esta temática en el Programa, impactó de forma positiva su gestión actual y futura. En la misma línea, consideran atingente el generar espacios de trabajo sobre estas temáticas dados los desafíos actuales de la Compañía. De esta manera, los líderes refieren poder adoptar los cambios con mayor rapidez, como también impulsar los componentes actitudinales de sus equipos. Así también, los líderes reconocen que el cambio es una variable permanente en la Compañía, por lo que valoran el proceso formativo implementado con un 93% de satisfacción. En Chile el programa contó con la participación de 734 líderes, equivalente a un 93% del universo elegible.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0065",
         "text": "En la misma línea, consideran atingente el generar espacios de trabajo sobre estas temáticas dados los desafíos actuales de la Compañía. De esta manera, los líderes refieren poder adoptar los cambios con mayor rapidez, como también impulsar los componentes actitudinales de sus equipos. Así también, los líderes reconocen que el cambio es una variable permanente en la Compañía, por lo que valoran el proceso formativo implementado con un 93% de satisfacción. En Chile el programa contó con la participación de 734 líderes, equivalente a un 93% del universo elegible.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0065",
         "text": "Programa Jóvenes Profesionales Este programa tiene por objetivo identificar, retener e impulsar el talento de jóvenes profesionales en CCU a nivel regional. En materias formativas, busca impactar positivamente en competencias atingentes al desarrollo de los jóvenes profesionales, con el propósito de acelerar su crecimiento al interior de la Compañía. Esto, a través de la implementación de acciones formativas tales como; una experiencia inmersiva anual en un área estratégica del negocio y del entrenamiento en temáticas como Presentaciones efectivas, Gestión de proyectos y Empoderamiento, los que cursan anualmente de acuerdo a su etapa en el programa. Por medio de la diversificación de acciones de aprendizaje, no sólo se espera que el desarrollo competencias apalanquen mayor adaptabilidad y capacidad de respuesta en sus desafíos individuales, sino también que a través de las experiencias inmersivas encuentren los espacios para internalizar los diversos procesos operacionales y de soporte que sustentan nuestro negocio y los incorporen a su proyecto de desarrollo. A partir de lo anterior, el Programa brinda a la organización nuevos talentos con mayor visión estratégica y madurez en el desarrollo de habilidades diferenciadoras, los que a partir del segundo año de permanencia en el programa pueden optar a la promoción interna y consecutivamente a posiciones de liderazgo dentro de la Compañía. El programa contó con la participación del 88% de los jóvenes profesionales a nivel regional en materias formativas.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0066",
         "text": "Programa de Formación Logística Programa dirigido a la Operación Logística, que tiene por objetivo habilitar y nivelar competencias digitales. A través de la formación en “Alfabetización Digital”, el 2023 se capacitó a trabajadores de la Operación Logística para cubrir la brecha en el manejo de software y equipos computacionales, lo que permita afrontar los desafíos de implementación de nuevas tecnologías. Los procesos de administración y operación logística son sostenidos actualmente desde infraestructuras en línea, junto con ello los centros de distribución de mayor producción utilizan sistemas y herramientas digitales como parte de ejecución de las tareas de los operadores, por ende, generar una adherencia progresiva respecto a la incorporación de tecnología, permite impactar sostenidamente en la producción de los centros de distribución al eficientar la cadena online de almacenamiento y también los procesos de inventario. También, refuerza el mejoramiento de la experiencia laboral por medio de la generación de mayor conocimiento respecto al uso de recursos tecnológicos para efectuar el trabajo. En Chile, este proceso tuvo una participación del 78%.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0067",
         "text": "Malla de Formación Ventas Programa de formación para la Fuerza de Ventas, con foco en la actualización de herramientas técnicas y habilidades comerciales. El objetivo del Programa de Formación de Ventas, es entrenar en habilidades claves para la ejecución del Vendedor, las cuales se desarrollan a través de la plataforma “Closelly”, con cápsulas de auto instrucción que abordan conocimientos técnicos. Adicional a esta formación de auto instrucción, se capacitó a la fuerza de ventas a nivel nacional en “Manejo de Objeciones”, potenciando habilidades relacionales en el manejo de clientes complejos. Actualmente uno de las principales oportunidades para generar ventaja competitiva en el plano comercial del canal tradicional se sitúa la generación de relaciones sustentables con nuestros clientes, por ello, el reforzamiento de competencias comunicacionales y de venta efectiva, genera el desarrollo de un mayor repertorio conductual y actitudinal ante escenarios complejos frente a un cliente. De esta manera, el impacto se asocia a una mejora en la performance del vendedor del canal tradicional en función del cumplimiento de sus metas y en las posibilidades de agregar nuevas opciones de venta según las recomendaciones del portafolio obtenidas desde del soporte tecnológico. En Chile, esta capacitación tuvo una participación del 67% de los vendedores.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0067",
         "text": "Calidad de vida Nuestras políticas y beneficios se orientan al equilibrio entre la dimensión laboral y personal de los trabajadores, además de una vida saludable y de autocuidado con foco en el consumo responsable. Contamos con una corporación privada sin fines de lucro, que otorga cobertura total a los siniestros por accidentes laborales y desarrolla programas de prevención de riesgos para la organización. Todos los trabajadores tienen libre acceso a la información proporcionada por esta institución y pueden encontrar material de capacitación, fichas de seguridad, e-learning de temas específicos, normativas, protocolos de salud ocupacional, señaléticas, formularios de inspecciones, entre otros.",
+  
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0067",
         "text": " La información proporcionada por el trabajador es manejada de forma confidencial, respaldada por los reglamentos internos. Además, la información que recibe el servicio de salud es resguardada por políticas y normativas de confidencialidad entre las partes. Durante el año 2023 impulsamos iniciativas ligadas a nuestro Programa de Calidad de Vida denominado “Vivamos Bien”, que reúne los beneficios y actividades que contribuyen a mejorar la calidad de vida en tres ámbitos: 1) Bienestar laboral: Instancias de integración, beneficios de protección y servicios que se entregan en el día a día laboral; 2) Tiempo libre y familia: Actividades y beneficios que buscan la conciliación de trabajo y familia, orientadas a compartir y disfrutar fuera del horario laboral; y 3) Vida sana: Iniciativas que promueven el autocuidado, alimentación saludable y actividad física.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0068",
         "text": "Política de subcontratación: En CCU contamos con un procedimiento respecto que formaliza nuestras acciones de subcontratación. Este documento establece las bases para la administración de los servicios externos de una empresa contratista o subcontratista y las exigencias para la autorización del ingreso, permanencia, y ejecución de los trabajos a desarrollar en cualquiera de las dependencias de CCU durante la vigencia de un contrato prestación de servicios, orden de compra o nota de pedido. Pone énfasis en acreditar la documentación de seguridad y salud ocupacional para autorizar el ingreso a las instalaciones, y en verificar el cumplimiento de las obligaciones laborales y previsionales de los trabajadores contratistas.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": " Gestión de Desempeño CCU fomenta el desarrollo personal y profesional de los trabajadores, y para ello se apoya en el proceso de Gestión del Desempeño. Se trata de un ciclo anual que busca alinear los principios del SER CCU y los objetivos de los trabajadores y la Compañía, además de contribuir a la mejora permanente de los resultados y el fortalecimiento de la cultura SER CCU. Este proceso genera una instancia formal de diálogo entre líder y trabajador respecto de las expectativas, los resultados y desafíos que se busca desarrollar; permite medir el rendimiento de los trabajadores en relación con los objetivos y principios, e identificar fortalezas y oportunidades de mejora para gestionar acciones de desarrollo futuras. El proceso, que se gestiona en línea, garantiza el resguardo de la confidencialidad y transparencia de la información, donde además el trabajador tiene acceso a una copia de su evaluación como respaldo. Para ser parte del proceso, el trabajador debe cumplir con el requisito de tener una antigüedad mínima de seis meses en la Compañía, con contrato de plazo indefinido.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": "Evaluación Ascendente La Compañía cuenta con un proceso de evaluación ascendente, herramienta de evaluación de liderazgo el que permite que los trabajadores evalúen a su jefatura directa e identifiquen las oportunidades de mejora a nivel organizacional e individual. simismo, potencia la generación de identidad y cultura organizacional a través de los Roles del SER CCU. En 2023, la Compañía evaluó a un total de 1.010 jefes, quienes recibieron un reporte individual con su Índice Global de Liderazgo (IGL), que les permitió identificar fortalezas, oportunidades de mejora y generar planes para su desarrollo. Esta evaluación tuvo una tasa de participación de un 96%, considerando respuestas de 5.978 trabajadores.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": "Reclutamiento y Selección Nuestro proceso de reclutamiento y selección busca identificar, atraer y seleccionar al mejor talento disponible. CCU procura que nuestro proceso de reclutamiento y selección esté alineado con los objetivos estratégicos y principios del SER CCU, atrayendo y seleccionando, a través de una estrategia de Marca Empleadora. Asimismo, la Política Corporativa de Derechos Humanos declara que CCU está en contra del trabajo infantil. Asimismo, junto con la Política de Diversidad e Inclusión, aseguran que los candidatos sean tratados con dignidad y respeto durante todo el proceso de reclutamiento, de manera de garantizar la igualdad de oportunidades. Para iniciar la selección, trabajamos de forma activa con las distintas instancias reclutadoras: universidades, institutos, colegios y liceos técnicos, municipalidades, portales digitales y redes sociales y, con nuestros trabajadores, a través de instancias de movilidad interna.",
+ 
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1803,6 +1862,7 @@
     }
 ]
 }
+
 
 
 
