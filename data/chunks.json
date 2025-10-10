@@ -698,61 +698,109 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0033",
         "text": "Políticas de inversión y financiamiento: Las inversiones que realiza la Compañía están orientadas tanto a la reposición normal de activos operacionales, modernizaciones y nuevas instalaciones para ampliar y mejorar la capacidad productiva, así como a la adquisición –con fines de crecimiento– de participaciones en empresas afines a sus actividades en Chile y en el exterior. El financiamiento de las inversiones proviene principalmente del flujo operacional generado por la Compañía, complementado con deuda del mercado financiero, velando siempre por mantener un perfil financiero saludable. La Compañía invierte sus excedentes de caja en depósitos a plazo, depósitos overnight y pactos. Asimismo, realiza operaciones de seguro de cambio para calzar sus saldos de balance en monedas extranjeras. ",
+        "semantic_tags": ["políticas_de_inversión", "financiamiento", "gestión_financiera", "inversiones_operacionales", "expansión", "riesgo_cambiario", "inversiones_excedentes"],
+        "context_type": "estratégico-financiero",
+        "keywords": ["reposición de activos operacionales", "modernizaciones", "nuevas instalaciones", "adquisición de participaciones en empresas afines", "financiamiento con flujo operacional", "complemento con deuda de mercado", "perfil financiero saludable", "excedentes de caja", "depósitos a plazo y overnight", "operaciones de seguro de cambio", "balance en monedas extranjeras"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0034",
         "text": "Sustentabilidad: La Sustentabilidad está definida como uno de los tres pilares estratégicos de la Compañía, junto con Rentabilidad y Crecimiento. Estos pilares reconocen la importancia de desarrollar nuestro negocio y trabajo con una mirada sostenible y balanceada entre el corto y largo plazo, teniendo siempre en consideración el bienestar actual y futuro de todas las personas con las que la Compañía interactúa, el cuidado del medioambiente y el desarrollo de sus marcas. Desde el año 2018 hemos gestionado nuestros desafíos sociales y ambientales primordialmente a través de un Modelo de Gestión interno, compuesto por tres ejes: (i) “Personas que nos mueven” (ii) “Planeta por el que velamos” (iii) “Marcas que nos inspiran”. Dicho modelo nos ha permitido avanzar en las temáticas esenciales asociadas a nuestra industria, junto con generar una cultura y herramientas de reporte que nos han permitido contar con nuevos e importantes indicadores de gestión en la materia.",
+        "semantic_tags": ["sustentabilidad", "estrategia_corporativa", "gestión_interna", "responsabilidad_social", "medioambiente", "marcas", "indicadores_de_gestión"],
+        "context_type": "estratégico-sustentabilidad",
+        "keywords": ["pilares estratégicos", "Rentabilidad", "Crecimiento", "bienestar de las personas", "cuidado del medioambiente", "desarrollo de marcas", "Modelo de Gestión interno", "Personas que nos mueven", "Planeta por el que velamos", "Marcas que nos inspiran", "temáticas esenciales", "indicadores de gestión"],
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0034",
         "text": "Relacionamiento comunitario: Ser CCU es situar el bien de las personas en el centro de nuestro quehacer y de nuestras decisiones. Es por esto que contamos con una Política de Relacionamiento Territorial desde el año 2023, donde se manifiesta que la construcción de un relacionamiento sólido y permanente con la comunidad está directamente ligada con nuestra preocupación por el bienestar de las personas como un elemento estratégico en nuestro modelo de negocios, permitiéndonos generar valor mutuo junto con fortalecer nuestra continuidad operacional y organizacional. Como cualquier vínculo, el relacionamiento territorial se trata de la construcción de lazos de confianza recíprocos entre Compañía Cervecerías Unidas S.A. y sus filiales, y las comunidades con las que compartimos. Esto se construye a partir de hechos concretos que fortalecen la credibilidad y confianza en cada uno de nuestros centros de operación. Esta Política aplica a todos nuestros centros productivos y operativos de CCU, y se ejecuta a través del Modelo de Gestión del Relacionamiento Comunitario CCU y la Política CCU de Aportes a la Comunidad: Donaciones y Auspicios Solidarios. En el caso de detectarse algún impacto negativo, contamos con un procedimiento coordinado entre las distintas operaciones.",
+        "semantic_tags": ["sustentabilidad", "estrategia_corporativa", "gestión_interna", "responsabilidad_social", "medioambiente", "marcas", "indicadores_de_gestión"],
+        "context_type": "estratégico-sustentabilidad",
+        "keywords": ["pilares estratégicos", "Rentabilidad", "Crecimiento", "bienestar de las personas", "cuidado del medioambiente", "desarrollo de marcas", "Modelo de Gestión interno", "Personas que nos mueven", "Planeta por el que velamos", "Marcas que nos inspiran", "temáticas esenciales", "indicadores de gestión"],
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0034",
         "text": "Adicionalmente, existe un canal de denuncias comunitarias a través del Servicio de Atención al Cliente. Nuestro compromiso es promover y asegurar relaciones estrechas entre la Compañía y actores locales, considerando el bienestar actual y futuro de todas las personas con las que interactuamos, el cuidado del medioambiente, el consumo responsable de alcohol, el acceso al agua de las comunidades, el aporte cultural y social, y el desarrollo sostenible, generando valor tanto para el territorio como para nuestras operaciones, en sintonía con “Ser CCU”. ",
+        "semantic_tags": ["sustentabilidad", "responsabilidad_social", "relaciones_comunitarias", "medioambiente", "consumo_responsable", "cultura", "desarrollo_sostenible", "gestión_local"],
+        "context_type": "estratégico-comunidad",
+        "keywords": ["canal de denuncias comunitarias", "Servicio de Atención al Cliente", "bienestar de las personas", "cuidado del medioambiente", "consumo responsable de alcohol", "acceso al agua", "aporte cultural y social", "desarrollo sostenible", "valor territorial", "Ser CCU"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0034",
         "text": "Nuestros 5 Principios corresponden a: Somos un buen vecino Buscamos reducir cualquier impacto negativo o molestia a nuestros vecinos y al medioambiente. l. territorio prospera con CCU Queremos dejar un legado positivo y duradero, de modo que las comunidades perciban beneficios concretos al ser vecinos de CCU. 3. Cumplimos nuestros compromisos Cumplimos oportunamente con los compromisos asumidos con la comunidad. 4. Puertas abiertas Mantenemos canales de comunicación permanentes con nuestros vecinos. 5. Vinculación territorial continua Promovemos acciones que habilitan una relación constante y cercana entre CCU y la comunidad.",
+        "semantic_tags": ["sustentabilidad", "responsabilidad_social", "relaciones_comunitarias", "gobernanza_local", "impacto_territorial"],
+        "context_type": "principios_comunidad",
+        "keywords": ["buen vecino", "territorio prospera con CCU", "cumplimos compromisos", "puertas abiertas", "vinculación territorial", "impacto positivo", "canales de comunicación permanentes", "relación cercana con la comunidad"],
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0035",
         "text": "Programas Corporativos CCU participa con la comunidad en forma corporativa a través de cuatro líneas de acción:  Programa de Promoción del Consumo Responsable de Alcohol CCU Estrategia integrada de acciones de la Compañía que desde 1994 invita a distintos actores de la sociedad a desarrollar iniciativas con el objetivo de educar e informar a la comunidad, entregando mensajes positivos, preventivos, de manera clara y propositiva sobre los productos con alcohol y de cómo consumirlos en forma correcta y consciente. CCU En el arte: Llevamos 30 años apoyando y participando de distintas formas en la cultura nacional.",
+        "semantic_tags": ["responsabilidad_social", "programas_corporativos", "comunidad", "educación_alcohol", "cultura", "consumo_responsable"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["consumo responsable", "estrategia educativa", "mensajes preventivos", "CCU en el arte", "cultura nacional", "participación comunitaria", "educación y concientización"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0035",
         "text": "A través de nuestra plataforma “CCU en el Arte”, desde la cual diseñamos la agenda programática para “Acercar el Arte a las personas”, generamos accesibilidad y descentralización de la cultura, y aportamos a la ampliación de la oferta artística y a la difusión del arte chileno. En estos años, y para los años que siguen, renovamos nuestro compromiso con la cultura enfocándonos en activar escenas regionales, diseñando una estrategia territorial que nos permita generar vínculos con sus públicos, para aumentar la participación y el desarrollo cultural local. Durante el 2023, se realizaron dos itinerancias de Arte: la exposición “Dos Colecciones, Cinco Artistas” en la Sala Tole Peralta del Museo Casa del Arte José Clemente Orozco, en la Pinacoteca de Concepción; y, “Paisajes en tránsito” en la Escuela de Arte de la Universidad Católica de Temuco. Nuestro calendario 2023 tuvo un alcance de más de 5.000 personas en todas sus actividades.",
+        "semantic_tags": ["cultura", "arte", "programas_corporativos", "acceso_cultural", "difusión_arte", "participación_comunitaria", "regionalización_cultural"],
+        "context_type": "programas_culturales",
+        "keywords": ["CCU en el Arte", "acercar el arte", "descentralización cultural", "arte chileno", "estrategia territorial", "itinerancias 2023", "Sala Tole Peralta", "Pinacoteca de Concepción", "Universidad Católica de Temuco", "alcance 5.000 personas"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0035",
         "text": "Programa de cultura ambiental: Como parte del programa «Chile Sin Basura 2040», durante 2023 continuamos avanzando en nuestro aporte educativo y cultural en el objetivo de avanzar hacia un país que reduce, reutiliza y recicla el 100% de los residuos que genera. En línea con este propósito, continuamos impulsando junto a Kyklos el Programa de Cultura Ambiental para educadores de diversos colegios inscritos, impactando a más de 6.000 personas. Este programa tiene por objetivo entregar contenido educativo en torno al reciclaje principalmente de botellas PET y proponer desafíos concretos para profesores, alumnos y sus familias.",
+       "semantic_tags": ["sustentabilidad", "educación_ambiental", "reciclaje", "programas_corporativos", "responsabilidad_social", "Cultura Ambiental", "Kyklos"],
+       "context_type": "programas_ambientales",
+        "keywords": ["Chile Sin Basura", "reciclaje botellas", "educadores", "colegios", "desafíos educativos", "familias", "contenido educativo ambiental"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0036",
         "text": "Apoyo solidario: Durante el 2023, lanzamos la séptima versión de la Política de Aportes a la Comunidad: Donaciones y Auspicios Solidarios, con el propósito de robustecer nuestro proceso de aportes a la comunidad de manera coherente con el propósito, principios y valores de la Compañía, cumpliendo a su vez, con la normativa vigente en cada país y con lo establecido en Código de Conducta en los Negocios de la Compañía y el Modelo de Prevención de Delitos de CCU S.A. y filiales. Nuestro compromiso es generar acciones que permitan a la Compañía acercarse y generar vínculos duraderos con las comunidades locales, generando confianza y valor mutuo. ",
+        "semantic_tags": ["responsabilidad_social", "aportes_comunidad", "solidaridad", "cumplimiento_normativo", "vinculos_locales"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["Política de Aportes a la Comunidad", "Donaciones", "Auspicios Solidarios", "vínculos con comunidades", "confianza", "valor mutuo"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0036",
         "text": "En ese sentido, la Compañía realiza aportes solidarios a la comunidad en diversos escenarios, en especial a quienes componen sus grupos de interés, aportando al desarrollo local con iniciativas relacionadas al arte y cultura, bienestar social, educación y formación, y medioambiente. Asimismo, apoya a las comunidades en contexto de emergencias y catástrofes naturales, a través de la contribución directa a las instituciones y entidades que prestan apoyo a las comunidades en dichas circunstancias. Los aportes se clasifican en Donaciones en dinero, Donaciones en productos, Donaciones en producto en contexto de emergencias, y Auspicios Solidarios. Para el caso de las Donaciones en dinero, existe el Comité de Donaciones como órgano de gobernanza que revisa el plan de aportes antes de ser presentado al Directorio y evalúa los proyectos, velando para que estos se encuadren en lo establecido en la Política y en la normativa tributaria aplicable.",
+        "semantic_tags": ["responsabilidad_social", "aportes_comunidad", "solidaridad", "gestión_emergencias", "cultura", "bienestar_social"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["aportes solidarios", "desarrollo local", "arte y cultura", "educación y formación", "medioambiente", "donaciones en dinero", "donaciones en productos", "donaciones en emergencias", "Auspicios Solidarios", "Comité de Donaciones", "gobernanza de aportes"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0037",
         "text": "En 2023, la Compañía colaboró con más de 350 instituciones, reforestando y mejorando áreas verdes, incentivando el deporte, apoyando a familias damnificadas de incendios o emergencias climáticas, disponiendo tutorías y becas para estudiantes de 4º medio, más campañas 1+1 con diversas fundaciones, entre ellas Teletón.. Adicionalmente, donamos aproximadamente 180.000 litros en situaciones de emergencias, a bomberos, juntas de vecinos y organizaciones sociales de Chile, principalmente en la Región Metropolitana de Santiago, Región del Libertador General Bernardo O’Higgins, Región del Maule, Región de La Araucanía y Región de Antofagasta.",
+        "semantic_tags": ["responsabilidad_social", "aportes_comunidad", "solidaridad", "medioambiente", "educación", "gestión_emergencias", "deporte"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["colaboración con instituciones", "reforestación", "mejora áreas verdes", "incentivo al deporte", "apoyo a familias damnificadas", "tutorías y becas", "campañas 1+1", "donación de agua", "emergencias climáticas", "regiones de impacto"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0037",
         "text": "Gestión de emisiones y cambio climático: Medimos nuestra Huella de Carbono CCU, la cual considera un inventario de las emisiones en Alcances 1 y 2. Cada una de las instalaciones industriales y Centros de Distribución deben reportar la información necesaria para estimar sus emisiones directas e indirectas de forma mensual a través de esta herramienta corporativa. En línea con el objetivo corporativo, las instalaciones deben gestionar sus emisiones alcance 1 y alcance 2 por medio de la eficiencia de procesos productivos, fortaleciendo parámetros de desempeño ambiental en la renovación de tecnología y materialización de proyectos específicos. Comparado en base a 2010, en 2023 la Compañía evitó emitir 137.520 toneladas de CO2 eq de acuerdo a la metodología Business As Usual (“BAU”), considerando los alcances 1 y 2. Esta disminución se alcanzó gracias a la incorporación de tecnología más eficiente en los procesos productivos, uso de energías renovables y proyectos específicos implementados.",
+        "semantic_tags": ["sustentabilidad", "medioambiente", "emisiones", "cambio_climático", "energías_renovables", "eficiencia_energética"],
+        "context_type": "gestión_ambiental",
+        "keywords": ["huella de carbono", "alcance 1 y 2", "inventario emisiones", "eficiencia procesos productivos", "renovación tecnológica", "proyectos específicos", "reducción CO2", "energías renovables"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1506,11 +1554,3 @@
     }
 ]
 }
-
-
-
-
-
-
-
-
