@@ -1017,7 +1017,6 @@
         "context_type": "proyectos_medioambientales",
         "keywords": ["ISO 14001", "ISO 50001", "certificación energética", "Código Nacional de Sustentabilidad de Vinos", "procesos sustentables", "plantas industriales certificadas", "centros de distribución"],
         "relevance_score": 0.95
-}
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1473,13 +1472,19 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0064",
         "text": "Programa Líderes CCU Programa corporativo dirigido a todos los líderes CCU con equipo a cargo, con el objetivo de promover los Roles de Liderazgo de CCU. El objetivo del Programa de Liderazgo 2023 fue potenciar competencias de gestión del cambio. Considerando el contexto organizacional y los proyectos estratégicos que enfrenta la Compañía, se abordaron herramientas prácticas para liderar en entornos cambiantes y promover conductas de empoderamiento e innovación al interior de los equipos. Desde los resultados obtenidos en la encuesta de satisfacción, éstos evidencian que abordar esta temática en el Programa, impactó de forma positiva su gestión actual y futura. En la misma línea, consideran atingente el generar espacios de trabajo sobre estas temáticas dados los desafíos actuales de la Compañía. De esta manera, los líderes refieren poder adoptar los cambios con mayor rapidez, como también impulsar los componentes actitudinales de sus equipos. Así también, los líderes reconocen que el cambio es una variable permanente en la Compañía, por lo que valoran el proceso formativo implementado con un 93% de satisfacción. En Chile el programa contó con la participación de 734 líderes, equivalente a un 93% del universo elegible.",
-
+        "semantic_tags": ["formación_liderazgo", "gestión_del_cambio", "empoderamiento", "innovación_equipo", "satisfacción_programa"],
+        "context_type": "desarrollo_organizacional_y_liderazgo",
+        "keywords": ["Programa_Líderes_CCU", "Roles_de_Liderazgo", "gestión_del_cambio", "herramientas_prácticas", "empoderamiento", "innovación", "encuesta_satisfacción", "Chile", "734_líderes", "93_por_ciento_participación"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0065",
         "text": "En la misma línea, consideran atingente el generar espacios de trabajo sobre estas temáticas dados los desafíos actuales de la Compañía. De esta manera, los líderes refieren poder adoptar los cambios con mayor rapidez, como también impulsar los componentes actitudinales de sus equipos. Así también, los líderes reconocen que el cambio es una variable permanente en la Compañía, por lo que valoran el proceso formativo implementado con un 93% de satisfacción. En Chile el programa contó con la participación de 734 líderes, equivalente a un 93% del universo elegible.",
-
+        "semantic_tags": ["gestión_del_cambio", "formación_liderazgo", "adaptabilidad", "actitudes_equipo", "satisfacción_programa"],
+        "context_type": "desarrollo_organizacional_y_liderazgo",
+        "keywords": ["espacios_de_trabajo", "líderes_CCU", "cambio_organizacional", "componentes_actitudinales", "formación", "93_por_ciento_satisfacción", "Chile", "734_líderes", "universo_elegible"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1491,124 +1496,185 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0066",
         "text": "Programa de Formación Logística Programa dirigido a la Operación Logística, que tiene por objetivo habilitar y nivelar competencias digitales. A través de la formación en “Alfabetización Digital”, el 2023 se capacitó a trabajadores de la Operación Logística para cubrir la brecha en el manejo de software y equipos computacionales, lo que permita afrontar los desafíos de implementación de nuevas tecnologías. Los procesos de administración y operación logística son sostenidos actualmente desde infraestructuras en línea, junto con ello los centros de distribución de mayor producción utilizan sistemas y herramientas digitales como parte de ejecución de las tareas de los operadores, por ende, generar una adherencia progresiva respecto a la incorporación de tecnología, permite impactar sostenidamente en la producción de los centros de distribución al eficientar la cadena online de almacenamiento y también los procesos de inventario. También, refuerza el mejoramiento de la experiencia laboral por medio de la generación de mayor conocimiento respecto al uso de recursos tecnológicos para efectuar el trabajo. En Chile, este proceso tuvo una participación del 78%.",
-
+        "semantic_tags": ["talento_joven", "formación_profesional", "experiencia_inmersiva", "desarrollo_competencias", "promoción_interna"],
+        "context_type": "gestión_talento_y_desarrollo",
+        "keywords": ["Programa_Jóvenes_Profesionales", "CCU", "formación", "presentaciones_efectivas", "gestión_de_proyectos", "empoderamiento", "adaptabilidad", "procesos_operacionales", "visión_estratégica", "promoción_liderazgo", "88_por_ciento_participación"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0067",
         "text": "Malla de Formación Ventas Programa de formación para la Fuerza de Ventas, con foco en la actualización de herramientas técnicas y habilidades comerciales. El objetivo del Programa de Formación de Ventas, es entrenar en habilidades claves para la ejecución del Vendedor, las cuales se desarrollan a través de la plataforma “Closelly”, con cápsulas de auto instrucción que abordan conocimientos técnicos. Adicional a esta formación de auto instrucción, se capacitó a la fuerza de ventas a nivel nacional en “Manejo de Objeciones”, potenciando habilidades relacionales en el manejo de clientes complejos. Actualmente uno de las principales oportunidades para generar ventaja competitiva en el plano comercial del canal tradicional se sitúa la generación de relaciones sustentables con nuestros clientes, por ello, el reforzamiento de competencias comunicacionales y de venta efectiva, genera el desarrollo de un mayor repertorio conductual y actitudinal ante escenarios complejos frente a un cliente. De esta manera, el impacto se asocia a una mejora en la performance del vendedor del canal tradicional en función del cumplimiento de sus metas y en las posibilidades de agregar nuevas opciones de venta según las recomendaciones del portafolio obtenidas desde del soporte tecnológico. En Chile, esta capacitación tuvo una participación del 67% de los vendedores.",
-
+        "semantic_tags": ["formación_comercial", "habilidades_ventas", "auto_instrucción", "manejo_de_objeciones", "relaciones_clientes", "competencias_comunicacionales"],
+        "context_type": "capacitación_comercial_y_desarrollo_de_ventas",
+        "keywords": ["Malla_de_Formación_Ventas", "Fuerza_de_Ventas", "Closelly", "auto_instrucción", "manejo_de_objeciones", "canal_tradicional", "relaciones_sustentables", "venta_efectiva", "performance_vendedor", "portafolio", "soporte_tecnológico", "Chile", "67_por_ciento_participación"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0067",
         "text": "Calidad de vida Nuestras políticas y beneficios se orientan al equilibrio entre la dimensión laboral y personal de los trabajadores, además de una vida saludable y de autocuidado con foco en el consumo responsable. Contamos con una corporación privada sin fines de lucro, que otorga cobertura total a los siniestros por accidentes laborales y desarrolla programas de prevención de riesgos para la organización. Todos los trabajadores tienen libre acceso a la información proporcionada por esta institución y pueden encontrar material de capacitación, fichas de seguridad, e-learning de temas específicos, normativas, protocolos de salud ocupacional, señaléticas, formularios de inspecciones, entre otros.",
-  
+        "semantic_tags": ["calidad_de_vida", "equilibrio_laboral_personal", "prevención_riesgos", "salud_ocupacional", "consumo_responsable"],
+        "context_type": "bienestar_laboral_y_seguridad",
+        "keywords": ["políticas_y_beneficios", "vida_saludable", "autocuidado", "accidentes_laborales", "corporación_privada", "prevención_de_riesgos", "material_capacitación", "fichas_de_seguridad", "e-learning", "protocolos_salud_ocupacional"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0067",
         "text": " La información proporcionada por el trabajador es manejada de forma confidencial, respaldada por los reglamentos internos. Además, la información que recibe el servicio de salud es resguardada por políticas y normativas de confidencialidad entre las partes. Durante el año 2023 impulsamos iniciativas ligadas a nuestro Programa de Calidad de Vida denominado “Vivamos Bien”, que reúne los beneficios y actividades que contribuyen a mejorar la calidad de vida en tres ámbitos: 1) Bienestar laboral: Instancias de integración, beneficios de protección y servicios que se entregan en el día a día laboral; 2) Tiempo libre y familia: Actividades y beneficios que buscan la conciliación de trabajo y familia, orientadas a compartir y disfrutar fuera del horario laboral; y 3) Vida sana: Iniciativas que promueven el autocuidado, alimentación saludable y actividad física.",
-
+        "semantic_tags": ["calidad_de_vida", "confidencialidad", "bienestar_laboral", "conciliación_familia_trabajo", "vida_sana"], 
+        "context_type": "bienestar_laboral_y_seguridad", 
+        "keywords": ["confidencialidad_datos", "reglamentos_internos", "servicio_de_salud", "Vivamos_Bien", "beneficios_laborales", "integración", "protección_laboral", "tiempo_libre", "familia", "autocuidado", "alimentación_saludable", "actividad_física"], 
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0068",
         "text": "Política de subcontratación: En CCU contamos con un procedimiento respecto que formaliza nuestras acciones de subcontratación. Este documento establece las bases para la administración de los servicios externos de una empresa contratista o subcontratista y las exigencias para la autorización del ingreso, permanencia, y ejecución de los trabajos a desarrollar en cualquiera de las dependencias de CCU durante la vigencia de un contrato prestación de servicios, orden de compra o nota de pedido. Pone énfasis en acreditar la documentación de seguridad y salud ocupacional para autorizar el ingreso a las instalaciones, y en verificar el cumplimiento de las obligaciones laborales y previsionales de los trabajadores contratistas.",
-
+        "semantic_tags": ["subcontratación", "servicios_externos", "seguridad_laboral", "salud_ocupacional", "cumplimiento_laboral"],
+        "context_type": "gestión_operacional_y_normativa",
+        "keywords": ["política_subcontratación", "procedimiento_formal", "contratistas", "subcontratistas", "autorización_ingreso", "orden_de_compra", "nota_de_pedido", "documentación_seguridad", "salud_ocupacional", "obligaciones_laborales", "obligaciones_previsionales"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": " Gestión de Desempeño CCU fomenta el desarrollo personal y profesional de los trabajadores, y para ello se apoya en el proceso de Gestión del Desempeño. Se trata de un ciclo anual que busca alinear los principios del SER CCU y los objetivos de los trabajadores y la Compañía, además de contribuir a la mejora permanente de los resultados y el fortalecimiento de la cultura SER CCU. Este proceso genera una instancia formal de diálogo entre líder y trabajador respecto de las expectativas, los resultados y desafíos que se busca desarrollar; permite medir el rendimiento de los trabajadores en relación con los objetivos y principios, e identificar fortalezas y oportunidades de mejora para gestionar acciones de desarrollo futuras. El proceso, que se gestiona en línea, garantiza el resguardo de la confidencialidad y transparencia de la información, donde además el trabajador tiene acceso a una copia de su evaluación como respaldo. Para ser parte del proceso, el trabajador debe cumplir con el requisito de tener una antigüedad mínima de seis meses en la Compañía, con contrato de plazo indefinido.",
-
+        "semantic_tags": ["gestión_desempeño", "desarrollo_personal", "evaluación_laboral", "cultura_SER_CCU", "confidencialidad"],
+        "context_type": "gestión_del_talento_y_desempeño",
+        "keywords": ["Gestión_de_Desempeño", "SER_CCU", "ciclo_anual", "objetivos_laborales", "diálogo_líder_trabajador", "rendimiento", "fortalezas", "oportunidades_de_mejora", "evaluación_en_línea", "confidencialidad", "antigüedad", "contrato_indefinido"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": "Evaluación Ascendente La Compañía cuenta con un proceso de evaluación ascendente, herramienta de evaluación de liderazgo el que permite que los trabajadores evalúen a su jefatura directa e identifiquen las oportunidades de mejora a nivel organizacional e individual. simismo, potencia la generación de identidad y cultura organizacional a través de los Roles del SER CCU. En 2023, la Compañía evaluó a un total de 1.010 jefes, quienes recibieron un reporte individual con su Índice Global de Liderazgo (IGL), que les permitió identificar fortalezas, oportunidades de mejora y generar planes para su desarrollo. Esta evaluación tuvo una tasa de participación de un 96%, considerando respuestas de 5.978 trabajadores.",
-
+        "semantic_tags": ["evaluación_ascendente", "liderazgo", "cultura_organizacional", "SER_CCU", "Índice_Global_de_Liderazgo"],
+        "context_type": "gestión_del_talento_y_desempeño",
+        "keywords": ["evaluación_ascendente", "jefatura_directa", "oportunidades_de_mejora", "identidad_organizacional", "Roles_SER_CCU", "IGL", "fortalezas", "planes_de_desarrollo", "96_por_ciento_participación", "1.010_jefes", "5.978_trabajadores"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": "Reclutamiento y Selección Nuestro proceso de reclutamiento y selección busca identificar, atraer y seleccionar al mejor talento disponible. CCU procura que nuestro proceso de reclutamiento y selección esté alineado con los objetivos estratégicos y principios del SER CCU, atrayendo y seleccionando, a través de una estrategia de Marca Empleadora. Asimismo, la Política Corporativa de Derechos Humanos declara que CCU está en contra del trabajo infantil. Asimismo, junto con la Política de Diversidad e Inclusión, aseguran que los candidatos sean tratados con dignidad y respeto durante todo el proceso de reclutamiento, de manera de garantizar la igualdad de oportunidades. Para iniciar la selección, trabajamos de forma activa con las distintas instancias reclutadoras: universidades, institutos, colegios y liceos técnicos, municipalidades, portales digitales y redes sociales y, con nuestros trabajadores, a través de instancias de movilidad interna.",
- 
+        "semantic_tags": ["reclutamiento", "selección", "marca_empleadora", "diversidad_e_inclusión", "derechos_humanos"],
+        "context_type": "gestión_talento_y_adquisición",
+        "keywords": ["reclutamiento_y_selección", "talento", "SER_CCU", "marca_empleadora", "trabajo_infantil", "Política_Derechos_Humanos", "Política_Diversidad_e_Inclusión", "igualdad_oportunidades", "universidades", "institutos", "colegios", "liceos_técnicos", "municipalidades", "portales_digitales", "redes_sociales", "movilidad_interna"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0069",
         "text": "Adicionalmente, contamos con un programa para el desarrollo de experiencias laborales iniciales para estudiantes en práctica. Nuestra experiencia laboral es un aspecto reconocido y valorado, ya que permite generar un desarrollo de carrera en el largo plazo, con oportunidades dentro de Chile y en el extranjero. El amplio portafolio multicategoría de bebestibles, diversas unidades de negocio y marcas ofrecen una plataforma diversa para el crecimiento de cada profesional. Los procesos de selección son gestionados en plataformas en línea que dan soporte a las distintas etapas del proceso, desde la publicación, el reclutamiento hasta la selección de los candidatos.",
+        "semantic_tags": ["experiencias_laborales", "estudiantes_en_práctica", "desarrollo_de_carrera", "selección_en_línea", "portafolio_multicategoría"],
+        "context_type": "gestión_talento_y_adquisición",
+        "keywords": ["programa_prácticas", "experiencia_laboral", "desarrollo_profesional", "Chile", "extranjero", "bebestibles", "unidades_de_negocio", "marcas", "plataformas_en_línea", "reclutamiento", "selección"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0070",
         "text": "Todas las vacantes disponibles están alojadas en el portal Trabaja en CCU, que se encuentra disponible en: www.trabajaenccu.cl. La tasa de contratación en el total de la Compañía 2023 corresponde a un 6,53%, respecto del total de trabajadores con contrato indefinidos. De este porcentaje, un 39,2% corresponde a mujeres. La Compañía posee un Programa de Prácticas CCU, el cual forma alumnos en el ámbito operativo, técnico y profesional, reforzando habilidades para promover la empleabilidad futura. Durante el 2023, en Chile se incorporaron 541 estudiantes en práctica en las distintas áreas de negocio como Ventas, Marketing, Finanzas, Logística, Industrial, Recursos Humanos, entre otras. De este total, un 6% de los alumnos fueron contratados en las vacantes disponibles.",
+        "semantic_tags": ["vacantes", "contratación", "prácticas_profesionales", "empleabilidad", "diversidad_de_género"],
+        "context_type": "gestión_talento_y_adquisición",
+        "keywords": ["Trabaja_en_CCU", "portal_de_empleo", "tasa_de_contratación", "contrato_indefinido", "39.2_por_ciento_mujeres", "Programa_de_Prácticas_CCU", "habilidades_operativas", "empleabilidad_futura", "541_estudiantes", "Ventas", "Marketing", "Finanzas", "Logística", "Industrial", "Recursos_Humanos", "6_por_ciento_contratados"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "Movilidad y promoción interna CCU refleja su compromiso con el desarrollo laboral de sus trabajadores a través de los procesos de movilidad y promoción interna, siendo un aspecto estratégico en el Modelo de Gestión de Personas. Considerando el objetivo del cargo, funciones y alcance, en general, se abren opciones de un concurso interno. De esta forma, brindamos oportunidades de desarrollo y se posibilitan los movimientos y desarrollo profesional entre las distintas funciones y unidades de negocio. La publicación de los concursos se realiza de forma semanal a través de un correo interno donde se detallan las oportunidades internas y sus requisitos de postulación.",
+        "semantic_tags": ["movilidad_interna", "promoción_laboral", "desarrollo_profesional", "gestión_de_personas", "concursos_internos"],
+        "context_type": "gestión_talento_y_desarrollo",
+        "keywords": ["movilidad_y_promoción_interna", "desarrollo_laboral", "Modelo_de_Gestión_de_Personas", "concurso_interno", "funciones", "unidades_de_negocio", "correo_interno", "requisitos_de_postulación"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": " El postulante debe cumplir un mínimo de un año de antigüedad en el cargo actual y tener un buen desempeño. La Compañía define como “Promociones” todos los cambios de cargo con aumento de nivel jerárquico o cambio de función con aumento de remuneración. En 2023, un 7,7% de la dotación consolidada fue promovida a cargos de mayor responsabilidad. La tasa de rotación a nivel consolidado fue de un 14,1%, en el que 6,0% corresponden a renuncias voluntarias. Además, se generaron 1.270 vacantes de las cuales un 54,3% fueron cubiertas por candidatos internos. Adicionalmente, la Compañía tiene como objetivo el desarrollo de sus propios trabajadores,  en el que el 80% de los nombramientos de alta gerencia y gerencia sea cubierto internamente. De las vacantes para alta gerencia y gerencia, un 85,2% se realizó por movilidad interna.",
+        "semantic_tags": ["promoción_interna", "movilidad_laboral", "desempeño", "rotación", "alta_gerencia"],
+        "context_type": "gestión_talento_y_desarrollo",
+        "keywords": ["antigüedad", "buen_desempeño", "promociones", "nivel_jerárquico", "remuneración", "promovidos", "rotación", "6renuncias", "vacantes", "internos", "nombramientos", "movilidad_interna"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "Gestión de talento La Gerencia Corporativa de Recursos Humanos identifica y recoge antecedentes de las capacidades, conocimientos, condiciones, experiencias y visiones de sus trabajadores mediante procesos de Evaluación de Desempeño, Evaluación Ascendente y Comité de Desarrollo Ejecutivo para el caso de los ejecutivos principales de la Compañía. En esta última instancia, se revisaron los planes de desarrollo y de sucesión para la alta gerencia y gerencia en jornadas de trabajo junto con el Comité de Dirección. De esta forma, identificamos a potenciales sucesores del Gerente General y demás ejecutivos principales, para reemplazarlos oportunamente y traspasar sus funciones e información relevante, ante su ausencia imprevista, minimizando el impacto que ello tendría en la organización. La decisión de reemplazo la efectúa el Directorio caso a caso, para lo cual cuenta con una serie de antecedentes de los ejecutivos sobre su trayectoria, evaluación de desempeño, evaluación ascendente, planes de retiro y sucesión, entre otros antecedentes",
+        "semantic_tags": ["gestión_de_talento", "evaluación_desempeño", "evaluación_ascendente", "sucesión_liderazgo", "alta_gerencia"], "context_type": "gestión_talento_y_sucesión", "keywords": ["Gerencia_Corporativa_RRHH", "capacidades", "conocimientos", "evaluación_desempeño", "evaluación_ascendente", "Comité_Desarrollo_Ejecutivo", "Comité_de_Dirección", "sucesores", "Gerente_General", "reemplazo", "Directorio", "trayectoria", "planes_de_retiro", "planes_de_sucesión"], "relevance_score": 0.95
+        "semantic_tags": ["gestión_de_talento", "evaluación_desempeño", "evaluación_ascendente", "sucesión_liderazgo", "alta_gerencia"],
+        "context_type": "gestión_talento_y_sucesión",
+        "keywords": ["Gerencia_Corporativa_RRHH", "capacidades", "conocimientos", "evaluación_desempeño", "evaluación_ascendente", "Comité_Desarrollo_Ejecutivo", "Comité_de_Dirección", "sucesores", "Gerente_General", "reemplazo", "Directorio", "trayectoria", "planes_de_retiro", "planes_de_sucesión"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "Clima organizacional El clima organizacional refleja la percepción que los trabajadores tienen acerca de su ambiente laboral. En CCU medimos el clima anualmente a través de una encuesta dirigida a todos los trabajadores con un mínimo de seis meses de antigüedad, con contrato indefinido. La participación es voluntaria y los datos entregados por los trabajadores son tratados de forma confidencial. La encuesta es un cuestionario de autorreporte en que el trabajador señala su nivel de acuerdo con una serie de afirmaciones acerca de su ambiente de trabajo. Desde 2018 se utiliza el mismo modelo de Clima Organizacional, que recoge el Indicador Global de Clima (IGC) y 12 dimensiones del trabajo.",
+        "semantic_tags": ["clima_organizacional", "encuesta_laboral", "percepción_trabajadores", "confidencialidad", "Indicador_Global_de_Clima"],
+        "context_type": "cultura_y_ambiente_laboral",
+        "keywords": ["clima_organizacional", "ambiente_laboral", "encuesta_anual", "antigüedad", "contrato_indefinido", "participación_voluntaria", "cuestionario_autorreporte", "IGC", "12_dimensiones"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "El IGC engloba las actitudes del trabajador hacia la organización y da cuenta de un estado de bienestar y la intención de permanecer en ella. Incluye los siguientes elementos: Satisfacción con la organización; Identificación con la organización; Engagement/Compromiso; Intención de permanencia. En 2023, la encuesta Clima Organizacional alcanzó un 85% de satisfacción laboral a nivel consolidado, con una participación del 96% de los trabajadores elegibles de participar. En cada unidad de negocio se realizan bajadas de resultados globales y luego cada equipo debe revisar sus resultados y generar planes de acción para mantener los indicadores con buenos resultados y mejorar los más bajos. Los resultados de esta encuesta se encuentran disponibles en una plataforma que permite observar la evolución de los resultados a lo largo del tiempo, así como hacer seguimiento a los planes de acción establecidos.",
+        "semantic_tags": ["clima_organizacional", "satisfacción_laboral", "engagement", "intención_de_permanencia", "planes_de_acción"],
+        "context_type": "cultura_y_ambiente_laboral",
+        "keywords": ["IGC", "actitudes_trabajador", "bienestar", "satisfacción_organizacional", "identificación", "compromiso", "encuesta_clima", "85_por_ciento_satisfacción", "96_por_ciento_participación", "unidades_de_negocio", "resultados_globales", "seguimiento", "plataforma_resultados"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0072",
         "text": "Modelo de negocios: Sector Industrial, CCU es una empresa multicategoría regional de bebestibles, con operaciones en Chile, Argentina, Bolivia, Colombia, Paraguay y Uruguay. En consecuencia, participamos en numerosas categorías dentro de la industria de bebestibles, tanto en bebidas alcohólicas como no alcohólicas, siendo las más relevantes dentro de las primeras las categorías de cervezas, vino, pisco y sidra. Por su parte, las categorías más relevantes en las que participamos dentro del universo de bebidas no alcohólicas se encuentran bebidas gaseosas, aguas minerales y envasadas, néctares, bebidas energéticas, deportivas y bebidas en base a malta, entre otras. ",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0071",
         "text": "Competencia: De acuerdo a su estrategia de expansión regional y diversificación de categorías, CCU ha ido incrementando su presencia en los mercados donde realiza sus operaciones productivas y comerciales. En todos estos mercados, la política global de la Compañía consiste en desarrollar la multicategoría y trabajar para optimizar la calidad de sus productos y procesos de elaboración. Junto con ello, mantiene una atención directa e indirecta con sus clientes. La comercialización de sus productos está dirigida principalmente al comercio minorista, integrado por supermercados, restaurantes, almacenes y botillerías, entre otros.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0134",
         "text": "Competencia en el Segmento de operación Chile: El mercado de las cervezas en Chile se caracteriza por la presencia de una amplia gama de marcas de cervezas locales e internacionales. Nuestro principal competidor en el negocio de las cervezas es Cervecería Chile S.A., filial de ABI. Sus principales marcas de cervezas en el mercado chileno son Becker, Corona, Báltica, Stella Artois y Budweiser. Tras la ejecución de un acuerdo de distribución en noviembre de 2020, Cervecería Chile S.A. distribuye sus productos a través de la red de distribución de Embotelladora Andina S.A. (“Embotelladora Andina”) y Coca-Cola Embonor S.A. (“Embonor”), ambas empresas son las principales licenciatarias y embotelladoras de los productos de The CocaCola Company en Chile. Antes de noviembre de 2020, Cervecería Chile S.A. distribuía sus productos a través de la distribución directa y de mayoristas. Otro actor relevante en el mercado de las cervezas en Chile es Viña Concha y Toro S.A. (“Concha y Toro”), que importa Miller Genuine Draft y Estrella Damm desde 2018.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0134",
         "text": "Concha y Toro también posee una participación mayoritaria en Southern Brewing Company, fabricante de la cerveza Kross. Finalmente, en el mercado de las cervezas competimos también con un amplio número de cervecerías artesanales y distribuidores e importadores de cervezas internacionales. En las categorías de bebidas no alcohólicas, nuestros principales competidores son las compañías que producen, embotellan y distribuyen bebidas no alcohólicas en Chile bajo las licencias de The CocaCola Company y sus coligadas. Así, los dos principales actores en el negocio de bebidas carbonatadas en Chile son Embotelladora Andina y Embonor. Nuestro principal competidor en el negocio de aguas minerales, purificada y saborizada es Vital Aguas S.A., propiedad de Embotelladora Andina y Embonor. Nuestro principal competidor en el negocio de néctares, jugos, té helado y bebidas deportivas es Vital Jugos S.A., perteneciente a Embotelladora Andina y Embonor S.A. El mercado de licores en Chile es caracterizado por una amplia gama de productos de producción local e importados.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0135",
         "text": "Nuestro mayor competidor es Cooperativa Agrícola Pisquera Elqui Limitada (“Capel”), que produce pisco localmente e importa otros licores. Capel cuenta con plantas de producción ubicadas en las regiones de Atacama y Coquimbo, en el norte de Chile, y distribuye sus productos en todo el país. Desde mediados de 2019, Embotelladora Andina y Embonor comenzaron a distribuir los productos de Capel. Otro competidor relevante es Diageo Chile Limitada, que importa licores premium como whisky Johnnie Walker y vodka Smirnoff, entre otros. A mediados de 2018, los productos de Diageo Chile Limitada comenzaron a ser distribuidos por Embotelladora Andina y Embonor.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0135",
         "text": "Por último, competimos con otros importadores de menor tamaño de productos internacionales, así como productores locales de pisco y otros licores. Competencia en el Segmento de operación Negocios Internacionales En cerveza, competimos principalmente en Argentina con Cervecería y Maltería Quilmes S.A.I.C.A. y G, en Paraguay con Cervecería Paraguaya S.A., en Uruguay con Fábricas Nacionales de Cerveza S.A., en Bolivia con Cervecería Boliviana Nacional S.A. y en Colombia con Bavaria & Cia S.C.A., todas ellas filiales de ABI. Como resultado de su posición dominante y gran tamaño en estos países, estás compañías se benefician de economías de escala en la producción y la distribución de cervezas.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0135",
         "text": "En bebidas analcohólicas competimos principalmente con Paraguay Refrescos S.A., en Paraguay, con Montevideo Refrescos S.R.L. en Uruguay, y en Bolivia con Embotelladoras Bolivianas Unidas, EMBOL S.A., todas ellas, embotelladoras de los productos de The Coca-Cola Company. Competencia en el Segmento de operación Vinos La industria vitivinícola, tanto en el mercado doméstico como en el de exportación, se caracteriza por tener un amplio número de participantes de diversas escalas de negocios. Así, los principales competidores de VSPT Wine Group en el mercado doméstico chileno son Viña Concha y Toro S.A. y Viña Santa Rita S.A. (“Santa Rita”). Tras la ejecución de un acuerdo de distribución en noviembre de 2021, Santa Rita distribuye sus productos a través de la red de distribución de Embotelladora Andina y Embonor. Otras viñas relevantes en el mercado doméstico chileno son, Bodegas y Viñedos Santa Carolina S.A., Viña Undurraga S.A., Viña Cousiño Macul S.A. y Viña Montes.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0136",
         "text": " A nivel internacional, VSPT Wine Group compite con los productores chilenos y con los productores de vino de otros países en el mundo. Marco Normativo: CCU S.A., en su carácter de sociedad anónima abierta, se encuentra regulada por la Ley N° 18.045 sobre Mercado de Valores, la Ley N° 18.046 sobre Sociedades Anónimas y su Reglamento contenido en el Decreto Supremo N° 702 del Ministerio de Hacienda de 2011 y la normativa dictada al efecto por la CMF. Asimismo, CCU S.A., en su calidad de emisor de ADRs, que actualmente se transan en el NYSE, se encuentra sujeta, en lo que fuere aplicable, al Securities Exchange Act de 1934, SOX de 2002 y a la normativa dictada al efecto por la SEC y el NYSE.",
+
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1862,6 +1928,7 @@
     }
 ]
 }
+
 
 
 
