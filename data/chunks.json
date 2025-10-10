@@ -914,51 +914,91 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0042",
         "text": "Como Compañía, trabajamos de forma activa y aportando desde la mirada de la industria en la regulación que afecta a nuestro sector, a través de la participación en diferentes gremios como AB Chile, Asipla, ACECHI, Vinos de Chile, Pisco Chile y Sofofa, donde se han tratado temas relevantes y contingentes tales como la Actualización del Reglamento Sanitario de Alimentos - Decreto 977, en el desarrollo del Anteproyecto del Reglamento de la Ley de Plásticos de un solo uso, y aquel que regula el contacto de los alimentos con plástico reciclados, así como la nuevas normas de etiquetado y publicidad de alcoholes, entre otros temas. La Compañía, a través de la gestión operacional de sus residuos y la participación en diversas iniciativas, promueve un uso sostenible de los recursos, disminuyendo sus impactos y fomentando una Economía Circular.",
+        "semantic_tags": ["regulación_industrial", "gremios", "sostenibilidad", "economía_circular", "residuos"],
+        "context_type": "participación_industrial",
+        "keywords": ["AB Chile", "Asipla", "ACECHI", "Vinos de Chile", "Pisco Chile", "Sofofa", "reglamento sanitario alimentos", "ley plásticos de un solo uso", "plástico reciclado", "etiquetado alcohol", "publicidad alcohol", "uso sostenible recursos", "gestión residuos"],
+        "relevance_score": 0.94
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0042",
         "text": "Pacto Chileno de los Plásticos CCU durante el 2023 mantuvo un rol activo con el Pacto Chileno de los Plásticos, iniciativa impulsada por el Ministerio de Medio Ambiente, Ministerio de Salud y Fundación Chile, con el fin de avanzar en un adecuado uso de envases y embalajes plásticos fomentando una Economía más Circular, específicamente se trabajó en la Actualización del Reglamento Sanitario de Alimentos para envases plásticos reciclados en contacto con alimentos, garantizando la inocuidad de los mismos. La instancia, que está integrada por más de 50 organizaciones, busca incorporar a todos los actores involucrados en la cadena de valor de los plásticos para compartir una visión común y guiar sus estrategias de acción, estableciendo los requisitos y certificaciones adecuadas para ello.",
+        "semantic_tags": ["plásticos", "economía_circular", "regulación_industrial", "inocuidad_alimentos", "colaboración_industrial"],
+        "context_type": "participación_industrial",
+        "keywords": ["Pacto Chileno de los Plásticos", "uso responsable envases plásticos", "embalajes reciclables", "actualización reglamento sanitario", "envases plásticos reciclados", "inocuidad alimentos", "cadena de valor plásticos", "certificaciones plásticos"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0042",
         "text": "Sello #ElijoReciclar CCU integra el Acuerdo de Producción Limpia (“APL”), suscrito por diversas compañías y liderado por la Sociedad de Fomento Fabril (“SOFOFA”). El sello #ElijoReciclar permite identificar productos que cumplen con los siguientes requisitos: (i) al menos un 80% del peso del envase esté confeccionado con materiales reciclables y (ii) la existencia de una demanda de la industria del reciclaje para procesar estos residuos. A fines de 2023, 325 productos CCU están certificados para utilizar el sello #ElijoReciclar. ",
+        "semantic_tags": ["reciclaje", "economía_circular", "certificación_ambiental", "producción_limpia", "envases_reciclables"],
+        "context_type": "gestión_residuos",
+        "keywords": ["Sello #ElijoReciclar", "Acuerdo de Producción Limpia", "SOFOFA", "material reciclable", "demanda industria reciclaje", "certificación productos", "productos CCU certificados"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0043",
         "text": "Chile Sin Basura 2040 Integramos desde 2019 esta iniciativa liderada por Kyklos, que busca reducir, reutilizar y reciclar un 100% de los desechos que se generan en Chile. En 2023, y con el fin de incentivar y reforzar en las personas una cultura en torno a los hábitos de reciclaje, se lanzó la cuarta versión del concurso que convocó a personas de todo Chile para crear una obra únicamente con residuos. Los primeros lugares de las cuatro categorías exhibieron su obra en la exposición #ReciclarEsUnArte en la Sala de Arte CCU Foco Curatorial.",
+        "semantic_tags": ["reciclaje", "educación_ambiental", "programas_comunitarios", "concursos", "cultura_circular"],
+        "context_type": "programas_comunitarios",
+        "keywords": ["Chile Sin Basura 2040", "Kyklos", "hábitos de reciclaje", "concurso creativo", "residuos", "exposición #ReciclarEsUnArte", "Sala de Arte CCU Foco Curatorial"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0044",
         "text": "Con el compromiso de generar la verdadera circularidad del plástico, nace “CirCCUlar”, una planta de reciclaje Botella-Botella que permitirá darle una nueva vida a las botellas de plásticos y hacer realidad la Economía Circular de este material. CirCCUlar es una planta de producción de resina reciclada de PET, la cual se construye en la actual Nueva Planta Embotelladora CCU Renca, donde la inversión aproximada alcanza los USD 42 millones, con una capacidad máxima de producción de 18.000 toneladas al año, lo que permitirá darles nueva vida a 870 millones de botellas de plásticos. Se proyecta su puesta en marcha dentro del año 2024. La resina reciclada (rPET) es un producto con las mismas características del PET virgen, pero siendo una alternativa más sustentable para la producción de nuevas botellas plásticas. Al reciclar el plástico ya utilizado, estamos reduciendo la cantidad de desechos plásticos que terminan en vertederos, rellenos sanitarios, y en diversos lugares, donde su mala disposición puede causar daños al medio ambiente.",
+        "semantic_tags": ["reciclaje", "economía_circular", "plástico", "sustentabilidad", "innovación"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["CirCCUlar", "reciclaje Botella-Botella", "resina reciclada PET", "producción sostenible", "reducción de desechos plásticos", "inversión ambiental", "Nueva Planta Embotelladora Renca"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0044",
         "text": "Dentro de los beneficios que trae CirCCUlar, es contribuir a mitigar el cambio climático a través de la disminución de emisiones, evitando la importación de resinas desde lugares lejanos. Con esta nueva planta, será reemplazada parte de la resina importada por resina reciclada en Chile, haciendo los procesos productivos más sustentables y alineados a la Estrategia de Sustentabilidad de CCU. CirCCUlar contará con tecnología de punta, haciendo más eficiente y sustentable los procesos, utilizando energía renovable certificada a partir del actual contrato de suministro eléctrico con la empresa Colbún. Estas nuevas instalaciones también tienen beneficios económicos y sociales, ya que apoyaremos la economía local al crear 50 nuevos puestos de trabajos locales en una alianza con la comuna de Renca.",
+        "semantic_tags": ["reciclaje", "economía_circular", "sustentabilidad", "innovación", "impacto_social", "energía_renovable"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["CirCCUlar", "resina reciclada local", "reducción emisiones", "producción sustentable", "energía renovable Colbún", "empleo local", "beneficios sociales y económicos"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0044",
         "text": "Además, fomentaremos la industria del reciclaje Agua: Gestión Hídrica Nuestra preocupación por el recurso hídrico no solo radica en la necesidad de este elemento para nuestras operaciones, sino con su disponibilidad para el consumo humano de las comunidades que conviven en los territorios donde estamos presentes. Como consecuencia de lo anterior, trabajamos en un continuo plan de eficiencias en todas nuestras operaciones y a lo largo de nuestra cadena de valor. En esta tarea, aplicamos sistemas de optimización continua y las mejores tecnologías y prácticas disponibles, de manera de reducir el consumo y cumplir con nuestras metas.",
+        "semantic_tags": ["reciclaje", "gestión_hídrica", "sustentabilidad", "eficiencia_operativa", "recursos_naturales"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["industria del reciclaje", "gestión del agua", "eficiencia hídrica", "optimización continua", "reducción de consumo", "tecnologías sostenibles", "cadena de valor"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0044",
         "text": "Durante el 2023 lanzamos nuestra primera Política de Gestión Hídrica, la cual detalla nuestros lineamientos en torno a la gestión de este recurso, buscando velar por el consumo responsable y eficiente del agua, todo ello en línea con el estricto cumplimiento normativo. En todos los puntos de captación de aguas subterráneas donde operamos se han instalado equipos de medición de niveles de agua, con registros que se informan de manera periódica. Estas mediciones han permitido monitorear la sustentabilidad del suministro y actuar en consecuencia con planes de acción específicos. Contamos con un indicador de consumo de agua relacionado con la intensidad de su uso a nivel industrial (hl de agua captada/hl producido). En 2023 se mantuvo el monitoreo de la disponibilidad hídrica en todas las instalaciones de la Compañía, con especial foco en aquellas ubicadas en zonas de escasez hídrica declaradas por la Dirección General de Aguas (“DGA”) del Ministerio de Obras Públicas.",
+        "semantic_tags": ["gestión_hídrica", "sustentabilidad", "monitoreo_recursos", "eficiencia_operativa", "cumplimiento_normativo"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["política de gestión hídrica", "consumo responsable de agua", "medición de niveles de agua", "monitoreo de disponibilidad hídrica", "zonas de escasez hídrica", "indicador de intensidad de uso", "planes de acción específicos"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0045",
         "text": "Buenas prácticas • Revisión y expansión de buenas prácticas específicas para reducir el consumo de agua a nivel regional. • En la planta Monte Patria se realizan mejoras en circuito cerrado de refrigeración de alambiques, lo que permitió funcionar entre marzo y septiembre de 2022 con un consumo reducido de agua proveniente de pozo y noria de la planta. Captación de agua La captación de agua registrada en 2023 de todas las instalaciones de CCU, alcanzó 8,76 millones de m3. Un 80% de la extracción proviene de pozos profundos, un 13% de red de agua potable, mientras que el 7% restante es de aguas superficiales, como canales y manantiales. La Compañía tiene identificado el volumen de agua utilizada en zonas de escasez(3), donde la extracción y consumo durante el año 2023 corresponde al 55,8% y 48%, respectivamente.",
+        "semantic_tags": ["gestión_hídrica", "eficiencia_agua", "buenas_prácticas", "sustentabilidad"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["reducción consumo de agua", "circuito cerrado refrigeración", "captación de agua", "pozos profundos", "red de agua potable", "aguas superficiales", "zonas de escasez hídrica"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0045",
         "text": "Además, el consumo de agua dulce de la Compañía correspondió a 6,80 millones de m3.  Aguas residuales, de procesos y productos CCU cuenta en sus operaciones productivas que lo requieran, con sistemas de tratamiento de los Residuos Industriales Líquidos (“RILES”), esto permite descargar el agua según las normativas ambientales vigentes. Estos sistemas de tratamiento son sometidos a frecuentes monitoreos por parte de los fiscalizadores, cumpliendo las normativas ambientales y regulaciones vigentes. Durante 2023, la Compañía descargó 4,72 millones de m3, donde un 58% correspondió a disposición en cursos superficiales de agua y un 42%, a redes de alcantarillado de empresas sanitarias.",
+        "semantic_tags": ["gestión_agua", "aguas_residuales", "cumplimiento_normativo", "sustentabilidad"],
+        "context_type": "proyectos_medioambientales",
+        "keywords": ["consumo de agua dulce", "RILES", "tratamiento de aguas residuales", "descarga controlada", "normativa ambiental", "cursos superficiales", "redes de alcantarillado"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1602,4 +1642,5 @@
     }
 ]
 }
+
 
