@@ -405,62 +405,105 @@
         "context_type": "corporativo",
         "keywords": ["quorum", "mayoria_absoluta", "voto_dirimente", "principios", "politicas", "buenas_practicas", "transversal"],
         "relevance_score": 0.9
-}
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0018",
         "text": " Dicho Código se complementa y debe interpretarse en conformidad a la legislación vigente, en particular la Ley N° 18.046 sobre Sociedades Anónimas y su Reglamento, la Ley N° 18.045 de Mercado de Valores y la Ley N° 20.393 sobre Responsabilidad Penal de las Personas Jurídicas, así como la regulación impartida por las entidades públicas correspondientes, en especial de la CMF, y la normativa, políticas y procedimientos internos de la Compañía, incluyendo los estatutos sociales vigentes y el Manual de Manejo de Información de Interés para el Mercado (“MMIIM”).",
+        "semantic_tags": ["gobernanza", "legislacion", "cumplimiento", "regulacion", "normativa_interna"],
+        "context_type": "corporativo",
+        "keywords": ["Ley_18_046", "Ley_18_045", "Ley_20_393", "CMF", "estatutos_sociales", "MMIIM", "procedimientos_internos"],
+        "relevance_score": 0.9
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0018",
         "text": "Conforme a lo establecido por la Ley N° 18.046 sobre Sociedades Anónimas, existe un Comité de Directores formado por tres miembros, uno de ellos independiente, entre cuyas principales funciones se encuentra examinar los informes de los auditores externos, el balance y los Estados Financieros Consolidados y examinar los antecedentes de operaciones entre partes relacionadas. Adicionalmente, y en cumplimiento a las regulaciones de la Securities Exchange Act de 1934, la Sarbanes Oxley Act de 2002 (“Ley SOX”) y de la normativa dictada al respecto por la Securities and Exchange Commission (“SEC”) y del NYSE, que es aplicable a CCU S.A. en tanto emisor de ADRs que se transan en el NYSE, existe un Comité de Auditoría. Este Comité está integrado por dos directores independientes, de acuerdo al criterio establecido en la citada normativa. Sus funciones dicen relación con la supervisión de los procesos de informes financieros y contables de CCU S.A. y de las auditorías de los Estados Financieros Consolidados.",
+        "semantic_tags": ["gobernanza", "comite_directores", "comite_auditoria", "auditoria_externa", "cumplimiento", "regulacion_internacional"],
+        "context_type": "corporativo",
+        "keywords": ["Ley_18_046", "Securities_Exchange_Act_1934", "Sarbanes_Oxley_Act_2002", "SEC", "NYSE", "ADRs", "auditores_externos", "estados_financieros", "operaciones_partes_relacionadas"],
+        "relevance_score": 0.91
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0018",
         "text": "Código de Conducta en los Negocios: Los principios éticos que orientan la actitud y conducta de cada uno de los integrantes de la Compañía se sustentan en las directrices establecidas en el Código de Conducta en los Negocios. Este Código establece un conjunto de criterios, normas, pautas y reglas que deben ser observados por todos los trabajadores de CCU.",
+        "semantic_tags": ["gobernanza", "codigo_conducta", "etica_corporativa", "trabajadores", "cumplimiento"],
+        "context_type": "corporativo",
+        "keywords": ["Código_de_Conducta_en_los_Negocios", "principios_éticos", "normas", "pautas", "reglas", "CCU", "trabajadores"],
+        "relevance_score": 0.92
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0019",
         "text": "Entre estos, se establecen los lineamientos de la Compañía para detectar y gestionar los conflictos de interés, el cual se complementa con el procedimiento de “Declaración Conflicto de Intereses”, que debe ser completada por todos los trabajadores al ingresar a CCU, que debe ser actualizada cada vez que esta situación cambie o al menos una vez al año. Las normas de este código, complementan, pero no reemplazan, las disposiciones contenidas en los respectivos Reglamentos Internos, Políticas y Procedimientos de la Compañía, los que son igualmente aplicables a todos los trabajadores.",
+        "semantic_tags": ["gobernanza", "conflictos_de_interes", "codigo_conducta", "trabajadores", "cumplimiento"],
+        "context_type": "corporativo",
+        "keywords": ["conflictos_de_interes", "Declaracion_Conflicto_de_Intereses", "trabajadores", "reglamentos_internos", "políticas", "procedimientos", "CCU"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0019",
         "text": "El Código de Conducta en los Negocios se encuentra disponible en www.ccu.cl. Sustentabilidad: CCU tiene tres Pilares Estratégicos, Rentabilidad, Crecimiento y Sustentabilidad. De este modo, integramos los desafíos de un desempeño económico, ambiental y social, los cuales están al centro de su actividad. Esto está alineado con la búsqueda continua de un balance adecuado de generación de valor a corto, mediano y largo plazo, teniendo en consideración el bienestar actual y futuro de todas las personas con las que interactúa, el cuidado del medio ambiente y el desarrollo de sus marcas. En esta línea, contamos con un Comité de Sustentabilidad, órgano de gobernanza que dirige y articula transversalmente todas las iniciativas del Modelo de Gestión de Sustentabilidad, el cual es presidido por la Gerencia de Asuntos Corporativos y Sustentabilidad y cuyo vicepresidente es el Contralor General.",
+        "semantic_tags": ["sustentabilidad", "gobernanza", "codigo_conducta", "pilares_estrategicos", "comite_sustentabilidad"],
+        "context_type": "corporativo",
+        "keywords": ["rentabilidad", "crecimiento", "sustentabilidad", "comite_sustentabilidad", "gerencia_asuntos_corporativos_y_sustentabilidad", "contralor_general", "balance_valor", "bienestar", "medio_ambiente", "desarrollo_marcas", "CCU"],
+        "relevance_score": 0.96
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0019",
         "text": "Este Comité cumple un rol clave en la Compañía, dirigiendo y articulando transversalmente iniciativas, analizando situaciones coyunturales, monitoreando nuevas regulaciones de la industria y llevando a la práctica la visión que tiene la sustentabilidad dentro de la estrategia de la Compañía. Grupos de interés: Para la Compañía es de suma importancia poder identificar nuestros grupos de interés y abordar sus principales intereses, así como el impacto directo de las actividades de la Compañía en dichos grupos. CCU identifica los temas de interés de sus distintas audiencias mediante estudios de materialidad. Esta información nos permite entender de manera más robusta nuestras temáticas de mayor impacto hacia nuestra operación y fuera de ella, impulsándonos a establecer agendas concretas de acción.",
+        "semantic_tags": ["sustentabilidad", "gobernanza", "grupos_de_interes", "materialidad", "estrategia_corporativa"],
+        "context_type": "corporativo",
+        "keywords": ["comite_sustentabilidad", "iniciativas_transversales", "regulaciones_industria", "vision_sustentabilidad", "grupos_de_interes", "estudios_materialidad", "impacto_operacion", "acciones_concretas", "CCU"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0020",
         "text": "Investigación y desarrollo: La innovación es un motor fundamental para desarrollar exitosamente nuestra estrategia en un entorno altamente competitivo. Si bien la innovación es parte de nuestro quehacer diario y está presente en todas las áreas de la Compañía, identificamos 3 tipos de innovacón que son cruciales para nuestra estrategia: innovación de productos, innovación disruptiva, e innovación incremental. El concepto de innovación disruptiva enmarca nuestra inversión en investigación y desarrollo, ya que a través de la tecnología y el uso de datos buscamos generar resultados de alto impacto ya sea para ingresar a nuevos mercados o para satisfacer nuevas necesidades de clientes y consumidores.",
+        "semantic_tags": ["innovacion", "investigacion_desarrollo", "estrategia_corporativa", "tecnologia", "datos"],
+        "context_type": "corporativo",
+        "keywords": ["innovacion_productos", "innovacion_disruptiva", "innovacion_incremental", "I+D", "alto_impacto", "nuevos_mercados", "nuevas_necesidades", "clientes", "consumidores"],
+        "relevance_score": 0.93
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0020",
         "text": "Para estos fines contamos con un fondo de innovación que nos permite asegurar el financiamiento de las iniciativas más prometedoras. La Compañía cuenta también con un equipo dedicado a desarrollar algoritmos de inteligencia artificial y minería de datos, aplicando tecnologías de frontera para resolver problemas complejos del negocio. Así, bajo este alero de innovación hemos desarrollado herramientas con foco en la optimización y eficiencia en el proceso de venta a nuestros clientes, y la ampliación de nuestras plataformas de comercio electrónico, con el fin de mejorar la experiencia de nuestros clientes y consumidores, destacando en esto último la plataforma B2B “Mi Carro”, orientada a nuestros clientes minoristas y “La Barra” nuestro canal de venta e-commerce, con un creciente foco regional. ",
+        "semantic_tags": ["innovacion", "inteligencia_artificial", "mineria_datos", "tecnologia", "transformacion_digital", "ecommerce", "optimización", "eficiencia"],
+        "context_type": "corporativo",
+        "keywords": ["fondo_innovacion", "algoritmos", "herramientas_tecnologicas", "proceso_venta", "clientes_minoristas", "B2B", "Mi Carro", "La Barra", "experiencia_cliente", "plataforma_comercio_electronico", "regionalizacion"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0020",
         "text": "También dentro del ámbito de la innovación, CCU desarrolla algunas iniciativas como INNPACTA, un programa de innovación abierta a nivel regional, que busca identificar respuestas para la industria de bebidas; y Despega, un programa que busca ideas propuestas por los trabajadores de CCU, para resolver desafíos del negocio. Personas: Nuestro Gobierno Corporativo está enmarcado dentro de nuestra identidad corporativa “SER CCU”, basados en nuestros tres Pilares Estratégicos (Rentabilidad, Crecimiento y Sustentabilidad), desde una plataforma de negocios que se sustenta en operar, con foco y sinergia,",
+        "semantic_tags": ["innovacion_abierta", "programas_innovacion", "INNPACTA", "Despega", "cultura_innovacion", "participacion_trabajadores", "gobierno_corporativo", "identidad_corporativa", "pilares_estrategicos", "ser_CCU"],
+        "context_type": "corporativo",
+        "keywords": ["innovacion_abierta", "soluciones_industria", "ideas_trabajadores", "desafios_negocio", "Rentabilidad", "Crecimiento", "Sustentabilidad", "plataforma_negocios", "foco", "sinergia"],
+        "relevance_score": 0.94 
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0021",
         "text": " una multicategoría de marcas de bebestibles de valor, y una ejecución de excelencia, a través de procesos a lo largo de toda la organización, y en especial, las funciones directivas estructuradas en forma de seis procesos directivos Plan Estratégico- que incluye la Gestión de Riesgos Estratégicos-, Modelo de Preferencias, Recursos Humanos, Excelencia Operacional, Presupuesto Operativo, Presupuesto de Inversiones). Considerando la cultura SER CCU, Procesos Directivos y mecanismos de gestión de personas facilitan el desarrollo de a natural diversidad sociocultural de nuestros trabajadores. Asimismo, contamos con una Política de Compensaciones.",
+        "semantic_tags": ["multicategoria", "marcas_bebestibles", "ejecucion_exelencia", "procesos_directivos", "Plan_Estrategico", "Gestion_Riesgos", "Modelo_Preferencias", "Recursos_Humanos", "Excelencia_Operacional", "Presupuesto_Operativo", "Presupuesto_Inversiones", "diversidad_sociocultural", "politica_compensaciones", "cultura_SER_CCU"],
+        "context_type": "corporativo",
+        "keywords": ["multicategoría", "marcas de valor", "ejecución de excelencia", "procesos organizacionales", "funciones directivas", "gestión de riesgos estratégicos", "recursos humanos", "presupuesto operativo", "presupuesto de inversiones", "diversidad sociocultural", "política de compensaciones"],
+        "relevance_score": 0.95
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0021",
         "text": "Directorio: Los ejecutivos principales de CCU S.A. registrados durante el 2022 y 2023 en la CMF son los siguientes: Patricio Jottar Nasrallah, es el Gerente General Compañía Cervecerías Unidas S.A.;  María Gabriela Ugalde Romagnoli, es la Gerente Corporativo de Recursos Humanos; Bárbara Wolff Gopfert, es la Gerente Asuntos Corporativos y Sustentabilidad; Antonio Cruz Stuven, es el Gerente de Planificación Estratégica y Nuevos Negocios; Domingo Jiménez Manterola, es el Gerente General Compañía Pisquera de Chile S.A.; Felipe Benavides Almarza, es el Gerente de Asuntos Legales; Felipe Dubernet Azócar, es el Gerente Corporativo de Administración y Finanzas; Julio Agustín Freyre, es el Gerente General Compañía Cervecerías Unidas Argentina S.A.; Juan Boned, es el Contralor General; Pedro Herane Aguado, es el Gerente General Viña San Pedro Tarapacá S.A.; Sebastián Landi, es el Gerente Negocios Internacionales; Juan Martín Vannicola, es el Gerente Corporativo de Procesos Industriales; Matías Bebin Subercaseaux es el Gerente General Cervecera Chile Limitada; Eduardo Ffrench-Davis Rodríguez, es el Gerente General Embotelladoras Chilenas Unidas S.A; Marisol Bravo Léniz, es la Gerente Asuntos Corporativos; Francisco Diharasarri Domínguez, es el Gerente General de CCU Chile; Martín Rodríguez Guiraldes, es el Gerente de Transformación.",
+        "semantic_tags": ["directorio", "ejecutivos_principales", "gerentes", "alta_direccion", "estructura_organizacional", "liderazgo", "CCU_SA"],
+        "context_type": "corporativo",
+        "keywords": ["directorio", "gerente general", "gerente corporativo", "recursos humanos", "sustentabilidad", "planificación estratégica", "nuevos negocios", "asuntos legales", "administración y finanzas", "negocios internacionales", "procesos industriales"],
+        "relevance_score": 0.97
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -1379,6 +1422,7 @@
     }
 ]
 }
+
 
 
 
