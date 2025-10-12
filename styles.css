@@ -57,6 +57,7 @@ h2 {
   aspect-ratio: 1 / 1;   /* square */
   height: auto;          /* let aspect-ratio control height */
   padding: 16px;
+  border-radius: 10px;  
 
 
   font-family: 'Montserrat', sans-serif;
@@ -90,6 +91,7 @@ h2 {
     aspect-ratio: 1 / 1;  /* stays square */
     height: auto;
     padding: 16px;
+    border-radius: 10px;  
   }
 }
 
