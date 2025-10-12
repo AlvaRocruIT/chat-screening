@@ -71,7 +71,6 @@ h2 {
   text-align: center;
   transition: background-color .25s ease, color .25s ease, border-color .25s ease;
   padding: 0;
-  border-radius: 10px;  
 }
 .button-container button:hover {
   background-color: #f2f2f2;
