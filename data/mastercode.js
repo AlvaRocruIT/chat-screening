@@ -11,17 +11,22 @@ if (!question) {
 
 console.log(`Processing ${chunks.length} chunks for question: "${question}"`);
 
-// 2️⃣ Normalización y tokenización
-function norm(s) {
-    return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+// 2️⃣ Normalización y tokenización considerando conceptos compuestos
+function tokenizeConcepts(text) {
+    // Normalizar (minúsculas, sin acentos)
+    let normalized = String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+    // Reemplazar espacios internos por guion bajo para conceptos compuestos
+    normalized = normalized.replace(/\s+/g, '_');
+
+    // Dividir en tokens por cualquier carácter que no sea letra, número o _
+    const tokens = normalized.split(/[^a-z0-9_]+/).filter(t => t.length > 0);
+
+    return { normalized, tokens };
 }
 
-function tokenize(s) {
-    return norm(s).split(/[^a-z0-9]+/).filter(t => t.length > 1);
-}
-
-const questionNorm = norm(question);
-const questionTokens = tokenize(question);
+// Uso
+const { normalized: questionNorm, tokens: questionTokens } = tokenizeConcepts(question);
 
 // 3️⃣ Stop words
 const stopWords = new Set([
@@ -84,18 +89,19 @@ function relevanceScore(chunk) {
     return Math.min(0.99, 0.90 + Math.min(score, 100)/100 * 0.09);
 }
 
-// 5️⃣ Ranking jerárquico con score original
+// 5️⃣ Ranking jerárquico con score original + relevance textual
 const rankedChunks = chunks.map(chunk => {
   const cScore = contextScore(chunk);
   const sScore = semanticScore(chunk);
   const kScore = keywordScore(chunk);
-  const baseScore = Number(chunk.score || 0); // ← score original del repo
-  return { chunk, cScore, sScore, kScore, baseScore };
+  const baseScore = Number(chunk.score || 0); // score original del repo
+  const rScore = relevanceScore(chunk);       // <<---- calcular aquí
+  return { chunk, cScore, sScore, kScore, baseScore, rScore };
 }).sort((a, b) => {
   if (b.cScore !== a.cScore) return b.cScore - a.cScore;
   if (b.sScore !== a.sScore) return b.sScore - a.sScore;
   if (b.kScore !== a.kScore) return b.kScore - a.kScore;
-  return b.baseScore - a.baseScore; // desempate con score real
+  return b.rScore - a.rScore; // desempate con relevance textual
 });
 
 // 6️⃣ Top 3
