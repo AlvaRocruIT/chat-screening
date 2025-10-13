@@ -1,35 +1,325 @@
 [
-  { "q": "¿Cuáles serán exactamente mis responsabilidades diarias?", "a": ""},
-  { "q": "¿Qué nivel de autonomía tendré en mis tareas?", "a": "Tendrás un líder de acuerdo a una estructura matricial, con quién definirán tus metas para el próximo período. Si bien tenemos políticas de buenas prácticas en liderazgo, fomentamos que cada líder despliegue su estilo según su lectura del contexto y equipo"},
-  { "q": "¿A quién reporto directamente?", "a": "Tu jefe directo será Max Verstappen, quién se desempeña como Sub-Gerente de Talento"},
-  { "q": "¿Qué expectativas existen para los primeros 3-6 meses?", "a": "Según el plan de onboarding, en los primeros 90 días deberás sacar adelante tus primeros quick wins. A partir de ellos, se medirá tu potencial de cara a los primeros 6 meses"},
-  { "q": "¿Cuál es el principal desafío del cargo?", "a": ""},
-  { "q": "¿Cuánto sería mi renta?", "a": "Por política corporativa, la convrsación de renta la podremos tener en la fase de entrevista, por lo que es altamente relevante tu previa preparación para dicha etapa"},
-  { "q": "¿Cómo está conformado el equipo de trabajo?", "a": "Si bien reportarás a una jefatura matricialmente, también participarás en células ágiles en proyectos colaborativos. Lo que te dará una visión más sistémica de tu entorno"},
-  { "q": "¿Qué rol juega mi posición dentro del equipo?", "a": "Tu función es altamente relevante para el equipo. Serás el primer contacto con las próximas generaciones de talento CCU"},
-  { "q": "¿Cuál es el estilo de liderazgo del jefe directo?", "a": "Fomentamos pautas generales de buenas prácticas en liderazgo, al mismo tiempo que brindamos espacio a cada líder para desarrollar al equipo según su lectura del contexto"},
-  { "q": "¿Qué nivel de colaboración interáreas existe?", "a": "Fomentamos espacios de camaradería, al mismo tiempo que proyectosa colaborativos entre profesionales de diversas áreas. ¡Seguramente te tocará participar en proyectos muy entretenidos!"},
-  { "q": "¿Cómo se gestionan los conflictos en el equipo?", "a": "Creemos que el espacio para resolver conflictos es parte del crecimiento de cada equipo. Sin embargo, orientamos planes de acción focalizados al detectar brechas en las evaluaciones de clima"},
-  { "q": "¿Qué oportunidades de formación o capacitación ofrece la empresa?", "a": "El equipo de formqación tiene programas y planes de desarrollo por equipo. La Academia CCU te ofrece ámplias posibilidades según tus intereses de desarrollo"},
-  { "q": "¿Cómo se evalúa el desempeño?", "a": "Anualmente, se realiza evaluación ascendente y descendente, donde fomentamos que cada evaluado proponga sus objetivos anuales, al mismo tiempo que existan conversaciones períodicas en torno al desempeño y búsqueda de mejora contínua"},
-  { "q": "¿Existe un plan de carrera o de crecimiento interno?", "a": "Sabemos que todos los individuos buscan horizontes diversos, por lo que no existe un plan único. Fomentamos que cada persona busque su espacio de desarrollo en nuestra organización"},
-  { "q": "¿Se promueve la movilidad entre áreas o proyectos?", "a": "Se promueve la movilidad y existe el espacio. Incluso entre diferentes Unidades de negocios dentro de nuestro marco corporativo"},
-  { "q": "¿Qué tan común es que alguien ascienda en este cargo?", "a": "Si pasas a la etapa siguiente, te podremos poner en contacto con casos de éxito que han sido promovidos en esta área"},
-  { "q": "¿Cuál es el rango salarial?", "a": "Por política corporativa, la conversación de renta será en la fase de entrevista, por lo que es altamente relevante tu previa preparación para dicha etapa"},
-  { "q": "¿Qué beneficios adicionales se incluyen (seguro, vacaciones, bonos)?", "a": "Tenemos políticas de compensaciones extrasalariales comúnes, por desempeño y antigüedad por encima del promedio del mercado"},
-  { "q": "¿Existe flexibilidad para negociar salario o beneficios?", "a": "Siempre dentro de la banda y de acuerdo a los méritos para tal efecto. La conversación salarial se sostendrá en etapas posteriores"},
-  { "q": "¿Se revisa el salario periódicamente?", "a": "Existe un equipo de relaciones laborales a cargo de equilibrar las bandas salariales de acuerdo a nuestras políticas internas"},
-  { "q": "¿Hay bonos ligados a desempeño o resultados?", "a": "Cada Unidad de Negocio es independiente en la definición de sus reconocimientos. Fomentamos el reconocimiento individual y colectivo"},
-  { "q": "¿El puesto es presencial, híbrido o remoto?", "a": "El desempeño de esta función será presencial"},
-  { "q": "¿Cuál es la carga horaria real del cargo?", "a": "De acuerdo a la legislación vigente en esta materia, con un máximo de 43 horas semanales distribuídas de lunes a viernes según el detalle que será entregado en la entrevista"},
-  { "q": "¿Se respeta el equilibrio entre trabajo y vida personal?", "a": "El equilibrio entre trabajo y vida personal es uno de los 4 pilares de nuestra medición de clima, que buscamos reforzar día a día"},
-  { "q": "¿Qué herramientas tecnológicas se utilizan?", "a": "Si bien existen herramientas comunes a nivel corporativo, cada unidad de negocio y equipo dispone de diversas herramientas según su contexto y necesidades"},
-  { "q": "¿Hay flexibilidad horaria?", "a": "No mucha"},
-  { "q": "¿Cómo contribuye este rol al propósito de la empresa?", "a": "Este rol"},
-  { "q": "¿Qué impacto tendría mi trabajo en clientes/usuarios?", "a": ""},
-  { "q": "¿Cuántas etapas tiene el proceso de reclutamiento?", "a": "Chat-screening; filtro curricular; entrevista cultural; evaluación técnica; evaluación final. Fomentamos el ingreso de nuestro talento en un período menor o igual a 35 días"},
-  { "q": "¿Quiénes participan en la decisión final?", "a": "Buscamos consensuar entre el líder de área, jefatura directa, equipo de personas y damos espacio para 1 o 2 stakeholders relevantes"},
-  { "q": "¿Cuánto tiempo tomará tener una respuesta?", "a": "Fomentamos el ingreso de nuestro talento en un período menor o igual a 35 días"},
-  { "q": "¿Cómo me puedo preparar mejor para las siguientes etapas?", "a": "Si bien existen fuentes abiertas en internet, fomentamos el uso de este chat-screening para aclarar todas tus dudas y contextualizarte de la mejor manera posible"},
-  { "q": "¿Qué buscan realmente en el candidato ideal?", "a": "Buscamos a la persona más proactiva, quien logre generar las mejores preguntas, demuestre una preparación sobresaliente y sobre todo entusiasmo y curiosidad por su próximo desafío"}
+  { "id": "faq-001",
+    "question": "¿Qué nivel de autonomía tendré en mis tareas?", "answer": "Tendrás un líder de acuerdo a una estructura matricial, con quién definirán tus metas para el próximo período. Si bien tenemos políticas de buenas prácticas en liderazgo, fomentamos que cada líder despliegue su estilo según su lectura del contexto y equipo",
+    "text": "Esta respuesta aborda el equilibrio entre autonomía y liderazgo. Explica que tendrás libertad para ejecutar tus tareas dentro de un marco definido junto a tu líder, promoviendo estilos de liderazgo adaptativos según el contexto del equipo.",
+    "semantic_tags": ["autonomía", "liderazgo", "estructura matricial", "trabajo en equipo", "estilo de liderazgo"],
+    "context_type": "faq",
+    "keywords": ["autonomía", "líder", "metas", "equipo", "estilo de liderazgo"],
+    "relevance_score": 0.95
+  },
+  { "id": "faq-002",
+    "question": "¿A quién reporto directamente?", "answer": "Tu jefe directo será Max Verstappen, quién se desempeña como Sub-Gerente de Talento", 
+    "text": "Esta respuesta indica la línea jerárquica directa del cargo. Especifica que el reporte será hacia Max Verstappen, quien ocupa el rol de Sub-Gerente de Talento, dejando claro el nivel de dependencia y supervisión.",
+    "semantic_tags": ["estructura jerárquica", "reportes directos", "liderazgo", "organigrama"],
+    "context_type": "faq",
+    "keywords": ["jefe directo", "Max Verstappen", "Sub-Gerente de Talento", "reportar"],
+    "relevance_score": 0.95
+  },
+  { "id": "faq-003",
+     "question": "¿Qué expectativas existen para los primeros 3-6 meses?", 
+     "answer": "Según el plan de onboarding, en los primeros 90 días deberás sacar adelante tus primeros quick wins. A partir de ellos, se medirá tu potencial de cara a los primeros 6 meses", 
+    "text": "La respuesta describe las metas iniciales del periodo de integración. Detalla que durante los primeros 90 días se espera concretar quick wins, los cuales servirán como base para evaluar el desempeño y potencial del colaborador en los primeros seis meses.",
+    "semantic_tags": ["onboarding", "evaluación de desempeño", "quick wins", "periodo inicial", "objetivos tempranos"],
+    "context_type": "faq",
+    "keywords": ["primeros meses", "metas iniciales", "onboarding", "quick wins", "evaluación"],
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-004",
+     "question": "¿Cuál es el principal desafío del cargo?", 
+     "answer": "", 
+    "text": "La pregunta busca identificar cuál será el mayor reto o desafío asociado al cargo, considerando las responsabilidades, el entorno de trabajo y los objetivos estratégicos del puesto.",
+    "semantic_tags": ["desafíos laborales", "retos del cargo", "objetivos estratégicos", "responsabilidades"],
+    "context_type": "faq",
+    "keywords": ["desafío", "reto", "cargo", "objetivos", "responsabilidades"],
+    "relevance_score": 0.95
+  },
+  { 
+     "id": "faq-005",
+     "question": "¿Cuánto sería mi renta?", 
+     "answer": "Por política corporativa, la conversación de renta la podremos tener en la fase de entrevista, por lo que es altamente relevante tu previa preparación para dicha etapa", 
+    "text": "Por política corporativa, la conversación sobre renta se lleva a cabo durante la fase de entrevista. Se recomienda prepararse previamente para esta etapa, ya que es altamente relevante.", 
+    "semantic_tags": ["renta", "entrevista", "preparación", "política", "corporativa"], 
+    "context_type": "faq", 
+    "keywords": ["renta", "entrevista", "preparación", "política", "corporativa"], 
+    "relevance_score": 0.95
+  },
+  { 
+     "id": "faq-006",
+     "question": "¿Cómo está conformado el equipo de trabajo?", 
+     "answer": "Si bien reportarás a una jefatura matricialmente, también participarás en células ágiles en proyectos colaborativos. Lo que te dará una visión más sistémica de tu entorno", 
+    "text": "El equipo de trabajo está conformado por una jefatura a la cual reportarás matricialmente, y por células ágiles en proyectos colaborativos, lo que permite tener una visión más sistémica del entorno.", 
+    "semantic_tags": ["equipo", "trabajo", "células ágiles", "jefatura", "colaboración"], 
+    "context_type": "faq", 
+    "keywords": ["equipo", "trabajo", "células ágiles", "jefatura", "colaboración"], 
+    "relevance_score": 0.95
+  },
+  { 
+     "id": "faq-007",
+     "question": "¿Qué rol juega mi posición dentro del equipo?",
+     "answer": "Tu función es altamente relevante para el equipo. Serás el primer contacto con las próximas generaciones de talento CCU", 
+    "text": "Tu posición es altamente relevante dentro del equipo, ya que serás el primer contacto con las próximas generaciones de talento CCU.", 
+    "semantic_tags": ["rol", "equipo", "responsabilidad", "talento", "CCU"], 
+    "context_type": "faq", 
+    "keywords": ["rol", "equipo", "responsabilidad", "talento", "CCU"], 
+    "relevance_score": 0.95
+  },
+  { "id": "faq-008",
+     "question": "¿Cuál es el estilo de liderazgo del jefe directo?",
+     "answer": "Fomentamos pautas generales de buenas prácticas en liderazgo, al mismo tiempo que brindamos espacio a cada líder para desarrollar al equipo según su lectura del contexto", 
+    "text": "El estilo de liderazgo del jefe directo combina pautas generales de buenas prácticas con la libertad de cada líder para desarrollar al equipo según su interpretación del contexto.", 
+    "semantic_tags": ["liderazgo", "jefe directo", "buenas prácticas", "desarrollo de equipo", "autonomía"], 
+    "context_type": "faq", 
+    "keywords": ["liderazgo", "jefe directo", "buenas prácticas", "desarrollo de equipo", "autonomía"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-009",
+     "question": "¿Qué nivel de colaboración interáreas existe?", 
+     "answer": "Fomentamos espacios de camaradería, al mismo tiempo que proyectos colaborativos entre profesionales de diversas áreas. ¡Seguramente te tocará participar en proyectos muy entretenidos!", 
+    "text": "Existe un alto nivel de colaboración interáreas, fomentando espacios de camaradería y proyectos colaborativos entre profesionales de distintas áreas, lo que permite participar en iniciativas interesantes y entretenidas.", 
+    "semantic_tags": ["colaboración", "interáreas", "proyectos", "camaradería", "trabajo en equipo"], 
+    "context_type": "faq", 
+    "keywords": ["colaboración", "interáreas", "proyectos", "camaradería", "trabajo en equipo"], 
+    "relevance_score": 0.95
+  },
+  { 
+     "id": "faq-010",
+     "question": "¿Cómo se gestionan los conflictos en el equipo?", 
+     "answer": "Creemos que el espacio para resolver conflictos es parte del crecimiento de cada equipo. Sin embargo, orientamos planes de acción focalizados al detectar brechas en las evaluaciones de clima", 
+    "text": "La gestión de conflictos en el equipo se entiende como una oportunidad de crecimiento. Se orientan planes de acción focalizados al detectar brechas en las evaluaciones de clima laboral.", 
+    "semantic_tags": ["conflictos", "gestión", "equipo", "evaluación de clima", "planes de acción"], 
+    "context_type": "faq", 
+    "keywords": ["conflictos", "gestión", "equipo", "evaluación de clima", "planes de acción"], 
+    "relevance_score": 0.95
+  },
+  {
+     "id": "faq-011",
+     "question": "¿Qué oportunidades de formación o capacitación ofrece la empresa?", 
+     "answer": "El equipo de formqación tiene programas y planes de desarrollo por equipo. La Academia CCU te ofrece amplias posibilidades según tus intereses de desarrollo", 
+    "text": "La empresa ofrece oportunidades de formación y capacitación a través de programas y planes de desarrollo por equipo. La Academia CCU brinda amplias posibilidades según los intereses de desarrollo de cada persona.", 
+    "semantic_tags": ["formación", "capacitación", "desarrollo", "Academia CCU", "equipos"], 
+    "context_type": "faq", 
+    "keywords": ["formación", "capacitación", "desarrollo", "Academia CCU", "equipos"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-012",
+    "question": "¿Cómo se evalúa el desempeño?", 
+    "answer": "Anualmente, se realiza evaluación ascendente y descendente, donde fomentamos que cada evaluado proponga sus objetivos anuales, al mismo tiempo que existan conversaciones periódicas en torno al desempeño y búsqueda de mejora continua",
+    "text": "El desempeño se evalúa anualmente mediante evaluaciones ascendentes y descendentes, fomentando que cada persona proponga sus objetivos y se mantengan conversaciones periódicas orientadas a la mejora continua.", 
+    "semantic_tags": ["desempeño", "evaluación", "objetivos", "mejora continua", "retroalimentación"], 
+    "context_type": "faq", 
+    "keywords": ["desempeño", "evaluación", "objetivos", "mejora continua", "retroalimentación"], 
+    "relevance_score": 0.95
+  },
+  { 
+     "id": "faq-013",
+     "question": "¿Existe un plan de carrera o de crecimiento interno?", 
+     "answer": "Sabemos que todos los individuos buscan horizontes diversos, por lo que no existe un plan único. Fomentamos que cada persona busque su espacio de desarrollo en nuestra organización", 
+    "text": "No existe un plan de carrera único; la empresa fomenta que cada persona busque su propio espacio de desarrollo interno, reconociendo que los horizontes profesionales son diversos.", 
+    "semantic_tags": ["plan de carrera", "crecimiento interno", "desarrollo profesional", "oportunidades", "organización"], 
+    "context_type": "faq", 
+    "keywords": ["plan de carrera", "crecimiento interno", "desarrollo profesional", "oportunidades", "organización"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-014",
+    "question": "¿Se promueve la movilidad entre áreas o proyectos?", 
+    "answer": "Se promueve la movilidad y existe el espacio. Incluso entre diferentes Unidades de negocios dentro de nuestro marco corporativo", 
+    "text": "La empresa promueve la movilidad entre áreas y proyectos, incluyendo distintas unidades de negocio dentro del marco corporativo, brindando espacio para el desarrollo transversal.", 
+    "semantic_tags": ["movilidad", "áreas", "proyectos", "unidades de negocio", "desarrollo"], 
+    "context_type": "faq", 
+    "keywords": ["movilidad", "áreas", "proyectos", "unidades de negocio", "desarrollo"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-015",
+    "question": "¿Qué tan común es que alguien ascienda en este cargo?", 
+    "answer": "Si pasas a la etapa siguiente, te podremos poner en contacto con casos de éxito que han sido promovidos en esta área", 
+    "text": "El ascenso en este cargo depende de la trayectoria individual; si avanzas a la siguiente etapa, se te podrá poner en contacto con casos de éxito que han sido promovidos en esta área.", 
+    "semantic_tags": ["ascenso", "promoción", "carrera", "éxito", "trayectoria"], 
+    "context_type": "faq", 
+    "keywords": ["ascenso", "promoción", "carrera", "éxito", "trayectoria"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-016",
+    "question": "¿Cuál es el rango salarial?", 
+    "answer": "Por política corporativa, la conversación de renta será en la fase de entrevista, por lo que es altamente relevante tu previa preparación para dicha etapa", 
+     "text": "El rango salarial se aborda únicamente durante la fase de entrevista, siguiendo la política corporativa. Se recomienda prepararse previamente para esta conversación, ya que es altamente relevante.", 
+    "semantic_tags": ["rango salarial", "entrevista", "política corporativa", "preparación", "remuneración"], 
+    "context_type": "faq", 
+    "keywords": ["rango salarial", "entrevista", "política corporativa", "preparación", "remuneración"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-017",
+    "question": "¿Qué beneficios adicionales se incluyen (seguro, vacaciones, bonos)?", 
+    "answer": "Tenemos políticas de compensaciones extrasalariales comúnes, por desempeño y antigüedad por encima del promedio del mercado", 
+    "text": "Los beneficios adicionales incluyen compensaciones extrasalariales comunes, así como bonos por desempeño y antigüedad, que se encuentran por encima del promedio del mercado.", 
+    "semantic_tags": ["beneficios", "seguro", "vacaciones", "bonos", "compensación"], 
+    "context_type": "faq", 
+    "keywords": ["beneficios", "seguro", "vacaciones", "bonos", "compensación"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-018",
+    "question": "¿Existe flexibilidad para negociar salario o beneficios?", 
+    "answer": "Siempre dentro de la banda y de acuerdo a los méritos para tal efecto. La conversación salarial se sostendrá en etapas posteriores", 
+    "text": "La flexibilidad para negociar salario o beneficios existe siempre dentro de la banda establecida y considerando los méritos correspondientes. La conversación salarial se abordará en etapas posteriores.", 
+    "semantic_tags": ["flexibilidad", "salario", "beneficios", "negociación", "méritos"], 
+    "context_type": "faq", 
+    "keywords": ["flexibilidad", "salario", "beneficios", "negociación", "méritos"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-019",
+    "question": "¿Se revisa el salario periódicamente?", 
+    "answer": "Existe un equipo de relaciones laborales a cargo de equilibrar las bandas salariales de acuerdo a nuestras políticas internas", 
+    "text": "El salario se revisa periódicamente mediante un equipo de relaciones laborales, que se encarga de equilibrar las bandas salariales según las políticas internas de la empresa.", 
+    "semantic_tags": ["salario", "revisión", "políticas internas", "relaciones laborales", "bandas salariales"], 
+    "context_type": "faq", 
+    "keywords": ["salario", "revisión", "políticas internas", "relaciones laborales", "bandas salariales"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-020",
+    "question": "¿Hay bonos ligados a desempeño o resultados?", 
+    "answer": "Cada Unidad de Negocio es independiente en la definición de sus reconocimientos. Fomentamos el reconocimiento individual y colectivo", 
+    "text": "Los bonos ligados a desempeño o resultados dependen de cada Unidad de Negocio, fomentando tanto el reconocimiento individual como el colectivo.", 
+    "semantic_tags": ["bonos", "desempeño", "resultados", "reconocimiento", "unidad de negocio"], 
+    "context_type": "faq", 
+    "keywords": ["bonos", "desempeño", "resultados", "reconocimiento", "unidad de negocio"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-021",
+    "question": "¿El puesto es presencial, híbrido o remoto?", 
+    "answer": "El desempeño de esta función será presencial", 
+    "text": "El puesto se desempeña de manera presencial, garantizando la interacción directa en el entorno laboral.", 
+    "semantic_tags": ["puesto", "presencial", "trabajo", "modalidad", "desempeño"], 
+    "context_type": "faq", 
+    "keywords": ["puesto", "presencial", "trabajo", "modalidad", "desempeño"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-022",
+    "question": "¿Cuál es la carga horaria real del cargo?", 
+    "answer": "De acuerdo a la legislación vigente en esta materia, con un máximo de 43 horas semanales distribuídas de lunes a viernes según el detalle que será entregado en la entrevista", 
+    "text": "La carga horaria del cargo es de acuerdo con la legislación vigente, con un máximo de 43 horas semanales distribuidas de lunes a viernes, y los detalles específicos se entregarán en la entrevista.", 
+    "semantic_tags": ["carga horaria", "horas semanales", "legislación", "entrevista", "trabajo"], 
+    "context_type": "faq", 
+    "keywords": ["carga horaria", "horas semanales", "legislación", "entrevista", "trabajo"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-023",
+    "question": "¿Se respeta el equilibrio entre trabajo y vida personal?", 
+    "answer": "El equilibrio entre trabajo y vida personal es uno de los 4 pilares de nuestra medición de clima, que buscamos reforzar día a día", 
+    "text": "El equilibrio entre trabajo y vida personal es un pilar clave de nuestra medición de clima laboral, y se busca reforzarlo continuamente.", 
+    "semantic_tags": ["equilibrio", "trabajo", "vida personal", "clima laboral", "pilares"], 
+    "context_type": "faq", 
+    "keywords": ["equilibrio", "trabajo", "vida personal", "clima laboral", "pilares"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-024",
+    "question": "¿Qué herramientas tecnológicas se utilizan?", 
+    "answer": "Si bien existen herramientas comunes a nivel corporativo, cada unidad de negocio y equipo dispone de diversas herramientas según su contexto y necesidades", 
+    "text": "Se utilizan herramientas tecnológicas comunes a nivel corporativo, y además cada unidad de negocio y equipo dispone de herramientas específicas según su contexto y necesidades.", 
+    "semantic_tags": ["herramientas", "tecnología", "corporativo", "unidad de negocio", "equipos"], 
+    "context_type": "faq", 
+    "keywords": ["herramientas", "tecnología", "corporativo", "unidad de negocio", "equipos"], 
+    "relevance_score": 0.95
+
+  },
+  { 
+    "id": "faq-025",
+    "question": "¿Hay flexibilidad horaria?", 
+    "answer": "Depende", 
+    "text": "La flexibilidad horaria depende del cargo y del equipo, considerando las necesidades operativas y la legislación vigente.", 
+    "semantic_tags": ["flexibilidad horaria", "trabajo", "horario", "equipo", "operaciones"], 
+    "context_type": "faq", 
+    "keywords": ["flexibilidad horaria", "trabajo", "horario", "equipo", "operaciones"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-026",
+    "question": "¿Cómo contribuye este rol al propósito de la empresa?", 
+    "answer": "Este rol contribuye al propósito de la empresa al impactar directamente en los objetivos estratégicos y en la experiencia de clientes y usuarios.", 
+
+    "text": "Este rol contribuye al propósito de la empresa al impactar directamente en los objetivos estratégicos y en la experiencia de clientes y usuarios.", 
+    "semantic_tags": ["rol", "propósito", "empresa", "impacto", "objetivos"], 
+    "context_type": "faq", 
+    "keywords": ["rol", "propósito", "empresa", "impacto", "objetivos"], 
+    "relevance_score": 0.95
+  },
+  {
+    "id": "faq-027",
+    "question": "¿Qué impacto tendría mi trabajo en clientes/usuarios?", 
+    "answer": "El trabajo tiene un impacto altamente relevante en clientes y usuarios, contribuyendo directamente a su experiencia y satisfacción.", 
+    "text": "El trabajo tiene un impacto altamente relevante en clientes y usuarios, contribuyendo directamente a su experiencia y satisfacción.", 
+    "semantic_tags": ["impacto", "clientes", "usuarios", "trabajo", "relevancia"], 
+    "context_type": "faq", 
+    "keywords": ["impacto", "clientes", "usuarios", "trabajo", "relevancia"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-028",
+    "question": "¿Cuántas etapas tiene el proceso de reclutamiento?", 
+    "answer": "Chat-screening; filtro curricular; entrevista cultural; evaluación técnica; evaluación final. Fomentamos el ingreso de nuestro talento en un período menor o igual a 35 días", 
+    "text": "El proceso de reclutamiento consta de varias etapas: chat-screening, filtro curricular, entrevista cultural, evaluación técnica y evaluación final.", 
+    "semantic_tags": ["proceso de reclutamiento", "etapas", "selección", "evaluación", "talento"], 
+    "context_type": "faq", 
+    "keywords": ["proceso de reclutamiento", "etapas", "selección", "evaluación", "talento"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-029",
+    "question": "¿Quiénes participan en la decisión final?", 
+    "answer": "Buscamos consensuar entre el líder de área, jefatura directa, equipo de personas y damos espacio para 1 o 2 stakeholders relevantes", 
+    "text": "El proceso de reclutamiento cuenta con varias etapas: chat-screening, filtro curricular, entrevista cultural, evaluación técnica y evaluación final.", 
+    "semantic_tags": ["proceso de reclutamiento", "etapas", "selección", "evaluación", "talento"], 
+    "context_type": "faq", 
+    "keywords": ["proceso de reclutamiento", "etapas", "selección", "evaluación", "talento"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-030",
+    "question": "¿Cuánto tiempo tomará tener una respuesta?", 
+    "answer": "Fomentamos el ingreso de nuestro talento en un período menor o igual a 35 días", 
+    "text": "Se busca que los candidatos reciban una respuesta en un período menor o igual a 35 días, asegurando un proceso ágil y eficiente.", 
+    "semantic_tags": ["tiempo de respuesta", "candidatos", "proceso", "selección", "talento"], 
+    "context_type": "faq", 
+    "keywords": ["tiempo de respuesta", "candidatos", "proceso", "selección", "talento"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-031",
+    "question": "¿Cómo me puedo preparar mejor para las siguientes etapas?", 
+    "answer": "Si bien existen fuentes abiertas en internet, fomentamos el uso de este chat-screening para aclarar todas tus dudas y contextualizarte de la mejor manera posible", 
+    "text": "Para prepararte mejor para las siguientes etapas, se recomienda utilizar el chat-screening disponible para aclarar dudas y recibir la mejor contextualización, complementando fuentes abiertas en internet.", 
+    "semantic_tags": ["preparación", "etapas", "chat-screening", "dudas", "contextualización"], 
+    "context_type": "faq", 
+    "keywords": ["preparación", "etapas", "chat-screening", "dudas", "contextualización"], 
+    "relevance_score": 0.95
+  },
+  { 
+    "id": "faq-032",
+    "question": "¿Qué buscan realmente en el candidato ideal?", 
+    "answer": "Buscamos a la persona más proactiva, quien logre generar las mejores preguntas, demuestre una preparación sobresaliente y sobre todo entusiasmo y curiosidad por su próximo desafío", 
+    "text": "El candidato ideal es proactivo, genera preguntas pertinentes, demuestra una preparación sobresaliente y, sobre todo, muestra entusiasmo y curiosidad por su próximo desafío.", 
+    "semantic_tags": ["candidato ideal", "proactividad", "preparación", "entusiasmo", "curiosidad"], 
+    "context_type": "faq", 
+    "keywords": ["candidato ideal", "proactividad", "preparación", "entusiasmo", "curiosidad"], 
+    "relevance_score": 0.95
+  }
 ]
