@@ -1,5 +1,4 @@
-{
-    "chunks": [
+[
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0001",
@@ -2163,4 +2162,4 @@
         "relevance_score": 0.94
     }
 ]
-}
+
