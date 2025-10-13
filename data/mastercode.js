@@ -1,127 +1,112 @@
-const questionType = $('Question router node').item.json.questionType;
-const question = $('Question router node').item.json.question;
-const mergedData = $('Merge').all();
+// --- Rank Chunks Node jerárquico: context → semantic → keywords → relevance score ---
 
-console.log('Question type:', questionType);
-console.log('Question:', question);
-console.log('Merged data length:', mergedData.length);
+// 1️⃣ Obtener chunks y pregunta
+const chunks = $input.all().map(item => item.json);
+const question = $("Question router node").all()[0]?.json?.question || '';
 
-// Extract processed data from merge
-let chunks = [];
-let qa = [];
-let vacante = {};
-
-// Debug: Log what we're getting from merge
-mergedData.forEach((item, index) => {
-  console.log(`Merge item ${index}:`, Object.keys(item.json));
-  
-  if (index === 0) {
-    // First item should be vacante data
-    vacante = item.json;
-    console.log('Vacante data:', vacante);
-  } else if (index === 1) {
-    // Second item should be processed chunks
-    chunks = item.json.topChunks || [];
-    console.log('Chunks data:', chunks.length, 'chunks');
-  } else if (index === 2) {
-    // Third item should be processed Q&A
-    qa = item.json.replies || [];
-    console.log('QA data:', qa.length, 'replies');
-  }
-});
-
-let context = '';
-let dataSource = '';
-
-if (questionType === 'role') {
-  // For role questions, use vacante data
-  context = `[VACANTE]
-id: ${vacante.id || ''}
-titulo: ${vacante.title || ''}
-ubicacion: ${vacante.location || ''}
-tipo: ${vacante.employment_type || ''}
-seniority: ${vacante.seniority || ''}
-resumen: ${vacante.summary || ''}
-funciones:
-${(vacante.functions || []).map(f => '- ' + f).join('\n')}
-requisitos:
-${(vacante.requirements || []).map(r => '- ' + r).join('\n')}
-nota_cultura: ${vacante.culture_note || ''}`;
-  dataSource = 'vacante';
-  
-} else if (questionType === 'company') {
-  // For company questions, prefer chunks, fallback to Q&A
-  if (chunks.length > 0) {
-    // FILTER CHUNKS BASED ON QUESTION RELEVANCE
-    const relevantChunks = chunks.filter(chunk => {
-      const chunkText = chunk.text?.toLowerCase() || '';
-      const questionLower = question.toLowerCase();
-      
-      // Check for exact keyword matches
-      const keywords = ['proposito', 'principios', 'valores', 'mision', 'vision', 'cultura'];
-      const hasKeyword = keywords.some(keyword => 
-        questionLower.includes(keyword) && chunkText.includes(keyword)
-      );
-      
-      // Check for general relevance
-      const hasRelevance = chunkText.includes(questionLower) || 
-                          questionLower.split(' ').some(word => 
-                            word.length > 3 && chunkText.includes(word)
-                          );
-      
-      return hasKeyword || hasRelevance;
-    });
-    
-    // Use filtered chunks or fallback to all chunks
-    const chunksToUse = relevantChunks.length > 0 ? relevantChunks : chunks;
-    
-    context = `[EXTRACTOS PDF]
-${chunksToUse.map((c, i) => `P${i+1} (${c.source}): ${c.text}`).join('\n\n')}`;
-    dataSource = 'chunks_filtered';
-  } else if (qa.length > 0) {
-    context = `[Q&A]
-${qa.map((q, i) => `Q${i+1}: ${q.q}
-A${i+1}: ${q.a}`).join('\n\n')}`;
-    dataSource = 'qa';
-  } else {
-    context = `[VACANTE]
-id: ${vacante.id || ''}
-titulo: ${vacante.title || ''}
-ubicacion: ${vacante.location || ''}
-tipo: ${vacante.employment_type || ''}
-seniority: ${vacante.seniority || ''}
-resumen: ${vacante.summary || ''}
-funciones:
-${(vacante.functions || []).map(f => '- ' + f).join('\n')}
-requisitos:
-${(vacante.requirements || []).map(r => '- ' + r).join('\n')}
-nota_cultura: ${vacante.culture_note || ''}`;
-    dataSource = 'vacante_fallback';
-  }
-};
-
-console.log('Final context length:', context.length);
-console.log('Data source:', dataSource);
-
-// Ensure we always return something
-if (!context.trim()) {
-  context = `[VACANTE]
-id: ${vacante.id || 'N/A'}
-titulo: ${vacante.title || 'N/A'}
-ubicacion: ${vacante.location || 'N/A'}
-tipo: ${vacante.employment_type || 'N/A'}
-seniority: ${vacante.seniority || 'N/A'}
-resumen: ${vacante.summary || 'N/A'}
-funciones: N/A
-requisitos: N/A
-nota_cultura: N/A`;
-  dataSource = 'fallback';
+if (!question) {
+    console.log("No question found");
+    return [{ json: { topChunks: [] } }];
 }
 
-return [{ 
-  json: { 
-    compiledContext: context, 
-    questionType,
-    dataSource
-  } 
-}];
+console.log(`Processing ${chunks.length} chunks for question: "${question}"`);
+
+// 2️⃣ Normalización y tokenización
+function norm(s) {
+    return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+function tokenize(s) {
+    return norm(s).split(/[^a-z0-9]+/).filter(t => t.length > 1);
+}
+
+const questionNorm = norm(question);
+const questionTokens = tokenize(question);
+
+// 3️⃣ Stop words
+const stopWords = new Set([
+    'de','la','el','y','en','a','un','una','para','que','con',
+    'los','las','del','al','por','se','es','lo','mi','su','tu',
+    'como','sobre','cual','donde','cuando','son','estan','tiene',
+    'tienen','mas','muy','tan','asi','tambien','pero','sin','bajo',
+    'ccu'
+]);
+
+const filteredTokens = questionTokens.filter(t => !stopWords.has(t));
+
+// 4️⃣ Funciones de scoring jerárquico
+
+// Context type match: 2 = exact match, 1 = partial token match, 0 = no match
+function contextScore(chunk) {
+    const context = chunk.context_type || '';
+    if (!context) return 0;
+    const contextNorm = norm(context);
+    if (questionNorm.includes(contextNorm)) return 2; // exact-ish
+    const contextTokens = tokenize(context).filter(t => !stopWords.has(t));
+    return contextTokens.some(t => filteredTokens.includes(t)) ? 1 : 0;
+}
+
+// Semantic tags match: 2 = exact, 1 = partial token, 0 = no match
+function semanticScore(chunk) {
+    const tags = chunk.semantic_tags || [];
+    if (!tags.length) return 0;
+
+    for (const tag of tags) {
+        const tagNorm = norm(tag);
+        if (questionNorm.includes(tagNorm)) return 2; // exact-ish
+        const tagTokens = tokenize(tag).filter(t => !stopWords.has(t));
+        if (tagTokens.some(t => filteredTokens.includes(t))) return 1; // partial
+    }
+    return 0;
+}
+
+// Keywords match: 1 si hay algún token coincidente, 0 si no
+function keywordScore(chunk) {
+    const kws = chunk.keywords || [];
+    for (const kw of kws) {
+        const kwTokens = tokenize(kw).filter(t => !stopWords.has(t));
+        if (kwTokens.some(t => filteredTokens.includes(t))) return 1;
+    }
+    return 0;
+}
+
+// Normalized relevance score textual (tie-breaker)
+function relevanceScore(chunk) {
+    const txt = chunk.text || '';
+    let score = 0;
+
+    if (questionNorm.length >= 6 && norm(txt).includes(questionNorm)) score += 50;
+
+    const txtTokens = tokenize(txt);
+    for (const t of filteredTokens) if (txtTokens.includes(t)) score += 10;
+
+    // Normalización simple 0.90-0.99
+    return Math.min(0.99, 0.90 + Math.min(score, 100)/100 * 0.09);
+}
+
+// 5️⃣ Ranking jerárquico con score original
+const rankedChunks = chunks.map(chunk => {
+  const cScore = contextScore(chunk);
+  const sScore = semanticScore(chunk);
+  const kScore = keywordScore(chunk);
+  const baseScore = Number(chunk.score || 0); // ← score original del repo
+  return { chunk, cScore, sScore, kScore, baseScore };
+}).sort((a, b) => {
+  if (b.cScore !== a.cScore) return b.cScore - a.cScore;
+  if (b.sScore !== a.sScore) return b.sScore - a.sScore;
+  if (b.kScore !== a.kScore) return b.kScore - a.kScore;
+  return b.baseScore - a.baseScore; // desempate con score real
+});
+
+// 6️⃣ Top 3
+const topChunks = rankedChunks.slice(0,3).map(({chunk, rScore}) => ({
+    id: chunk.id,
+    source: chunk.source,
+    text: chunk.text,
+    score: rScore
+}));
+
+console.log('Top 3 chunks:', topChunks.map(c => ({ id: c.id, score: c.score, textPreview: c.text.slice(0,100)+'...' })));
+
+// 7️⃣ Retornar a n8n
+return [{ json: { topChunks } }];
