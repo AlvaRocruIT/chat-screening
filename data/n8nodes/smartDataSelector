@@ -1,0 +1,95 @@
+// --- Smart Data Selector Node ---
+
+const items = $input.all().map(item => item.json);
+const question = $("Question router node").all()[0]?.json?.question;
+
+if (!question) {
+  console.log("No question found");
+  return [{ json: { selectedData: [] } }];
+}
+
+console.log(`Selecting data for question: "${question}"`);
+
+// --- Text normalization ---
+function norm(s) {
+  return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+function tokenize(s) {
+  return norm(s).split(/[^a-z0-9]+/).filter(t => t.length > 1);
+}
+
+// --- Stop words ---
+const stopWords = new Set([
+  'de','la','el','y','en','a','un','una','para','que','con',
+  'los','las','del','al','por','se','es','lo','mi','su','tu',
+  'como','sobre','cual','donde','cuando','son','estan','tiene',
+  'tienen','mas','muy','tan','asi','tambien','pero','sin','bajo',
+  'CCU'
+]);
+
+const questionTokens = tokenize(question).filter(t => !stopWords.has(t));
+const questionSet = new Set(questionTokens);
+const questionNorm = norm(question);
+
+console.log('Question tokens:', questionTokens);
+
+// --- Scoring function for Q&A items ---
+function scoreItem(item) {
+  const answer = String(item?.answer || '');
+  const answerNorm = norm(answer);
+  const answerTokens = tokenize(answer);
+
+  let score = 0;
+
+  // 1. Exact phrase match
+  if (questionNorm.length >= 6 && answerNorm.includes(questionNorm)) {
+    score += 50;
+  }
+
+  // 2. Token overlap
+  for (const token of answerTokens) {
+    if (questionSet.has(token)) score += 10;
+  }
+
+  // 3. Length bonus
+  if (answer.length > 150) score += 5;
+
+  // --- Normalize to 0.90 - 0.99 ---
+  const rawMax = 70; // estimated max
+  const rawMin = 0;
+  const normalizedScore = Math.min(0.99, 0.90 + ((score - rawMin)/(rawMax - rawMin)) * (0.99 - 0.90));
+
+  // --- Relevance label ---
+  let relevance;
+  if (normalizedScore >= 0.975) relevance = 'high';
+  else if (normalizedScore >= 0.940) relevance = 'medium';
+  else relevance = 'low';
+
+  return {
+    item,
+    rawScore: score,
+    normalizedScore,
+    relevance
+  };
+}
+
+// --- Score all items ---
+const scoredItems = items.map(scoreItem);
+
+// --- Sort descending ---
+scoredItems.sort((a,b) => b.normalizedScore - a.normalizedScore);
+
+// --- Select top 3 ---
+const selectedData = scoredItems.slice(0,3).map(({item, normalizedScore, rawScore, relevance}) => ({
+  question: item.question,
+  answer: item.answer,
+  score: normalizedScore,
+  rawScore,
+  relevance
+}));
+
+console.log('Top selected data:', selectedData);
+
+// --- Return for n8n ---
+return [{ json: { selectedData } }];
