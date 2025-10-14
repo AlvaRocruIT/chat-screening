@@ -507,8 +507,8 @@
         "id": "memoria_anual_CCA_2023-0057",
         "text": "Directorio: Los ejecutivos principales de CCA S.A. registrados durante el 2022 y 2023 en la CMF son los siguientes: Patricio Jottar Nasrallah, es el Gerente General Compañía Cervecerías Andinas S.A.;  María Gabriela Ugalde Romagnoli, es la Gerente Corporativo de Recursos Humanos; Bárbara Wolff Gopfert, es la Gerente Asuntos Corporativos y Sustentabilidad; Antonio Cruz Stuven, es el Gerente de Planificación Estratégica y Nuevos Negocios; Domingo Jiménez Manterola, es el Gerente General Compañía Pisquera de Chile S.A.; Felipe Benavides Almarza, es el Gerente de Asuntos Legales; Felipe Dubernet Azócar, es el Gerente Corporativo de Administración y Finanzas; Julio Agustín Freyre, es el Gerente General Compañía Cervecerías Andinas Argentina S.A.; Juan Boned, es el Contralor General; Pedro Herane Aguado, es el Gerente General Viña San Pedro Tarapacá S.A.; Sebastián Landi, es el Gerente Negocios Internacionales; Juan Martín Vannicola, es el Gerente Corporativo de Procesos Industriales; Matías Bebin Subercaseaux es el Gerente General Cervecera Chile Limitada; Eduardo Ffrench-Davis Rodríguez, es el Gerente General Embotelladoras Chilenas Unidas S.A; Marisol Bravo Léniz, es la Gerente Asuntos Corporativos; Francisco Diharasarri Domínguez, es el Gerente General de CCA Chile; Martín Rodríguez Guiraldes, es el Gerente de Transformación.",
         "semantic_tags": ["directorio", "ejecutivos_principales", "gerentes", "alta_direccion", "estructura_organizacional", "liderazgo", "CCA_SA"],
-        "context_type": "corporativo",
-        "keywords": ["directorio", "gerente general", "gerente corporativo", "gerente", "recursos humanos", "sustentabilidad", "planificación estratégica", "nuevos negocios", "asuntos legales", "administración y finanzas", "negocios internacionales", "procesos industriales"],
+        "context_type": "gerentes",
+        "keywords": ["directorio", "gerente_general", "gerente_corporativo", "gerente", "gerente_recursos_humanos", "sgerente_sustentabilidad", "planificación_estratégica", "gerente_nuevos_negocios", "gerente_asuntos_legales", "gerente_administración_finanzas", "negocios_internacionales", "procesos_industriales"],
         "relevance_score": 0.95
     },
     {
@@ -2162,4 +2162,5 @@
         "relevance_score": 0.94
     }
 ]
+
 
