@@ -14,7 +14,7 @@
     "text": "Esta respuesta indica la línea jerárquica directa del cargo. Especifica que el reporte será hacia Max Verstappen, quien ocupa el rol de Sub-Gerente de Talento, dejando claro el nivel de dependencia y supervisión.",
     "semantic_tags": ["estructura_jerárquica", "reporte_directos", "liderazgo", "organigrama"],
     "context_type": "faq",
-    "keywords": ["tu_jefe", "tu_líder", "tu_reporte" "directo", "Max Verstappen", "Sub-Gerente de Talento",],
+    "keywords": ["tu_jefe", "tu_líder", "tu_reporte" "directo", "Max Verstappen", "Sub-Gerente de Talento"],
     "relevance_score": 0.95
   },
   { "id": "faq-003",
