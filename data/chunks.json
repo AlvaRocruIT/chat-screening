@@ -5,7 +5,7 @@
         "text": "MEMORIA ANUAL Perfil de la entidad Quiénes somos: Compañía Cervecerías Andinas S.A. y sus subsidiarias (“CCA” o la “Compañía”), es una empresa multicategoría de bebestibles, con operaciones en Chile, Argentina, Bolivia, Colombia, Paraguay y Uruguay. En Chile, CCA es uno de los principales actores en cada una de las categorías en las que participa, incluyendo cervezas, bebidas gaseosas, aguas minerales y envasadas, néctares, vino y pisco, entre otros.",
         "semantic_tags": ["perfil_corporativo", "quienes_somos", "estructura_empresarial"],
         "context_type": "organizational_identity",
-        "keywords": ["CCA", "bebestibles", "cervezas", "multicategoría", "Chile", "subsidiarias"],
+        "keywords": ["CCA", "qué_es" "bebestibles", "cervezas", "multicategoría", "Chile", "subsidiarias"],
         "relevance_score": 0.95
     },
     {
@@ -2163,6 +2163,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
