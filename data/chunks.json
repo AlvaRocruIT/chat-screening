@@ -6,7 +6,7 @@
         "semantic_tags": ["perfil_corporativo", "quienes_somos", "estructura_empresarial"],
         "context_type": "organizational_identity",
         "keywords": ["CCA", "qué_es", "quienes_somos", "bebestibles", "cervezas", "multicategoría", "Chile", "subsidiarias"],
-        "relevance_score": 0.95
+        "relevance_score": 0.98
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
@@ -2163,6 +2163,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
