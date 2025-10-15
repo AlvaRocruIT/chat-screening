@@ -13,7 +13,7 @@
         "id": "memoria_anual_CCA_2023-0002",
         "text": " A nivel regional, CCA tiene presencia en distintos países, como Argentina, Bolivia, Uruguay, Paraguay y Colimbia. Es la segunda mayor cervecera en Argentina, donde también opera en las industrias de sidra, licores y vinos. Adicionalmente, operamos a través de un negocio conjunto con Danone en la categoría de aguas minerales y aguas saborizadas. En Bolivia, estamos presentes en las categorías de cerveza, aguas y bebidas gaseosas, analcohólicas y a base de malta. En Uruguay y Paraguay, operamos en las categorías de cerveza, aguas minerales y embotelladas, bebidas gaseosas, vinos y néctares. En Colombia, operamos en la categoría de cervezas y bebidas a base de malta, a través del negocio conjunto entre CCA y Postobón S.A. y sus relacionadas (“Grupo Postobón”).",
         "semantic_tags": ["presencia", "países", "expansión_regional", "mercados_internacionales", "alianzas_estratégicas"],
-        "context_type": "operaciones_regionales",
+        "context_type": "presencia_internacional",
         "keywords": ["países", "operaciones", "presencia", "Argentina", "Bolivia", "Uruguay", "Paraguay", "Colombia", "cerveza", "Danone", "Postobón", "bebidas", "negocio_conjunto"],
         "relevance_score": 0.94
     },
@@ -2164,6 +2164,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
