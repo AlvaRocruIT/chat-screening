@@ -21,7 +21,7 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0003",
         "text": "Nuestras operaciones se dividen en los siguientes tres Segmentos de operación: (i) Segmento de operación Chile, que incluye cerveza, bebidas no alcohólicas, licores, sidra y las Unidades Estratégicas de Servicio (“UES”) en el mercado chileno; (ii) Segmento de operación Negocios Internacionales, que incluye cerveza, sidra, bebidas no alcohólicas y licores, entre otras categorías, en Argentina, Uruguay, Paraguay y Bolivia; y (iii) Segmento de operación Vinos, que incluye vinos y espumantes en el mercado doméstico, en Chile y Argentina, y exportaciones a más de 80 países. Los ingresos y gastos de las Unidades de Apoyo Corporativo (“UAC”) se presentan por separado en Otros. Las UAC, al igual que las UES, proporcionan servicios compartidos dentro de la Compañía a fin de captar sinergias operacionales.",          "semantic_tags": ["segmentación_operacional", "estructura_corporativa", "sinergias_empresariales"],
-        "semantic_tags": ["segmentos_de_opercion", "segmentos", "Chile", "Negocios_Internacionales", "Vinos"]
+        "semantic_tags": ["segmentos_de_opercion", "segmentos", "Chile", "Negocios_Internacionales", "Vinos"],
         "context_type": "segmentos_de_operación",
         "keywords": ["segmentos", "Chile", "Negocios_Internacionales", "Vinos", "sinergias", "servicios_compartidos"],
         "relevance_score": 0.96
@@ -2164,6 +2164,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
