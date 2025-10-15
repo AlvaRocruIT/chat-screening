@@ -11,10 +11,10 @@
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0002",
-        "text": " A nivel regional, CCA tiene presencia internacional en distintos mercados, como Chile, Argentina, Bolivia, Uruguay, Paraguay y Colombia.",
+        "text": " A nivel regional, CCA tiene presencia internacional en distintos mercados, opera en Chile, Argentina, Bolivia, Uruguay, Paraguay y Colombia.",
         "semantic_tags": ["presencia", "presencia internacional", "países", "expansión_regional", "mercados_internacionales"],
         "context_type": "presencia_internacional",
-        "keywords": ["países", "operaciones", "presencia", "Argentina", "Bolivia", "Uruguay", "Paraguay", "Colombia", "cerveza", "Danone", "Postobón", "bebidas", "negocio_conjunto"],
+        "keywords": ["países", "operaciones", "presencia", "Argentina", "Bolivia", "Uruguay", "Paraguay", "Colombia"],
         "relevance_score": 0.97
     },
      {
@@ -2173,6 +2173,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
