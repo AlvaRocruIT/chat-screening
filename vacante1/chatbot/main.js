@@ -49,6 +49,9 @@ async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  sendBtn.addEventListener("click", sendMessage);
+  document.getElementById("toggleHistoryBtn").addEventListener("click", toggleHistory);
+
   historyBox.value = localStorage.getItem("chatHistory") || "";
   historyBox.style.display = "none";
 
