@@ -2114,7 +2114,7 @@
         "text": " En el caso de Chile, se realiza con el apoyo de una empresa externa, encargada de verificar que los proveedores cumplan con las leyes sociales/ laborales respecto de sus trabajadores (entre ellas, la Ley de Subcontratación) y que éstos están correctamente habilitados para cumplir sus funciones. En 2023, evaluamos a un total de 1.507 proveedores, lo que representa a un 17% del total y un 94% de la facturación anual.",
         "semantic_tags": ["evaluación_de_proveedores", "cumplimiento_laboral", "verificación_externa", "Ley_de_Subcontratación", "impacto_en_facturación"],
         "context_type": "estructura_empresarial_y_portafolio",
-        "keywords": ["Chile", "empresa_externa", "proveedores", "leyes_sociales", "leyes_laborales", "Ley_de_Subcontratación", "habilitación", "2023", "1.507_proveedores", "17%_total", "94%_facturación_anual"],
+        "keywords": ["Chile", "empresa_externa", "proveedores", "leyes_sociales", "leyes_laborales", "Ley_de_Subcontratación", "habilitación", "2023", "1.507_proveedores", "facturación_anual"],
         "relevance_score": 0.92
     },
     {
@@ -2123,7 +2123,7 @@
         "text": " Indcadores: Cumplimiento legal y normativo: En relación con sus clientes En orden de velar por los derechos de los consumidores, en CCA contamos con políticas de control en materia de publicidad, rotulación e inocuidad alimentaria de nuestros productos, respaldadas en procedimiento de Manejo de Reclamos Producto Servicio de Atención al Consumidor. En 2023 no hemos sido sancionados por temas relacionados con derechos al consumidor. CCA cuenta con una serie de procedimientos en orden a velar adecuada y oportunamente por los derechos de los consumidores, incluyendo controles en la rotulación, publicidad e inocuidad alimentaria de sus productos, así como de atención de eventuales reclamos. Durante el año 2023, la Compañía no registró sanciones por infracción a la Ley N° 19.496, de protección de los derechos del consumidor. Al mismo tiempo, estamos desarrollando procesos internos para abordar la futura ley de protección de datos personales, que aún está en discusión en el Congreso.",
         "semantic_tags": ["cumplimiento_legal", "derechos_del_consumidor", "inocuidad_alimentaria", "publicidad_responsable", "protección_de_datos"],
         "context_type": "estructura_empresarial_y_portafolio",
-        "keywords": ["indicadores", "rotulación", "publicidad", "inocuidad_alimentaria", "Manejo_de_Reclamos", "Servicio_de_Atención_al_Consumidor", "Ley_19.496", "protección_de_los_derechos_del_consumidor", "2023", "procesos_internos", "ley_de_protección_de_datos_personales", "Congreso"],
+        "keywords": ["indicadores", "rotulación", "publicidad", "inocuidad_alimentaria", "Manejo_de_Reclamos", "Servicio_de_Atención_al_Consumidor", "Ley_19.496", "protección_de_los_derechos_del_consumidor", "procesos_internos", "ley_de_protección_de_datos_personales", "Congreso"],
         "relevance_score": 0.91
     },
     {
@@ -2141,7 +2141,7 @@
         "text": "Además, disponemos un Canal de Denuncias que permite a nuestros trabajadores, así como también a terceros que interactúan con CCA, informar o denunciar: • Conductas o prácticas cuestionables sobre los principios y valores contenidos en el Código de Conducta en los Negocios y en el SER CCA. • Actividades no acordes a lo establecido en las normas, políticas contables, control interno y a las materias de auditoría que dicen relación con el examen de los Estados Financieros Consolidados, conforme con las obligaciones que impone la Ley SOX. • Incumplimientos a lo establecido en el MPD. • Incumplimiento a cualquier legislación vigente en los países donde CCA esté presente. Las sanciones ejecutoriadas por multas laborales en este ámbito durante el año 2023 son 15 ascienden a CLP 42 millones, de acuerdo a lo informado por la Dirección del Trabajo al cierre del año 2023. Durante el año 2023 no existen sentencias ejecutoriadas que apliquen sanciones que correspondan a acciones de tutela. 8.1.3 Medioambiental El modelo de cumplimiento medioambiental en CCA está constituido por una matriz de cumplimiento para cada una de las diferentes unidades de negocio, denominada Índice de Radicación, que contiene los permisos, exigencias ambientales y buenas prácticas de acuerdo con la normativa de cada país en que operamos. Se realiza un seguimiento mensual del cumplimiento para definir planes de acción e informar sobre nuevas exigencias. La modalidad de cumplimiento es respaldada a través de la presentación del certificado o resolución de la autoridad competente en la materia. Dicha documentación debe ser presentada a la Subgerencia de Medio Ambiente de Contraloría de CCA. Este modelo de cumplimiento se aplica a todas las instalaciones industriales y centros de distribución. En Chile, la responsabilidad directa de elaborar y actualizar la matriz recae en la Subgerencia de Medio Ambiente. Sin embargo, cada unidad de negocio es responsable de su cumplimiento medioambiental. En el caso de los demás países donde operamos, Argentina, Bolivia, Paraguay y Uruguay,",
         "semantic_tags": ["canal_de_denuncias", "cumplimiento_laboral", "gobernanza", "modelo_medioambiental", "Índice_de_Radicación"],
         "context_type": "estructura_empresarial_y_portafolio",
-        "keywords": ["Canal_de_Denuncias", "Código_de_Conducta_en_los_Negocios", "SER_CCA", "Ley_SOX", "MPD", "legislación_vigente", "multas_laborales", "CLP_42_millones", "Dirección_del_Trabajo", "acciones_de_tutela", "Índice_de_Radicación", "cumplimiento_medioambiental", "certificados", "resoluciones", "Subgerencia_de_Medio_Ambiente", "Contraloría_CCA", "Chile", "Argentina", "Bolivia", "Paraguay", "Uruguay"],
+        "keywords": ["Canal_de_Denuncias", "Código_de_Conducta_en_los_Negocios", "SER_CCA", "Ley_SOX", "MPD", "legislación_vigente", "multas_laborales", "Dirección_del_Trabajo", "acciones_de_tutela", "Índice_de_Radicación", "cumplimiento_medioambiental", "certificados", "resoluciones", "Subgerencia_de_Medio_Ambiente", "Contraloría_CCA", "Chile", "Argentina", "Bolivia", "Paraguay", "Uruguay"],
         "relevance_score": 0.94
     },
     {
@@ -2163,6 +2163,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
