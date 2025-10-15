@@ -22,7 +22,7 @@
         "id": "memoria_anual_CCA_2023-0003",
         "text": "Nuestras operaciones se dividen en los siguientes tres Segmentos de operación: (i) Segmento de operación Chile, que incluye cerveza, bebidas no alcohólicas, licores, sidra y las Unidades Estratégicas de Servicio (“UES”) en el mercado chileno; (ii) Segmento de operación Negocios Internacionales, que incluye cerveza, sidra, bebidas no alcohólicas y licores, entre otras categorías, en Argentina, Uruguay, Paraguay y Bolivia; y (iii) Segmento de operación Vinos, que incluye vinos y espumantes en el mercado doméstico, en Chile y Argentina, y exportaciones a más de 80 países. Los ingresos y gastos de las Unidades de Apoyo Corporativo (“UAC”) se presentan por separado en Otros. Las UAC, al igual que las UES, proporcionan servicios compartidos dentro de la Compañía a fin de captar sinergias operacionales.",          "semantic_tags": ["segmentación_operacional", "estructura_corporativa", "sinergias_empresariales"],
         "context_type": "estructura_organizacional",
-        "keywords": ["segmentos", "Chile", "Negocios Internacionales", "Vinos", "sinergias", "servicios_compartidos"],
+        "keywords": ["segmentos", "Chile", "Negocios_Internacionales", "Vinos", "sinergias", "servicios_compartidos"],
         "relevance_score": 0.96
     },
     {
@@ -41,14 +41,15 @@
         "semantic_tags": ["identidad_corporativa", "propósito_organizacional", "estándares_sostenibilidad", "gobernanza_corporativa"],
         "context_type": "estrategia_corporativa",
         "keywords": ["identidad", "propósito", "principios"],
-        "relevance_score": 0.97    },
+        "relevance_score": 0.97
+    },
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0006",
         "text": "Qué nos inspira: Ser CCA nos inspira a trascender los legítimos intereses de quienes aquí trabajamos, con un propósito y una promesa concretos, que buscan construir un mejor vivir para todos aquellos con quienes nos relacionamos. Nuestro Propósito: Nos apasiona crear experiencias para compartir juntos un mejor vivir. Nuestro Comromiso: Con una amplia gama de marcas de bebestibles y experiencias, mejoramos y acompañamos distintos momentos de la vida, guiados por nuestros principios, en beneficio de las personas con las que nos relacionamos y el cuidado del medio ambiente. Identidad: Ser CCA es vivir de acuerdo con nuestros principios y proyectar nuestra personalidad en todo momento.",
         "semantic_tags": ["propósito_corporativo", "valores_organizacionales", "compromiso_social", "identidad_empresarial"],
         "context_type": "organizational_identity",
-        "keywords": ["Ser CCA", "propósito", "promesa", "mejor vivir", "principios", "medio ambiente", "experiencias"],
+        "keywords": ["Ser CCA", "propósito", "promesa", "mejor_vivir", "principios", "medio_ambiente", "experiencias"],
         "relevance_score": 0.97
     },
     {
@@ -121,7 +122,7 @@
         "text": "Cifras 2023: En 2023, los Ingresos por venta disminuyeron 5,4%, alcanzando 2.565.556 millones de pesos chilenos “CLP”. Los menores ingresos fueron explicados por una caída de 3,4% en los volúmenes y una contracción de 2,0% en los precios promedio en CLP. La reducción en los volúmenes fue impulsada por: (i) una caída de 2,6% en el Segmento de Operación Chile, explicada por una debilidad de la demanda, la que se vio especialmente afectada por condiciones climáticas desfavorables, (ii) una caída de 4,5% en el Segmento de operación Negocios Internacionales, más que explicado por Argentina, ya que el resto de las geografías que conforman este segmento registraron en su conjunto crecimientos positivos, y (iii) una caída de 14,4% en el Segmento de operación Vinos, asociado a un escenario desafiante para exportaciones de vino chileno, y una menor demanda en nuestros mercados domésticos.",
         "semantic_tags": ["resultados_financieros", "caída_en_volúmenes", "precios_promedio", "segmento_chile", "segmento_internacional", "segmento_vinos"],
         "context_type": "desempeño_financiero_y_operacional",
-        "keywords": ["Ingresos_por_venta", "2.565.556_millones_CLP", "disminución_5.4%", "volúmenes_-3.4%", "precios_promedio_-2.0%", "Segmento_de_Operación_Chile", "condiciones_climáticas", "Segmento_Negocios_Internacionales", "Argentina", "Segmento_Vinos", "exportaciones_vino_chileno", "demanda_doméstica"],
+        "keywords": ["Ingresos_por_venta", "disminución_5.4%", "volúmenes_-3.4%", "precios_promedio_-2.0%", "Segmento_de_Operación_Chile", "condiciones_climáticas", "Segmento_Negocios_Internacionales", "Argentina", "Segmento_Vinos", "exportaciones_vino_chileno", "demanda_doméstica"],
         "relevance_score": 0.94
     },
     {
@@ -148,7 +149,7 @@
         "text": "En el Segmento de operación Negocios Internacionales, el costo de ventas por hectolitro se contrajo 23,1% en CLP, explicado en gran parte por el efecto de conversión de la aplicación de la contabilidad hiperinflacionaria, ya que en moneda local los costos fueron más altos debido a mayores costos en materias primas, presiones inflacionarias y el impacto negativo de la devaluación de 356,2% del ARS frente al USD en nuestros costos ligados al USD. En el Segmento de operación Vinos, el costo de ventas por hectolitro se mantuvo estable con respecto al año anterior. El Margen bruto alcanzó CLP 1.186.944 millones, un 0,8% menos que el año anterior, y como porcentaje de los Ingresos por venta, aumentó de 44,1% a 46,3%, una expansión de 214 puntos base.",
         "semantic_tags": ["costos_operacionales", "contabilidad_hiperinflacionaria", "margen_bruto", "segmento_internacional", "segmento_vinos"],
         "context_type": "desempeño_financiero_y_operacional",
-        "keywords": ["costo_de_ventas_por_hectolitro", "contracción_23.1%", "CLP", "contabilidad_hiperinflacionaria", "materias_primas", "presiones_inflacionarias", "devaluación_ARS", "USD", "Segmento_de_operación_Vinos", "margen_bruto", "1.186.944_millones_CLP", "44.1%", "46.3%", "214_puntos_base"],
+        "keywords": ["costo_de_ventas_por_hectolitro", "contracción_23.1%", "CLP", "contabilidad_hiperinflacionaria", "materias_primas", "presiones_inflacionarias", "devaluación_ARS", "USD", "Segmento_de_operación_Vinos", "margen_bruto", "44.1%", "46.3%", "214_puntos_base"],
         "relevance_score": 0.93
     },
     {
@@ -481,7 +482,7 @@
         "text": "Para estos fines contamos con un fondo de innovación que nos permite asegurar el financiamiento de las iniciativas más prometedoras. La Compañía cuenta también con un equipo dedicado a desarrollar algoritmos de inteligencia artificial y minería de datos, aplicando tecnologías de frontera para resolver problemas complejos del negocio. Así, bajo este alero de innovación hemos desarrollado herramientas con foco en la optimización y eficiencia en el proceso de venta a nuestros clientes, y la ampliación de nuestras plataformas de comercio electrónico, con el fin de mejorar la experiencia de nuestros clientes y consumidores, destacando en esto último la plataforma B2B “Mi Carro”, orientada a nuestros clientes minoristas y “La Barra” nuestro canal de venta e-commerce, con un creciente foco regional. ",
         "semantic_tags": ["innovacion", "inteligencia_artificial", "mineria_datos", "tecnologia", "transformacion_digital", "ecommerce", "optimización", "eficiencia"],
         "context_type": "corporativo",
-        "keywords": ["fondo_innovacion", "algoritmos", "herramientas_tecnologicas", "proceso_venta", "clientes_minoristas", "B2B", "Mi Carro", "La Barra", "experiencia_cliente", "plataforma_comercio_electronico", "regionalizacion"],
+        "keywords": ["fondo_innovacion", "algoritmos", "herramientas_tecnologicas", "proceso_venta", "clientes_minoristas", "B2B", "Mi_Carro", "La_Barra", "experiencia_cliente", "plataforma_comercio_electronico", "regionalizacion"],
         "relevance_score": 0.93
     },
     {
@@ -2162,5 +2163,6 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
