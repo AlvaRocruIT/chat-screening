@@ -57,7 +57,7 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0007",
         "text": "Este nuevo marco denominado “SER CCA” encarna nuestras aspiraciones como Compañía. Qué nos inspira: Ser CCA nos inspira a trascender los legítimos intereses de quienes aquí trabajamos, con un propósito y una promesa concretos, que buscan construir un mejor vivir para todos aquellos con quienes nos relacionamos. A continuación abordamos Nuestro Propósito:",
-        "semantic_tags": ["definición_estratégica", "inspiración_corporativa", ser_CCA"],
+        "semantic_tags": ["definición_estratégica", "inspiración_corporativa", "ser_CCA"],
         "context_type": "identidad_corportiva",
         "keywords": ["identidad", "inspira", "trascender", "mejor_vivir", "propósito", "Ser CCA", "compromiso"],
         "relevance_score": 0.99
@@ -82,7 +82,7 @@
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
-        "id": "memoria_anual_CCA_2023-0009",
+        "id": "memoria_anual_CCA_2023-0010",
         "text": "Identidad: Ser CCA es vivir de acuerdo con nuestros principios y proyectar nuestra personalidad en todo momento. A continuación abordamos Nuestros Principios:",
         "semantic_tags": ["definición_estratégica", "identidad_corporativa", "ser_CCA",],
         "context_type": "identidad_corportiva",
@@ -91,7 +91,7 @@
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
-        "id": "memoria_anual_CCA_2023-0010",
+        "id": "memoria_anual_CCA_2023-0011",
         "text": "Nuestros Principios son la excelencia, entrega, integridad y empoderamiento. -Excelencia: Somos apasionados por la calidad y el trabajo bien hecho. - Entrega: Procuramos el bien de los demás y de nuestro entorno, en armonía con nuestros legítimos intereses. -Integridad: Cumplimos las normas que nos regulan, siempre inspirados en actuar correctamente.  - Empoderamiento: Nos mueve una actitud emprendedora, innovadora y proactiva. A continuación abordamos Nuestra personalidad:",
         "semantic_tags": ["principios_corporativos", "valores_organizacionales", "cultura_empresarial"],
         "context_type": "organizational_identity",
@@ -100,7 +100,7 @@
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
-        "id": "memoria_anual_CCA_2023-0010",
+        "id": "memoria_anual_CCA_2023-0012",
         "text": "Nuestra personalidad se identifica a través del orgullo, empatía, superación y pasión: - Orgullo: Sentimos legítimo orgullo de lo que somos y de nuestra historia. - Empatía: Nos relacionamos y colaboramos con nuestras personas desde el afecto y la confianza. - Superación: Nos gusta plantearnos objetivos ambiciosos, superarlos y adaptarnos al mercado. - Pasión: Somos entusiastas y nos gusta transmitirlo. A continuación abordamos Cómo lo Hacemos:",
         "semantic_tags": ["principios_corporativos", "valores_organizacionales", "cultura_empresarial", "ética_laboral"],
         "context_type": "identidad_corportiva",
@@ -110,7 +110,7 @@
 
     {
         "source": "memoria_anual_CCA_2023.txt",
-        "id": "memoria_anual_CCA_2023-0011",
+        "id": "memoria_anual_CCA_2023-0013",
         "text": "Cómo lo Hacemos: Ser CCA es hacer las cosas basados en pilares estratégicos sólidos, desde una plataforma de negocios robusta y una ejecución de excelencia, a través de procesos a lo largo de toda la organización. Nuestros Pilares Estratégicos son la rentabilid, crecimiento, sustentabilidad y optimización de recursos. - Rentabilidad: Maximizar el valor económico de los negocios que operamos. Esto se logra al optimizar el retorno final sobre la inversión, lo que es consecuencia de mejores márgenes y el uso eficiente de los recursos. - Crecimiento: Incrementar el tamaño y el alcance de nuestra operación. Esto se logra mediante una mayor participación de mercado, atendiendo nuevas necesidades, nuevos canales, nuevas ocasiones de consumo y entrando a nuevas regiones, negocios y categorías. - Sustentabilidad: Asegurar el valor de la Compañía a largo plazo. Esto se logra teniendo en consideración el bienestar actual y futuro de todas las personas con las que interactuamos, el desarrollo de nuestras marcas y el cuidado del medio ambiente. A continuación abordaremos Nuestros Procesos:",
         "semantic_tags": ["pilares_estratégicos", "ejecución_de_excelencia", "sustentabilidad_empresarial", "crecimiento_y_rentabilidad"],
         "context_type": "estrategia_corporativa",
@@ -119,7 +119,7 @@
     },
     {
         "source": "memoria_anual_CCA_2023.txt",
-        "id": "memoria_anual_CCA_2023-0012",
+        "id": "memoria_anual_CCA_2023-0014",
         "text": "Nuestros Procesos: La organización de CCA, desde sus procesos, mantiene el equilibrio necesario entre una organización formal y una organización informal. Mientras la primera nos permite tener claridad de que lo que hacemos garantiza una gestión ordenada, estructurada y replicable, la segunda incorpora la necesaria espontaneidad que surge de los liderazgos y las relaciones interpersonales dentro de la Compañía. A continuación abordaremos nuestra plataforma de negocios.",
         "semantic_tags": ["nuestros_procesos", "organizacion_formal", "organizacion_informal", "gestión_de_procesos"],
         "context_type": "estrategia_corporativa",
@@ -2237,3 +2237,4 @@
         "relevance_score": 0.94
     }
 ]
+
