@@ -229,7 +229,7 @@
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0024",
-        "text": Por su parte el “EBITDA”, que corresponde al Resultado Operacional Ajustado antes de Depreciación y Amortización alcanzó CLP 379.402 millones, un aumento del 6,0%, lo que representa un aumento en el margen EBITDA de 13,2% a 14,8%. El Resultado no operacional totalizó una pérdida de CLP 150.125 millones, frente a un resultado negativo de CLP 95.683 millones el año pasado.",
+        "text": "Por su parte el EBITDA, que corresponde al Resultado Operacional Ajustado antes de Depreciación y Amortización alcanzó CLP 379.402 millones, un aumento del 6,0%, lo que representa un aumento en el margen EBITDA de 13,2% a 14,8%. El Resultado no operacional totalizó una pérdida de CLP 150.125 millones, frente a un resultado negativo de CLP 95.683 millones el año pasado.",
         "semantic_tags": ["resultado_operacional","EBITDA", "depreciación_y_amortización" "margen_financiero"],
         "context_type": "desempeño_financiero",
         "keywords": ["EBIT", "EBITDA", "margen_financiero", "resultado_operacional_ajustado", "resultado_no_operacional", "pérdida"],
@@ -2237,6 +2237,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
