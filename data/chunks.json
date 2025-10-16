@@ -212,7 +212,7 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0022",
         "text": "En moneda local, los gastos de MSD&A en Argentina, crecieron debido a presiones inflacionarias. En el Segmento de operación Chile, los gastos de MSD&A aumentaron un 10,5% y, como porcentaje de los Ingresos por venta, aumentaron de 32,5% a 34,2%, explicado principalmente por mayores gastos de marketing y distribución. Por su parte, en el Segmento de operación Vinos, los gastos de MSD&A aumentaron un 3,0% y como porcentaje de los ingresos, aumentaron de 25,4% a 30,6% en parte explicado por la menor escala de negocios y mayores gastos en marketing.",
-        "semantic_tags": [""MSD&A"", "presiones_inflacionarias", "marketing_y_distribución", "desempeño_segmentos"],
+        "semantic_tags": ["MSD&A", "presiones_inflacionarias", "marketing_y_distribución", "desempeño_segmentos"],
         "context_type": "desempeño_financiero",
         "keywords": [ "MSD&A", "Segmento_Chile", "Segmento_Vinos", "ingresos_por_venta", "aumento_gastos", "marketing", "distribución", "menor_escala"],
         "relevance_score": 0.92
@@ -2237,5 +2237,6 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
