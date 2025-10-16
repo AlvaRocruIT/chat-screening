@@ -75,7 +75,7 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0009",
         "text": "Nuestro Compromiso: Con una amplia gama de marcas de bebestibles y experiencias, mejoramos y acompañamos distintos momentos de la vida, guiados por nuestros principios, en beneficio de las personas con las que nos relacionamos y el cuidado del medio ambiente. Identidad: Ser CCA es vivir de acuerdo con nuestros principios y proyectar nuestra personalidad en todo momento. A continuación abordamos nuestra Identidad.",
-        "semantic_tags": ["definición_estratégica", "compromiso_corporativo", "ser_CCA",],
+        "semantic_tags": ["definición_estratégica", "compromiso_corporativo", "ser_CCA"],
         "context_type": "identidad_corportiva",
         "keywords": ["visión", "compromiso", "momentos", "beneficio", "personas", "ser_CCA"],
         "relevance_score": 0.99
@@ -84,7 +84,7 @@
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0010",
         "text": "Identidad: Ser CCA es vivir de acuerdo con nuestros principios y proyectar nuestra personalidad en todo momento. A continuación abordamos Nuestros Principios:",
-        "semantic_tags": ["definición_estratégica", "identidad_corporativa", "ser_CCA",],
+        "semantic_tags": ["definición_estratégica", "identidad_corporativa", "ser_CCA"],
         "context_type": "identidad_corportiva",
         "keywords": ["identidad", "ser_CCA", "principios", "personalidad"],
         "relevance_score": 0.97
@@ -2237,4 +2237,5 @@
         "relevance_score": 0.94
     }
 ]
+
 
