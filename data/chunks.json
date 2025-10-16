@@ -220,7 +220,7 @@
     {
         "source": "memoria_anual_CCA_2023.txt",
         "id": "memoria_anual_CCA_2023-0023",
-        "text": "El “EBIT”, corresponde al Resultado Operacional Ajustado, por sus siglas en inglés. En CCA el "EBIT" alcanzó CLP 253.283 millones, con una expansión del 9,4%, mejorando el margen EBIT de un 8,5% a un 9,9%. A continuación abordaremos el EBITDA.",
+        "text": "El “EBIT”, corresponde al Resultado Operacional Ajustado, por sus siglas en inglés. En CCA el EBIT alcanzó CLP 253.283 millones, con una expansión del 9,4%, mejorando el margen EBIT de un 8,5% a un 9,9%. A continuación abordaremos el EBITDA.",
         "semantic_tags": ["resultado_operacional", "EBIT", "margen_financiero"],
         "context_type": "desempeño_financiero",
         "keywords": ["EBIT", "MARGEN_EBIT", "margen_financiero", "resultado_operacional_ajustado"],
@@ -2237,6 +2237,7 @@
         "relevance_score": 0.94
     }
 ]
+
 
 
 
