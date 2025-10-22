@@ -5,8 +5,8 @@ const historyBox = document.getElementById("historyBox");
 const sendBtn = document.getElementById("sendBtn");
 
 // UPDATE THESE URLs to match your new n8n webhook
-const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat";
-const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat";
+const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
+const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
