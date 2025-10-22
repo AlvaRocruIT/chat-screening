@@ -1,7 +1,7 @@
 <b><big> ✒️ Chat-Screening</b></big>
 
 Bienvenido al chat interactivo con vacantes.
-Este proyecto reinventa la preselección: en lugar de que el candidato solo envíe un CV, ahora puede chatear directamente con la posición a la que postula.
+Este proyecto reinventa la preselección: en lugar de que el candidato solo envíe un CV, ahora puede chatear directamente con la organización y el cargo al que postula.
 
 <b>💡 ¿Qué es esto?</b>
 
