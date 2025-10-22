@@ -75,7 +75,7 @@ async function sendMessage() {
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
-  const payload = { text: input, vacante: getVacanteIdFromPath() };
+  const payload = { chatInput: input, metadata: { vacante: getVacanteIdFromPath() } };
   let endpoint = getPreferredEndpoint();
 
   try {
