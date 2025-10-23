@@ -13,7 +13,6 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra adaptar el chatbot a la vacante<br>
 ✅ Se logra hacer funcionar el chat con modelo embedding 📅22 OCT. 2025<br>
 ✅ Se busca adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025<br>
-💡 Se busca automatizar un sistema de versiones para n8n<br>
 💡 Se testea para el chatbot para organizaciones con data segmentada<br>
 🎁 <strong> Se presenta el proyecto </strong><br>
 💭 ¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?<br><br>
