@@ -12,13 +12,14 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se pule un .txt depurado a partir del pdf de base<br>
 ✅ Se logra adaptar el chatbot a la vacante<br>
 ✅ Se logra hacer funcionar el chat con modelo embedding 📅22 OCT. 2025<br>
-✅ Se busca adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025<br>
-💭 <strong>¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?</strong><br>
+✅ <strong>Se logra adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025</strong><br>
+💭 ¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?<br>
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
-🚧 Loguear conversaciones<br>
-🚧 Configurar base de datos<br>
-🚧 Crear un frontend para la analítica de datos<br>
-💭Poder rankear conversaciones <br>
+🚧 Se trabaja en loguear conversaciones<br>
+🚧 Se trabaja en configurar base de datos<br>
+🚧 Se trabaja en crear un frontend para la analítica de datos<br>
+💭 Se busca poder rankear conversaciones <br>
+💭 Se busca disponibilizar una interfaz de admin para la analítica de datos<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
 
