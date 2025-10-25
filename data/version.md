@@ -15,12 +15,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se busca adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025<br>
 💭 <strong>¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?</strong><br>
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
-(🔑KW cubiertas x Q/A; 🔑KW cubiertas por categorías)
-💡 Descubrir cómo trazar el historial individual de conversaciones
-💡 Cómo integro bases de datos a mi proyecto
-💡 Cómo rankear las conversaciones en 2 dimensiones  
-💡 Un upgrade al frontend
-💡 Se testea para el chatbot para ccu y BCI mach<br>
+(🔑KW cubiertas x Q/A; 🔑KW cubiertas por categorías <br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
 
