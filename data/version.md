@@ -26,29 +26,29 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 <b>💬 Nota final</b>
 
 
-🎯 Recommended Evaluation Categories
-Based on recruitment best practices and your chatbot's purpose, here are 6 key categories to evaluate:
-1. TECHNICAL_PREPARATION 🔧
-Measures: Knowledge of required technologies, understanding of technical requirements
-Keywords: Specific tech terms, methodologies, tools mentioned in job description
-Scoring: How well they ask about technical aspects vs. general questions
-2. STRATEGIC_THINKING 🧠
-Measures: Understanding of business impact, long-term vision, problem-solving approach
-Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"
-Scoring: Questions about business context, not just role execution
-3. CULTURAL_ALIGNMENT 🤝
-Measures: Interest in company values, work environment, team dynamics
-Keywords: "culture", "values", "team", "collaboration", "environment", "mission"
-Scoring: Questions about company culture vs. just job requirements
-4. GROWTH_MINDSET 📈
-Measures: Interest in learning, development opportunities, career progression
-Keywords: "learn", "develop", "growth", "opportunity", "training", "mentorship"
-Scoring: Questions about personal development and learning opportunities
-5. ENGAGEMENT_DEPTH 💬
-Measures: Quality of follow-up questions, conversation depth, curiosity level
-Keywords: Follow-up patterns, question complexity, conversation length
-Scoring: Number of meaningful follow-ups, conversation depth
-6. ROLE_UNDERSTANDING 🎯
-Measures: Clarity about responsibilities, expectations, and role scope
-Keywords: "responsibilities", "expectations", "scope", "deliverables", "success"
-Scoring: How well they understand what the role actually involves
+🎯 Recommended Evaluation Categories<br>
+Based on recruitment best practices and your chatbot's purpose, here are 6 key categories to evaluate:<br>
+1. TECHNICAL_PREPARATION 🔧<br>
+Measures: Knowledge of required technologies, understanding of technical requirements<br>
+Keywords: Specific tech terms, methodologies, tools mentioned in job description<br>
+Scoring: How well they ask about technical aspects vs. general questions<br>
+2. STRATEGIC_THINKING 🧠<br>
+Measures: Understanding of business impact, long-term vision, problem-solving approach<br>
+Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"<br>
+Scoring: Questions about business context, not just role execution<br>
+3. CULTURAL_ALIGNMENT 🤝<br>
+Measures: Interest in company values, work environment, team dynamics<br>
+Keywords: "culture", "values", "team", "collaboration", "environment", "mission"<br>
+Scoring: Questions about company culture vs. just job requirements<br>
+4. GROWTH_MINDSET 📈<br>
+Measures: Interest in learning, development opportunities, career progression<br>
+Keywords: "learn", "develop", "growth", "opportunity", "training", "mentorship"<br>
+Scoring: Questions about personal development and learning opportunitiesv
+5. ENGAGEMENT_DEPTH 💬<br>
+Measures: Quality of follow-up questions, conversation depth, curiosity level<br>
+Keywords: Follow-up patterns, question complexity, conversation length<br>
+Scoring: Number of meaningful follow-ups, conversation depth<br>
+6. ROLE_UNDERSTANDING 🎯<br>
+Measures: Clarity about responsibilities, expectations, and role scope<br>
+Keywords: "responsibilities", "expectations", "scope", "deliverables", "success"<br>
+Scoring: How well they understand what the role actually involves<br>
