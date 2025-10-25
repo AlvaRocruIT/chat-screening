@@ -19,7 +19,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🚧 Se trabaja en configurar base de datos<br>
 🚧 Se trabaja en crear un frontend para la analítica de datos<br>
 💭 Se busca poder rankear conversaciones <br>
-💭 Se busca disponibilizar una interfaz de admin para la analítica de datos<br>
+💭 <strong>Se busca disponibilizar una interfaz de admin para la analítica de datos</strong><br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
 
