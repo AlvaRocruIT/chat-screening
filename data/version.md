@@ -6,8 +6,11 @@ Chat-Screening es un chatbot diseñado para representar a una vacante en formato
 Permite que candidatos interactúen con el rol, conozcan sus desafíos y hagan preguntas, mientras la organización evalúa: nivel de preparación, calidad de las preguntas, conexión con la cultura, y lectura estratégica del desafío.
 En vez de solo leer un CV, la empresa obtiene señales del potencial y la disposición a crecer de cada persona.
 
-<b>🎯 Control de versiones</b>
-✅Se crea un repo con el frontend del chatbot<br>
+<b>🎯 Génesis del proyecto</b><br>
+✅ Se comienza a trabajar en el Pproyecho'ChatCV' 📅6 AGO. 2025<br>
+✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br>
+<b>🎯 Control de versiones</b><br>
+✅Se crea un repo con el frontend del chatbot 📅26 SEP. 2025<br>
 ✅ Se logra conectar el chatbot con el frontend<br>
 ✅ Se pule un .txt depurado a partir del pdf de base<br>
 ✅ Se logra adaptar el chatbot a la vacante<br>
