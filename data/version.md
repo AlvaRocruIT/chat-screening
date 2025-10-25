@@ -7,15 +7,14 @@ Permite que candidatos interactúen con el rol, conozcan sus desafíos y hagan p
 En vez de solo leer un CV, la empresa obtiene señales del potencial y la disposición a crecer de cada persona.
 
 <b>🎯 Génesis del proyecto</b><br>
-✅ Se comienza a trabajar en el Pproyecho'ChatCV' 📅6 AGO. 2025<br>
-✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br>
+✅ Se comienza a trabajar en el Proyecto'ChatCV' 📅6 AGO. 2025<br>
+✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br><br>
 <b>🎯 Control de versiones</b><br>
-✅Se crea un repo con el frontend del chatbot 📅26 SEP. 2025<br>
+✅Se crea un repo con el frontend del chat-screening 📅26 SEP. 2025<br>
 ✅ Se logra conectar el chatbot con el frontend<br>
-✅ Se pule un .txt depurado a partir del pdf de base<br>
 ✅ Se logra adaptar el chatbot a la vacante<br>
 ✅ Se logra hacer funcionar el chat con modelo embedding 📅22 OCT. 2025<br>
-✅ <strong>Se logra adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025</strong><br>
+✅ <strong>Se logra adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025</strong><br><br>
 💭 ¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?<br>
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
 🚧 Se trabaja en loguear conversaciones<br>
