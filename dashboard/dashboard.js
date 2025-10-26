@@ -5,7 +5,8 @@ class ChatScreeningDashboard {
         this.candidatesData = [];
         this.filteredVacante = 'all';
         this.sortColumn = null;
-        this.sortDirection = 'desc'; // Start with descending
+        this.sortDirection = 'desc';
+        this.selectedCandidate = null;
         this.init();
     }
 
@@ -24,6 +25,11 @@ class ChatScreeningDashboard {
 
         document.getElementById('vacanteFilter').addEventListener('change', (e) => {
             this.filterByVacante(e.target.value);
+        });
+
+        // Add area filter listener
+        document.getElementById('areaFilter').addEventListener('change', (e) => {
+            this.updateAreaAverage(e.target.value);
         });
     }
 
@@ -111,7 +117,9 @@ class ChatScreeningDashboard {
                     },
                     title: {
                         display: true,
-                        text: 'Comparación de Rendimiento'
+                        text: this.selectedCandidate ? 
+                            `Comparación: ${this.selectedCandidate.sessionId}` : 
+                            'Comparación de Rendimiento'
                     }
                 }
             }
@@ -121,22 +129,66 @@ class ChatScreeningDashboard {
     prepareChartData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
         
-        if (this.filteredVacante === 'all') {
-            // Show all vacantes with overall average
+        if (this.selectedCandidate) {
+            return this.prepareSelectedCandidateData();
+        } else if (this.filteredVacante === 'all') {
             return this.prepareAllVacantesData();
         } else {
-            // Show only selected vacante with 3 areas
             return this.prepareFilteredVacanteData();
         }
+    }
+
+    prepareSelectedCandidateData() {
+        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        
+        const overallAverage = this.calculateOverallAverage();
+        const selectedVacanteAverage = this.calculateVacanteAverage(this.selectedCandidate.vacante);
+        const selectedCandidateScores = [
+            this.selectedCandidate.scores.technical_preparation,
+            this.selectedCandidate.scores.cultural_alignment,
+            this.selectedCandidate.scores.growth_mindset,
+            this.selectedCandidate.scores.engagement_depth,
+            this.selectedCandidate.scores.role_understanding,
+            this.selectedCandidate.scores.strategic_thinking
+        ];
+        
+        const datasets = [
+            {
+                label: 'Promedio General',
+                data: overallAverage,
+                borderColor: '#2c2c2c',
+                backgroundColor: 'rgba(44, 44, 44, 0.2)',
+                borderWidth: 3,
+                pointRadius: 6
+            },
+            {
+                label: `Promedio ${this.selectedCandidate.vacante}`,
+                data: selectedVacanteAverage,
+                borderColor: '#666666',
+                backgroundColor: 'rgba(102, 102, 102, 0.2)',
+                borderWidth: 2,
+                pointRadius: 4
+            },
+            {
+                label: `${this.selectedCandidate.sessionId}`,
+                data: selectedCandidateScores,
+                borderColor: '#78FF3B',
+                backgroundColor: 'rgba(120, 255, 59, 0.2)',
+                borderWidth: 2,
+                pointRadius: 4
+            }
+        ];
+
+        return {
+            labels: labels,
+            datasets: datasets
+        };
     }
 
     prepareAllVacantesData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
         
-        // Calculate overall average
         const overallAverage = this.calculateOverallAverage();
-        
-        // Calculate averages per vacante
         const vacanteAverages = this.calculateVacanteAverages();
         
         const datasets = [
@@ -150,7 +202,6 @@ class ChatScreeningDashboard {
             }
         ];
 
-        // Add vacante averages with decreasing gray shades
         const grayShades = ['#666666', '#999999', '#cccccc'];
         let shadeIndex = 0;
 
@@ -175,13 +226,8 @@ class ChatScreeningDashboard {
     prepareFilteredVacanteData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
         
-        // 1. Overall average (black)
         const overallAverage = this.calculateOverallAverage();
-        
-        // 2. Selected vacante average (gray)
         const selectedVacanteAverage = this.calculateVacanteAverage(this.filteredVacante);
-        
-        // 3. Top candidate for selected vacante (green)
         const topCandidate = this.findTopCandidateForVacante(this.filteredVacante);
         
         const datasets = [
@@ -268,20 +314,36 @@ class ChatScreeningDashboard {
 
     updateStats() {
         const totalCandidates = this.candidatesData.length;
-        const avgTechnical = this.calculateAverage('technical_preparation');
-        const avgCultural = this.calculateAverage('cultural_alignment');
+        const avgGeneral = this.calculateGeneralAverage();
         const bestCandidate = this.findBestCandidate();
+        const mostInteractive = this.findMostInteractiveCandidate();
 
         document.getElementById('totalCandidates').textContent = totalCandidates;
-        document.getElementById('avgTechnical').textContent = avgTechnical.toFixed(1);
-        document.getElementById('avgCultural').textContent = avgCultural.toFixed(1);
+        document.getElementById('avgGeneral').textContent = avgGeneral.toFixed(1);
         document.getElementById('bestCandidate').textContent = bestCandidate;
+        document.getElementById('mostInteractive').textContent = mostInteractive;
+        
+        // Update area average for default selection
+        this.updateAreaAverage('technical_preparation');
     }
 
-    calculateAverage(scoreType) {
+    calculateGeneralAverage() {
         if (this.candidatesData.length === 0) return 0;
-        const sum = this.candidatesData.reduce((acc, candidate) => acc + candidate.scores[scoreType], 0);
-        return sum / this.candidatesData.length;
+        const totalSum = this.candidatesData.reduce((acc, candidate) => {
+            return acc + Object.values(candidate.scores).reduce((sum, score) => sum + score, 0);
+        }, 0);
+        return totalSum / (this.candidatesData.length * 6);
+    }
+
+    updateAreaAverage(area) {
+        if (this.candidatesData.length === 0) {
+            document.getElementById('avgByArea').textContent = '0.0';
+            return;
+        }
+        
+        const sum = this.candidatesData.reduce((acc, candidate) => acc + candidate.scores[area], 0);
+        const average = sum / this.candidatesData.length;
+        document.getElementById('avgByArea').textContent = average.toFixed(1);
     }
 
     findBestCandidate() {
@@ -296,13 +358,35 @@ class ChatScreeningDashboard {
         return best.sessionId;
     }
 
+    findMostInteractiveCandidate() {
+        if (this.candidatesData.length === 0) return '--';
+        
+        // For now, return the candidate with highest engagement depth
+        const mostInteractive = this.candidatesData.reduce((best, current) => {
+            return current.scores.engagement_depth > best.scores.engagement_depth ? current : best;
+        });
+
+        return mostInteractive.sessionId;
+    }
+
+    selectCandidate(candidate) {
+        this.selectedCandidate = candidate;
+        this.updateChart();
+        this.updateCandidatesTable();
+    }
+
+    clearSelection() {
+        this.selectedCandidate = null;
+        this.updateChart();
+        this.updateCandidatesTable();
+    }
+
     sortCandidates(column) {
-        // Toggle sort direction if clicking the same column
         if (this.sortColumn === column) {
             this.sortDirection = this.sortDirection === 'desc' ? 'asc' : 'desc';
         } else {
             this.sortColumn = column;
-            this.sortDirection = 'desc'; // Start with descending (best first)
+            this.sortDirection = 'desc';
         }
 
         this.candidatesData.sort((a, b) => {
@@ -407,9 +491,11 @@ class ChatScreeningDashboard {
                 <tbody>
                     ${this.candidatesData.map(candidate => {
                         const total = Object.values(candidate.scores).reduce((a, b) => a + b, 0);
-                        const average = total / 6; // 6 categories total
+                        const average = total / 6;
+                        const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
                         return `
-                            <tr>
+                            <tr onclick="dashboard.selectCandidate(${JSON.stringify(candidate).replace(/"/g, '&quot;')})" 
+                                class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
                                 <td>${candidate.scores.technical_preparation}</td>
@@ -431,13 +517,14 @@ class ChatScreeningDashboard {
 
     getSortIcon(column) {
         if (this.sortColumn !== column) {
-            return '↕'; // Neutral sort icon
+            return '↕';
         }
         return this.sortDirection === 'desc' ? '↓' : '↑';
     }
 
     filterByVacante(vacante) {
         this.filteredVacante = vacante;
+        this.selectedCandidate = null;
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
@@ -456,8 +543,10 @@ class ChatScreeningDashboard {
         const now = new Date();
         document.getElementById('lastUpdate').textContent = 
             `Última actualización: ${now.toLocaleTimeString()}`;
+        document.getElementById('lastUpdateTime').textContent = now.toLocaleTimeString();
         
         this.loadMockData();
+        this.selectedCandidate = null;
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
