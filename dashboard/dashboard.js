@@ -402,6 +402,10 @@ class ChatScreeningDashboard {
                     valueA = a.vacante;
                     valueB = b.vacante;
                     break;
+                case 'interactions':
+                    valueA = a.interactions;
+                    valueB = b.interactions;
+                    break;
                 case 'technical_preparation':
                     valueA = a.scores.technical_preparation;
                     valueB = b.scores.technical_preparation;
@@ -425,10 +429,6 @@ class ChatScreeningDashboard {
                 case 'strategic_thinking':
                     valueA = a.scores.strategic_thinking;
                     valueB = b.scores.strategic_thinking;
-                    break;
-                case 'interactions':
-                    valueA = a.interactions;
-                    valueB = b.interactions;
                     break;
                 case 'average':
                     const totalA = Object.values(a.scores).reduce((sum, score) => sum + score, 0);
@@ -470,6 +470,9 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
                             Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
                         </th>
+                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                        </th>
                         <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
                             Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
                         </th>
@@ -488,9 +491,6 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
                             Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
                         </th>
-                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
-                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
-                        </th>
                         <th onclick="dashboard.sortCandidates('average')" class="sortable">
                             Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
                         </th>
@@ -506,13 +506,13 @@ class ChatScreeningDashboard {
                                 class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
+                                <td>${candidate.interactions}</td>
                                 <td>${candidate.scores.technical_preparation}</td>
                                 <td>${candidate.scores.cultural_alignment}</td>
                                 <td>${candidate.scores.growth_mindset}</td>
                                 <td>${candidate.scores.engagement_depth}</td>
                                 <td>${candidate.scores.role_understanding}</td>
                                 <td>${candidate.scores.strategic_thinking}</td>
-                                <td>${candidate.interactions}</td>
                                 <td><strong>${average.toFixed(1)}</strong></td>
                             </tr>
                         `;
