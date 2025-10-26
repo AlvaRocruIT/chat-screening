@@ -314,12 +314,13 @@ class ChatScreeningDashboard {
                         <th>Engagement</th>
                         <th>Rol</th>
                         <th>Estratégico</th>
-                        <th>Total</th>
+                        <th>Promedio</th>
                     </tr>
                 </thead>
                 <tbody>
                     ${this.candidatesData.map(candidate => {
                         const total = Object.values(candidate.scores).reduce((a, b) => a + b, 0);
+                        const average = total / 6; // 6 categories total
                         return `
                             <tr>
                                 <td>${candidate.sessionId}</td>
@@ -330,7 +331,7 @@ class ChatScreeningDashboard {
                                 <td>${candidate.scores.engagement_depth}</td>
                                 <td>${candidate.scores.role_understanding}</td>
                                 <td>${candidate.scores.strategic_thinking}</td>
-                                <td><strong>${total}</strong></td>
+                                <td><strong>${average.toFixed(1)}</strong></td>
                             </tr>
                         `;
                     }).join('')}
