@@ -18,7 +18,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 💭 ¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?<br>
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
 ✅ Se logra en crear un frontend para la analítica de datos📅25 OCT. 2025<br>
-<strong> 500 COMMITS ✨</strong>
+<strong> 500 COMMITS ✨</strong><br>
 🚧 Se trabaja en loguear conversaciones<br>
 🚧 Se trabaja en configurar base de datos<br>
 💭 Se busca poder rankear conversaciones <br>
