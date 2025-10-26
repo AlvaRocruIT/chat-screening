@@ -46,7 +46,7 @@ class ChatScreeningDashboard {
                     role_understanding: 3,
                     strategic_thinking: 2
                 },
-                interactions: 8, // Number of prompts asked by user
+                interactions: 8,
                 timestamp: '2024-01-15T10:30:00Z'
             },
             {
@@ -60,7 +60,7 @@ class ChatScreeningDashboard {
                     role_understanding: 4,
                     strategic_thinking: 3
                 },
-                interactions: 12, // Number of prompts asked by user
+                interactions: 12,
                 timestamp: '2024-01-15T11:15:00Z'
             },
             {
@@ -74,7 +74,7 @@ class ChatScreeningDashboard {
                     role_understanding: 5,
                     strategic_thinking: 4
                 },
-                interactions: 6, // Number of prompts asked by user
+                interactions: 6,
                 timestamp: '2024-01-15T12:00:00Z'
             },
             {
@@ -88,7 +88,7 @@ class ChatScreeningDashboard {
                     role_understanding: 3,
                     strategic_thinking: 3
                 },
-                interactions: 15, // Number of prompts asked by user
+                interactions: 15,
                 timestamp: '2024-01-15T13:00:00Z'
             }
         ];
@@ -320,13 +320,27 @@ class ChatScreeningDashboard {
         const avgGeneral = this.calculateGeneralAverage();
         const bestCandidate = this.findBestCandidate();
         const mostInteractive = this.findMostInteractiveCandidate();
+        
+        // Calculate candidates by vacante based on filter
+        const candidatesByVacante = this.getCandidatesByVacante();
 
         document.getElementById('totalCandidates').textContent = totalCandidates;
+        document.getElementById('candidatesByVacante').textContent = candidatesByVacante;
         document.getElementById('avgGeneral').textContent = avgGeneral.toFixed(1);
         document.getElementById('bestCandidate').textContent = bestCandidate;
         document.getElementById('mostInteractive').textContent = mostInteractive;
         
         this.updateAreaAverage('technical_preparation');
+    }
+
+    getCandidatesByVacante() {
+        if (this.filteredVacante === 'all') {
+            // Show total candidates when "all" is selected
+            return this.candidatesData.length;
+        } else {
+            // Show candidates count for selected vacante
+            return this.candidatesData.filter(candidate => candidate.vacante === this.filteredVacante).length;
+        }
     }
 
     calculateGeneralAverage() {
@@ -402,10 +416,6 @@ class ChatScreeningDashboard {
                     valueA = a.vacante;
                     valueB = b.vacante;
                     break;
-                case 'interactions':
-                    valueA = a.interactions;
-                    valueB = b.interactions;
-                    break;
                 case 'technical_preparation':
                     valueA = a.scores.technical_preparation;
                     valueB = b.scores.technical_preparation;
@@ -429,6 +439,10 @@ class ChatScreeningDashboard {
                 case 'strategic_thinking':
                     valueA = a.scores.strategic_thinking;
                     valueB = b.scores.strategic_thinking;
+                    break;
+                case 'interactions':
+                    valueA = a.interactions;
+                    valueB = b.interactions;
                     break;
                 case 'average':
                     const totalA = Object.values(a.scores).reduce((sum, score) => sum + score, 0);
@@ -470,9 +484,6 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
                             Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
                         </th>
-                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
-                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
-                        </th>
                         <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
                             Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
                         </th>
@@ -491,6 +502,9 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
                             Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
                         </th>
+                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                        </th>
                         <th onclick="dashboard.sortCandidates('average')" class="sortable">
                             Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
                         </th>
@@ -506,13 +520,13 @@ class ChatScreeningDashboard {
                                 class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
-                                <td>${candidate.interactions}</td>
                                 <td>${candidate.scores.technical_preparation}</td>
                                 <td>${candidate.scores.cultural_alignment}</td>
                                 <td>${candidate.scores.growth_mindset}</td>
                                 <td>${candidate.scores.engagement_depth}</td>
                                 <td>${candidate.scores.role_understanding}</td>
                                 <td>${candidate.scores.strategic_thinking}</td>
+                                <td>${candidate.interactions}</td>
                                 <td><strong>${average.toFixed(1)}</strong></td>
                             </tr>
                         `;
@@ -535,7 +549,7 @@ class ChatScreeningDashboard {
         this.filteredVacante = vacante;
         this.selectedCandidate = null;
         this.updateChart();
-        this.updateStats();
+        this.updateStats(); // This will update the candidates by vacante count
         this.updateCandidatesTable();
     }
 
@@ -552,7 +566,6 @@ class ChatScreeningDashboard {
         const now = new Date();
         document.getElementById('lastUpdate').textContent = 
             `Última actualización: ${now.toLocaleTimeString()}`;
-        document.getElementById('lastUpdateTime').textContent = now.toLocaleTimeString();
         
         this.loadMockData();
         this.selectedCandidate = null;
