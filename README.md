@@ -38,9 +38,7 @@ n8n para orquestar el flujo conversacional.
 
 OpenAI para generar respuestas inteligentes y dinámicas.
 
-GitHub Pages para alojar el frontend.
-
-HTML + CSS + JavaScript para backend y dashboard.
+GitHub Pages para alojar el frontend (HTML + CSS + JavaScript).
 
 PostgreSQL + Supabase para alojar base de datos del dashboard.
 
