@@ -109,6 +109,20 @@ header {
   margin: 1em 0;
 }
 
+.candidate-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.candidate-row:hover {
+    background-color: rgba(44, 44, 44, 0.1);
+}
+
+.candidate-row.selected {
+    background-color: rgba(120, 255, 59, 0.2);
+    border-left: 3px solid #78FF3B;
+}
+
 /* Statistics grid */
 .stats-grid {
   display: grid;
