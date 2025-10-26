@@ -4,6 +4,8 @@ class ChatScreeningDashboard {
         this.chart = null;
         this.candidatesData = [];
         this.filteredVacante = 'all';
+        this.sortColumn = null;
+        this.sortDirection = 'asc';
         this.init();
     }
 
@@ -294,6 +296,73 @@ class ChatScreeningDashboard {
         return best.sessionId;
     }
 
+    sortCandidates(column) {
+        // Toggle sort direction if clicking the same column
+        if (this.sortColumn === column) {
+            this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+        } else {
+            this.sortColumn = column;
+            this.sortDirection = 'asc';
+        }
+
+        this.candidatesData.sort((a, b) => {
+            let valueA, valueB;
+
+            switch (column) {
+                case 'sessionId':
+                    valueA = a.sessionId;
+                    valueB = b.sessionId;
+                    break;
+                case 'vacante':
+                    valueA = a.vacante;
+                    valueB = b.vacante;
+                    break;
+                case 'technical_preparation':
+                    valueA = a.scores.technical_preparation;
+                    valueB = b.scores.technical_preparation;
+                    break;
+                case 'cultural_alignment':
+                    valueA = a.scores.cultural_alignment;
+                    valueB = b.scores.cultural_alignment;
+                    break;
+                case 'growth_mindset':
+                    valueA = a.scores.growth_mindset;
+                    valueB = b.scores.growth_mindset;
+                    break;
+                case 'engagement_depth':
+                    valueA = a.scores.engagement_depth;
+                    valueB = b.scores.engagement_depth;
+                    break;
+                case 'role_understanding':
+                    valueA = a.scores.role_understanding;
+                    valueB = b.scores.role_understanding;
+                    break;
+                case 'strategic_thinking':
+                    valueA = a.scores.strategic_thinking;
+                    valueB = b.scores.strategic_thinking;
+                    break;
+                case 'average':
+                    const totalA = Object.values(a.scores).reduce((sum, score) => sum + score, 0);
+                    const totalB = Object.values(b.scores).reduce((sum, score) => sum + score, 0);
+                    valueA = totalA / 6;
+                    valueB = totalB / 6;
+                    break;
+                default:
+                    return 0;
+            }
+
+            if (valueA < valueB) {
+                return this.sortDirection === 'asc' ? -1 : 1;
+            }
+            if (valueA > valueB) {
+                return this.sortDirection === 'asc' ? 1 : -1;
+            }
+            return 0;
+        });
+
+        this.updateCandidatesTable();
+    }
+
     updateCandidatesTable() {
         const tableContainer = document.getElementById('candidatesTable');
         
@@ -306,15 +375,33 @@ class ChatScreeningDashboard {
             <table>
                 <thead>
                     <tr>
-                        <th>Session ID</th>
-                        <th>Vacante</th>
-                        <th>Técnico</th>
-                        <th>Cultural</th>
-                        <th>Crecimiento</th>
-                        <th>Engagement</th>
-                        <th>Rol</th>
-                        <th>Estratégico</th>
-                        <th>Promedio</th>
+                        <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
+                            Session ID ${this.getSortIcon('sessionId')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
+                            Vacante ${this.getSortIcon('vacante')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
+                            Técnico ${this.getSortIcon('technical_preparation')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
+                            Cultural ${this.getSortIcon('cultural_alignment')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('growth_mindset')" class="sortable">
+                            Crecimiento ${this.getSortIcon('growth_mindset')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('engagement_depth')" class="sortable">
+                            Engagement ${this.getSortIcon('engagement_depth')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('role_understanding')" class="sortable">
+                            Rol ${this.getSortIcon('role_understanding')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
+                            Estratégico ${this.getSortIcon('strategic_thinking')}
+                        </th>
+                        <th onclick="dashboard.sortCandidates('average')" class="sortable">
+                            Promedio ${this.getSortIcon('average')}
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -340,6 +427,13 @@ class ChatScreeningDashboard {
         `;
 
         tableContainer.innerHTML = tableHTML;
+    }
+
+    getSortIcon(column) {
+        if (this.sortColumn !== column) {
+            return '↕️'; // Neutral sort icon
+        }
+        return this.sortDirection === 'asc' ? '↑' : '↓';
     }
 
     filterByVacante(vacante) {
@@ -384,6 +478,7 @@ class ChatScreeningDashboard {
 }
 
 // Initialize dashboard when page loads
+let dashboard;
 document.addEventListener('DOMContentLoaded', () => {
-    new ChatScreeningDashboard();
+    dashboard = new ChatScreeningDashboard();
 });
