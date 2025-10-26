@@ -40,7 +40,9 @@ OpenAI para generar respuestas inteligentes y dinámicas.
 
 GitHub Pages para alojar el frontend.
 
-HTML + CSS + JavaScript para la interfaz de chat.
+HTML + CSS + JavaScript para backend y dashboard.
+
+PostgreSQL + Supabase para alojar base de datos del dashboard.
 
 Cursor.ai para mejorar la toma de decisiones en el desarrollo.
 
