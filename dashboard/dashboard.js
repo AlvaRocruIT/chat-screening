@@ -27,14 +27,13 @@ class ChatScreeningDashboard {
             this.filterByVacante(e.target.value);
         });
 
-        // Add area filter listener
         document.getElementById('areaFilter').addEventListener('change', (e) => {
             this.updateAreaAverage(e.target.value);
         });
     }
 
     loadMockData() {
-        // Mock data with realistic job titles
+        // Mock data with realistic job titles and interaction counts
         this.candidatesData = [
             {
                 sessionId: 'session_001',
@@ -47,6 +46,7 @@ class ChatScreeningDashboard {
                     role_understanding: 3,
                     strategic_thinking: 2
                 },
+                interactions: 8, // Number of prompts asked by user
                 timestamp: '2024-01-15T10:30:00Z'
             },
             {
@@ -60,6 +60,7 @@ class ChatScreeningDashboard {
                     role_understanding: 4,
                     strategic_thinking: 3
                 },
+                interactions: 12, // Number of prompts asked by user
                 timestamp: '2024-01-15T11:15:00Z'
             },
             {
@@ -73,6 +74,7 @@ class ChatScreeningDashboard {
                     role_understanding: 5,
                     strategic_thinking: 4
                 },
+                interactions: 6, // Number of prompts asked by user
                 timestamp: '2024-01-15T12:00:00Z'
             },
             {
@@ -86,6 +88,7 @@ class ChatScreeningDashboard {
                     role_understanding: 3,
                     strategic_thinking: 3
                 },
+                interactions: 15, // Number of prompts asked by user
                 timestamp: '2024-01-15T13:00:00Z'
             }
         ];
@@ -323,7 +326,6 @@ class ChatScreeningDashboard {
         document.getElementById('bestCandidate').textContent = bestCandidate;
         document.getElementById('mostInteractive').textContent = mostInteractive;
         
-        // Update area average for default selection
         this.updateAreaAverage('technical_preparation');
     }
 
@@ -361,9 +363,8 @@ class ChatScreeningDashboard {
     findMostInteractiveCandidate() {
         if (this.candidatesData.length === 0) return '--';
         
-        // For now, return the candidate with highest engagement depth
         const mostInteractive = this.candidatesData.reduce((best, current) => {
-            return current.scores.engagement_depth > best.scores.engagement_depth ? current : best;
+            return current.interactions > best.interactions ? current : best;
         });
 
         return mostInteractive.sessionId;
@@ -425,6 +426,10 @@ class ChatScreeningDashboard {
                     valueA = a.scores.strategic_thinking;
                     valueB = b.scores.strategic_thinking;
                     break;
+                case 'interactions':
+                    valueA = a.interactions;
+                    valueB = b.interactions;
+                    break;
                 case 'average':
                     const totalA = Object.values(a.scores).reduce((sum, score) => sum + score, 0);
                     const totalB = Object.values(b.scores).reduce((sum, score) => sum + score, 0);
@@ -483,6 +488,9 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
                             Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
                         </th>
+                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                        </th>
                         <th onclick="dashboard.sortCandidates('average')" class="sortable">
                             Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
                         </th>
@@ -504,6 +512,7 @@ class ChatScreeningDashboard {
                                 <td>${candidate.scores.engagement_depth}</td>
                                 <td>${candidate.scores.role_understanding}</td>
                                 <td>${candidate.scores.strategic_thinking}</td>
+                                <td>${candidate.interactions}</td>
                                 <td><strong>${average.toFixed(1)}</strong></td>
                             </tr>
                         `;
