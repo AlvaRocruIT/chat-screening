@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Screening Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Chat-Screening Dashboard</h1>
+            <p>Análisis de conversaciones de candidatos</p>
+        </header>
 
+        <div class="controls">
+            <div class="filter-section">
+                <label for="vacanteFilter">Filtrar por Vacante:</label>
+                <select id="vacanteFilter">
+                    <option value="all">Todas las vacantes</option>
+                    <option value="vacante1">Vacante 1</option>
+                    <option value="vacante2">Vacante 2</option>
+                </select>
+            </div>
+            
+            <div class="refresh-section">
+                <button id="refreshBtn" class="refresh-btn">🔄 Actualizar</button>
+                <span id="lastUpdate">Última actualización: --</span>
+            </div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-section">
+                <h2>🕸️ Spider Chart - Rendimiento por Candidato</h2>
+                <div class="chart-wrapper">
+                    <canvas id="spiderChart"></canvas>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h2>📈 Estadísticas Generales</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Candidatos</h3>
+                        <span id="totalCandidates">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Promedio Técnico</h3>
+                        <span id="avgTechnical">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Promedio Cultural</h3>
+                        <span id="avgCultural">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Mejor Candidato</h3>
+                        <span id="bestCandidate">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="candidates-list">
+            <h2>👥 Lista de Candidatos</h2>
+            <div id="candidatesTable" class="table-container">
+                <!-- Table will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
