@@ -1,4 +1,4 @@
-/ Dashboard functionality for Chat-Screening
+// Dashboard functionality for Chat-Screening
 class ChatScreeningDashboard {
     constructor() {
         this.chart = null;
