@@ -3,35 +3,34 @@ class ChatScreeningDashboard {
     constructor() {
         this.chart = null;
         this.candidatesData = [];
+        this.filteredVacante = 'all';
         this.init();
     }
 
     init() {
         this.setupEventListeners();
-        this.loadMockData(); // Start with mock data
+        this.loadMockData();
         this.createChart();
         this.updateStats();
         this.updateCandidatesTable();
     }
 
     setupEventListeners() {
-        // Refresh button
         document.getElementById('refreshBtn').addEventListener('click', () => {
             this.refreshData();
         });
 
-        // Filter dropdown
         document.getElementById('vacanteFilter').addEventListener('change', (e) => {
             this.filterByVacante(e.target.value);
         });
     }
 
     loadMockData() {
-        // Mock data for development
+        // Mock data with realistic job titles
         this.candidatesData = [
             {
                 sessionId: 'session_001',
-                vacante: 'vacante1',
+                vacante: 'Jefe/a comercial Talca',
                 scores: {
                     technical_preparation: 4,
                     cultural_alignment: 3,
@@ -44,7 +43,7 @@ class ChatScreeningDashboard {
             },
             {
                 sessionId: 'session_002',
-                vacante: 'vacante1',
+                vacante: 'Jefe/a comercial Talca',
                 scores: {
                     technical_preparation: 3,
                     cultural_alignment: 4,
@@ -57,7 +56,7 @@ class ChatScreeningDashboard {
             },
             {
                 sessionId: 'session_003',
-                vacante: 'vacante2',
+                vacante: 'Analista de Compensaciones - Las Condes',
                 scores: {
                     technical_preparation: 5,
                     cultural_alignment: 2,
@@ -67,6 +66,19 @@ class ChatScreeningDashboard {
                     strategic_thinking: 4
                 },
                 timestamp: '2024-01-15T12:00:00Z'
+            },
+            {
+                sessionId: 'session_004',
+                vacante: 'Analista de Compensaciones - Las Condes',
+                scores: {
+                    technical_preparation: 4,
+                    cultural_alignment: 4,
+                    growth_mindset: 3,
+                    engagement_depth: 4,
+                    role_understanding: 3,
+                    strategic_thinking: 3
+                },
+                timestamp: '2024-01-15T13:00:00Z'
             }
         ];
     }
@@ -97,7 +109,7 @@ class ChatScreeningDashboard {
                     },
                     title: {
                         display: true,
-                        text: 'Rendimiento por Candidato'
+                        text: 'Comparación de Rendimiento'
                     }
                 }
             }
@@ -106,23 +118,50 @@ class ChatScreeningDashboard {
 
     prepareChartData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
-        const datasets = [];
+        
+        if (this.filteredVacante === 'all') {
+            // Show all vacantes with overall average
+            return this.prepareAllVacantesData();
+        } else {
+            // Show only selected vacante with 3 areas
+            return this.prepareFilteredVacanteData();
+        }
+    }
 
-        this.candidatesData.forEach(candidate => {
+    prepareAllVacantesData() {
+        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        
+        // Calculate overall average
+        const overallAverage = this.calculateOverallAverage();
+        
+        // Calculate averages per vacante
+        const vacanteAverages = this.calculateVacanteAverages();
+        
+        const datasets = [
+            {
+                label: 'Promedio General',
+                data: overallAverage,
+                borderColor: '#2c2c2c',
+                backgroundColor: 'rgba(44, 44, 44, 0.2)',
+                borderWidth: 3,
+                pointRadius: 6
+            }
+        ];
+
+        // Add vacante averages with decreasing gray shades
+        const grayShades = ['#666666', '#999999', '#cccccc'];
+        let shadeIndex = 0;
+
+        Object.entries(vacanteAverages).forEach(([vacante, scores]) => {
             datasets.push({
-                label: `Candidato ${candidate.sessionId}`,
-                data: [
-                    candidate.scores.technical_preparation,
-                    candidate.scores.cultural_alignment,
-                    candidate.scores.growth_mindset,
-                    candidate.scores.engagement_depth,
-                    candidate.scores.role_understanding,
-                    candidate.scores.strategic_thinking
-                ],
-                borderColor: this.getRandomColor(),
-                backgroundColor: this.getRandomColor(0.2),
-                borderWidth: 2
+                label: vacante,
+                data: scores,
+                borderColor: grayShades[shadeIndex % grayShades.length],
+                backgroundColor: `rgba(${shadeIndex * 60 + 100}, ${shadeIndex * 60 + 100}, ${shadeIndex * 60 + 100}, 0.2)`,
+                borderWidth: 2,
+                pointRadius: 4
             });
+            shadeIndex++;
         });
 
         return {
@@ -131,15 +170,98 @@ class ChatScreeningDashboard {
         };
     }
 
-    getRandomColor(alpha = 1) {
-        const colors = [
-            `rgba(44, 44, 44, ${alpha})`,
-            `rgba(68, 68, 68, ${alpha})`,
-            `rgba(102, 102, 102, ${alpha})`,
-            `rgba(136, 136, 136, ${alpha})`,
-            `rgba(170, 170, 170, ${alpha})`
+    prepareFilteredVacanteData() {
+        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        
+        // 1. Overall average (black)
+        const overallAverage = this.calculateOverallAverage();
+        
+        // 2. Selected vacante average (gray)
+        const selectedVacanteAverage = this.calculateVacanteAverage(this.filteredVacante);
+        
+        // 3. Top candidate for selected vacante (green)
+        const topCandidate = this.findTopCandidateForVacante(this.filteredVacante);
+        
+        const datasets = [
+            {
+                label: 'Promedio General',
+                data: overallAverage,
+                borderColor: '#2c2c2c',
+                backgroundColor: 'rgba(44, 44, 44, 0.2)',
+                borderWidth: 3,
+                pointRadius: 6
+            },
+            {
+                label: `Promedio ${this.filteredVacante}`,
+                data: selectedVacanteAverage,
+                borderColor: '#666666',
+                backgroundColor: 'rgba(102, 102, 102, 0.2)',
+                borderWidth: 2,
+                pointRadius: 4
+            },
+            {
+                label: `Mejor Candidato ${this.filteredVacante}`,
+                data: topCandidate.scores,
+                borderColor: '#78FF3B',
+                backgroundColor: 'rgba(120, 255, 59, 0.2)',
+                borderWidth: 2,
+                pointRadius: 4
+            }
         ];
-        return colors[Math.floor(Math.random() * colors.length)];
+
+        return {
+            labels: labels,
+            datasets: datasets
+        };
+    }
+
+    calculateOverallAverage() {
+        const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
+        
+        return scoreTypes.map(scoreType => {
+            if (this.candidatesData.length === 0) return 0;
+            const sum = this.candidatesData.reduce((acc, candidate) => acc + candidate.scores[scoreType], 0);
+            return sum / this.candidatesData.length;
+        });
+    }
+
+    calculateVacanteAverage(vacante) {
+        const vacanteCandidates = this.candidatesData.filter(candidate => candidate.vacante === vacante);
+        const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
+        
+        return scoreTypes.map(scoreType => {
+            if (vacanteCandidates.length === 0) return 0;
+            const sum = vacanteCandidates.reduce((acc, candidate) => acc + candidate.scores[scoreType], 0);
+            return sum / vacanteCandidates.length;
+        });
+    }
+
+    calculateVacanteAverages() {
+        const vacantes = [...new Set(this.candidatesData.map(candidate => candidate.vacante))];
+        const vacanteAverages = {};
+        
+        vacantes.forEach(vacante => {
+            vacanteAverages[vacante] = this.calculateVacanteAverage(vacante);
+        });
+        
+        return vacanteAverages;
+    }
+
+    findTopCandidateForVacante(vacante) {
+        const vacanteCandidates = this.candidatesData.filter(candidate => candidate.vacante === vacante);
+        
+        if (vacanteCandidates.length === 0) {
+            return {
+                sessionId: 'N/A',
+                scores: [0, 0, 0, 0, 0, 0]
+            };
+        }
+        
+        return vacanteCandidates.reduce((best, current) => {
+            const bestTotal = Object.values(best.scores).reduce((a, b) => a + b, 0);
+            const currentTotal = Object.values(current.scores).reduce((a, b) => a + b, 0);
+            return currentTotal > bestTotal ? current : best;
+        });
     }
 
     updateStats() {
@@ -220,12 +342,7 @@ class ChatScreeningDashboard {
     }
 
     filterByVacante(vacante) {
-        if (vacante === 'all') {
-            this.candidatesData = this.candidatesData; // Show all
-        } else {
-            this.candidatesData = this.candidatesData.filter(candidate => candidate.vacante === vacante);
-        }
-        
+        this.filteredVacante = vacante;
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
@@ -239,25 +356,18 @@ class ChatScreeningDashboard {
     }
 
     refreshData() {
-        // Simulate data refresh
         console.log('Refreshing data...');
         
-        // Update last update time
         const now = new Date();
         document.getElementById('lastUpdate').textContent = 
             `Última actualización: ${now.toLocaleTimeString()}`;
         
-        // In real implementation, this would fetch from your n8n API
-        // this.fetchDataFromAPI();
-        
-        // For now, just reload mock data
         this.loadMockData();
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
     }
 
-    // Future method to connect to your n8n API
     async fetchDataFromAPI() {
         try {
             const response = await fetch('your-n8n-webhook-url');
