@@ -19,8 +19,8 @@
                 <label for="vacanteFilter">Filtrar por Vacante:</label>
                 <select id="vacanteFilter">
                     <option value="all">Todas las vacantes</option>
-                    <option value="vacante1">Vacante 1</option>
-                    <option value="vacante2">Vacante 2</option>
+                    <option value="Jefe/a comercial Talca">Jefe/a comercial Talca</option>
+                    <option value="Analista de Compensaciones - Las Condes">Analista de Compensaciones - Las Condes</option>
                 </select>
             </div>
             
@@ -46,16 +46,32 @@
                         <span id="totalCandidates">0</span>
                     </div>
                     <div class="stat-card">
-                        <h3>Promedio Técnico</h3>
-                        <span id="avgTechnical">0</span>
+                        <h3>Promedio General</h3>
+                        <span id="avgGeneral">0.0</span>
                     </div>
                     <div class="stat-card">
-                        <h3>Promedio Cultural</h3>
-                        <span id="avgCultural">0</span>
+                        <h3>Promedio por Área</h3>
+                        <select id="areaFilter" class="area-select">
+                            <option value="technical_preparation">Técnico</option>
+                            <option value="cultural_alignment">Cultural</option>
+                            <option value="growth_mindset">Crecimiento</option>
+                            <option value="engagement_depth">Engagement</option>
+                            <option value="role_understanding">Rol</option>
+                            <option value="strategic_thinking">Estratégico</option>
+                        </select>
+                        <span id="avgByArea">0.0</span>
                     </div>
                     <div class="stat-card">
-                        <h3>Mejor Candidato</h3>
+                        <h3>Candidato Mejor Puntuado</h3>
                         <span id="bestCandidate">--</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Candidato con Más Interacciones</h3>
+                        <span id="mostInteractive">--</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Última Actualización</h3>
+                        <span id="lastUpdateTime">--</span>
                     </div>
                 </div>
             </div>
