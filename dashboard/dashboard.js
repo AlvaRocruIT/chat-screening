@@ -5,7 +5,7 @@ class ChatScreeningDashboard {
         this.candidatesData = [];
         this.filteredVacante = 'all';
         this.sortColumn = null;
-        this.sortDirection = 'asc';
+        this.sortDirection = 'desc'; // Start with descending
         this.init();
     }
 
@@ -299,10 +299,10 @@ class ChatScreeningDashboard {
     sortCandidates(column) {
         // Toggle sort direction if clicking the same column
         if (this.sortColumn === column) {
-            this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+            this.sortDirection = this.sortDirection === 'desc' ? 'asc' : 'desc';
         } else {
             this.sortColumn = column;
-            this.sortDirection = 'asc';
+            this.sortDirection = 'desc'; // Start with descending (best first)
         }
 
         this.candidatesData.sort((a, b) => {
@@ -352,10 +352,10 @@ class ChatScreeningDashboard {
             }
 
             if (valueA < valueB) {
-                return this.sortDirection === 'asc' ? -1 : 1;
+                return this.sortDirection === 'desc' ? 1 : -1;
             }
             if (valueA > valueB) {
-                return this.sortDirection === 'asc' ? 1 : -1;
+                return this.sortDirection === 'desc' ? -1 : 1;
             }
             return 0;
         });
@@ -433,7 +433,7 @@ class ChatScreeningDashboard {
         if (this.sortColumn !== column) {
             return '↕'; // Neutral sort icon
         }
-        return this.sortDirection === 'asc' ? '↑' : '↓';
+        return this.sortDirection === 'desc' ? '↓' : '↑';
     }
 
     filterByVacante(vacante) {
