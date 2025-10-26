@@ -5,7 +5,8 @@ class ChatScreeningDashboard {
         this.candidatesData = [];
         this.filteredVacante = 'all';
         this.sortColumn = null;
-        this.sortDirection = 'desc'; // Start with descending
+        this.sortDirection = 'desc';
+        this.selectedCandidate = null; // Track selected candidate
         this.init();
     }
 
@@ -111,7 +112,9 @@ class ChatScreeningDashboard {
                     },
                     title: {
                         display: true,
-                        text: 'Comparación de Rendimiento'
+                        text: this.selectedCandidate ? 
+                            `Comparación: ${this.selectedCandidate.sessionId}` : 
+                            'Comparación de Rendimiento'
                     }
                 }
             }
@@ -121,13 +124,68 @@ class ChatScreeningDashboard {
     prepareChartData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
         
-        if (this.filteredVacante === 'all') {
+        if (this.selectedCandidate) {
+            // Show selected candidate comparison
+            return this.prepareSelectedCandidateData();
+        } else if (this.filteredVacante === 'all') {
             // Show all vacantes with overall average
             return this.prepareAllVacantesData();
         } else {
             // Show only selected vacante with 3 areas
             return this.prepareFilteredVacanteData();
         }
+    }
+
+    prepareSelectedCandidateData() {
+        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        
+        // 1. Overall average (black)
+        const overallAverage = this.calculateOverallAverage();
+        
+        // 2. Selected candidate's vacante average (gray)
+        const selectedVacanteAverage = this.calculateVacanteAverage(this.selectedCandidate.vacante);
+        
+        // 3. Selected candidate scores (green)
+        const selectedCandidateScores = [
+            this.selectedCandidate.scores.technical_preparation,
+            this.selectedCandidate.scores.cultural_alignment,
+            this.selectedCandidate.scores.growth_mindset,
+            this.selectedCandidate.scores.engagement_depth,
+            this.selectedCandidate.scores.role_understanding,
+            this.selectedCandidate.scores.strategic_thinking
+        ];
+        
+        const datasets = [
+            {
+                label: 'Promedio General',
+                data: overallAverage,
+                borderColor: '#2c2c2c',
+                backgroundColor: 'rgba(44, 44, 44, 0.2)',
+                borderWidth: 3,
+                pointRadius: 6
+            },
+            {
+                label: `Promedio ${this.selectedCandidate.vacante}`,
+                data: selectedVacanteAverage,
+                borderColor: '#666666',
+                backgroundColor: 'rgba(102, 102, 102, 0.2)',
+                borderWidth: 2,
+                pointRadius: 4
+            },
+            {
+                label: `${this.selectedCandidate.sessionId}`,
+                data: selectedCandidateScores,
+                borderColor: '#78FF3B',
+                backgroundColor: 'rgba(120, 255, 59, 0.2)',
+                borderWidth: 2,
+                pointRadius: 4
+            }
+        ];
+
+        return {
+            labels: labels,
+            datasets: datasets
+        };
     }
 
     prepareAllVacantesData() {
@@ -296,6 +354,18 @@ class ChatScreeningDashboard {
         return best.sessionId;
     }
 
+    selectCandidate(candidate) {
+        this.selectedCandidate = candidate;
+        this.updateChart();
+        this.updateCandidatesTable(); // Update table to show selection
+    }
+
+    clearSelection() {
+        this.selectedCandidate = null;
+        this.updateChart();
+        this.updateCandidatesTable();
+    }
+
     sortCandidates(column) {
         // Toggle sort direction if clicking the same column
         if (this.sortColumn === column) {
@@ -408,8 +478,10 @@ class ChatScreeningDashboard {
                     ${this.candidatesData.map(candidate => {
                         const total = Object.values(candidate.scores).reduce((a, b) => a + b, 0);
                         const average = total / 6; // 6 categories total
+                        const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
                         return `
-                            <tr>
+                            <tr onclick="dashboard.selectCandidate(${JSON.stringify(candidate).replace(/"/g, '&quot;')})" 
+                                class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
                                 <td>${candidate.scores.technical_preparation}</td>
@@ -438,6 +510,7 @@ class ChatScreeningDashboard {
 
     filterByVacante(vacante) {
         this.filteredVacante = vacante;
+        this.selectedCandidate = null; // Clear selection when filtering
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
@@ -458,6 +531,7 @@ class ChatScreeningDashboard {
             `Última actualización: ${now.toLocaleTimeString()}`;
         
         this.loadMockData();
+        this.selectedCandidate = null; // Clear selection on refresh
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
