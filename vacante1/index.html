@@ -1,90 +1,94 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat-Screening Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo del proyecto "Chatea con la vacante"</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; }
+    .modal.open { display: flex; }
+    .modal-content { position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .video-wrapper { position: relative; }
+    .modal video { display: block; width: 100%; height: auto; background: #000; }
+    .modal-close { position: absolute; top: 8px; right: 8px; width: 40px; height: 40px; border: none; border-radius: 20px; background: rgba(0,0,0,0.6); color: #fff; font-size: 28px; line-height: 1; cursor: pointer; z-index: 3; }
+    .modal-close:hover { background: rgba(0,0,0,0.8); }
+    .modal-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border-radius: 45px; border: 1px solid #fff; background: rgba(255,255,255,0.95); color: #000; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 28px; z-index: 2; }
+    .modal-play:hover { background: #fff; }
+    .video-error { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; padding: 12px; font-size: 14px; display: none; z-index: 2; }
+    h1 { text-align: center; }
+    .button-container { display: flex; justify-content: center; }
+    .button-container button:hover {
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    border-color: #000;
+    }
+    .meta-line { text-align: center; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📊 Chat-Screening Dashboard</h1>
-            <p>Análisis de conversaciones de candidatos</p>
-        </header>
+  <h1>Jefe/a Comercial - Talca</h1>
 
-        <div class="controls">
-            <div class="filter-section">
-                <label for="vacanteFilter">Filtrar por Vacante:</label>
-                <select id="vacanteFilter">
-                    <option value="all">Todas las vacantes</option>
-                    <option value="Jefe/a comercial Talca">Jefe/a comercial Talca</option>
-                    <option value="Analista de Compensaciones - Las Condes">Analista de Compensaciones - Las Condes</option>
-                </select>
-            </div>
-            
-            <div class="refresh-section">
-                <button id="refreshBtn" class="refresh-btn">🔄 Actualizar</button>
-                <span id="lastUpdate">Última actualización: --</span>
-            </div>
-        </div>
+  <div class="button-container">
+    <button id="Chatbot" onclick="location.href='chatbot/index.html'">Chatea con esta vacante</button>
+  </div>
 
-        <div class="charts-container">
-            <div class="chart-section">
-                <h2>🕸️ Spider Chart - Rendimiento por Candidato</h2>
-                <div class="chart-wrapper">
-                    <canvas id="spiderChart"></canvas>
-                </div>
-            </div>
+ <p class="meta-line"><strong>Jornada Completa  |  Jefe Sección  |  Región Maule  |  Talca</strong></p>
+  <p>¡En CCA nos apasiona crear experiencias para compartir juntos un mejor vivir!</p>
+  <p>Estamos buscando a nuestro/a próximo/a <strong>Jefe/a Comercial</strong> para trabajar en nuestra oficina comercial en Talca.</p>
 
-            <div class="stats-section">
-                <h2>📈 Estadísticas Generales</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>Total Candidatos</h3>
-                        <span id="totalCandidates">0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Candidatos por vacante</h3>
-                        <span id="avgGeneral">0.0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Promedio General</h3>
-                        <span id="avgGeneral">0.0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Promedio por Área</h3>
-                        <select id="areaFilter" class="area-select">
-                            <option value="technical_preparation">Técnico</option>
-                            <option value="cultural_alignment">Cultural</option>
-                            <option value="growth_mindset">Crecimiento</option>
-                            <option value="engagement_depth">Engagement</option>
-                            <option value="role_understanding">Rol</option>
-                            <option value="strategic_thinking">Estratégico</option>
-                        </select>
-                        <span id="avgByArea">0.0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Candidato Mejor Puntuado</h3>
-                        <span id="bestCandidate">--</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Candidato con Más Interacciones</h3>
-                        <span id="mostInteractive">--</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <p><strong>Principales funciones del cargo:</strong></p>
+  <ul>
+    <li>Liderar e implementar de forma diaria la dinámica Comercial del distrito, transmitiendo de forma efectiva los principales mensajes definidos.</li>
+    <li>Analizar y consolidar los principales indicadores del distrito, tales como Volumen, Participación de Mercado, Margen, etc, generando informes que permitan la correcta toma de decisiones.</li>
+    <li>Administrar, entregar y disponibilizar indicadores claves para la fuerza de venta, para así ayudar al cumplimiento de metas de venta, coberturas, margen, etc.</li>
+    <li>Gestionar y administrar de manera efectiva, la bodega y los activos asociados al distrito, para así prestarle soporte a los jefes de venta en temas de instalación de activos o elementos de merchandising.</li>
+    <li>Tener una comunicación efectiva y fluida con las diferentes áreas de la compañía (Trade Marketing, Marketing, Pricing, Gestión Ventas, etc), para así lograr los objetivos de metas, participaciones de mercado y margen.</li>
+  </ul>
 
-        <div class="candidates-list">
-            <h2>👥 Lista de Candidatos</h2>
-            <div id="candidatesTable" class="table-container">
-                <!-- Table will be populated by JavaScript -->
-            </div>
-        </div>
+  <p><strong>Requisitos:</strong></p>
+  <ul>
+    <li>Título de Ingeniero/a Comercial, Ingeniero/a Civil Industrial o carrera afín.</li>
+    <li>Al menos 2 años de experiencia en áreas comerciales.</li>
+    <li>Contar Movilización Propia y licencia clase B vigente</li>
+    <li>Manejo avanzado de herramientas Office (Excel) y Power Bi</li>
+    <li>Manejo de Excel intermedio-avanzado.</li>
+  </ul>
+
+  <p>Nuestro SER CCA nos inspira a trabajar con aceptación y respeto a las diferencias de las personas, promoviendo un entorno diverso e integrador, para así contribuir a un mejor vivir. Por esto, te agradecemos que nos compartas si necesitas adaptación en alguna etapa del proceso de postulación.</p>
+  <p>¡Te invitamos a Ser CCA!</p>
+
+  <p><strong>Perfil deseado:</strong></p>
+  <ul>
+    <li>Título de Ingeniero/a Comercial, Ingeniero/a Civil Industrial o carrera afín.</li>
+    <li>Al menos 2 años de experiencia en áreas comerciales.</li>
+    <li>Contar Movilización Propia y licencia clase B vigente</li>
+    <li>Manejo avanzado de herramientas Office (Excel) y Power Bi (deseable)</li>
+    <li>Título de Ingeniero/a Comercial, Ingeniero/a Civil Industrial o carrera afín.</li>
+  </ul>
+
+  <p>Empleo inclusivo</p>
+  <p><strong> Experiencia desde 2 años  |  Estudios mínimos: Universitaria  |  Graduado  |  Ingeniería Civil  |  Ingeniería Comercial</strong></p>
+
+  <div id="videoModal" class="modal open" role="dialog" aria-modal="true" aria-label="Video de introducción">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="video-wrapper">
+        <video id="introVideo" playsinline webkit-playsinline preload="metadata">
+          <source src="../videomvp.m4v" type="video/mp4" />
+          Tu navegador no soporta video.
+        </video>
+        <button id="overlayPlay" class="modal-play" aria-label="Reproducir video">▶</button>
+        <div id="videoError" class="video-error">No se pudo reproducir el video. Verifica formato/codec o abre el archivo en otra pestaña.</div>
+      </div>
     </div>
+  </div>
 
-    <script src="dashboard.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
