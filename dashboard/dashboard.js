@@ -376,31 +376,31 @@ class ChatScreeningDashboard {
                 <thead>
                     <tr>
                         <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
-                            Session ID ${this.getSortIcon('sessionId')}
+                            Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
-                            Vacante ${this.getSortIcon('vacante')}
+                            Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
-                            Técnico ${this.getSortIcon('technical_preparation')}
+                            Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
-                            Cultural ${this.getSortIcon('cultural_alignment')}
+                            Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('growth_mindset')" class="sortable">
-                            Crecimiento ${this.getSortIcon('growth_mindset')}
+                            Crecimiento<span class="sort-icon">${this.getSortIcon('growth_mindset')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('engagement_depth')" class="sortable">
-                            Engagement ${this.getSortIcon('engagement_depth')}
+                            Engagement<span class="sort-icon">${this.getSortIcon('engagement_depth')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('role_understanding')" class="sortable">
-                            Rol ${this.getSortIcon('role_understanding')}
+                            Rol<span class="sort-icon">${this.getSortIcon('role_understanding')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
-                            Estratégico ${this.getSortIcon('strategic_thinking')}
+                            Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('average')" class="sortable">
-                            Promedio ${this.getSortIcon('average')}
+                            Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
                         </th>
                     </tr>
                 </thead>
@@ -431,7 +431,7 @@ class ChatScreeningDashboard {
 
     getSortIcon(column) {
         if (this.sortColumn !== column) {
-            return '↕️'; // Neutral sort icon
+            return '↕'; // Neutral sort icon
         }
         return this.sortDirection === 'asc' ? '↑' : '↓';
     }
