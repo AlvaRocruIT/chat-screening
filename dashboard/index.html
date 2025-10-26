@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat-Screening Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat-Screening Dashboard</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📊 Chat-Screening Dashboard</h1>
-            <p>Análisis de conversaciones de candidatos</p>
-        </header>
+  <div class="container">
+    <header>
+      <h1>📊 Chat-Screening Dashboard</h1>
+      <p>Análisis de conversaciones de candidatos</p>
+    </header>
 
-        <div class="controls">
-            <div class="filter-section">
-                <label for="vacanteFilter">Filtrar por Vacante:</label>
-                <select id="vacanteFilter">
-                    <option value="all">Todas las vacantes</option>
-                    <option value="vacante1">Jefe/a comercial - Talca</option>
-                    <option value="vacante2">Analista de Compensaciones - Las Condes</option>
-                </select>
-            </div>
-            
-            <div class="refresh-section">
-                <button id="refreshBtn" class="refresh-btn">🔄 Actualizar</button>
-                <span id="lastUpdate">Última actualización: --</span>
-            </div>
+    <section class="controls" aria-label="Controles del dashboard">
+      <div class="filter-section">
+        <label for="vacanteFilter">Filtrar por Vacante:</label>
+        <select id="vacanteFilter">
+          <option value="all">Todas las vacantes</option>
+          <option value="Jefe/a comercial Talca">Jefe/a comercial - Talca</option>
+          <option value="Analista de Compensaciones - Las Condes">Analista de Compensaciones - Las Condes</option>
+        </select>
+      </div>
+
+      <div class="refresh-section">
+        <button id="refreshBtn" class="refresh-btn" type="button">🔄 Actualizar</button>
+        <span id="lastUpdate" aria-live="polite">Última actualización: --</span>
+      </div>
+    </section>
+
+    <section class="charts-container" aria-label="Visualizaciones">
+      <div class="chart-section">
+        <h2>🕸️ Rendimiento por Candidato</h2>
+        <div class="chart-wrapper">
+          <canvas id="spiderChart"></canvas>
         </div>
+      </div>
 
-        <div class="charts-container">
-            <div class="chart-section">
-                <h2>🕸️ Spider Chart - Rendimiento por Candidato</h2>
-                <div class="chart-wrapper">
-                    <canvas id="spiderChart"></canvas>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h2>📈 Estadísticas Generales</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>Total Candidatos</h3>
-                        <span id="totalCandidates">0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Promedio Técnico</h3>
-                        <span id="avgTechnical">0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Promedio Cultural</h3>
-                        <span id="avgCultural">0</span>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Mejor Candidato</h3>
-                        <span id="bestCandidate">--</span>
-                    </div>
-                </div>
-            </div>
+      <div class="stats-section">
+        <h2>📈 Estadísticas Generales</h2>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <h3>Total Candidatos</h3>
+            <span id="totalCandidates">0</span>
+          </article>
+          <article class="stat-card">
+            <h3>Promedio Técnico</h3>
+            <span id="avgTechnical">0</span>
+          </article>
+          <article class="stat-card">
+            <h3>Promedio Cultural</h3>
+            <span id="avgCultural">0</span>
+          </article>
+          <article class="stat-card">
+            <h3>Mejor Candidato</h3>
+            <span id="bestCandidate">--</span>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="candidates-list">
-            <h2>👥 Lista de Candidatos</h2>
-            <div id="candidatesTable" class="table-container">
-                <!-- Table will be populated by JavaScript -->
-            </div>
-        </div>
-    </div>
+    <section class="candidates-list" aria-label="Tabla de candidatos">
+      <h2>👥 Lista de Candidatos</h2>
+      <div id="candidatesTable" class="table-container"></div>
+    </section>
+  </div>
 
-    <script src="dashboard.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
