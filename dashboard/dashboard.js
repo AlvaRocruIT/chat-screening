@@ -1,4 +1,4 @@
-// Dashboard functionality for Chat-Screening
+/ Dashboard functionality for Chat-Screening
 class ChatScreeningDashboard {
     constructor() {
         this.chart = null;
@@ -327,8 +327,34 @@ class ChatScreeningDashboard {
         document.getElementById('totalCandidates').textContent = totalCandidates;
         document.getElementById('candidatesByVacante').textContent = candidatesByVacante;
         document.getElementById('avgGeneral').textContent = avgGeneral.toFixed(1);
-        document.getElementById('bestCandidate').textContent = bestCandidate;
-        document.getElementById('mostInteractive').textContent = mostInteractive;
+        
+        // Get actual candidate objects for clickable stats
+        const bestCandidateObj = this.findBestCandidateObject();
+        const mostInteractiveObj = this.findMostInteractiveCandidateObject();
+        
+        // Set up clickable stat cards
+        const bestCandidateElement = document.getElementById('bestCandidate');
+        const mostInteractiveElement = document.getElementById('mostInteractive');
+        
+        bestCandidateElement.textContent = bestCandidate;
+        bestCandidateElement.style.cursor = 'pointer';
+        bestCandidateElement.style.textDecoration = 'underline';
+        bestCandidateElement.title = 'Click para ver detalles';
+        bestCandidateElement.addEventListener('click', () => {
+            if (bestCandidateObj) {
+                this.selectCandidate(bestCandidateObj);
+            }
+        });
+        
+        mostInteractiveElement.textContent = mostInteractive;
+        mostInteractiveElement.style.cursor = 'pointer';
+        mostInteractiveElement.style.textDecoration = 'underline';
+        mostInteractiveElement.title = 'Click para ver detalles';
+        mostInteractiveElement.addEventListener('click', () => {
+            if (mostInteractiveObj) {
+                this.selectCandidate(mostInteractiveObj);
+            }
+        });
         
         this.updateAreaAverage('technical_preparation');
     }
@@ -374,6 +400,16 @@ class ChatScreeningDashboard {
         return best.sessionId;
     }
 
+    findBestCandidateObject() {
+        if (this.candidatesData.length === 0) return null;
+        
+        return this.candidatesData.reduce((best, current) => {
+            const bestTotal = Object.values(best.scores).reduce((a, b) => a + b, 0);
+            const currentTotal = Object.values(current.scores).reduce((a, b) => a + b, 0);
+            return currentTotal > bestTotal ? current : best;
+        });
+    }
+
     findMostInteractiveCandidate() {
         if (this.candidatesData.length === 0) return '--';
         
@@ -382,6 +418,14 @@ class ChatScreeningDashboard {
         });
 
         return mostInteractive.sessionId;
+    }
+
+    findMostInteractiveCandidateObject() {
+        if (this.candidatesData.length === 0) return null;
+        
+        return this.candidatesData.reduce((best, current) => {
+            return current.interactions > best.interactions ? current : best;
+        });
     }
 
     selectCandidate(candidate) {
@@ -568,6 +612,12 @@ class ChatScreeningDashboard {
         const now = new Date();
         document.getElementById('lastUpdate').textContent = 
             `Última actualización: ${now.toLocaleTimeString()}`;
+        
+        // Remove old event listeners
+        const bestCandidateElement = document.getElementById('bestCandidate');
+        const mostInteractiveElement = document.getElementById('mostInteractive');
+        bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
+        mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
         
         this.loadMockData();
         this.selectedCandidate = null;
