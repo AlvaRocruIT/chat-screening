@@ -469,6 +469,8 @@ class ChatScreeningDashboard {
     updateCandidatesTable() {
         const tableContainer = document.getElementById('candidatesTable');
         
+        console.log('candidatesData length:', this.candidatesData.length); // Debug line
+        
         if (this.candidatesData.length === 0) {
             tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
             return;
@@ -549,7 +551,7 @@ class ChatScreeningDashboard {
         this.filteredVacante = vacante;
         this.selectedCandidate = null;
         this.updateChart();
-        this.updateStats(); // This will update the candidates by vacante count
+        this.updateStats();
         this.updateCandidatesTable();
     }
 
