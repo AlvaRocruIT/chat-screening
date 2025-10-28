@@ -1,7 +1,7 @@
 // Move SUPABASE_CONFIG outside the class so methods can access it
 const SUPABASE_CONFIG = {
     url: 'https://ieutjzjhemtppcjjuiao.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldXRqempoZW10cHBjamp1aWFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTk4NzUsImV4cCI6MjA3Njk5NTg3NX0.Imc1aELcfSLbgOvN1h9ot[...]'
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldXRqempoZW10cHBjamp1aWFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTk4NzUsImV4cCI6MjA3Njk5NTg3NX0.Imc1aELcfSLbgOvN1h9ot59Jyt4xgk0XTPNBpEj43KY'
 };
 
 class ChatScreeningDashboard {
