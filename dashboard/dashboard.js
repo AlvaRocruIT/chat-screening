@@ -16,7 +16,7 @@ class ChatScreeningDashboard {
 
     init() {
         this.setupEventListeners();
-        this.loadDataFromSupabase() {;
+        await this.loadDataFromSupabase() {;
         this.createChart();
         this.updateStats();
         this.updateCandidatesTable();
@@ -36,8 +36,47 @@ class ChatScreeningDashboard {
         });
     }
 
-   async loadDataFromSupabase() {
-    // Fetch from Supabase REST API here
+async loadDataFromSupabase() {
+    try {
+        const response = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/candidate_scores`, {
+            method: 'GET',
+            headers: {
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Content-Type': 'application/json',
+                'Prefer': 'return=representation'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        
+        // Transform Supabase data to your dashboard format
+        this.candidatesData = data.map(candidate => ({
+            sessionId: candidate.session_id,
+            vacante: candidate.vacante,
+            scores: {
+                technical_preparation: candidate.technical_preparation,
+                cultural_alignment: candidate.cultural_alignment,
+                growth_mindset: candidate.growth_mindset,
+                engagement_depth: candidate.engagement_depth,
+                role_understanding: candidate.role_understanding,
+                strategic_thinking: candidate.strategic_thinking
+            },
+            interactions: candidate.interactions,
+            timestamp: candidate.created_at
+        }));
+
+        console.log('Data loaded from Supabase:', this.candidatesData);
+        
+    } catch (error) {
+        console.error('Error loading data from Supabase:', error);
+        // Fall back to mock data if API fails
+        this.loadMockData();
+    }
 }
 
     createChart() {
