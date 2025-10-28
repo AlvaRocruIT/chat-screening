@@ -4,6 +4,7 @@ class ChatScreeningDashboard {
     url: 'https://ieutjzjhemtppcjjuiao.supabase.co',
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldXRqempoZW10cHBjamp1aWFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTk4NzUsImV4cCI6MjA3Njk5NTg3NX0.Imc1aELcfSLbgOvN1h9ot59Jyt4xgk0XTPNBpEj43KY'
 };
+class ChatScreeningDashboard {
     constructor() {
         this.chart = null;
         this.candidatesData = [];
@@ -13,7 +14,6 @@ class ChatScreeningDashboard {
         this.selectedCandidate = null;
         this.init();
     }
-
     init() {
         this.setupEventListeners();
         await this.loadDataFromSupabase() {;
