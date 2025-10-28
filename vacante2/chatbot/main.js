@@ -13,7 +13,7 @@ function getVacanteIdFromPath() {
   console.log('🔍 URL parts:', parts);
   
   const explicit =
-    parts.find((p) => /^vacante和生活[0-9]+$/i.test(p)) ||
+     parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
     (parts.includes("vacante1") ? "vacante1" : null) ||
     (parts.includes("vacante2") ? "vacante2" : null);
   
