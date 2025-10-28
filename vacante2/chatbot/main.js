@@ -1,3 +1,4 @@
+
 // Elementos del DOM
 const inputBox = document.getElementById("userInput");
 const currentResponse = document.getElementById("currentResponse");
@@ -64,6 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function getVacanteName() {
+  const vacanteId = getVacanteIdFromPath();
+  const vacanteMap = {
+    'vacante1': 'Jefe/a Comercial - Talca',
+    'vacante2': 'Analista de Compensaciones - Las Condes'
+  };
+  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
+}
+
 async function sendMessage() {
   const input = inputBox.value.trim();
   if (!input) {
@@ -75,7 +85,10 @@ async function sendMessage() {
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
-  const payload = { chatInput: input, metadata: { vacante: getVacanteIdFromPath() } };
+   const payload = { 
+    chatInput: input, 
+    vacante: getVacanteName()  // ← Top level, full name
+  };
   let endpoint = getPreferredEndpoint();
 
   try {
@@ -140,3 +153,6 @@ function toggleHistory() {
   historyBox.style.display = isHidden ? "block" : "none";
   if (btn) btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
 }
+
+window.sendMessage = sendMessage;
+window.toggleHistory = toggleHistory;
