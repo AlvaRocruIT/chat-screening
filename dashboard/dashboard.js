@@ -678,7 +678,7 @@ class ChatScreeningDashboard {
 
     async fetchDataFromAPI() {
         try {
-            const response = await fetch('your-n8n-webhook-url');
+            const response = await fetch('https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat');
             const data = await response.json();
             this.candidatesData = data;
             this.updateChart();
