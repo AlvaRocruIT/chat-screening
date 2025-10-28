@@ -1,9 +1,9 @@
-// Dashboard functionality for Chat-Screening
-class ChatScreeningDashboard {
-    const SUPABASE_CONFIG = {
+// Move SUPABASE_CONFIG outside the class so methods can access it
+const SUPABASE_CONFIG = {
     url: 'https://ieutjzjhemtppcjjuiao.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldXRqempoZW10cHBjamp1aWFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTk4NzUsImV4cCI6MjA3Njk5NTg3NX0.Imc1aELcfSLbgOvN1h9ot59Jyt4xgk0XTPNBpEj43KY'
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldXRqempoZW10cHBjamp1aWFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTk4NzUsImV4cCI6MjA3Njk5NTg3NX0.Imc1aELcfSLbgOvN1h9ot[...]'
 };
+
 class ChatScreeningDashboard {
     constructor() {
         this.chart = null;
@@ -14,76 +14,107 @@ class ChatScreeningDashboard {
         this.selectedCandidate = null;
         this.init();
     }
+
     async init() {
         this.setupEventListeners();
-        await this.loadDataFromSupabase() {;
+        await this.loadDataFromSupabase();
         this.createChart();
         this.updateStats();
         this.updateCandidatesTable();
     }
 
     setupEventListeners() {
-        document.getElementById('refreshBtn').addEventListener('click', () => {
-            this.refreshData();
-        });
-
-        document.getElementById('vacanteFilter').addEventListener('change', (e) => {
-            this.filterByVacante(e.target.value);
-        });
-
-        document.getElementById('areaFilter').addEventListener('change', (e) => {
-            this.updateAreaAverage(e.target.value);
-        });
-    }
-
-async loadDataFromSupabase() {
-    try {
-        const response = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/candidate_scores`, {
-            method: 'GET',
-            headers: {
-                'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-                'Content-Type': 'application/json',
-                'Prefer': 'return=representation'
-            }
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        const refreshBtn = document.getElementById('refreshBtn');
+        if (refreshBtn) {
+            refreshBtn.addEventListener('click', () => {
+                this.refreshData();
+            });
         }
 
-        const data = await response.json();
-        
-        // Transform Supabase data to your dashboard format
-        this.candidatesData = data.map(candidate => ({
-            sessionId: candidate.session_id,
-            vacante: candidate.vacante,
-            scores: {
-                technical_preparation: candidate.technical_preparation,
-                cultural_alignment: candidate.cultural_alignment,
-                growth_mindset: candidate.growth_mindset,
-                engagement_depth: candidate.engagement_depth,
-                role_understanding: candidate.role_understanding,
-                strategic_thinking: candidate.strategic_thinking
-            },
-            interactions: candidate.interactions,
-            timestamp: candidate.created_at
-        }));
+        const vacanteFilter = document.getElementById('vacanteFilter');
+        if (vacanteFilter) {
+            vacanteFilter.addEventListener('change', (e) => {
+                this.filterByVacante(e.target.value);
+            });
+        }
 
-        console.log('Data loaded from Supabase:', this.candidatesData);
-        
-    } catch (error) {
-        console.error('Error loading data from Supabase:', error);
-        // Fall back to mock data if API fails
-        this.loadMockData();
+        const areaFilter = document.getElementById('areaFilter');
+        if (areaFilter) {
+            areaFilter.addEventListener('change', (e) => {
+                this.updateAreaAverage(e.target.value);
+            });
+        }
     }
-}
+
+    // Helper to transform scores object to ordered array for chart datasets
+    scoresObjectToArray(scoresObj) {
+        if (!scoresObj) return [0, 0, 0, 0, 0, 0];
+        return [
+            Number(scoresObj.technical_preparation || 0),
+            Number(scoresObj.cultural_alignment || 0),
+            Number(scoresObj.growth_mindset || 0),
+            Number(scoresObj.engagement_depth || 0),
+            Number(scoresObj.role_understanding || 0),
+            Number(scoresObj.strategic_thinking || 0)
+        ];
+    }
+
+    async loadDataFromSupabase() {
+        try {
+            const response = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/candidate_scores`, {
+                method: 'GET',
+                headers: {
+                    'apikey': SUPABASE_CONFIG.anonKey,
+                    'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                    'Content-Type': 'application/json',
+                    'Prefer': 'return=representation'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // Transform Supabase data to your dashboard format
+            this.candidatesData = data.map(candidate => ({
+                sessionId: candidate.session_id,
+                vacante: candidate.vacante,
+                scores: {
+                    technical_preparation: Number(candidate.technical_preparation || 0),
+                    cultural_alignment: Number(candidate.cultural_alignment || 0),
+                    growth_mindset: Number(candidate.growth_mindset || 0),
+                    engagement_depth: Number(candidate.engagement_depth || 0),
+                    role_understanding: Number(candidate.role_understanding || 0),
+                    strategic_thinking: Number(candidate.strategic_thinking || 0)
+                },
+                interactions: Number(candidate.interactions || 0),
+                timestamp: candidate.created_at
+            }));
+
+            console.log('Data loaded from Supabase:', this.candidatesData);
+
+        } catch (error) {
+            console.error('Error loading data from Supabase:', error);
+            // Fall back to mock data if API fails
+            this.loadMockData && this.loadMockData();
+        }
+    }
 
     createChart() {
-        const ctx = document.getElementById('spiderChart').getContext('2d');
-        
+        const canvas = document.getElementById('spiderChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
         const chartData = this.prepareChartData();
-        
+
+        // If Chart is not available globally, this will fail — ensure Chart.js is loaded
+        if (typeof Chart === 'undefined') {
+            console.error('Chart.js is not loaded. Please include Chart.js before this script.');
+            return;
+        }
+
         this.chart = new Chart(ctx, {
             type: 'radar',
             data: chartData,
@@ -105,8 +136,8 @@ async loadDataFromSupabase() {
                     },
                     title: {
                         display: true,
-                        text: this.selectedCandidate ? 
-                            `Comparación: ${this.selectedCandidate.sessionId}` : 
+                        text: this.selectedCandidate ?
+                            `Comparación: ${this.selectedCandidate.sessionId}` :
                             'Comparación de Rendimiento'
                     }
                 }
@@ -116,7 +147,7 @@ async loadDataFromSupabase() {
 
     prepareChartData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
-        
+
         if (this.selectedCandidate) {
             return this.prepareSelectedCandidateData();
         } else if (this.filteredVacante === 'all') {
@@ -128,18 +159,11 @@ async loadDataFromSupabase() {
 
     prepareSelectedCandidateData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
-        
+
         const overallAverage = this.calculateOverallAverage();
         const selectedVacanteAverage = this.calculateVacanteAverage(this.selectedCandidate.vacante);
-        const selectedCandidateScores = [
-            this.selectedCandidate.scores.technical_preparation,
-            this.selectedCandidate.scores.cultural_alignment,
-            this.selectedCandidate.scores.growth_mindset,
-            this.selectedCandidate.scores.engagement_depth,
-            this.selectedCandidate.scores.role_understanding,
-            this.selectedCandidate.scores.strategic_thinking
-        ];
-        
+        const selectedCandidateScores = this.scoresObjectToArray(this.selectedCandidate.scores);
+
         const datasets = [
             {
                 label: 'Promedio General',
@@ -175,10 +199,10 @@ async loadDataFromSupabase() {
 
     prepareAllVacantesData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
-        
+
         const overallAverage = this.calculateOverallAverage();
         const vacanteAverages = this.calculateVacanteAverages();
-        
+
         const datasets = [
             {
                 label: 'Promedio General',
@@ -213,11 +237,14 @@ async loadDataFromSupabase() {
 
     prepareFilteredVacanteData() {
         const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
-        
+
         const overallAverage = this.calculateOverallAverage();
         const selectedVacanteAverage = this.calculateVacanteAverage(this.filteredVacante);
         const topCandidate = this.findTopCandidateForVacante(this.filteredVacante);
-        
+
+        // Ensure we pass an array to the chart, converting if necessary
+        const topCandidateScores = Array.isArray(topCandidate.scores) ? topCandidate.scores : this.scoresObjectToArray(topCandidate.scores);
+
         const datasets = [
             {
                 label: 'Promedio General',
@@ -237,7 +264,7 @@ async loadDataFromSupabase() {
             },
             {
                 label: `Mejor Candidato ${this.filteredVacante}`,
-                data: topCandidate.scores,
+                data: topCandidateScores,
                 borderColor: '#78FF3B',
                 backgroundColor: 'rgba(120, 255, 59, 0.2)',
                 borderWidth: 2,
@@ -253,10 +280,10 @@ async loadDataFromSupabase() {
 
     calculateOverallAverage() {
         const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
-        
+
         return scoreTypes.map(scoreType => {
             if (this.candidatesData.length === 0) return 0;
-            const sum = this.candidatesData.reduce((acc, candidate) => acc + candidate.scores[scoreType], 0);
+            const sum = this.candidatesData.reduce((acc, candidate) => acc + Number(candidate.scores[scoreType] || 0), 0);
             return sum / this.candidatesData.length;
         });
     }
@@ -264,10 +291,10 @@ async loadDataFromSupabase() {
     calculateVacanteAverage(vacante) {
         const vacanteCandidates = this.candidatesData.filter(candidate => candidate.vacante === vacante);
         const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
-        
+
         return scoreTypes.map(scoreType => {
             if (vacanteCandidates.length === 0) return 0;
-            const sum = vacanteCandidates.reduce((acc, candidate) => acc + candidate.scores[scoreType], 0);
+            const sum = vacanteCandidates.reduce((acc, candidate) => acc + Number(candidate.scores[scoreType] || 0), 0);
             return sum / vacanteCandidates.length;
         });
     }
@@ -275,27 +302,34 @@ async loadDataFromSupabase() {
     calculateVacanteAverages() {
         const vacantes = [...new Set(this.candidatesData.map(candidate => candidate.vacante))];
         const vacanteAverages = {};
-        
+
         vacantes.forEach(vacante => {
             vacanteAverages[vacante] = this.calculateVacanteAverage(vacante);
         });
-        
+
         return vacanteAverages;
     }
 
     findTopCandidateForVacante(vacante) {
         const vacanteCandidates = this.candidatesData.filter(candidate => candidate.vacante === vacante);
-        
+
         if (vacanteCandidates.length === 0) {
             return {
                 sessionId: 'N/A',
-                scores: [0, 0, 0, 0, 0, 0]
+                scores: {
+                    technical_preparation: 0,
+                    cultural_alignment: 0,
+                    growth_mindset: 0,
+                    engagement_depth: 0,
+                    role_understanding: 0,
+                    strategic_thinking: 0
+                }
             };
         }
-        
+
         return vacanteCandidates.reduce((best, current) => {
-            const bestTotal = Object.values(best.scores).reduce((a, b) => a + b, 0);
-            const currentTotal = Object.values(current.scores).reduce((a, b) => a + b, 0);
+            const bestTotal = Object.values(best.scores).reduce((a, b) => Number(a) + Number(b), 0);
+            const currentTotal = Object.values(current.scores).reduce((a, b) => Number(a) + Number(b), 0);
             return currentTotal > bestTotal ? current : best;
         });
     }
@@ -305,42 +339,63 @@ async loadDataFromSupabase() {
         const avgGeneral = this.calculateGeneralAverage();
         const bestCandidate = this.findBestCandidate();
         const mostInteractive = this.findMostInteractiveCandidate();
-        
+
         // Calculate candidates by vacante based on filter
         const candidatesByVacante = this.getCandidatesByVacante();
 
-        document.getElementById('totalCandidates').textContent = totalCandidates;
-        document.getElementById('candidatesByVacante').textContent = candidatesByVacante;
-        document.getElementById('avgGeneral').textContent = avgGeneral.toFixed(1);
-        
+        const totalCandidatesEl = document.getElementById('totalCandidates');
+        const candidatesByVacanteEl = document.getElementById('candidatesByVacante');
+        const avgGeneralEl = document.getElementById('avgGeneral');
+
+        if (totalCandidatesEl) totalCandidatesEl.textContent = totalCandidates;
+        if (candidatesByVacanteEl) candidatesByVacanteEl.textContent = candidatesByVacante;
+        if (avgGeneralEl) avgGeneralEl.textContent = avgGeneral.toFixed(1);
+
         // Get actual candidate objects for clickable stats
         const bestCandidateObj = this.findBestCandidateObject();
         const mostInteractiveObj = this.findMostInteractiveCandidateObject();
-        
+
         // Set up clickable stat cards
         const bestCandidateElement = document.getElementById('bestCandidate');
         const mostInteractiveElement = document.getElementById('mostInteractive');
-        
-        bestCandidateElement.textContent = bestCandidate;
-        bestCandidateElement.style.cursor = 'pointer';
-        bestCandidateElement.style.textDecoration = 'underline';
-        bestCandidateElement.title = 'Click para ver detalles';
-        bestCandidateElement.addEventListener('click', () => {
-            if (bestCandidateObj) {
-                this.selectCandidate(bestCandidateObj);
-            }
-        });
-        
-        mostInteractiveElement.textContent = mostInteractive;
-        mostInteractiveElement.style.cursor = 'pointer';
-        mostInteractiveElement.style.textDecoration = 'underline';
-        mostInteractiveElement.title = 'Click para ver detalles';
-        mostInteractiveElement.addEventListener('click', () => {
-            if (mostInteractiveObj) {
-                this.selectCandidate(mostInteractiveObj);
-            }
-        });
-        
+
+        if (bestCandidateElement) {
+            bestCandidateElement.textContent = bestCandidate;
+            bestCandidateElement.style.cursor = 'pointer';
+            bestCandidateElement.style.textDecoration = 'underline';
+            bestCandidateElement.title = 'Click para ver detalles';
+            // replace listeners by cloning (to avoid multiple handlers)
+            bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
+        }
+
+        if (mostInteractiveElement) {
+            mostInteractiveElement.textContent = mostInteractive;
+            mostInteractiveElement.style.cursor = 'pointer';
+            mostInteractiveElement.style.textDecoration = 'underline';
+            mostInteractiveElement.title = 'Click para ver detalles';
+            mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
+        }
+
+        // Re-query after clones and attach new listeners
+        const newBestCandidateElement = document.getElementById('bestCandidate');
+        const newMostInteractiveElement = document.getElementById('mostInteractive');
+
+        if (newBestCandidateElement) {
+            newBestCandidateElement.addEventListener('click', () => {
+                if (bestCandidateObj) {
+                    this.selectCandidate(bestCandidateObj);
+                }
+            });
+        }
+
+        if (newMostInteractiveElement) {
+            newMostInteractiveElement.addEventListener('click', () => {
+                if (mostInteractiveObj) {
+                    this.selectCandidate(mostInteractiveObj);
+                }
+            });
+        }
+
         this.updateAreaAverage('technical_preparation');
     }
 
@@ -357,28 +412,29 @@ async loadDataFromSupabase() {
     calculateGeneralAverage() {
         if (this.candidatesData.length === 0) return 0;
         const totalSum = this.candidatesData.reduce((acc, candidate) => {
-            return acc + Object.values(candidate.scores).reduce((sum, score) => sum + score, 0);
+            return acc + Object.values(candidate.scores).reduce((sum, score) => sum + Number(score || 0), 0);
         }, 0);
         return totalSum / (this.candidatesData.length * 6);
     }
 
     updateAreaAverage(area) {
+        const avgByAreaEl = document.getElementById('avgByArea');
         if (this.candidatesData.length === 0) {
-            document.getElementById('avgByArea').textContent = '0.0';
+            if (avgByAreaEl) avgByAreaEl.textContent = '0.0';
             return;
         }
-        
-        const sum = this.candidatesData.reduce((acc, candidate) => acc + candidate.scores[area], 0);
+
+        const sum = this.candidatesData.reduce((acc, candidate) => acc + Number(candidate.scores[area] || 0), 0);
         const average = sum / this.candidatesData.length;
-        document.getElementById('avgByArea').textContent = average.toFixed(1);
+        if (avgByAreaEl) avgByAreaEl.textContent = average.toFixed(1);
     }
 
     findBestCandidate() {
         if (this.candidatesData.length === 0) return '--';
-        
+
         const best = this.candidatesData.reduce((best, current) => {
-            const bestTotal = Object.values(best.scores).reduce((a, b) => a + b, 0);
-            const currentTotal = Object.values(current.scores).reduce((a, b) => a + b, 0);
+            const bestTotal = Object.values(best.scores).reduce((a, b) => Number(a) + Number(b), 0);
+            const currentTotal = Object.values(current.scores).reduce((a, b) => Number(a) + Number(b), 0);
             return currentTotal > bestTotal ? current : best;
         });
 
@@ -387,17 +443,17 @@ async loadDataFromSupabase() {
 
     findBestCandidateObject() {
         if (this.candidatesData.length === 0) return null;
-        
+
         return this.candidatesData.reduce((best, current) => {
-            const bestTotal = Object.values(best.scores).reduce((a, b) => a + b, 0);
-            const currentTotal = Object.values(current.scores).reduce((a, b) => a + b, 0);
+            const bestTotal = Object.values(best.scores).reduce((a, b) => Number(a) + Number(b), 0);
+            const currentTotal = Object.values(current.scores).reduce((a, b) => Number(a) + Number(b), 0);
             return currentTotal > bestTotal ? current : best;
         });
     }
 
     findMostInteractiveCandidate() {
         if (this.candidatesData.length === 0) return '--';
-        
+
         const mostInteractive = this.candidatesData.reduce((best, current) => {
             return current.interactions > best.interactions ? current : best;
         });
@@ -407,7 +463,7 @@ async loadDataFromSupabase() {
 
     findMostInteractiveCandidateObject() {
         if (this.candidatesData.length === 0) return null;
-        
+
         return this.candidatesData.reduce((best, current) => {
             return current.interactions > best.interactions ? current : best;
         });
@@ -474,8 +530,8 @@ async loadDataFromSupabase() {
                     valueB = b.interactions;
                     break;
                 case 'average':
-                    const totalA = Object.values(a.scores).reduce((sum, score) => sum + score, 0);
-                    const totalB = Object.values(b.scores).reduce((sum, score) => sum + score, 0);
+                    const totalA = Object.values(a.scores).reduce((sum, score) => sum + Number(score || 0), 0);
+                    const totalB = Object.values(b.scores).reduce((sum, score) => sum + Number(score || 0), 0);
                     valueA = totalA / 6;
                     valueB = totalB / 6;
                     break;
@@ -497,9 +553,11 @@ async loadDataFromSupabase() {
 
     updateCandidatesTable() {
         const tableContainer = document.getElementById('candidatesTable');
-        
+
+        if (!tableContainer) return;
+
         console.log('candidatesData length:', this.candidatesData.length); // Debug line
-        
+
         if (this.candidatesData.length === 0) {
             tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
             return;
@@ -543,11 +601,13 @@ async loadDataFromSupabase() {
                 </thead>
                 <tbody>
                     ${this.candidatesData.map(candidate => {
-                        const total = Object.values(candidate.scores).reduce((a, b) => a + b, 0);
+                        const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
                         const average = total / 6;
                         const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
+                        // create a safe JSON representation for inline onclick by escaping double quotes
+                        const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
                         return `
-                            <tr onclick="dashboard.selectCandidate(${JSON.stringify(candidate).replace(/"/g, '&quot;')})" 
+                            <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
                                 class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
@@ -588,28 +648,33 @@ async loadDataFromSupabase() {
         if (this.chart) {
             this.chart.data = this.prepareChartData();
             this.chart.update();
+        } else {
+            // try to create the chart on first update if it doesn't exist yet
+            this.createChart();
         }
     }
 
-async refreshData() {  // ← Add async
-    console.log('Refreshing data...');
-    
-    const now = new Date();
-    document.getElementById('lastUpdate').textContent = 
-        `Última actualización: ${now.toLocaleTimeString()}`;
-    
-    // Remove old event listeners
-    const bestCandidateElement = document.getElementById('bestCandidate');
-    const mostInteractiveElement = document.getElementById('mostInteractive');
-    bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
-    mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
-    
-    await this.loadDataFromSupabase();  // ← Replace loadMockData(), add await
-    this.selectedCandidate = null;
-    this.updateChart();
-    this.updateStats();
-    this.updateCandidatesTable();
-}
+    async refreshData() {
+        console.log('Refreshing data...');
+
+        const now = new Date();
+        const lastUpdateEl = document.getElementById('lastUpdate');
+        if (lastUpdateEl) {
+            lastUpdateEl.textContent = `Última actualización: ${now.toLocaleTimeString()}`;
+        }
+
+        // Remove old event listeners (by replacing nodes)
+        const bestCandidateElement = document.getElementById('bestCandidate');
+        const mostInteractiveElement = document.getElementById('mostInteractive');
+        if (bestCandidateElement) bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
+        if (mostInteractiveElement) mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
+
+        await this.loadDataFromSupabase();
+        this.selectedCandidate = null;
+        this.updateChart();
+        this.updateStats();
+        this.updateCandidatesTable();
+    }
 
     async fetchDataFromAPI() {
         try {
@@ -622,6 +687,26 @@ async refreshData() {  // ← Add async
         } catch (error) {
             console.error('Error fetching data:', error);
         }
+    }
+
+    // Optional: placeholder mock data loader
+    loadMockData() {
+        this.candidatesData = [
+            {
+                sessionId: 'mock-1',
+                vacante: 'Dev',
+                scores: {
+                    technical_preparation: 4,
+                    cultural_alignment: 3,
+                    growth_mindset: 4,
+                    engagement_depth: 3,
+                    role_understanding: 4,
+                    strategic_thinking: 3
+                },
+                interactions: 12,
+                timestamp: new Date().toISOString()
+            }
+        ];
     }
 }
 
