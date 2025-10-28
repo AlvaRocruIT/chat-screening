@@ -19,11 +19,10 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
 <strong> ✨ 500 COMMITS ✨</strong><br>
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
-✅ Se logra conectar el dashbord con el backend 📅28 OCT. 2025<br><br> 
+✅ Se logra conectar el dashboard con el backend 📅28 OCT. 2025<br><br> 
 🚧 Se trabaja en configurar base de datos  📍<br> 
-🚧 Se trabaja en loguear conversaciones<br>
 💭 Se busca parametrizar conversaciones <br>
-💭 <strong>Se busca disponibilizar una interfaz de admin para la analítica de datos</strong><br>
+💭 Se trabaja en loguear conversaciones<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
 
