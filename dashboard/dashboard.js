@@ -61,6 +61,7 @@ class ChatScreeningDashboard {
 
     async loadDataFromSupabase() {
         try {
+            console.log('Fetching from:', SUPABASE_CONFIG.url);
             const response = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/candidate_scores`, {
                 method: 'GET',
                 headers: {
