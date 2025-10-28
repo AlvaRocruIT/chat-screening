@@ -591,25 +591,25 @@ async loadDataFromSupabase() {
         }
     }
 
-    refreshData() {
-        console.log('Refreshing data...');
-        
-        const now = new Date();
-        document.getElementById('lastUpdate').textContent = 
-            `Última actualización: ${now.toLocaleTimeString()}`;
-        
-        // Remove old event listeners
-        const bestCandidateElement = document.getElementById('bestCandidate');
-        const mostInteractiveElement = document.getElementById('mostInteractive');
-        bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
-        mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
-        
-        this.loadMockData();
-        this.selectedCandidate = null;
-        this.updateChart();
-        this.updateStats();
-        this.updateCandidatesTable();
-    }
+async refreshData() {  // ← Add async
+    console.log('Refreshing data...');
+    
+    const now = new Date();
+    document.getElementById('lastUpdate').textContent = 
+        `Última actualización: ${now.toLocaleTimeString()}`;
+    
+    // Remove old event listeners
+    const bestCandidateElement = document.getElementById('bestCandidate');
+    const mostInteractiveElement = document.getElementById('mostInteractive');
+    bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
+    mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
+    
+    await this.loadDataFromSupabase();  // ← Replace loadMockData(), add await
+    this.selectedCandidate = null;
+    this.updateChart();
+    this.updateStats();
+    this.updateCandidatesTable();
+}
 
     async fetchDataFromAPI() {
         try {
