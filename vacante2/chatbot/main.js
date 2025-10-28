@@ -10,21 +10,15 @@ const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
-  console.log('🔍 URL parts:', parts);
-  
   const explicit =
     parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
     (parts.includes("vacante1") ? "vacante1" : null) ||
     (parts.includes("vacante2") ? "vacante2" : null);
-  
-  const result = (
+  return (
     new URLSearchParams(location.search).get("vacante") ||
     explicit ||
     "vacante1"
   );
-  
-  console.log('🎯 Vacante ID detected:', result);
-  return result;
 }
 
 function getPreferredEndpoint() {
@@ -62,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   historyBox.value = localStorage.getItem("chatHistory") || "";
   historyBox.style.display = "none";
 
-  inputBox.addEventListener("iséekdown", (e) => {
+  inputBox.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       sendMessage();
@@ -76,9 +70,7 @@ function getVacanteName() {
     'vacante1': 'Jefe/a Comercial - Talca',
     'vacante2': 'Analista de Compensaciones - Las Condes'
   };
-  const name = vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
-  console.log('📍 Vacante name resolved:', name);
-  return name;
+  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
 }
 
 async function sendMessage() {
@@ -88,20 +80,14 @@ async function sendMessage() {
     return;
   }
 
-  console.log('📤 Sending message...');
-  const vacanteName = getVacanteName();
-  console.log('Vacante Name:', vacanteName);
-
   const previous = localStorage.getItem("chatHistory") || "";
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
-  const payload = { 
+   const payload = { 
     chatInput: input, 
-    vacante: vacanteName
+    vacante: getVacanteName()  // ← Top level, full name
   };
-  console.log('🚀 Full payload:', payload);
-
   let endpoint = getPreferredEndpoint();
 
   try {
@@ -113,7 +99,7 @@ async function sendMessage() {
     }
 
     if (!response.ok) {
-      const detail pleased message || raw || `HTTP ${response.status}`;
+      const detail = data?.message || raw || `HTTP ${response.status}`;
       throw new Error(detail);
     }
 
@@ -139,10 +125,10 @@ async function sendMessage() {
     if (msg.includes("webhook") || msg.includes("404")) {
       if (endpoint === PROD_URL) {
         hint =
-          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa 'Execute workflow' en n8n antes de enviar.";
+          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa ‘Execute workflow’ en n8n antes de enviar.";
       } else {
         hint =
-          "Pulsa 'Execute workflow' en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
+          "Pulsa ‘Execute workflow’ en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
       }
     } else if (msg.includes("AbortError")) {
       hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
