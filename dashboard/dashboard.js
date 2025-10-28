@@ -16,7 +16,7 @@ class ChatScreeningDashboard {
 
     init() {
         this.setupEventListeners();
-        this.loadMockData();
+        this.loadDataFromSupabase() {;
         this.createChart();
         this.updateStats();
         this.updateCandidatesTable();
@@ -36,67 +36,9 @@ class ChatScreeningDashboard {
         });
     }
 
-    loadMockData() {
-        // Mock data with realistic job titles and interaction counts
-        this.candidatesData = [
-            {
-                sessionId: 'session_001',
-                vacante: 'Jefe/a comercial Talca',
-                scores: {
-                    technical_preparation: 4,
-                    cultural_alignment: 3,
-                    growth_mindset: 5,
-                    engagement_depth: 4,
-                    role_understanding: 3,
-                    strategic_thinking: 2
-                },
-                interactions: 8,
-                timestamp: '2024-01-15T10:30:00Z'
-            },
-            {
-                sessionId: 'session_002',
-                vacante: 'Jefe/a comercial Talca',
-                scores: {
-                    technical_preparation: 3,
-                    cultural_alignment: 4,
-                    growth_mindset: 3,
-                    engagement_depth: 5,
-                    role_understanding: 4,
-                    strategic_thinking: 3
-                },
-                interactions: 12,
-                timestamp: '2024-01-15T11:15:00Z'
-            },
-            {
-                sessionId: 'session_003',
-                vacante: 'Analista de Compensaciones - Las Condes',
-                scores: {
-                    technical_preparation: 5,
-                    cultural_alignment: 2,
-                    growth_mindset: 4,
-                    engagement_depth: 3,
-                    role_understanding: 5,
-                    strategic_thinking: 4
-                },
-                interactions: 6,
-                timestamp: '2024-01-15T12:00:00Z'
-            },
-            {
-                sessionId: 'session_004',
-                vacante: 'Analista de Compensaciones - Las Condes',
-                scores: {
-                    technical_preparation: 4,
-                    cultural_alignment: 4,
-                    growth_mindset: 3,
-                    engagement_depth: 4,
-                    role_understanding: 3,
-                    strategic_thinking: 3
-                },
-                interactions: 15,
-                timestamp: '2024-01-15T13:00:00Z'
-            }
-        ];
-    }
+   async loadDataFromSupabase() {
+    // Fetch from Supabase REST API here
+}
 
     createChart() {
         const ctx = document.getElementById('spiderChart').getContext('2d');
