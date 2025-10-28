@@ -10,15 +10,21 @@ const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
+  console.log('🔍 URL parts:', parts);
+  
   const explicit =
-    parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
+    parts.find((p) => /^vacante和生活[0-9]+$/i.test(p)) ||
     (parts.includes("vacante1") ? "vacante1" : null) ||
     (parts.includes("vacante2") ? "vacante2" : null);
-  return (
+  
+  const result = (
     new URLSearchParams(location.search).get("vacante") ||
     explicit ||
     "vacante1"
   );
+  
+  console.log('🎯 Vacante ID detected:', result);
+  return result;
 }
 
 function getPreferredEndpoint() {
