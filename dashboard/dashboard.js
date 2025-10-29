@@ -579,6 +579,9 @@ class ChatScreeningDashboard {
                     <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
                         Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
                     </th>
+                    <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                        Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                    </th>
                     <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
                         Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
                     </th>
@@ -596,9 +599,6 @@ class ChatScreeningDashboard {
                     </th>
                     <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
                         Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
-                        Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
                     </th>
                     <th onclick="dashboard.sortCandidates('average')" class="sortable">
                         Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
