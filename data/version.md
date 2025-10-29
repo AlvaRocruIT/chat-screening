@@ -21,7 +21,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 <strong> ✨ 500 COMMITS ✨</strong><br>
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
 ✅ Se logra conectar el dashboard con el backend 📅28 OCT. 2025<br> 
-✅ Se logra configurar base de datos 📅29 OCT. 2025<br> 
+✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
 🚧 Se trabaja en parametrizar conversaciones ❓(método para puntuar keywords)<br>
 💭 Se busca loguear conversaciones ❓(pensar solución para clientes; cómo registramos a los usuarios)<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
