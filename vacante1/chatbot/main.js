@@ -95,6 +95,13 @@ async function sendMessage() {
     sessionId: sessionId,
     vacante: getVacanteName()  // ← Top level, full name
   };
+
+  console.log('=== DEBUG - Sending payload ===');
+console.log(payload);
+console.log('Payload as JSON:', JSON.stringify(payload));
+
+let { response, data, raw } = await postToEndpoint(endpoint, payload);
+  
   let endpoint = getPreferredEndpoint();
 
   try {
