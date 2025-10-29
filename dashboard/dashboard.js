@@ -607,7 +607,7 @@ class ChatScreeningDashboard {
             </thead>
             <tbody>
                 ${filteredCandidates.map(candidate => {
-                    const total = Object.values(c安排idate.scores).reduce((a, b) => Number(a) + Number(b), 0);
+                    const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
                     const average = total / 6;
                     const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
                     const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
