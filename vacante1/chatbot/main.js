@@ -15,9 +15,7 @@ function getVacanteIdFromPath() {
     (parts.includes("vacante1") ? "vacante1" : null) ||
     (parts.includes("vacante2") ? "vacante2" : null);
   return (
-    new URLSearchParams(location.search).get("vacante") ||
-    explicit ||
-    "vacante1"
+    explicit || "vacante1"
   );
 }
 
@@ -106,7 +104,6 @@ async function sendMessage() {
   console.log('URL with params:', urlWithParams);
 
   try {
-    // ✅ FIX: Use urlWithParams instead of endpoint
     let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
 
     if (response.status === 404 && endpoint === PROD_URL) {
