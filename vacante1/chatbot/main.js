@@ -97,6 +97,8 @@ async function sendMessage() {
   };
 
   let endpoint = getPreferredEndpoint();
+const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+
   console.log('=== DEBUG - Sending payload ===');
   console.log(payload);
   console.log('Payload as JSON:', JSON.stringify(payload));
