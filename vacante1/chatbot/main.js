@@ -101,10 +101,8 @@ async function sendMessage() {
   console.log(payload);
   console.log('Payload as JSON:', JSON.stringify(payload));
 
-  let { response, data, raw } = await postToEndpoint(endpoint, payload);
-
   try {
-    let { response, data, raw } = await postToEndpoint(endpoint, payload);
+    let { response, data, raw } = await postToEndpoint(endpoint, payload);  // Keep this one
 
     if (response.status === 404 && endpoint === PROD_URL) {
       ({ response, data, raw } = await postToEndpoint(TEST_URL, payload));
