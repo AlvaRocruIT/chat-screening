@@ -553,81 +553,86 @@ class ChatScreeningDashboard {
     }
 
     updateCandidatesTable() {
-        const tableContainer = document.getElementById('candidatesTable');
-
-        if (!tableContainer) return;
-
-        console.log('candidatesData length:', this.candidatesData.length); // Debug line
-
-        if (this.candidatesData.length === 0) {
-            tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
-            return;
-        }
-
-        const tableHTML = `
-            <table>
-                <thead>
-                    <tr>
-                        <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
-                            Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
-                            Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
-                            Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
-                            Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('growth_mindset')" class="sortable">
-                            Crecimiento<span class="sort-icon">${this.getSortIcon('growth_mindset')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('engagement_depth')" class="sortable">
-                            Engagement<span class="sort-icon">${this.getSortIcon('engagement_depth')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('role_understanding')" class="sortable">
-                            Rol<span class="sort-icon">${this.getSortIcon('role_understanding')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
-                            Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
-                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
-                        </th>
-                        <th onclick="dashboard.sortCandidates('average')" class="sortable">
-                            Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${filteredCandidates.map(candidate => {  // CHANGED: this.candidatesData → filteredCandidates
-                    const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
+    const tableContainer = document.getElementById('candidatesTable');
+    
+    if (!tableContainer) return;
+    
+    console.log('candidatesData length:', this.candidatesData.length);
+    
+    if (this.candidatesData.length === 0) {
+        tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
+        return;
+    }
+    
+    // ADD THIS LINE - Filter candidates based on selected vacante
+    const filteredCandidates = this.filteredVacante === 'all' 
+        ? this.candidatesData
+        : this.candidatesData.filter(candidate => candidate.vacante === this.filteredVacante);
+    
+    const tableHTML = `
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
+                        Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
+                        Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
+                        Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
+                        Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('growth_mindset')" class="sortable">
+                        Crecimiento<span class="sort-icon">${this.getSortIcon('growth_mindset')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('engagement_depth')" class="sortable">
+                        Engagement<span class="sort-icon">${this.getSortIcon('engagement_depth')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('role_understanding')" class="sortable">
+                        Rol<span class="sort-icon">${this.getSortIcon('role_understanding')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
+                        Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                        Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                    </th>
+                    <th onclick="dashboard.sortCandidates('average')" class="sortable">
+                        Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                ${filteredCandidates.map(candidate => {
+                    const total = Object.values(c安排idate.scores).reduce((a, b) => Number(a) + Number(b), 0);
                     const average = total / 6;
                     const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
                     const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
                     return `
-                            <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
-                                class="candidate-row ${isSelected ? 'selected' : ''}">
-                                <td>${candidate.sessionId}</td>
-                                <td>${candidate.vacante}</td>
-                                <td>${candidate.scores.technical_preparation}</td>
-                                <td>${candidate.scores.cultural_alignment}</td>
-                                <td>${candidate.scores.growth_mindset}</td>
-                                <td>${candidate.scores.engagement_depth}</td>
-                                <td>${candidate.scores.role_understanding}</td>
-                                <td>${candidate.scores.strategic_thinking}</td>
-                                <td>${candidate.interactions}</td>
-                                <td><strong>${average.toFixed(1)}</strong></td>
-                            </tr>
-                        `;
-                    }).join('')}
-                </tbody>
-            </table>
-        `;
-
-        tableContainer.innerHTML = tableHTML;
-    }
+                        <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
+                            class="candidate-row ${isSelected ? 'selected' : ''}">
+                            <td>${candidate.sessionId}</td>
+                            <td>${candidate.vacante}</td>
+                            <td>${candidate.scores.technical_preparation}</td>
+                            <td>${candidate.scores.cultural_alignment}</td>
+                            <td>${candidate.scores.growth_mindset}</td>
+                            <td>${candidate.scores.engagement_depth}</td>
+                            <td>${candidate.scores.role_understanding}</td>
+                            <td>${candidate.scores.strategic_thinking}</td>
+                            <td>${candidate.interactions}</td>
+                            <td><strong>${average.toFixed(1)}</strong></td>
+                        </tr>
+                    `;
+                }).join('')}
+            </tbody>
+        </table>
+    `;
+    
+    tableContainer.innerHTML = tableHTML;
+}
 
     getSortIcon(column) {
         if (this.sortColumn !== column) {
