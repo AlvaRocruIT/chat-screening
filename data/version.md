@@ -28,6 +28,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 
 
 🎯 Recommended Evaluation Categories<br>
+<strong>🗝️KW on questions weights x3 🗝️KW on answers.</strong><br>
 Based on recruitment best practices and your chatbot's purpose, here are 6 key categories to evaluate:<br>
 1. TECHNICAL_PREPARATION 🔧<br>
 Measures: Knowledge of required technologies, understanding of technical requirements<br>
