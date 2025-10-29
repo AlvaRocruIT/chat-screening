@@ -10,21 +10,13 @@ const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
-  console.log('🔍 URL parts:', parts);
-  
   const explicit =
-     parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
+    parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
     (parts.includes("vacante1") ? "vacante1" : null) ||
     (parts.includes("vacante2") ? "vacante2" : null);
-  
-  const result = (
-    new URLSearchParams(location.search).get("vacante") ||
-    explicit ||
-    "vacante1"
+  return (
+    explicit || "vacante1"
   );
-  
-  console.log('🎯 Vacante ID detected:', result);
-  return result;
 }
 
 function getPreferredEndpoint() {
@@ -95,19 +87,28 @@ async function sendMessage() {
     sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     localStorage.setItem('sessionId', sessionId);
   }
-  
-   const payload = { 
-    sessionId: sessionId,
+
+  const payload = { 
     chatInput: input, 
-    vacante: getVacanteName()  // ← Top level, full name
+    sessionId: sessionId,  
+    vacante: getVacanteName()
   };
-  let endpoint = getPreferredEndpoint();
+  
+    let endpoint = getPreferredEndpoint();
+  // Create URL with query parameters for Chat Trigger node
+  const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+
+  console.log('=== DEBUG - Sending payload ===');
+  console.log(payload);
+  console.log('Payload as JSON:', JSON.stringify(payload));
+  console.log('URL with params:', urlWithParams);
 
   try {
-    let { response, data, raw } = await postToEndpoint(endpoint, payload);
-
+    let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
+    
     if (response.status === 404 && endpoint === PROD_URL) {
-      ({ response, data, raw } = await postToEndpoint(TEST_URL, payload));
+      const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
       endpoint = TEST_URL;
     }
 
@@ -138,10 +139,10 @@ async function sendMessage() {
     if (msg.includes("webhook") || msg.includes("404")) {
       if (endpoint === PROD_URL) {
         hint =
-          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa ‘Execute workflow’ en n8n antes de enviar.";
+          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa 'Execute workflow' en n8n antes de enviar.";
       } else {
         hint =
-          "Pulsa ‘Execute workflow’ en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
+          "Pulsa 'Execute workflow' en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
       }
     } else if (msg.includes("AbortError")) {
       hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
