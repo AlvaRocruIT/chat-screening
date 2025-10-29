@@ -601,13 +601,12 @@ class ChatScreeningDashboard {
                     </tr>
                 </thead>
                 <tbody>
-                    ${this.candidatesData.map(candidate => {
-                        const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
-                        const average = total / 6;
-                        const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
-                        // create a safe JSON representation for inline onclick by escaping double quotes
-                        const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
-                        return `
+                    ${filteredCandidates.map(candidate => {  // CHANGED: this.candidatesData → filteredCandidates
+                    const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
+                    const average = total / 6;
+                    const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
+                    const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
+                    return `
                             <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
                                 class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.sessionId}</td>
