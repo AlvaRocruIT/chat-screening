@@ -97,17 +97,21 @@ async function sendMessage() {
   };
 
   let endpoint = getPreferredEndpoint();
-const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+  // Create URL with query parameters for Chat Trigger node
+  const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
 
   console.log('=== DEBUG - Sending payload ===');
   console.log(payload);
   console.log('Payload as JSON:', JSON.stringify(payload));
+  console.log('URL with params:', urlWithParams);
 
   try {
-    let { response, data, raw } = await postToEndpoint(endpoint, payload);  // Keep this one
+    // ✅ FIX: Use urlWithParams instead of endpoint
+    let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
 
     if (response.status === 404 && endpoint === PROD_URL) {
-      ({ response, data, raw } = await postToEndpoint(TEST_URL, payload));
+      const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
       endpoint = TEST_URL;
     }
 
@@ -138,10 +142,10 @@ const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessio
     if (msg.includes("webhook") || msg.includes("404")) {
       if (endpoint === PROD_URL) {
         hint =
-          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa ‘Execute workflow’ en n8n antes de enviar.";
+          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa 'Execute workflow' en n8n antes de enviar.";
       } else {
         hint =
-          "Pulsa ‘Execute workflow’ en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
+          "Pulsa 'Execute workflow' en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
       }
     } else if (msg.includes("AbortError")) {
       hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
