@@ -7,7 +7,7 @@ Permite que candidatos interactúen con el rol, conozcan sus desafíos y hagan p
 En vez de solo leer un CV, la empresa obtiene señales del potencial y la disposición a crecer de cada persona.
 
 <b>🎯 Génesis del proyecto</b><br>
-✅ Se comienza a trabajar en el Proyecto'ChatCV' 📅6 AGO. 2025<br>
+✅ Se comienza a trabajar en el Proyecto'ChatCV' desde 🔗n8n 📅6 AGO. 2025<br>
 ✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br>
 ✅ Al socializarlo, un referente del ecosistema HR me pregunta <strong>✨¿Y si inviertes el enfoque entre el candidato y la empresa?</strong>📅 25 SEP. 2025<br><br>
 <b>🎯 Control de versiones</b><br>
