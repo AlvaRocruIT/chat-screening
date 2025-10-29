@@ -90,7 +90,14 @@ async function sendMessage() {
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
+  let sessionId = localStorage.getItem('sessionId');
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    localStorage.setItem('sessionId', sessionId);
+  }
+  
    const payload = { 
+    sessionId: sessionId,
     chatInput: input, 
     vacante: getVacanteName()  // ← Top level, full name
   };
