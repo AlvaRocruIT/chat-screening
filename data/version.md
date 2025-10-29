@@ -8,8 +8,8 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 
 <b>🎯 Génesis del proyecto</b><br>
 ✅ Se comienza a trabajar en el Proyecto'ChatCV' 📅6 AGO. 2025<br>
-✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br><br>
-✅ Al socializarlo, un referente del ecosistema HR me pregunta <strong>✨¿Y si inviertes el enfoque entre el candidato y la empresa?</strong>📅 25 SEP. 2025<br>
+✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br><
+✅ Al socializarlo, un referente del ecosistema HR me pregunta <strong>✨¿Y si inviertes el enfoque entre el candidato y la empresa?</strong>📅 25 SEP. 2025<br><br>
 <b>🎯 Control de versiones</b><br>
 ✅ <strong>Se crea un repo con el frontend del chat-screening 📅26 SEP. 2025</strong><br>
 ✅ Se logra conectar el chatbot con el frontend<br>
