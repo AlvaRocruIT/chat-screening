@@ -84,25 +84,24 @@ async function sendMessage() {
   currentResponse.value = "🤖 Pensando...";
   if (sendBtn) sendBtn.disabled = true;
 
-    let sessionId = localStorage.getItem('sessionId');
+  let sessionId = localStorage.getItem('sessionId');
   if (!sessionId) {
     sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     localStorage.setItem('sessionId', sessionId);
   }
 
-   const payload = { 
+  const payload = { 
     chatInput: input, 
-    sessionId: sessionId,
-    vacante: getVacanteName()  // ← Top level, full name
+    sessionId: sessionId,  
+    vacante: getVacanteName()
   };
 
-  console.log('=== DEBUG - Sending payload ===');
-console.log(payload);
-console.log('Payload as JSON:', JSON.stringify(payload));
-
-let { response, data, raw } = await postToEndpoint(endpoint, payload);
-  
   let endpoint = getPreferredEndpoint();
+  console.log('=== DEBUG - Sending payload ===');
+  console.log(payload);
+  console.log('Payload as JSON:', JSON.stringify(payload));
+
+  let { response, data, raw } = await postToEndpoint(endpoint, payload);
 
   try {
     let { response, data, raw } = await postToEndpoint(endpoint, payload);
