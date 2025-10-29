@@ -16,7 +16,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra adaptar el chatbot a la vacante<br>
 ✅ Se logra hacer funcionar el chat con modelo embedding 📅22 OCT. 2025<br>
 ✅ <strong>El chatbot aprende a contextualizar de forma inteligente:</strong> Se logra adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025<br><br>
-💭 ¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?<br>
+💭 <strong>Comienza el desafío de potenciar con data analytics:</strong> ¿Será posible evaluar el potencial del candidato según cómo ha interactuado con la plataforma?<br>
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
 <strong> ✨ 500 COMMITS ✨</strong><br>
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
