@@ -11,9 +11,9 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se entrega el proyecto 'ChatCV' 📅12 AGO. 2025<br>
 ✅ Al socializarlo, un referente del ecosistema HR me pregunta <strong>✨¿Y si inviertes el enfoque entre el candidato y la empresa?</strong>📅 25 SEP. 2025<br><br>
 <b>🎯 Control de versiones</b><br>
-✅ <strong>Se crea un repo con el frontend del chat-screening 📅26 SEP. 2025</strong><br>
-✅ <strong>El chatbot cobra vida:</strong> Se logra conectar el chatbot con el frontend<br>
-✅ Se logra adaptar el chatbot a la vacante<br>
+✅ <strong>Se crea un 🐈‍⬛GH repo con el frontend del chat-screening 📅26 SEP. 2025</strong><br>
+✅ <strong>El chatbot cobra vida:</strong> Se logra conectar el chatbot con el frontend 📅29 SEP. 2025<br>
+✅ Se logra adaptar el chatbot a la vacante📅30 SEP. 2025<br>
 ✅ Se logra hacer funcionar el chat con modelo embedding 📅22 OCT. 2025<br>
 ✅ <strong>El chatbot aprende a contextualizar de forma inteligente:</strong> Se logra adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025<br><br>
 💭 <strong>Comienza el desafío de potenciar con data analytics:</strong> ✨¿Será posible evaluar el potencial del candidato según su interacción con la plataforma?<br>
