@@ -58,7 +58,7 @@ class ChatScreeningDashboard {
 
     // Helper to transform scores object to ordered array for chart datasets
     scoresObjectToArray(scoresObj) {
-        if (!scoresObj) return [0, 0, 0, 0, 0, 0];
+        if (!scoresObj) return [0, 0, 0, 0, 0];
         return [
             Number(scoresObj.cultural_alignment || 0),
             Number(scoresObj.growth_mindset || 0),
