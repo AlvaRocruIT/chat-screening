@@ -60,7 +60,6 @@ class ChatScreeningDashboard {
     scoresObjectToArray(scoresObj) {
         if (!scoresObj) return [0, 0, 0, 0, 0, 0];
         return [
-            Number(scoresObj.technical_preparation || 0),
             Number(scoresObj.cultural_alignment || 0),
             Number(scoresObj.growth_mindset || 0),
             Number(scoresObj.engagement_depth || 0),
@@ -93,7 +92,6 @@ class ChatScreeningDashboard {
                 sessionId: candidate.session_id,
                 vacante: (candidate.vacante || '').trim(), // ensure clean value
                 scores: {
-                    technical_preparation: Number(candidate.technical_preparation || 0),
                     cultural_alignment: Number(candidate.cultural_alignment || 0),
                     growth_mindset: Number(candidate.growth_mindset || 0),
                     engagement_depth: Number(candidate.engagement_depth || 0),
@@ -288,7 +286,7 @@ class ChatScreeningDashboard {
     }
 
     calculateOverallAverage() {
-        const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
+        const scoreTypes = ['cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
 
         return scoreTypes.map(scoreType => {
             if (this.candidatesData.length === 0) return 0;
@@ -301,7 +299,7 @@ class ChatScreeningDashboard {
         const vacanteCandidates = this.candidatesData.filter(candidate =>
             this.normalize(candidate.vacante) === this.normalize(vacante)
         );
-        const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
+        const scoreTypes = ['cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
 
         return scoreTypes.map(scoreType => {
             if (vacanteCandidates.length === 0) return 0;
@@ -330,7 +328,6 @@ class ChatScreeningDashboard {
             return {
                 sessionId: 'N/A',
                 scores: {
-                    technical_preparation: 0,
                     cultural_alignment: 0,
                     growth_mindset: 0,
                     engagement_depth: 0,
@@ -508,9 +505,9 @@ class ChatScreeningDashboard {
                     valueA = a.vacante;
                     valueB = b.vacante;
                     break;
-                case 'technical_preparation':
-                    valueA = a.scores.technical_preparation;
-                    valueB = b.scores.technical_preparation;
+                case 'interactions':
+                    valueA = a.interactions;
+                    valueB = b.interactions;
                     break;
                 case 'cultural_alignment':
                     valueA = a.scores.cultural_alignment;
@@ -531,10 +528,6 @@ class ChatScreeningDashboard {
                 case 'strategic_thinking':
                     valueA = a.scores.strategic_thinking;
                     valueB = b.scores.strategic_thinking;
-                    break;
-                case 'interactions':
-                    valueA = a.interactions;
-                    valueB = b.interactions;
                     break;
                 case 'average':
                     const totalA = Object.values(a.scores).reduce((sum, score) => sum + Number(score || 0), 0);
@@ -590,9 +583,6 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
                             Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
                         </th>
-                        <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
-                            Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
-                        </th>
                         <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
                             Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
                         </th>
@@ -625,7 +615,6 @@ class ChatScreeningDashboard {
                                 <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
                                 <td>${candidate.interactions}</td>
-                                <td>${candidate.scores.technical_preparation}</td>
                                 <td>${candidate.scores.cultural_alignment}</td>
                                 <td>${candidate.scores.growth_mindset}</td>
                                 <td>${candidate.scores.engagement_depth}</td>
@@ -707,7 +696,6 @@ class ChatScreeningDashboard {
                 sessionId: 'mock-1',
                 vacante: 'Dev',
                 scores: {
-                    technical_preparation: 4,
                     cultural_alignment: 3,
                     growth_mindset: 4,
                     engagement_depth: 3,
