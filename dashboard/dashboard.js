@@ -15,6 +15,16 @@ class ChatScreeningDashboard {
         this.init();
     }
 
+    // Normalize strings for robust comparisons (accents/case/spaces)
+    normalize(s) {
+        return (s || '')
+            .toString()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .trim()
+            .toLowerCase();
+    }
+
     async init() {
         this.setupEventListeners();
         await this.loadDataFromSupabase();
@@ -81,7 +91,7 @@ class ChatScreeningDashboard {
             // Transform Supabase data to your dashboard format
             this.candidatesData = data.map(candidate => ({
                 sessionId: candidate.session_id,
-                vacante: candidate.vacante,
+                vacante: (candidate.vacante || '').trim(), // ensure clean value
                 scores: {
                     technical_preparation: Number(candidate.technical_preparation || 0),
                     cultural_alignment: Number(candidate.cultural_alignment || 0),
@@ -110,7 +120,6 @@ class ChatScreeningDashboard {
 
         const chartData = this.prepareChartData();
 
-        // If Chart is not available globally, this will fail — ensure Chart.js is loaded
         if (typeof Chart === 'undefined') {
             console.error('Chart.js is not loaded. Please include Chart.js before this script.');
             return;
@@ -243,7 +252,6 @@ class ChatScreeningDashboard {
         const selectedVacanteAverage = this.calculateVacanteAverage(this.filteredVacante);
         const topCandidate = this.findTopCandidateForVacante(this.filteredVacante);
 
-        // Ensure we pass an array to the chart, converting if necessary
         const topCandidateScores = Array.isArray(topCandidate.scores) ? topCandidate.scores : this.scoresObjectToArray(topCandidate.scores);
 
         const datasets = [
@@ -290,7 +298,9 @@ class ChatScreeningDashboard {
     }
 
     calculateVacanteAverage(vacante) {
-        const vacanteCandidates = this.candidatesData.filter(candidate => candidate.vacante === vacante);
+        const vacanteCandidates = this.candidatesData.filter(candidate =>
+            this.normalize(candidate.vacante) === this.normalize(vacante)
+        );
         const scoreTypes = ['technical_preparation', 'cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
 
         return scoreTypes.map(scoreType => {
@@ -312,7 +322,9 @@ class ChatScreeningDashboard {
     }
 
     findTopCandidateForVacante(vacante) {
-        const vacanteCandidates = this.candidatesData.filter(candidate => candidate.vacante === vacante);
+        const vacanteCandidates = this.candidatesData.filter(candidate =>
+            this.normalize(candidate.vacante) === this.normalize(vacante)
+        );
 
         if (vacanteCandidates.length === 0) {
             return {
@@ -338,8 +350,6 @@ class ChatScreeningDashboard {
     updateStats() {
         const totalCandidates = this.candidatesData.length;
         const avgGeneral = this.calculateGeneralAverage();
-        const bestCandidate = this.findBestCandidate();
-        const mostInteractive = this.findMostInteractiveCandidate();
 
         // Calculate candidates by vacante based on filter
         const candidatesByVacante = this.getCandidatesByVacante();
@@ -352,32 +362,28 @@ class ChatScreeningDashboard {
         if (candidatesByVacanteEl) candidatesByVacanteEl.textContent = candidatesByVacante;
         if (avgGeneralEl) avgGeneralEl.textContent = avgGeneral.toFixed(1);
 
-        // Get actual candidate objects for clickable stats
         const bestCandidateObj = this.findBestCandidateObject();
         const mostInteractiveObj = this.findMostInteractiveCandidateObject();
 
-        // Set up clickable stat cards
         const bestCandidateElement = document.getElementById('bestCandidate');
         const mostInteractiveElement = document.getElementById('mostInteractive');
 
         if (bestCandidateElement) {
-            bestCandidateElement.textContent = bestCandidate;
+            bestCandidateElement.textContent = bestCandidateObj ? bestCandidateObj.sessionId : '--';
             bestCandidateElement.style.cursor = 'pointer';
             bestCandidateElement.style.textDecoration = 'underline';
             bestCandidateElement.title = 'Click para ver detalles';
-            // replace listeners by cloning (to avoid multiple handlers)
             bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
         }
 
         if (mostInteractiveElement) {
-            mostInteractiveElement.textContent = mostInteractive;
+            mostInteractiveElement.textContent = mostInteractiveObj ? mostInteractiveObj.sessionId : '--';
             mostInteractiveElement.style.cursor = 'pointer';
             mostInteractiveElement.style.textDecoration = 'underline';
             mostInteractiveElement.title = 'Click para ver detalles';
             mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
         }
 
-        // Re-query after clones and attach new listeners
         const newBestCandidateElement = document.getElementById('bestCandidate');
         const newMostInteractiveElement = document.getElementById('mostInteractive');
 
@@ -402,11 +408,11 @@ class ChatScreeningDashboard {
 
     getCandidatesByVacante() {
         if (this.filteredVacante === 'all') {
-            // Show total candidates when "all" is selected
             return this.candidatesData.length;
         } else {
-            // Show candidates count for selected vacante
-            return this.candidatesData.filter(candidate => candidate.vacante === this.filteredVacante).length;
+            return this.candidatesData.filter(candidate =>
+                this.normalize(candidate.vacante) === this.normalize(this.filteredVacante)
+            ).length;
         }
     }
 
@@ -553,86 +559,88 @@ class ChatScreeningDashboard {
     }
 
     updateCandidatesTable() {
-    const tableContainer = document.getElementById('candidatesTable');
-    
-    if (!tableContainer) return;
-    
-    console.log('candidatesData length:', this.candidatesData.length);
-    
-    if (this.candidatesData.length === 0) {
-        tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
-        return;
+        const tableContainer = document.getElementById('candidatesTable');
+
+        if (!tableContainer) return;
+
+        console.log('candidatesData length:', this.candidatesData.length);
+
+        if (this.candidatesData.length === 0) {
+            tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
+            return;
+        }
+
+        // Robust filter (normalize both sides)
+        const filteredCandidates = this.filteredVacante === 'all'
+            ? this.candidatesData
+            : this.candidatesData.filter(candidate =>
+                this.normalize(candidate.vacante) === this.normalize(this.filteredVacante)
+            );
+
+        const tableHTML = `
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
+                            Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
+                            Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
+                            Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
+                            Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('growth_mindset')" class="sortable">
+                            Crecimiento<span class="sort-icon">${this.getSortIcon('growth_mindset')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('engagement_depth')" class="sortable">
+                            Engagement<span class="sort-icon">${this.getSortIcon('engagement_depth')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('role_understanding')" class="sortable">
+                            Rol<span class="sort-icon">${this.getSortIcon('role_understanding')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
+                            Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('average')" class="sortable">
+                            Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${filteredCandidates.map(candidate => {
+                        const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
+                        const average = total / 6;
+                        const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
+                        const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
+                        return `
+                            <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
+                                class="candidate-row ${isSelected ? 'selected' : ''}">
+                                <td>${candidate.sessionId}</td>
+                                <td>${candidate.vacante}</td>
+                                <td>${candidate.interactions}</td>
+                                <td>${candidate.scores.technical_preparation}</td>
+                                <td>${candidate.scores.cultural_alignment}</td>
+                                <td>${candidate.scores.growth_mindset}</td>
+                                <td>${candidate.scores.engagement_depth}</td>
+                                <td>${candidate.scores.role_understanding}</td>
+                                <td>${candidate.scores.strategic_thinking}</td>
+                                <td><strong>${average.toFixed(1)}</strong></td>
+                            </tr>
+                        `;
+                    }).join('')}
+                </tbody>
+            </table>
+        `;
+
+        tableContainer.innerHTML = tableHTML;
     }
-    
-    // ADD THIS LINE - Filter candidates based on selected vacante
-    const filteredCandidates = this.filteredVacante === 'all' 
-        ? this.candidatesData
-        : this.candidatesData.filter(candidate => candidate.vacante === this.filteredVacante);
-    
-    const tableHTML = `
-        <table>
-            <thead>
-                <tr>
-                    <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
-                        Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
-                        Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
-                        Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('technical_preparation')" class="sortable">
-                        Técnico<span class="sort-icon">${this.getSortIcon('technical_preparation')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
-                        Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('growth_mindset')" class="sortable">
-                        Crecimiento<span class="sort-icon">${this.getSortIcon('growth_mindset')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('engagement_depth')" class="sortable">
-                        Engagement<span class="sort-icon">${this.getSortIcon('engagement_depth')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('role_understanding')" class="sortable">
-                        Rol<span class="sort-icon">${this.getSortIcon('role_understanding')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('strategic_thinking')" class="sortable">
-                        Estratégico<span class="sort-icon">${this.getSortIcon('strategic_thinking')}</span>
-                    </th>
-                    <th onclick="dashboard.sortCandidates('average')" class="sortable">
-                        Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                ${filteredCandidates.map(candidate => {
-                    const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
-                    const average = total / 6;
-                    const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
-                    const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
-                    return `
-                        <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
-                            class="candidate-row ${isSelected ? 'selected' : ''}">
-                            <td>${candidate.sessionId}</td>
-                            <td>${candidate.vacante}</td>
-                            <td>${candidate.scores.technical_preparation}</td>
-                            <td>${candidate.scores.cultural_alignment}</td>
-                            <td>${candidate.scores.growth_mindset}</td>
-                            <td>${candidate.scores.engagement_depth}</td>
-                            <td>${candidate.scores.role_understanding}</td>
-                            <td>${candidate.scores.strategic_thinking}</td>
-                            <td>${candidate.interactions}</td>
-                            <td><strong>${average.toFixed(1)}</strong></td>
-                        </tr>
-                    `;
-                }).join('')}
-            </tbody>
-        </table>
-    `;
-    
-    tableContainer.innerHTML = tableHTML;
-}
 
     getSortIcon(column) {
         if (this.sortColumn !== column) {
@@ -654,7 +662,6 @@ class ChatScreeningDashboard {
             this.chart.data = this.prepareChartData();
             this.chart.update();
         } else {
-            // try to create the chart on first update if it doesn't exist yet
             this.createChart();
         }
     }
@@ -668,7 +675,6 @@ class ChatScreeningDashboard {
             lastUpdateEl.textContent = `Última actualización: ${now.toLocaleTimeString()}`;
         }
 
-        // Remove old event listeners (by replacing nodes)
         const bestCandidateElement = document.getElementById('bestCandidate');
         const mostInteractiveElement = document.getElementById('mostInteractive');
         if (bestCandidateElement) bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
