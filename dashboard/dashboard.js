@@ -532,8 +532,8 @@ class ChatScreeningDashboard {
                 case 'average':
                     const totalA = Object.values(a.scores).reduce((sum, score) => sum + Number(score || 0), 0);
                     const totalB = Object.values(b.scores).reduce((sum, score) => sum + Number(score || 0), 0);
-                    valueA = totalA / 6;
-                    valueB = totalB / 6;
+                    valueA = scoresA.reduce((sum, s) => sum + s, 0) / scoresA.length;
+                    valueB = scoresB.reduce((sum, s) => sum + s, 0) / scoresB.length;
                     break;
                 default:
                     return 0;
