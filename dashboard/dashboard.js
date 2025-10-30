@@ -154,7 +154,7 @@ class ChatScreeningDashboard {
     }
 
     prepareChartData() {
-        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        const labels = ['Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
 
         if (this.selectedCandidate) {
             return this.prepareSelectedCandidateData();
