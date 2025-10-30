@@ -14,7 +14,6 @@ class ChatScreeningDashboard {
         this.selectedCandidate = null;
         this.init();
     }
-
     async init() {
         this.setupEventListeners();
         await this.loadDataFromSupabase();
