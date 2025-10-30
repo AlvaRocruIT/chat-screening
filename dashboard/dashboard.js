@@ -166,7 +166,7 @@ class ChatScreeningDashboard {
     }
 
     prepareSelectedCandidateData() {
-        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        const labels = ['Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
 
         const overallAverage = this.calculateOverallAverage();
         const selectedVacanteAverage = this.calculateVacanteAverage(this.selectedCandidate.vacante);
@@ -206,7 +206,7 @@ class ChatScreeningDashboard {
     }
 
     prepareAllVacantesData() {
-        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        const labels = ['Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
 
         const overallAverage = this.calculateOverallAverage();
         const vacanteAverages = this.calculateVacanteAverages();
@@ -244,7 +244,7 @@ class ChatScreeningDashboard {
     }
 
     prepareFilteredVacanteData() {
-        const labels = ['Técnico', 'Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
+        const labels = ['Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
 
         const overallAverage = this.calculateOverallAverage();
         const selectedVacanteAverage = this.calculateVacanteAverage(this.filteredVacante);
