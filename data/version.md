@@ -32,26 +32,26 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 <strong>🗝️KW on questions weights x3 🗝️KW on answers.</strong><br>
 The insights that brings the tool are important, but much more important are the ideas thar flowers from individual mind<br>
 Based on recruitment best practices and your chatbot's purpose, here are 6 key categories to evaluate:<br><br>
-1. STRATEGIC_THINKING 🧠<br>
-Measures: Understanding of business impact, long-term vision, problem-solving approach<br>
-Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"<br>
-Scoring: Questions about business context, not just role execution<br>
-2. CULTURAL_ALIGNMENT 🤝<br>
+1. CULTURAL_ALIGNMENT 🤝<br>
 Measures: Interest in company values, work environment, team dynamics<br>
 Keywords: "culture", "values", "team", "collaboration", "environment", "mission"<br>
 Scoring: Questions about company culture vs. just job requirements<br>
-3. GROWTH_MINDSET 📈<br>
+2. GROWTH_MINDSET 📈<br>
 Measures: Interest in learning, development opportunities, career progression<br>
 Keywords: "learn", "develop", "growth", "opportunity", "training", "mentorship"<br>
-Scoring: Questions about personal development and learning opportunitiesv
-4. ENGAGEMENT_DEPTH 💬<br>
+Scoring: Questions about personal development and learning opportunities<br>
+3. ENGAGEMENT_DEPTH 💬<br>
 Measures: Quality of follow-up questions, conversation depth, curiosity level<br>
 Keywords: Follow-up patterns, question complexity, conversation length<br>
 Scoring: Number of meaningful follow-ups, conversation depth<br>
-5. ROLE_UNDERSTANDING 🎯<br>
+4. ROLE_UNDERSTANDING 🎯<br>
 Measures: Clarity about responsibilities, expectations, and role scope<br>
 Keywords: "responsibilities", "expectations", "scope", "deliverables", "success"<br>
-Scoring: How well they understand what the role actually involves<br><br>
+Scoring: How well they understand what the role actually involves<br>
+5. STRATEGIC_THINKING 🧠<br>
+Measures: Understanding of business impact, long-term vision, problem-solving approach<br>
+Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"<br>
+Scoring: Questions about business context, not just role execution<br><br>
 
 🚮less important. TECHNICAL_PREPARATION 🔧<br>
 Measures: Knowledge of required technologies, understanding of technical requirements<br>
