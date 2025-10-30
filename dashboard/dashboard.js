@@ -90,7 +90,7 @@ class ChatScreeningDashboard {
             // Transform Supabase data to your dashboard format
             this.candidatesData = data.map(candidate => ({
                 sessionId: candidate.session_id,
-                vacante: (candidate.vacante || '').trim(), // ensure clean value
+                vacante: (candidate.vacante || '').trim(),
                 scores: {
                     cultural_alignment: Number(candidate.cultural_alignment || 0),
                     growth_mindset: Number(candidate.growth_mindset || 0),
@@ -249,8 +249,7 @@ class ChatScreeningDashboard {
         const overallAverage = this.calculateOverallAverage();
         const selectedVacanteAverage = this.calculateVacanteAverage(this.filteredVacante);
         const topCandidate = this.findTopCandidateForVacante(this.filteredVacante);
-
-        const topCandidateScores = Array.isArray(topCandidate.scores) ? topCandidate.scores : this.scoresObjectToArray(topCandidate.scores);
+        const topCandidateScores = this.scoresObjectToArray(topCandidate.scores);
 
         const datasets = [
             {
@@ -285,15 +284,14 @@ class ChatScreeningDashboard {
         };
     }
 
+    // Array of 5 per-dimension averages across ALL candidates, in the fixed order
     calculateOverallAverage() {
         const scoreTypes = ['cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
+        if (this.candidatesData.length === 0) return [0, 0, 0, 0, 0];
 
         return scoreTypes.map(scoreType => {
-            if (this.candidatesData.length === 0) return 0;
-            const sum = this.candidatesData.reduce(
-  (acc, c) => acc + scoreTypes.reduce((s, k) => s + Number(c.scores[k] || 0), 0),
-  0
-) / this.candidatesData.length;
+            const sum = this.candidatesData.reduce((acc, c) => acc + Number(c.scores[scoreType] || 0), 0);
+            return sum / this.candidatesData.length;
         });
     }
 
@@ -303,8 +301,9 @@ class ChatScreeningDashboard {
         );
         const scoreTypes = ['cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
 
+        if (vacanteCandidates.length === 0) return [0, 0, 0, 0, 0];
+
         return scoreTypes.map(scoreType => {
-            if (vacanteCandidates.length === 0) return 0;
             const sum = vacanteCandidates.reduce((acc, candidate) => acc + Number(candidate.scores[scoreType] || 0), 0);
             return sum / vacanteCandidates.length;
         });
@@ -350,7 +349,6 @@ class ChatScreeningDashboard {
         const totalCandidates = this.candidatesData.length;
         const avgGeneral = this.calculateGeneralAverage();
 
-        // Calculate candidates by vacante based on filter
         const candidatesByVacante = this.getCandidatesByVacante();
 
         const totalCandidatesEl = document.getElementById('totalCandidates');
@@ -402,7 +400,10 @@ class ChatScreeningDashboard {
             });
         }
 
-        this.updateAreaAverage('technical_preparation');
+        // Default area for the area stat (fall back to current select or cultural)
+        const areaFilter = document.getElementById('areaFilter');
+        const area = areaFilter ? areaFilter.value : 'cultural_alignment';
+        this.updateAreaAverage(area);
     }
 
     getCandidatesByVacante() {
@@ -415,12 +416,13 @@ class ChatScreeningDashboard {
         }
     }
 
+    // Global general average across all 5 dimensions
     calculateGeneralAverage() {
         if (this.candidatesData.length === 0) return 0;
         const totalSum = this.candidatesData.reduce((acc, candidate) => {
             return acc + Object.values(candidate.scores).reduce((sum, score) => sum + Number(score || 0), 0);
         }, 0);
-        return totalSum / (this.candidatesData.length * 6);
+        return totalSum / (this.candidatesData.length * 5);
     }
 
     updateAreaAverage(area) {
@@ -430,7 +432,10 @@ class ChatScreeningDashboard {
             return;
         }
 
-        const sum = this.candidatesData.reduce((acc, candidate) => acc + Number(candidate.scores[area] || 0), 0);
+        const validArea = ['cultural_alignment', 'growth_mindset', 'engagement_depth', 'role_understanding', 'strategic_thinking'];
+        const areaKey = validArea.includes(area) ? area : 'cultural_alignment';
+
+        const sum = this.candidatesData.reduce((acc, candidate) => acc + Number(candidate.scores[areaKey] || 0), 0);
         const average = sum / this.candidatesData.length;
         if (avgByAreaEl) avgByAreaEl.textContent = average.toFixed(1);
     }
@@ -531,12 +536,13 @@ class ChatScreeningDashboard {
                     valueA = a.scores.strategic_thinking;
                     valueB = b.scores.strategic_thinking;
                     break;
-                case 'average':
+                case 'average': {
                     const totalA = Object.values(a.scores).reduce((sum, score) => sum + Number(score || 0), 0);
                     const totalB = Object.values(b.scores).reduce((sum, score) => sum + Number(score || 0), 0);
-                    valueA = scoresA.reduce((sum, s) => sum + s, 0) / scoresA.length;
-                    valueB = scoresB.reduce((sum, s) => sum + s, 0) / scoresB.length;
+                    valueA = totalA / 5;
+                    valueB = totalB / 5;
                     break;
+                }
                 default:
                     return 0;
             }
@@ -555,7 +561,6 @@ class ChatScreeningDashboard {
 
     updateCandidatesTable() {
         const tableContainer = document.getElementById('candidatesTable');
-
         if (!tableContainer) return;
 
         console.log('candidatesData length:', this.candidatesData.length);
@@ -608,7 +613,7 @@ class ChatScreeningDashboard {
                 <tbody>
                     ${filteredCandidates.map(candidate => {
                         const total = Object.values(candidate.scores).reduce((a, b) => Number(a) + Number(b), 0);
-                        const average = total / 6;
+                        const average = total / 5;
                         const isSelected = this.selectedCandidate && this.selectedCandidate.sessionId === candidate.sessionId;
                         const safeCandidate = JSON.stringify(candidate).replace(/"/g, '&quot;');
                         return `
