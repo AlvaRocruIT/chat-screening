@@ -14,15 +14,7 @@ class ChatScreeningDashboard {
         this.selectedCandidate = null;
         this.init();
     }
-    
-    normalize(s) {
-    return (s || '')
-        .toString()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .trim()
-        .toLowerCase();
-}
+
     async init() {
         this.setupEventListeners();
         await this.loadDataFromSupabase();
@@ -414,9 +406,7 @@ class ChatScreeningDashboard {
             return this.candidatesData.length;
         } else {
             // Show candidates count for selected vacante
-            return this.filteredVacante === 'all'
-              ? this.candidatesData.length
-              : this.candidatesData.filter(c => this.normalize(c.vacante) === this.normalize(this.filteredVacante)).length;
+            return this.candidatesData.filter(candidate => candidate.vacante === this.filteredVacante).length;
         }
     }
 
@@ -563,11 +553,7 @@ class ChatScreeningDashboard {
     }
 
     updateCandidatesTable() {
-        const filteredCandidates = this.filteredVacante === 'all'
-        ? this.candidatesData
-        : this.candidatesData.filter(candidate => 
-            this.normalize(candidate.vacante) === this.normalize(this.filteredVacante)
-          );
+    const tableContainer = document.getElementById('candidatesTable');
     
     if (!tableContainer) return;
     
@@ -630,13 +616,13 @@ class ChatScreeningDashboard {
                             class="candidate-row ${isSelected ? 'selected' : ''}">
                             <td>${candidate.sessionId}</td>
                             <td>${candidate.vacante}</td>
-                            <td>${candidate.interactions}</td>
                             <td>${candidate.scores.technical_preparation}</td>
                             <td>${candidate.scores.cultural_alignment}</td>
                             <td>${candidate.scores.growth_mindset}</td>
                             <td>${candidate.scores.engagement_depth}</td>
                             <td>${candidate.scores.role_understanding}</td>
                             <td>${candidate.scores.strategic_thinking}</td>
+                            <td>${candidate.interactions}</td>
                             <td><strong>${average.toFixed(1)}</strong></td>
                         </tr>
                     `;
