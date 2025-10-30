@@ -290,8 +290,10 @@ class ChatScreeningDashboard {
 
         return scoreTypes.map(scoreType => {
             if (this.candidatesData.length === 0) return 0;
-            const sum = this.candidatesData.reduce((acc, candidate) => acc + Number(candidate.scores[scoreType] || 0), 0);
-            return sum / this.candidatesData.length;
+            const sum = this.candidatesData.reduce(
+  (acc, c) => acc + scoreTypes.reduce((s, k) => s + Number(c.scores[k] || 0), 0),
+  0
+) / this.candidatesData.length;
         });
     }
 
