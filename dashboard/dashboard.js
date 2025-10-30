@@ -14,6 +14,15 @@ class ChatScreeningDashboard {
         this.selectedCandidate = null;
         this.init();
     }
+    
+    normalize(s) {
+    return (s || '')
+        .toString()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim()
+        .toLowerCase();
+}
     async init() {
         this.setupEventListeners();
         await this.loadDataFromSupabase();
