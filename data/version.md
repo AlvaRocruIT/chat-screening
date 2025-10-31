@@ -22,7 +22,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
 ✅ Se logra conectar el dashboard con el backend 📅28 OCT. 2025<br> 
 ✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
-🚧 Se trabaja en parametrizar conversaciones ❓(método para puntuar keywords)<br>
+🚧 Se trabaja en parametrizar conversaciones <br>
 💭 Se busca loguear conversaciones ❓(pensar solución para clientes; cómo registramos a los usuarios)<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
@@ -30,9 +30,8 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 
 
 🎯 Recommended Evaluation Categories<br>
-<strong>🗝️KW on questions weights x3 🗝️KW on answers.</strong><br>
 The insights that brings the tool are important, but much more important are the ideas thar flowers from individual mind<br>
-Based on recruitment best practices and your chatbot's purpose, here are 6 key categories to evaluate:<br><br>
+Based on recruitment best practices and your chatbot's purpose, here are 5 key categories to evaluate:<br><br>
 1. CULTURAL_ALIGNMENT 🤝<br>
 Measures: Interest in company values, work environment, team dynamics<br>
 Keywords: "culture", "values", "team", "collaboration", "environment", "mission"<br>
