@@ -15,7 +15,7 @@
 
 ### Tareas
 1. ✅ Revisar `ruleset.md` completo
-2. ✅ Mapear flujo actual de datos:
+2. ✅ Mapear flujo actual de datos: 📌
    - Chatbot → n8n webhook
    - n8n → Supabase `conversations`
    - n8n → Supabase `candidate_scores`
