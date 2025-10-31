@@ -33,33 +33,35 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 The insights that brings the tool are important, but much more important are the ideas thar flowers from individual mind<br>
 Based on recruitment best practices and your chatbot's purpose, here are 5 key categories to evaluate:<br><br>
 1. CULTURAL_ALIGNMENT 🤝<br>
-Measures: Interest in company values, work environment, team dynamics<br>
+Measures: Interés en valores de la empresa, ambiente laboral, dinámica de equipo, cultura organizacional, colaboración, misión, visión, principios éticos, ambiente de trabajo, relaciones interpersonales, valores corporativos<br>
 Keywords: "culture", "values", "team", "collaboration", "environment", "mission"<br>
 Scoring: Questions about company culture vs. just job requirements<br>
 2. GROWTH_MINDSET 📈<br>
-Measures: Interest in learning, development opportunities, career progression<br>
+Measures:  Interés en aprendizaje, desarrollo profesional, crecimiento personal, oportunidades de capacitación, mentoría, formación, progreso de carrera, mejora continua, adquisición de habilidades, desarrollo de competencias<br>
 Keywords: "learn", "develop", "growth", "opportunity", "training", "mentorship"<br>
 Scoring: Questions about personal development and learning opportunities<br>
 3. ENGAGEMENT_DEPTH 💬<br>
-Measures: Quality of follow-up questions, conversation depth, curiosity level<br>
+Measures: Profundidad de preguntas, calidad de seguimiento, nivel de curiosidad, detalle en las consultas, interés genuino, interacción significativa, exploración exhaustiva, comprensión profunda, diálogo constructivo<br>
 Keywords: Follow-up patterns, question complexity, conversation length<br>
 Scoring: Number of meaningful follow-ups, conversation depth<br>
 4. ROLE_UNDERSTANDING 🎯<br>
-Measures: Clarity about responsibilities, expectations, and role scope<br>
+Measures: Claridad sobre responsabilidades, expectativas del rol, alcance del puesto, entregables esperados, criterios de éxito, objetivos del cargo, funciones principales, competencias requeridas, impacto del rol<br>
 Keywords: "responsibilities", "expectations", "scope", "deliverables", "success"<br>
 Scoring: How well they understand what the role actually involves<br>
 5. STRATEGIC_THINKING 🧠<br>
-Measures: Understanding of business impact, long-term vision, problem-solving approach<br>
+Measures: Comprensión de impacto empresarial, visión a largo plazo, enfoque estratégico, resolución de problemas, objetivos organizacionales, desafíos del negocio, soluciones innovadoras, mejora de procesos, pensamiento sistémico<br>
 Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"<br>
 Scoring: Questions about business context, not just role execution<br><br>
 
 <strong>💯Scoring ruleset:💯</strong><br>
 - An interaction is 1 question + 1 answer<br>
-- Each interaction is scored in an 1 to 5 scale<br>
+- The scoring scale for candidates goes from 1 to 5<br>
 - both questions and answers add scoring to the interaction<br>
 - In a single interaction, keywords on questions weight 3 times more than keywords in answers<br> 
 - In 1 interaction, a single prompt could add score in more than 1 dimension<br>
 - In 1 interaction, an answer could add score in more than 1 dimension<br>
 - Scoring is measured in 5 dimensions: 'Cultural', 'Crecimiento', 'Engagement', 'Rol', Estrategico'<br>
 - Each new interaction gives more posibilities to the usser to get a higher scoring<br>
+- A candidate can never lose score, allways adding<br>
+- Full scoring candidates are the ones who reach a whole context in all dimensions<br>
 - Ussers who achieve best averaged scoring and more number of interactions, have more chances to get considered as high potential candidates<br>
