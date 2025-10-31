@@ -28,6 +28,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 <b>💬 Nota final</b>
 
 
+
 🎯 Recommended Evaluation Categories<br>
 <strong>🗝️KW on questions weights x3 🗝️KW on answers.</strong><br>
 The insights that brings the tool are important, but much more important are the ideas thar flowers from individual mind<br>
@@ -53,7 +54,13 @@ Measures: Understanding of business impact, long-term vision, problem-solving ap
 Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"<br>
 Scoring: Questions about business context, not just role execution<br><br>
 
-🚮less important. TECHNICAL_PREPARATION 🔧<br>
-Measures: Knowledge of required technologies, understanding of technical requirements<br>
-Keywords: Specific tech terms, methodologies, tools mentioned in job description<br>
-Scoring: How well they ask about technical aspects vs. general questions<br>
+<strong>💯Scoring ruleset:💯</strong><br>
+- An interaction is 1 question + 1 answer<br>
+- Each interaction is scored in an 1 to 5 scale<br>
+- both questions and answers add scoring to the interaction<br>
+- In a single interaction, keywords on questions weight 3 times more than keywords in answers<br> 
+- In 1 interaction, a single prompt could add score in more than 1 dimension<br>
+- In 1 interaction, an answer could add score in more than 1 dimension<br>
+- Scoring is measured in 5 dimensions: 'Cultural', 'Crecimiento', 'Engagement', 'Rol', Estrategico'<br>
+- Each new interaction gives more posibilities to the usser to get a higher scoring<br>
+- Ussers who achieve best averaged scoring and more number of interactions, have more chances to get considered as high potential candidates<br>
