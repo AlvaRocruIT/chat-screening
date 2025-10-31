@@ -122,7 +122,7 @@ puntuacion_interaccion = min(0.5, (puntos_totales / 2) × 0.5)
 
 **Límite por interacción:** Máximo 0.5 puntos por dimensión por interacción
 
-**Objetivo:** Se requieren aproximadamente 20 interacciones con calidad perfecta para alcanzar 5.0
+**Objetivo:** Se requieren aproximadamente 20 interacciones con calidad perfecta para alcanzar 5.0 en una misma dimensión.
 
 ### Paso 2: Acumulación
 
