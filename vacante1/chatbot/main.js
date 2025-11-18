@@ -119,7 +119,7 @@ async function sendMessage() {
 
     const reply =
       (data &&
-        (data.respuesta ||
+        (data.response ||
           data.output ||
           data.reply ||
           data.message ||
