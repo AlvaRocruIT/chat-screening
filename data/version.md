@@ -22,6 +22,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
 ✅ Se logra conectar el dashboard con el backend 📅28 OCT. 2025<br> 
 ✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
+🔧Reparación + UpGrade PC❗ 📅18 NOV. 2025<br> 
 🚧 Se trabaja en parametrizar conversaciones <br>
 💭 Se busca loguear conversaciones ❓(pensar solución para clientes; cómo registramos a los usuarios)<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
