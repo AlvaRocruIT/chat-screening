@@ -117,15 +117,13 @@ async function sendMessage() {
       throw new Error(detail);
     }
 
-    const reply =
-      (data &&
-        (data.response ||
-          data.output ||
-          data.reply ||
-          data.message ||
-          data.text)) ||
-      raw ||
-      "No se recibió respuesta.";
+    let reply = raw?.trim() || "";
+    if (!reply && data) {
+      reply = data.response || data.output || data.reply || data.message || data.text || "";
+    }
+    if (!reply) {
+      reply = "No se recibió respuesta.";
+    }
 
     const updatedHistory =
       previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
