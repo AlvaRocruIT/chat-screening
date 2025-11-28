@@ -88,9 +88,9 @@ Puntos Totales = (Similitud Pregunta × 3) + (Similitud Respuesta × 1)
 
 **Reasoning:** Questions revealscandidate proactive thinking, meanwhile answers reflect system's comprehension of given data.
 
-### Similarity treshold
+### Similarity threshold
 
-**Soft Treshold:** 0.15 - 0.20
+**Soft Threshold:** 0.15 - 0.20
 
 - **Similarity < 0.15:** Contribution = 0 points (no relevant relation)
 - **Similarity ≥ 0.15:** Normally calculated contributión
@@ -108,7 +108,7 @@ Puntos Totales = (Similitud Pregunta × 3) + (Similitud Respuesta × 1)
 similitud_pregunta = cosineSimilarity(embedding_pregunta, embedding_referencia_dimension)
 similitud_respuesta = cosineSimilarity(embedding_respuesta, embedding_referencia_dimension)
 
-// 2. Apply minimal treshold
+// 2. Apply minimal threshold
 if (similitud_pregunta < 0.15) similitud_pregunta = 0
 if (similitud_respuesta < 0.15) similitud_respuesta = 0
 
@@ -209,7 +209,7 @@ continuous process improvement, organizational vission, high level thinking
 
 ---
 
-## Progrsesive Thresholds
+## Progressive Thresholds
 
 Progrsesive Thresholds limits max scores acording the number of interactions, ensuring that a full context gets required to reach high scores.
 
