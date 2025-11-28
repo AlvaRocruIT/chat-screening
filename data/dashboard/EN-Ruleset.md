@@ -99,7 +99,7 @@ Puntos Totales = (Similitud Pregunta × 3) + (Similitud Respuesta × 1)
 
 ---
 
-## Punctuation Algorythm
+## Scoring Algorythm
 
 ### Step 1: Scoring per Interaction (per Dimension)
 
