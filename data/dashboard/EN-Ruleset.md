@@ -19,7 +19,7 @@
 
 ---
 
-## Masin Definitions
+## Main Definitions
 
 ### Interaction
 - **Definition:** An interaction = 1 candidate question + 1 bot question
