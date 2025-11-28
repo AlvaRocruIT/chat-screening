@@ -292,107 +292,107 @@ function cosineSimilarity(vectorA, vectorB) {
 
 ### Data structure
 
-**Data Entry:**
-- `chatinput` (question text) desde tabla `conversations`
-- `bot_response` (texto de respuesta) desde tabla `conversations`
-- `session_id` (identificador de sesión)
-- `vacante` (vacante aplicada)
+**Input:**
+- `chatinput` (question text) from table `conversations`
+- `bot_response` (answer text) from table `conversations`
+- `session_id` (session identifier)
+- `vacante` (applied vacancy)
 
-**Procesamiento:**
-- Embeddings generados para preguntas y respuestas
-- Similitudes calculadas contra 5 referencias de dimensión
-- Puntuaciones acumuladas por `(session_id, vacante)`
+**Processing:**
+- Generated embeddings for questions and answers
+- Calculated scores vs 5 dimension references
+- Accumulated scores for `(session_id, vacante)`
 
-**Salida:**
+**Output:**
 - `cultural_alignment` (DECIMAL 3,2)
 - `growth_mindset` (DECIMAL 3,2)
 - `engagement_depth` (DECIMAL 3,2)
 - `role_understanding` (DECIMAL 3,2)
 - `strategic_thinking` (DECIMAL 3,2)
-- `overall_score` (DECIMAL 3,2) = promedio de las 5 dimensiones
-- `interactions` (INTEGER) = conteo de interacciones
+- `overall_score` (DECIMAL 3,2) = 5 dimensions average
+- `interactions` (INTEGER) = count of interactions
 
-### Factor de Escalado
+### Scaling factor
 
-**Factor de normalización:** 0.5
+**Normalization factor:** 0.5
 
 ```
-Puntuación Normalizada = Puntuación Acumulada × 0.5
+Normalized Score = Accumilated Score × 0.5
 ```
 
-Esto significa que con el tope de 0.5 por interacción:
-- 20 interacciones perfectas = 10.0 acumulado = 5.0 normalizado = 5.0 final
+This means that with the limit of 0.5 per interaction:
+- 20 perfect interactions = 10.0 accumulated = 5.0 normalized = 5.0 final
 
-### Parámetros de Calibración
+### Calibration Parameters
 
-| Parámetro | Valor | Propósito |
+| Parameter | Value | Purpose |
 |-----------|-------|-----------|
-| Peso de pregunta | 3× | Prioriza preguntas sobre respuestas |
-| Peso de respuesta | 1× | Considera comprensión de respuestas |
-| Tope por interacción | 0.5 | Previene puntuación máxima con pocas interacciones |
-| Umbral de similitud | 0.15 | Filtra coincidencias irrelevantes |
-| Factor de escalado | 0.5 | Convierte puntos acumulados a escala 0-1 |
-| Interacciones objetivo | 20 | Interacciones necesarias para contexto completo |
+| Question's weight | 3× | Priorize questions over answers |
+| Answer weight | 1× | Consider answer comprehension |
+| Limit per interaction | 0.5 | Prevents max scoring with low interactions |
+| Similarity threshold | 0.15 | Filers irrelevant coincidences |
+| Scaling Factor | 0.5 | Convert accumulated scores to 0-1 scale |
+| Objective interactions | 20 | Necesary interactions for full context |
 
 ---
 
-## Ejemplos de Cálculo
+## Examples of Calculation
 
-### Ejemplo 1: Interacción de Alta Calidad
+### Example 1: High quality Interaction
 
-**Entrada:**
-- Pregunta: "¿Cuál es la cultura de la empresa y qué oportunidades de desarrollo profesional ofrecen?"
-- Respuesta: "Nuestra cultura se basa en valores de colaboración y ofrecemos programas de capacitación"
+**Input:**
+- Question: "¿What is the organizational culture and what professional development opportunities do you offer?
+- Answer: "Our organizational culture focuses on the continuous development of its employees, promoting sales, digital, and leadership skills. They offer diverse development options, such as e-learning training programs, in-person workshops, and specific programs like the Young Professionals and Logistics Training programs, which aim to enhance skills and facilitate growth within the company."
 
-**Cálculo:**
-- Similitud pregunta vs. Cultural: 0.65 → puntos: 0.65 × 3 = 1.95
-- Similitud pregunta vs. Growth: 0.60 → puntos: 0.60 × 3 = 1.80
-- Similitud respuesta vs. Cultural: 0.55 → puntos: 0.55 × 1 = 0.55
-- Similitud respuesta vs. Growth: 0.50 → puntos: 0.50 × 1 = 0.50
+**Calculation:**
+- Question similarity vs. Cultural: 0.65 → score: 0.65 × 3 = 1.95
+- Question similarity vs. Growth: 0.60 → score: 0.60 × 3 = 1.80
+- Question similarity vs. Cultural: 0.55 → score: 0.55 × 1 = 0.55
+- Question similarity vs. Growth: 0.50 → score: 0.50 × 1 = 0.50
 
 **Cultural Alignment:**
-- Puntos totales: 1.95 + 0.55 = 2.50
-- Puntuación interacción: min(0.5, (2.50/2) × 0.5) = 0.5 ✅
+- Total score: 1.95 + 0.55 = 2.50
+- Interaction interaction: min(0.5, (2.50/2) × 0.5) = 0.5 ✅
 
 **Growth Mindset:**
-- Puntos totales: 1.80 + 0.50 = 2.30
-- Puntuación interacción: min(0.5, (2.30/2) × 0.5) = 0.5 ✅
+- Total score: 1.80 + 0.50 = 2.30
+- Interaction Score: min(0.5, (2.30/2) × 0.5) = 0.5 ✅
 
-### Ejemplo 2: Interacción de Baja Calidad
+### Example 2: Low quality Interaction
 
-**Entrada:**
-- Pregunta: "hola"
-- Respuesta: "Hola, ¿en qué puedo ayudarte?"
+**Input:**
+- Question: "Hi"
+- Answer: "Hi, ¿How can I help you?"
 
-**Cálculo:**
-- Todas las similitudes < 0.15 → 0 puntos
-- Puntuación interacción en todas las dimensiones: 0.0
+**Calculation:**
+- All the similarities < 0.15 → 0 points
+- Interaction score in every dimension: 0.0
 
-### Ejemplo 3: Acumulación y Normalización
+### Example 3: Accumulation and Normalization
 
-**Candidato con 15 interacciones:**
-- Cultural Alignment acumulado: 6.0 puntos
-- Interacciones: 15
-- Umbral progresivo: 4.5 (para 15 interacciones)
-- Normalizado: min(4.5, 6.0 × 0.5) = min(4.5, 3.0) = 3.0
-- Final: 1 + (3.0 × 4) = 13.0 → **ERROR** (debe ser: 1 + (0.75 × 4) = 4.0)
+**Candidate with 15 interactions:**
+- Cultural Alignment (accumulated): 6.0 points
+- Interactions: 15
+- Progressive Threshold: 4.5 (For 15 interactions)
+- Normalized: min(4.5, 6.0 × 0.5) = min(4.5, 3.0) = 3.0
+- Final: 1 + (3.0 × 4) = 13.0 → **ERROR** (should be: 1 + (0.75 × 4) = 4.0)
 
-**Corrección:**
-- El umbral progresivo debe aplicarse a la escala 0-1, no a puntos acumulados
-- Puntuación normalizada (0-1): 6.0 × 0.5 = 3.0 ❌ (debe ser entre 0-1)
+**Correction:**
+- The progressive threshold should get appliedto 0-1 scale, not to accumulated score
+- Normalizzed score (0-1): 6.0 × 0.5 = 3.0 ❌ (should be between 0-1)
 
-**Revisión de fórmula:**
+**Formula review:**
 ```
-Puntuación Normalizada (0-1) = min(
-    umbral_progresivo_normalizado,  // ej: 0.875 para 15 interacciones
-    puntuacion_acumulada × 0.05     // factor que produce rango 0-1
+Normalized Score (0-1) = min(
+    umbral_progresivo_normalizado,  // eg: 0.875 for 15 interactions
+    puntuacion_acumulada × 0.05     // factor that produces 0-1 range
 )
 ```
 
-Si 20 interacciones perfectas = 10.0 acumulado → debe dar 1.0 normalizado:
+If  perfect 20 interactions = 10.0 accumulated → should result 1.0 normalized:
 - Factor = 1.0 / 10.0 = 0.1
 
-**Fórmula corregida:**
+**Corrected Formula:**
 ```
 Puntuación Normalizada = min(umbral_progresivo, puntuacion_acumulada × 0.1)
 Puntuación Final = 1 + (Puntuación Normalizada × 4)
@@ -400,9 +400,9 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 
 ---
 
-## Revisión de Umbrales Progresivos (Normalizados 0-1)
+## Progressive Thresholds Review (Normalized 0-1)
 
-| Interacciones | Umbral Normalizado (0-1) | Puntuación Máxima Final |
+| Interactions | Normalized Threshold (0-1) | Max Final Score |
 |--------------|---------------------------|-------------------------|
 | 1-2 | 0.125 | 1.5 |
 | 3-4 | 0.25 | 2.0 |
@@ -412,24 +412,24 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 | 15-19 | 0.875 | 4.5 |
 | 20+ | 1.0 | 5.0 |
 
-**Factor de conversión:** 0.1 (10.0 acumulado → 1.0 normalizado)
+**Conversion Factor:** 0.1 (10.0 accumulated → 1.0 normalized)
 
 ---
 
 ## Changelog
 
-- **v1.0 (2025-01-29):** Versión inicial del sistema de evaluación basado en embeddings
+- **v1.0 (2025-10-29):** Initial Versión of evaluation system based on embeddings (in spanish)
+- **v1.0 (2025-11-27):** Same one but translated to english
+---
+
+## Implementaction Notes
+
+1. Reference texts should be converted in embeddings and stored ✅
+2. Each question and answer should be converted in embeddings in real time 🤔
+3. Similarity calculation should get done for the 5 dimentions simultaneously
+4. Each punctuation should get stored for `(session_id, vacante)`
+5. Normalización should get applied whenever `candidate_scores` is updated
 
 ---
 
-## Notas de Implementación
-
-1. Los textos de referencia deben convertirse en embeddings una vez y almacenarse
-2. Cada pregunta y respuesta deben convertirse en embeddings en tiempo real
-3. El cálculo de similitud debe realizarse para las 5 dimensiones en paralelo
-4. Las puntuaciones deben acumularse por `(session_id, vacante)`
-5. La normalización debe aplicarse cuando se actualiza `candidate_scores`
-
----
-
-**Fin del Documento**
+**End of the Document**
