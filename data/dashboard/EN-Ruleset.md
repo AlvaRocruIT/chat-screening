@@ -13,7 +13,7 @@
 3. [Evaluation Methodology](#evaluation-methodology)
 4. [Scoring Algorythm](#scoring-algorythm)
 5. [Reference Texts per Dimension](#reference-texts-per-dimension)
-6. [Progressive Tresholds](#progressive-tresholds)
+6. [Progressive Thresholds](#progressive-thresholds)
 7. [Ranking Criteria](#ranking-criteria)
 8. [Technical-specifications](#technical-specifications)
 
