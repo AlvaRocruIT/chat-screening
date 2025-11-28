@@ -50,7 +50,7 @@ Systema evaluates 5 independient dimensions:
 
 ### Final Scale Mapping
 ```
-Final Punctuation = 1 + (Normalized Punctuación × 4)
+Puntuación Final = 1 + (Puntuación Normalizada × 4)
 ```
 
 Where:
@@ -83,7 +83,7 @@ Where:
 
 **Formula:**
 ```
-Total Score = (Question Similarity × 3) + (Answer Similarity × 1)
+Puntos Totales = (Similitud Pregunta × 3) + (Similitud Respuesta × 1)
 ```
 
 **Reasoning:** Questions revealscandidate proactive thinking, meanwhile answers reflect system's comprehension of given data.
@@ -105,18 +105,18 @@ Total Score = (Question Similarity × 3) + (Answer Similarity × 1)
 
 ```javascript
 // 1. Calculates similarity
-question_similarity = cosineSimilarity(embedding_pregunta, embedding_referencia_dimension)
-answer_similarity = cosineSimilarity(embedding_respuesta, embedding_referencia_dimension)
+similitud_pregunta = cosineSimilarity(embedding_pregunta, embedding_referencia_dimension)
+similitud_respuesta = cosineSimilarity(embedding_respuesta, embedding_referencia_dimension)
 
 // 2. Apply minimal treshold
-if (question_similarity < 0.15) question_similarity = 0
-if (answer_similarity < 0.15) answer_similarity = 0
+if (similitud_pregunta < 0.15) similitud_pregunta = 0
+if (similitud_respuesta < 0.15) similitud_respuesta = 0
 
 // 3. Calculate weighted scores
-total_score = (question_similarity × 3) + (answer_similarity × 1)
+puntos_totales = (similitud_pregunta × 3) + (similitud_respuesta × 1)
 
 // 4. Convert to interaction socinrg (max 0.5)
-interaction_punctuacion = min(0.5, (total_score / 2) × 0.5)
+puntuacion_interaccion = min(0.5, (puntos_totales / 2) × 0.5)
 ```
 
 **Limit per interaction:** Max 0.5 points per dimension per interaction
@@ -127,7 +127,7 @@ interaction_punctuacion = min(0.5, (total_score / 2) × 0.5)
 
 ```javascript
 // Add every interaction punctuation per dimension
-accumulated_punctuation = Σ(interaction_puntuacion) for each interaction
+puntuacion_acumulada = Σ(puntuacion_interaccion) para todas las interacciones
 ```
 
 **Property:** It only increaces, it never decreaces (monotonic)
@@ -136,13 +136,13 @@ accumulated_punctuation = Σ(interaction_puntuacion) for each interaction
 
 ```javascript
 // 1. Calculate normalized scores
-normalized_scores = min(
-    progressive_thresholds(interactions_counts),
-    accumulated_score × 0.5
+puntuacion_normalizada = min(
+    umbral_progresivo(conteo_interacciones),
+    puntuacion_acumulada × 0.5
 )
 
 // 2. Mapping to 1-5 scale
-final_punctuation = 1 + (normalized_punctuation × 4)
+puntuacion_final = 1 + (puntuacion_normalizada × 4)
 ```
 
 **Scaling factor:** 0.5 (10.0 accumulated points = 5.0 normalized = 5.0 final)
@@ -232,7 +232,7 @@ Progrsesive Thresholds limits max scores acording the number of interactions, en
 ### Overall Score
 
 ```
-Overall Score = (Σ Score per Dimension) / 5
+Puntuación General = (Σ Puntuaciones por Dimensión) / 5
 ```
 
 Simple average of the 5 dimensions.
@@ -317,7 +317,7 @@ function cosineSimilarity(vectorA, vectorB) {
 **Normalization factor:** 0.5
 
 ```
-Normalized Score = Accumilated Score × 0.5
+Puntuación Normalizada = Puntuación Acumulada × 0.5
 ```
 
 This means that with the limit of 0.5 per interaction:
@@ -341,8 +341,8 @@ This means that with the limit of 0.5 per interaction:
 ### Example 1: High quality Interaction
 
 **Input:**
-- Question: "¿What is the organizational culture and what professional development opportunities do you offer?
-- Answer: "Our organizational culture focuses on the continuous development of its employees, promoting sales, digital, and leadership skills. They offer diverse development options, such as e-learning training programs, in-person workshops, and specific programs like the Young Professionals and Logistics Training programs, which aim to enhance skills and facilitate growth within the company."
+- Question: "¿Cuál es la cultura de la empresa y qué oportunidades de desarrollo profesional ofrecen?
+- Answer: "Nuestra cultura se centra en el desarrollo personal y profesional de los trabajadores, alineando los principios del SER CCA con los objetivos individuales. Se fomenta un ciclo anual de Gestión del Desempeño que incluye diálogo formal entre líderes y trabajadores, permitiendo medir el rendimiento y identificar oportunidades de mejora. Además, se ofrecen programas de formación, como la Malla de Formación Ventas, que actualizan herramientas técnicas y habilidades comerciales."
 
 **Calculation:**
 - Question similarity vs. Cultural: 0.65 → score: 0.65 × 3 = 1.95
@@ -361,8 +361,8 @@ This means that with the limit of 0.5 per interaction:
 ### Example 2: Low quality Interaction
 
 **Input:**
-- Question: "Hi"
-- Answer: "Hi, ¿How can I help you?"
+- Question: "Hola"
+- Answer: "Hola, ¿en qué puedo ayudarte?"
 
 **Calculation:**
 - All the similarities < 0.15 → 0 points
@@ -383,9 +383,9 @@ This means that with the limit of 0.5 per interaction:
 
 **Formula review:**
 ```
-Normalized Score (0-1) = min(
-    umbral_progresivo_normalizado,  // eg: 0.875 for 15 interactions
-    puntuacion_acumulada × 0.05     // factor that produces 0-1 range
+Puntuación Normalizada (0-1) = min(
+    umbral_progresivo_normalizado,  // ej: 0.875 para 15 interacciones
+    puntuacion_acumulada × 0.05     // factor que produce rango 0-1
 )
 ```
 
@@ -419,7 +419,8 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 ## Changelog
 
 - **v1.0 (2025-10-29):** Initial Versión of evaluation system based on embeddings (in spanish)
-- **v1.0 (2025-11-27):** Same one but translated to english
+- **v1.1 (2025-11-27):** Same one but translated to english
+- **v1.2 (2025-11-28):** Same one in english with original formulas in spanish
 ---
 
 ## Implementaction Notes
