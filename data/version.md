@@ -22,8 +22,9 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
 ✅ Se logra conectar el dashboard con el backend 📅28 OCT. 2025<br> 
 ✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
-🔧Reparación + UpGrade PC❗ 📅18 NOV. 2025<br> 
-🚧 Se trabaja en parametrizar conversaciones <br>
+✅ Se diseña un ruleset que parametriza las interacciones con el chatbot 📅30 OCT. 2025<br>
+🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
+✅ Se logran parametrizar conversaciones según ruleset creado 📅28 NOV. 2025<br>
 💭 Se busca loguear conversaciones ❓(pensar solución para clientes; cómo registramos a los usuarios)<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
@@ -31,34 +32,9 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
 🤦🏻‍♂️ Me demoraba entre 15 y 90 min em prender el pc todos los días | El cargador de mi pc era pirata, me tuve que comprar el original 📅 10 NOV. 2025 <br>
 🤦🏻‍♂️ Integré n8n, github, supabase y cursor con una capacidad inicial de 4 ram | Escalé a una RAM de 8 GB. 📅 17 NOV. 2025 <br>
-🤦🏻‍♂️ La RAM que compré por PCFactory no era para mi pc | La pude devolver y conseguí por otro lado una SODIMM + instalación 📅 17 NOV. 2025 <br>
+🤦🏻‍♂️ La RAM que compré por PC Factory no era para mi pc | La pude devolver y conseguí por otro lado una SODIMM + instalación 📅 17 NOV. 2025 <br>
 🤦🏻‍♂️ Mi n8n workflow no conectaba con el front | Me agoté la suscripción de n8n anticipadamente por activar un trigger cada 5 min 📅 18 NOV. 2025 <br>
 
-
-
-🎯 Recommended Evaluation Categories<br>
-The insights that brings the tool are important, but much more important are the ideas thar flowers from individual mind<br>
-Based on recruitment best practices and your chatbot's purpose, here are 5 key categories to evaluate:<br><br>
-1. CULTURAL_ALIGNMENT 🤝<br>
-Measures: Interés en valores de la empresa, ambiente laboral, dinámica de equipo, cultura organizacional, colaboración, misión, visión, principios éticos, ambiente de trabajo, relaciones interpersonales, valores corporativos<br>
-Keywords: "culture", "values", "team", "collaboration", "environment", "mission"<br>
-Scoring: Questions about company culture vs. just job requirements<br>
-2. GROWTH_MINDSET 📈<br>
-Measures:  Interés en aprendizaje, desarrollo profesional, crecimiento personal, oportunidades de capacitación, mentoría, formación, progreso de carrera, mejora continua, adquisición de habilidades, desarrollo de competencias<br>
-Keywords: "learn", "develop", "growth", "opportunity", "training", "mentorship"<br>
-Scoring: Questions about personal development and learning opportunities<br>
-3. ENGAGEMENT_DEPTH 💬<br>
-Measures: Profundidad de preguntas, calidad de seguimiento, nivel de curiosidad, detalle en las consultas, interés genuino, interacción significativa, exploración exhaustiva, comprensión profunda, diálogo constructivo<br>
-Keywords: Follow-up patterns, question complexity, conversation length<br>
-Scoring: Number of meaningful follow-ups, conversation depth<br>
-4. ROLE_UNDERSTANDING 🎯<br>
-Measures: Claridad sobre responsabilidades, expectativas del rol, alcance del puesto, entregables esperados, criterios de éxito, objetivos del cargo, funciones principales, competencias requeridas, impacto del rol<br>
-Keywords: "responsibilities", "expectations", "scope", "deliverables", "success"<br>
-Scoring: How well they understand what the role actually involves<br>
-5. STRATEGIC_THINKING 🧠<br>
-Measures: Comprensión de impacto empresarial, visión a largo plazo, enfoque estratégico, resolución de problemas, objetivos organizacionales, desafíos del negocio, soluciones innovadoras, mejora de procesos, pensamiento sistémico<br>
-Keywords: "impact", "strategy", "goals", "challenges", "solutions", "improvement"<br>
-Scoring: Questions about business context, not just role execution<br><br>
 
 <strong>💯Scoring ruleset:💯</strong><br>
 - An interaction is 1 question + 1 answer<br>
