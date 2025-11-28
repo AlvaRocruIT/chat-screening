@@ -15,7 +15,7 @@
 5. [Reference Texts per Dimension](#reference-texts-per-dimension)
 6. [Progressive Thresholds](#progressive-thresholds)
 7. [Ranking Criteria](#ranking-criteria)
-8. [Technical-specifications](#technical-specifications)
+8. [Technical Specifications](#technical-specifications)
 
 ---
 
