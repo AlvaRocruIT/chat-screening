@@ -59,7 +59,7 @@ Where:
 
 ---
 
-## Evaluationg Methodology
+## Evaluation Methodology
 
 ### Embeddings based System (Semanthic Similarity)
 
