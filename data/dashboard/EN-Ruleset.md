@@ -14,7 +14,7 @@
 4. [Scoring Algorythm](#scoring-algorythm)
 5. [Reference Texts per Dimension](#reference-texts-per-dimension)
 6. [Progressive Tresholds](#progressive-tresholds)
-7. [Ranking Criteria] (#ranking-criteria)
+7. [Ranking Criteria](#ranking-criteria)
 8. [Technical-specifications](#technical-specifications)
 
 ---
