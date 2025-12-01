@@ -414,7 +414,7 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 
 ---
 
-## Implementation mapping
+## Implementation Mapping
 
 | Id | Rule | Reference | Node |
 |----|--------------|---------------------------|-------------------------|
@@ -429,6 +429,8 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 | 9 | Scale Mapping | Explicit | Format & Normalize Scores |
 | 10 | Five Evaluation Dimensions | Explicit | Calculate Similarities |
 | 11 | Database Persistence | Explicit | Update Scores |
+
+---
 
 ## Changelog
 
