@@ -415,6 +415,25 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 
 ---
 
+
+## Implementation Mapping
+
+| Id | Regla | Referencia | Nodo |
+|----|--------------|---------------------------|-------------------------|
+| 1 | Cálculo Similitud Coseno  | Explícito | Calculate Similarities |
+| 2 | Umbral Mínimo 0.15 | Explícito | Calculate Similarities |
+| 3 | Ponderación de puntaje (P×3, R×1) | Explícito | Calculate Interaction Scores |
+| 4 | Max 0.5 por Interacción | Explícito | Calculate Interaction Scores |
+| 5 | Puntaje Aditivo | Explícito | Format & Normalize Scores |
+| 6 | Propiedad Monotónica | Implícito | Format & Normalize Scores |
+| 7 | Umbral Progresivo | Explícito | Format & Normalize Scores |
+| 8 | Formula de Normalización | Explícito | Format & Normalize Scores |
+| 9 | Escala de Evaluación | Explícito | Format & Normalize Scores |
+| 10 | Evaluación 5 Dimensiones | Explícito | Calculate Similarities |
+| 11 | Consistencia con Database | Explícito | Update Scores |
+
+---
+
 ## Changelog
 
 - **v1.0 (2025-01-29):** Versión inicial del sistema de evaluación basado en embeddings
