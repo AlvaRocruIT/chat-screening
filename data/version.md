@@ -24,7 +24,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
 ✅ Se diseña un ruleset que parametriza las interacciones con el chatbot 📅30 OCT. 2025<br>
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
-✅ Se logran parametrizar conversaciones según ruleset creado 📅28 NOV. 2025<br>
+✅ Se logran parametrizar conversaciones según ruleset creado 📅01 DIC. 2025<br>
 💭 Se busca loguear conversaciones ❓(pensar solución para clientes; cómo registramos a los usuarios)<br>
 🎁 <strong> Se presenta el proyecto </strong><br><br>
 <b>💬 Nota final</b>
