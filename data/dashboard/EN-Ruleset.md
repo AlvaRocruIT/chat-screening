@@ -414,6 +414,22 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 
 ---
 
+## Implementation mapping
+
+| Id | Rule | Reference | Node |
+|----|--------------|---------------------------|-------------------------|
+| 1 | Cosine Similarity Calculation  | Explicit | Calculate Similarities |
+| 2 | Minimum Threshold 0.15 | Explicit | Calculate Similarities |
+| 3 | Weighted Scoring (Q×3, A×1) | Explicit | Calculate Interaction Scores |
+| 4 | Max 0.5 per Interaction | Explicit | Calculate Interaction Scores |
+| 5 | Score Accumulation | Explicit | Format & Normalize Scores |
+| 6 | Monotonic Property | Implicit | Format & Normalize Scores |
+| 7 | Progressive Thresholds | Explicit | Format & Normalize Scores |
+| 8 | Normalization Formula | Explicit | Format & Normalize Scores |
+| 9 | Scale Mapping | Explicit | Format & Normalize Scores |
+| 10 | Five Evaluation Dimensions | Explicit | Calculate Similarities |
+| 11 | Database Persistence | Explicit | Update Scores |
+
 ## Changelog
 
 - **v1.0 (2025-10-29):** Initial Versión of evaluation system based on embeddings (in spanish)
