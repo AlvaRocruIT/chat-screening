@@ -106,3 +106,7 @@ button:hover {
   display: block;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+
+  .bold {
+  font-weight: 700; /* or 600 if you prefer */
+}
