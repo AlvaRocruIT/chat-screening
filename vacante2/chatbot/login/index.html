@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo del proyecto "Chatea con la vacante"</title>
+
+  <!-- Fuente Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nuevo stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Chatea con tu próximo puesto de trabajo</h1>
+<div class="info-panel">
+  <p>Solo para comenzar, te pediremos tu 
+    <span class="bold">nombre y correo electrónico</span>
+  </p>
+
+<p class="field-label">Nombre</p>
+<textarea
+  id="userInput"
+  rows="1"
+  placeholder="Juli@"
+  autocomplete="off"
+  autocapitalize="none"
+  spellcheck="false"
+></textarea>
+
+<p class="field-label">Correo</p>
+<textarea
+  id="currentResponse"
+  rows="1"
+  placeholder="Juli@correo.com"
+  autocomplete="off"
+  autocapitalize="none"
+  spellcheck="false"  
+></textarea>
+
+  <h3>⁉️  ¿Para qué se necesitan estos datos?  ⁉️</h3>
+ <div id="historyBox" class="history-box">
+  Este chatbot está pensado para 
+  <span class="bold"> registrar, evaluar y rankear</span>  tus interacciones. <br>
+  🧑🏻‍💻 Al registrar tu nombre y correo, nos estarás permitiendo contactarte 
+  en caso que tus interacciones demuestren que 
+  <span class="bold">tienes el potencial y calce</span> que buscamos para este cargo. 🫵🏻
+</div>
+
+   <div class="button-container">
+      <button id="Aceptar" onclick="location.href='/chat-screening/vacante2/chatbot'">Aceptar</button>
+      <button id="Volver" onclick="location.href='/chat-screening/vacante2/index.html'">Volver</button>
+    </div>
+</div>
+
+<script type="module" src="main.js?v=4"></script>
+
+</html>
