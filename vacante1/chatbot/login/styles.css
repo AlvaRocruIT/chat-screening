@@ -87,7 +87,15 @@ button:hover {
 
 /* Keep chat textboxes within screen width */
 #userInput,
-#currentResponse,
+#currentResponse {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 #historyBox {
   border: none;
   background-color: transparent;
@@ -98,4 +106,3 @@ button:hover {
   display: block;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
