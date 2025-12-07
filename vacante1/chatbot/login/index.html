@@ -11,14 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Nuevo stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Chatea con tu próximo puesto de trabajo</h1>
-  <p>Solo para comenzar<br>
-  Te pediremos tu nombre y correo</p>
-
-  <p class="field-label">Nombre</p>
+ <p class="field-label">Nombre</p>
   <textarea
     id="userInput"
     class="single-line-field"
@@ -38,10 +31,15 @@
     placeholder="Juli@correo.com"
   ></textarea>
 
-  <h3>Historial</h3>
-  <button id="toggleHistoryBtn" onclick="toggleHistory()">¿Por qué necesitan estos datos?</button>
-  <textarea id="historyBox" rows="8" readonly placeholder="Pulsa el botón para mostrar/ocultar el historial"></textarea>
+  <h3>⁉️ ¿Para qué necesitan estos datos?</h3>
+ <div id="historyBox" class="history-box">
+  Este chatbot está pensado para 
+  <span class="bold">registrar, evaluar y rankear tus interacciones</span>. 
+  Al registrar tu nombre y correo, nos estarás permitiendo contactarte 
+  en caso que tus interacciones demuestren que 
+  <span class="bold">tienes el potencial y el calce que buscamos para este cargo</span>. 🫵🏻
+</div>
 
-  <script type="module" src="main.js?v=4"></script>
-</body>
+<script type="module" src="main.js?v=4"></script>
+
 </html>
