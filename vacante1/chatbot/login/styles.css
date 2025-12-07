@@ -94,7 +94,7 @@ button:hover {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  display: block;
+  display: none;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
