@@ -55,7 +55,7 @@ textarea {
 /* Buttons */
 button {
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 0.5em;
   padding: 0.9em 1.5em;
   font-size: 0.7em;
   font-weight: 200;
