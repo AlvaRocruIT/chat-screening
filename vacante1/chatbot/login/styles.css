@@ -21,6 +21,11 @@ p {
   margin-bottom: 1.5em;
 }
 
+p class {
+    font-weight: 600;
+  margin: 0.75em 0 0.2em;
+}
+
 h3 {
   margin-top: 1em;
   font-size: 1.2em;
