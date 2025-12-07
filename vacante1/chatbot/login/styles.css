@@ -1,3 +1,4 @@
+
 /* Base */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -65,6 +66,16 @@ textarea {
   -webkit-overflow-scrolling: touch;
   text-align: justify;
 }
+
+.button-container button {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: 180px;
+  aspect-ratio: 1 / 1;   /* square */
+  height: auto;          /* let aspect-ratio control height */
+  padding: 16px;
+  border-radius: 10px;  
 
 .bold {
   font-weight: 700;
