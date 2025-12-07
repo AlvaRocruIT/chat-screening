@@ -21,7 +21,7 @@ p {
   margin-bottom: 1.5em;
 }
 
-p class {
+.field-label {
   font-weight: 600;
   margin: 0.75em 0 0.2em;
 }
