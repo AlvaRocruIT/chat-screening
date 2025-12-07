@@ -24,7 +24,6 @@ p {
 .field-label {
   font-weight: 600;
   margin: 0.75em 0 0.2em; /* top | horizontal | bottom */
-  border: 1px solid #ccc;
 }
 
 h3 {
