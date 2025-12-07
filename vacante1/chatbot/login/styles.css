@@ -85,7 +85,7 @@ textarea {
   box-sizing: border-box;
   width: 220px;
   padding: 0.6em 1.5em;
-  border-radius: 10px;
+  border-radius: 0;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -147,4 +147,3 @@ textarea {
 @media (max-width: 640px) {
   textarea { width: 100%; }
 }
-What cha
