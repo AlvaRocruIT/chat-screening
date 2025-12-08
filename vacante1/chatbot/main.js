@@ -174,15 +174,21 @@ function toggleHistory() {
 }
 
 function toggleConsentInfo() {
-  if (!consentInfoBox) return;
+  const consentInfoBox = document.getElementById("consentInfoBox");
+  const infoToggleBtn = document.getElementById("infoToggleBtn");
+  
+  if (!consentInfoBox || !infoToggleBtn) return;
 
-  const willShow = consentInfoBox.hasAttribute("hidden");
-  if (willShow) {
+  const isHidden = consentInfoBox.hasAttribute("hidden");
+  
+  if (isHidden) {
     consentInfoBox.removeAttribute("hidden");
-    if (infoToggleBtn) infoToggleBtn.textContent = "Ocultar explicación";
+    infoToggleBtn.setAttribute("aria-expanded", "true");
+    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️ (Ocultar)";
   } else {
     consentInfoBox.setAttribute("hidden", "");
-    if (infoToggleBtn) infoToggleBtn.textContent = "Mostrar explicación";
+    infoToggleBtn.setAttribute("aria-expanded", "false");
+    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️";
   }
 }
 
