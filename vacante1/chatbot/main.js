@@ -168,5 +168,18 @@ function toggleHistory() {
   if (btn) btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
 }
 
+function toggleConsentInfo() {
+  if (!consentInfoBox) return;
+
+  const willShow = consentInfoBox.hasAttribute("hidden");
+  if (willShow) {
+    consentInfoBox.removeAttribute("hidden");
+    if (infoToggleBtn) infoToggleBtn.textContent = "Ocultar explicación";
+  } else {
+    consentInfoBox.setAttribute("hidden", "");
+    if (infoToggleBtn) infoToggleBtn.textContent = "Mostrar explicación";
+  }
+}
+
 window.sendMessage = sendMessage;
 window.toggleHistory = toggleHistory;
