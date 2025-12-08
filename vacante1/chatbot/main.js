@@ -53,6 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
   sendBtn.addEventListener("click", sendMessage);
   document.getElementById("toggleHistoryBtn").addEventListener("click", toggleHistory);
 
+  const infoToggleBtn = document.getElementById("infoToggleBtn");
+  if (infoToggleBtn) {
+    infoToggleBtn.addEventListener("click", toggleConsentInfo);
+  }
+  
   historyBox.value = localStorage.getItem("chatHistory") || "";
   historyBox.style.display = "none";
 
