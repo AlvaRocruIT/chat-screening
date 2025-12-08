@@ -10,22 +10,111 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Nuevo stylesheet -->
+  <!-- Hoja de estilos unificada -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Chatea con tu próximo puesto de trabajo</h1>
-  <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
 
-    <textarea id="userInput" rows="4" placeholder="¡Hola! 👋🏻 ¿Qué te gustaría saber?" autocomplete="off" autocapitalize="none" spellcheck="false"></textarea>
-  <button id="sendBtn">Enviar</button>
-  
-  <textarea id="currentResponse" rows="4" readonly placeholder="Aquí aparecerá tu respuesta"></textarea>
+  <!-- Modal de acceso -->
+  <div class="login-overlay" id="loginOverlay">
+    <div class="login-panel">
+      <p>Solo para comenzar, te pediremos tu <span class="bold">nombre y correo</span> electrónico</p>
 
-  <h3>Historial</h3>
-  <button id="toggleHistoryBtn" onclick="toggleHistory()">Mostrar/ocultar historial</button>
-  <textarea id="historyBox" rows="8" readonly placeholder="Pulsa el botón para mostrar/ocultar el historial"></textarea>
+      <p class="field-label">Nombre</p>
+      <textarea
+        id="loginName"
+        rows="1"
+        placeholder="Juli@"
+        autocomplete="off"
+        autocapitalize="none"
+        spellcheck="false"
+      ></textarea>
+
+      <p class="field-label">Correo</p>
+      <textarea
+        id="loginEmail"
+        rows="1"
+        placeholder="Juli@correo.com"
+        autocomplete="off"
+        autocapitalize="none"
+        spellcheck="false"
+      ></textarea>
+
+      <button
+        type="button"
+        id="infoToggleBtn"
+        class="info-toggle"
+        aria-expanded="false"
+      >
+          ⁉️ ¿Para qué necesitan estos datos? ⁉️
+      </button>
+
+      <div id="consentInfoBox" class="history-box" hidden>
+        Este chatbot está pensado para
+        <span class="bold">registrar, evaluar y rankear</span> tus interacciones. <br>
+          🧑🏻‍💻 Al registrar tu nombre y correo, nos estarás permitiendo contactarte
+          en caso que tus interacciones demuestren que
+        <span class="bold">tienes el potencial y calce</span> que buscamos para este cargo. 🫵🏻
+      </div>
+
+      <div class="button-container">
+        <button id="acceptBtn" type="button">Aceptar</button>
+        <button id="backBtn" type="button">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- App del chatbot -->
+  <main id="chatApp" class="chat-app" aria-hidden="true">
+    <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
+
+    <textarea
+      id="userInput"
+      rows="4"
+      placeholder="¡Hola! 👋🏻 ¿Qué te gustaría saber?"
+      autocomplete="off"
+      autocapitalize="none"
+      spellcheck="false"
+    ></textarea>
+    <button id="sendBtn">Enviar</button>
+
+    <textarea
+      id="currentResponse"
+      rows="4"
+      readonly
+      placeholder="Aquí aparecerá tu respuesta"
+    ></textarea>
+
+    <h3>Historial</h3>
+    <button id="toggleHistoryBtn" type="button" onclick="toggleHistory()">Mostrar/ocultar historial</button>
+    <textarea id="historyBox" rows="8" readonly placeholder="Pulsa el botón para mostrar/ocultar el historial"></textarea>
+  </main>
 
   <script type="module" src="main.js?v=4"></script>
+  <script>
+    const overlay = document.getElementById('loginOverlay');
+    const chatApp = document.getElementById('chatApp');
+    const acceptBtn = document.getElementById('acceptBtn');
+    const backBtn = document.getElementById('backBtn');
+
+    acceptBtn.addEventListener('click', () => {
+      const name = document.getElementById('loginName').value.trim();
+      const email = document.getElementById('loginEmail').value.trim();
+
+      if (!name || !email) {
+        alert('Por favor completa ambos campos antes de continuar.');
+        return;
+      }
+
+      // Aquí podrías guardar name/email (localStorage, API, etc.)
+      overlay.setAttribute('hidden', '');
+      chatApp.removeAttribute('aria-hidden');
+    });
+
+    backBtn.addEventListener('click', () => {
+      window.location.href = '/chat-screening/vacante2/index.html';
+    });
+  </script>
 </body>
 </html>
