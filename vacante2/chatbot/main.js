@@ -1,171 +1,242 @@
-// Elementos del DOM
-const inputBox = document.getElementById("userInput");
-const currentResponse = document.getElementById("currentResponse");
-const historyBox = document.getElementById("historyBox");
-const sendBtn = document.getElementById("sendBtn");
-
-// UPDATE THESE URLs to match your new n8n webhook
-const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
-const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
-
-function getVacanteIdFromPath() {
-  const parts = window.location.pathname.split("/").filter(Boolean);
-  const explicit =
-    parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
-    (parts.includes("vacante1") ? "vacante1" : null) ||
-    (parts.includes("vacante2") ? "vacante2" : null);
-  return (
-    explicit || "vacante1"
-  );
+/* Base layout -------------------------------------------------------------- */
+:root {
+  color-scheme: light;
 }
 
-function getPreferredEndpoint() {
-  const params = new URLSearchParams(window.location.search);
-  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
-  return env === "test" ? TEST_URL : PROD_URL;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-      signal: controller.signal,
-      mode: "cors",
-    });
-    const raw = await response.text();
-    let data = null;
-    try {
-      data = JSON.parse(raw);
-    } catch (_) {}
-    return { response, data, raw };
-  } finally {
-    clearTimeout(timeoutId);
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  padding: 2em;
+  max-width: 780px;
+  margin: auto;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #1f1f1f;
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.05em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+p.field-label {
+  font-weight: 600;
+  margin: 0.75em 0 0.2em;
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Login overlay ------------------------------------------------------------ */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(18, 18, 18, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+  z-index: 1000;
+}
+
+.login-overlay[hidden] {
+  display: none;
+}
+
+.login-panel {
+  background-color: #f4f4f4;
+  border: 1px solid #dedede;
+  padding: 2em;
+  width: min(640px, 100%);
+  border-radius: 0;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-panel h3 {
+  text-align: center;
+}
+
+.info-toggle {
+  appearance: none;
+  border: none;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0.4em 0;
+  margin: 1em 0 0.5em;
+  cursor: pointer;
+  color: inherit;
+}
+
+.info-toggle:focus-visible {
+  outline: 2px solid #2c2c2c;
+  outline-offset: 4px;
+}
+
+
+/* Shared textarea styles --------------------------------------------------- */
+textarea {
+  width: 100%;
+  padding: 0.95em 1em;
+  margin: 0.2em 0 0.75em;
+  font-size: 1em;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+}
+
+textarea[readonly] {
+  background-color: #fafafa;
+}
+
+/* Info box inside login panel */
+.history-box {
+  margin-top: 0.75em;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: justify;
+}
+
+/* CTA buttons inside login panel ------------------------------------------ */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2cm;
+  margin: 2em 0 0;
+}
+
+.button-container button {
+  appearance: none;
+  width: 220px;
+  padding: 0.65em 1.5em;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.05em;
+  line-height: 1.3;
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.25s ease;
+}
+
+.button-container button:hover {
+  background-color: #444;
+}
+
+/* Chat application --------------------------------------------------------- */
+.chat-app[aria-hidden="true"] {
+  opacity: 0.15;
+  pointer-events: none;
+  user-select: none;
+}
+
+.chat-app {
+  transition: opacity 0.3s ease;
+}
+
+#userInput,
+#currentResponse,
+#historyBox {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#currentResponse {
+  border: 1px solid #e0e0e0;
+  margin-top: 0.6em;
+}
+
+#historyBox {
+  margin-top: 0.5em;
+  display: none;
+  border: 1px solid #e0e0e0;
+}
+
+#historyBox.show {
+  display: block;
+}
+
+button#sendBtn,
+button#toggleHistoryBtn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.85em 1.5em;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#sendBtn:hover,
+button#toggleHistoryBtn:hover {
+  background-color: #444;
+}
+
+#toggleHistoryBtn {
+  display: block;
+  margin-top: 0.75em;
+}
+
+/* Responsive tweaks ------------------------------------------------------- */
+@media (max-width: 640px) {
+  body {
+    padding: 1.25em;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .login-panel {
+    padding: 1.5em;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .button-container button {
+    width: 100%;
+    max-width: 320px;
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  sendBtn.addEventListener("click", sendMessage);
-  document.getElementById("toggleHistoryBtn").addEventListener("click", toggleHistory);
-
-  historyBox.value = localStorage.getItem("chatHistory") || "";
-  historyBox.style.display = "none";
-
-  inputBox.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
-  });
-});
-
-function getVacanteName() {
-  const vacanteId = getVacanteIdFromPath();
-  const vacanteMap = {
-    'vacante1': 'Jefe/a Comercial - Talca',
-    'vacante2': 'Analista de Compensaciones - Las Condes'
-  };
-  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
-}
-
-async function sendMessage() {
-  const input = inputBox.value.trim();
-  if (!input) {
-    currentResponse.value = "¿Podrías escribir una pregunta o comentario?";
-    return;
-  }
-
-  const previous = localStorage.getItem("chatHistory") || "";
-  currentResponse.value = "🤖 Pensando...";
-  if (sendBtn) sendBtn.disabled = true;
-
-  let sessionId = localStorage.getItem('sessionId');
-  if (!sessionId) {
-    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    localStorage.setItem('sessionId', sessionId);
-  }
-
-  const payload = { 
-    chatInput: input, 
-    sessionId: sessionId,  
-    vacante: getVacanteName()
-  };
-  
-    let endpoint = getPreferredEndpoint();
-  // Create URL with query parameters for Chat Trigger node
-  const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
-
-  console.log('=== DEBUG - Sending payload ===');
-  console.log(payload);
-  console.log('Payload as JSON:', JSON.stringify(payload));
-  console.log('URL with params:', urlWithParams);
-
-  try {
-    let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
-    
-    if (response.status === 404 && endpoint === PROD_URL) {
-      const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
-      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
-      endpoint = TEST_URL;
-    }
-
-    if (!response.ok) {
-      const detail = data?.message || raw || `HTTP ${response.status}`;
-      throw new Error(detail);
-    }
-
-    const reply =
-      (data &&
-        (data.respuesta ||
-          data.output ||
-          data.reply ||
-          data.message ||
-          data.text)) ||
-      raw ||
-      "No se recibió respuesta.";
-
-    const updatedHistory =
-      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
-    currentResponse.value = reply;
-    historyBox.value = updatedHistory;
-    localStorage.setItem("chatHistory", updatedHistory);
-  } catch (error) {
-    const msg = String(error?.message || error || "Error desconocido");
-    let hint = "";
-
-    if (msg.includes("webhook") || msg.includes("404")) {
-      if (endpoint === PROD_URL) {
-        hint =
-          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa 'Execute workflow' en n8n antes de enviar.";
-      } else {
-        hint =
-          "Pulsa 'Execute workflow' en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
-      }
-    } else if (msg.includes("AbortError")) {
-      hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
-    }
-
-    const fallback = `Hmm... algo no salió bien 🤔. ${hint}`.trim();
-    const updatedHistory =
-      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${fallback}\n`;
-    currentResponse.value = fallback;
-    historyBox.value = updatedHistory;
-    localStorage.setItem("chatHistory", updatedHistory);
-  } finally {
-    inputBox.value = "";
-    if (sendBtn) sendBtn.disabled = false;
-  }
-}
-
-function toggleHistory() {
-  const btn = document.getElementById("toggleHistoryBtn");
-  const isHidden = historyBox.style.display === "none";
-  historyBox.style.display = isHidden ? "block" : "none";
-  if (btn) btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
-}
-
-window.sendMessage = sendMessage;
-window.toggleHistory = toggleHistory;
