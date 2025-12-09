@@ -450,3 +450,17 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 ---
 
 **End of the Document**
+
+
+<strong>💯Scoring ruleset:💯</strong><br>
+- An interaction is 1 question + 1 answer<br>
+- The scoring scale for candidates goes from 1 to 5<br>
+- both questions and answers add scoring to the interaction<br>
+- In a single interaction, keywords on questions weight 3 times more than keywords in answers<br> 
+- In 1 interaction, a single prompt could add score in more than 1 dimension<br>
+- In 1 interaction, an answer could add score in more than 1 dimension<br>
+- Scoring is measured in 5 dimensions: 'Cultural', 'Crecimiento', 'Engagement', 'Rol', Estrategico'<br>
+- Each new interaction gives more posibilities to the usser to get a higher scoring<br>
+- A candidate can never lose score, allways adding<br>
+- Full scoring candidates are the ones who reach a whole context in all dimensions<br>
+- Ussers who achieve best averaged scoring and more number of interactions, have more chances to get considered as high potential candidates<br>
