@@ -451,3 +451,16 @@ Puntuación Final = 1 + (Puntuación Normalizada × 4)
 ---
 
 **Fin del Documento**
+
+<strong>💯Reglas de puntuación:💯</strong><br>
+Una interacción corresponde a 1 pregunta + 1 respuesta<br>
+La escala de puntuación para candidatos va de 1 a 5<br>
+Tanto las preguntas como las respuestas suman puntaje a la interacción<br>
+En una interacción, las palabras clave de la pregunta pesan 3 veces más que las de la respuesta<br>
+En una interacción, un único prompt puede sumar puntaje en más de una dimensión<br>
+En una interacción, una respuesta puede sumar puntaje en más de una dimensión<br>
+La puntuación se mide en 5 dimensiones: ‘Cultural’, ‘Crecimiento’, ‘Engagement’, ‘Rol’, ‘Estratégico’<br>
+Cada nueva interacción da más posibilidades al usuario de obtener una puntuación mayor<br>
+Un candidato nunca puede perder puntuación; siempre suma<br>
+Los candidatos con puntuación completa son quienes logran un contexto pleno en todas las dimensiones<br>
+Los usuarios que alcanzan el mejor promedio de puntuación y mayor número de interacciones tienen más posibilidades de ser considerados candidatos de alto potencial<br>
