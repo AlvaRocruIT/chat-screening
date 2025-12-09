@@ -173,6 +173,16 @@ function toggleHistory() {
   if (btn) btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
 }
 
+function toggleHistory() {
+  const historyBox = document.getElementById("historyBox");
+  const btn = document.getElementById("toggleHistoryBtn");
+  if (!historyBox || !btn) return;
+
+  const isHidden = historyBox.style.display === "none" || historyBox.style.display === "";
+  historyBox.style.display = isHidden ? "block" : "none";
+  btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
+}
+
 function toggleConsentInfo() {
   const consentInfoBox = document.getElementById("consentInfoBox");
   const infoToggleBtn = document.getElementById("infoToggleBtn");
