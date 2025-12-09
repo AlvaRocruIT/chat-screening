@@ -17,7 +17,7 @@ function getVacanteIdFromPath() {
   return (
     new URLSearchParams(location.search).get("vacante") ||
     explicit ||
-    "vacante2"
+    "vacante1"
   );
 }
 
@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   historyBox.value = localStorage.getItem("chatHistory") || "";
-  historyBox.style.display = "none";
 
   inputBox.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
@@ -167,10 +166,13 @@ async function sendMessage() {
 }
 
 function toggleHistory() {
+  const historyBox = document.getElementById("historyBox");
   const btn = document.getElementById("toggleHistoryBtn");
-  const isHidden = historyBox.style.display === "none";
-  historyBox.style.display = isHidden ? "block" : "none";
-  if (btn) btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
+  if (!historyBox || !btn) return;
+
+  const isHidden = !historyBox.classList.contains("show");
+  historyBox.classList.toggle("show", isHidden);
+  btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
 }
 
 function toggleConsentInfo() {
