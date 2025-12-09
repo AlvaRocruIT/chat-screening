@@ -25,8 +25,8 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se diseña un ruleset que parametriza las interacciones con el chatbot 📅30 OCT. 2025<br>
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
 ✅ Se logran parametrizar conversaciones según ruleset creado 📅01 DIC. 2025<br>
-💭 Se busca loguear conversaciones ❓(pensar solución para clientes; cómo registramos a los usuarios)<br>
-🎁 <strong> Se presenta el proyecto </strong><br><br>
+🚧 Se trabaja en loguear conversaciones 📅01 DIC. 2025 <br>
+🚪 <strong> Salir a tocar puertas estratégicamente </strong><br><br>
 <b>💬 Nota final</b>
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
@@ -36,15 +36,4 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🤦🏻‍♂️ Mi n8n workflow no conectaba con el front | Me agoté la suscripción de n8n anticipadamente por activar un trigger cada 5 min 📅 18 NOV. 2025 <br>
 
 
-<strong>💯Scoring ruleset:💯</strong><br>
-- An interaction is 1 question + 1 answer<br>
-- The scoring scale for candidates goes from 1 to 5<br>
-- both questions and answers add scoring to the interaction<br>
-- In a single interaction, keywords on questions weight 3 times more than keywords in answers<br> 
-- In 1 interaction, a single prompt could add score in more than 1 dimension<br>
-- In 1 interaction, an answer could add score in more than 1 dimension<br>
-- Scoring is measured in 5 dimensions: 'Cultural', 'Crecimiento', 'Engagement', 'Rol', Estrategico'<br>
-- Each new interaction gives more posibilities to the usser to get a higher scoring<br>
-- A candidate can never lose score, allways adding<br>
-- Full scoring candidates are the ones who reach a whole context in all dimensions<br>
-- Ussers who achieve best averaged scoring and more number of interactions, have more chances to get considered as high potential candidates<br>
+
