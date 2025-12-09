@@ -1,88 +1,144 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo del proyecto "Chatea con la vacante"</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Fuente Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
-
-  <style>
-    .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; }
-    .modal.open { display: flex; }
-    .modal-content { position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .video-wrapper { position: relative; }
-    .modal video { display: block; width: 100%; height: auto; background: #000; }
-    .modal-close { position: absolute; top: 8px; right: 8px; width: 40px; height: 40px; border: none; border-radius: 20px; background: rgba(0,0,0,0.6); color: #fff; font-size: 28px; line-height: 1; cursor: pointer; z-index: 3; }
-    .modal-close:hover { background: rgba(0,0,0,0.8); }
-    .modal-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border-radius: 45px; border: 1px solid #fff; background: rgba(255,255,255,0.95); color: #000; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 28px; z-index: 2; }
-    .modal-play:hover { background: #fff; }
-    .video-error { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; padding: 12px; font-size: 14px; display: none; z-index: 2; }
-     h1 { text-align: center; }
-    .button-container { display: flex; justify-content: center; }
-     .button-container button:hover {
-    background-color: #f2f2f2;
-    color: #2c2c2c;
-    border-color: #000;
-    }
-    .meta-line { text-align: center; }
-  </style>
+  <!-- Hoja de estilos unificada -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Analista de Compensaciones - Las Condes</h1>
-  
-  <div class="button-container">
-    <button id="Chatbot" onclick="location.href='chatbot/index.html'">Chatea con esta vacante</button>
-  </div>
-  
-  <p class="meta-line"><strong>Jornada Completa  |  Analista  |  Región Metropolitana de Santiago  |  Las Condes</strong></p>
-    <p>¡En CCA nos apasiona crear experiencias para compartir juntos un mejor vivir!</p>
-    <p>Nos encontramos en búsqueda de un/a <strong>Analista de Compensaciones</strong> para trabajar en nuestras oficinas ubicadas en Las Condes.</p>
-    <p>Será responsable de contribuir en el cumplimiento de la política de compensaciones según los lineamientos de equidad interna, competitividad externa y desempeño con el objetivo de apoyar la atracción, retención y desarrollo de los trabajadores de CCA y sus filiales.</p><br>
+  <h1>Chatea con tu próximo puesto de trabajo</h1>
 
-  <strong>Funciones específicas:</strong>
-    <ul>
-      <li>Analizar y ejecutar los procesos directivos del área de Compensaciones para Rol General, tales como bono anual por desempeño, acciones salariales, actualización de escalas salariales, entre otros.</li>
-      <li>Colaborar en el análisis de la estructura organizacional, en la elaboración y actualización de descripciones de cargo y en la realización de evaluaciones de puestos, con el objetivo de orientar los lineamientos generales en materia de equidad interna y competitividad externa.</li>
-      <li>Generar reportes que contribuyan al análisis de cumplimiento de la legislación laboral vigente y las políticas internas de la empresa y del directorio en lo que respecta a compensaciones, con el objetivo de asegurar el cumplimiento y levantar desviaciones a corregir.</li>
-      <li>Explorar y gestionar proyectos de mejora de datos y de procesos en compensaciones, mediante nuevas plataformas y mejora de data quality que permitan un perfeccionamiento práctico en el desarrollo de los procesos del área.</li>
-    </ul><br>
-  
-<strong>Requisitos:</strong><br>
-  <ul>
-    <li>Título de Ingeniería Comercial o Ingeniería Civil Industrial.</li>
-    <li>Manejo de Excel intermedio-avanzado.</li>
-  </ul>
-  
-<p>Nuestro SER CCA nos inspira a trabajar con aceptación y respeto a las diferencias de las personas, promoviendo un entorno diverso e integrador, para así contribuir a un mejor vivir. Por esto, te agradecemos que nos compartas si necesitas adaptación en alguna etapa del proceso de postulación.<br>
-¡Te invitamos a Ser CCA!</p>
-  
-<p><strong>Perfil deseado:</strong></p>
-  <ul>
-    <li>Título de Ingeniería Comercial o Ingeniería Civil Industrial.</li>
-    <li>Manejo de Excel intermedio-avanzado.</li>
-  </ul>
-  
-<p></p>Empleo inclusivo</p>
-<p><strong> Estudios mínimos: Universitaria  |  Graduado  |  Ingeniería Civil  |  Ingeniería Comercial</strong></p>
-    
- <div id="videoModal" class="modal open" role="dialog" aria-modal="true" aria-label="Video de introducción">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Cerrar">&times;</button>
-      <div class="video-wrapper">
-        <video id="introVideo" playsinline webkit-playsinline preload="metadata">
-          <source src="../videomvp.m4v" type="video/mp4" />
-          Tu navegador no soporta video.
-        </video>
-        <button id="overlayPlay" class="modal-play" aria-label="Reproducir video">▶</button>
-        <div id="videoError" class="video-error">No se pudo reproducir el video. Verifica formato/codec o abre el archivo en otra pestaña.</div>
+  <!-- Modal de acceso -->
+  <div class="login-overlay" id="loginOverlay">
+    <div class="login-panel">
+      <p>Solo para comenzar, te pediremos tu <span class="bold">nombre y correo</span> electrónico</p>
+
+      <p class="field-label">Nombre</p>
+      <textarea
+        id="loginName"
+        rows="1"
+        placeholder="Juli@"
+        autocomplete="off"
+        autocapitalize="none"
+        spellcheck="false"
+      ></textarea>
+
+      <p class="field-label">Correo</p>
+      <textarea
+        id="loginEmail"
+        rows="1"
+        placeholder="Juli@correo.com"
+        autocomplete="off"
+        autocapitalize="none"
+        spellcheck="false"
+      ></textarea>
+
+      <button
+        type="button"
+        id="infoToggleBtn"
+        class="info-toggle"
+        aria-expanded="false"
+      >
+          ⁉️ ¿Para qué necesitan estos datos? ⁉️
+      </button>
+
+      <div id="consentInfoBox" class="history-box" hidden>
+        Este chatbot está pensado para
+        <span class="bold">registrar, evaluar y rankear</span> tus interacciones. <br>
+          🧑🏻‍💻 Al registrar tu nombre y correo, nos estarás permitiendo contactarte
+          en caso que tus interacciones demuestren que
+        <span class="bold">tienes el potencial y calce</span> que buscamos para este cargo. 🫵🏻
+      </div>
+
+      <div class="button-container">
+        <button id="acceptBtn" type="button">Aceptar</button>
+        <button id="backBtn" type="button">Volver</button>
       </div>
     </div>
   </div>
 
-  <script src="main.js" defer></script>
+  <!-- App del chatbot -->
+  <main id="chatApp" class="chat-app" aria-hidden="true">
+    <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
+
+    <textarea
+      id="userInput"
+      rows="4"
+      placeholder="¡Hola! 👋🏻 ¿Qué te gustaría saber?"
+      autocomplete="off"
+      autocapitalize="none"
+      spellcheck="false"
+    ></textarea>
+    <button id="sendBtn">Enviar</button>
+
+    <textarea
+      id="currentResponse"
+      rows="4"
+      readonly
+      placeholder="Aquí aparecerá tu respuesta"
+    ></textarea>
+
+    <h3>Historial</h3>
+    <button id="toggleHistoryBtn" type="button">Mostrar/ocultar historial</button>
+    <textarea id="historyBox" rows="8" readonly placeholder="Pulsa el botón para mostrar/ocultar el historial"></textarea>
+  </main>
+
+  <script type="module" src="main.js?v=4"></script>
+  
+  <script>
+  const overlay = document.getElementById('loginOverlay');
+  const chatApp = document.getElementById('chatApp');
+  const acceptBtn = document.getElementById('acceptBtn');
+  const backBtn = document.getElementById('backBtn');
+
+  const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
+  const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
+
+  function handleAccept() {
+    const name = document.getElementById('loginName').value.trim();
+    const email = document.getElementById('loginEmail').value.trim();
+
+    if (!name || !email) {
+      alert('Por favor completa ambos campos antes de continuar.');
+      return;
+    }
+
+    if (!nameRegex.test(name)) {
+      alert('Ingresa un nombre válido (solo letras; se permiten espacios, guiones o apóstrofes).');
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert('Ingresa un correo válido con formato: a@bb.cc (se permite subdominio: a@bb.sld.cc).');
+      return;
+    }
+
+    // Aquí podrías guardar name/email (localStorage, API, etc.)
+    overlay.setAttribute('hidden', '');
+    chatApp.removeAttribute('aria-hidden');
+  }
+
+  acceptBtn.addEventListener('click', handleAccept);
+
+  // Pressing Enter in the email field submits (like clicking Aceptar)
+  document.getElementById('loginEmail').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault(); // stop newline
+      handleAccept();
+    }
+  });
+
+  backBtn.addEventListener('click', () => {
+    window.location.href = '/chat-screening/vacante2/index.html';
+  });
+</script>
 </body>
 </html>
