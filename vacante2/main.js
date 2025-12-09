@@ -1,83 +1,198 @@
-document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.getElementById('videoModal');
-  var video = document.getElementById('introVideo');
-  var closeBtn = document.querySelector('.modal-close');
-  var playBtn = document.getElementById('overlayPlay');
-  var errorBox = document.getElementById('videoError');
+// Elementos del DOM
+const inputBox = document.getElementById("userInput");
+const currentResponse = document.getElementById("currentResponse");
+const historyBox = document.getElementById("historyBox");
+const sendBtn = document.getElementById("sendBtn");
 
-  var closeTimeoutId = null;
+// UPDATE THESE URLs to match your new n8n webhook
+const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
+const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
 
-  function showError() {
-    if (errorBox) errorBox.style.display = 'block';
-    if (playBtn) playBtn.style.display = 'block';
+function getVacanteIdFromPath() {
+  const parts = window.location.pathname.split("/").filter(Boolean);
+  const explicit =
+    parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
+    (parts.includes("vacante1") ? "vacante1" : null) ||
+    (parts.includes("vacante2") ? "vacante2" : null);
+  return (
+    new URLSearchParams(location.search).get("vacante") ||
+    explicit ||
+    "vacante1"
+  );
+}
+
+function getPreferredEndpoint() {
+  const params = new URLSearchParams(window.location.search);
+  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
+  return env === "test" ? TEST_URL : PROD_URL;
+}
+
+async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+      mode: "cors",
+    });
+    const raw = await response.text();
+    let data = null;
+    try {
+      data = JSON.parse(raw);
+    } catch (_) {}
+    return { response, data, raw };
+  } finally {
+    clearTimeout(timeoutId);
   }
-  function hideError() {
-    if (errorBox) errorBox.style.display = 'none';
-  }
-  function startCloseTimer() {
-    if (closeTimeoutId) clearTimeout(closeTimeoutId);
-    closeTimeoutId = setTimeout(closeModal, 40 * 1000);
-  }
-  function closeModal() {
-    if (!modal) return;
-    modal.classList.remove('open');
-    try { if (video) video.pause(); } catch (_) {}
-    if (closeTimeoutId) clearTimeout(closeTimeoutId);
-  }
+}
 
-  function attemptPlayWithSound() {
-    if (!video) return;
-    hideError();
-    video.muted = false;
-    try { video.load(); } catch (_) {}
+document.addEventListener("DOMContentLoaded", () => {
+  sendBtn.addEventListener("click", sendMessage);
+  document.getElementById("toggleHistoryBtn").addEventListener("click", toggleHistory);
 
-    var playPromise;
-    try { playPromise = video.play(); }
-    catch { showError(); return; }
+  const infoToggleBtn = document.getElementById("infoToggleBtn");
+  if (infoToggleBtn) {
+    infoToggleBtn.addEventListener("click", toggleConsentInfo);
+  }
+  
+  historyBox.value = localStorage.getItem("chatHistory") || "";
 
-    if (playPromise && typeof playPromise.then === 'function') {
-      playPromise.then(function () {
-        if (playBtn) playBtn.style.display = 'none';
-        video.controls = true;
-        startCloseTimer();
-      }).catch(function () {
-        var onCanPlay = function () {
-          video.removeEventListener('canplay', onCanPlay);
-          try {
-            video.play().then(function () {
-              if (playBtn) playBtn.style.display = 'none';
-              video.controls = true;
-              startCloseTimer();
-            }).catch(showError);
-          } catch { showError(); }
-        };
-        video.addEventListener('canplay', onCanPlay, { once: true });
-      });
-    } else {
-      if (playBtn) playBtn.style.display = 'none';
-      video.controls = true;
-      startCloseTimer();
+  inputBox.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
     }
-  }
-
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-  if (modal) modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
-  if (playBtn) playBtn.addEventListener('click', function (e) { e.stopPropagation(); attemptPlayWithSound(); });
-
-  if (video) {
-    video.addEventListener('error', showError);
-    video.addEventListener('stalled', showError);
-    video.addEventListener('abort', showError);
-    video.addEventListener('emptied', showError);
-    video.addEventListener('play', function () { hideError(); if (playBtn) playBtn.style.display = 'none'; });
-    video.addEventListener('ended', closeModal);
-  }
-
-  if (modal) modal.classList.add('open');
-  if (video) {
-    try { video.pause(); } catch {}
-    video.controls = false;
-    hideError();
-    if (playBtn) playBtn.style.display = 'block';
-  }
+  });
 });
+
+function getVacanteName() {
+  const vacanteId = getVacanteIdFromPath();
+  const vacanteMap = {
+    'vacante1': 'Jefe/a Comercial - Talca',
+    'vacante2': 'Analista de Compensaciones - Las Condes'
+  };
+  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
+}
+
+async function sendMessage() {
+  const input = inputBox.value.trim();
+  if (!input) {
+    currentResponse.value = "¿Podrías escribir una pregunta o comentario?";
+    return;
+  }
+
+  const previous = localStorage.getItem("chatHistory") || "";
+  currentResponse.value = "🤖 Pensando...";
+  if (sendBtn) sendBtn.disabled = true;
+
+  let sessionId = localStorage.getItem('sessionId');
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    localStorage.setItem('sessionId', sessionId);
+  }
+
+  const payload = { 
+    chatInput: input, 
+    sessionId: sessionId,  
+    vacante: getVacanteName()
+  };
+
+  let endpoint = getPreferredEndpoint();
+  // Create URL with query parameters for Chat Trigger node
+  const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+
+  console.log('=== DEBUG - Sending payload ===');
+  console.log(payload);
+  console.log('Payload as JSON:', JSON.stringify(payload));
+  console.log('URL with params:', urlWithParams);
+
+  try {
+    // ✅ FIX: Use urlWithParams instead of endpoint
+    let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
+
+    if (response.status === 404 && endpoint === PROD_URL) {
+      const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
+      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
+      endpoint = TEST_URL;
+    }
+
+    if (!response.ok) {
+      const detail = data?.message || raw || `HTTP ${response.status}`;
+      throw new Error(detail);
+    }
+
+    let reply = raw?.trim() || "";
+      if (!reply && data) {
+      reply = data.respuesta || data.output || data.reply || data.message || data.text || "";
+    }
+      if (!reply) {
+      reply = "No se recibió respuesta.";
+    }
+
+    const updatedHistory =
+      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
+    currentResponse.value = reply;
+    historyBox.value = updatedHistory;
+    localStorage.setItem("chatHistory", updatedHistory);
+  } catch (error) {
+    const msg = String(error?.message || error || "Error desconocido");
+    let hint = "";
+
+    if (msg.includes("webhook") || msg.includes("404")) {
+      if (endpoint === PROD_URL) {
+        hint =
+          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa 'Execute workflow' en n8n antes de enviar.";
+      } else {
+        hint =
+          "Pulsa 'Execute workflow' en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
+      }
+    } else if (msg.includes("AbortError")) {
+      hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
+    }
+
+    const fallback = `Hmm... algo no salió bien 🤔. ${hint}`.trim();
+    const updatedHistory =
+      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${fallback}\n`;
+    currentResponse.value = fallback;
+    historyBox.value = updatedHistory;
+    localStorage.setItem("chatHistory", updatedHistory);
+  } finally {
+    inputBox.value = "";
+    if (sendBtn) sendBtn.disabled = false;
+  }
+}
+
+function toggleHistory() {
+  const historyBox = document.getElementById("historyBox");
+  const btn = document.getElementById("toggleHistoryBtn");
+  if (!historyBox || !btn) return;
+
+  const isHidden = !historyBox.classList.contains("show");
+  historyBox.classList.toggle("show", isHidden);
+  btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
+}
+
+function toggleConsentInfo() {
+  const consentInfoBox = document.getElementById("consentInfoBox");
+  const infoToggleBtn = document.getElementById("infoToggleBtn");
+  
+  if (!consentInfoBox || !infoToggleBtn) return;
+
+  const isHidden = consentInfoBox.hasAttribute("hidden");
+  
+  if (isHidden) {
+    consentInfoBox.removeAttribute("hidden");
+    infoToggleBtn.setAttribute("aria-expanded", "true");
+    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️ (Ocultar)";
+  } else {
+    consentInfoBox.setAttribute("hidden", "");
+    infoToggleBtn.setAttribute("aria-expanded", "false");
+    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️";
+  }
+}
+
+window.sendMessage = sendMessage;
+window.toggleHistory = toggleHistory;
