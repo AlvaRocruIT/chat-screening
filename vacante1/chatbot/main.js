@@ -133,7 +133,7 @@ async function sendMessage() {
     }
 
     const updatedHistory =
-      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${reply}\n`;
+      previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${reply}\n`;
     currentResponse.value = reply;
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
@@ -155,7 +155,7 @@ async function sendMessage() {
 
     const fallback = `Hmm... algo no salió bien 🤔. ${hint}`.trim();
     const updatedHistory =
-      previous + `\n👤 Tú: ${input}\n🤖 PartnerBot: ${fallback}\n`;
+      previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${fallback}\n`;
     currentResponse.value = fallback;
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
