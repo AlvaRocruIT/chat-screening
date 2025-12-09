@@ -186,7 +186,7 @@ function toggleConsentInfo() {
   if (isHidden) {
     consentInfoBox.removeAttribute("hidden");
     infoToggleBtn.setAttribute("aria-expanded", "true");
-    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️ (Ocultar)";
+    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️";
   } else {
     consentInfoBox.setAttribute("hidden", "");
     infoToggleBtn.setAttribute("aria-expanded", "false");
