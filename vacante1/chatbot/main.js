@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   historyBox.value = localStorage.getItem("chatHistory") || "";
-  historyBox.style.display = "none";
 
   inputBox.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
