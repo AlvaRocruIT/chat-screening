@@ -166,22 +166,13 @@ async function sendMessage() {
   }
 }
 
-function toggleHistory() { const historyBox = document.getElementById("historyBox");
-  const btn = document.getElementById("toggleHistoryBtn");
-  if (!historyBox || !btn) return;
-
-  const isHidden = !historyBox.classList.contains("show");
-  historyBox.classList.toggle("show", isHidden);
-  btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
-}
-
 function toggleHistory() {
   const historyBox = document.getElementById("historyBox");
   const btn = document.getElementById("toggleHistoryBtn");
   if (!historyBox || !btn) return;
 
-  const isHidden = historyBox.style.display === "none" || historyBox.style.display === "";
-  historyBox.style.display = isHidden ? "block" : "none";
+  const isHidden = !historyBox.classList.contains("show");
+  historyBox.classList.toggle("show", isHidden);
   btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
 }
 
