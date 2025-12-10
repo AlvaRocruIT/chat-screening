@@ -102,29 +102,61 @@
   const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
   const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
 
-  function handleAccept() {
-    const name = document.getElementById('loginName').value.trim();
-    const email = document.getElementById('loginEmail').value.trim();
+async function handleAccept() {
+  const name = document.getElementById('loginName').value.trim();
+  const email = document.getElementById('loginEmail').value.trim();
 
-    if (!name || !email) {
-      alert('Por favor completa ambos campos antes de continuar.');
-      return;
-    }
-
-    if (!nameRegex.test(name)) {
-      alert('Ingresa un nombre válido (solo letras; se permiten espacios, guiones o apóstrofes).');
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      alert('Ingresa un correo válido con formato: a@bb.cc (se permite subdominio: a@bb.sld.cc).');
-      return;
-    }
-
-    // Aquí podrías guardar name/email (localStorage, API, etc.)
-    overlay.setAttribute('hidden', '');
-    chatApp.removeAttribute('aria-hidden');
+  if (!name || !email) {
+    alert('Por favor completa ambos campos antes de continuar.');
+    return;
   }
+
+  if (!nameRegex.test(name)) {
+    alert('Ingresa un nombre válido (solo letras; se permiten espacios, guiones o apóstrofes).');
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert('Ingresa un correo válido con formato: a@bb.cc (se permite subdominio: a@bb.sld.cc).');
+    return;
+  }
+
+  // Get or create sessionId
+  let sessionId = localStorage.getItem('sessionId');
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    localStorage.setItem('sessionId', sessionId);
+  }
+
+  // Send registration to n8n
+  const registrationUrl = getPreferredEndpoint().replace('?action=sendMessage', '?action=registerUser');
+  try {
+    const response = await fetch(registrationUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'registerUser',
+        sessionId: sessionId,
+        userName: name,
+        userEmail: email,
+        vacante: getVacanteName()
+      }),
+      mode: 'cors'
+    });
+    
+    if (!response.ok) throw new Error('Registration failed');
+    
+    // Store locally as backup
+    localStorage.setItem('userName', name);
+    localStorage.setItem('userEmail', email);
+  } catch (error) {
+    console.error('Registration error:', error);
+    // Continue anyway - don't block user
+  }
+
+  overlay.setAttribute('hidden', '');
+  chatApp.removeAttribute('aria-hidden');
+}
 
   acceptBtn.addEventListener('click', handleAccept);
 
