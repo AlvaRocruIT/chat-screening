@@ -34,6 +34,6 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🤦🏻‍♂️ Integré n8n, github, supabase y cursor con una capacidad inicial de 4 ram | Escalé a una RAM de 8 GB. 📅 17 NOV. 2025 <br>
 🤦🏻‍♂️ La RAM que compré por PC Factory no era para mi pc | La pude devolver y conseguí por otro lado una SODIMM + instalación 📅 17 NOV. 2025 <br>
 🤦🏻‍♂️ Mi n8n workflow no conectaba con el front | Me agoté la suscripción de n8n anticipadamente por activar un trigger cada 5 min 📅 18 NOV. 2025 <br>
-
+🤦🏻‍♂️ Me embalé con esto y con el rafting, no le dí tiempo a generar lucas y perdí la suscripción a cursor a 2 días de presentarlo 📅 11 DIC. 2025 <br>
 
 
