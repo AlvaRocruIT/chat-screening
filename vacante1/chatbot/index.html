@@ -149,6 +149,9 @@ async function handleAccept() {
 
   // Send registration to n8n
   const registrationUrl = getPreferredEndpoint().replace('?action=sendMessage', '?action=registerUser');
+  const safeRegistrationUrl = registrationUrl.includes('?')
+  ? `${registrationUrl}&mode=register`
+  : `${registrationUrl}?action=registerUser`;
   try {
     const response = await fetch(registrationUrl, {
       method: 'POST',
@@ -173,8 +176,12 @@ async function handleAccept() {
     // Continue anyway - don't block user
   }
 
-  overlay.setAttribute('hidden', '');
-  chatApp.removeAttribute('aria-hidden');
+  if (!response.ok) {
+  alert('No pudimos registrar tus datos, intenta de nuevo en un momento.');
+  return;
+}
+overlay.setAttribute('hidden', '');
+chatApp.removeAttribute('aria-hidden');
 }
 
   acceptBtn.addEventListener('click', handleAccept);
