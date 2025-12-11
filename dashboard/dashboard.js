@@ -581,7 +581,10 @@ class ChatScreeningDashboard {
                 <thead>
                     <tr>
                         <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
-                            Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
+                            Session ID<span class="sort-icon">${this.getSortIcon('userEmail')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('Nombre')" class="sortable">
+                            Session ID<span class="sort-icon">${this.getSortIcon('userName')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
                             Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
