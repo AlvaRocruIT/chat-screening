@@ -8,10 +8,10 @@ Este proyecto reinventa la preselección: en lugar de que el candidato solo env�
 Chat-Screening es un chatbot diseñado para representar a una vacante en formato conversacional.
 Permite que candidatos interactúen con el rol, conozcan sus desafíos y hagan preguntas, mientras la organización evalúa:
 
-✅ el nivel de preparación,
-✅ la calidad de las preguntas,
-✅ la conexión con la cultura,
-✅ y la lectura estratégica del desafío.
+✅ el nivel de preparación, <br>
+✅ la calidad de las preguntas, <br>
+✅ la conexión con la cultura, <br>
+✅ y la lectura estratégica del desafío. <br>
 
 En vez de solo leer un CV, la empresa obtiene señales del potencial y la disposición a crecer de cada persona.
 
@@ -21,13 +21,10 @@ Este proyecto nace de la convicción de que reclutar es descubrir potencial, no 
 
 Aquí combinamos:
 
-Narrativa organizacional (vacantes que hablan en tu propio lenguaje y propósito).
-
-Tecnología conversacional (para experiencias más humanas y accesibles).
-
-Automatización (para integrar este paso en flujos de reclutamiento modernos).
-
-El resultado: procesos de selección más empáticos, eficientes y significativos.
+🌱 Narrativa organizacional (vacantes que hablan en tu propio lenguaje y propósito). <br>
+🌱 Tecnología conversacional (para experiencias más humanas y accesibles). <br>
+🌱 Automatización (para integrar este paso en flujos de reclutamiento modernos). <br>
+🌱 El resultado: procesos de selección más empáticos, eficientes y significativos. <br>
 
 <b>👨🏻‍💻 Tecnologías utilizadas</b>
 
