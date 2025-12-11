@@ -153,7 +153,7 @@ async function handleAccept() {
   ? `${registrationUrl}&mode=register`
   : `${registrationUrl}?action=registerUser`;
   try {
-    const response = await fetch(registrationUrl, {
+    const response = await fetch(safeRegistrationUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -166,23 +166,21 @@ async function handleAccept() {
       mode: 'cors'
     });
     
-    if (!response.ok) throw new Error('Registration failed');
+     if (!response.ok) {
+      alert('No pudimos registrar tus datos, intenta de nuevo en un momento.');
+      return;
+    }
     
     // Store locally as backup
     localStorage.setItem('userName', name);
     localStorage.setItem('userEmail', email);
+
+        overlay.setAttribute('hidden', '');
+    chatApp.removeAttribute('aria-hidden');
   } catch (error) {
     console.error('Registration error:', error);
-    // Continue anyway - don't block user
+    alert('No pudimos registrar tus datos, intenta de nuevo en un momento.');
   }
-
-  if (!response.ok) {
-  alert('No pudimos registrar tus datos, intenta de nuevo en un momento.');
-  return;
-}
-overlay.setAttribute('hidden', '');
-chatApp.removeAttribute('aria-hidden');
-}
 
   acceptBtn.addEventListener('click', handleAccept);
 
