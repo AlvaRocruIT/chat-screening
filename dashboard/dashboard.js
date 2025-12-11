@@ -566,8 +566,7 @@ class ChatScreeningDashboard {
         console.log('candidatesData length:', this.candidatesData.length);
 
         if (this.candidatesData.length === 0) {
-            tableContainer.innerHTML = '<p>No hay datos de candidatos disponibles.</p>';
-            return;
+                // Construye la tabla completa, pero con el tbody vacío
         }
 
         // Robust filter (normalize both sides)
