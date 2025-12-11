@@ -90,8 +90,8 @@ class ChatScreeningDashboard {
             // Transform Supabase data to your dashboard format
             this.candidatesData = data.map(candidate => ({
                 sessionId: candidate.session_id,
-                user_email: candidate.user_email || '__',
-                user_name: candidate.user_name || '__',
+                user_email: candidate.user_email || '--',
+                user_name: candidate.user_name || '--',
                 vacante: (candidate.vacante || '').trim(),
                 scores: {
                     cultural_alignment: Number(candidate.cultural_alignment || 0),
