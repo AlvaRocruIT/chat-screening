@@ -505,8 +505,12 @@ class ChatScreeningDashboard {
 
             switch (column) {
                 case 'sessionId':
-                    valueA = a.sessionId;
-                    valueB = b.sessionId;
+                    valueA = a.user_email;
+                    valueB = b.user_email;
+                    break;
+                case 'sessionId':
+                    valueA = a.user_name;
+                    valueB = b.user_name;
                     break;
                 case 'vacante':
                     valueA = a.vacante;
@@ -621,7 +625,8 @@ class ChatScreeningDashboard {
                         return `
                             <tr onclick="dashboard.selectCandidate(${safeCandidate})" 
                                 class="candidate-row ${isSelected ? 'selected' : ''}">
-                                <td>${candidate.sessionId}</td>
+                                <td>${candidate.user_email}</td>
+                                <td>${candidate.user_name}</td>
                                 <td>${candidate.vacante}</td>
                                 <td>${candidate.interactions}</td>
                                 <td>${candidate.scores.cultural_alignment}</td>
