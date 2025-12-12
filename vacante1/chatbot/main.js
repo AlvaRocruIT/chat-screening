@@ -1,4 +1,3 @@
-
 // Elementos del DOM
 const inputBox = document.getElementById("userInput");
 const currentResponse = document.getElementById("currentResponse");
