@@ -693,7 +693,7 @@ class ChatScreeningDashboard {
         if (bestCandidateElement) bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
         if (mostInteractiveElement) mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
 
-        await this.loadDataFromSupabase();
+        await this.fetchDataFromAPI();
         this.selectedCandidate = null;
         this.updateChart();
         this.updateStats();
@@ -705,6 +705,7 @@ class ChatScreeningDashboard {
             const response = await fetch('https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat');
             const data = await response.json();
             this.candidatesData = data;
+            this.populateVacanteFilterOptions();
             this.updateChart();
             this.updateStats();
             this.updateCandidatesTable();
@@ -719,7 +720,6 @@ class ChatScreeningDashboard {
  
   const current = vacanteFilter.value || 'all';
   const vacantes = [...new Set(this.candidatesData.map(c => (c.vacante || '').trim()).filter(Boolean))];
-  this.populateVacanteFilterOptions();
  
   vacanteFilter.innerHTML = `
     <option value="all">Todas las vacantes</option>
