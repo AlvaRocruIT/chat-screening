@@ -147,9 +147,9 @@ async function handleAccept() {
     localStorage.setItem('sessionId', sessionId);
   }
 
-  // Send registration to n8n
+   // Send registration to n8n
   const registrationUrl = new URL(getPreferredEndpoint());
-registrationUrl.searchParams.set('action', 'registerUser');
+  registrationUrl.searchParams.set('action', 'registerUser');
   try {
     const response = await fetch(registrationUrl.toString(), {
       method: 'POST',
