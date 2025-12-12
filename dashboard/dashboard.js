@@ -693,26 +693,26 @@ class ChatScreeningDashboard {
         if (bestCandidateElement) bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
         if (mostInteractiveElement) mostInteractiveElement.replaceWith(mostInteractiveElement.cloneNode(true));
 
-        await this.fetchDataFromAPI();
+       await this.loadDataFromSupabase();
         this.selectedCandidate = null;
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
     }
 
-    async fetchDataFromAPI() {
-        try {
-            const response = await fetch('https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat');
-            const data = await response.json();
-            this.candidatesData = data;
-            this.populateVacanteFilterOptions();
-            this.updateChart();
-            this.updateStats();
-            this.updateCandidatesTable();
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    }
+    async loadDataFromSupabase() {
+  try {
+    const response = await fetch('https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat');
+    const data = await response.json();
+ 
+    this.candidatesData = data;
+    this.populateVacanteFilterOptions();
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    this.candidatesData = [];
+    this.populateVacanteFilterOptions();
+  }
+}
 
     populateVacanteFilterOptions() {
   const vacanteFilter = document.getElementById('vacanteFilter');
