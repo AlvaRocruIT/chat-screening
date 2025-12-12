@@ -148,9 +148,10 @@ async function handleAccept() {
   }
 
   // Send registration to n8n
-  const registrationUrl = getPreferredEndpoint().replace('?action=sendMessage', '?action=registerUser');
+  const registrationUrl = new URL(getPreferredEndpoint());
+registrationUrl.searchParams.set('action', 'registerUser');
   try {
-    const response = await fetch(registrationUrl, {
+    const response = await fetch(registrationUrl.toString(), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
