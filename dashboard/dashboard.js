@@ -698,7 +698,6 @@ class ChatScreeningDashboard {
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
-        this.populateVacanteFilterOptions();
     }
 
     async fetchDataFromAPI() {
@@ -720,6 +719,7 @@ class ChatScreeningDashboard {
  
   const current = vacanteFilter.value || 'all';
   const vacantes = [...new Set(this.candidatesData.map(c => (c.vacante || '').trim()).filter(Boolean))];
+  this.populateVacanteFilterOptions();
  
   vacanteFilter.innerHTML = `
     <option value="all">Todas las vacantes</option>
