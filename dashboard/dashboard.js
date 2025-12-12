@@ -503,54 +503,58 @@ class ChatScreeningDashboard {
         }
 
         this.candidatesData.sort((a, b) => {
-            let valueA, valueB;
-
+           let valueA, valueB;
+ 
             switch (column) {
-                case 'sessionId':
-                    valueA = a.user_email;
-                    valueB = b.user_email;
-                    break;
-                case 'sessionId':
-                    valueA = a.user_name;
-                    valueB = b.user_name;
-                    break;
-                case 'vacante':
-                    valueA = a.vacante;
-                    valueB = b.vacante;
-                    break;
-                case 'interactions':
-                    valueA = a.interactions;
-                    valueB = b.interactions;
-                    break;
-                case 'cultural_alignment':
-                    valueA = a.scores.cultural_alignment;
-                    valueB = b.scores.cultural_alignment;
-                    break;
-                case 'growth_mindset':
-                    valueA = a.scores.growth_mindset;
-                    valueB = b.scores.growth_mindset;
-                    break;
-                case 'engagement_depth':
-                    valueA = a.scores.engagement_depth;
-                    valueB = b.scores.engagement_depth;
-                    break;
-                case 'role_understanding':
-                    valueA = a.scores.role_understanding;
-                    valueB = b.scores.role_understanding;
-                    break;
-                case 'strategic_thinking':
-                    valueA = a.scores.strategic_thinking;
-                    valueB = b.scores.strategic_thinking;
-                    break;
-                case 'average': {
-                    const totalA = Object.values(a.scores).reduce((sum, score) => sum + Number(score || 0), 0);
-                    const totalB = Object.values(b.scores).reduce((sum, score) => sum + Number(score || 0), 0);
-                    valueA = totalA / 5;
-                    valueB = totalB / 5;
-                    break;
-                }
-                default:
-                    return 0;
+              case 'user_email':
+                valueA = a.user_email;
+                valueB = b.user_email;
+                break;
+              case 'user_name':
+                valueA = a.user_name;
+                valueB = b.user_name;
+                break;
+              case 'sessionId':
+                valueA = a.sessionId;
+                valueB = b.sessionId;
+                break;
+              case 'vacante':
+                valueA = a.vacante;
+                valueB = b.vacante;
+                break;
+              case 'interactions':
+                valueA = a.interactions;
+                valueB = b.interactions;
+                break;
+              case 'cultural_alignment':
+                valueA = a.scores.cultural_alignment;
+                valueB = b.scores.cultural_alignment;
+                break;
+              case 'growth_mindset':
+                valueA = a.scores.growth_mindset;
+                valueB = b.scores.growth_mindset;
+                break;
+              case 'engagement_depth':
+                valueA = a.scores.engagement_depth;
+                valueB = b.scores.engagement_depth;
+                break;
+              case 'role_understanding':
+                valueA = a.scores.role_understanding;
+                valueB = b.scores.role_understanding;
+                break;
+              case 'strategic_thinking':
+                valueA = a.scores.strategic_thinking;
+                valueB = b.scores.strategic_thinking;
+                break;
+              case 'average': {
+                const totalA = Object.values(a.scores).reduce((sum, score) => sum + Number(score || 0), 0);
+                const totalB = Object.values(b.scores).reduce((sum, score) => sum + Number(score || 0), 0);
+                valueA = totalA / 5;
+                valueB = totalB / 5;
+                break;
+              }
+              default:
+                return 0;
             }
 
             if (valueA < valueB) {
@@ -586,11 +590,14 @@ class ChatScreeningDashboard {
             <table>
                 <thead>
                     <tr>
-                        <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
-                            Session ID<span class="sort-icon">${this.getSortIcon('userEmail')}</span>
+                        <th onclick="dashboard.sortCandidates('user_email')" class="sortable">
+                            Email<span class="sort-icon">${this.getSortIcon('user_email')}</span>
                         </th>
-                        <th onclick="dashboard.sortCandidates('Nombre')" class="sortable">
-                            Nombre<span class="sort-icon">${this.getSortIcon('userName')}</span>
+                        <th onclick="dashboard.sortCandidates('user_name')" class="sortable">
+                          Nombre<span class="sort-icon">${this.getSortIcon('user_name')}</span>
+                        </th>
+                        <th onclick="dashboard.sortCandidates('sessionId')" class="sortable">
+                          Session ID<span class="sort-icon">${this.getSortIcon('sessionId')}</span>
                         </th>
                         <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
                             Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
@@ -629,6 +636,7 @@ class ChatScreeningDashboard {
                                 class="candidate-row ${isSelected ? 'selected' : ''}">
                                 <td>${candidate.user_email}</td>
                                 <td>${candidate.user_name}</td>
+                                <td>${candidate.sessionId}</td>
                                 <td>${candidate.vacante}</td>
                                 <td>${candidate.interactions}</td>
                                 <td>${candidate.scores.cultural_alignment}</td>
@@ -690,6 +698,7 @@ class ChatScreeningDashboard {
         this.updateChart();
         this.updateStats();
         this.updateCandidatesTable();
+        this.populateVacanteFilterOptions();
     }
 
     async fetchDataFromAPI() {
@@ -704,6 +713,23 @@ class ChatScreeningDashboard {
             console.error('Error fetching data:', error);
         }
     }
+
+    populateVacanteFilterOptions() {
+  const vacanteFilter = document.getElementById('vacanteFilter');
+  if (!vacanteFilter) return;
+ 
+  const current = vacanteFilter.value || 'all';
+  const vacantes = [...new Set(this.candidatesData.map(c => (c.vacante || '').trim()).filter(Boolean))];
+ 
+  vacanteFilter.innerHTML = `
+    <option value="all">Todas las vacantes</option>
+    ${vacantes.map(v => `<option value="${v.replace(/"/g, '&quot;')}">${v}</option>`).join('')}
+  `;
+ 
+  // keep selection if still available
+  const stillExists = Array.from(vacanteFilter.options).some(o => o.value === current);
+  vacanteFilter.value = stillExists ? current : 'all';
+}
 
     // Optional: placeholder mock data loader
     loadMockData() {
