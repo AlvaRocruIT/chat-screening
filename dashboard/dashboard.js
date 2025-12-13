@@ -88,7 +88,7 @@ class ChatScreeningDashboard {
             const data = await response.json();
 
             // Transform Supabase data to your dashboard format
-            this.candidatesData = data.map(candidate => ({
+           this.candidatesData = data.map(candidate => ({
                 sessionId: candidate.session_id,
                 user_email: candidate.user_email || '--',
                 user_name: candidate.user_name || '--',
@@ -103,6 +103,8 @@ class ChatScreeningDashboard {
                 interactions: Number(candidate.interactions || 0),
                 timestamp: candidate.created_at
             }));
+
+            this.populateVacanteFilterOptions();
 
             console.log('Data loaded from Supabase:', this.candidatesData);
 
