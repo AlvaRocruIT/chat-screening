@@ -700,20 +700,6 @@ class ChatScreeningDashboard {
         this.updateCandidatesTable();
     }
 
-async loadDataFromSupabase() {
-  try {
-    const response = await fetch('https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat');
-    const data = await response.json();
- 
-    this.candidatesData = data;
-    this.populateVacanteFilterOptions();
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    this.candidatesData = [];
-    this.populateVacanteFilterOptions();
-  }
-}
-
     populateVacanteFilterOptions() {
   const vacanteFilter = document.getElementById('vacanteFilter');
   if (!vacanteFilter) return;
