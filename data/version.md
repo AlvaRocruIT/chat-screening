@@ -25,7 +25,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se diseña un ruleset que parametriza las interacciones con el chatbot 📅30 OCT. 2025<br>
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
 ✅ Se logra loguear conversaciones 📅12 DIC. 2025 <br>
-⚠️⚠️ --- IMPORTANTE: HAY QUE ELIMINAR LOS SESSION ID --- ⚠️⚠️ 
+⚠️⚠️ --- IMPORTANTE: HAY QUE ELIMINAR LOS SESSION ID --- ⚠️⚠️ <br>
 🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br>
 💭 Se planea agregar una capa de ciberseguridad <br>
 ⛩️ <strong> Se presentará a Rodrigo Lara </strong><br><br>
