@@ -16,7 +16,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra adaptar el chatbot a la vacante📅30 SEP. 2025<br>
 ✅ Se logra hacer funcionar el chat con modelo embedding 📅22 OCT. 2025<br>
 ✅ <strong>El chatbot aprende a contextualizar de forma inteligente:</strong> Se logra adaptar el chat a la vacante (c/ embedding)  📅23 OCT. 2025<br><br>
-💭 <strong>Comienza el desafío de potenciar con data analytics:</strong> ✨¿Será posible evaluar el potencial del candidato según su interacción con la plataforma?<br>
+💭 <strong>Comienza el desafío de potenciar con data analytics:</strong> ✨Es posible evaluar el potencial del candidato según su interacción con la plataforma!<br>
 ✅ Definir categoría y criterio de evaluación 📅23 OCT. 2025<br>
 <strong> ✨ 500 COMMITS ✨</strong><br>
 ✅ Se logra en crear un frontend para la analítica de datos 📅26 OCT. 2025<br>
@@ -24,9 +24,10 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
 ✅ Se diseña un ruleset que parametriza las interacciones con el chatbot 📅30 OCT. 2025<br>
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
-✅ Se logran parametrizar conversaciones según ruleset creado 📅01 DIC. 2025<br>
-🚧 Se trabaja en loguear conversaciones 📅01 DIC. 2025 <br>
-🚪 <strong> Salir a tocar puertas estratégicamente </strong><br><br>
+✅ Se logra loguear conversaciones 📅12 DIC. 2025 <br>
+🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br>
+💭 Se planea agregar una capa de ciberseguridad <br>
+⛩️ <strong> Se presentará a Rodrigo Lara </strong><br><br>
 <b>💬 Nota final</b>
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
