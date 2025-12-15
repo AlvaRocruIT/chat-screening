@@ -140,12 +140,16 @@ async function handleAccept() {
     return;
   }
 
-  // Get or create sessionId
-  let sessionId = localStorage.getItem('sessionId');
-  if (!sessionId) {
-    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    localStorage.setItem('sessionId', sessionId);
-  }
+// Always start a NEW session when the user accepts (switch user = new identity)
+const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+localStorage.setItem('sessionId', sessionId);
+ 
+// Save identity locally (so n8n + future messages can include it)
+localStorage.setItem('userName', name);
+localStorage.setItem('userEmail', email);
+ 
+// Clear old conversation so you don't “inherit” the first user's history
+localStorage.removeItem('chatHistory');
 
   // Send registration to n8n
   const registrationUrl = new URL(getPreferredEndpoint());
