@@ -29,7 +29,6 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br>
 ⚠️⚠️ --- IMPORTANTE: HAY QUE ELIMINAR LOS SESSION ID --- ⚠️⚠️ <br>
 💭 Se planea agregar una capa de ciberseguridad <br>
-<b>💬 Nota final</b>
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
 🤦🏻‍♂️ Me demoraba entre 15 y 90 min em prender el pc todos los días | El cargador de mi pc era pirata, me tuve que comprar el original 📅 10 NOV. 2025 <br>
