@@ -1,6 +1,6 @@
 <b><big> ✒️ CHAT-SCREENING</b></big>
 
-<b>💡 Roadmap del proyecto </b>
+<b>💡 Timeline del proyecto </b>
 
 Chat-Screening es un chatbot diseñado para representar a una vacante en formato conversacional.
 Permite que candidatos interactúen con el rol, conozcan sus desafíos y hagan preguntas, mientras la organización evalúa: nivel de preparación, calidad de las preguntas, conexión con la cultura, y lectura estratégica del desafío.
