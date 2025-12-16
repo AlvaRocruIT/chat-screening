@@ -769,7 +769,8 @@ class ChatScreeningDashboard {
         if (lastUpdateEl) {
             lastUpdateEl.textContent = `Última actualización: ${now.toLocaleTimeString()}`;
         }
-
+     // ⚠️⚠️--⚠️⚠️   
+        
         const bestCandidateElement = document.getElementById('bestCandidate');
         const mostInteractiveElement = document.getElementById('mostInteractive');
         if (bestCandidateElement) bestCandidateElement.replaceWith(bestCandidateElement.cloneNode(true));
