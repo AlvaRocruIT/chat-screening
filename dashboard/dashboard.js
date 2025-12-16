@@ -604,10 +604,6 @@ class ChatScreeningDashboard {
                 valueA = a.user_name;
                 valueB = b.user_name;
                 break;
-              case 'sessionId':
-                valueA = a.sessionId;
-                valueB = b.sessionId;
-                break;
               case 'vacante':
                 valueA = a.vacante;
                 valueB = b.vacante;
