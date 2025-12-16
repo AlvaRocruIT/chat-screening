@@ -458,7 +458,7 @@ class ChatScreeningDashboard {
         const mostInteractiveElement = document.getElementById('mostInteractive');
 
         if (bestCandidateElement) {
-            bestCandidateElement.textContent = bestCandidateObj ? bestCandidateObj.sessionId : '--';
+            bestCandidateElement.textContent = bestCandidateObj ? bestCandidateObj.user_email : '--';
             bestCandidateElement.style.cursor = 'pointer';
             bestCandidateElement.style.textDecoration = 'underline';
             bestCandidateElement.title = 'Click para ver detalles';
@@ -466,7 +466,7 @@ class ChatScreeningDashboard {
         }
 
         if (mostInteractiveElement) {
-            mostInteractiveElement.textContent = mostInteractiveObj ? mostInteractiveObj.sessionId : '--';
+            mostInteractiveElement.textContent = mostInteractiveObj ? mostInteractiveObj.user_email : '--';
             mostInteractiveElement.style.cursor = 'pointer';
             mostInteractiveElement.style.textDecoration = 'underline';
             mostInteractiveElement.title = 'Click para ver detalles';
