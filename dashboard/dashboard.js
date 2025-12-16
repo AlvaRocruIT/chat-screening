@@ -760,7 +760,7 @@ class ChatScreeningDashboard {
             this.createChart();
         }
     }
-
+    // ⚠️⚠️⚠️Esto cambiará a export 2 excel ⚠️⚠️⚠️ 
     async refreshData() {
         console.log('Refreshing data...');
 
