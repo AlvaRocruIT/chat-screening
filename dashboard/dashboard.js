@@ -25,6 +25,92 @@ class ChatScreeningDashboard {
             .toLowerCase();
     }
 
+    aggregateByEmailAndVacante(rows) {
+  const scoreKeys = [
+    "cultural_alignment",
+    "growth_mindset",
+    "engagement_depth",
+    "role_understanding",
+    "strategic_thinking",
+  ];
+ 
+  const groups = new Map();
+ 
+  for (const r of rows) {
+    const emailNorm = this.normalize(r.user_email);
+    const vacanteNorm = this.normalize(r.vacante);
+ 
+    // IMPORTANT: don't merge people with missing email ("--")
+    const hasRealEmail = emailNorm && emailNorm !== "--";
+    const groupKey = hasRealEmail
+      ? `${vacanteNorm}||${emailNorm}`
+      : `${vacanteNorm}||session:${r.sessionId}`;
+ 
+    const weight = Number(r.interactions || 0) > 0 ? Number(r.interactions) : 1;
+ 
+    if (!groups.has(groupKey)) {
+      groups.set(groupKey, {
+        user_email: r.user_email,
+        user_name: r.user_name,
+        vacante: r.vacante,
+ 
+        // keep “a” sessionId so your table still works without UI changes
+        sessionId: r.sessionId,
+        sessions: new Set([r.sessionId]),
+ 
+        interactions: 0,
+        _weightSum: 0,
+        _scoreWeightedSum: Object.fromEntries(scoreKeys.map((k) => [k, 0])),
+ 
+        timestamp: r.timestamp,
+      });
+    }
+ 
+    const g = groups.get(groupKey);
+ 
+    // prefer latest non-empty name/email
+    if (r.user_email && r.user_email !== "--") g.user_email = r.user_email;
+    if (r.user_name && r.user_name !== "--") g.user_name = r.user_name;
+ 
+    // keep latest session/timestamp
+    if (r.timestamp && (!g.timestamp || r.timestamp > g.timestamp)) {
+      g.timestamp = r.timestamp;
+      g.sessionId = r.sessionId;
+    }
+ 
+    g.sessions.add(r.sessionId);
+    g.interactions += Number(r.interactions || 0);
+    g._weightSum += weight;
+ 
+    for (const k of scoreKeys) {
+      g._scoreWeightedSum[k] += Number(r.scores?.[k] || 0) * weight;
+    }
+  }
+ 
+  // finalize averages
+  return Array.from(groups.values()).map((g) => {
+    const weightSum = g._weightSum || 1;
+ 
+    const scores = {};
+    for (const k of Object.keys(g._scoreWeightedSum)) {
+      scores[k] = g._scoreWeightedSum[k] / weightSum;
+    }
+ 
+    return {
+      sessionId: g.sessionId, // latest sessionId (so your UI doesn’t break)
+      user_email: g.user_email,
+      user_name: g.user_name,
+      vacante: g.vacante,
+      scores,
+      interactions: g.interactions,
+      timestamp: g.timestamp,
+ 
+      // optional: if later you want to display it
+      session_count: g.sessions.size,
+    };
+  });
+}
+
     async init() {
         this.setupEventListeners();
         await this.loadDataFromSupabase();
