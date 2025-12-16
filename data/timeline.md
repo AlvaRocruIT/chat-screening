@@ -24,10 +24,10 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se logra configurar base de datos en ⚡Supabase 📅29 OCT. 2025<br> 
 ✅ Se diseña un ruleset que parametriza las interacciones con el chatbot 📅30 OCT. 2025<br>
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
-✅ Se logra loguear conversaciones 📅15 DIC. 2025 <br>
+✅ Se logra loguear conversaciones 📅12 DIC. 2025 <br>
 ⛩️ <strong> Se presentó a Rodrigo Lara </strong> 📅14 DIC. 2025 <br>
-💭 Se planea presentar a Eduardo Barros <br>
 🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br>
+💭 Se planea presentar a Eduardo Barros <br>
 💭 Se planea agregar una capa de ciberseguridad <br>
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
