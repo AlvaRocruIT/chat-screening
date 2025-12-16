@@ -190,6 +190,8 @@ class ChatScreeningDashboard {
                 timestamp: candidate.created_at
             }));
 
+            this.candidatesData = this.aggregateByEmailAndVacante(this.candidatesData);
+            
             this.populateVacanteFilterOptions();
 
             console.log('Data loaded from Supabase:', this.candidatesData);
