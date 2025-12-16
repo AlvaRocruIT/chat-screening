@@ -26,6 +26,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
 ✅ Se logra loguear conversaciones 📅15 DIC. 2025 <br>
 ⛩️ <strong> Se presentó a Rodrigo Lara </strong> 📅14 DIC. 2025 <br>
+💭 Se planea presentar a Eduardo Barros <br>
 🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br>
 💭 Se planea agregar una capa de ciberseguridad <br>
 
