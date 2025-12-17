@@ -685,9 +685,6 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('vacante')" class="sortable">
                             Vacante<span class="sort-icon">${this.getSortIcon('vacante')}</span>
                         </th>
-                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
-                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
-                        </th>
                         <th onclick="dashboard.sortCandidates('cultural_alignment')" class="sortable">
                             Cultural<span class="sort-icon">${this.getSortIcon('cultural_alignment')}</span>
                         </th>
@@ -706,6 +703,9 @@ class ChatScreeningDashboard {
                         <th onclick="dashboard.sortCandidates('average')" class="sortable">
                             Promedio<span class="sort-icon">${this.getSortIcon('average')}</span>
                         </th>
+                        <th onclick="dashboard.sortCandidates('interactions')" class="sortable">
+                            Interacciones<span class="sort-icon">${this.getSortIcon('interactions')}</span>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -720,13 +720,13 @@ class ChatScreeningDashboard {
                                 <td>${candidate.user_email}</td>
                                 <td>${candidate.user_name}</td>
                                 <td>${candidate.vacante}</td>
-                                <td>${candidate.interactions}</td>
                                 <td>${candidate.scores.cultural_alignment}</td>
                                 <td>${candidate.scores.growth_mindset}</td>
                                 <td>${candidate.scores.engagement_depth}</td>
                                 <td>${candidate.scores.role_understanding}</td>
                                 <td>${candidate.scores.strategic_thinking}</td>
                                 <td><strong>${average.toFixed(1)}</strong></td>
+                                <td>${candidate.interactions}</td>
                             </tr>
                         `;
                     }).join('')}
