@@ -113,9 +113,7 @@ function getVacanteName() {
 }
 
 function getPreferredEndpoint() {
-  const params = new URLSearchParams(window.location.search);
-  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
-  return baseUrl;
+  return "https://chatbot-backend-d5xj.onrender.com/chat";
 }
     
 async function handleAccept() {
