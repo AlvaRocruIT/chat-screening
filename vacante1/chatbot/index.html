@@ -116,8 +116,8 @@ function getPreferredEndpoint() {
   const params = new URLSearchParams(window.location.search);
   const env = (params.get("env") || params.get("mode") || "").toLowerCase();
   const baseUrl = env === "test" 
-    ? "https://alvarovargas.app.n8n.cloud/webhook-test/d4e40f37-5277-4daa-9c0a-324fd3569dd7/chat"
-    : "https://alvarovargas.app.n8n.cloud/webhook/d4e40f37-5277-4daa-9c0a-324fd3569dd7/chat";
+const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
   return baseUrl;
 }
     
