@@ -115,7 +115,7 @@ async function sendMessage() {
       throw new Error(detail);
     }
 
-    let reply = raw?.trim() || "";
+    let reply = data?.response || raw?.trim() || "";
       if (!reply && data) {
       reply = data.response || "";
     }
@@ -125,7 +125,7 @@ async function sendMessage() {
 
     const updatedHistory =
       previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${reply}\n`;
-    currentResponse.value = reply;
+    currentResponse.value = reply.replace(/\\n/g, "\n");
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
   } catch (error) {
