@@ -5,8 +5,8 @@ const historyBox = document.getElementById("historyBox");
 const sendBtn = document.getElementById("sendBtn");
 
 // UPDATE THESE URLs to match your new n8n webhook
-const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
-const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
+const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
@@ -17,7 +17,7 @@ function getVacanteIdFromPath() {
   return (
     new URLSearchParams(location.search).get("vacante") ||
     explicit ||
-    "vacante1"
+    "vacante2"
   );
 }
 
@@ -95,38 +95,29 @@ async function sendMessage() {
   }
 
   const payload = { 
-    chatInput: input, 
-    sessionId: sessionId,  
-    vacante: getVacanteName()
+    message: input, 
+    session_Id: sessionId,  
+    vacante: getVacanteIdFromPath()
   };
 
   let endpoint = getPreferredEndpoint();
-  // Create URL with query parameters for Chat Trigger node
-  const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
 
   console.log('=== DEBUG - Sending payload ===');
   console.log(payload);
   console.log('Payload as JSON:', JSON.stringify(payload));
-  console.log('URL with params:', urlWithParams);
 
   try {
     // ✅ FIX: Use urlWithParams instead of endpoint
-    let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
-
-    if (response.status === 404 && endpoint === PROD_URL) {
-      const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
-      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
-      endpoint = TEST_URL;
-    }
+    let { response, data, raw } = await postToEndpoint(endpoint, payload);
 
     if (!response.ok) {
       const detail = data?.message || raw || `HTTP ${response.status}`;
       throw new Error(detail);
     }
 
-    let reply = raw?.trim() || "";
+    let reply = data?.response || raw?.trim() || "";
       if (!reply && data) {
-      reply = data.respuesta || data.output || data.reply || data.message || data.text || "";
+      reply = data.response || "";
     }
       if (!reply) {
       reply = "No se recibió respuesta.";
@@ -134,7 +125,7 @@ async function sendMessage() {
 
     const updatedHistory =
       previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${reply}\n`;
-    currentResponse.value = reply;
+    currentResponse.value = reply.replace(/\\n/g, "\n");
     historyBox.value = updatedHistory;
     localStorage.setItem("chatHistory", updatedHistory);
   } catch (error) {
@@ -194,5 +185,7 @@ function toggleConsentInfo() {
   }
 }
 
+window.sendMessage = sendMessage;
+window.toggleHistory = toggleHistory;
 window.sendMessage = sendMessage;
 window.toggleHistory = toggleHistory;
