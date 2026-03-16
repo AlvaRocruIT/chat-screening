@@ -5,8 +5,8 @@ const historyBox = document.getElementById("historyBox");
 const sendBtn = document.getElementById("sendBtn");
 
 // UPDATE THESE URLs to match your new n8n webhook
-const PROD_URL = "http://127.0.0.1:8000/chat";
-const TEST_URL = "http://127.0.0.1:8000/chat";
+const PROD_URL = "https://alvarovargas.app.n8n.cloud/webhook/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
+const TEST_URL = "https://alvarovargas.app.n8n.cloud/webhook-test/ac234336-390d-438a-aad6-284a5290743d/chat?action=sendMessage";
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
@@ -95,7 +95,7 @@ async function sendMessage() {
   }
 
   const payload = { 
-    message: input, 
+    chatInput: input, 
     sessionId: sessionId,  
     vacante: getVacanteName()
   };
@@ -115,7 +115,7 @@ async function sendMessage() {
 
     if (response.status === 404 && endpoint === PROD_URL) {
       const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
-      ({ response, data, raw } = await postToEndpoint(endpoint, payload));
+      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
       endpoint = TEST_URL;
     }
 
@@ -126,7 +126,7 @@ async function sendMessage() {
 
     let reply = raw?.trim() || "";
       if (!reply && data) {
-     reply = data.response || "";
+      reply = data.respuesta || data.output || data.reply || data.message || data.text || "";
     }
       if (!reply) {
       reply = "No se recibió respuesta.";
