@@ -98,6 +98,8 @@ async function sendMessage() {
     message: input, 
     session_Id: sessionId,  
     vacante: getVacanteIdFromPath()
+     user_name: localStorage.getItem("userName"),
+     user_email: localStorage.getItem("userEmail")
   };
 
   let endpoint = getPreferredEndpoint();
