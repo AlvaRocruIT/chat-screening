@@ -96,7 +96,7 @@ async function sendMessage() {
 
   const payload = { 
     message: input, 
-    sessionId: sessionId,  
+    session_Id: sessionId,  
     vacante: getVacanteName()
   };
 
