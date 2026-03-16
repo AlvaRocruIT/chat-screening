@@ -146,33 +146,6 @@ localStorage.setItem('userEmail', email);
 // Clear old conversation so you don't “inherit” the first user's history
 localStorage.removeItem('chatHistory');
 
-  // Send registration to n8n
-  const registrationUrl = new URL(getPreferredEndpoint());
-registrationUrl.searchParams.set('action', 'registerUser');
-  try {
-    const response = await fetch(registrationUrl.toString(), {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'registerUser',
-        sessionId: sessionId,
-        userName: name,
-        userEmail: email,
-        vacante: getVacanteName()
-      }),
-      mode: 'cors'
-    });
-    
-    if (!response.ok) throw new Error('Registration failed');
-    
-    // Store locally as backup
-    localStorage.setItem('userName', name);
-    localStorage.setItem('userEmail', email);
-  } catch (error) {
-    console.error('Registration error:', error);
-    // Continue anyway - don't block user
-  }
-
   overlay.setAttribute('hidden', '');
   chatApp.removeAttribute('aria-hidden');
 }
