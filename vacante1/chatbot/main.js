@@ -95,7 +95,7 @@ async function sendMessage() {
   }
 
   const payload = { 
-    chatInput: input, 
+    message: input, 
     sessionId: sessionId,  
     vacante: getVacanteName()
   };
