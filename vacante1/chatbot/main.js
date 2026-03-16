@@ -101,8 +101,6 @@ async function sendMessage() {
   };
 
   let endpoint = getPreferredEndpoint();
-  // Create URL with query parameters for Chat Trigger node
-  const urlWithParams = `${endpoint}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
 
   console.log('=== DEBUG - Sending payload ===');
   console.log(payload);
@@ -112,12 +110,6 @@ async function sendMessage() {
   try {
     // ✅ FIX: Use urlWithParams instead of endpoint
     let { response, data, raw } = await postToEndpoint(endpoint, payload);
-
-    if (response.status === 404 && endpoint === PROD_URL) {
-      const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
-      ({ response, data, raw } = await postToEndpoint(testUrlWithParams, payload));
-      endpoint = TEST_URL;
-    }
 
     if (!response.ok) {
       const detail = data?.message || raw || `HTTP ${response.status}`;
