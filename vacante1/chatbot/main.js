@@ -97,7 +97,7 @@ async function sendMessage() {
   const payload = { 
     message: input, 
     session_Id: sessionId,  
-    vacante: getVacanteNameIdFromPath()
+    vacante: getVacanteIdFromPath()
   };
 
   let endpoint = getPreferredEndpoint();
