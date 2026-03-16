@@ -105,7 +105,6 @@ async function sendMessage() {
   console.log('=== DEBUG - Sending payload ===');
   console.log(payload);
   console.log('Payload as JSON:', JSON.stringify(payload));
-  console.log('URL with params:', urlWithParams);
 
   try {
     // ✅ FIX: Use urlWithParams instead of endpoint
