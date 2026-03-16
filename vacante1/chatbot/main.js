@@ -5,8 +5,8 @@ const historyBox = document.getElementById("historyBox");
 const sendBtn = document.getElementById("sendBtn");
 
 // UPDATE THESE URLs to match your new n8n webhook
-const PROD_URL = "http://127.0.0.1:8000/vacante1";
-const TEST_URL = "http://127.0.0.1:8000/vacante1";
+const PROD_URL = "http://127.0.0.1:8000/chat";
+const TEST_URL = "http://127.0.0.1:8000/chat";
 
 function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
