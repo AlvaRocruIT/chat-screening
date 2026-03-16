@@ -111,7 +111,7 @@ async function sendMessage() {
 
   try {
     // ✅ FIX: Use urlWithParams instead of endpoint
-    let { response, data, raw } = await postToEndpoint(urlWithParams, payload);
+    let { response, data, raw } = await postToEndpoint(endpoint, payload);
 
     if (response.status === 404 && endpoint === PROD_URL) {
       const testUrlWithParams = `${TEST_URL}&chatInput=${encodeURIComponent(input)}&sessionId=${encodeURIComponent(sessionId)}&vacante=${encodeURIComponent(getVacanteName())}`;
@@ -126,7 +126,7 @@ async function sendMessage() {
 
     let reply = raw?.trim() || "";
       if (!reply && data) {
-      reply = data.respuesta || data.output || data.reply || data.message || data.text || "";
+      reply = data.response || "";
     }
       if (!reply) {
       reply = "No se recibió respuesta.";
