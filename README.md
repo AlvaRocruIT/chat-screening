@@ -28,9 +28,9 @@ Aquí combinamos:
 
 <b>👨🏻‍💻 Tecnologías utilizadas</b>
 
-n8n para orquestar el flujo conversacional.
+FastAPI para orquestar el flujo conversacional.
 
-OpenAI para generar respuestas inteligentes y dinámicas.
+OpenAI; DeepSeek para generar respuestas inteligentes y dinámicas.
 
 GitHub Pages para alojar el frontend (HTML + CSS + JavaScript).
 
