@@ -109,7 +109,7 @@ async function sendMessage() {
   console.log('Payload as JSON:', JSON.stringify(payload));
 
   try {
-    // ✅ FIX: Use urlWithParams instead of endpoint
+
     let { response, data, raw } = await postToEndpoint(endpoint, payload);
 
     if (!response.ok) {
