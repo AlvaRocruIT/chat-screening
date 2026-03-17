@@ -72,11 +72,11 @@ function getVacanteName() {
   const vacanteId = getVacanteIdFromPath();
 
   const vacanteMap = {
-    'vacante1': 'Jefe/a Comercial - Talca',
-    'vacante2': 'Analista de Compensaciones - Las Condes'
+    1: 'Jefe/a Comercial - Talca',
+    2: 'Analista de Compensaciones - Las Condes'
   };
 
-  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
+  return vacanteMap[vacanteId] || 'Vacante';
 }
 
 async function sendMessage() {
@@ -96,14 +96,13 @@ async function sendMessage() {
     localStorage.setItem('sessionId', sessionId);
   }
 
-  const payload = { 
-     message: input, 
-     session_id: sessionId,  
-     vacante: getVacanteName(),
-    vacante_id: getVacanteIdFromPath(), 
-     user_name: localStorage.getItem("userName"),
-     user_email: localStorage.getItem("userEmail")
-  };
+const payload = { 
+  message: input, 
+  session_id: sessionId,  
+  vacante_id: getVacanteIdFromPath(), 
+  user_name: localStorage.getItem("userName"),
+  user_email: localStorage.getItem("userEmail")
+};
 
   let endpoint = getPreferredEndpoint();
 
