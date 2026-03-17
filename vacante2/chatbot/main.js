@@ -8,7 +8,7 @@ const sendBtn = document.getElementById("sendBtn");
 const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
-function getVacanteIdFromPath() {
+function getVacanteName() {
   const parts = window.location.pathname.split("/").filter(Boolean);
   const explicit =
     parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getVacanteName() {
-  const vacanteId = getVacanteIdFromPath();
+  const vacanteId = getVacanteName();
   const vacanteMap = {
     'vacante1': 'Jefe/a Comercial - Talca',
     'vacante2': 'Analista de Compensaciones - Las Condes'
@@ -97,7 +97,7 @@ async function sendMessage() {
   const payload = { 
      message: input, 
      session_id: sessionId,  
-     vacante: getVacanteIdFromPath(),
+     vacante: getVacanteName(),
      user_name: localStorage.getItem("userName"),
      user_email: localStorage.getItem("userEmail")
   };
