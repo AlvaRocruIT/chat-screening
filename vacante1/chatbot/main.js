@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getVacanteName() {
-  const vacanteId = getVacanteName();
+  const vacanteId = getVacanteIdFromPath();
   const vacanteMap = {
     'vacante1': 'Jefe/a Comercial - Talca',
     'vacante2': 'Analista de Compensaciones - Las Condes'
