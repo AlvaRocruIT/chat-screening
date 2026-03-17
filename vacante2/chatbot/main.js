@@ -17,7 +17,7 @@ function getVacanteIdFromPath() {
   return (
     new URLSearchParams(location.search).get("vacante") ||
     explicit ||
-    "vacante2"
+    "vacante1"
   );
 }
 
@@ -95,9 +95,11 @@ async function sendMessage() {
   }
 
   const payload = { 
-    message: input, 
-    session_Id: sessionId,  
-    vacante: getVacanteIdFromPath()
+     message: input, 
+     session_id: sessionId,  
+     vacante: getVacanteIdFromPath(),
+     user_name: localStorage.getItem("userName"),
+     user_email: localStorage.getItem("userEmail")
   };
 
   let endpoint = getPreferredEndpoint();
@@ -107,7 +109,7 @@ async function sendMessage() {
   console.log('Payload as JSON:', JSON.stringify(payload));
 
   try {
-    // ✅ FIX: Use urlWithParams instead of endpoint
+
     let { response, data, raw } = await postToEndpoint(endpoint, payload);
 
     if (!response.ok) {
@@ -185,7 +187,5 @@ function toggleConsentInfo() {
   }
 }
 
-window.sendMessage = sendMessage;
-window.toggleHistory = toggleHistory;
 window.sendMessage = sendMessage;
 window.toggleHistory = toggleHistory;
