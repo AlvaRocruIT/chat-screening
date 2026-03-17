@@ -9,17 +9,16 @@ const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
 function getVacanteIdFromPath() {
-  const parts = window.location.pathname.split("/").filter(Boolean);
-  const explicit =
-    parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
-    (parts.includes("vacante1") ? "vacante1" : null) ||
-    (parts.includes("vacante2") ? "vacante2" : null);
+  const map = {
+    'vacante1': 1,
+    'vacante2': 2
+  };
 
-  return (
+  const key =
     new URLSearchParams(location.search).get("vacante") ||
-    explicit ||
-    "vacante1"
-  );
+    "vacante1";
+
+  return map[key] || 1;
 }
 
 function getPreferredEndpoint() {
@@ -101,6 +100,7 @@ async function sendMessage() {
      message: input, 
      session_id: sessionId,  
      vacante: getVacanteName(),
+    vacante_id: getVacanteIdFromPath(), 
      user_name: localStorage.getItem("userName"),
      user_email: localStorage.getItem("userEmail")
   };
