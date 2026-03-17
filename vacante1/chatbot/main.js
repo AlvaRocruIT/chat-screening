@@ -8,7 +8,7 @@ const sendBtn = document.getElementById("sendBtn");
 const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
-function getVacanteIdFromPath() {
+function getVacanteName() {
   const parts = window.location.pathname.split("/").filter(Boolean);
   const explicit =
     parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
