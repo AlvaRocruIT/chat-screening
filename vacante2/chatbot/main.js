@@ -16,9 +16,9 @@ function getVacanteIdFromPath() {
 
   const key =
     new URLSearchParams(location.search).get("vacante") ||
-    "vacante1";
+    "vacante2";
 
-  return map[key] || 1;
+  return map[key] || 2;
 }
 
 function getPreferredEndpoint() {
