@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function getVacanteName() {
+function getVacanteIdFromPath() {
   const vacanteId = getVacanteIdFromPath();
   const vacanteMap = {
     'vacante1': 'Jefe/a Comercial - Talca',
