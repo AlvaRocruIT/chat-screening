@@ -97,7 +97,7 @@ async function sendMessage() {
   const payload = { 
      message: input, 
      session_id: sessionId,  
-     vacante: getVacanteIdFromPath(),
+     vacante: getVacanteName(),
      user_name: localStorage.getItem("userName"),
      user_email: localStorage.getItem("userEmail")
   };
