@@ -29,18 +29,19 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br><br>
 🌊🌊🌊 TEMPORADA DE RAFTING 🌊🌊🌊<br><br>
 ✅ Migré el frontend desde n8n a FastAPI🟢, logrando un cerebro más automático e inteligente mediante python📅15 MAR. 2025 <br>
-✅ Logré integrar supabase a esta misma estructura <br>
+✅ Logré integrar supabase a esta misma estructura, automatizando el regstro de interacciones en BD 📅16 MAR. 2025 <br>
+✅ Le agregué la rimera capa de Cyberseguridad 📅16 MAR. 2025 <br>
+💭 Ahora viene el 2° cerebro; ese que analiza,evalua y rankea 💪🏻💪🏻 <br>
+💭 Se planea presentar a mucha gente <br>
 
-💭 Se planea presentar a Eduardo Barros <br>
-💭 Se planea agregar una capa de ciberseguridad <br>
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
 🪲 Me demoraba entre 15 y 90 min em prender el pc todos los días | El cargador de mi pc era pirata, me tuve que comprar el original 📅 10 NOV. 2025 <br>
 🪲 Integré n8n, github, supabase y cursor con una capacidad inicial de 4 ram. Era como nadar en caca | Escalé a una RAM de 8 GB. 📅 17 NOV. 2025 <br>
-🪲 La RAM que compré por PC Factory no era para mi pc | La pude devolver y conseguí por otro lado una SODIMM + instalación 📅 17 NOV. 2025 <br>
+🤦🏻‍♂️ La RAM que compré por PC Factory no era para mi pc | La pude devolver y conseguí por otro lado una SODIMM + instalación 📅 17 NOV. 2025 <br>
 🪲 Mi n8n workflow no conectaba con el front | Me agoté anticipadamente la suscripción de n8n por un maldito trigger que se activaba cada 5 min 📅 18 NOV. 2025 <br>
 💤 Me embalé con esto y con el rafting, no le dí tiempo a generar lucas y perdí la suscripción a cursor a 2 días de presentarlo 📅 11 DIC. 2025 <br>
 🤦🏻‍♂️ Se me quedó el cargador del pc en Stgo, estuve sin notebook como un mes 📅 6 FEB. 2025 <br>
 💤 Me aburrí de esto y me embalé con la temporada de rafting x 2 meses 📅 16 MAR. 2025 <br>
-El problema es que cuando se acabó la temporada me quedé sin plata y de parásito en la casa de mis viejos<br>
+🤦🏻‍♂️ El problema es que cuando se acabó la temporada me quedé sin plata y de parásito en la casa de mis viejos<br>
 🪲 El notebook que e compré venía reacondicionado como el hoyo, tuve que cambiarle el windows yo mismo 📅 6 FEB. 2025 <br>
