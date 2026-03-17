@@ -8,12 +8,13 @@ const sendBtn = document.getElementById("sendBtn");
 const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
-function getVacanteName() {
+function getVacanteIdFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
   const explicit =
     parts.find((p) => /^vacante[0-9]+$/i.test(p)) ||
     (parts.includes("vacante1") ? "vacante1" : null) ||
     (parts.includes("vacante2") ? "vacante2" : null);
+
   return (
     new URLSearchParams(location.search).get("vacante") ||
     explicit ||
@@ -68,12 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function getVacanteIdFromPath() {
+function getVacanteName() {
   const vacanteId = getVacanteIdFromPath();
+
   const vacanteMap = {
     'vacante1': 'Jefe/a Comercial - Talca',
     'vacante2': 'Analista de Compensaciones - Las Condes'
   };
+
   return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
 }
 
