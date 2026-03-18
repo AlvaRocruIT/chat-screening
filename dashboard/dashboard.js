@@ -1,4 +1,4 @@
-const const API_BASE_URL = "https://chatbot-backend-d5xj.onrender.com";
+const API_BASE_URL = "https://chatbot-backend-d5xj.onrender.com";
 
 class ChatScreeningDashboard {
     constructor() {
