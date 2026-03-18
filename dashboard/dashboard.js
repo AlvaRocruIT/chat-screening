@@ -153,7 +153,7 @@ class ChatScreeningDashboard {
     async loadDataFromSupabase() {
         try {
             console.log('Fetching from:', SUPABASE_CONFIG.url);
-            const response = await fetch("https://chatbot-backend-d5xj.onrender.com/candidate-scores");
+            const response = await fetch(`${API_BASE_URL}/candidate-scores`);
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
