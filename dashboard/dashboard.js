@@ -706,12 +706,12 @@ class ChatScreeningDashboard {
                                 <td>${candidate.user_email}</td>
                                 <td>${candidate.user_name}</td>
                                 <td>${candidate.vacante}</td>
-                                <td>${candidate.scores.cultural_alignment}</td>
-                                <td>${candidate.scores.growth_mindset}</td>
-                                <td>${candidate.scores.engagement_depth}</td>
-                                <td>${candidate.scores.role_understanding}</td>
-                                <td>${candidate.scores.strategic_thinking}</td>
-                                <td><strong>${average.toFixed(1)}</strong></td>
+                                <td>${this.format1(candidate.scores.cultural_alignment)}</td>
+                                <td>${this.format1(candidate.scores.growth_mindset)}</td>
+                                <td>${this.format1(candidate.scores.engagement_depth)}</td>
+                                <td>${this.format1(candidate.scores.role_understanding)}</td>
+                                <td>${this.format1(candidate.scores.strategic_thinking)}</td>
+                                <td><strong>${this.format2(average)}</strong></td>
                                 <td>${candidate.interactions}</td>
                             </tr>
                         `;
