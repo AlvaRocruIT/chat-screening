@@ -198,46 +198,68 @@ class ChatScreeningDashboard {
 }
 
     createChart() {
-        const canvas = document.getElementById('spiderChart');
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
+    const canvas = document.getElementById('spiderChart');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
 
-        const chartData = this.prepareChartData();
+    const chartData = this.prepareChartData();
 
-        if (typeof Chart === 'undefined') {
-            console.error('Chart.js is not loaded. Please include Chart.js before this script.');
-            return;
-        }
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js is not loaded. Please include Chart.js before this script.');
+        return;
+    }
 
-        this.chart = new Chart(ctx, {
-            type: 'radar',
-            data: chartData,
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    r: {
-                        beginAtZero: true,
-                        max: 5,
-                        ticks: {
-                            stepSize: 1
+    this.chart = new Chart(ctx, {
+        type: 'radar',
+        data: chartData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 5,
+
+                    ticks: {
+                        stepSize: 1,
+                        font: {
+                            size: 14   // 🔥 números del eje
+                        }
+                    },
+
+                    pointLabels: {
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    }
+                }
+            },
+
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        font: {
+                            size: 14
                         }
                     }
                 },
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: this.selectedCandidate ?
-                            `Comparación: ${this.selectedCandidate.sessionId}` :
-                            'Comparación de Rendimiento'
+                title: {
+                    display: true,
+                    text: this.selectedCandidate ?
+                        `Comparación: ${this.selectedCandidate.sessionId}` :
+                        'Comparación de Rendimiento',
+                    font: {
+                        size: 18,
+                        weight: 'bold'
                     }
                 }
             }
-        });
-    }
+        }
+    });
+}
 
     prepareChartData() {
         const labels = ['Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
