@@ -92,6 +92,7 @@ header {
 /* Charts container */
 .charts-container {
   display: grid;
+  height: 600px;
   grid-template-columns: 2fr 1fr;
   gap: 2em;
   margin-bottom: 2em;
