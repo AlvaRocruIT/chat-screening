@@ -151,45 +151,43 @@ class ChatScreeningDashboard {
     }
 
     async loadDataFromSupabase() {
-        try {
-            console.log('Fetching from:', SUPABASE_CONFIG.url);
-            const response = await fetch(`${API_BASE_URL}/candidate-scores`);
+    try {
+        console.log('Fetching from backend');
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
+        const response = await fetch(`${API_BASE_URL}/candidate-scores`);
 
-            const data = await response.json();
-
-            // Transform Supabase data to your dashboard format
-           this.candidatesData = data.map(candidate => ({
-                sessionId: candidate.session_id,
-                user_email: candidate.user_email || '--',
-                user_name: candidate.user_name || '--',
-                vacante: (candidate.vacante || '').trim(),
-                scores: {
-                    cultural_alignment: Number(candidate.cultural_alignment || 0),
-                    growth_mindset: Number(candidate.growth_mindset || 0),
-                    engagement_depth: Number(candidate.engagement_depth || 0),
-                    role_understanding: Number(candidate.role_understanding || 0),
-                    strategic_thinking: Number(candidate.strategic_thinking || 0)
-                },
-                interactions: Number(candidate.interactions || 0),
-                timestamp: candidate.created_at
-            }));
-
-            this.candidatesData = this.aggregateByEmailAndVacante(this.candidatesData);
-            
-            this.populateVacanteFilterOptions();
-
-            console.log('Data loaded from Supabase:', this.candidatesData);
-
-        } catch (error) {
-            console.error('Error loading data from Supabase:', error);
-            // Fall back to mock data if API fails
-            this.loadMockData && this.loadMockData();
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
+
+        const data = await response.json();
+
+        this.candidatesData = data.map(candidate => ({
+            sessionId: candidate.session_id,
+            user_email: candidate.user_email || '--',
+            user_name: candidate.user_name || '--',
+            vacante: (candidate.vacante || '').trim(),
+            scores: {
+                cultural_alignment: Number(candidate.cultural_alignment || 0),
+                growth_mindset: Number(candidate.growth_mindset || 0),
+                engagement_depth: Number(candidate.engagement_depth || 0),
+                role_understanding: Number(candidate.role_understanding || 0),
+                strategic_thinking: Number(candidate.strategic_thinking || 0)
+            },
+            interactions: Number(candidate.interactions || 0),
+            timestamp: candidate.created_at
+        }));
+
+        this.candidatesData = this.aggregateByEmailAndVacante(this.candidatesData);
+        this.populateVacanteFilterOptions();
+
+        console.log('Data loaded:', this.candidatesData);
+
+    } catch (error) {
+        console.error('Error loading data:', error);
+        this.loadMockData && this.loadMockData();
     }
+}
 
     createChart() {
         const canvas = document.getElementById('spiderChart');
