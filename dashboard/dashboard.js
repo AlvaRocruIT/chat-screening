@@ -11,6 +11,14 @@ class ChatScreeningDashboard {
         this.init();
     }
 
+    format1(value) {
+    return Number(value || 0).toFixed(1);
+}
+
+format2(value) {
+    return Number(value || 0).toFixed(2);
+}
+
     // Normalize strings for robust comparisons (accents/case/spaces)
     normalize(s) {
         return (s || '')
