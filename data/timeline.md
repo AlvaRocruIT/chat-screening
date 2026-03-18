@@ -28,10 +28,10 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ⛩️ <strong> Se presentó a Rodrigo Lara </strong> 📅14 DIC. 2025 <br>
 🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br><br>
 🌊🌊🌊 TEMPORADA DE RAFTING 🌊🌊🌊<br><br>
-✅ Migré el frontend desde n8n a FastAPI🟢, logrando un cerebro más automático e inteligente mediante python📅15 MAR. 2025 <br>
+✅ Migré el backend desde n8n a FastAPI🟢 usando gitHub🐈‍⬛, logrando un cerebro más automático e inteligente mediante python📅15 MAR. 2025 <br>
 ✅ Logré integrar supabase a esta misma estructura, automatizando el regstro de interacciones en BD 📅16 MAR. 2025 <br>
 ✅ Le agregué la rimera capa de Cyberseguridad 📅16 MAR. 2025 <br>
-💭 Ahora viene el 2° cerebro; ese que analiza,evalua y rankea 💪🏻💪🏻 <br>
+✅ En el backend le creé 3 cerebros, uno que almacena y conecta, otro que contextualiza cadenas de conversaciones y el otro que puntua y rankea 📅16 MAR. 2025<br>
 💭 Se planea presentar a mucha gente <br>
 
 
