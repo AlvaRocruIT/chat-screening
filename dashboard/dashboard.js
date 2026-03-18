@@ -1,8 +1,4 @@
-// Move SUPABASE_CONFIG outside the class so methods can access it
-const SUPABASE_CONFIG = {
-    url: 'https://ieutjzjhemtppcjjuiao.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlldXRqempoZW10cHBjamp1aWFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MTk4NzUsImV4cCI6MjA3Njk5NTg3NX0.Imc1aELcfSLbgOvN1h9ot59Jyt4xgk0XTPNBpEj43KY'
-};
+const const API_BASE_URL = "https://chatbot-backend-d5xj.onrender.com";
 
 class ChatScreeningDashboard {
     constructor() {
@@ -157,15 +153,7 @@ class ChatScreeningDashboard {
     async loadDataFromSupabase() {
         try {
             console.log('Fetching from:', SUPABASE_CONFIG.url);
-            const response = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/candidate_scores`, {
-                method: 'GET',
-                headers: {
-                    'apikey': SUPABASE_CONFIG.anonKey,
-                    'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-                    'Content-Type': 'application/json',
-                    'Prefer': 'return=representation'
-                }
-            });
+            const response = await fetch("https://chatbot-backend-d5xj.onrender.com/candidate-scores");
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
