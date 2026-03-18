@@ -15,7 +15,7 @@ class ChatScreeningDashboard {
     return Number(value || 0).toFixed(1);
 }
 
-format2(value) {
+    format2(value) {
     return Number(value || 0).toFixed(2);
 }
 
