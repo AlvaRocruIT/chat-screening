@@ -26,8 +26,8 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 🔧 Reparación PC + UpGrade RAM❗ 📅18 NOV. 2025<br> 
 ✅ Se logra loguear conversaciones 📅12 DIC. 2025 <br>
 ⛩️ <strong> Se presentó a Rodrigo Lara </strong> 📅14 DIC. 2025 <br>
-🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br><br>
-🌊🌊🌊 TEMPORADA DE RAFTING 🌊🌊🌊<br><br>
+🚧 Se trabaja en parametrizar conversaciones según ruleset creado <br>
+🌊🌊🌊 TEMPORADA DE RAFTING 🌊🌊🌊<br>
 ✅ Migré el backend desde n8n a FastAPI🟢 usando gitHub🐈‍⬛, logrando un cerebro más automático e inteligente mediante python📅15 MAR. 2025 <br>
 ✅ Logré integrar supabase a esta misma estructura, automatizando el regstro de interacciones en BD 📅16 MAR. 2025 <br>
 ✅ Le agregué la rimera capa de Cyberseguridad 📅16 MAR. 2025 <br>
