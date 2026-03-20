@@ -35,9 +35,12 @@ body {
   25%, 75% { opacity: 0; }
 }
 
-p {
-  font-size: 1.05em;
-  margin-bottom: 1.5em;
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.4
 }
 
 p .justify {
