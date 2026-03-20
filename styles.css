@@ -23,6 +23,7 @@ body {
   color: #1a1a1a;
   margin-bottom: 20px;
   letter-spacing: -1px;
+   min-height: calc(1.1em * 2); 
 }
 
 .cursor {
