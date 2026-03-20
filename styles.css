@@ -22,6 +22,7 @@ body {
   font-weight: 300;
   color: #1a1a1a;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .cursor {
@@ -45,10 +46,6 @@ p .justify {
   text-align: justify;
   text-justify: inter-word;
 }
-
-/* Center title */
-h1 { text-align: center; }
-
 
 /* Center the meta line */
 .meta-line { text-align: center; }
