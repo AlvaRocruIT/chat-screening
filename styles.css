@@ -78,7 +78,7 @@ h2 {
   aspect-ratio: 1 / 1;   /* square */
   height: auto;          /* let aspect-ratio control height */
   padding: 16px;
-  border-radius: 50%;  
+    border-radius: 16px;
 
 
   font-family: 'Montserrat', sans-serif;
@@ -89,7 +89,6 @@ h2 {
   background-color: #2c2c2c;
   color: #fff;
   border: none;
-  border-radius: 0;
   cursor: pointer;
 
   display: flex;
