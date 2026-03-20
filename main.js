@@ -1,7 +1,7 @@
 const words = [
   "mejor preparados para la entrevista",
   "con expectativas más claras",
-  "que mejor entienden el negocio"
+  "que mejor entienden tus desafíos"
 ];
 
 let wordIndex = 0;
