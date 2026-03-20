@@ -52,7 +52,7 @@ p .justify {
 }
 
 /* Center the meta line */
-.meta-line { text-align: center; }
+.meta-line { text-align: left; }
 
 h2 {
   text-align: center;
@@ -130,7 +130,7 @@ h2 {
 
   .button-container {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 14px;
   }
 
