@@ -8,11 +8,20 @@ body {
   color: #2c2c2c;
   line-height: 1.6;
 }
-h1 {
-  color: #1f1f1f;
-  font-weight: 200;
-  font-size: 4em;
-  margin-bottom: 0.5em;
+
+.hero {
+  max-width: 600px;
+  padding: 80px 24px;
+  text-align: left;
+}
+
+/* TÍTULO GRANDE */
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 20px;
 }
 
 .cursor {
