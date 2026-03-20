@@ -55,7 +55,7 @@ p .justify {
 .meta-line { text-align: left; }
 
 h2 {
-  text-align: center;
+  text-align: left;
   margin-top: 2em;
   font-size: 1.6em;
   font-weight: 400;
@@ -65,7 +65,7 @@ h2 {
 .button-container {
   display: flex;
   gap: 24px;            /* avoid 1cm on mobile */
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   margin-top: 1em;
 }
@@ -93,7 +93,6 @@ h2 {
 
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
 
   transition: background-color .25s ease, color .25s ease;
