@@ -130,7 +130,8 @@ const payload = {
     const updatedHistory =
       previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${reply}\n`;
     currentResponse.value = reply.replace(/\\n/g, "\n");
-    historyBox.value = updatedHistory;
+    currentResponse.value = reply.replace(/\\n/g, "\n");
+    autoResizeTextarea(currentResponse);
     localStorage.setItem("chatHistory", updatedHistory);
   } catch (error) {
     const msg = String(error?.message || error || "Error desconocido");
@@ -158,6 +159,11 @@ const payload = {
     inputBox.value = "";
     if (sendBtn) sendBtn.disabled = false;
   }
+}
+
+function autoResizeTextarea(el) {
+  el.style.height = 'auto';              // reset
+  el.style.height = el.scrollHeight + 'px'; // ajusta al contenido
 }
 
 function toggleHistory() {
