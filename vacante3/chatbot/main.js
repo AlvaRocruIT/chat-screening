@@ -11,14 +11,15 @@ const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 function getVacanteIdFromPath() {
   const map = {
     'vacante1': 1,
-    'vacante2': 2
+    'vacante2': 2,
+    'vacante3': 3,
   };
 
   const key =
     new URLSearchParams(location.search).get("vacante") ||
     "vacante1";
 
-  return map[key] || 1;
+  return map[key] || 3;
 }
 
 function getPreferredEndpoint() {
@@ -74,6 +75,7 @@ function getVacanteName() {
   const vacanteMap = {
     1: 'Jefe/a Comercial - Talca',
     2: 'Analista de Compensaciones - Las Condes'
+    3: 'Jefe/a de Transformación Digital'
   };
 
   return vacanteMap[vacanteId] || 'Vacante';
