@@ -109,7 +109,7 @@ textarea {
   border: 1px solid #ccc;
   resize: none;
   font-family: 'Montserrat', sans-serif;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
   display: block;
 }
 
