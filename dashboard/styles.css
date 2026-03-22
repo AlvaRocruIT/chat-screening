@@ -95,20 +95,6 @@ body {
 }
 /* acá termina
 
-.refresh-btn {
-  background-color: #2c2c2c;
-  color: #fff;
-  border: none;
-  padding: 0.75em 1.5em;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  transition: background-color 0.25s ease;
-}
-
-.refresh-btn:hover {
-  background-color: #444;
-}
 
 /* Combobox  '🗃️ Exportar planilla  ▾'  */
 .export-dropdown {
