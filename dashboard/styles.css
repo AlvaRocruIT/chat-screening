@@ -34,7 +34,8 @@ body {
 
 /* Dropdown */
 .dropdown-menu {
-   opacity: 0;
+  display: none;
+  opacity: 0;
   transform: translateY(-4px);
   pointer-events: none;
 
