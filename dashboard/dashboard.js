@@ -842,21 +842,27 @@ let dashboard;
 document.addEventListener('DOMContentLoaded', () => {
     dashboard = new ChatScreeningDashboard();
 
+    
     // 👇 EXPORT DROPDOWN
-    const toggle = document.getElementById("exportToggle");
-    const menu = document.getElementById("exportMenu");
+    const vacanteToggle = document.getElementById("vacanteToggle");
+    const vacanteMenu = document.getElementById("vacanteMenu");
 
-    if (toggle && menu) {
-        toggle.addEventListener("click", (e) => {
-            e.stopPropagation(); // 👈 clave
-            menu.classList.toggle("show");
-        });
+if (vacanteToggle && vacanteMenu) {
+  vacanteToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    vacanteMenu.classList.toggle("show");
+  });
 
-        document.addEventListener("click", (e) => {
-            if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-                menu.classList.remove("show");
-            }
-        });
+  vacanteMenu.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+
+    vacanteToggle.childNodes[0].textContent = btn.textContent + " ";
+    console.log("Filtro:", btn.dataset.value);
+
+    vacanteMenu.classList.remove("show");
+  });
+}
 
         menu.addEventListener("click", (e) => {
             const format = e.target.dataset.format;
