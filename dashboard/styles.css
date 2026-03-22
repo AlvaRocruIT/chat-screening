@@ -29,30 +29,11 @@ body {
   font-weight: 500;
 }
 
-/* Igualar select al botón */
 .filter-section select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  background-color: #2c2c2c;
-  color: #fff;
-  border: none;
-
-  padding: 10px 36px 10px 16px;
-  border-radius: 10px;
-
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-/* Hover igual al botón */
-.filter-section select:hover {
-  background-color: #444;
-  transform: translateY(-1px);
 }
 
 /* Combobox  '🗃️ Exportar planilla  ▾'  */
