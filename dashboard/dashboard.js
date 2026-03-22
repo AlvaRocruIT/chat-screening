@@ -29,7 +29,7 @@ class ChatScreeningDashboard {
             .toLowerCase();
     }
 
-   const vacanteToggle = document.getElementById("vacanteToggle");
+const vacanteToggle = document.getElementById("vacanteToggle");
 const vacanteMenu = document.getElementById("vacanteMenu");
 
 if (vacanteToggle && vacanteMenu) {
