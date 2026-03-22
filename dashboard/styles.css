@@ -1,14 +1,17 @@
+/* ---   🧱 BASE GENERAL
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   padding: 2em;
-  max-width: 1200px; /* Wider for dashboard */
+  max-width: 1200px;
   margin: auto;
   color: #2c2c2c;
   line-height: 1.6;
 }
 
-/* Controls section */
+/* ---   🧭 CONTROLES (FILTRO + EXPORT)
+
 .controls {
   display: flex;
   justify-content: space-between;
@@ -19,7 +22,8 @@ body {
   border-radius: 10px;
 }
 
-.filter-section, .refresh-section {
+.filter-section,
+.refresh-section {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -29,20 +33,38 @@ body {
   font-weight: 500;
 }
 
+/* 🔥 SELECT ESTILIZADO COMO BOTÓN */
 .filter-section select {
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+
+  padding: 10px 36px 10px 16px;
+  border-radius: 10px;
+
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+
+  /* Flecha tipo dropdown */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='10' viewBox='0 0 20 20'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* Combobox  '🗃️ Exportar planilla  ▾'  */
-.export-dropdown {
-  position: relative;
-  display: inline-block;
+.filter-section select:hover {
+  background-color: #444;
+  transform: translateY(-1px);
 }
 
-/* Botón principal */
+/* 🔥 BOTONES (EXPORT / OTROS) */
 .refresh-btn {
   background-color: #2c2c2c;
   color: #fff;
@@ -50,7 +72,13 @@ body {
   padding: 10px 16px;
   border-radius: 10px;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
@@ -59,7 +87,13 @@ body {
   transform: translateY(-1px);
 }
 
-/* Dropdown */
+/* ---  📦 DROPDOWN (EXPORT)
+
+.export-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-menu {
   display: none;
   opacity: 0;
@@ -80,7 +114,6 @@ body {
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
-/* Opciones */
 .dropdown-menu button {
   display: block;
   width: 100%;
@@ -90,43 +123,26 @@ body {
   text-align: left;
   cursor: pointer;
   font-size: 14px;
-  transition: background 0.15s ease;
 }
 
 .dropdown-menu button:hover {
   background: #f3f4f6;
 }
 
-/* Estado visible */
 .dropdown-menu.show {
+  display: block;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
-  display: block;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* ---  🧾 TIPOGRAFÍA
 
 h1 {
   color: #1f1f1f;
   font-weight: 400;
   font-size: 2em;
   margin-bottom: 0.5em;
-  text-align: center;
-}
-
-p {
-  font-size: 1.05em;
-  margin-bottom: 1.5em;
   text-align: center;
 }
 
@@ -137,7 +153,14 @@ h2 {
   font-weight: 400;
 }
 
-/* Dashboard specific styles */
+p {
+  font-size: 1.05em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+/* ---  📊 DASHBOARD LAYOUT
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -148,7 +171,6 @@ header {
   margin-bottom: 2em;
 }
 
-/* Charts container */
 .charts-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -156,7 +178,8 @@ header {
   margin-bottom: 60px;
 }
 
-.chart-section, .stats-section {
+.chart-section,
+.stats-section {
   background-color: #f8f8f8;
   padding: 1.5em;
   border-radius: 10px;
@@ -164,25 +187,28 @@ header {
 
 .chart-wrapper {
   position: relative;
-  height: 450px;   /* 👈 ajustado */
+  height: 450px;
   margin: 1em 0;
 }
 
+/* ---👤 CANDIDATOS
+
 .candidate-row {
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .candidate-row:hover {
-    background-color: rgba(44, 44, 44, 0.1);
+  background-color: rgba(44, 44, 44, 0.1);
 }
 
 .candidate-row.selected {
-    background-color: rgba(120, 255, 59, 0.2);
-    border-left: 3px solid #78FF3B;
+  background-color: rgba(120, 255, 59, 0.2);
+  border-left: 3px solid #78FF3B;
 }
 
-/* Statistics grid */
+/* --- 📈 STATS
+
 .stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -196,9 +222,8 @@ header {
   border-radius: 8px;
   text-align: center;
   border: 1px solid #e0e0e0;
-  min-height: 120px;  /* Fixed minimum height */
-  max-height: 120px;  /* Fixed maximum height */
-  overflow: hidden;   /* Hide overflow */
+  height: 120px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,14 +238,10 @@ header {
 .stat-card span {
   font-size: 1.5em;
   font-weight: 600;
-  color: #2c2c2c;
-  white-space: nowrap;      /* Keep text on one line */
-  overflow: hidden;         /* Hide overflow */
-  text-overflow: ellipsis;  /* Show "..." if too long */
-}
 }
 
-/* Candidates table */
+/* --- 📋 TABLA
+
 .candidates-list {
   background-color: #f8f8f8;
   padding: 1.5em;
@@ -241,8 +262,8 @@ table {
 }
 
 th, td {
-  padding: 4px 8px;
-  font-zise: 13px;
+  padding: 8px;
+  font-size: 13px; /* 🔥 corregido (tenías typo) */
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -256,23 +277,10 @@ tr:hover {
   background-color: #f5f5f5;
 }
 
-/* Mobile responsive */
+/* ---📱 RESPONSIVE
+
 @media (max-width: 768px) {
-  body {
-    padding: 1.25em;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
+  body { padding: 1.25em; }
 
   .controls {
     flex-direction: column;
@@ -282,7 +290,6 @@ tr:hover {
 
   .charts-container {
     grid-template-columns: 1fr;
-    gap: 1em;
   }
 
   .stats-grid {
@@ -293,27 +300,8 @@ tr:hover {
     height: 300px;
   }
 
-  .filter-section, .refresh-section {
+  .filter-section,
+  .refresh-section {
     flex-direction: column;
-    gap: 0.5em;
-  }
-}
-
-@media (max-width: 640px) {
-  .controls {
-    padding: 0.75em;
-  }
-
-  .chart-section, .stats-section, .candidates-list {
-    padding: 1em;
-  }
-
-  .stat-card {
-    padding: 0.75em;
-  }
-
-  th, td {
-    padding: 0.75em;
-    font-size: 0.9em;
   }
 }
