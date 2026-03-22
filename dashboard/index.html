@@ -24,9 +24,16 @@
                 </select>
             </div>
             
-            <div class="refresh-section">
-                <button id="refreshBtn" class="refresh-btn">🗃️ Exportar planilla</button>
-            </div>
+            <div class="export-dropdown">
+  <button class="refresh-btn" id="exportToggle">
+    🗃️ Exportar planilla
+  </button>
+
+  <div class="dropdown-menu" id="exportMenu">
+    <button data-format="xlsx">Excel (.xlsx)</button>
+    <button data-format="csv">CSV (.csv)</button>
+  </div>
+</div>
         </div>
 
         <div class="charts-container">
