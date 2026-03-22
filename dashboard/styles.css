@@ -120,34 +120,6 @@ header {
   margin-bottom: 2em;
 }
 
-/* Controls section */
-.controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2em;
-  padding: 1em;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-}
-
-.filter-section, .refresh-section {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
-.filter-section label {
-  font-weight: 500;
-}
-
-.filter-section select {
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .refresh-btn {
   background-color: #2c2c2c;
   color: #fff;
