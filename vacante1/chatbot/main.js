@@ -11,18 +11,14 @@ const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 function getVacanteIdFromPath() {
   const map = {
     'vacante1': 1,
-    'vacante2': 2,
-    'vacante3': 3
+    'vacante2': 2
   };
 
-  const path = window.location.pathname;
-  const match = path.match(/vacante\d+/);
+  const key =
+    new URLSearchParams(location.search).get("vacante") ||
+    "vacante1";
 
-  if (match && map[match[0]]) {
-    return map[match[0]];
-  }
-
-  return 1;
+  return map[key] || 1;
 }
 
 function getPreferredEndpoint() {
