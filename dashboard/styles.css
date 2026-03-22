@@ -35,6 +35,25 @@ body {
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
 }
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chevron {
+  font-size: 0.8em;
+  transition: transform 0.2s ease;
+}
+
+.custom-dropdown.open .chevron {
+  transform: rotate(180deg);
+}
 
 /* Combobox  '🗃️ Exportar planilla  ▾'  */
 .export-dropdown {
