@@ -24,15 +24,16 @@
                 </select>
             </div>
             
-        <div class="custom-dropdown" id="exportDropdown">
-          <button class="refresh-btn dropdown-toggle">
-            🗃️ Exportar planilla <span class="chevron">▾</span>
-          </button>
-        
-          <div class="dropdown-menu">
-            <button data-format="xlsx">Excel (.xlsx)</button>
-            <button data-format="csv">CSV (.csv)</button>
-          </div>
+            <div class="export-dropdown">
+  <button class="refresh-btn" id="exportToggle">
+    🗃️ Exportar planilla  ▾
+</button>
+  </button>
+
+  <div class="dropdown-menu" id="exportMenu">
+    <button data-format="xlsx">Excel (.xlsx)</button>
+    <button data-format="csv">CSV (.csv)</button>
+  </div>
 </div>
         </div>
 
