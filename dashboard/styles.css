@@ -52,11 +52,6 @@ body {
   background-color: #444;
 }
 
-#lastUpdate {
-  font-size: 0.9em;
-  color: #666;
-}
-
 /* Combobox  '🗃️ Exportar planilla  ▾'  */
 .export-dropdown {
   position: relative;
