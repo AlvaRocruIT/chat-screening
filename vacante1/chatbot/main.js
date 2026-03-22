@@ -15,11 +15,14 @@ function getVacanteIdFromPath() {
     'vacante3': 3
   };
 
-  const key =
-    new URLSearchParams(location.search).get("vacante") ||
-    "vacante1";
+  const path = window.location.pathname;
+  const match = path.match(/vacante\d+/);
 
-  return map[key] || 1;
+  if (match && map[match[0]]) {
+    return map[match[0]];
+  }
+
+  return 1;
 }
 
 function getPreferredEndpoint() {
