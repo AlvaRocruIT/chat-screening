@@ -107,7 +107,7 @@ function getVacanteName() {
   const vacanteId = parts.find((p) => /^vacante[0-9]+$/i.test(p)) || "vacante1";
   const vacanteMap = {
     'vacante1': 'Jefe/a Comercial - Talca',
-    'vacante2': 'Analista de Compensaciones - Las Condes'
+    'vacante2': 'Analista de Compensaciones - Las Condes',
     'vacante3': 'Jefe/a de Transformación Digital'
   };
   return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
