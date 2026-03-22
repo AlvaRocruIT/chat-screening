@@ -838,6 +838,34 @@ class ChatScreeningDashboard {
 
 // Initialize dashboard when page loads
 let dashboard;
+
 document.addEventListener('DOMContentLoaded', () => {
     dashboard = new ChatScreeningDashboard();
+
+    // 👇 EXPORT DROPDOWN
+    const toggle = document.getElementById("exportToggle");
+    const menu = document.getElementById("exportMenu");
+
+    if (toggle && menu) {
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation(); // 👈 clave
+            menu.classList.toggle("show");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove("show");
+            }
+        });
+
+        menu.addEventListener("click", (e) => {
+            const format = e.target.dataset.format;
+            if (!format) return;
+
+            if (format === "csv") exportToCSV(dashboard?.data || []);
+            if (format === "xlsx") exportToExcel(dashboard?.data || []);
+
+            menu.classList.remove("show");
+        });
+    }
 });
