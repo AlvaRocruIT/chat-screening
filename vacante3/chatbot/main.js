@@ -17,7 +17,7 @@ function getVacanteIdFromPath() {
 
   const key =
     new URLSearchParams(location.search).get("vacante") ||
-    "vacante1";
+    "vacant3";
 
   return map[key] || 3;
 }
