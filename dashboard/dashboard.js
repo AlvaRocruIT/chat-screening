@@ -28,26 +28,6 @@ class ChatScreeningDashboard {
             .trim()
             .toLowerCase();
     }
-
-const vacanteToggle = document.getElementById("vacanteToggle");
-const vacanteMenu = document.getElementById("vacanteMenu");
-
-if (vacanteToggle && vacanteMenu) {
-  vacanteToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    vacanteMenu.classList.toggle("show");
-  });
-
-  vacanteMenu.addEventListener("click", (e) => {
-    const btn = e.target.closest("button");
-    if (!btn) return;
-
-    vacanteToggle.childNodes[0].textContent = btn.textContent + " ";
-    console.log("Filtro:", btn.dataset.value);
-
-    vacanteMenu.classList.remove("show");
-  });
-}
     
     aggregateByEmailAndVacante(rows) {
   const scoreKeys = [
@@ -544,6 +524,26 @@ if (vacanteToggle && vacanteMenu) {
         }
     }
 
+    const vacanteToggle = document.getElementById("vacanteToggle");
+    const vacanteMenu = document.getElementById("vacanteMenu");
+
+if (vacanteToggle && vacanteMenu) {
+  vacanteToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    vacanteMenu.classList.toggle("show");
+  });
+
+  vacanteMenu.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+
+    vacanteToggle.childNodes[0].textContent = btn.textContent + " ";
+    console.log("Filtro:", btn.dataset.value);
+
+    vacanteMenu.classList.remove("show");
+  });
+}
+    
     // Global general average across all 5 dimensions
     calculateGeneralAverage() {
         if (this.candidatesData.length === 0) return 0;
