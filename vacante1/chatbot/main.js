@@ -11,7 +11,8 @@ const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 function getVacanteIdFromPath() {
   const map = {
     'vacante1': 1,
-    'vacante2': 2
+    'vacante2': 2,
+    'vacante3': 3
   };
 
   const key =
