@@ -75,6 +75,7 @@ function getVacanteName() {
   const vacanteMap = {
     1: 'Jefe/a Comercial - Talca',
     2: 'Analista de Compensaciones - Las Condes'
+    3: 'Jefe/a de Transformación Digital'
   };
 
   return vacanteMap[vacanteId] || 'Vacante';
