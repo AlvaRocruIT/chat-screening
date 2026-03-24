@@ -1,3 +1,4 @@
+
 const API_BASE_URL = "https://chatbot-backend-d5xj.onrender.com";
 
 class ChatScreeningDashboard {
@@ -842,24 +843,30 @@ let dashboard;
 document.addEventListener('DOMContentLoaded', () => {
     dashboard = new ChatScreeningDashboard();
 
-    
     // 👇 EXPORT DROPDOWN
-    const vacanteToggle = document.getElementById("vacanteToggle");
-    const vacanteMenu = document.getElementById("vacanteMenu");
+    const toggle = document.getElementById("exportToggle");
+    const menu = document.getElementById("exportMenu");
 
-if (vacanteToggle && vacanteMenu) {
-  vacanteToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    vacanteMenu.classList.toggle("show");
-  });
+    if (toggle && menu) {
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation(); // 👈 clave
+            menu.classList.toggle("show");
+        });
 
-  vacanteMenu.addEventListener("click", (e) => {
-    const btn = e.target.closest("button");
-    if (!btn) return;
+        document.addEventListener("click", (e) => {
+            if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove("show");
+            }
+        });
 
-    vacanteToggle.childNodes[0].textContent = btn.textContent + " ";
-    console.log("Filtro:", btn.dataset.value);
+        menu.addEventListener("click", (e) => {
+            const format = e.target.dataset.format;
+            if (!format) return;
 
-    vacanteMenu.classList.remove("show");
-  });
-}
+            if (format === "csv") exportToCSV(dashboard?.data || []);
+            if (format === "xlsx") exportToExcel(dashboard?.data || []);
+
+            menu.classList.remove("show");
+        });
+    }
+});
