@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* Body */
@@ -13,7 +13,7 @@ body {
   display: flex;
 }
 
-/* App container */
+/* App */
 #app {
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
   height: 100vh;
 }
 
-/* Pantalla inicial centrada */
+/* Pantalla inicial */
 #welcome-screen {
   margin: auto;
   text-align: center;
@@ -32,7 +32,7 @@ body {
 /* Título */
 #welcome-screen h1 {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 12px;
 }
 
@@ -42,7 +42,7 @@ body {
   color: #666;
 }
 
-/* Contenedor de chat */
+/* Chat */
 #chat-container {
   flex: 1;
   overflow-y: auto;
@@ -55,34 +55,32 @@ body {
 /* Mensajes */
 .message {
   max-width: 70%;
-  padding: 12px 14px;
-  border-radius: 14px;
+  padding: 12px;
+  border-radius: 12px;
   font-size: 14px;
-  line-height: 1.4;
 }
 
-/* Usuario (derecha) */
+/* Usuario */
 .message.user {
   align-self: flex-end;
   background: #000;
   color: #fff;
 }
 
-/* Bot (izquierda) */
+/* Bot */
 .message.bot {
   align-self: flex-start;
-  background: #f1f1f1;
+  background: #f0f0f0;
   color: #000;
 }
 
-/* Input fijo inferior */
+/* Input container */
 #input-container {
   display: flex;
   align-items: flex-end;
   gap: 10px;
   padding: 16px;
   border-top: 1px solid #eee;
-  background: #fff;
 }
 
 /* Textarea */
@@ -90,20 +88,15 @@ body {
   flex: 1;
   resize: none;
   border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 12px;
+  border-radius: 10px;
+  padding: 10px;
   font-size: 14px;
   max-height: 150px;
   overflow-y: auto;
   outline: none;
 }
 
-/* Focus input */
-#chat-input:focus {
-  border-color: #999;
-}
-
-/* Botón enviar */
+/* Botón */
 #send-btn {
   width: 40px;
   height: 40px;
@@ -111,18 +104,12 @@ body {
   border: none;
   background: #000;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
-/* Botón deshabilitado */
+/* Deshabilitado */
 #send-btn:disabled {
   background: #ccc;
   cursor: not-allowed;
-}
-
-/* Hover botón */
-#send-btn:hover:not(:disabled) {
-  transform: scale(1.05);
 }
