@@ -11,13 +11,13 @@
   <!-- Contenedor principal -->
   <div id="app">
 
-    <!-- Pantalla inicial -->
+    <!-- Header inicial tipo ChatGPT -->
     <div id="welcome-screen">
       <h1>Chatea con tu próximo puesto de trabajo</h1>
       <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
     </div>
 
-    <!-- Chat -->
+    <!-- Chatbox visible desde el inicio -->
     <div id="chat-container"></div>
 
     <!-- Input -->
@@ -28,7 +28,6 @@
         placeholder="¿Qué quieres saber sobre este rol?"
       ></textarea>
 
-      <!-- Botón enviar -->
       <button id="send-btn" disabled>&#8629;</button>
     </div>
 
@@ -47,13 +46,9 @@
       button.disabled = this.value.trim().length === 0;
     });
 
-    /* Enviar mensaje */
     function sendMessage() {
       const text = input.value.trim();
       if (!text) return;
-
-      /* Ocultar bienvenida */
-      welcome.style.display = 'none';
 
       /* Mensaje usuario */
       const msg = document.createElement('div');
@@ -78,7 +73,6 @@
       }, 500);
     }
 
-    /* Enter para enviar */
     input.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
