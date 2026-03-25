@@ -1,169 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo del proyecto "Chatea con la vacante"</title>
-
-  <!-- Fuente Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Hoja de estilos unificada -->
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Screening</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Chatea con tu próximo puesto de trabajo</h1>
 
-  <!-- Modal de acceso -->
-  <div class="login-overlay" id="loginOverlay">
-    <div class="login-panel">
-      <p>Solo para comenzar, te pediremos tu <span class="bold">nombre y correo</span> electrónico</p>
+  <!-- Contenedor principal -->
+  <div id="app">
 
-      <p class="field-label">Nombre</p>
-      <textarea
-        id="loginName"
-        rows="1"
-        placeholder="Juli@"
-        autocomplete="off"
-        autocapitalize="none"
-        spellcheck="false"
-      ></textarea>
-
-      <p class="field-label">Correo</p>
-      <textarea
-        id="loginEmail"
-        rows="1"
-        placeholder="Juli@correo.com"
-        autocomplete="off"
-        autocapitalize="none"
-        spellcheck="false"
-      ></textarea>
-
-      <button
-        type="button"
-        id="infoToggleBtn"
-        class="info-toggle"
-        aria-expanded="false"
-      >
-          ⁉️ ¿Para qué necesitan estos datos? ⁉️
-      </button>
-
-      <div id="consentInfoBox" class="history-box" hidden>
-        Este chatbot está pensado para
-        <span class="bold">registrar, evaluar y rankear</span> tus interacciones. <br>
-          🧑🏻‍💻 Al registrar tu nombre y correo, nos estarás permitiendo contactarte
-          en caso que tus interacciones demuestren que
-        <span class="bold">tienes el potencial y calce</span> que buscamos para este cargo. 🫵🏻
-      </div>
-
-      <div class="button-container">
-        <button id="acceptBtn" type="button">Aceptar</button>
-        <button id="backBtn" type="button">Volver</button>
-      </div>
+    <!-- Estado inicial (pantalla centrada) -->
+    <div id="welcome-screen">
+      <h1>Chatea con tu próximo puesto de trabajo</h1>
+      <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
     </div>
+
+    <!-- Contenedor de mensajes -->
+    <div id="chat-container"></div>
+
+    <!-- Input fijo inferior -->
+    <div id="input-container">
+      <textarea 
+        id="chat-input" 
+        rows="1" 
+        placeholder="¿Qué quieres saber sobre este rol?"
+      ></textarea>
+
+      <!-- Botón enviar -->
+      <button id="send-btn" disabled>
+        ↩
+      </button>
+    </div>
+
   </div>
 
-  <!-- App del chatbot -->
-  <main id="chatApp" class="chat-app" aria-hidden="true">
-    <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
-
-    <textarea
-      id="userInput"
-      rows="4"
-      placeholder="¡Hola! 👋🏻 ¿Qué te gustaría saber?"
-      autocomplete="off"
-      autocapitalize="none"
-      spellcheck="false"
-    ></textarea>
-    <button id="sendBtn">Enviar</button>
-
-    <textarea
-      id="currentResponse"
-      rows="4"
-      readonly
-      placeholder="Aquí aparecerá tu respuesta"
-    ></textarea>
-
-    <h3>Historial</h3>
-    <button id="toggleHistoryBtn" type="button">Mostrar/ocultar historial</button>
-    <textarea id="historyBox" rows="8" readonly placeholder="Pulsa el botón para mostrar/ocultar el historial"></textarea>
-  </main>
-
-  <script type="module" src="main.js?v=999"></script>
-  
   <script>
-  const overlay = document.getElementById('loginOverlay');
-  const chatApp = document.getElementById('chatApp');
-  const acceptBtn = document.getElementById('acceptBtn');
-  const backBtn = document.getElementById('backBtn');
+    const input = document.getElementById("chat-input");
+    const button = document.getElementById("send-btn");
+    const chat = document.getElementById("chat-container");
+    const welcome = document.getElementById("welcome-screen");
 
-  const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
-  const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
+    /* Auto-resize del textarea */
+    input.addEventListener("input", () => {
+      input.style.height = "auto";
+      input.style.height = input.scrollHeight + "px";
 
-function getVacanteName() {
-  const parts = window.location.pathname.split("/").filter(Boolean);
-  const vacanteId = parts.find((p) => /^vacante[0-9]+$/i.test(p)) || "vacante1";
-  const vacanteMap = {
-    'vacante1': 'Jefe/a Comercial - Talca',
-    'vacante2': 'Analista de Compensaciones - Las Condes',
-    'vacante3': 'Jefe/a de Transformación Digital'
-  };
-  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
-}
+      /* Activar botón */
+      button.disabled = input.value.trim().length === 0;
+    });
 
-function getPreferredEndpoint() {
-  return "https://chatbot-backend-d5xj.onrender.com/chat";
-}
-    
-async function handleAccept() {
-  const name = document.getElementById('loginName').value.trim();
-  const email = document.getElementById('loginEmail').value.trim();
+    /* Enviar mensaje */
+    function sendMessage() {
+      const text = input.value.trim();
+      if (!text) return;
 
-  if (!name || !email) {
-    alert('Por favor completa ambos campos antes de continuar.');
-    return;
-  }
+      /* Ocultar pantalla inicial */
+      welcome.style.display = "none";
 
-  if (!nameRegex.test(name)) {
-    alert('Ingresa un nombre válido (solo letras; se permiten espacios, guiones o apóstrofes).');
-    return;
-  }
+      /* Crear mensaje usuario */
+      const msg = document.createElement("div");
+      msg.className = "message user";
+      msg.innerText = text;
+      chat.appendChild(msg);
 
-  if (!emailRegex.test(email)) {
-    alert('Ingresa un correo válido con formato: a@bb.cc (se permite subdominio: a@bb.sld.cc).');
-    return;
-  }
+      /* Reset input */
+      input.value = "";
+      input.style.height = "auto";
+      button.disabled = true;
 
-// Always start a NEW session when the user accepts (switch user = new identity)
-const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
-localStorage.setItem('sessionId', sessionId);
- 
-// Save identity locally (so n8n + future messages can include it)
-localStorage.setItem('userName', name);
-localStorage.setItem('userEmail', email);
- 
-// Clear old conversation so you don't “inherit” the first user's history
-localStorage.removeItem('chatHistory');
+      /* Scroll automático */
+      chat.scrollTop = chat.scrollHeight;
 
-  overlay.setAttribute('hidden', '');
-  chatApp.removeAttribute('aria-hidden');
-}
-
-  acceptBtn.addEventListener('click', handleAccept);
-
-  // Pressing Enter in the email field submits (like clicking Aceptar)
-  document.getElementById('loginEmail').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault(); // stop newline
-      handleAccept();
+      /* Simulación respuesta */
+      setTimeout(() => {
+        const reply = document.createElement("div");
+        reply.className = "message bot";
+        reply.innerText = "Procesando tu consulta...";
+        chat.appendChild(reply);
+        chat.scrollTop = chat.scrollHeight;
+      }, 500);
     }
-  });
 
-  backBtn.addEventListener('click', () => {
-    window.location.href = '/chat-screening/vacante1/index.html';
-  });
-</script>
+    /* Enter para enviar */
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    button.addEventListener("click", sendMessage);
+  </script>
+
 </body>
 </html>
