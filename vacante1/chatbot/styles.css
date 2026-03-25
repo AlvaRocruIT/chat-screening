@@ -8,36 +8,46 @@
 
 /* Body */
 body {
-  background: #ffffff;
   height: 100vh;
+  background: #ffffff;
 }
 
-/* Layout principal */
+/* App */
 #app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
-/* Header tipo ChatGPT */
-#welcome-screen {
+/* Pantalla centrada */
+#center-screen {
+  margin: auto;
   text-align: center;
-  padding: 40px 20px 20px;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
 }
 
 /* Título */
-#welcome-screen h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
+#center-screen h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
 }
 
 /* Bajada */
-#welcome-screen p {
+#center-screen p {
   color: #666;
-  font-size: 15px;
+  margin-bottom: 20px;
 }
 
-/* Chatbox (SIEMPRE visible) */
+/* Input centrado */
+#input-container.center {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+/* Chat */
 #chat-container {
   flex: 1;
   overflow-y: auto;
@@ -45,6 +55,49 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+/* Input inferior */
+#input-container-bottom {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+
+/* Oculto */
+.hidden {
+  display: none;
+}
+
+/* Textareas */
+textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  max-height: 150px;
+  outline: none;
+}
+
+/* Botón */
+button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Deshabilitado */
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
 
 /* Mensajes */
@@ -66,43 +119,4 @@ body {
 .message.bot {
   align-self: flex-start;
   background: #f0f0f0;
-}
-
-/* Input fijo */
-#input-container {
-  display: flex;
-  gap: 10px;
-  padding: 16px;
-  border-top: 1px solid #eee;
-}
-
-/* Textarea */
-#chat-input {
-  flex: 1;
-  resize: none;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 14px;
-  max-height: 150px;
-  overflow-y: auto;
-  outline: none;
-}
-
-/* Botón */
-#send-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background: #000;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Deshabilitado */
-#send-btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
 }
