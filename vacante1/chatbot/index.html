@@ -8,47 +8,85 @@
 </head>
 <body>
 
-  <!-- Contenedor principal -->
   <div id="app">
 
-    <!-- Header inicial tipo ChatGPT -->
-    <div id="welcome-screen">
+    <!-- Estado inicial centrado -->
+    <div id="center-screen">
+
+      <!-- Título -->
       <h1>Chatea con tu próximo puesto de trabajo</h1>
+
+      <!-- Bajada -->
       <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
+
+      <!-- Input centrado -->
+      <div id="input-container center">
+        <textarea 
+          id="chat-input" 
+          rows="1" 
+          placeholder="¿Qué quieres saber sobre este rol?"
+        ></textarea>
+
+        <button id="send-btn" disabled>&#8629;</button>
+      </div>
+
     </div>
 
-    <!-- Chatbox visible desde el inicio -->
-    <div id="chat-container"></div>
+    <!-- Chat (oculto inicialmente) -->
+    <div id="chat-container" class="hidden"></div>
 
-    <!-- Input -->
-    <div id="input-container">
+    <!-- Input inferior (modo conversación) -->
+    <div id="input-container-bottom" class="hidden">
       <textarea 
-        id="chat-input" 
+        id="chat-input-bottom" 
         rows="1" 
-        placeholder="¿Qué quieres saber sobre este rol?"
+        placeholder="Escribe tu mensaje..."
       ></textarea>
 
-      <button id="send-btn" disabled>&#8629;</button>
+      <button id="send-btn-bottom" disabled>&#8629;</button>
     </div>
 
   </div>
 
   <script>
-    const input = document.getElementById('chat-input');
-    const button = document.getElementById('send-btn');
+    const centerScreen = document.getElementById('center-screen');
     const chat = document.getElementById('chat-container');
-    const welcome = document.getElementById('welcome-screen');
+
+    const inputTop = document.getElementById('chat-input');
+    const buttonTop = document.getElementById('send-btn');
+
+    const inputBottom = document.getElementById('chat-input-bottom');
+    const buttonBottom = document.getElementById('send-btn-bottom');
+    const inputBottomContainer = document.getElementById('input-container-bottom');
 
     /* Auto resize */
-    input.addEventListener('input', function () {
-      this.style.height = 'auto';
-      this.style.height = this.scrollHeight + 'px';
-      button.disabled = this.value.trim().length === 0;
+    function autoResize(el) {
+      el.style.height = 'auto';
+      el.style.height = el.scrollHeight + 'px';
+    }
+
+    /* Activar botón */
+    function toggleButton(input, button) {
+      button.disabled = input.value.trim().length === 0;
+    }
+
+    inputTop.addEventListener('input', function () {
+      autoResize(this);
+      toggleButton(this, buttonTop);
     });
 
-    function sendMessage() {
-      const text = input.value.trim();
+    inputBottom.addEventListener('input', function () {
+      autoResize(this);
+      toggleButton(this, buttonBottom);
+    });
+
+    function sendMessage(text) {
       if (!text) return;
+
+      /* Transición de layout */
+      centerScreen.classList.add('hidden');
+      chat.classList.remove('hidden');
+      inputBottomContainer.classList.remove('hidden');
 
       /* Mensaje usuario */
       const msg = document.createElement('div');
@@ -56,14 +94,9 @@
       msg.textContent = text;
       chat.appendChild(msg);
 
-      /* Reset */
-      input.value = '';
-      input.style.height = 'auto';
-      button.disabled = true;
-
       chat.scrollTop = chat.scrollHeight;
 
-      /* Simulación respuesta */
+      /* Respuesta fake */
       setTimeout(function () {
         const reply = document.createElement('div');
         reply.className = 'message bot';
@@ -73,14 +106,41 @@
       }, 500);
     }
 
-    input.addEventListener('keydown', function (e) {
+    /* Envío TOP */
+    function sendTop() {
+      const text = inputTop.value.trim();
+      if (!text) return;
+      inputTop.value = '';
+      buttonTop.disabled = true;
+      sendMessage(text);
+    }
+
+    /* Envío BOTTOM */
+    function sendBottom() {
+      const text = inputBottom.value.trim();
+      if (!text) return;
+      inputBottom.value = '';
+      buttonBottom.disabled = true;
+      sendMessage(text);
+    }
+
+    /* Eventos */
+    inputTop.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
-        sendMessage();
+        sendTop();
       }
     });
 
-    button.addEventListener('click', sendMessage);
+    inputBottom.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendBottom();
+      }
+    });
+
+    buttonTop.addEventListener('click', sendTop);
+    buttonBottom.addEventListener('click', sendBottom);
   </script>
 
 </body>
