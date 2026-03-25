@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat Screening</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- Contenedor principal -->
   <div id="app">
 
-    <!-- Estado inicial (pantalla centrada) -->
+    <!-- Pantalla inicial -->
     <div id="welcome-screen">
       <h1>Chatea con tu próximo puesto de trabajo</h1>
       <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
     </div>
 
-    <!-- Contenedor de mensajes -->
+    <!-- Chat -->
     <div id="chat-container"></div>
 
-    <!-- Input fijo inferior -->
+    <!-- Input -->
     <div id="input-container">
       <textarea 
         id="chat-input" 
@@ -29,26 +29,22 @@
       ></textarea>
 
       <!-- Botón enviar -->
-      <button id="send-btn" disabled>
-        ↩
-      </button>
+      <button id="send-btn" disabled>&#8629;</button>
     </div>
 
   </div>
 
   <script>
-    const input = document.getElementById("chat-input");
-    const button = document.getElementById("send-btn");
-    const chat = document.getElementById("chat-container");
-    const welcome = document.getElementById("welcome-screen");
+    const input = document.getElementById('chat-input');
+    const button = document.getElementById('send-btn');
+    const chat = document.getElementById('chat-container');
+    const welcome = document.getElementById('welcome-screen');
 
-    /* Auto-resize del textarea */
-    input.addEventListener("input", () => {
-      input.style.height = "auto";
-      input.style.height = input.scrollHeight + "px";
-
-      /* Activar botón */
-      button.disabled = input.value.trim().length === 0;
+    /* Auto resize */
+    input.addEventListener('input', function () {
+      this.style.height = 'auto';
+      this.style.height = this.scrollHeight + 'px';
+      button.disabled = this.value.trim().length === 0;
     });
 
     /* Enviar mensaje */
@@ -56,42 +52,41 @@
       const text = input.value.trim();
       if (!text) return;
 
-      /* Ocultar pantalla inicial */
-      welcome.style.display = "none";
+      /* Ocultar bienvenida */
+      welcome.style.display = 'none';
 
-      /* Crear mensaje usuario */
-      const msg = document.createElement("div");
-      msg.className = "message user";
-      msg.innerText = text;
+      /* Mensaje usuario */
+      const msg = document.createElement('div');
+      msg.className = 'message user';
+      msg.textContent = text;
       chat.appendChild(msg);
 
-      /* Reset input */
-      input.value = "";
-      input.style.height = "auto";
+      /* Reset */
+      input.value = '';
+      input.style.height = 'auto';
       button.disabled = true;
 
-      /* Scroll automático */
       chat.scrollTop = chat.scrollHeight;
 
       /* Simulación respuesta */
-      setTimeout(() => {
-        const reply = document.createElement("div");
-        reply.className = "message bot";
-        reply.innerText = "Procesando tu consulta...";
+      setTimeout(function () {
+        const reply = document.createElement('div');
+        reply.className = 'message bot';
+        reply.textContent = 'Procesando tu consulta...';
         chat.appendChild(reply);
         chat.scrollTop = chat.scrollHeight;
       }, 500);
     }
 
     /* Enter para enviar */
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" && !e.shiftKey) {
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
         sendMessage();
       }
     });
 
-    button.addEventListener("click", sendMessage);
+    button.addEventListener('click', sendMessage);
   </script>
 
 </body>
