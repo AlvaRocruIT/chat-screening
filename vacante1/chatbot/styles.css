@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  height: 100vh;
   font-family: Arial, sans-serif;
+  height: 100vh;
 }
 
 #app {
@@ -13,9 +13,47 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 🔥 centra vertical */
+  justify-content: center; /* CENTRADO VERTICAL */
   align-items: center;
   text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ===== INPUT ===== */
+.input-wrapper {
+  position: relative;
+  width: 700px;
+  max-width: 90%;
+}
+
+textarea {
+  width: 100%;
+  padding: 14px 60px 14px 14px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+/* BOTÓN DENTRO */
+button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
 }
 
 /* ===== CHAT ===== */
@@ -31,43 +69,28 @@ body {
   padding: 20px;
 }
 
-/* ===== INPUT ===== */
-.input-wrapper {
-  position: relative;
-  width: 700px;
-  max-width: 90%;
-}
-
-textarea {
-  width: 100%;
-  padding: 14px 60px 14px 16px;
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  resize: none;
-}
-
-/* Botón dentro */
-button {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: none;
-  background: black;
-  color: white;
-}
-
-/* Input fijo abajo (modo chat) */
-.input-wrapper.fixed {
+/* INPUT ABAJO */
+.input-wrapper.bottom {
   position: sticky;
   bottom: 0;
   background: white;
   padding: 10px;
 }
 
-/* Oculto */
+/* MENSAJES */
+.msg {
+  margin-bottom: 10px;
+}
+
+.user {
+  text-align: right;
+}
+
+.bot {
+  text-align: left;
+}
+
+/* OCULTO */
 .hidden {
   display: none;
 }
