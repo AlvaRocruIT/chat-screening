@@ -94,22 +94,7 @@
 
   const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
   const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
-
-function getVacanteName() {
-  const parts = window.location.pathname.split("/").filter(Boolean);
-  const vacanteId = parts.find((p) => /^vacante[0-9]+$/i.test(p)) || "vacante1";
-  const vacanteMap = {
-    'vacante1': 'Jefe/a Comercial - Talca',
-    'vacante2': 'Analista de Compensaciones - Las Condes',
-    'vacante3': 'Jefe/a de Transformación Digital'
-  };
-  return vacanteMap[vacanteId] || 'Jefe/a Comercial - Talca';
-}
-
-function getPreferredEndpoint() {
-  return "https://chatbot-backend-d5xj.onrender.com/chat";
-}
-    
+   
 async function handleAccept() {
   const name = document.getElementById('loginName').value.trim();
   const email = document.getElementById('loginEmail').value.trim();
@@ -158,5 +143,6 @@ localStorage.removeItem('chatHistory');
     window.location.href = '/chat-screening/vacante1/index.html';
   });
 </script>
+  <script src="main.js" defer></script>
 </body>
 </html>
