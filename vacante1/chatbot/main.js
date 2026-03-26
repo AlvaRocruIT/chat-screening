@@ -7,6 +7,8 @@ const messages = document.getElementById("messages");
 //▶️ Modal login
 const loginOverlay = document.getElementById("loginOverlay");
 const acceptBtn = document.getElementById("acceptBtn");
+const infoToggleBtn = document.getElementById("infoToggleBtn");
+const consentInfoBox = document.getElementById("consentInfoBox");
 const backBtn = document.getElementById("backBtn");
 //▶️ Inputs/botones (usa selectores por contenedor para evitar choques)
 const startInput = document.querySelector("#start-screen textarea");
@@ -43,7 +45,6 @@ function getVacanteName() {
   return vacanteMap[vacanteId] || 'Vacante';
 };
 
-
 function buildPayload(messageText) {
   return {
     message: messageText,
@@ -79,6 +80,17 @@ async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
     clearTimeout(timeoutId);
   }
 }
+
+infoToggleBtn?.addEventListener("click", () => {
+  const isHidden = consentInfoBox.hasAttribute("hidden");
+  if (isHidden) {
+    consentInfoBox.removeAttribute("hidden");
+    infoToggleBtn.setAttribute("aria-expanded", "true");
+  } else {
+    consentInfoBox.setAttribute("hidden", "");
+    infoToggleBtn.setAttribute("aria-expanded", "false");
+  }
+});
 
 // Click botón
 startSendBtn?.addEventListener("click", sendMessage);
