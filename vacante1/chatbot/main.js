@@ -18,8 +18,15 @@ const chatSendBtn = document.querySelector("#chat-screen button");
 
 const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
 const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
+
 // UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+
+
+const payload = buildPayload(text);
+const { response, data, raw } = await postToEndpoint(getPreferredEndpoint(), payload);
+const botText = data?.reply || data?.message || raw || "Sin respuesta del servidor";
+addMessage("Hmm... algo no salió bien 🤔", "bot")
 
 async function handleAccept() {
   const name = document.getElementById('loginName')?.value.trim() || '';
@@ -125,7 +132,8 @@ infoToggleBtn?.addEventListener("click", () => {
 });
 
 // Click botón
-
+startSendBtn?.addEventListener("click", sendMessage);
+chatSendBtn?.addEventListener("click", sendMessage);
 bindEnterToSend(startInput, sendMessage);
 bindEnterToSend(chatInput, sendMessage);
 
