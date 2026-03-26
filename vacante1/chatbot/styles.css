@@ -47,6 +47,12 @@ textarea {
   resize: none;
   line-height: 1.0;
   min-height: 38px;
+  text-align: center;
+}
+
+textarea::placeholder {
+  color: #666;
+  font-size: 15px;
 }
 
 /* Botón dentro */
