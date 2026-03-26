@@ -41,7 +41,7 @@ p {
 
 textarea {
   width: 90%;
-  padding: 4px 60px 4px 4px;
+  padding: 4px 60px 4px 16px;
   border: 1px solid #ddd;
   border-radius: 16px;
   resize: none;
