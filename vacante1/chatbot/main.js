@@ -41,7 +41,7 @@ function getVacanteName() {
   };
 
   return vacanteMap[vacanteId] || 'Vacante';
-}
+};
 
 const payload = { 
   message: input, 
