@@ -29,5 +29,12 @@ function addMessage(text, type) {
   div.textContent = text;
   messages.appendChild(div);
 
-  messages.scrollTop = messages.scrollHeight;
+  input.addEventListener("keydown", function (e) {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault(); // ❌ evita salto de línea
+    sendMessage();      // ✅ envía mensaje
+  }
+
+      messages.scrollTop = messages.scrollHeight;
 }
+});
