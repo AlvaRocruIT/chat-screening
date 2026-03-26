@@ -9,6 +9,20 @@ const messages = document.getElementById("messages");
 // UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
+function getVacanteIdFromPath() {
+  const map = {
+    'vacante1': 1,
+    'vacante2': 2,
+    'vacante3': 3
+  };
+
+  const key =
+    new URLSearchParams(location.search).get("vacante") ||
+    "vacante1";
+
+  return map[key] || 2;
+}
+
 // Click botón
 btn.addEventListener("click", sendMessage);
 
