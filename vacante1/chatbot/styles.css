@@ -60,39 +60,29 @@ button {
 
 /* Chat */
 #chat-screen {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* mensajes */
 #messages {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
 }
 
-/* Input abajo */
-.input-wrapper.bottom {
-  position: sticky;
-  bottom: 0;
-  background: white;
-  padding: 10px;
+/* 🔥 INPUT reutilizado */
+.input-wrapper {
+  position: relative;
+  width: 700px;
+  max-width: 90%;
 }
 
-/* Mensajes */
-.msg {
-  margin-bottom: 10px;
-}
-
-.user {
-  text-align: right;
-}
-
-.bot {
-  text-align: left;
-}
-
-/* Oculto */
-.hidden {
-  display: none;
+/* 🔥 CUANDO ESTÁ EN CHAT */
+.chat-mode #input-box {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
