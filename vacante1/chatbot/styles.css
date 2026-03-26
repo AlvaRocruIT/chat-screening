@@ -50,13 +50,10 @@ textarea {
   text-align: left;
 }
 
-textarea:placeholder-shown {
-  text-align: center;
-}
-
 textarea::placeholder {
   color: #666;
   font-size: 15px;
+  font-family: Arial, sans-serif;
 }
 
 /* Botón dentro */
