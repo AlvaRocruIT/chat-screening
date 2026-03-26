@@ -35,6 +35,14 @@ function getVacanteName() {
   return vacanteMap[vacanteId] || 'Vacante';
 }
 
+const payload = { 
+  message: input, 
+  session_id: sessionId,  
+  vacante_id: getVacanteIdFromPath(), 
+  user_name: localStorage.getItem("userName"),
+  user_email: localStorage.getItem("userEmail")
+};
+
 function getPreferredEndpoint() {
   const params = new URLSearchParams(window.location.search);
   const env = (params.get("env") || params.get("mode") || "").toLowerCase();
