@@ -43,13 +43,16 @@ function getVacanteName() {
   return vacanteMap[vacanteId] || 'Vacante';
 };
 
-const payload = { 
-  message: input, 
-  session_id: sessionId,  
-  vacante_id: getVacanteIdFromPath(), 
-  user_name: localStorage.getItem("userName"),
-  user_email: localStorage.getItem("userEmail")
-};
+
+function buildPayload(messageText) {
+  return {
+    message: messageText,
+    session_id: localStorage.getItem("sessionId"),
+    vacante_id: getVacanteIdFromPath(),
+    user_name: localStorage.getItem("userName"),
+    user_email: localStorage.getItem("userEmail")
+  };
+}
 
 function getPreferredEndpoint() {
   const params = new URLSearchParams(window.location.search);
