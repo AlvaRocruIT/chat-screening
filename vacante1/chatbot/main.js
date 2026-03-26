@@ -3,7 +3,7 @@
 const app = document.getElementById("app");
 const startScreen = document.getElementById("start-screen");
 const chatScreen = document.getElementById("chat-screen");
-const messages = document.getElementById("messages");
+const messages = document.getElementById("message");
 //▶️ Modal login
 const loginOverlay = document.getElementById("loginOverlay");
 const acceptBtn = document.getElementById("acceptBtn");
