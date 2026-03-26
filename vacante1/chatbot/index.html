@@ -110,6 +110,10 @@ async function handleAccept() {
     return;
   }
 
+    if (acceptBtn) {
+  acceptBtn.addEventListener("click", handleAccept);
+}
+
 // Always start a NEW session when the user accepts (switch user = new identity)
 const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
 localStorage.setItem('sessionId', sessionId);
@@ -124,7 +128,7 @@ localStorage.removeItem('chatHistory');
   overlay.setAttribute('hidden', '');
   app.removeAttribute('aria-hidden');
 }
-
+     
   backBtn.addEventListener('click', () => {
     window.location.href = '/chat-screening/vacante1/index.html';
   });
