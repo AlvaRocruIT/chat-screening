@@ -56,8 +56,6 @@ function getPreferredEndpoint() {
   const env = (params.get("env") || params.get("mode") || "").toLowerCase();
   return env === "test" ? TEST_URL : PROD_URL;
 }
-  });
-}
 
 async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
   const controller = new AbortController();
