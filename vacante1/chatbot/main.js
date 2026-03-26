@@ -57,6 +57,16 @@ function getPreferredEndpoint() {
   return env === "test" ? TEST_URL : PROD_URL;
 }
 
+function bindEnterToSend(textareaEl, sendFn) {
+  if (!textareaEl) return;
+  textareaEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendFn();
+    }
+  });
+}
+
 async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
@@ -89,7 +99,6 @@ input.addEventListener("keydown", function (e) {
     sendMessage();
   }
 });
-
 
 function sendMessage() {
   const text = input.value.trim();
