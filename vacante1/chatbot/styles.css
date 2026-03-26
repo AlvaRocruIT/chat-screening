@@ -40,7 +40,7 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 16px;
   resize: none;
-  line-height: 1.4;
+  line-height: 1.0;
   min-height: 44px;
 }
 
