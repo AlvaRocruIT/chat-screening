@@ -1,4 +1,6 @@
-/* Reset */
+/* ============================= */
+/* RESET BASE */
+/* ============================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,20 +8,23 @@
   font-family: Arial, sans-serif;
 }
 
-/* Body */
 body {
   height: 100vh;
   background: #ffffff;
 }
 
-/* App */
+/* ============================= */
+/* APP LAYOUT */
+/* ============================= */
 #app {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Pantalla centrada */
+/* ============================= */
+/* PANTALLA INICIAL (centrada) */
+/* ============================= */
 #center-screen {
   margin: auto;
   text-align: center;
@@ -28,27 +33,71 @@ body {
   padding: 20px;
 }
 
-/* Título */
 #center-screen h1 {
   font-size: 28px;
   margin-bottom: 12px;
 }
 
-/* Bajada */
 #center-screen p {
+  font-size: 15px;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-/* Input centrado */
-#input-container.center {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-  widht: 100%;
+/* ============================= */
+/* INPUT TIPO CHATGPT */
+/* ============================= */
+#input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-/* Chat */
+/* Textarea */
+#chat-input {
+  width: 100%;
+  min-width: 0;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 14px 60px 14px 16px; /* espacio para botón */
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 160px;
+  overflow-y: auto;
+  outline: none;
+  background: #fff;
+}
+
+#chat-input:focus {
+  border-color: #999;
+}
+
+/* Botón dentro del input */
+#send-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#send-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* CHAT (modo conversación) */
+/* ============================= */
 #chat-container {
   flex: 1;
   overflow-y: auto;
@@ -58,61 +107,29 @@ body {
   gap: 12px;
 }
 
-/* Input inferior */
+/* ============================= */
+/* INPUT INFERIOR */
+/* ============================= */
 #input-container-bottom {
-  display: flex;
-  gap: 10px;
   padding: 16px;
   border-top: 1px solid #eee;
+  background: #fff;
 }
 
-#input-container.center {
-  max-width: 700px;
-  margin: 0 auto;
+/* Reutiliza mismo wrapper */
+#input-container-bottom #input-wrapper {
+  max-width: 720px;
 }
 
-/* Oculto */
-.hidden {
-  display: none;
-}
-
-/* Textareas */
-textarea {
-  flex: 1;
-  widht: 100%;
-  resize: none;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 12px;
-  font-size: 14px;
-  max-height: 150px;
-  outline: none;
-}
-
-/* Botón */
-button {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: none;
-  background: black;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Deshabilitado */
-button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-/* Mensajes */
+/* ============================= */
+/* MENSAJES */
+/* ============================= */
 .message {
   max-width: 70%;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 14px;
   font-size: 14px;
+  line-height: 1.4;
 }
 
 /* Usuario */
@@ -125,5 +142,13 @@ button:disabled {
 /* Bot */
 .message.bot {
   align-self: flex-start;
-  background: #f0f0f0;
+  background: #f1f1f1;
+  color: #000;
+}
+
+/* ============================= */
+/* UTILIDADES */
+/* ============================= */
+.hidden {
+  display: none;
 }
