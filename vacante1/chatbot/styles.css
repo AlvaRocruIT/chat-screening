@@ -45,8 +45,8 @@ textarea {
 /* Botón dentro */
 button {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 6px;
+  bottom: 4px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
