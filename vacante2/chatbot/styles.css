@@ -98,33 +98,6 @@ h3 {
   outline-offset: 4px;
 }
 
-/* Shared textarea styles --------------------------------------------------- */
-textarea {
-  width: 100%;
-  padding: 0.95em 1em;
-  margin: 0.2em 0 0.75em;
-  font-size: 1em;
-  border-radius: 0;
-  border: 1px solid #ccc;
-  resize: none;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-overflow-scrolling: touch;
-  display: block;
-}
-
-textarea[readonly] {
-  background-color: #fafafa;
-}
-
-/* Info box inside login panel */
-.history-box {
-  margin-top: 0.75em;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  text-align: justify;
-}
-
 /* CTA buttons inside login panel ------------------------------------------ */
 .button-container {
   display: flex;
@@ -154,6 +127,33 @@ textarea[readonly] {
 
 .button-container button:hover {
   background-color: #444;
+}
+
+/* Shared textarea styles --------------------------------------------------- */
+textarea {
+  width: 100%;
+  padding: 0.95em 1em;
+  margin: 0.2em 0 0.75em;
+  font-size: 1em;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+}
+
+textarea[readonly] {
+  background-color: #fafafa;
+}
+
+/* Info box inside login panel */
+.history-box {
+  margin-top: 0.75em;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: justify;
 }
 
 /* Chat application --------------------------------------------------------- */
