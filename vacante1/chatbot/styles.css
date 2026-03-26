@@ -35,20 +35,20 @@ p {
 }
 
 textarea {
-  border: 1px solid #ddd;
   width: 100%;
   padding: 14px 60px 14px 14px;
+  border: 1px solid #ddd;
   border-radius: 16px;
-  border: 1px solid #ccc;
   resize: none;
+  line-height: 1.4;
+  min-height: 44px;
 }
 
 /* Botón dentro */
 button {
   position: absolute;
-  right: 6px;
-  top: 50%;
-  transform: traslateY (-50%);
+  right: 10px;
+  bottom: 8px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
