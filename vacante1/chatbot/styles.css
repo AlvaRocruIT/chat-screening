@@ -75,6 +75,7 @@ button {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 /* 🔥 INPUT reutilizado */
