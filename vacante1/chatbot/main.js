@@ -36,5 +36,4 @@ function addMessage(text, type) {
   }
 
       messages.scrollTop = messages.scrollHeight;
-}
 });
