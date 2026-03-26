@@ -46,16 +46,11 @@ async function handleAccept() {
   localStorage.setItem('userEmail', email);
   localStorage.removeItem('chatHistory');
 
+
   loginOverlay?.setAttribute('hidden', '');
   app?.removeAttribute('aria-hidden');
-//ojo acá💥
-acceptBtn?.addEventListener('click', handleAccept);
-
-backBtn?.addEventListener('click', () => {
-  window.location.href = '/chat-screening/vacante1/index.html';
-});
 }
-  //hasta acá💥
+
 function getVacanteIdFromPath() {
   const map = {
     'vacante1': 1,
@@ -89,7 +84,7 @@ function buildPayload(messageText) {
     vacante_id: getVacanteIdFromPath(),
     user_name: localStorage.getItem("userName"),
     user_email: localStorage.getItem("userEmail")
-  };
+  }
 }
 
 function getPreferredEndpoint() {
@@ -130,8 +125,9 @@ infoToggleBtn?.addEventListener("click", () => {
 });
 
 // Click botón
-startSendBtn?.addEventListener("click", sendMessage);
-chatSendBtn?.addEventListener("click", sendMessage);
+
+bindEnterToSend(startInput, sendMessage);
+bindEnterToSend(chatInput, sendMessage);
 
 function bindEnterToSend(textareaEl, sendFn) {
   if (!textareaEl) return;
@@ -170,3 +166,16 @@ function addMessage(text, type) {
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
 }
+
+acceptBtn?.addEventListener('click', handleAccept);
+
+backBtn?.addEventListener('click', () => {
+  window.location.href = '/chat-screening/vacante1/index.html';
+
+  document.getElementById("loginEmail")?.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    handleAccept();
+  }
+});
+});
