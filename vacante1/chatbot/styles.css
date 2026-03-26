@@ -36,12 +36,12 @@ p {
 
 textarea {
   width: 90%;
-  padding: 14px 60px 14px 14px;
+  padding: 4px 60px 4px 4px;
   border: 1px solid #ddd;
   border-radius: 16px;
   resize: none;
   line-height: 1.0;
-  min-height: 44px;
+  min-height: 34px;
 }
 
 /* Botón dentro */
