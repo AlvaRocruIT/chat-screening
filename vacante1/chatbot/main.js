@@ -116,7 +116,6 @@ function addMessage(text, type) {
   div.textContent = text;
 
   messages.appendChild(div);
-
   // Auto scroll
   messages.scrollTop = messages.scrollHeight;
 }
