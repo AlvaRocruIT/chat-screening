@@ -7,33 +7,45 @@ const btn = document.getElementById("send-btn");
 const messages = document.getElementById("messages");
 
 // UPDATE THESE URLs to match your current backend
-const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
-const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
-btn.onclick = () => {
+// Click botón
+btn.addEventListener("click", sendMessage);
+
+// Enter para enviar
+input.addEventListener("keydown", function (e) {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
+
+function sendMessage() {
   const text = input.value.trim();
   if (!text) return;
 
-  /* 🔥 CAMBIO DE ESCENA REAL */
-  start.style.display = "none";
-  chat.classList.remove("hidden");
-  app.classList.add("chat-mode");
+  // Cambio de escena (solo la primera vez)
+  if (!app.classList.contains("chat-mode")) {
+    start.style.display = "none";
+    chat.classList.remove("hidden");
+    app.classList.add("chat-mode");
+  }
 
   addMessage(text, "user");
   input.value = "";
-};
 
+  // 👉 aquí después puedes conectar backend
+  // sendToBackend(text);
+}
+// FUNCIONES------
 function addMessage(text, type) {
   const div = document.createElement("div");
   div.className = "msg " + type;
   div.textContent = text;
+
   messages.appendChild(div);
 
-  input.addEventListener("keydown", function (e) {
-  if (e.key === "Enter" && !e.shiftKey) {
-    e.preventDefault(); // ❌ evita salto de línea
-    sendMessage();      // ✅ envía mensaje
-  }
+  // Auto scroll
+  messages.scrollTop = messages.scrollHeight;
 
-      messages.scrollTop = messages.scrollHeight;
-});
