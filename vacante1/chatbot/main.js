@@ -22,11 +22,33 @@ const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A
 // UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
 
+function getPreferredEndpoint() {
+  const params = new URLSearchParams(window.location.search);
+  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
+  return env === "test" ? TEST_URL : PROD_URL;
+}
 
-const payload = buildPayload(text);
-const { response, data, raw } = await postToEndpoint(getPreferredEndpoint(), payload);
-const botText = data?.reply || data?.message || raw || "Sin respuesta del servidor";
-addMessage("Hmm... algo no salió bien 🤔", "bot")
+async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+      mode: "cors",
+    });
+    const raw = await response.text();
+    let data = null;
+    try {
+      data = JSON.parse(raw);
+    } catch (_) {}
+    return { response, data, raw };
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
 
 async function handleAccept() {
   const name = document.getElementById('loginName')?.value.trim() || '';
@@ -161,6 +183,10 @@ function sendMessage() {
   addMessage(text, "user");
   activeInput.value = "";
 
+const payload = buildPayload(text);
+const { response, data, raw } = await postToEndpoint(getPreferredEndpoint(), payload);
+const botText = data?.reply || data?.message || raw || "Sin respuesta del servidor";
+addMessage("Hmm... algo no salió bien 🤔", "bot")
   // Ejemplo de uso si luego envías al backend:
   // const payload = buildPayload(text);
   // postToEndpoint(getPreferredEndpoint(), payload);
