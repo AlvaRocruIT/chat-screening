@@ -3,7 +3,7 @@
 const app = document.getElementById("app");
 const startScreen = document.getElementById("start-screen");
 const chatScreen = document.getElementById("chat-screen");
-const messages = document.getElementById("message");
+const messages = document.getElementById("messages");
 //▶️ Modal login
 const loginOverlay = document.getElementById("loginOverlay");
 const acceptBtn = document.getElementById("acceptBtn");
@@ -56,14 +56,6 @@ function getPreferredEndpoint() {
   const env = (params.get("env") || params.get("mode") || "").toLowerCase();
   return env === "test" ? TEST_URL : PROD_URL;
 }
-
-function bindEnterToSend(textareaEl, sendFn) {
-  if (!textareaEl) return;
-  textareaEl.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      sendFn();
-    }
   });
 }
 
@@ -90,14 +82,16 @@ async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
 }
 
 // Click botón
-btn.addEventListener("click", sendMessage);
+bindEnterToSend(startInput, sendMessage);
+bindEnterToSend(chatInput, sendMessage);
 
-// Enter para enviar
-input.addEventListener("keydown", function (e) {
-  if (e.key === "Enter" && !e.shiftKey) {
-    e.preventDefault();
-    sendMessage();
-  }
+function bindEnterToSend(textareaEl, sendFn) {
+  if (!textareaEl) return;
+  textareaEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendFn();
+    }
 });
 
 function sendMessage() {
