@@ -48,7 +48,7 @@ textarea {
 button {
   position: absolute;
   right: 10px;
-  bottom: 8px;
+  top: 50%;
   width: 36px;
   height: 36px;
   border-radius: 50%;
