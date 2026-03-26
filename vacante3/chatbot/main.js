@@ -4,9 +4,9 @@ const currentResponse = document.getElementById("currentResponse");
 const historyBox = document.getElementById("historyBox");
 const sendBtn = document.getElementById("sendBtn");
 
-// UPDATE THESE URLs to match your render backend
-const PROD_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
-const TEST_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+// UPDATE THESE URLs to match your current backend
+const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+
 
 function getVacanteIdFromPath() {
   const map = {
