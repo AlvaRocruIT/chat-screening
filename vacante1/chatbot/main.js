@@ -81,8 +81,8 @@ async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
 }
 
 // Click botón
-bindEnterToSend(startInput, sendMessage);
-bindEnterToSend(chatInput, sendMessage);
+startSendBtn?.addEventListener("click", sendMessage);
+chatSendBtn?.addEventListener("click", sendMessage);
 
 function bindEnterToSend(textareaEl, sendFn) {
   if (!textareaEl) return;
@@ -95,21 +95,22 @@ function bindEnterToSend(textareaEl, sendFn) {
 }
 
 function sendMessage() {
-  const text = input.value.trim();
+  const activeInput = app.classList.contains("chat-mode") ? chatInput : startInput;
+  const text = (activeInput?.value || "").trim();
   if (!text) return;
 
-  // Cambio de escena (solo la primera vez)
   if (!app.classList.contains("chat-mode")) {
-    start.style.display = "none";
-    chat.classList.remove("hidden");
+    startScreen.style.display = "none";
+    chatScreen.classList.remove("hidden");
     app.classList.add("chat-mode");
   }
 
   addMessage(text, "user");
-  input.value = "";
+  activeInput.value = "";
 
-  // 👉 aquí después puedes conectar backend
-  // sendToBackend(text);
+  // Ejemplo de uso si luego envías al backend:
+  // const payload = buildPayload(text);
+  // postToEndpoint(getPreferredEndpoint(), payload);
 }
 
 function addMessage(text, type) {
