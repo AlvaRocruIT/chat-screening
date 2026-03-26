@@ -1,13 +1,18 @@
 // Elementos del DOM
+//▶️ App shells
 const app = document.getElementById("app");
-const start = document.getElementById("start-screen");
-const chat = document.getElementById("chat-screen");
-const input = document.getElementById("chat-input");
-const btn = document.getElementById("send-btn");
+const startScreen = document.getElementById("start-screen");
+const chatScreen = document.getElementById("chat-screen");
 const messages = document.getElementById("messages");
-const overlay = document.getElementById('loginOverlay');
-const acceptBtn = document.getElementById('acceptBtn');
-const backBtn = document.getElementById('backBtn');
+//▶️ Modal login
+const loginOverlay = document.getElementById("loginOverlay");
+const acceptBtn = document.getElementById("acceptBtn");
+const backBtn = document.getElementById("backBtn");
+//▶️ Inputs/botones (usa selectores por contenedor para evitar choques)
+const startInput = document.querySelector("#start-screen textarea");
+const startSendBtn = document.querySelector("#start-screen button");
+const chatInput = document.querySelector("#chat-screen textarea");
+const chatSendBtn = document.querySelector("#chat-screen button");
 
 // UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
