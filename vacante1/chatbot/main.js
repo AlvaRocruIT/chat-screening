@@ -23,6 +23,34 @@ function getVacanteIdFromPath() {
   return map[key] || 1;
 }
 
+function getPreferredEndpoint() {
+  const params = new URLSearchParams(window.location.search);
+  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
+  return env === "test" ? TEST_URL : PROD_URL;
+}
+
+async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+      mode: "cors",
+    });
+    const raw = await response.text();
+    let data = null;
+    try {
+      data = JSON.parse(raw);
+    } catch (_) {}
+    return { response, data, raw };
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
 // Click botón
 btn.addEventListener("click", sendMessage);
 
