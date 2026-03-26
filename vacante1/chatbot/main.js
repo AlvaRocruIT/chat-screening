@@ -48,7 +48,13 @@ async function handleAccept() {
 
   loginOverlay?.setAttribute('hidden', '');
   app?.removeAttribute('aria-hidden');
+//ojo acá💥
+acceptBtn?.addEventListener('click', handleAccept);
 
+backBtn?.addEventListener('click', () => {
+  window.location.href = '/chat-screening/vacante1/index.html';
+});
+  //hasta acá💥
 function getVacanteIdFromPath() {
   const map = {
     'vacante1': 1,
@@ -163,10 +169,3 @@ function addMessage(text, type) {
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
 }
-
-// Listeners (fuera de handleAccept)
-acceptBtn?.addEventListener('click', handleAccept);
-
-backBtn?.addEventListener('click', () => {
-  window.location.href = '/chat-screening/vacante1/index.html';
-});
