@@ -20,7 +20,7 @@ function getVacanteIdFromPath() {
     new URLSearchParams(location.search).get("vacante") ||
     "vacante1";
 
-  return map[key] || 2;
+  return map[key] || 1;
 }
 
 // Click botón
