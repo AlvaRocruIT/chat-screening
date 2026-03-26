@@ -125,16 +125,6 @@ localStorage.removeItem('chatHistory');
   app.removeAttribute('aria-hidden');
 }
 
-  acceptBtn.addEventListener('click', handleAccept);
-
-  // Pressing Enter in the email field submits (like clicking Aceptar)
-  document.getElementById('loginEmail').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault(); // stop newline
-      handleAccept();
-    }
-  });
-
   backBtn.addEventListener('click', () => {
     window.location.href = '/chat-screening/vacante1/index.html';
   });
