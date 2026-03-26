@@ -109,7 +109,7 @@ function sendMessage() {
   // 👉 aquí después puedes conectar backend
   // sendToBackend(text);
 }
-// FUNCIONES------
+
 function addMessage(text, type) {
   const div = document.createElement("div");
   div.className = "msg " + type;
@@ -118,4 +118,4 @@ function addMessage(text, type) {
   messages.appendChild(div);
   // Auto scroll
   messages.scrollTop = messages.scrollHeight;
-};
+}
