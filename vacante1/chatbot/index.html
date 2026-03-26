@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
 <div id="app">
 
   <!-- Estado inicial -->
   <div id="start-screen">
     <h1>Chatea con tu próximo puesto de trabajo</h1>
-    <p>Puedes preguntar acerca de la organización...</p>
+    <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
+
     <div class="input-wrapper">
-      <textarea id="input-start"></textarea>
+      <textarea id="input-start" placeholder="¿Qué quieres saber sobre este rol?"></textarea>
       <button id="btn-start">↩</button>
     </div>
   </div>
@@ -13,9 +23,15 @@
   <!-- Estado chat -->
   <div id="chat-screen" class="hidden">
     <div id="messages"></div>
-    <div class="input-wrapper fixed">
+
+    <div class="input-wrapper bottom">
       <textarea id="input-chat"></textarea>
       <button id="btn-chat">↩</button>
     </div>
   </div>
+
 </div>
+
+<script src="main.js"></script>
+</body>
+</html>
