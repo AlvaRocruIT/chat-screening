@@ -5,6 +5,9 @@ const chat = document.getElementById("chat-screen");
 const input = document.getElementById("chat-input");
 const btn = document.getElementById("send-btn");
 const messages = document.getElementById("messages");
+const overlay = document.getElementById('loginOverlay');
+const acceptBtn = document.getElementById('acceptBtn');
+const backBtn = document.getElementById('backBtn');
 
 // UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
