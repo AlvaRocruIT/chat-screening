@@ -31,7 +31,7 @@ p {
 .input-wrapper {
   position: relative;
   width: 700px;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 textarea {
