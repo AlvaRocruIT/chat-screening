@@ -16,8 +16,38 @@ const startSendBtn = document.querySelector("#start-screen button");
 const chatInput = document.querySelector("#chat-screen textarea");
 const chatSendBtn = document.querySelector("#chat-screen button");
 
+const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
+const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
 // UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+
+async function handleAccept() {
+  const name = document.getElementById('loginName')?.value.trim() || '';
+  const email = document.getElementById('loginEmail')?.value.trim() || '';
+
+  if (!name || !email) {
+    alert('Por favor completa ambos campos antes de continuar.');
+    return;
+  }
+
+  if (!nameRegex.test(name)) {
+    alert('Ingresa un nombre válido (solo letras; se permiten espacios, guiones o apóstrofes).');
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert('Ingresa un correo válido con formato: a@bb.cc (se permite subdominio: a@bb.sld.cc).');
+    return;
+  }
+
+  const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+  localStorage.setItem('sessionId', sessionId);
+  localStorage.setItem('userName', name);
+  localStorage.setItem('userEmail', email);
+  localStorage.removeItem('chatHistory');
+
+  loginOverlay?.setAttribute('hidden', '');
+  app?.removeAttribute('aria-hidden');
 
 function getVacanteIdFromPath() {
   const map = {
@@ -133,3 +163,10 @@ function addMessage(text, type) {
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
 }
+
+// Listeners (fuera de handleAccept)
+acceptBtn?.addEventListener('click', handleAccept);
+
+backBtn?.addEventListener('click', () => {
+  window.location.href = '/chat-screening/vacante1/index.html';
+});
