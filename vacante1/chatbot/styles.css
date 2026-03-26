@@ -1,3 +1,4 @@
+/* Base layout -------------------------------------------------------------- */
 html, body {
   height: 100%;
   margin: 0;
@@ -27,7 +28,58 @@ p {
   margin-bottom: 20px;
 }
 
-/* Input */
+/* Login overlay ------------------------------------------------------------ */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(18, 18, 18, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+  z-index: 1000;
+}
+
+.login-overlay[hidden] {
+  display: none;
+}
+
+.login-panel {
+  background-color: #f4f4f4;
+  border: 1px solid #dedede;
+  padding: 2em;
+  width: min(640px, 100%);
+  border-radius: 0;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-panel h3 {
+  text-align: center;
+}
+
+.info-toggle {
+  appearance: none;
+  border: none;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0.4em 0;
+  margin: 1em 0 0.5em;
+  cursor: pointer;
+  color: inherit;
+}
+
+.info-toggle:focus-visible {
+  outline: 2px solid #2c2c2c;
+  outline-offset: 4px;
+}
+
+/* Shared textarea styles --------------------------------------------------- */
 .input-wrapper {
   position: relative;
   width: 700px;
