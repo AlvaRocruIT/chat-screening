@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -9,24 +10,24 @@
 
 <div id="app">
 
-  <!-- Estado inicial -->
+  <!-- Pantalla inicial -->
   <div id="start-screen">
     <h1>Chatea con tu próximo puesto de trabajo</h1>
     <p>Puedes preguntar acerca de la organización, su cultura y detalles sobre este rol.</p>
 
     <div class="input-wrapper">
       <textarea id="input-start" placeholder="¿Qué quieres saber sobre este rol?"></textarea>
-      <button id="btn-start">↩</button>
+      <button id="btn-start">&#8629;</button>
     </div>
   </div>
 
-  <!-- Estado chat -->
+  <!-- Chat -->
   <div id="chat-screen" class="hidden">
     <div id="messages"></div>
 
     <div class="input-wrapper bottom">
       <textarea id="input-chat"></textarea>
-      <button id="btn-chat">↩</button>
+      <button id="btn-chat">&#8629;</button>
     </div>
   </div>
 
