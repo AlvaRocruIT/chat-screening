@@ -55,9 +55,7 @@ function buildPayload(messageText) {
 }
 
 function getPreferredEndpoint() {
-  const params = new URLSearchParams(window.location.search);
-  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
-  return env === "test" ? TEST_URL : PROD_URL;
+  return API_URL;
 }
 
 async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
@@ -94,6 +92,7 @@ function bindEnterToSend(textareaEl, sendFn) {
       sendFn();
     }
 });
+}
 
 function sendMessage() {
   const text = input.value.trim();
@@ -117,7 +116,7 @@ function addMessage(text, type) {
   const div = document.createElement("div");
   div.className = "msg " + type;
   div.textContent = text;
-}
   
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
+}
