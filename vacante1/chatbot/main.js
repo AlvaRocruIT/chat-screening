@@ -23,6 +23,18 @@ function getVacanteIdFromPath() {
   return map[key] || 1;
 }
 
+function getVacanteName() {
+  const vacanteId = getVacanteIdFromPath();
+
+  const vacanteMap = {
+    1: 'Jefe/a Comercial - Talca',
+    2: 'Analista de Compensaciones - Las Condes',
+    3: 'Jefe/a de Transformación Digital'
+  };
+
+  return vacanteMap[vacanteId] || 'Vacante';
+}
+
 function getPreferredEndpoint() {
   const params = new URLSearchParams(window.location.search);
   const env = (params.get("env") || params.get("mode") || "").toLowerCase();
