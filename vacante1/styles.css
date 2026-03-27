@@ -27,8 +27,9 @@ h2 {
   font-weight: 600;
 }
 .chatbot-cta img {
-  width: 10%;
+  width: 25%;
   height: auto;
+  align-items: center;
 }
 
 /* Button container (centred) */
