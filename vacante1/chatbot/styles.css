@@ -170,13 +170,6 @@ textarea {
   background: #fff;      /* mismo blanco que exterior */
 }
 
-/* Mensajes dentro de la columna central */
-.chat-mode #messages {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 18px 16px 96px;
-}
-
 /* Input de chat anclado abajo, pero centrado con la misma columna */
 .chat-mode #chat-screen .input-wrapper.bottom {
   position: sticky;
