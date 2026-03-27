@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   overflow: hidden; /* sin scroll en escena 1 */
   font-family: Arial, sans-serif;
+  max-width: 700px;
 }
 
 #app {
