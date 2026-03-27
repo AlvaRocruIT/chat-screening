@@ -227,7 +227,7 @@ async function sendMessage() {
 acceptBtn?.addEventListener("click", handleAccept);
 
 backBtn?.addEventListener("click", () => {
-  window.location.href = "/chat-screening/vacante1/index.html";
+  window.location.href = "/chat-screening/vacante3/index.html";
 });
 
 loginEmail?.addEventListener("keydown", (e) => {
