@@ -214,16 +214,6 @@ async function sendMessage() {
     const botText = extractBotText(data, raw);
     addMessage(botText, "bot");
   } catch (err) {
-    removeTypingBubble(typingNode);
-    addMessage("Hubo un problema de conexión. Intenta nuevamente.", "bot");
-  } finally {
-    isSending = false;
-  }
-}
-
-    const botText = extractBotText(data, raw);
-    addMessage(botText, "bot");
-  } catch (err) {
     addMessage("Hubo un problema de conexión. Intenta nuevamente.", "bot");
   } finally {
     isSending = false;
