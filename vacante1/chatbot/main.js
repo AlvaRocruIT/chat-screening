@@ -197,16 +197,30 @@ async function sendMessage() {
   activeInput.value = "";
 
   const payload = buildPayload(text);
+  let typingNode = null;
 
   try {
     isSending = true;
+    typingNode = showTypingBubble();
 
     const { response, data, raw } = await postToEndpoint(getPreferredEndpoint(), payload);
+    removeTypingBubble(typingNode);
 
     if (!response.ok) {
       addMessage(`Error del servidor (${response.status}).`, "bot");
       return;
     }
+
+    const botText = extractBotText(data, raw);
+    addMessage(botText, "bot");
+
+  } catch (err) {
+    removeTypingBubble(typingNode);
+    addMessage("Hubo un problema de conexión. Intenta nuevamente.", "bot");
+  } finally {
+    isSending = false;
+  }
+}
 
     const botText = extractBotText(data, raw);
     addMessage(botText, "bot");
