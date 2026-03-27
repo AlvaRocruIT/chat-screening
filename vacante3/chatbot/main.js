@@ -26,7 +26,7 @@ let isSending = false;
 
 function getVacanteIdFromPath() {
   const map = { vacante1: 1, vacante2: 2, vacante3: 3 };
-  const key = new URLSearchParams(location.search).get("vacante") || "vacante1";
+  const key = new URLSearchParams(location.search).get("vacante") || "vacante3";
   return map[key] || 3;
 }
 
