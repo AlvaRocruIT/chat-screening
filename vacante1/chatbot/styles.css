@@ -1,8 +1,7 @@
-
 /* Base layout ------------------------------------------------------------- */
 html, body {
   height: 100%;
-  max-width: 700px;
+  margin: 0;
   overflow: hidden; /* sin scroll en escena 1 */
   font-family: Arial, sans-serif;
 }
