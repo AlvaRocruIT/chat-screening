@@ -31,9 +31,10 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Migré el backend desde n8n a FastAPI🟢 usando gitHub🐈‍⬛, logrando un cerebro más automático e inteligente mediante python📅15 MAR. 2025 <br>
 ✅ Logré integrar supabase a esta misma estructura, automatizando el regstro de interacciones en BD 📅16 MAR. 2025 <br>
 ✅ Le agregué la rimera capa de Cyberseguridad 📅16 MAR. 2025 <br>
-✅ En el backend le creé 3 cerebros, uno que almacena y conecta, otro que contextualiza cadenas de conversaciones y el otro que puntua y rankea 📅16 MAR. 2025<br>
+✅ En el backend le creé 3 cerebros, uno que almacena y conecta, otro que contextualiza cadenas de conversaciones y el otro que puntua y rankea 📅16 MAR. 2026<br>
 <strong>✨ LUEGO DE 1000 COMMITS, LOGRO UN PROTOTIPO FUNCIONAL ✨</strong><br>
-💭 Se planea presentar a mucha gente <br>
+⛩️ <strong> Se presentó a Nicolás Abud </strong> 📅25 MAR. 2026 <br>
+✅ Se cambió el layout del chatbot a uno tipo IA 📅27 MAR. 2026 <br>
 
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
