@@ -94,12 +94,35 @@ function extractBotText(data, raw) {
 }
 
 function addMessage(text, type) {
-  if (!messages) return;
-  const div = document.createElement("div");
-  div.className = `msg ${type}`;
-  div.textContent = text;
-  messages.appendChild(div);
+  if (!messages) return null;
+  const bubble = document.createElement("div");
+  bubble.className = `msg ${type}`;
+  const p = document.createElement("p");
+  p.textContent = text;
+  bubble.appendChild(p);
+  messages.appendChild(bubble);
   messages.scrollTop = messages.scrollHeight;
+  return bubble;
+}
+
+function showTypingBubble() {
+  if (!messages) return null;
+  const bubble = document.createElement("div");
+  bubble.className = "msg bot typing";
+  bubble.setAttribute("aria-label", "El chatbot está escribiendo");
+  bubble.innerHTML = `
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  `;
+
+  messages.appendChild(bubble);
+  messages.scrollTop = messages.scrollHeight;
+  return bubble;
+}
+
+function removeTypingBubble(node) {
+  if (node && node.parentNode) node.parentNode.removeChild(node);
 }
 
 function enterChatModeIfNeeded() {
