@@ -1,4 +1,3 @@
-
 // Elementos del DOM
 //▶️ App shells
 const app = document.getElementById("app");
