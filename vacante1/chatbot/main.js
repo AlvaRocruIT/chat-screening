@@ -213,7 +213,6 @@ async function sendMessage() {
 
     const botText = extractBotText(data, raw);
     addMessage(botText, "bot");
-
   } catch (err) {
     removeTypingBubble(typingNode);
     addMessage("Hubo un problema de conexión. Intenta nuevamente.", "bot");
