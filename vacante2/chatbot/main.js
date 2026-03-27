@@ -26,8 +26,8 @@ let isSending = false;
 
 function getVacanteIdFromPath() {
   const map = { vacante1: 1, vacante2: 2, vacante3: 3 };
-  const key = new URLSearchParams(location.search).get("vacante") || "vacante1";
-  return map[key] || 1;
+  const key = new URLSearchParams(location.search).get("vacante") || "vacante2";
+  return map[key] || 2;
 }
 
 function getPreferredEndpoint() {
@@ -226,7 +226,7 @@ async function sendMessage() {
 acceptBtn?.addEventListener("click", handleAccept);
 
 backBtn?.addEventListener("click", () => {
-  window.location.href = "/chat-screening/vacante1/index.html";
+  window.location.href = "/chat-screening/vacante2/index.html";
 });
 
 loginEmail?.addEventListener("keydown", (e) => {
