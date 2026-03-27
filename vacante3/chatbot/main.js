@@ -1,36 +1,63 @@
+
 // Elementos del DOM
-const inputBox = document.getElementById("userInput");
-const currentResponse = document.getElementById("currentResponse");
-const historyBox = document.getElementById("historyBox");
-const sendBtn = document.getElementById("sendBtn");
+//▶️ App shells
+const app = document.getElementById("app");
+const startScreen = document.getElementById("start-screen");
+const chatScreen = document.getElementById("chat-screen");
+const messages = document.getElementById("messages");
+//▶️ Modal login
+const loginOverlay = document.getElementById("loginOverlay");
+const backBtn = document.getElementById("backBtn");
+const acceptBtn = document.getElementById("acceptBtn");
+const infoToggleBtn = document.getElementById("infoToggleBtn");
+const consentInfoBox = document.getElementById("consentInfoBox");
+const loginName = document.getElementById("loginName");
+const loginEmail = document.getElementById("loginEmail");
+//▶️ Inputs/botones (usa selectores por contenedor para evitar choques)
+const startInput = document.getElementById("chat-input-start");
+const startSendBtn = document.getElementById("send-btn-start");
+const chatInput = document.getElementById("chat-input-chat");
+const chatSendBtn = document.getElementById("send-btn-chat");;
 
-// UPDATE THESE URLs to match your current backend
 const API_URL = "https://chatbot-backend-d5xj.onrender.com/chat";
+const nameRegex = /^[\p{L}]+(?:[\s'’\-][\p{L}]+)*$/u;
+const emailRegex = /^[A-Za-z0-9._%+-]+@([A-Za-z0-9-]{2,}\.)?[A-Za-z0-9-]{2,}\.[A-Za-z]{2,}$/;
 
+let isSending = false;
 
 function getVacanteIdFromPath() {
-  const map = {
-    'vacante1': 1,
-    'vacante2': 2,
-    'vacante3': 3,
-  };
-
-  const key =
-    new URLSearchParams(location.search).get("vacante") ||
-    "vacant3";
-
+  const map = { vacante1: 1, vacante2: 2, vacante3: 3 };
+  const key = new URLSearchParams(location.search).get("vacante") || "vacante1";
   return map[key] || 3;
 }
 
 function getPreferredEndpoint() {
-  const params = new URLSearchParams(window.location.search);
-  const env = (params.get("env") || params.get("mode") || "").toLowerCase();
-  return env === "test" ? TEST_URL : PROD_URL;
+  return API_URL;
+}
+
+function getOrCreateSessionId() {
+  let sessionId = localStorage.getItem("sessionId");
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+    localStorage.setItem("sessionId", sessionId);
+  }
+  return sessionId;
+}
+
+function buildPayload(messageText) {
+  return {
+    message: messageText,
+    session_id: getOrCreateSessionId(),
+    vacante_id: getVacanteIdFromPath(),
+    user_name: localStorage.getItem("userName"),
+    user_email: localStorage.getItem("userEmail"),
+  };
 }
 
 async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
   try {
     const response = await fetch(endpoint, {
       method: "POST",
@@ -39,163 +66,192 @@ async function postToEndpoint(endpoint, payload, timeoutMs = 45000) {
       signal: controller.signal,
       mode: "cors",
     });
+
     const raw = await response.text();
     let data = null;
+
     try {
       data = JSON.parse(raw);
-    } catch (_) {}
+    } catch {
+      // respuesta no-JSON
+    }
+
     return { response, data, raw };
   } finally {
     clearTimeout(timeoutId);
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  sendBtn.addEventListener("click", sendMessage);
-  document.getElementById("toggleHistoryBtn").addEventListener("click", toggleHistory);
-
-  const infoToggleBtn = document.getElementById("infoToggleBtn");
-  if (infoToggleBtn) {
-    infoToggleBtn.addEventListener("click", toggleConsentInfo);
-  }
-  
-  historyBox.value = localStorage.getItem("chatHistory") || "";
-
-  inputBox.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
-  });
-});
-
-function getVacanteName() {
-  const vacanteId = getVacanteIdFromPath();
-
-  const vacanteMap = {
-    1: 'Jefe/a Comercial - Talca',
-    2: 'Analista de Compensaciones - Las Condes',
-    3: 'Jefe/a de Transformación Digital'
-  };
-
-  return vacanteMap[vacanteId] || 'Vacante';
+function extractBotText(data, raw) {
+  return (
+    data?.reply ||
+    data?.message ||
+    data?.response ||
+    data?.output ||
+    data?.text ||
+    raw ||
+    "Sin respuesta del servidor."
+  );
 }
 
-async function sendMessage() {
-  const input = inputBox.value.trim();
-  if (!input) {
-    currentResponse.value = "¿Podrías escribir una pregunta o comentario?";
+function addMessage(text, type) {
+  if (!messages) return null;
+  const bubble = document.createElement("div");
+  bubble.className = `msg ${type}`;
+  const p = document.createElement("p");
+  p.textContent = text;
+  bubble.appendChild(p);
+  messages.appendChild(bubble);
+  messages.scrollTop = messages.scrollHeight;
+  return bubble;
+}
+
+function showTypingBubble() {
+  if (!messages) return null;
+  const bubble = document.createElement("div");
+  bubble.className = "msg bot typing";
+  bubble.setAttribute("aria-label", "El chatbot está escribiendo");
+  bubble.innerHTML = `
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  `;
+
+  messages.appendChild(bubble);
+  messages.scrollTop = messages.scrollHeight;
+  return bubble;
+}
+
+function removeTypingBubble(node) {
+  if (node && node.parentNode) node.parentNode.removeChild(node);
+}
+
+function enterChatModeIfNeeded() {
+  if (!app || !startScreen || !chatScreen) return;
+  if (!app.classList.contains("chat-mode")) {
+    startScreen.style.display = "none";
+    chatScreen.classList.remove("hidden");
+    app.classList.add("chat-mode");
+  }
+}
+
+function getActiveInput() {
+  if (!app) return startInput || chatInput;
+  return app.classList.contains("chat-mode") ? chatInput : startInput;
+}
+
+function bindEnterToSend(textareaEl, sendFn) {
+  if (!textareaEl) return;
+  textareaEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendFn();
+    }
+  });
+}
+
+// ===============================
+// Modal logic
+// ===============================
+async function handleAccept() {
+  const name = loginName?.value.trim() || "";
+  const email = loginEmail?.value.trim() || "";
+
+  if (!name || !email) {
+    alert("Por favor completa ambos campos antes de continuar.");
     return;
   }
 
-  const previous = localStorage.getItem("chatHistory") || "";
-  currentResponse.value = "🤖 Pensando...";
-  if (sendBtn) sendBtn.disabled = true;
-
-  let sessionId = localStorage.getItem('sessionId');
-  if (!sessionId) {
-    sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    localStorage.setItem('sessionId', sessionId);
+  if (!nameRegex.test(name)) {
+    alert("Ingresa un nombre válido.");
+    return;
   }
 
-const payload = { 
-  message: input, 
-  session_id: sessionId,  
-  vacante_id: getVacanteIdFromPath(), 
-  user_name: localStorage.getItem("userName"),
-  user_email: localStorage.getItem("userEmail")
-};
+  if (!emailRegex.test(email)) {
+    alert("Ingresa un correo válido.");
+    return;
+  }
 
-  let endpoint = getPreferredEndpoint();
+  // nueva sesión por cada aceptación
+  const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+  localStorage.setItem("sessionId", sessionId);
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userEmail", email);
+  localStorage.removeItem("chatHistory");
 
-  console.log('=== DEBUG - Sending payload ===');
-  console.log(payload);
-  console.log('Payload as JSON:', JSON.stringify(payload));
+  loginOverlay?.setAttribute("hidden", "");
+  app?.removeAttribute("aria-hidden");
+}
+
+// ===============================
+// Chat flow
+// ===============================
+async function sendMessage() {
+  if (isSending) return;
+
+  const activeInput = getActiveInput();
+  const text = (activeInput?.value || "").trim();
+  if (!text) return;
+
+  enterChatModeIfNeeded();
+  addMessage(text, "user");
+  activeInput.value = "";
+
+  const payload = buildPayload(text);
+  let typingNode = null;
 
   try {
+    isSending = true;
+    typingNode = showTypingBubble();
 
-    let { response, data, raw } = await postToEndpoint(endpoint, payload);
+    const { response, data, raw } = await postToEndpoint(getPreferredEndpoint(), payload);
+    removeTypingBubble(typingNode);
 
     if (!response.ok) {
-      const detail = data?.message || raw || `HTTP ${response.status}`;
-      throw new Error(detail);
+      addMessage(`Error del servidor (${response.status}).`, "bot");
+      return;
     }
 
-    let reply = data?.response || raw?.trim() || "";
-      if (!reply && data) {
-      reply = data.response || "";
-    }
-      if (!reply) {
-      reply = "No se recibió respuesta.";
-    }
-
-    const updatedHistory =
-      previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${reply}\n`;
-    currentResponse.value = reply.replace(/\\n/g, "\n");
-    currentResponse.value = reply.replace(/\\n/g, "\n");
-    autoResizeTextarea(currentResponse);
-    localStorage.setItem("chatHistory", updatedHistory);
-  } catch (error) {
-    const msg = String(error?.message || error || "Error desconocido");
-    let hint = "";
-
-    if (msg.includes("webhook") || msg.includes("404")) {
-      if (endpoint === PROD_URL) {
-        hint =
-          "Activa el workflow en n8n (producción). Para pruebas usa ?env=test y pulsa 'Execute workflow' en n8n antes de enviar.";
-      } else {
-        hint =
-          "Pulsa 'Execute workflow' en n8n para habilitar temporalmente el webhook de prueba (?env=test).";
-      }
-    } else if (msg.includes("AbortError")) {
-      hint = "Se agotó el tiempo de espera. El servidor tardó demasiado en responder.";
-    }
-
-    const fallback = `Hmm... algo no salió bien 🤔. ${hint}`.trim();
-    const updatedHistory =
-      previous + `\n👤 Tú: ${input}\n🤖 ChatScreening: ${fallback}\n`;
-    currentResponse.value = fallback;
-    historyBox.value = updatedHistory;
-    localStorage.setItem("chatHistory", updatedHistory);
+    const botText = extractBotText(data, raw);
+    addMessage(botText, "bot");
+  } catch (err) {
+    addMessage("Hubo un problema de conexión. Intenta nuevamente.", "bot");
   } finally {
-    inputBox.value = "";
-    if (sendBtn) sendBtn.disabled = false;
+    isSending = false;
   }
 }
 
-function autoResizeTextarea(el) {
-  el.style.height = 'auto';              // reset
-  el.style.height = el.scrollHeight + 'px'; // ajusta al contenido
-}
+// ===============================
+// Event bindings
+// ===============================
+acceptBtn?.addEventListener("click", handleAccept);
 
-function toggleHistory() {
-  const historyBox = document.getElementById("historyBox");
-  const btn = document.getElementById("toggleHistoryBtn");
-  if (!historyBox || !btn) return;
+backBtn?.addEventListener("click", () => {
+  window.location.href = "/chat-screening/vacante1/index.html";
+});
 
-  const isHidden = !historyBox.classList.contains("show");
-  historyBox.classList.toggle("show", isHidden);
-  btn.textContent = isHidden ? "Ocultar historial" : "Mostrar historial";
-}
+loginEmail?.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    handleAccept();
+  }
+});
 
-function toggleConsentInfo() {
-  const consentInfoBox = document.getElementById("consentInfoBox");
-  const infoToggleBtn = document.getElementById("infoToggleBtn");
-  
-  if (!consentInfoBox || !infoToggleBtn) return;
-
+infoToggleBtn?.addEventListener("click", () => {
+  if (!consentInfoBox) return;
   const isHidden = consentInfoBox.hasAttribute("hidden");
-  
+
   if (isHidden) {
     consentInfoBox.removeAttribute("hidden");
     infoToggleBtn.setAttribute("aria-expanded", "true");
-    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️";
   } else {
     consentInfoBox.setAttribute("hidden", "");
     infoToggleBtn.setAttribute("aria-expanded", "false");
-    infoToggleBtn.textContent = "⁉️ ¿Para qué necesitan estos datos? ⁉️";
   }
-}
+});
 
-window.sendMessage = sendMessage;
-window.toggleHistory = toggleHistory;
+startSendBtn?.addEventListener("click", sendMessage);
+chatSendBtn?.addEventListener("click", sendMessage);
+
+bindEnterToSend(startInput, sendMessage);
+bindEnterToSend(chatInput, sendMessage);
