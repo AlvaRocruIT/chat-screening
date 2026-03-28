@@ -48,7 +48,7 @@ h2 {
   background-color: #ffffff;
   color: #2c2c2c;
   border: 1px solid #000;
-  border-radius: 0;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: flex;
