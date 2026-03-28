@@ -101,6 +101,7 @@ h2 {
 
 /* Mobile: full-width square */
 @media (max-width: 640px) {
+  
   .button-container {
     flex-direction: column;
     gap: 16px;
@@ -123,10 +124,24 @@ h2 {
 @media (max-width: 640px) {
   body { padding: 1.25em; }
 
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.1rem; }
-  p  { font-size: 1rem; }
-
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.4em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  p  {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+    h2 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
   .button-container {
     flex-direction: column;
     align-items: left;
