@@ -39,27 +39,20 @@ h2 {
 
 /* Botón del chatbot (idéntico a vacante2) */
 .button-container button {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 180px;
-  height: 60px;
-  font-size: 0.8em;
-  font-weight: 400;
-  background-color: #ffffff;
-  color: #2c2c2c;
-  border: 1px solid #000;
-  border-radius: 16px;
+.button {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
   cursor: pointer;
-  transition: background-color 0.4s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.button-container button:hover {
-  background-color: #f2f2f2;
-  color: #2c2c2c;
-  border-color: #000;
+.button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
 }
