@@ -1,4 +1,4 @@
-/* Base de la página (idéntica a vacante2) */
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
@@ -49,14 +49,15 @@ h2 {
   background-color: #ffffff;
   color: #2c2c2c;
   border: 1px solid #000;
-  border-radius: 0;
+  border-radius: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 .button-container button:hover {
   background-color: #f2f2f2;
