@@ -131,8 +131,9 @@ h2 {
     letter-spacing: -0.5px;
     margin-bottom: 0.4em;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    min-height: calc(1.15em * 4);
     overflow: hidden;
   }
   p  {
