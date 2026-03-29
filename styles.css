@@ -16,14 +16,15 @@ body {
 }
 
 /* TÍTULO GRANDE */
-.hero h1 {
-  font-size: 56px;
+.hero-title {
+  font-size: clamp(1.8rem, 6vw, 56px);
   line-height: 1.1;
   font-weight: 400;
   color: #1a1a1a;
   margin-bottom: 20px;
   letter-spacing: -1px;
-   min-height: calc(1.1em * 2); 
+  min-height: calc(1.1em * 2); 
+  display: block;
 }
 
 .cursor {
@@ -124,7 +125,7 @@ h2 {
 @media (max-width: 640px) {
   body { padding: 1.25em; }
 
-  h1 {
+ .hero-title {
     font-size: 1.6rem;
     line-height: 1.15;
     letter-spacing: -0.5px;
