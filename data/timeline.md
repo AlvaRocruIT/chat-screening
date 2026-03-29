@@ -35,6 +35,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 <strong>✨ LUEGO DE 1000 COMMITS, LOGRO UN PROTOTIPO FUNCIONAL ✨</strong><br>
 ⛩️ <strong> Se presentó a Nicolás Abud </strong> 📅25 MAR. 2026 <br>
 ✅ Se cambió el layout del chatbot a uno tipo IA 📅27 MAR. 2026 <br>
+✅ Formato 100% responsivo 📅27 MAR. 2026 <br>
 
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
