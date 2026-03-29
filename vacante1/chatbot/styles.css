@@ -192,7 +192,6 @@ textarea {
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
   background: #fff;
   border-top: 1px solid transparent;
 }
