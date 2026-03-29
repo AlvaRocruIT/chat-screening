@@ -125,12 +125,11 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 24px;
   resize: none;
-  line-height: 1.0;
   min-height: 38px;
   text-align: left;
   font-family: inherit;  
   font-size: 17px; 
-  line-height: 1.5;
+  line-height: 1.4;
   box-sizing: border-box;
 }
 
