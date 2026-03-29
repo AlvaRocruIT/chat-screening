@@ -145,6 +145,7 @@ textarea {
   background: black;
   color: white;
   cursor: pointer;
+  transform: translateY(-50%); /* 🔥 centrado real */
 }
 
 /* Chat */
@@ -162,7 +163,7 @@ textarea {
 }
 
 /* 🔥 CUANDO ESTÁ EN CHAT
-   Layout centrado (max-width 700) + burbujas izquierda/derecha */
+   Layout centrado + burbujas izquierda/derecha */
 .chat-mode #chat-screen {
   width: 100%;
   max-width: 900px;
