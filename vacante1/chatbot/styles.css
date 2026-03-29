@@ -121,7 +121,8 @@ p {
 }
 
 textarea {
-  width: 90%;
+  width: 900px;
+  max-widht: 90%;
   padding: 10px 60px 10px 16px;
   border: 1px solid #ddd;
   border-radius: 32px;
