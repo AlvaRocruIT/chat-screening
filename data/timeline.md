@@ -36,6 +36,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ⛩️ <strong> Se presentó a Nicolás Abud </strong> 📅25 MAR. 2026 <br>
 ✅ Se cambió el layout del chatbot a uno tipo IA 📅27 MAR. 2026 <br>
 ✅ Formato 100% responsivo 📅27 MAR. 2026 <br>
+🛑 Frenazo estratégico hasta nuevo aviso📅 02 ABR. 2026 <br>
 
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
@@ -48,3 +49,5 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 💤 Me aburrí de esto y me embalé con la temporada de rafting x 2 meses 📅 16 MAR. 2026 <br>
 🤦🏻‍♂️ El problema es que cuando se acabó la temporada me quedé sin plata y de parásito en la casa de mis viejos 📅 01 MAR. 2026<br>
 🪲 El notebook que e compré venía reacondicionado como el hoyo, tuve que cambiarle el windows yo mismo 📅 12 MAR. 2026 <br>
+🧲 Hice 3 pull request y el conteo de commits se me fue al carajo (pasé de 1300 a 3700) 📅 01 ABR. 2026 <br>
+🛑 Frenazo estratégico: Congelé este proyecto por problemas y amenaza de caja. Potenciaré otro similar, pero con retorno rápido 📅 02 ABR. 2026 <br>
