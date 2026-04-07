@@ -37,6 +37,7 @@ En vez de solo leer un CV, la empresa obtiene señales del potencial y la dispos
 ✅ Se cambió el layout del chatbot a uno tipo IA 📅27 MAR. 2026 <br>
 ✅ Formato 100% responsivo 📅27 MAR. 2026 <br>
 🛑 Frenazo estratégico hasta nuevo aviso📅 02 ABR. 2026 <br>
+⛩️ <strong> Se presentó a Hernán Chiosso </strong> 📅07 ABR. 2026 <br>
 
 
 <b> 🏴‍☠️ Bitácora de Cagazos </b><br>
