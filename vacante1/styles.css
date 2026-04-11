@@ -1,3 +1,80 @@
+root{
+  --blue-1:#071738;
+  --blue-2:#1a2f6b;
+  --text:#0f1830;
+  --muted:#d8e4ff;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Montserrat,system-ui,sans-serif;color:var(--text);background:#fff}
+
+/* Header azul */
+.hero-header{
+  background: radial-gradient(50% 45% at 50% 55%, #2b57c9 0%, #142a63 45%, #091a43 100%);
+  color:#fff;
+  padding:34px 20px 44px;
+}
+
+.hero-inner{
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.back-link{
+  display:inline-block;
+  margin-bottom:22px;
+  color:#dbe7ff;
+  text-decoration:none;
+  font-size:.95rem;
+}
+
+.hero-header h1{
+  margin:0 0 18px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight:700;
+  color:#f2f6ff;
+}
+
+.hero-header .button-container{
+  display:flex;
+  justify-content:center;
+  margin:0 0 16px;
+}
+
+.hero-header .meta-line{
+  margin:0;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* Botón/imagen CTA */
+.chatbot-cta img,
+#Chatbot{
+  border-radius:16px;
+  box-shadow: 0 10px 30px rgba(52,123,255,.45);
+}
+
+/* Contenido blanco */
+.vacante-content{
+  background:#fff;
+  max-width:760px;
+  margin:0 auto;
+  padding:48px 20px 64px;
+  line-height:1.7;
+}
+
+.vacante-content h2,
+.vacante-content h3{
+  color:#111b36;
+  margin-top:28px;
+}
+
+.vacante-content p{
+  margin:0 0 18px;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
