@@ -41,7 +41,7 @@ header {
 header h1 {
   margin: 0;
   font-size: clamp(1.8rem, 2.6vw, 2.5rem);
-  font-weight: 600;
+  font-weight: 600px;
   letter-spacing: 0.2px;
   color: #f4f7ff;
 }
@@ -102,7 +102,7 @@ header p {
   border-radius: 12px;
   background: linear-gradient(180deg, #3a8bff, #2e73ea);
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.03rem;
   padding: 11px 18px;
   cursor: pointer;
@@ -182,7 +182,7 @@ header p {
 .candidates-list h2 {
   margin: 0 0 16px;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #f2f6ff;
   letter-spacing: 0.2px;
   text-align: left;
@@ -222,7 +222,7 @@ header p {
   margin-top: 8px;
   font-size: 2.55rem;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 600;
   color: #f5f8ff;
   white-space: nowrap;
   overflow: hidden;
