@@ -863,8 +863,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const format = e.target.dataset.format;
             if (!format) return;
 
-            if (format === "csv") exportToCSV(dashboard?.data || []);
-            if (format === "xlsx") exportToExcel(dashboard?.data || []);
+            if (format === "csv") exportToCSV(dashboard?.candidatesData || []);
+            if (format === "xlsx") exportToExcel(dashboard?.candidatesData || []);
 
             menu.classList.remove("show");
         });
