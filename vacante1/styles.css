@@ -18,7 +18,7 @@ html, body {
 .hero-header {
   background: radial-gradient(45% 42% at 50% 58%, #356bff 0%, #1a3476 45%, #0b1f52 100%);
   color: #fff;
-  padding: 48px 20px 56px;
+  padding: 46px 20px 58px;
 }
 
 .hero-inner {
@@ -35,21 +35,27 @@ html, body {
 }
 
 .hero-header h1 {
-  margin: 0 0 24px;
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin: 0 0 26px;
+  font-size: clamp(2.3rem, 5.3vw, 3.6rem);
   font-weight: 700;
-  color: #eef4ff;
-  line-height: 1.08;
+  line-height: 1.12;
+  letter-spacing: 0.2px;
+  color: #eaf1ff;
+  text-wrap: balance;
 }
 
 
 .hero-header .button-container {
   display: flex;
   justify-content: center;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 }
 
 .hero-header .button-container button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   min-width: 420px;
   height: 86px;
   border-radius: 18px;
@@ -62,6 +68,18 @@ html, body {
   box-shadow: 0 0 34px rgba(67, 134, 255, 0.45);
 }
 
+.hero-header .button-container button::before {
+  content: "◌";
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
 
 .hero-header .meta-line {
   margin: 0;
