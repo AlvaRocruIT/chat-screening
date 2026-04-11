@@ -68,19 +68,6 @@ html, body {
   box-shadow: 0 0 34px rgba(67, 134, 255, 0.45);
 }
 
-.hero-header .button-container button::before {
-  content: "◌";
-  display: inline-grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.2);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-}
-
 .hero-header .meta-line {
   margin: 0;
   color: #d8e7ff;
