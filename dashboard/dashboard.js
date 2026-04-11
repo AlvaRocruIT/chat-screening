@@ -219,15 +219,26 @@ class ChatScreeningDashboard {
 
             scales: {
                 r: {
-                    beginAtZero: true,
-                    max: 5,
-
-                    ticks: {
-                        stepSize: 1,
-                        font: {
-                            size: 14   // 🔥 números del eje
-                        }
-                    },
+                  beginAtZero: true,
+                  max: 5,
+                  ticks: {
+                    stepSize: 1,
+                    color: "#d9e6ff",
+                    backdropColor: "transparent",
+                    font: { size: 12 }
+                  },
+                  angleLines: {
+                    color: "rgba(140,170,230,0.20)"
+                  },
+                  grid: {
+                    color: "rgba(140,170,230,0.20)"
+                  },
+                  pointLabels: {
+                    color: "#eaf1ff",
+                    font: { size: 18, weight: "500" }
+                  }
+                }
+                },
 
                     pointLabels: {
                         font: {
