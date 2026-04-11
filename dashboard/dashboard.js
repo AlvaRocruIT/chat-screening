@@ -249,29 +249,27 @@ class ChatScreeningDashboard {
                 }
             },
 
-            plugins: {
+            plugins: {  
                 legend: {
-                    position: 'top',
-                    labels: {
-                        font: {
-                            size: 14
-                        }
-                    }
+                  position: "top",
+                  labels: {
+                    color: "#d7e4ff",
+                    usePointStyle: true,
+                    pointStyle: "circle",
+                    padding: 16,
+                    font: { size: 13, weight: "500" }
+                  }
                 },
                 title: {
-                    display: true,
-                    text: this.selectedCandidate ?
-                        `Comparación: ${this.selectedCandidate.sessionId}` :
-                        'Comparación de Rendimiento',
-                    font: {
-                        size: 18,
-                        weight: 'bold'
-                    }
+                  display: true,
+                  text: "Comparación de Rendimiento",
+                  color: "#c9d8f7",
+                  font: { size: 16, weight: "500" },
+                  padding: { top: 6, bottom: 10 }
                 }
             }
         }
     });
-}
 
     prepareChartData() {
         const labels = ['Cultural', 'Crecimiento', 'Engagement', 'Rol', 'Estratégico'];
