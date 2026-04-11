@@ -333,10 +333,12 @@ class ChatScreeningDashboard {
             {
                 label: 'Promedio General',
                 data: overallAverage,
-                borderColor: '#2c2c2c',
-                backgroundColor: 'rgba(44, 44, 44, 0.2)',
-                borderWidth: 3,
-                pointRadius: 6
+                borderColor: "#7f9bc9",
+                backgroundColor: "rgba(127,155,201,0.18)",
+                pointBackgroundColor: "#7f9bc9",
+                pointBorderColor: "#7f9bc9",
+                borderWidth: 2,
+                pointRadius: 3
             }
         ];
 
@@ -347,10 +349,12 @@ class ChatScreeningDashboard {
             datasets.push({
                 label: vacante,
                 data: scores,
-                borderColor: grayShades[shadeIndex % grayShades.length],
-                backgroundColor: `rgba(${shadeIndex * 60 + 100}, ${shadeIndex * 60 + 100}, ${shadeIndex * 60 + 100}, 0.2)`,
-                borderWidth: 2,
-                pointRadius: 4
+                backgroundColor: "rgba(59,130,255,0.25)",
+                pointBackgroundColor: "#3b82ff",
+                pointBorderColor: "#3b82ff",
+                pointRadius: 3,
+                pointHoverRadius: 4,
+                borderWidth: 2
             });
             shadeIndex++;
         });
