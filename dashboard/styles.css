@@ -41,7 +41,7 @@ header {
 header h1 {
   margin: 0;
   font-size: clamp(1.8rem, 2.6vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.2px;
   color: #f4f7ff;
 }
