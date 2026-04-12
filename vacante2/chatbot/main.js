@@ -6,6 +6,7 @@ const chatScreen = document.getElementById("chat-screen");
 const messages = document.getElementById("messages");
 //▶️ Modal login
 const loginOverlay = document.getElementById("loginOverlay");
+const modalCloseBtn = document.getElementById("modalCloseBtn");
 const backBtn = document.getElementById("backBtn");
 const acceptBtn = document.getElementById("acceptBtn");
 const infoToggleBtn = document.getElementById("infoToggleBtn");
@@ -151,7 +152,11 @@ function bindEnterToSend(textareaEl, sendFn) {
 
 // ===============================
 // Modal logic
-// ===============================
+
+modalCloseBtn?.addEventListener("click", () => {
+  loginOverlay?.setAttribute("hidden", "");
+});
+
 async function handleAccept() {
   const name = loginName?.value.trim() || "";
   const email = loginEmail?.value.trim() || "";
