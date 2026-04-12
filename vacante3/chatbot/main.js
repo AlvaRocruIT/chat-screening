@@ -6,6 +6,7 @@ const chatScreen = document.getElementById("chat-screen");
 const messages = document.getElementById("messages");
 //▶️ Modal login
 const loginOverlay = document.getElementById("loginOverlay");
+const modalCloseBtn = document.getElementById("modalCloseBtn");
 const backBtn = document.getElementById("backBtn");
 const acceptBtn = document.getElementById("acceptBtn");
 const infoToggleBtn = document.getElementById("infoToggleBtn");
@@ -27,7 +28,7 @@ let isSending = false;
 function getVacanteIdFromPath() {
   const map = { vacante1: 1, vacante2: 2, vacante3: 3 };
   const key = new URLSearchParams(location.search).get("vacante") || "vacante1";
-  return map[key] || 3;
+  return map[key] || 1;
 }
 
 function getPreferredEndpoint() {
@@ -151,7 +152,11 @@ function bindEnterToSend(textareaEl, sendFn) {
 
 // ===============================
 // Modal logic
-// ===============================
+
+modalCloseBtn?.addEventListener("click", () => {
+  loginOverlay?.setAttribute("hidden", "");
+});
+
 async function handleAccept() {
   const name = loginName?.value.trim() || "";
   const email = loginEmail?.value.trim() || "";
@@ -226,7 +231,7 @@ async function sendMessage() {
 acceptBtn?.addEventListener("click", handleAccept);
 
 backBtn?.addEventListener("click", () => {
-  window.location.href = "/chat-screening/vacante3/index.html";
+  window.location.href = "/chat-screening/vacante1/index.html";
 });
 
 loginEmail?.addEventListener("keydown", (e) => {
