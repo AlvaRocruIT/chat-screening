@@ -50,6 +50,7 @@ html, body {
 }
 
 .hero-header .button-container button {
+  font-family: "Montserrat", system-ui, sans-serif; /* misma fuente */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -119,6 +120,7 @@ html, body {
 }
 
 .closing-cta button {
+  font-family: "Montserrat", system-ui, sans-serif; /* misma fuente */
   min-width: 420px;
   min-height: 78px;
   padding: 0 26px;
