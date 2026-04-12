@@ -38,7 +38,7 @@ html, body {
 .hero-header h1 {
   margin: 0;
   font-size: clamp(2.4rem, 4.6vw, 4rem);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.08;
   color: #eaf1ff;
 }
@@ -60,7 +60,7 @@ html, body {
   border: 1px solid rgba(118, 170, 255, 0.7);
   background: linear-gradient(180deg, #3f86ff, #2a67e8);
   color: #f5f9ff;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 0 34px rgba(67, 134, 255, 0.45);
