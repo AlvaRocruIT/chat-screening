@@ -19,7 +19,7 @@ html, body {
   background: radial-gradient(45% 42% at 50% 58%, #356bff 0%, #1a3476 45%, #0b1f52 100%);
   color: #fff;
   padding: 46px 20px 58px;
-  min-height: 360px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center
