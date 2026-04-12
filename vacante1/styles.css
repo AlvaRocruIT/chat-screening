@@ -85,6 +85,54 @@ html, body {
 .vacante-content ul { margin: 8px 0 18px 20px; padding: 0; }
 .vacante-content li { margin-bottom: 10px; }
 
+.closing-identity {
+  margin-top: 34px;
+  padding-top: 8px;
+}
+
+.identity-box {
+  background: #f2f5fa;
+  border: 1px solid #d8e1ef;
+  border-radius: 14px;
+  padding: 24px 24px 20px;
+}
+
+.identity-box p {
+  margin: 0 0 14px;
+  color: #1a2745;
+  line-height: 1.65;
+  font-size: 1.02rem;
+  text-align: left;
+}
+
+.identity-box .identity-strong {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #0f1830;
+}
+
+.closing-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.closing-cta button {
+  min-width: 420px;
+  min-height: 78px;
+  padding: 0 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(118,170,255,.78);
+  background: linear-gradient(180deg, #4a92ff 0%, #2d6eeb 100%);
+  color: #f5f9ff;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .2px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(63,132,255,.35);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero-header {
@@ -100,5 +148,20 @@ html, body {
     width: min(100%, 520px);
     min-height: 78px;
     font-size: 1.05rem;
+  }
+
+  .identity-box {
+    padding: 18px 16px;
+  }
+
+  .identity-box .identity-strong {
+    font-size: 1.25rem;
+  }
+
+  .closing-cta button {
+    min-width: 100%;
+    font-size: 1.05rem;
+    min-height: 66px;
+    border-radius: 14px;
   }
 }
