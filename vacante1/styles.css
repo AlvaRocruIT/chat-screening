@@ -32,7 +32,7 @@ html, body {
   text-align: center;
   display: grid;
   grid-template-rows: auto auto auto;
-  row-gap: 28px;
+  row-gap: 32px;
 }
 
 .hero-header h1 {
