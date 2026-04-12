@@ -102,7 +102,7 @@ html, body {
   color: #1a2745;
   line-height: 1.65;
   font-size: 1.02rem;
-  text-align: left;
+  text-align: justify;
 }
 
 .identity-box .identity-strong {
@@ -126,7 +126,7 @@ html, body {
   border: 1px solid rgba(118,170,255,.78);
   background: linear-gradient(180deg, #4a92ff 0%, #2d6eeb 100%);
   color: #f5f9ff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: .2px;
   cursor: pointer;
