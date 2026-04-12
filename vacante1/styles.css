@@ -136,21 +136,40 @@ html, body {
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero-header {
-    min-height: 320px;
-    padding: 26px 16px 36px;
+    min-height: auto;           /* evita “achatamiento forzado” */
+    padding: 24px 0 28px;
   }
 
   .hero-inner {
-    row-gap: 16px;
+     row-gap: 14px;
+    padding-inline: 10px;
+  }
+
+  .hero-header h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    line-height: 1.08;
+    margin: 0;
+  }
+
+  .hero-header .button-container {
+    margin: 0;
   }
 
   .hero-header .button-container button {
-    width: min(100%, 520px);
-    min-height: 78px;
-    font-size: 1.05rem;
+    width: 100%;
+    min-width: 0;
+    min-height: 64px;
+    height: auto;
+    font-size: 1.65rem;
+    border-radius: 14px;
+    padding: 12px 14px;
   }
 
-  .identity-box {
+  .hero-header .meta-line {
+    font-size: 0.95rem;
+    max-width: 30ch;
+  }
+    .identity-box {
     padding: 18px 16px;
   }
 
@@ -163,5 +182,22 @@ html, body {
     font-size: 1.05rem;
     min-height: 66px;
     border-radius: 14px;
+  }
+}
+
+/* Extra small */
+@media (max-width: 420px) {
+  .hero-header h1 {
+    font-size: clamp(1.8rem, 10vw, 2.3rem);
+  }
+
+  .hero-header .button-container button {
+    font-size: 1.4rem;
+    min-height: 58px;
+  }
+
+  .hero-header .meta-line {
+    font-size: 0.9rem;
+    max-width: 28ch;
   }
 }
