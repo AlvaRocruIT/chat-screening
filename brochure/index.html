@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat-Screening Brochure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="brochure">
+    <!-- PAGE 1 -->
+    <section class="page page-problem" id="page1">
+      <header class="section-head">
+        <h1>[Main Headline:<br />The Core Problem Statement]</h1>
+
+        <button id="downloadPdfBtn" class="ghost-btn" type="button">
+          Descargar en PDF
+        </button>
+
+        <p class="subtext">
+          [Supporting paragraph that contextualizes the problem. Two to three sentences maximum. Should establish credibility and relevance.]
+        </p>
+      </header>
+
+      <div class="bullet-list" id="problemBullets"></div>
+
+      <aside class="insight-card">
+        <p class="eyebrow">⚡ Key Insight</p>
+        <p>[The critical observation that changes how we should think about this problem. This should be the "aha" moment.]</p>
+      </aside>
+
+      <blockquote class="thesis">
+        [Thesis statement: What we propose instead. Clear, declarative, distinctive.]
+      </blockquote>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page page-architecture" id="page2">
+      <header class="section-head">
+        <h2>System Architecture</h2>
+        <p class="subtext">[Brief explanation of how the system works as an integrated whole]</p>
+      </header>
+
+      <div class="architecture-flow" id="architectureFlow"></div>
+
+      <p class="foot-note">// [Optional: Technical note about architecture decisions or data flow]</p>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page page-signals" id="page3">
+      <header class="section-head">
+        <h2>Signals & Example</h2>
+        <p class="subtext">[How the system translates interaction into insight]</p>
+      </header>
+
+      <div class="two-col">
+        <div class="left-col">
+          <h3>Captured Signals</h3>
+          <div id="signalsList"></div>
+
+          <div class="detect-card">
+            <p class="eyebrow">→ What the system detects</p>
+            <ul id="detectedPatterns"></ul>
+          </div>
+
+          <div class="output-card">
+            <p class="eyebrow">← Output</p>
+            <p>[Structured recruiter-facing insight summary]</p>
+          </div>
+        </div>
+
+        <div class="right-col">
+          <h3>Interaction Example</h3>
+          <div class="chat-box" id="chatExample"></div>
+          <p class="foot-note">// [Caption: What makes this interaction revealing]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page page-opportunity" id="page4">
+      <header class="section-head">
+        <h2>Current State & Opportunity</h2>
+        <p class="subtext">[Where we are, what we're validating, and why this matters now]</p>
+      </header>
+
+      <section class="block">
+        <h3>What Exists Today</h3>
+        <div id="currentStateList"></div>
+      </section>
+
+      <section class="validate-card">
+        <h3>What Is Being Validated</h3>
+        <p>[Current hypothesis under test. What we're learning from early experiments or pilots. This should feel provisional and honest.]</p>
+      </section>
+
+      <section class="block">
+        <h3>Why Now</h3>
+        <div class="why-grid" id="whyNowGrid"></div>
+      </section>
+
+      <section class="block">
+        <h3>What We Are Building</h3>
+        <p>[Clear, concise statement of the product vision. One to two sentences. Should feel concrete but ambitious.]</p>
+      </section>
+
+      <section class="cta-card">
+        <p class="eyebrow">→ Next Steps</p>
+        <h3>[Call to action headline]</h3>
+        <p>[What you want the reader to do. Who to contact. What kind of conversation you're looking for.]</p>
+        <p class="contact-line">[contact@email.com] • [Additional contact method]</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
