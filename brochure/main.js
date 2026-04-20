@@ -1,7 +1,7 @@
 const problemBullets = [
-  "[Punto uno: Solamente un 15% del talento de alto desempeño, es también de alto potencial]",
-  "[Punto dos: Usamos las mismas herramientas para seleccionar talento demostrado, que talento por despegar]",
-  "[Punto tres: Estamos perdiendo oportunidades de contar con gente increíble que pasa desapercibida]"
+  "Punto uno: Solo una parte del talento de alto desempeño refleja alto potencial futuro]",
+  "Punto dos: Usamos herramientas para evaluar trayectoria en perfiles que aún no la tienen",
+  "Punto tres: Estamos dejando fuera talento con alta capacidad y que no logra diferenciarse en esquemas tradicionales"
 ];
 
 const architectureComponents = [
@@ -13,36 +13,36 @@ const architectureComponents = [
 ];
 
 const signals = [
-  "Response latency patterns",
-  "Question reformulation",
-  "Clarification requests",
-  "Technical depth markers",
-  "Communication precision"
+  "Reformulación de preguntas",
+  "Profundidad progresiva",
+  "Solicitudes de clarificación",
+  "Presición en la comunicación",
+  "Evolución en el foco de la conversación"
 ];
 
 const detectedPatterns = [
-  "[Patrones de mentalidad de crecimiento]",
-  "[Patrones de curiosidad intelectual]",
-  "[Patrones de construcción del desafío]"
+  "Patrones de intención de desarrollo",
+  "Patrones de curiosidad intelectual",
+  "Patrones evolución del entendimiento sobre el desafío"
 ];
 
 const chatMessages = [
-  { role: "candidate", text: "[¡Hola! ¿bajo qué meétricas me van a medir?]" },
-  { role: "system", text: "[Tus métricas de impacto para este desafío serán : A;B;C y D]" },
-  { role: "candidate", text: "[Genial! ¿Y qué desafíos individuales esperan de un colaborador excepcional en este rol al cabo de un año?]" },
-  { role: "system", text: "[¡Muy buena pregunta!💡 Nos encantaría que de aquí al próximo año seas capaz de...]" }
+  { role: "candidate", text: "¡Hola! ¿bajo qué meétricas me van a medir?" },
+  { role: "system", text: "[Tus métricas de impacto para este desafío serán : 🏋🏻💼📋" },
+  { role: "candidate", text: "Genial! ¿Y qué desafíos individuales esperan de un colaborador excepcional en este rol al cabo de un año?" },
+  { role: "system", text: "¡Excelente pregunta! Nos encantaría que de aquí al próximo año seas capaz de 📈🚀🏆" }
 ];
 
 const currentStateItems = [
-  "[1er Componente: Creamos un MVP de plataforma para la interfaz del usuario y también para seguimiento y reportería para prefiles de administrador]",
-  "[2°  Componente two: Basamos nuestra hipótesis en metodologías basadas en evidencia en psicología comportamental]",
-  "[3er Componente: Hemos creado las capcidades para saltar a un entorno de desarrollo, manteniendo estándares de calidad de cara al cliente]"
+  "✅ MVP funcional de interfaz y reportería",
+  "✅ Hipótesis basada en enfoques de psicología comportmental",
+  "✅ Capacidades de escalar hacia un entorno de desarrollo operacional"
 ];
 
 const whyNowItems = [
-  { n: 1, title: "[+ Capacidad en interfaces conversacionales]", detail: "Los modelos actuales permiten interacciones más naturales, extensas y contextuales, facilitando la observación de patrones del lenguaje" },
-  { n: 2, title: "[+ Capacidad de análisis de texto]", detail: "Hoy es viable estructurar y analizar conversaciones a escala, identificando patrones sin necesidad de instrumentación compleja" },
-  { n: 3, title: "[Necesidad no resuelta en recruiting]", detail: "Las primeras etapas del funnel siguen siendo inciertas, en especial perfiles sin experiencia"}
+  { n: 1, title: "Interfaces conversacionales más avanzadas", detail: "Permiten interacciones más naturales y profundas"},
+  { n: 2, title: "Mejor capacidad de análisis de lenguaje", detail: "Hoy es viable estructurar y analizar conversaciones automatizadas y customizadas"},
+  { n: 3, title: "Necesidad aun no resuelta", detail: "Las primeras etapas del funnel siguen operando con inciertidumbre"}
 ];
 
 function renderProblemBullets() {
