@@ -1,15 +1,15 @@
 const problemBullets = [
-  "[Problem point one: specific, measurable observation]",
-  "[Problem point two: contrasting limitation or gap]",
-  "[Problem point three: consequence or missed opportunity]"
+  "[Punto uno: Solamente un 15% del talento de alto desempeño, es también de alto potencial]",
+  "[Punto dos: Usamos las mismas herramientas para seleccionar talento demostrado, que talento por despegar]",
+  "[Punto tres: Estamos perdiendo oportunidades de contar con gente increíble que pasa desapercibida]"
 ];
 
 const architectureComponents = [
-  { title: "Conversational Interface", description: "Natural language interaction layer", icon: "💬" },
-  { title: "Interaction Capture", description: "Real-time behavioral tracking", icon: "📊" },
-  { title: "Feature Extraction", description: "Pattern recognition engine", icon: "🔍" },
-  { title: "Scoring Layer", description: "Multi-dimensional evaluation", icon: "⚡" },
-  { title: "Recruiter Output", description: "Structured insights delivery", icon: "📋" }
+  { title: "Interaz conversational", description: "En lenguaje natural, con memoria contextuaql y adaptado a tu estilo comunicacional", icon: "💬" },
+  { title: "Captura de interacciones", description: "Seguimiento de comportamientos en tiempo real", icon: "📊" },
+  { title: "Extracción de features", description: "Motor de reconocimiento de patrones en cadenas conversacionales", icon: "🔍" },
+  { title: "Scoring y ranking", description: "Evaluación Multi-dimensional preswentado en esquema de ranking", icon: "⚡" },
+  { title: "Recruiter Output", description: "Entrega de información estructurada para apoyar la toma de decisiones", icon: "📋" }
 ];
 
 const signals = [
@@ -21,28 +21,28 @@ const signals = [
 ];
 
 const detectedPatterns = [
-  "[Detected pattern one]",
-  "[Detected pattern two]",
-  "[Detected pattern three]"
+  "[Patrones de mentalidad de crecimiento]",
+  "[Patrones de curiosidad intelectual]",
+  "[Patrones de construcción del desafío]"
 ];
 
 const chatMessages = [
-  { role: "system", text: "[System prompt or initial question]" },
-  { role: "candidate", text: "[Candidate response demonstrating behavior]" },
-  { role: "system", text: "[Follow-up probe]" },
-  { role: "candidate", text: "[Candidate elaboration with signals]" }
+  { role: "candidate", text: "[¡Hola! ¿bajo qué meétricas me van a medir?]" },
+  { role: "system", text: "[Tus métricas de impacto para este desafío serán : A;B;C y D]" },
+  { role: "candidate", text: "[Genial! ¿Y qué desafíos individuales esperan de un colaborador excepcional en este rol al cabo de un año?]" },
+  { role: "system", text: "[¡Muy buena pregunta!💡 Nos encantaría que de aquí al próximo año seas capaz de...]" }
 ];
 
 const currentStateItems = [
-  "[Component one: what's built]",
-  "[Component two: what's validated]",
-  "[Component three: current capability]"
+  "[1er Componente: Creamos un MVP de plataforma para la interfaz del usuario y también para seguimiento y reportería para prefiles de administrador]",
+  "[2°  Componente two: Basamos nuestra hipótesis en metodologías basadas en evidencia en psicología comportamental]",
+  "[3er Componente: Hemos creado las capcidades para saltar a un entorno de desarrollo, manteniendo estándares de calidad de cara al cliente]"
 ];
 
 const whyNowItems = [
-  { n: 1, title: "[Enabling factor one]", detail: "Brief explanation" },
-  { n: 2, title: "[Enabling factor two]", detail: "Brief explanation" },
-  { n: 3, title: "[Enabling factor three]", detail: "Brief explanation" }
+  { n: 1, title: "[+ Capacidad en interfaces conversacionales]", detail: "Los modelos actuales permiten interacciones más naturales, extensas y contextuales, facilitando la observación de patrones del lenguaje" },
+  { n: 2, title: "[+ Capacidad de análisis de texto]", detail: "Hoy es viable estructurar y analizar conversaciones a escala, identificando patrones sin necesidad de instrumentación compleja" },
+  { n: 3, title: "[Necesidad no resuelta en recruiting]", detail: "Las primeras etapas del funnel siguen siendo inciertas, en especial perfiles sin experiencia"}
 ];
 
 function renderProblemBullets() {
