@@ -34,9 +34,9 @@ const chatMessages = [
 ];
 
 const currentStateItems = [
-  "✅ MVP funcional de interfaz y reportería",
-  "✅ Hipótesis basada en enfoques de psicología comportmental",
-  "✅ Capacidades de escalar hacia un entorno de desarrollo operacional"
+  "MVP funcional de interfaz y reportería",
+  "Hipótesis basada en enfoques de psicología comportmental",
+  "Capacidades de escalar hacia un entorno de desarrollo operacional"
 ];
 
 const whyNowItems = [
