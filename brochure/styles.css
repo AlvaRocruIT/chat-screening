@@ -235,3 +235,64 @@ body {
   .chat-box { min-height: 280px; }
   .why-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Print / PDF pagination control ===== */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  html, body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .brochure {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* cada "página" del brochure inicia en hoja nueva */
+  .page {
+    break-before: page;
+    page-break-before: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 0 !important;
+  }
+
+  .page:first-child {
+    break-before: auto;
+    page-break-before: auto;
+  }
+
+  /* evita que cajas/tarjetas se partan entre hojas */
+  .insight-card,
+  .thesis,
+  .arch-item,
+  .detect-card,
+  .output-card,
+  .chat-box,
+  .state-item,
+  .validate-card,
+  .why-item,
+  .cta-card,
+  .block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* mejora de lectura: no cortar títulos/párrafos feo */
+  h1, h2, h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+}
