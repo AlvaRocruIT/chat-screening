@@ -1,5 +1,5 @@
 const problemBullets = [
-  "Punto uno: Solo una parte del talento de alto desempeño refleja alto potencial futuro]",
+  "Punto uno: Solo una parte del talento de alto desempeño refleja alto potencial futuro",
   "Punto dos: Usamos herramientas para evaluar trayectoria en perfiles que aún no la tienen",
   "Punto tres: Estamos dejando fuera talento con alta capacidad y que no logra diferenciarse en esquemas tradicionales"
 ];
@@ -28,7 +28,7 @@ const detectedPatterns = [
 
 const chatMessages = [
   { role: "candidate", text: "¡Hola! ¿bajo qué meétricas me van a medir?" },
-  { role: "system", text: "[Tus métricas de impacto para este desafío serán : 🏋🏻💼📋" },
+  { role: "system", text: "Tus métricas de impacto para este desafío serán : 🏋🏻💼📋" },
   { role: "candidate", text: "Genial! ¿Y qué desafíos individuales esperan de un colaborador excepcional en este rol al cabo de un año?" },
   { role: "system", text: "¡Excelente pregunta! Nos encantaría que de aquí al próximo año seas capaz de 📈🚀🏆" }
 ];
