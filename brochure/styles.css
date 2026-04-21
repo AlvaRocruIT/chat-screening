@@ -95,6 +95,11 @@ body {
 }
 .insight-card p { margin: 0; line-height: 1.6; }
 
+section ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
 .thesis {
   margin: 0;
   padding: 16px 0 16px 18px;
