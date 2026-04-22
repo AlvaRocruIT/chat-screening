@@ -1,48 +1,48 @@
 const problemBullets = [
-  "Punto uno: Solo una parte del talento de alto desempeño refleja alto potencial futuro",
-  "Punto dos: Usamos herramientas para evaluar trayectoria en perfiles que aún no la tienen",
-  "Punto tres: Estamos dejando fuera talento con alta capacidad y que no logra diferenciarse en esquemas tradicionales"
+  "Point one: Only a portion of high-performing talent reflects high future potential",
+  "Point two: We use tools designed to evluate background on profiles that do not yet have one",
+  "Point three: We are leaving out high capacity talent that fails to differentiate within traditional frameworks"
 ];
 
 const architectureComponents = [
-  { title: "Interaz conversational", description: "En lenguaje natural, con memoria contextuaql y adaptado a tu estilo comunicacional", icon: "💬" },
-  { title: "Captura de interacciones", description: "Seguimiento de comportamientos en tiempo real", icon: "📊" },
-  { title: "Extracción de features", description: "Motor de reconocimiento de patrones en cadenas conversacionales", icon: "🔍" },
-  { title: "Scoring y ranking", description: "Evaluación Multi-dimensional preswentado en esquema de ranking", icon: "⚡" },
-  { title: "Recruiter Output", description: "Entrega de información estructurada para apoyar la toma de decisiones", icon: "📋" }
+  { title: "Conversational interface", description: "In natural language, with contextual memory and adapted to your comunicational style", icon: "💬" },
+  { title: "Interaction capture", description: "Traking behaviors in real time", icon: "📊" },
+  { title: "Feature extraction", description: "Pattern recognition engine applied to conversational sequences", icon: "🔍" },
+  { title: "Scoring & Ranking", description: "Multi-dimensional evaluation presented un a ranking format", icon: "⚡" },
+  { title: "Recruiter Output", description: "Delivery of structured information to support decision making", icon: "📋" }
 ];
 
 const signals = [
-  "Reformulación de preguntas",
-  "Profundidad progresiva",
-  "Solicitudes de clarificación",
-  "Presición en la comunicación",
-  "Evolución en el foco de la conversación"
+  "Question reformulación",
+  "Progressive depth",
+  "Clarification request",
+  "Precision in comunication",
+  "Evolution in conversational focus"
 ];
 
 const detectedPatterns = [
-  "Patrones de intención de desarrollo",
-  "Patrones de curiosidad intelectual",
-  "Patrones evolución del entendimiento sobre el desafío"
+  "Patterns of development intent",
+  "Patterns of intellectual curiosity",
+  "Patterns in the evolution of understanding regarding the challenge"
 ];
 
 const chatMessages = [
-  { role: "candidate", text: "¡Hola! ¿bajo qué meétricas me van a medir?" },
-  { role: "system", text: "Tus métricas de impacto para este desafío serán : 🏋🏻💼📋" },
-  { role: "candidate", text: "Genial! ¿Y qué desafíos individuales esperan de un colaborador excepcional en este rol al cabo de un año?" },
-  { role: "system", text: "¡Excelente pregunta! Nos encantaría que de aquí al próximo año seas capaz de 📈🚀🏆" }
+  { role: "candidate", text: "Hi! Under what metrics will I be evaluated?" },
+  { role: "system", text: "Your impact metrics for this challenge will be: 🏋🏻💼📋" },
+  { role: "candidate", text: "Great! And what individual challenges would you expect from an exceptional contributor in this role after one year?" },
+  { role: "system", text: "¡Excellent question! By next year, we would love for you to be able to 📈🚀🏆" }
 ];
 
 const currentStateItems = [
-  "MVP funcional de interfaz y reportería",
-  "Hipótesis basada en enfoques de psicología comportmental",
-  "Capacidades de escalar hacia un entorno de desarrollo operacional"
+  "Functionalm MVP of interface and reporting",
+  "Hypothesis based on behavioral psichology approaches",
+  "Capability to scale toward an operational development environment"
 ];
 
 const whyNowItems = [
-  { n: 1, title: "Interfaces conversacionales más avanzadas", detail: "Permiten interacciones más naturales y profundas"},
-  { n: 2, title: "Mejor capacidad de análisis de lenguaje", detail: "Hoy es viable estructurar y analizar conversaciones automatizadas y customizadas"},
-  { n: 3, title: "Necesidad aun no resuelta", detail: "Las primeras etapas del funnel siguen operando con inciertidumbre"}
+  { n: 1, title: "More advanced conversational interfaces", detail: "Enable more natural and deeper interactions"},
+  { n: 2, title: "Improved language analysis capabilities", detail: "It is now feasible to structure and analyze automated ad customized conversations"},
+  { n: 3, title: "An unresolved need", detail: "Early stages of the funnel still operate with uncertainty"}
 ];
 
 function renderProblemBullets() {
