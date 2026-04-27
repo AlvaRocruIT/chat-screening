@@ -1,11 +1,11 @@
 const problemBullets = [
-  "Punto uno: Solo una parte del talento de alto desempeño refleja alto potencial futuro",
-  "Punto dos: Usamos herramientas para evaluar trayectoria en perfiles que aún no la tienen",
-  "Punto tres: Estamos dejando fuera talento con alta capacidad y que no logra diferenciarse en esquemas tradicionales"
+  "Solo una parte del talento de alto desempeño refleja alto potencial futuro",
+  "Usamos herramientas para evaluar trayectoria en perfiles que aún no la tienen",
+  "Estamos dejando fuera talento con alta capacidad y que no logra diferenciarse en esquemas tradicionales"
 ];
 
 const architectureComponents = [
-  { title: "Interaz conversational", description: "En lenguaje natural, con memoria contextuaql y adaptado a tu estilo comunicacional", icon: "💬" },
+  { title: "Interfaz conversacional", description: "En lenguaje natural, con memoria contextuaql y adaptado a tu estilo comunicacional", icon: "💬" },
   { title: "Captura de interacciones", description: "Seguimiento de comportamientos en tiempo real", icon: "📊" },
   { title: "Extracción de features", description: "Motor de reconocimiento de patrones en cadenas conversacionales", icon: "🔍" },
   { title: "Scoring y ranking", description: "Evaluación Multi-dimensional preswentado en esquema de ranking", icon: "⚡" },
